@@ -1,9 +1,9 @@
 <script>
    <% if current_user %>
       window.currentUser = {
-         id: current_user.id,
-         username: current_user.username,
-         location: current_user.location
+         id: <%= current_user.id %> , 
+         username: "<%= current_user.username %>"
+   <%= current_user.location ? ", location: #{current_user.location}" : "" %>
      } 
    <% end %>
 </script>

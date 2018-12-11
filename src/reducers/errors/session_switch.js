@@ -1,6 +1,6 @@
 import { LOGIN_ERRORS, LOGOUT_ERRORS } from '../../actions/session_actions';
 
-const sessionErrorsSwitch = (state=null, action) => {
+const sessionErrorsSwitch = (state = null, action) => {
    switch (action.type) {
       case LOGIN_ERRORS:
       case LOGOUT_ERRORS:

@@ -7,7 +7,7 @@ export const REMOVE_USER = 'REMOVE_USER';
 
 export const RECEIVE_USERS_ERRORS = 'RECEIVE_USERS_ERRORS';
 
-export const signUp = (user) => (dispatch) =>
+export const signUpUser = (user) => (dispatch) =>
    UserAjaxUtils.signUpUser(user).then(
       (user) =>
          dispatch({
@@ -17,7 +17,7 @@ export const signUp = (user) => (dispatch) =>
       (errors) =>
          dispatch({
             type: LOGIN_ERRORS,
-            errors
+            errors: errors.responseText
          })
    );
 
@@ -31,7 +31,7 @@ export const getUsers = () => (dispatch) =>
       (errors) =>
          dispatch({
             type: RECEIVE_USERS_ERRORS,
-            errors
+            errors: errors.responseText
          })
    );
 
@@ -45,7 +45,7 @@ export const getUser = (id) => (dispatch) =>
       (errors) =>
          dispatch({
             type: RECEIVE_USERS_ERRORS,
-            errors
+            errors: errors.responseText
          })
    );
 

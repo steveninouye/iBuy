@@ -13,7 +13,8 @@ class Api::UsersController < ApplicationController
       login(@user)
       render :create
     else
-      render json: @user.errors.full_messages, status: 402
+      p @user.errors.full_messages
+      render json: @user.errors.full_messages, status: 406
     end
   end
 
@@ -21,11 +22,12 @@ class Api::UsersController < ApplicationController
     if current_user.update(user_params)
       render :update
     else
-      render json: current_user.errors.full_messages, status: 402
+      render json: current_user.errors.full_messages, status: 406
     end
   end
   
   def destroy
+    #verify user credentials
     @user = current_user
     @user.destroy
     render :destroy

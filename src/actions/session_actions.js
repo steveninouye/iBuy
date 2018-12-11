@@ -15,7 +15,7 @@ export const login = (user) => (dispatch) =>
       (errors) =>
          dispatch({
             type: LOGIN_ERRORS,
-            errors
+            errors: errors.responseText
          })
    );
 
@@ -29,6 +29,6 @@ export const logout = () => (dispatch) =>
       (errors) =>
          dispatch({
             type: LOGOUT_ERRORS,
-            errors
+            errors: errors.responseText
          })
    );
