@@ -1,0 +1,55 @@
+{
+   "name": "ibuy",
+   "private": true,
+   "dependencies": {
+      "@babel/core": "^7.2.0",
+      "@babel/preset-env": "^7.2.0",
+      "@babel/preset-react": "^7.0.0",
+      "babel-loader": "^8.0.4",
+      "concurrently": "^4.1.0",
+      "react": "^16.6.3",
+      "react-dom": "^16.6.3",
+      "react-redux": "^6.0.0",
+      "react-router-dom": "^4.3.1",
+      "redux": "^4.0.1",
+      "redux-logger": "^3.0.6",
+      "redux-thunk": "^2.3.0",
+      "styled-components": "^4.1.2",
+      "webpack": "^4.27.1"
+   },
+   "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+   "version": "1.0.0",
+   "main": "index.js",
+   "directories": {
+      "lib": "lib",
+      "test": "test"
+   },
+   "scripts": {
+      "postinstall": "webpack",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "webpack --watch --mode=development",
+      "server": "concurrently -r -k \"webpack --watch --mode=development\" \"rails s\""
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/steveninouye/iBuy.git"
+   },
+   "keywords": [
+      "react",
+      "redux",
+      "postgresql",
+      "rails",
+      "ruby",
+      "ebay",
+      "clone"
+   ],
+   "author": "Steven Inouye",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/steveninouye/iBuy/issues"
+   },
+   "homepage": "https://github.com/steveninouye/iBuy#readme",
+   "devDependencies": {
+      "webpack-cli": "^3.1.2"
+   }
+}
