@@ -9,6 +9,10 @@ class UserForm extends React.Component {
       this.handleSubmit = this.handleSubmit.bind(this);
    }
 
+   // componentDidUpdate(prevProps, prevState, snapshot){
+   //    if()
+   // }
+
    handleChange(type) {
       return (e) => this.setState({ [type]: e.target.value });
    }
