@@ -34,6 +34,11 @@
 .right-nav-bar li {
    font-size: 1.2rem;
    padding: 0 1.2rem;
+
+   & .nav-username {
+      padding-right: 0.1rem;
+   }
+
    &:not(:first-child) {
       border-left: 0.1px solid rgb(70, 70, 70);
    }
@@ -73,15 +78,15 @@
             padding-left: 0.7rem;
             font-size: 3.2rem;
             font-weight: 500;
-            letter-spacing: -0.2rem;
+            letter-spacing: -0.3rem;
 
             // reference: https://stackoverflow.com/a/12065925
             display: inline-block;
-            -webkit-transform: scale(1.5, 1); /* Safari and Chrome */
-            -moz-transform: scale(1.5, 1); /* Firefox */
-            -ms-transform: scale(1.5, 1); /* IE 9 */
-            -o-transform: scale(1.5, 1); /* Opera */
-            transform: scale(1.5, 1);
+            -webkit-transform: scale(1.35, 1); /* Safari and Chrome */
+            -moz-transform: scale(1.35, 1); /* Firefox */
+            -ms-transform: scale(1.35, 1); /* IE 9 */
+            -o-transform: scale(1.35, 1); /* Opera */
+            transform: scale(1.35, 1);
 
             & span:nth-child(1) {
                color: #e53238;
@@ -144,7 +149,16 @@
          width: 30rem;
          font-size: 1.7rem;
          color: #767676;
+         padding-bottom: 2rem;
+         position: relative;
          animation: 0.4s ease-out 0s 1 appearAndZoomIn;
+
+         & .session--form-errors {
+            position: absolute;
+            height: 1rem;
+            width: 101%;
+            // background-color: gray;
+         }
 
          & .session--form-disclaimer {
             font-size: 1.2rem;
@@ -154,7 +168,12 @@
             }
          }
 
-         & div[class*='-container'] {
+         & div.username-input-container {
+            margin: 3rem 0 0 0;
+         }
+
+         & div.password-input-container,
+         & div.confirm-password-input-container {
             margin: 5.5rem 0 0 0;
          }
 

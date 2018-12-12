@@ -71,7 +71,7 @@ class UserForm extends React.Component {
             <div className="session--form-body">
                <form className="session-form" onSubmit={this.handleSubmit}>
                   <div className="session--form-errors">
-                     
+                     {/* this will be session errors*/}
                   </div>
                   <div className="username-input-container">
                      <input
