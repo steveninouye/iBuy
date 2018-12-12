@@ -113,7 +113,7 @@
       align-items: center;
       padding: 0 1.6rem;
 
-      & form {
+      & form.session-form {
          width: 30rem;
          font-size: 1.7rem;
          color: #767676;
@@ -126,8 +126,12 @@
             }
          }
 
-         & div[class*="-container"] {
+         & div[class*='-container'] {
             margin: 6rem 0 0 0;
+         }
+
+         & div.session--form-disclaimer {
+            margin: 2rem 0 1rem 0;
          }
 
          & input {
@@ -213,9 +217,19 @@
                transform: translateY(-5rem);
             }
          }
+         & div.session--form-disclaimer {
+            & a {
+               text-decoration: underline;
+               color: #006ffc;
+            }
+         }
 
          & input[type='submit'] {
+            border-radius: 1px;
+            padding: 0.8rem 0;
             background-color: #006ffc;
+            color: white;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
          }
       }
 
