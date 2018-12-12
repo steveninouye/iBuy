@@ -77,7 +77,7 @@ class UserForm extends React.Component {
             </div>
 
             <div className="session--form-body">
-               <form class="session-form" onSubmit={this.handleSubmit}>
+               <form className="session-form" onSubmit={this.handleSubmit}>
                   <div className="username-input-container">
                      <input
                         type="text"
@@ -143,7 +143,6 @@ class UserForm extends React.Component {
                   </div>
                </div>
             </div>
-            
          </div>
       );
    }
