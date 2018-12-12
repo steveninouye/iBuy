@@ -1,3 +1,23 @@
+@keyframes appearAndZoomIn {
+   0% {
+      opacity: 0;
+      transform: scale(0.5);
+   }
+   100% {
+      opacity: 100%;
+      transform: scale(1);
+   }
+}
+
+@keyframes slowAppearance {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 100%;
+   }
+}
+
 .nav-bar {
    display: flex;
    justify-content: space-between;
@@ -84,11 +104,8 @@
          display: flex;
          align-items: center;
 
-         & .already-a-member {
-            margin-right: 0.6rem;
-         }
-
          & a {
+            margin-left: 0.6rem;
             color: #0654ba;
             text-decoration: underline;
          }
@@ -103,6 +120,7 @@
       & h1 {
          font-size: 3.6rem;
          font-weight: 700;
+         animation: 0.4s ease-out 0s 1 appearAndZoomIn;
       }
 
       & h4 {
@@ -116,7 +134,7 @@
    }
 
    & .session--form-body {
-      margin-top: 3.2rem;
+      margin: 3.2rem 0 11vh 0;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -126,6 +144,7 @@
          width: 30rem;
          font-size: 1.7rem;
          color: #767676;
+         animation: 0.4s ease-out 0s 1 appearAndZoomIn;
 
          & .session--form-disclaimer {
             font-size: 1.2rem;
@@ -136,7 +155,7 @@
          }
 
          & div[class*='-container'] {
-            margin: 6rem 0 0 0;
+            margin: 5.5rem 0 0 0;
          }
 
          & div.session--form-disclaimer {
@@ -250,15 +269,24 @@
       & .session--form-body-separator {
          width: 100%;
          max-width: 17.4rem;
-         height: 36.2rem;
+         height: 40rem;
          position: relative;
 
          & .session--form-vert-line {
             height: 100%;
             width: 0.1rem;
             background-color: #ccc;
-            // border: 0.1rem solid #d9d9d9;
             margin: 0 auto;
+            animation: 7s ease-out 0s 1 slowAppearance;
+         }
+
+         @keyframes slideInFromBottom {
+            0% {
+               transform: translateY(15rem);
+            }
+            100% {
+               transform: translateY(0);
+            }
          }
 
          & .session--form-body-or {
@@ -270,60 +298,85 @@
             top: 48%;
             font-size: 1.4rem;
             background-color: white;
-            padding-top: 0.3rem;
-            padding-bottom: 0.3rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            animation: 0.5s ease-out 0s 1 slideInFromBottom;
+         }
+      }
+
+      & .session--form-companies {
+         width: 30rem;
+         display: flex;
+         flex-direction: column;
+
+         & .session--form-companies-fb,
+         & .session--form-companies-goo {
+            display: flex;
+            height: 4.8rem;
+            font-size: 1.9rem;
+            font-weight: 700;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px;
+            animation: 0.4s ease-out 0s 1 appearAndZoomIn;
+
+            & .fb-button-label {
+               margin-left: 1rem;
+            }
+
+            & .fa-google-plus-square {
+               font-size: 1.2em;
+            }
+
+            & .goo-button-label {
+               margin-left: 1rem;
+            }
+         }
+
+         & .session--form-companies-fb {
+            background-color: #0164d2;
+            color: white;
+
+            & .fa-facebook {
+               font-size: 1.2em;
+            }
+         }
+
+         & .session--form-companies-goo {
+            margin: 1.4rem 0 0 0;
+            color: black;
+            background-color: white;
+            border: 1px solid black;
+
+            & .session--form-goo-logo {
+               width: 1.4em;
+               height: 1.4em;
+               background-size: contain;
+               background-image: url('/assets/google-logo.png');
+            }
          }
       }
    }
 
-   & .session--form-companies {
-      width: 30rem;
+   & .session--form-footer {
+      position: fixed;
+      height: 9vh;
+      width: 100vw;
+      bottom: 0;
+      border-top: 1px solid rgb(185, 185, 185);
       display: flex;
-      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      background-color: white;
 
-      & .session--form-companies-fb,
-      & .session--form-companies-goo {
-         display: flex;
-         height: 4.8rem;
-         background-color: #0164d2;
-         font-size: 1.9rem;
-         font-weight: 700;
-         justify-content: center;
-         align-items: center;
-         border-radius: 3px;
+      & p {
+         font-size: 1.1rem;
+         position: absolute;
+         bottom: 25%;
 
-         & .fb-button-label {
-            margin-left: 1rem;
-         }
-
-         & .fa-google-plus-square {
-            font-size: 1.2em;
-         }
-
-         & .goo-button-label {
-            margin-left: 1rem;
-         }
-      }
-
-      & .session--form-companies-fb {
-         color: white;
-
-         & .fa-facebook {
-            font-size: 1.2em;
-         }
-      }
-
-      & .session--form-companies-goo {
-         margin: 1.4rem 0 0 0;
-         color: black;
-         background-color: white;
-         border: 1px solid black;
-
-         & .session--form-goo-logo {
-            width: 1.4em;
-            height: 1.4em;
-            background-size: contain;
-            background-image: url('/assets/google-logo.png');
+         & a {
+            text-decoration: underline;
+            color: #0654ba;
          }
       }
    }

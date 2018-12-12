@@ -1,14 +1,21 @@
+import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import UserForm from './UserForm';
 import { signUpUser } from '../../actions/user_actions';
-import {signUpFormType} from '../../utils/form_types_utils'
 
 const mapStateToProps = (state, ownProps) => {
    return {
       user: { username: '', password: '', confirm_password: '' },
-      formType: signUpFormType,
-      submitButton: 'Sign Up'
+      header: 'Create an Account',
+      submitBtn: 'Create Account',
+      companyBtnPrompt: 'Continue',
+      headerPrompt: (
+         <>
+            Already a member? <Link to="/signin">Sign In</Link>
+         </>
+      )
    };
 };
 

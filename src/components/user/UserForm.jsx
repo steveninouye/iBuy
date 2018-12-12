@@ -1,18 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { loginFormType } from '../../utils/form_types_utils';
-
 class UserForm extends React.Component {
    constructor(props) {
       super(props);
       this.state = this.props.user;
       this.handleSubmit = this.handleSubmit.bind(this);
    }
-
-   // componentDidUpdate(prevProps, prevState, snapshot){
-   //    if()
-   // }
 
    handleChange(type) {
       return (e) => this.setState({ [type]: e.target.value });
@@ -29,7 +23,7 @@ class UserForm extends React.Component {
    }
 
    confirmPassword() {
-      return this.props.formType === loginFormType ? (
+      return this.props.loginForm ? (
          ''
       ) : (
          <div className="confirm-password-input-container">
@@ -52,6 +46,7 @@ class UserForm extends React.Component {
    }
 
    render() {
+      const { header, submitBtn, companyBtnPrompt, headerPrompt } = this.props;
       return (
          <div className="session--form">
             <div className="session--form-header">
@@ -63,14 +58,11 @@ class UserForm extends React.Component {
                      <span>y</span>
                   </Link>
                </div>
-               <div className="form--options">
-                  <span className="already-a-member">Already a member?</span>
-                  <Link to="/signin">Sign In</Link>
-               </div>
+               <div className="form--options">{headerPrompt}</div>
             </div>
 
             <div className="session--form-h">
-               <h1>Create an account</h1>
+               <h1>{header}</h1>
                <h4>
                   Have a business? <span>Create a business account</span>
                </h4>
@@ -78,6 +70,9 @@ class UserForm extends React.Component {
 
             <div className="session--form-body">
                <form className="session-form" onSubmit={this.handleSubmit}>
+                  <div className="session--form-errors">
+                     
+                  </div>
                   <div className="username-input-container">
                      <input
                         type="text"
@@ -113,14 +108,14 @@ class UserForm extends React.Component {
                   </div>
                   {this.confirmPassword()}
                   <div className="session--form-disclaimer">
-                     This is portfolio site and not meant for commercial use. No
-                     transactions can be made and no personal information will
-                     be required. For any questions or concerns
+                     This is a portfolio site and not meant for commercial use.
+                     No transactions can be made and no personal information
+                     will be required. For any questions or concerns
                      <a href="https://www.linkedin.com/in/steveninouye/">
                         Click Here
                      </a>
                   </div>
-                  <input type="submit" value={this.props.submitButton} />
+                  <input type="submit" value={submitBtn} />
                </form>
 
                <div className="session--form-body-separator">
@@ -132,16 +127,27 @@ class UserForm extends React.Component {
                   <div className="session--form-companies-fb">
                      <i className="fab fa-facebook" />
                      <span className="fb-button-label">
-                        Continue with Facebook
+                        {companyBtnPrompt} with Facebook
                      </span>
                   </div>
                   <div className="session--form-companies-goo">
                      <span className="session--form-goo-logo" />
                      <span className="goo-button-label">
-                        Continue with Google
+                        {companyBtnPrompt} with Google
                      </span>
                   </div>
                </div>
+            </div>
+
+            <div className="session--form-footer">
+               <p>
+                  This is a portfolio project created by{' '}
+                  <a href="https://www.linkedin.com/in/steveninouye/">
+                     Steven Inouye
+                  </a>{' '}
+                  and not meant for commercial use. Inspiration created from{' '}
+                  <a href="https://www.ebay.com/">Ebay.com</a>
+               </p>
             </div>
          </div>
       );
