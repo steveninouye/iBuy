@@ -68,6 +68,7 @@ class UserForm extends React.Component {
                   Have a business? <span>Create a business account</span>
                </h4>
             </div>
+            
             <div className="session--form-body">
                <form onSubmit={this.handleSubmit}>
                   <label>
@@ -100,11 +101,16 @@ class UserForm extends React.Component {
 
                <div className="session--form-companies">
                   <div className="session--form-companies-fb">
-                     <i class="fab fa-facebook" /> Continue with Facebook
+                     <i className="fab fa-facebook" />
+                     <span className="fb-button-label">
+                        Continue with Facebook
+                     </span>
                   </div>
                   <div className="session--form-companies-goo">
-                     <i class="fab fa-google-plus-square" /> Continue with
-                     Google
+                     <span className="session--form-goo-logo" />
+                     <span className="goo-button-label">
+                        Continue with Google
+                     </span>
                   </div>
                </div>
             </div>

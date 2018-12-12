@@ -110,7 +110,14 @@
       margin-top: 3.2rem;
       display: flex;
       justify-content: center;
+      align-items: center;
       padding: 0 1.6rem;
+
+      & form {
+         width: 30rem;
+
+         
+      }
 
       & .session--form-body-separator {
          width: 100%;
@@ -120,9 +127,9 @@
 
          & .session--form-vert-line {
             height: 100%;
-            width: 0.2rem;
+            width: 0.1rem;
             background-color: #ccc;
-            border: 0.1rem solid #d9d9d9;
+            // border: 0.1rem solid #d9d9d9;
             margin: 0 auto;
          }
 
@@ -151,19 +158,45 @@
          display: flex;
          height: 4.8rem;
          background-color: #0164d2;
-         font-size: 2rem;
-         color: white;
+         font-size: 1.9rem;
          font-weight: 700;
          justify-content: center;
          align-items: center;
-         & i {
-            padding-right: 0.5rem;
+         border-radius: 3px;
+
+         & .fb-button-label {
+            margin-left: 1rem;
+         }
+
+         & .fa-google-plus-square {
+            font-size: 1.2em;
+         }
+
+         & .goo-button-label {
+            margin-left: 1rem;
+         }
+      }
+
+      & .session--form-companies-fb {
+         color: white;
+
+         & .fa-facebook {
+            font-size: 1.2em;
          }
       }
 
       & .session--form-companies-goo {
          margin: 1.4rem 0 0 0;
-         background-color: #f5af04;
+         color: black;
+         background-color: white;
+         border: 1px solid black;
+
+         & .session--form-goo-logo {
+            width: 1.4em;
+            height: 1.4em;
+            background-size: contain;
+            background-image: url('/assets/google-logo.png');
+         }
       }
    }
 }
