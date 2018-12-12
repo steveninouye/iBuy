@@ -1,10 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+import NavBarContainer from '../navbar/NavBarContainer';
 
 class Home extends React.Component {
    render() {
       return (
          <>
+            <NavBarContainer />
             <h1>Home Page</h1>
          </>
       );

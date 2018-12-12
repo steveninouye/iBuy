@@ -10,10 +10,40 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
  *= require_self
  */
 
-h1 {
-   color: blue;
+html {
+   font-size: 10px;
 }
+
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font: inherit;
+   color: inherit;
+   box-sizing: inherit;
+   background: transparent;
+   text-decoration: none;
+   font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, Sans-serif;
+   // border: 1px solid rgb(228, 228, 228);
+}
+
+ul {
+   list-style: none;
+}
+
+img {
+   display: block;
+   width: 100%;
+   height: auto;
+}
+
+button,
+input[type='submit'] {
+   cursor: pointer;
+}
+
+@import 'nav-bar';
