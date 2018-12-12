@@ -1,4 +1,6 @@
 class Api::UsersController < ApplicationController
+  before_action :snakecase_params
+
   def index
     @users = User.all
   end
@@ -37,5 +39,9 @@ class Api::UsersController < ApplicationController
 
   def user_params
     params.require(:user).permit(:username, :password, :confirm_password, :location)
+  end
+
+  def snakecase_params
+    params[:user] = params[:user].transform_keys(&:underscore)
   end
 end

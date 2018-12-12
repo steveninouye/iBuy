@@ -115,8 +115,108 @@
 
       & form {
          width: 30rem;
+         font-size: 1.7rem;
+         color: #767676;
 
-         
+         & .session--form-disclaimer {
+            font-size: 1.2rem;
+
+            & a {
+               padding-left: 0.3rem;
+            }
+         }
+
+         & div[class*="-container"] {
+            margin: 6rem 0 0 0;
+         }
+
+         & input {
+            width: 100%;
+         }
+
+         & input:not([type='submit']) {
+            border-bottom: 1px solid black;
+         }
+
+         & div.username-input-container {
+            position: relative;
+
+            & label.session-form-username-label {
+               display: block;
+               position: absolute;
+               transition: transform 1s ease;
+               transform: translateY(0);
+               top: 0;
+               cursor: text;
+            }
+
+            & label.session-form-username-label:hover {
+               color: blue;
+            }
+
+            & input[name='username'] {
+               background-color: transparent;
+               z-index: 2;
+               display: inline-block;
+            }
+
+            & input[name='username']:focus + label,
+            & input[name='username']:valid + label {
+               color: blue;
+               transform: translateY(-5rem);
+            }
+         }
+
+         & div.password-input-container {
+            position: relative;
+
+            & label.session-form-password-label {
+               display: block;
+               position: absolute;
+               transition: transform 1s ease;
+               transform: translateY(0);
+               top: 0;
+               cursor: text;
+            }
+
+            & input[name='password'] {
+               background-color: transparent;
+               z-index: 2;
+               display: inline-block;
+            }
+
+            & input[name='password']:focus + label,
+            & input[name='password']:valid + label {
+               transform: translateY(-5rem);
+            }
+         }
+         & div.confirm-password-input-container {
+            position: relative;
+
+            & label.session-form-confirm-password-label {
+               display: block;
+               position: absolute;
+               transition: transform 1s ease;
+               transform: translateY(0);
+               top: 0;
+               cursor: text;
+            }
+
+            & input[name='confirm-password'] {
+               background-color: transparent;
+               z-index: 2;
+               display: inline-block;
+            }
+
+            & input[name='confirm-password']:focus + label,
+            & input[name='confirm-password']:valid + label {
+               transform: translateY(-5rem);
+            }
+         }
+
+         & input[type='submit'] {
+            background-color: #006ffc;
+         }
       }
 
       & .session--form-body-separator {
