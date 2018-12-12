@@ -50,9 +50,18 @@
          margin-bottom: 0.5rem;
 
          & a {
+            padding-left: 0.7rem;
             font-size: 3.2rem;
             font-weight: 500;
             letter-spacing: -0.2rem;
+
+            // reference: https://stackoverflow.com/a/12065925
+            display: inline-block;
+            -webkit-transform: scale(1.5, 1); /* Safari and Chrome */
+            -moz-transform: scale(1.5, 1); /* Firefox */
+            -ms-transform: scale(1.5, 1); /* IE 9 */
+            -o-transform: scale(1.5, 1); /* Opera */
+            transform: scale(1.5, 1);
 
             & span:nth-child(1) {
                color: #e53238;
@@ -148,26 +157,25 @@
             & label.session-form-username-label {
                display: block;
                position: absolute;
-               transition: transform 1s ease;
+               transition: transform 300ms ease-out, font-size 300ms ease-out;
                transform: translateY(0);
-               top: 0;
+               top: 0.4rem;
                cursor: text;
-            }
-
-            & label.session-form-username-label:hover {
-               color: blue;
             }
 
             & input[name='username'] {
                background-color: transparent;
                z-index: 2;
                display: inline-block;
+               padding: 0.3rem;
+               color: rgb(31, 31, 31);
             }
 
+            // reference: https://css-tricks.com/float-labels-css/
             & input[name='username']:focus + label,
             & input[name='username']:valid + label {
-               color: blue;
-               transform: translateY(-5rem);
+               transform: translateY(-2.2rem);
+               font-size: 1.2rem;
             }
          }
 
@@ -177,9 +185,9 @@
             & label.session-form-password-label {
                display: block;
                position: absolute;
-               transition: transform 1s ease;
+               transition: transform 300ms ease-out, font-size 300ms ease-out;
                transform: translateY(0);
-               top: 0;
+               top: 0.4rem;
                cursor: text;
             }
 
@@ -187,11 +195,14 @@
                background-color: transparent;
                z-index: 2;
                display: inline-block;
+               padding: 0.3rem;
+               color: rgb(31, 31, 31);
             }
 
             & input[name='password']:focus + label,
             & input[name='password']:valid + label {
-               transform: translateY(-5rem);
+               transform: translateY(-2.2rem);
+               font-size: 1.2rem;
             }
          }
          & div.confirm-password-input-container {
@@ -200,9 +211,9 @@
             & label.session-form-confirm-password-label {
                display: block;
                position: absolute;
-               transition: transform 1s ease;
+               transition: transform 300ms ease-out, font-size 300ms ease-out;
                transform: translateY(0);
-               top: 0;
+               top: 0.4rem;
                cursor: text;
             }
 
@@ -210,11 +221,14 @@
                background-color: transparent;
                z-index: 2;
                display: inline-block;
+               padding: 0.3rem;
+               color: rgb(31, 31, 31);
             }
 
             & input[name='confirm-password']:focus + label,
             & input[name='confirm-password']:valid + label {
-               transform: translateY(-5rem);
+               transform: translateY(-2.2rem);
+               font-size: 1.2rem;
             }
          }
          & div.session--form-disclaimer {
