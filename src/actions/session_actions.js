@@ -32,3 +32,6 @@ export const logout = () => (dispatch) =>
             errors: errors.responseText
          })
    );
+
+export const demoLogin = () =>
+   login({ username: 'FluffyKittensSF', password: 'password' });

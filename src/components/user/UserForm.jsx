@@ -8,6 +8,10 @@ class UserForm extends React.Component {
       this.handleSubmit = this.handleSubmit.bind(this);
    }
 
+   componentDidMount() {
+      this.props.clearSessionErrors();
+   }
+
    handleChange(type) {
       return (e) => this.setState({ [type]: e.target.value });
    }
@@ -46,7 +50,13 @@ class UserForm extends React.Component {
    }
 
    render() {
-      const { header, submitBtn, companyBtnPrompt, headerPrompt } = this.props;
+      const {
+         header,
+         submitBtn,
+         companyBtnPrompt,
+         headerPrompt,
+         demoLogin
+      } = this.props;
       return (
          <div className="session--form">
             <div className="session--form-header">
@@ -64,15 +74,17 @@ class UserForm extends React.Component {
             <div className="session--form-h">
                <h1>{header}</h1>
                <h4>
-                  Have a business? <span>Create a business account</span>
+                  Hiring? Try the <span onClick={demoLogin}>Demo Account</span>
                </h4>
             </div>
 
             <div className="session--form-body">
                <form className="session-form" onSubmit={this.handleSubmit}>
-                  <div className="session--form-errors">
-                     {/* this will be session errors*/}
-                  </div>
+                  <ul className="session--form-errors">
+                     {this.props.errors.map((error, idx) => (
+                        <li key={`session-error${idx}`}>{error}</li>
+                     ))}
+                  </ul>
                   <div className="username-input-container">
                      <input
                         type="text"
@@ -111,7 +123,10 @@ class UserForm extends React.Component {
                      This is a portfolio site and not meant for commercial use.
                      No transactions can be made and no personal information
                      will be required. For any questions or concerns
-                     <a href="https://www.linkedin.com/in/steveninouye/">
+                     <a
+                        tabIndex="5"
+                        href="https://www.linkedin.com/in/steveninouye/"
+                     >
                         Click Here
                      </a>
                   </div>
@@ -124,16 +139,31 @@ class UserForm extends React.Component {
                </div>
 
                <div className="session--form-companies">
-                  <div className="session--form-companies-fb">
+                  <div
+                     className="session--form-companies-fb"
+                     onClick={demoLogin}
+                  >
                      <i className="fab fa-facebook" />
                      <span className="fb-button-label">
                         {companyBtnPrompt} with Facebook
                      </span>
                   </div>
-                  <div className="session--form-companies-goo">
+                  <div
+                     className="session--form-companies-goo"
+                     onClick={demoLogin}
+                  >
                      <span className="session--form-goo-logo" />
                      <span className="goo-button-label">
                         {companyBtnPrompt} with Google
+                     </span>
+                  </div>
+                  <div
+                     className="session--form-companies-demo"
+                     onClick={demoLogin}
+                  >
+                     <span className="session--form-demo-logo" />
+                     <span className="demo-button-label">
+                        {companyBtnPrompt} with a Demo Account
                      </span>
                   </div>
                </div>
@@ -145,7 +175,7 @@ class UserForm extends React.Component {
                   <a href="https://www.linkedin.com/in/steveninouye/">
                      Steven Inouye
                   </a>{' '}
-                  and not meant for commercial use. Inspiration created from{' '}
+                  and not meant for commercial use. Inspired by{' '}
                   <a href="https://www.ebay.com/">Ebay.com</a>
                </p>
             </div>

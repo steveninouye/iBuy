@@ -3,12 +3,14 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import UserForm from '../user/UserForm';
-import { login } from '../../actions/session_actions';
+import { login, demoLogin } from '../../actions/session_actions';
+import { clearSessionErrors } from '../../actions/errors_actions';
 
 const mapStateToProps = (state, ownProps) => {
    return {
       user: { username: '', password: '', confirm_password: '' },
       loginForm: true,
+      errors: state.errors.session,
       header: 'Aloha!',
       submitBtn: 'Sign In',
       companyBtnPrompt: 'Sign In',
@@ -22,7 +24,9 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch) => {
    return {
-      action: (user) => dispatch(login(user))
+      action: (user) => dispatch(login(user)),
+      demoLogin: () => dispatch(demoLogin()),
+      clearSessionErrors: () => dispatch(clearSessionErrors())
    };
 };
 
