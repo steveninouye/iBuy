@@ -2,7 +2,7 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   padding: 0 6rem;
+   padding: 1.1rem 6rem;
 }
 
 form.home--search-container {
@@ -10,11 +10,14 @@ form.home--search-container {
    font-size: 1.8rem;
    width: 100%;
    align-items: center;
+   justify-content: space-around;
 
    & div.home--main-logo {
-      font-size: 3.2rem;
+      padding: 0 0 0.5rem 0.2rem;
+      font-size: 3.7rem;
       font-weight: 500;
       letter-spacing: -0.3rem;
+      text-shadow: 0 2px 0 rgba(138, 138, 138, 0.2);
 
       // reference: https://stackoverflow.com/a/12065925
       display: inline-block;
@@ -51,6 +54,7 @@ form.home--search-container {
 
       & div.home--category-dropdown-text {
          width: 5rem;
+         text-shadow: 0 1px 0 rgba(138, 138, 138, 0.2);
       }
 
       & i.fa-caret-down {
@@ -58,21 +62,43 @@ form.home--search-container {
    }
 
    & input[type='text'] {
-      max-width: 50%;
+      font-size: 1.6rem;
+      max-width: 60%;
       flex-shrink: 4;
-      flex-grow: 2;
+      flex-grow: 7;
+      padding: 1rem 0 0.9rem 0.8rem;
+      border-radius: 0.3rem;
+      color: #767676;
+      box-shadow: -0.1rem 0.1rem 0.2rem 0.1rem rgb(200, 200, 200);
    }
-   & select {
-      font-size: 1.3rem;
-      flex-shrink: 1;
+   & div.home--category-select-container {
+      overflow: hidden;
+      height: 3.7rem;
+      margin: 0 0.2rem;
+      border-radius: 0.3rem;
+      box-shadow: -0.1rem 0.1rem 0.2rem 0.1rem rgb(200, 200, 200);
+      display: flex;
+      align-items: center;
+
+      & select {
+         font-size: 1.2rem;
+      }
    }
 
    & input[type='submit'] {
-      background-color: rgb(113, 158, 218);
+      font-size: 1.5rem;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+      color: white;
+      background-color: #00509d;
+      height: 3.7rem;
+      padding: 0 1.2rem;
+      border-radius: 0.3rem;
+      box-shadow: -0.1rem 0.1rem 0.2rem 0.1rem rgb(200, 200, 200);
    }
 
    & a {
       font-size: 1.1rem;
+      text-shadow: 0 1px 0 rgba(138, 138, 138, 0.2);
    }
 }
 
