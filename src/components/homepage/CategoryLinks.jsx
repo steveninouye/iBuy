@@ -4,7 +4,7 @@ const CategoryLinks = (props) => (
    <ul className="home--category-links">
       <li>Home</li>
       <li>
-         <i class="fas fa-heart" />
+         <i className="fas fa-heart" />
          Saved
       </li>
       <li>Motors</li>
