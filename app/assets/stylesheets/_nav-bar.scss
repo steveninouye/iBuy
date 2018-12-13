@@ -148,7 +148,7 @@
    }
 
    & .right-nav-bar {
-      & li.nav--bell-icon {
+      & li.nav--bell-icon.nav-bar--links {
          border-left: 0;
 
          & .fa-bell {
@@ -158,7 +158,7 @@
          }
       }
 
-      & li.nav--shopping-cart-icon {
+      & li.nav--shopping-cart-icon.nav-bar--links {
          border-left: 0;
 
          & .fa-shopping-cart {
