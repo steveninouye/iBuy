@@ -8,24 +8,26 @@ class Search extends React.Component {
    }
    render() {
       return (
-         <div className="home--search-container">
+         <form className="home--search-container">
             <div className="home--main-logo">
-               <span>i</span>
-               <span>b</span>
-               <span>u</span>
-               <span>y</span>
+               <span className="logo-letter">i</span>
+               <span className="logo-letter">b</span>
+               <span className="logo-letter">u</span>
+               <span className="logo-letter">y</span>
             </div>
             <div className="home--category-dropdown">
-               Shop by category <i className="fas fa-caret-down" />
+               <div className="home--category-dropdown-text">
+                  Shop by Category
+               </div>
+               <i className="fas fa-caret-down" />
             </div>
-            <form>
-               <input type="text" placeholder="Search for anything" />
 
-               <SelectCategories />
-               <input type="submit" value="Search" />
-               <a href="javascript:;">Advanced</a>
-            </form>
-         </div>
+            <input type="text" placeholder="Search for anything" />
+
+            <SelectCategories />
+            <input type="submit" value="Search" />
+            <a href="javascript:;">Advanced</a>
+         </form>
       );
    }
 }

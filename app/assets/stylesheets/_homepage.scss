@@ -2,6 +2,78 @@
    display: flex;
    flex-direction: column;
    align-items: center;
+   padding: 0 6rem;
+}
+
+form.home--search-container {
+   display: flex;
+   font-size: 1.8rem;
+   width: 100%;
+   align-items: center;
+
+   & div.home--main-logo {
+      font-size: 3.2rem;
+      font-weight: 500;
+      letter-spacing: -0.3rem;
+
+      // reference: https://stackoverflow.com/a/12065925
+      display: inline-block;
+      -webkit-transform: scale(1.35, 1); /* Safari and Chrome */
+      -moz-transform: scale(1.35, 1); /* Firefox */
+      -ms-transform: scale(1.35, 1); /* IE 9 */
+      -o-transform: scale(1.35, 1); /* Opera */
+      transform: scale(1.35, 1);
+
+      & span.logo-letter:nth-child(1) {
+         color: #e53238;
+      }
+
+      & span.logo-letter:nth-child(2) {
+         color: #0164d2;
+      }
+
+      & span.logo-letter:nth-child(3) {
+         color: #f5af04;
+      }
+
+      & span.logo-letter:nth-child(4) {
+         color: #86b817;
+      }
+   }
+
+   & div.home--category-dropdown {
+      display: flex;
+      margin-left: 2rem;
+      width: 7rem;
+      font-size: 1.2rem;
+      word-wrap: normal;
+      align-items: center;
+
+      & div.home--category-dropdown-text {
+         width: 5rem;
+      }
+
+      & i.fa-caret-down {
+      }
+   }
+
+   & input[type='text'] {
+      max-width: 50%;
+      flex-shrink: 4;
+      flex-grow: 2;
+   }
+   & select {
+      font-size: 1.3rem;
+      flex-shrink: 1;
+   }
+
+   & input[type='submit'] {
+      background-color: rgb(113, 158, 218);
+   }
+
+   & a {
+      font-size: 1.1rem;
+   }
 }
 
 ul.home--category-links {
@@ -10,9 +82,7 @@ ul.home--category-links {
 
 div.home--banner {
    height: 5rem;
-   max-width: 100rem;
    background-color: skyblue;
-   z-index: 2;
    width: 100%;
 }
 
