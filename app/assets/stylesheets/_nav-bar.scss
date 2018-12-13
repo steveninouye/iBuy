@@ -62,6 +62,8 @@
             border: 1px solid rgb(209, 209, 209);
             box-shadow: 0 0 0.2rem rgb(168, 168, 168);
             border-radius: 0.5rem;
+            transition: opacity 0.3s, height 0.1s;
+            overflow: hidden;
 
             & li.nav--user-dropdown-item {
                border-left: none;
@@ -88,6 +90,11 @@
                      display: flex;
                      flex-direction: column;
                      align-items: center;
+
+                     & .fa-star {
+                        color: rgb(0, 26, 255);
+                        text-shadow: 1px 1px 1px black;
+                     }
                   }
                }
 

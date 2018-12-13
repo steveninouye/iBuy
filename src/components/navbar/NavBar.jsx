@@ -5,12 +5,15 @@ class NavBar extends React.Component {
    constructor(props) {
       super(props);
       this.state = {
-         dropdown: { display: 'none' }
+         dropdown: { opacity: 0, height: 0 }
       };
    }
 
    toggleDropdown(value) {
-      return () => this.setState({ dropdown: { display: value } });
+      return () =>
+         this.setState({
+            dropdown: { opacity: value, height: `${value * 13}rem` }
+         });
    }
 
    render() {
@@ -19,8 +22,8 @@ class NavBar extends React.Component {
          <>
             <li
                className="nav-welcome nav-bar--links"
-               onMouseOver={this.toggleDropdown('')}
-               onMouseLeave={this.toggleDropdown('none')}
+               onMouseOver={this.toggleDropdown(1)}
+               onMouseLeave={this.toggleDropdown(0)}
             >
                Hi <span className="nav-username">{username}</span>!
                <i className="fas fa-caret-down" />
@@ -31,7 +34,8 @@ class NavBar extends React.Component {
                      <div className="dropdown-username-stars">
                         <div>{username}</div>
                         <div>
-                           (174 <i className="fas fa-star" />)
+                           ( 174
+                           <i className="fas fa-star" />)
                         </div>
                      </div>
                   </li>
