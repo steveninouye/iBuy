@@ -18,4 +18,5 @@ const NavBarContainer = connect(
    mapStateToProps,
    mapDispatchToProps
 )(NavBar);
+
 export default NavBarContainer;

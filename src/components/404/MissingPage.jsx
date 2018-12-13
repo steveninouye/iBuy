@@ -1,13 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Search from '../homepage/Search';
+import NavBarContainer from '../navbar/NavBarContainer';
 
-const Page404 = ({ message }) => (
+const MissingPage = ({ message }) => (
    <div id="page-not-found">
+      <div className="page-not-found-header-background" />
+      <NavBarContainer />
+      <Search />
       <div id="page-not-found--message">
-         <div className="page-not-found--header">404 Page Not Found</div>{' '}
-         <div className="page-not-found--text">
-            If you want to start over, <Link to="/">go to the homepage</Link>.
-            If you want a new color, <a href="javascript:;">Click Here</a>
+         <div className="page-not-found--header">
+            {message}
+            <div className="page-not-found--text">
+               If you want to start over, <Link to="/">go to the homepage</Link>
+               . If you want a new color, <a href="javascript:;">Click Here</a>
+            </div>
          </div>
       </div>
       <div id="sprite-road">
@@ -34,4 +41,4 @@ const Page404 = ({ message }) => (
    </div>
 );
 
-export default Page404;
+export default MissingPage;
