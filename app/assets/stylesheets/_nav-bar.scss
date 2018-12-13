@@ -49,12 +49,14 @@
             height: 2rem;
             width: 100%;
             position: absolute;
+            transform: translateY(100%);
          }
 
          & ul.nav--user-dropdown {
+            z-index: 2;
             position: absolute;
             width: 150%;
-            transform: translateY(1rem);
+            transform: translateY(65%);
             background-color: white;
             padding: 0;
             display: flex;
@@ -69,7 +71,7 @@
 
             & li.nav--user-dropdown-item {
                border-left: none;
-               height: 3rem;
+               height: 4rem;
                width: 90%;
                display: flex;
                align-items: center;
