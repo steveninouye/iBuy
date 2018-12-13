@@ -43,7 +43,7 @@ class UserForm extends React.Component {
                className="session-form-confirm-password-label"
                htmlFor="confirm-password"
             >
-               Confirm Your Password:
+               Confirm Your Password
             </label>
          </div>
       );
@@ -99,7 +99,7 @@ class UserForm extends React.Component {
                         className="session-form-username-label"
                         htmlFor="username"
                      >
-                        Username:
+                        Username
                      </label>
                   </div>
                   <div className="password-input-container">
@@ -115,7 +115,7 @@ class UserForm extends React.Component {
                         className="session-form-password-label"
                         htmlFor="password"
                      >
-                        Password:
+                        Password
                      </label>
                   </div>
                   {this.confirmPassword()}

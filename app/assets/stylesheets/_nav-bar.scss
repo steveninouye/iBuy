@@ -489,7 +489,7 @@
             font-weight: 700;
             justify-content: center;
             align-items: center;
-            border-radius: 3px;
+            border-radius: 2px;
             animation: 0.4s ease-out 0s 1 appearAndZoomIn;
             transition: transform 100ms ease-out, box-shadow 100ms ease-out;
             box-shadow: 0rem 0rem 0.1rem 0rem grey;
@@ -521,15 +521,12 @@
 
          & .session--form-companies-fb {
             background-color: #0164d2;
+            border: 1px solid #0164d2;
             color: white;
 
             & .fa-facebook {
-               font-size: 1.2em;
+               font-size: 1.4em;
             }
-         }
-
-         & .session--form-companies-fb {
-            border: 1px solid #0164d2;
          }
 
          & .session--form-companies-goo {
