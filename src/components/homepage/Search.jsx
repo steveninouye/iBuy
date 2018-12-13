@@ -23,6 +23,7 @@ class Search extends React.Component {
 
                <SelectCategories />
                <input type="submit" value="Search" />
+               <a href="javascript:;">Advanced</a>
             </form>
          </div>
       );
