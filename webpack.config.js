@@ -4,7 +4,8 @@ module.exports = {
    entry: './src/App.jsx',
    output: {
       path: path.join(__dirname, 'app', 'assets', 'javascripts'),
-      filename: 'bundle.js'
+      filename: 'bundle.js',
+      publicPath: '/app/assets'
    },
    module: {
       rules: [
