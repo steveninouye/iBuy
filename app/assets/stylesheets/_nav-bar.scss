@@ -80,7 +80,7 @@
                      height: 4rem;
                      width: 4rem;
                      background-size: contain;
-                     background-image: image_url('avatar.png');
+                     background-image: image-url('avatar.png');
                   }
 
                   & div.dropdown-username-stars {
@@ -518,7 +518,7 @@
                width: 1.4em;
                height: 1.4em;
                background-size: contain;
-               background-image: url('/assets/google-logo.png');
+               background-image: image-url('/assets/google-logo.png');
             }
          }
 
