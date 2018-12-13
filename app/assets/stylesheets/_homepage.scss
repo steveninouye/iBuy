@@ -159,7 +159,7 @@ div.home--banner {
 }
 
 div.home--recently-viewed-items {
-   margin-top: 1rem;
+   margin-top: 2.2rem;
    display: flex;
    justify-content: space-around;
    width: 100%;
@@ -168,7 +168,8 @@ div.home--recently-viewed-items {
 
    & span.home--recently-viewed-items-heading {
       position: absolute;
-      top: -0.5rem;
+      top: -1.1rem;
+      font-size: 1.4rem;
    }
 
    & div.home--recently-viewed-item {
@@ -178,6 +179,7 @@ div.home--recently-viewed-items {
 
       & div.home--recently-viewed-item-pic {
          & img {
+            border-radius: 0.2rem;
          }
       }
 
@@ -185,5 +187,24 @@ div.home--recently-viewed-items {
          font-size: 1.7rem;
          font-weight: 500;
       }
+   }
+}
+
+div.home--category-bars {
+   display: flex;
+   margin-top: 3.5rem;
+   justify-content: center;
+   flex-wrap: wrap;
+   width: 99%;
+
+   & div.home--category-bar-item {
+      padding: 0.5rem;
+      height: 4.2rem;
+      width: 29vw;
+      min-width: 29rem;
+      margin: 0.7rem 0.35rem 0 0.35rem;
+      background-color: #86b817;
+      border-radius: 0.2rem;
+      font-size: 1.5rem;
    }
 }

@@ -5,6 +5,7 @@ import Search from './Search';
 import CategoryLinks from './CategoryLinks';
 import HomeBanner from './HomeBanner';
 import RecentlyViewedItems from './RecentlyViewedItems';
+import CategoryBars from './CategoryBars';
 
 class Home extends React.Component {
    render() {
@@ -16,6 +17,7 @@ class Home extends React.Component {
                <CategoryLinks />
                <HomeBanner />
                <RecentlyViewedItems />
+               <CategoryBars />
             </div>
          </>
       );
