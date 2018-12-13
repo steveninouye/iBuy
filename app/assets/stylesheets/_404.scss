@@ -1,0 +1,115 @@
+// reference: https://www.youtube.com/watch?v=HMxAwpdmHpM
+
+div#page-not-found {
+   height: 100vh;
+   width: 100%;
+   background-color: pink;
+   position: relative;
+
+   @keyframes jumping {
+      0% {
+         background-position: 0px;
+      }
+      100% {
+         background-position: 160rem;
+      }
+   }
+
+   @keyframes forward {
+      0% {
+         transform: translateX(-18rem);
+      }
+      100% {
+         transform: translateX(100vw);
+      }
+   }
+
+   & div#page-not-found--message {
+      // font-family: 'Comic Sans MS';
+      position: absolute;
+      margin-top: 8%;
+      width: 100%;
+      text-align: center;
+
+      & a {
+         text-decoration: underline;
+         color: #0654ba;
+      }
+
+      & div.page-not-found--header {
+         font-size: 4.8rem;
+         font-weight: 500;
+      }
+
+      & div.page-not-found--text {
+         margin-top: 1rem;
+         font-size: 1.6rem;
+         font-weight: 500;
+      }
+   }
+
+   & div#sprite-road {
+      height: 69%;
+      border-bottom: 0.7rem dashed black;
+      display: flex;
+      align-items: flex-end;
+
+      & div#panda-sprite {
+         // reference: https://medium.com/@LatePanda/late-panda-by-late-panda-e4f183be56df
+         background-image: image-url('panda_sprite.png');
+         width: 17.77rem;
+         height: 14rem;
+         animation: jumping 1s steps(9) infinite, forward 6.2s linear infinite;
+      }
+   }
+
+   & div.page-not-found--footer {
+      position: fixed;
+      height: 3rem;
+      width: 100vw;
+      bottom: 0;
+      border-top: 1px solid rgb(185, 185, 185);
+      display: grid;
+      grid-template-columns: minmax(5rem, 15rem) 1fr minmax(5rem, 15rem);
+
+      // grid-template-columns: 5rem 1fr 5rem;
+      background-color: white;
+      opacity: 0.9;
+      color: black;
+      font-weight: 500;
+
+      & div.page-not-found--placeholder {
+         // border: 1px solid black;
+      }
+
+      & p {
+         grid-column: 2;
+         font-size: 1.1rem;
+         text-align: center;
+         bottom: 25%;
+         opacity: 1;
+         align-self: end;
+         margin-bottom: 1rem;
+         & a {
+            text-decoration: underline;
+            color: #0654ba;
+         }
+      }
+
+      & div.linkedin-github-icons {
+         // border: 1px solid black;
+         color: black;
+         padding: 0;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+         & i {
+            color: rgb(73, 73, 73);
+            margin-right: 0.3rem;
+            display: inline-block;
+            font-size: 2.5rem;
+         }
+      }
+   }
+}
