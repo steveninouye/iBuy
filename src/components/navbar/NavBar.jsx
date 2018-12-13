@@ -73,6 +73,7 @@ class NavBar extends React.Component {
                <li className="nav-bar--links">Gift Cards</li>
                <li className="nav-bar--links">Help & Contact</li>
             </ul>
+            <ul className="center-nav-bar-spreader" />
             <ul className="right-nav-bar">
                <li className="nav-bar--links">Sell</li>
                <li className="nav-bar--links">My iBuy</li>

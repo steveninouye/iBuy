@@ -7,37 +7,37 @@ const RecentlyViewedItems = (props) => (
       </span>
       <div className="home--recently-viewed-item">
          <div className="home--recently-viewed-item-pic">
-            <img src="https://via.placeholder.com/150" />" />
+            <img src="https://via.placeholder.com/170" />
          </div>
          <span className="home--recently-viewed-item-price">$700.00</span>
       </div>
       <div className="home--recently-viewed-item">
          <div className="home--recently-viewed-item-pic">
-            <img src="https://via.placeholder.com/150" />" />
+            <img src="https://via.placeholder.com/170" />
          </div>
          <span className="home--recently-viewed-item-price">$700.00</span>
       </div>
       <div className="home--recently-viewed-item">
          <div className="home--recently-viewed-item-pic">
-            <img src="https://via.placeholder.com/150" />" />
+            <img src="https://via.placeholder.com/170" />
          </div>
          <span className="home--recently-viewed-item-price">$700.00</span>
       </div>
       <div className="home--recently-viewed-item">
          <div className="home--recently-viewed-item-pic">
-            <img src="https://via.placeholder.com/150" />" />
+            <img src="https://via.placeholder.com/170" />
          </div>
          <span className="home--recently-viewed-item-price">$700.00</span>
       </div>
       <div className="home--recently-viewed-item">
          <div className="home--recently-viewed-item-pic">
-            <img src="https://via.placeholder.com/150" />" />
+            <img src="https://via.placeholder.com/170" />
          </div>
          <span className="home--recently-viewed-item-price">$700.00</span>
       </div>
       <div className="home--recently-viewed-item">
          <div className="home--recently-viewed-item-pic">
-            <img src="https://via.placeholder.com/150" />" />
+            <img src="https://via.placeholder.com/170" />
          </div>
          <span className="home--recently-viewed-item-price">$700.00</span>
       </div>

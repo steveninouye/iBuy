@@ -19,15 +19,25 @@
 }
 
 #nav-bar {
+   align-self: center;
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: space-around;
+   width: 100vw;
+   // max-width: 160rem;
    padding: 1rem 6rem;
    box-shadow: 0 0 1rem rgb(168, 168, 168);
+
+   & ul.center-nav-bar-spreader {
+      flex-shrink: 1;
+      width: 20%;
+      background-color: blue;
+   }
 
    & .left-nav-bar,
    & .right-nav-bar {
       display: flex;
+      flex-shrink: 0;
 
       & .nav-bar--links {
          font-size: 1.2rem;

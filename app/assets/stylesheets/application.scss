@@ -17,6 +17,12 @@ html {
    font-size: 10px;
 }
 
+#root {
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+}
+
 * {
    margin: 0;
    padding: 0;

@@ -10,8 +10,8 @@ class Home extends React.Component {
    render() {
       return (
          <>
-            <NavBarContainer />
             <div id="home-body">
+               <NavBarContainer />
                <Search />
                <CategoryLinks />
                <HomeBanner />
