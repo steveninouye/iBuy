@@ -34,6 +34,8 @@
          padding: 0 1.2rem;
          height: 2rem;
          position: relative;
+         display: flex;
+         align-items: center;
 
          & .nav-username {
             padding-right: 0.1rem;
