@@ -37,12 +37,14 @@
          display: flex;
          align-items: center;
 
-         & .nav-username {
-            padding-right: 0.1rem;
+         & span.nav-username {
+            align-self: flex-start;
+            padding: 0.2rem 0.1rem 0 0.2rem;
+            margin: 0 0 0 0.2rem;
          }
 
          & .fa-caret-down {
-            transform: translateX(0.4rem) translateY(-0.1rem);
+            transform: translateX(0.2rem) translateY(-0.1rem);
          }
 
          & .nav--dropdown-cover {

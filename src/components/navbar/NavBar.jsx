@@ -25,7 +25,7 @@ class NavBar extends React.Component {
                onMouseOver={this.toggleDropdown(1)}
                onMouseLeave={this.toggleDropdown(0)}
             >
-               Hi <span className="nav-username">{username}</span>!
+               Hi<span className="nav-username">{username}</span>!
                <i className="fas fa-caret-down" />
                <ul className="nav--dropdown-cover" />
                <ul className="nav--user-dropdown" style={this.state.dropdown}>
