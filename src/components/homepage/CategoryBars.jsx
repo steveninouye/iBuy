@@ -47,7 +47,7 @@ const CategoryBars = (props) => (
       </Link>
       <Link to="/comingsoon">
          <div className="home--category-bar-item computers-tables-networking-btn">
-            Computers/Tablets & Networking
+            Computers & Networking
          </div>
       </Link>
       <Link to="/comingsoon">
@@ -131,7 +131,7 @@ const CategoryBars = (props) => (
       </Link>
       <Link to="/comingsoon">
          <div className="home--category-bar-item sports-mem-cards-fan-shop-btn">
-            Sports Mem, Cards & Fan Shop
+            Sports Memorabilia
          </div>
       </Link>
       <Link to="/comingsoon">

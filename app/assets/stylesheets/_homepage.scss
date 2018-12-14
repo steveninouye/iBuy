@@ -208,28 +208,31 @@ div.home--category-bars {
 
    & div.home--category-bar-item {
       padding: 0.5rem;
-      height: 5.7rem;
+      height: 20rem;
       min-width: 35rem;
       max-width: 60rem;
       flex-shrink: 1;
       flex-grow: 1;
-      margin: 1rem 0.3rem 0 0.3rem;
+      margin: 3rem 0.2rem;
       border-radius: 0.2rem;
-      font-size: 1.5rem;
+      font-size: 2.5rem;
       font-weight: 600;
-      text-shadow: 0.1rem 0.1rem 0.8rem rgb(68, 68, 68);
+      text-shadow: 0.2rem 0.2rem 2.5rem rgb(32, 32, 32);
       background-size: cover;
       color: white;
       box-sizing: border-box;
       word-wrap: normal;
+      opacity: 0.75;
 
-      transition: transform 100ms ease-out, box-shadow 100ms ease-out;
+      transition: transform 100ms ease-out, box-shadow 100ms ease-out,
+         opacity 50ms;
       // box-shadow: 0rem 0rem 0.1rem 0rem grey;
       box-shadow: -0.05rem 0.1rem 0.2rem 0.1rem rgb(139, 139, 139);
 
       &:hover {
          transform: translate(0.15rem, -0.2rem);
          box-shadow: -0.2rem 0.2rem 0.4rem 0.3rem rgb(139, 139, 139);
+         opacity: 1;
       }
 
       &:active {
@@ -237,6 +240,7 @@ div.home--category-bars {
          box-shadow: none;
          transform: translate(0.05rem, -0.1rem);
          box-shadow: -0.1rem 0.15rem 0.3rem 0.2rem rgb(139, 139, 139);
+         opacity: 1;
       }
 
       &.all-categories-btn {
