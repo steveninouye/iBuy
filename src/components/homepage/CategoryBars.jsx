@@ -4,115 +4,161 @@ import { Link } from 'react-router-dom';
 const CategoryBars = (props) => (
    <div className="home--category-bars">
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">All Catgories</div>
+         <div className="home--category-bar-item all-categories-btn">
+            All Categories
+         </div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">Antiques</div>
+         <div className="home--category-bar-item antiques-btn">Antiques</div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">Art</div>
+         <div className="home--category-bar-item art-btn">Art</div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">Baby</div>
+         <div className="home--category-bar-item baby-btn">Baby</div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">Books</div>
+         <div className="home--category-bar-item books-btn">Books</div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">Business & Industrial</div>
+         <div className="home--category-bar-item business-industrial-btn">
+            Business & Industrial
+         </div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">Cameras & Photo</div>
+         <div className="home--category-bar-item cameras-photo-btn">
+            Cameras & Photo
+         </div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">Cell Phone Accessories</div>
+         <div className="home--category-bar-item cell-phone-accessories-btn">
+            Cell Phone Accessories
+         </div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">Coins & Paper Money</div>
+         <div className="home--category-bar-item coins-paper-money-btn">
+            Coins & Paper Money
+         </div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">Collectibles</div>
+         <div className="home--category-bar-item collectibles-btn">
+            Collectibles
+         </div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">
+         <div className="home--category-bar-item computers-tables-networking-btn">
             Computers/Tablets & Networking
          </div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">Consumer Electronics</div>
+         <div className="home--category-bar-item consumer-electronics-btn">
+            Consumer Electronics
+         </div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">Crafts</div>
+         <div className="home--category-bar-item crafts-btn">Crafts</div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">Dolls & Bears</div>
+         <div className="home--category-bar-item dolls-bears-btn">
+            Dolls & Bears
+         </div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">DVDs & Movies</div>
+         <div className="home--category-bar-item dvds-movies-btn">
+            DVDs & Movies
+         </div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">Vehicles</div>
+         <div className="home--category-bar-item vehicles-btn">Vehicles</div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">
+         <div className="home--category-bar-item entertainment-memorabilia-btn">
             Entertainment & Memorabilia
          </div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">Gift Cards & Coupons</div>
-      </Link>
-      <Link to="/comingsoon">
-         <div className="home--category-bar-item">Health & Beauty</div>
-      </Link>
-      <Link to="/comingsoon">
-         <div className="home--category-bar-item">Home & Garden</div>
-      </Link>
-      <Link to="/comingsoon">
-         <div className="home--category-bar-item">Jewelry & Watches</div>
-      </Link>
-      <Link to="/comingsoon">
-         <div className="home--category-bar-item">Music</div>
-      </Link>
-      <Link to="/comingsoon">
-         <div className="home--category-bar-item">Musical Instrumdiv Gear</div>
-      </Link>
-      <Link to="/comingsoon">
-         <div className="home--category-bar-item">Pet Supplies</div>
-      </Link>
-      <Link to="/comingsoon">
-         <div className="home--category-bar-item">Pottery & Glass</div>
-      </Link>
-      <Link to="/comingsoon">
-         <div className="home--category-bar-item">Real Estate</div>
-      </Link>
-      <Link to="/comingsoon">
-         <div className="home--category-bar-item">Specialty Services</div>
-      </Link>
-      <Link to="/comingsoon">
-         <div className="home--category-bar-item">Sporting Goods</div>
-      </Link>
-      <Link to="/comingsoon">
-         <div className="home--category-bar-item">
-            Sports Mem, Cardsdiv Shop
+         <div className="home--category-bar-item gift-cats-coupons-btn">
+            Gift Cards & Coupons
          </div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">Stamps</div>
+         <div className="home--category-bar-item health-beauty-btn">
+            Health & Beauty
+         </div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">Tickets & Experiences</div>
+         <div className="home--category-bar-item home-garder-btn">
+            Home & Garden
+         </div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">Toys & Hobbies</div>
+         <div className="home--category-bar-item jewelry-watches-btn">
+            Jewelry & Watches
+         </div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">Travel</div>
+         <div className="home--category-bar-item music-btn">Music</div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">Video Games & Consoles</div>
+         <div className="home--category-bar-item musical-instruments-btn">
+            Musical Instrum
+         </div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item">Everything Else</div>
+         <div className="home--category-bar-item pet-supplies-btn">
+            Pet Supplies
+         </div>
+      </Link>
+      <Link to="/comingsoon">
+         <div className="home--category-bar-item pottery-glass-btn">
+            Pottery & Glass
+         </div>
+      </Link>
+      <Link to="/comingsoon">
+         <div className="home--category-bar-item real-estate-btn">
+            Real Estate
+         </div>
+      </Link>
+      <Link to="/comingsoon">
+         <div className="home--category-bar-item specialty-services-btn">
+            Specialty Services
+         </div>
+      </Link>
+      <Link to="/comingsoon">
+         <div className="home--category-bar-item sporting-goods-btn">
+            Sporting Goods
+         </div>
+      </Link>
+      <Link to="/comingsoon">
+         <div className="home--category-bar-item sports-mem-cars-fan-shop-btn">
+            Sports Mem, Cards & Fan Shop
+         </div>
+      </Link>
+      <Link to="/comingsoon">
+         <div className="home--category-bar-item stamps-btn">Stamps</div>
+      </Link>
+      <Link to="/comingsoon">
+         <div className="home--category-bar-item tickets-experiences-btn">
+            Tickets & Experiences
+         </div>
+      </Link>
+      <Link to="/comingsoon">
+         <div className="home--category-bar-item toys-hobbies-btn">
+            Toys & Hobbies
+         </div>
+      </Link>
+      <Link to="/comingsoon">
+         <div className="home--category-bar-item travel-btn">Travel</div>
+      </Link>
+      <Link to="/comingsoon">
+         <div className="home--category-bar-item video-games-consoles-btn">
+            Video Games & Consoles
+         </div>
+      </Link>
+      <Link to="/comingsoon">
+         <div className="home--category-bar-item everything-else-btn">
+            Everything Else
+         </div>
       </Link>
    </div>
 );

@@ -207,9 +207,12 @@ div.home--category-bars {
       width: 29vw;
       min-width: 29rem;
       margin: 0.7rem 0.35rem 0 0.35rem;
-      background-color: #86b817;
       border-radius: 0.2rem;
       font-size: 1.5rem;
+      font-weight: 600;
+      text-shadow: 0.1rem 0.1rem 0.3rem gray;
+      background-size: cover;
+      color: white;
 
       transition: transform 100ms ease-out, box-shadow 100ms ease-out;
       // box-shadow: 0rem 0rem 0.1rem 0rem grey;
@@ -225,6 +228,74 @@ div.home--category-bars {
          box-shadow: none;
          transform: translate(0.05rem, -0.1rem);
          box-shadow: -0.05rem 0.15rem 0.3rem 0.15rem rgb(200, 200, 200);
+      }
+
+      &.all-categories-btn {
+         background-image: image-url('all-cat-btn.jpg');
+      }
+
+      &.antiques-btn {
+         background-image: image-url('antiques-cat-btn.jpeg');
+      }
+
+      &.art-btn {
+         background-image: image-url('art-cat-btn.jpg');
+      }
+
+      &.baby-btn {
+         background-image: image-url('baby-cat-btn.jpg');
+      }
+
+      &.books-btn {
+         background-image: image-url('books-cat-btn.jpg');
+      }
+
+      &.business-industrial-btn {
+         background-image: image-url('business-cat-btn.jpg');
+      }
+
+      &.cameras-photo-btn {
+         background-image: image-url('cameras-cat-btn.jpg');
+      }
+
+      &.cell-phone-accessories-btn {
+         background-image: image-url('cell-cat-btn.jpg');
+      }
+
+      &.coins-paper-money-btn {
+         background-image: image-url('coins-cat-btn.jpg');
+      }
+
+      &.collectibles-btn {
+         background-image: image-url('collectibles-cat-btn.jpg');
+      }
+
+      &.computers-tables-networking-btn {
+         background-image: image-url('computers-cat-btn.jpg');
+      }
+
+      &.consumer-electronics-btn {
+         background-image: image-url('consumerelectronics-cat-btn.jpg');
+      }
+
+      &.crafts-btn {
+         background-image: image-url('crafts-cat-btn.jpg');
+      }
+
+      &.dolls-bears-btn {
+         background-image: image-url('dolls-cat-btn.jpg');
+      }
+
+      &.dvds-movies-btn {
+         background-image: image-url('dvds-cat-btn.jpg');
+      }
+
+      &.vehicles-btn {
+         background-image: image-url('vehicles-cat-btn.jpg');
+      }
+
+      &.entertainment-memorabilia-btn {
+         background-image: image-url('entertainment-cat-btn.jpg');
       }
    }
 }
