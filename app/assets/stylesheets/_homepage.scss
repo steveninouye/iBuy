@@ -200,10 +200,10 @@ div.home--recently-viewed-items {
 
 div.home--category-bars {
    display: flex;
-   margin-top: 3.5rem;
-   justify-content: center;
+   margin-top: 7rem;
+   justify-content: space-around;
    flex-wrap: wrap;
-   width: 99%;
+   width: 100vw;
    box-sizing: border-box;
 
    & div.home--category-bar-item {
@@ -213,7 +213,7 @@ div.home--category-bars {
       max-width: 60rem;
       flex-shrink: 1;
       flex-grow: 1;
-      margin: 3rem 0.2rem;
+      margin: 3rem 1rem;
       border-radius: 0.2rem;
       font-size: 2.5rem;
       font-weight: 600;

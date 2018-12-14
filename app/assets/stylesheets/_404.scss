@@ -344,6 +344,7 @@ div#page-not-found {
       & a {
          text-decoration: underline;
          color: #0654ba;
+         cursor: pointer;
       }
 
       & div.page-not-found--header {
