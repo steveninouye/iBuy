@@ -67,7 +67,7 @@
          }
 
          & ul.nav--user-dropdown {
-            z-index: 2;
+            z-index: 10;
             position: absolute;
             width: 150%;
             transform: translateY(65%);
@@ -109,7 +109,9 @@
                      flex-direction: column;
                      align-items: center;
 
-                     & .fa-star {
+                     & i {
+                        margin-bottom: -1rem;
+                        font-size: 1.8rem;
                         color: rgb(0, 26, 255);
                         text-shadow: 1px 1px 1px black;
                      }
