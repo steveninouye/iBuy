@@ -145,6 +145,13 @@ ul.home--category-links {
       font-size: 1.2rem;
       margin: 0 1rem;
       text-shadow: 0 1px 0 rgba(204, 204, 204, 0.2);
+      border-bottom: 0.3rem solid white;
+
+      &:hover {
+         margin: 0 0.9rem;
+         font-weight: 600;
+         border-bottom: 0.3rem solid rgb(63, 63, 63);
+      }
    }
 }
 

@@ -20,8 +20,8 @@ div#page-not-found {
       box-shadow: 0 0 0.2rem rgb(168, 168, 168);
    }
 
-   & #nav-bar {
-      z-index: 2;
+   #nav-bar {
+      box-sizing: border-box;
       align-self: center;
       display: flex;
       align-items: center;
@@ -137,7 +137,8 @@ div#page-not-found {
                padding: 0 0.4rem;
             }
 
-            & a {
+            & a.nav-signin,
+            & a.nav-register {
                color: #0654ba;
             }
 
@@ -169,21 +170,23 @@ div#page-not-found {
       & .right-nav-bar {
          & li.nav--bell-icon.nav-bar--links {
             border-left: 0;
-
-            & .fa-bell {
-               padding: 0 1.2rem;
-               font-size: 1.7rem;
-               color: rgb(75, 75, 75);
+            & a {
+               & i {
+                  padding: 0;
+                  font-size: 2.7rem;
+                  color: rgb(75, 75, 75);
+               }
             }
          }
 
          & li.nav--shopping-cart-icon.nav-bar--links {
             border-left: 0;
-
-            & .fa-shopping-cart {
-               font-size: 1.7rem;
-               padding: 0 1.2rem;
-               color: rgb(75, 75, 75);
+            & a {
+               & i {
+                  padding: 0;
+                  font-size: 2.4rem;
+                  color: rgb(75, 75, 75);
+               }
             }
          }
       }
@@ -243,7 +246,6 @@ div#page-not-found {
             width: 5rem;
             text-shadow: 0 1px 0 rgba(195, 195, 195, 0.2);
          }
-
       }
 
       & input[type='text'] {

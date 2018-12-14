@@ -8,12 +8,10 @@ class MissingPage extends React.Component {
    constructor(props) {
       super(props);
       this.changeBackgroundColor = this.changeBackgroundColor.bind(this);
-      console.log(randomGradient());
       this.state = { background: randomGradient() };
    }
 
    changeBackgroundColor() {
-      console.log('Hello World!');
       this.setState({ background: randomGradient() });
    }
 
