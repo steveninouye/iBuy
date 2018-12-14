@@ -69,19 +69,33 @@ class NavBar extends React.Component {
          <nav id="nav-bar" className="nav-bar">
             <ul className="left-nav-bar">
                {leftNav}
-               <li className="nav-bar--links">Daily Deals</li>
-               <li className="nav-bar--links">Gift Cards</li>
-               <li className="nav-bar--links">Help & Contact</li>
+               <li className="nav-bar--links">
+                  <Link to="/comingsoon">Daily Deals</Link>
+               </li>
+               <li className="nav-bar--links">
+                  <Link to="/comingsoon">Gift Cards</Link>
+               </li>
+               <li className="nav-bar--links">
+                  <Link to="/comingsoon">Help & Contact</Link>
+               </li>
             </ul>
             <ul className="center-nav-bar-spreader" />
             <ul className="right-nav-bar">
-               <li className="nav-bar--links">Sell</li>
-               <li className="nav-bar--links">My iBuy</li>
+               <li className="nav-bar--links">
+                  <Link to="/comingsoon">Sell</Link>
+               </li>
+               <li className="nav-bar--links">
+                  <Link to="/comingsoon">My iBuy</Link>
+               </li>
                <li className="nav--bell-icon nav-bar--links">
-                  <i className="fas fa-bell" />
+                  <Link to="/comingsoon">
+                     <i className="fas fa-bell" />
+                  </Link>
                </li>
                <li className="nav--shopping-cart-icon nav-bar--links">
-                  <i className="fas fa-shopping-cart" />
+                  <Link to="/comingsoon">
+                     <i className="fas fa-shopping-cart" />
+                  </Link>
                </li>
             </ul>
          </nav>

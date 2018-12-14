@@ -134,7 +134,8 @@
             padding: 0 0.4rem;
          }
 
-         & a {
+         & a.nav-signin,
+         & a.nav-register {
             color: #0654ba;
          }
 

@@ -244,8 +244,6 @@ div#page-not-found {
             text-shadow: 0 1px 0 rgba(195, 195, 195, 0.2);
          }
 
-         & i.fa-caret-down {
-         }
       }
 
       & input[type='text'] {
@@ -392,10 +390,6 @@ div#page-not-found {
       opacity: 0.9;
       color: black;
       font-weight: 500;
-
-      & div.page-not-found--placeholder {
-         // border: 1px solid black;
-      }
 
       & p {
          grid-column: 2;

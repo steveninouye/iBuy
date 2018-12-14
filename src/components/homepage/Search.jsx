@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import SelectCategories from './SelectCategories';
 
 class Search extends React.Component {
@@ -26,7 +28,7 @@ class Search extends React.Component {
 
             <SelectCategories />
             <input type="submit" value="Search" />
-            <a href="javascript:;">Advanced</a>
+            <Link to="/comingsoon">Advanced</Link>
          </form>
       );
    }
