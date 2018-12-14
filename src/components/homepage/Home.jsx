@@ -7,7 +7,7 @@ import HomeBanner from './HomeBanner';
 import RecentlyViewedItems from './RecentlyViewedItems';
 import CategoryBars from './CategoryBars';
 
-class Home extends React.Component {
+class HomeFooter extends React.Component {
    render() {
       return (
          <>
@@ -25,4 +25,4 @@ class Home extends React.Component {
    }
 }
 
-export default Home;
+export default HomeFooter;

@@ -11,12 +11,12 @@ class Search extends React.Component {
    render() {
       return (
          <form className="home--search-container">
-            <div className="home--main-logo">
+            <Link to="/" className="home--main-logo">
                <span className="logo-letter">i</span>
                <span className="logo-letter">b</span>
                <span className="logo-letter">u</span>
                <span className="logo-letter">y</span>
-            </div>
+            </Link>
             <div className="home--category-dropdown">
                <div className="home--category-dropdown-text">
                   Shop by Category
