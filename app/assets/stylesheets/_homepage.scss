@@ -202,7 +202,7 @@ div.home--recently-viewed-items {
 
 div.home--category-bars {
    display: flex;
-   margin-top: 7rem;
+   margin-top: 6.5rem;
    justify-content: space-around;
    flex-wrap: wrap;
    width: 100vw;
@@ -216,8 +216,8 @@ div.home--category-bars {
       max-width: 60rem;
       flex-shrink: 1;
       flex-grow: 1;
-      margin: 3rem 1rem 15rem 1rem;
-      border-radius: 0.2rem;
+      margin: 3rem 1rem 7rem 1rem;
+      border-radius: 0.1rem;
       font-size: 2.5rem;
       font-weight: 600;
       text-shadow: 0.2rem 0.2rem 2.5rem rgb(32, 32, 32);
@@ -384,6 +384,52 @@ div.home--category-bars {
 
       &.everything-else-btn {
          background-image: image-url('everything-cat-btn.jpg');
+      }
+   }
+}
+
+div.home--footer {
+   position: fixed;
+   height: 3rem;
+   width: 100vw;
+   bottom: 0;
+   border-top: 1px solid rgb(185, 185, 185);
+   display: grid;
+   grid-template-columns: minmax(5rem, 15rem) 1fr minmax(5rem, 15rem);
+
+   // grid-template-columns: 5rem 1fr 5rem;
+   background-color: white;
+   opacity: 0.9;
+   color: black;
+   font-weight: 500;
+
+   & p {
+      grid-column: 2;
+      font-size: 1.1rem;
+      text-align: center;
+      bottom: 25%;
+      opacity: 1;
+      align-self: end;
+      margin-bottom: 1rem;
+      & a {
+         text-decoration: underline;
+         color: #0654ba;
+      }
+   }
+
+   & div.linkedin-github-icons {
+      // border: 1px solid black;
+      color: black;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & i {
+         color: rgb(73, 73, 73);
+         margin-right: 0.3rem;
+         display: inline-block;
+         font-size: 2.5rem;
       }
    }
 }

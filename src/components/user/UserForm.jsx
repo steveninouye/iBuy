@@ -168,17 +168,6 @@ class UserForm extends React.Component {
                   </div>
                </div>
             </div>
-
-            <div className="session--form-footer">
-               <p>
-                  This is a portfolio project created by{' '}
-                  <a href="https://www.linkedin.com/in/steveninouye/">
-                     Steven Inouye
-                  </a>{' '}
-                  and not meant for commercial use. Inspired by{' '}
-                  <a href="https://www.ebay.com/">Ebay.com</a>
-               </p>
-            </div>
          </div>
       );
    }

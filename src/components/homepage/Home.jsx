@@ -6,8 +6,9 @@ import CategoryLinks from './CategoryLinks';
 import HomeBanner from './HomeBanner';
 import RecentlyViewedItems from './RecentlyViewedItems';
 import CategoryBars from './CategoryBars';
+import HomeFooter from './HomeFooter';
 
-class HomeFooter extends React.Component {
+class Home extends React.Component {
    render() {
       return (
          <>
@@ -18,11 +19,10 @@ class HomeFooter extends React.Component {
                <HomeBanner />
                <RecentlyViewedItems />
                <CategoryBars />
-               
             </div>
          </>
       );
    }
 }
 
-export default HomeFooter;
+export default Home;

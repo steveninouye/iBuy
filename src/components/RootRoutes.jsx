@@ -5,9 +5,9 @@ import Home from './homepage/Home';
 import { AuthRoute, ProtectedRoute } from '../utils/routes_utils';
 import SignUpFormContainer from './user/SignUpFormContainer';
 import LogInFormContainer from './session/LogInFormContainer';
-import Page404 from './404/MissingPage';
 import Page404Container from './404/Page404Container';
 import ComingSoonContainer from './404/ComingSoonContainer';
+import HomeFooter from './homepage/HomeFooter';
 
 const RootRoutes = () => {
    const rightNav = <li />;
@@ -20,6 +20,7 @@ const RootRoutes = () => {
             <Route exact path="/comingsoon" component={ComingSoonContainer} />
             <Route path="*" component={Page404Container} />
          </Switch>
+         <HomeFooter />
       </>
    );
 };
