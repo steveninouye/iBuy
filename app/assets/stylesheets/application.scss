@@ -24,6 +24,7 @@ body,
    display: flex;
    flex-direction: column;
    justify-content: center;
+   box-sizing: border-box;
 }
 
 * {
@@ -31,13 +32,11 @@ body,
    padding: 0;
    border: 0;
    outline: 0;
-   font: inherit;
    color: inherit;
-   box-sizing: inherit;
    background: transparent;
    text-decoration: none;
    font-family: 'Helvetica Neue', Helvetica, Arial, Verdana, Sans-serif;
-   // border: 1px solid rgb(228, 228, 228);
+   box-sizing: border-box;
 }
 
 ul {

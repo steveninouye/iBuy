@@ -77,7 +77,7 @@ const CategoryBars = (props) => (
          </div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item gift-cats-coupons-btn">
+         <div className="home--category-bar-item gift-cards-coupons-btn">
             Gift Cards & Coupons
          </div>
       </Link>
@@ -87,7 +87,7 @@ const CategoryBars = (props) => (
          </div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item home-garder-btn">
+         <div className="home--category-bar-item home-garden-btn">
             Home & Garden
          </div>
       </Link>
@@ -101,7 +101,7 @@ const CategoryBars = (props) => (
       </Link>
       <Link to="/comingsoon">
          <div className="home--category-bar-item musical-instruments-btn">
-            Musical Instrum
+            Musical Instruments
          </div>
       </Link>
       <Link to="/comingsoon">
@@ -130,7 +130,7 @@ const CategoryBars = (props) => (
          </div>
       </Link>
       <Link to="/comingsoon">
-         <div className="home--category-bar-item sports-mem-cars-fan-shop-btn">
+         <div className="home--category-bar-item sports-mem-cards-fan-shop-btn">
             Sports Mem, Cards & Fan Shop
          </div>
       </Link>

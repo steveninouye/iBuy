@@ -2,9 +2,11 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   // padding: 0 6rem;
+   padding: 0 6rem;
    width: 100%;
    max-width: 160rem;
+   box-sizing: border-box;
+   align-self: center;
 }
 
 form.home--search-container {
@@ -14,6 +16,7 @@ form.home--search-container {
    width: 94%;
    align-items: center;
    justify-content: space-around;
+   box-sizing: border-box;
 
    & div.home--main-logo {
       padding: 0 0 0.5rem 0.2rem;
@@ -138,6 +141,7 @@ ul.home--category-links {
    justify-content: center;
    font-weight: 500;
    width: 94%;
+   box-sizing: border-box;
 
    li {
       color: #555;
@@ -200,19 +204,24 @@ div.home--category-bars {
    justify-content: center;
    flex-wrap: wrap;
    width: 99%;
+   box-sizing: border-box;
 
    & div.home--category-bar-item {
       padding: 0.5rem;
-      height: 4.2rem;
-      width: 29vw;
-      min-width: 29rem;
-      margin: 0.7rem 0.35rem 0 0.35rem;
+      height: 5.5rem;
+      min-width: 35rem;
+      max-width: 60rem;
+      flex-shrink: 1;
+      flex-grow: 1;
+      margin: 1rem 0.3rem 0 0.3rem;
       border-radius: 0.2rem;
       font-size: 1.5rem;
       font-weight: 600;
       text-shadow: 0.1rem 0.1rem 0.3rem gray;
       background-size: cover;
       color: white;
+      box-sizing: border-box;
+      word-wrap: normal;
 
       transition: transform 100ms ease-out, box-shadow 100ms ease-out;
       // box-shadow: 0rem 0rem 0.1rem 0rem grey;
@@ -296,6 +305,78 @@ div.home--category-bars {
 
       &.entertainment-memorabilia-btn {
          background-image: image-url('entertainment-cat-btn.jpg');
+      }
+
+      &.gift-cards-coupons-btn {
+         background-image: image-url('gift-cat-btn.jpg');
+      }
+
+      &.health-beauty-btn {
+         background-image: image-url('health-cat-btn.jpg');
+      }
+
+      &.home-garden-btn {
+         background-image: image-url('home-cat-btn.png');
+      }
+
+      &.jewelry-watches-btn {
+         background-image: image-url('jewelry-cat-btn.png');
+      }
+
+      &.music-btn {
+         background-image: image-url('music-cat-btn.jpg');
+      }
+
+      &.musical-instruments-btn {
+         background-image: image-url('musical-cat-btn.jpg');
+      }
+
+      &.pet-supplies-btn {
+         background-image: image-url('pet-cat-btn.jpg');
+      }
+
+      &.pottery-glass-btn {
+         background-image: image-url('pottery-cat-btn.jpg');
+      }
+
+      &.real-estate-btn {
+         background-image: image-url('real-cat-btn.jpg');
+      }
+
+      &.specialty-services-btn {
+         background-image: image-url('specialty-cat-btn.jpg');
+      }
+
+      &.sporting-goods-btn {
+         background-image: image-url('sporting-cat-btn.jpg');
+      }
+
+      &.sports-mem-cards-fan-shop-btn {
+         background-image: image-url('sports-cat-btn.jpg');
+      }
+
+      &.stamps-btn {
+         background-image: image-url('stamps-cat-btn.jpg');
+      }
+
+      &.tickets-experiences-btn {
+         background-image: image-url('tickets-cat-btn.jpg');
+      }
+
+      &.toys-hobbies-btn {
+         background-image: image-url('toys-cat-btn.jpg');
+      }
+
+      &.travel-btn {
+         background-image: image-url('travel-cat-btn.jpg');
+      }
+
+      &.video-games-consoles-btn {
+         background-image: image-url('video-cat-btn.jpg');
+      }
+
+      &.everything-else-btn {
+         background-image: image-url('everything-cat-btn.jpg');
       }
    }
 }
