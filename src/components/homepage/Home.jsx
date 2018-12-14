@@ -18,6 +18,7 @@ class Home extends React.Component {
                <HomeBanner />
                <RecentlyViewedItems />
                <CategoryBars />
+               
             </div>
          </>
       );

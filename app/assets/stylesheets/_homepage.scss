@@ -186,6 +186,8 @@ div.home--recently-viewed-items {
       margin: 0 0.5rem;
 
       & div.home--recently-viewed-item-pic {
+         box-shadow: -0.1rem 0.1rem 0.5rem 0.1rem gray;
+
          & img {
             border-radius: 0.2rem;
          }
@@ -214,7 +216,7 @@ div.home--category-bars {
       max-width: 60rem;
       flex-shrink: 1;
       flex-grow: 1;
-      margin: 3rem 1rem;
+      margin: 3rem 1rem 15rem 1rem;
       border-radius: 0.2rem;
       font-size: 2.5rem;
       font-weight: 600;
