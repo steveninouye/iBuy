@@ -225,18 +225,18 @@ div.home--category-bars {
 
       transition: transform 100ms ease-out, box-shadow 100ms ease-out;
       // box-shadow: 0rem 0rem 0.1rem 0rem grey;
-      box-shadow: -0.05rem 0.1rem 0.2rem 0.1rem rgb(200, 200, 200);
+      box-shadow: -0.05rem 0.1rem 0.2rem 0.1rem rgb(139, 139, 139);
 
       &:hover {
          transform: translate(0.15rem, -0.2rem);
-         box-shadow: -0.1rem 0.2rem 0.4rem 0.2rem rgb(200, 200, 200);
+         box-shadow: -0.2rem 0.2rem 0.4rem 0.3rem rgb(139, 139, 139);
       }
 
       &:active {
          transform: none;
          box-shadow: none;
          transform: translate(0.05rem, -0.1rem);
-         box-shadow: -0.05rem 0.15rem 0.3rem 0.15rem rgb(200, 200, 200);
+         box-shadow: -0.1rem 0.15rem 0.3rem 0.2rem rgb(139, 139, 139);
       }
 
       &.all-categories-btn {
