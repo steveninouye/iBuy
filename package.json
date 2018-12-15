@@ -6,7 +6,9 @@
       "@babel/preset-env": "^7.2.0",
       "@babel/preset-react": "^7.0.0",
       "babel-loader": "^8.0.4",
+      "cheerio": "^1.0.0-rc.2",
       "concurrently": "^4.1.0",
+      "prompt": "^1.0.0",
       "react": "^16.6.3",
       "react-dom": "^16.6.3",
       "react-redux": "^6.0.0",
@@ -14,6 +16,8 @@
       "redux": "^4.0.1",
       "redux-logger": "^3.0.6",
       "redux-thunk": "^2.3.0",
+      "request": "^2.88.0",
+      "request-promise": "^4.2.2",
       "styled-components": "^4.1.2",
       "webpack": "^4.27.1"
    },

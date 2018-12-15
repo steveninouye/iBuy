@@ -1,53 +1,8 @@
-Photo.destroy_all
-ProductCategory.destroy_all
 Watch.destroy_all
 Bid.destroy_all
 Product.destroy_all
 Category.destroy_all
 User.destroy_all
-
-
-category_names = ["antiques",
-   "appliances",
-   "arts & crafts",
-   "atvs, utvs, snowmobiles",
-   "auto parts",
-   "aviation",
-   "baby & kid stuff",
-   "health and beauty",
-   "bicycle parts",
-   "bicycles",
-   "boat parts & accessories",
-   "boats",
-   "books & magazines",
-   "business",
-   "cars & trucks",
-   "cds / dvds / vhs",
-   "cell phones",
-   "clothing & accessories",
-   "collectibles",
-   "computer parts",
-   "computers",
-   "electronics",
-   "farm & garden",
-   "furniture",
-   "general for sale",
-   "heavy equipment",
-   "household items",
-   "jewelry",
-   "materials",
-   "motorcycle parts & accessories",
-   "motorcycles/scooters",
-   "musical instruments",
-   "photo/video",
-   "recreational vehicles",
-   "sporting goods",
-   "tickets",
-   "tools",
-   "toys & games",
-   "trailers",
-   "video gaming",
-   "auto wheels & tires"]
 
    locations = [
       "2640 Steiner St, San Francisco, CA 94115",
@@ -98,12 +53,6 @@ users = []
 
 30.times do
    users << User.create(username: Faker, password: 'iamasecretpassword')
-end
-
-categories = []
-
-category_names.each do |category|
-   categories << Category.create(name: category)
 end
 
 ###################   PRODUCTS  #################################
