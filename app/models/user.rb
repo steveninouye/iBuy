@@ -8,6 +8,7 @@ class User < ApplicationRecord
    validate :passwords_match
  
    after_initialize :ensure_session_token
+   has_many_attached :photo
  
    def self.validate(username, password)
      user = User.find_by(username: username)
