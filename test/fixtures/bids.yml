@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: bids
+#
+#  id         :bigint(8)        not null, primary key
+#  bid_amt    :integer          not null
+#  user_id    :bigint(8)        not null
+#  product_id :bigint(8)        not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bid_amt: 1
+  user_id: 
+  product_id: 
+
+two:
+  bid_amt: 1
+  user_id: 
+  product_id: 

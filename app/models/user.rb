@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id              :bigint(8)        not null, primary key
+#  username        :string           not null
+#  location        :string
+#  password_digest :string           not null
+#  session_token   :string           not null
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#
+
 class User < ApplicationRecord
    attr_reader :password
    attr_reader :confirm_password
@@ -9,6 +22,18 @@ class User < ApplicationRecord
  
    after_initialize :ensure_session_token
    has_many_attached :photo
+   
+   has_many :watches
+   has_many :bids
+   has_many :products
+ 
+   has_many :bidders,
+     through: :products,
+     source: :bids
+ 
+   has_many :selling_categories,
+     through: :products,
+     source: :categories
  
    def self.validate(username, password)
      user = User.find_by(username: username)
