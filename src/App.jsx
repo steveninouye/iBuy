@@ -8,10 +8,5 @@ import setCurrentUser from './utils/set_current_user';
 
 document.addEventListener('DOMContentLoaded', () => {
    let store = setCurrentUser(configureStore);
-   // ReactDOM.render(<Root store={store} />, document.getElementById('root'));
-   let str = '\"';
-   ReactDOM.render(
-      <p style={{ fontSize: '200px' }}>{str}</p>,
-      document.getElementById('root')
-   );
+   ReactDOM.render(<Root store={store} />, document.getElementById('root'));
 });

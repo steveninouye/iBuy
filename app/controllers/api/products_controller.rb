@@ -1,11 +1,10 @@
 class Api::ProductsController < ApplicationController
   before_action :require_login!, only: [:create, :update, :destroy]
-  before_action :snakecase_params
+  # before_action :snakecase_params
 
   def index
     query = params[:search].gsub(";", " ")
     @products = Product.where("title LIKE ?", "%#{query}%")
-    render :index
   end
 
   def show
