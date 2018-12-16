@@ -17,6 +17,7 @@
 class Product < ApplicationRecord
    validates_presence_of :title, :location, :sell_by, :user_id
    
+   has_many_attached :photos
    has_many :bids
    has_many :watches
    belongs_to :category

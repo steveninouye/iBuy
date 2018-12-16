@@ -16,7 +16,7 @@ const getImages = (uri) => {
          .trim();
       category = replaceDblQuotes(category);
       const file = `${path}productSeed.rb`;
-      const categoryData = `category = Category.find_by_name(${category})\nunless(category)\ncategory = Category.create(name: "${category}")\nend\n\n`;
+      const categoryData = `\ncategory = Category.find_by_name(${category})\nunless(category)\ncategory = Category.create(name: "${category}")\nend\n\n`;
       fs.appendFileSync(file, categoryData);
 
       let prevResult;
@@ -46,17 +46,17 @@ const getImages = (uri) => {
                productDescription = replaceDblQuotes(productDescription);
                // write seed fail for product
                const productData = `\n
-               product = Product.create(\n
-               {\n
-                  title: "${productTitle}",\n
-                  location: loactions.sample,\n
-                  sell_by: Faker::Date.between(1.month.from.now, 4.month.from.now),\n
-                  user_id: users.sample.id,\n
-                  description: "${productDescription}",\n
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,\n
-                  category_id: category.id\n
+               product = Product.create(
+               {
+                  title: "${productTitle}",
+                  location: locations.sample,
+                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  user_id: users.sample.id,
+                  description: "${productDescription}",
+                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  category_id: category.id
                })\n
-               products << product
+               products << product if product
                `;
                fs.appendFileSync(file, productData);
 
@@ -71,10 +71,10 @@ const getImages = (uri) => {
                      const imgFileName = `${productId}-${imgIdx}.jpg`;
                      // download images to current directory
                      request(img.url).pipe(
-                        fs.createWriteStream(`${path}${imgFileName}`)
+                        fs.createWriteStream(`${path}images/${imgFileName}`)
                      );
                      // write each image to a file to seed relationship and AWS
-                     const productPhotoData = `product.photo.attach(io: File.open("${path}${imgFileName}"), filename: "${imgFileName}")`;
+                     const productPhotoData = `\nproduct.photos.attach(io: File.open("${path}images/${imgFileName}"), filename: "${imgFileName}") if product`;
                      fs.appendFileSync(file, productPhotoData);
                   });
                }
