@@ -6,8 +6,13 @@ import SelectCategories from './SelectCategories';
 class Search extends React.Component {
    constructor(props) {
       super(props);
-      this.state = {};
+      this.state = { searchInput: '' };
    }
+
+   handleChange(type) {
+      return (e) => this.setState({ [type]: e.target.value });
+   }
+
    render() {
       return (
          <form className="home--search-container">
@@ -24,7 +29,12 @@ class Search extends React.Component {
                <i className="fas fa-caret-down" />
             </div>
 
-            <input type="text" placeholder="Search for anything" />
+            <input
+               type="text"
+               placeholder="Search for anything"
+               value={this.state.searchInput}
+               onChange={this.handleChange('searchInput')}
+            />
 
             <SelectCategories />
             <input type="submit" value="Search" />

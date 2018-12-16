@@ -1,4 +1,7 @@
-import { SEARCH_PRODUCT_RESULTS } from '../../actions/product_actions';
+import {
+   SEARCH_PRODUCT_RESULTS,
+   RECEIVE_PRODUCT
+} from '../../actions/product_actions';
 
 const ProductsSwitch = (state = {}, action) => {
    switch (action.type) {
