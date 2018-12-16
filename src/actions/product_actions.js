@@ -4,9 +4,10 @@ export const SEARCH_PRODUCT_RESULTS = 'SEARCH_PRODUCT_RESULTS';
 export const RECEIVE_PRODUCT = 'RECEIVE_PRODUCT';
 
 export const searchProducts = (searchInput) => (dispatch) =>
-   ProductAjaxUtils.searchProducts(searchInput).then((products) =>
+   ProductAjaxUtils.searchProducts(searchInput).then(({ products, bids }) =>
       dispatch({
          type: SEARCH_PRODUCT_RESULTS,
-         products
+         products,
+         bids
       })
    );

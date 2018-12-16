@@ -3,13 +3,13 @@ import React from 'react';
 import {
    randomStarRating,
    randNumStarRating,
-   randNum
+   randNum,
+   getPriceAndNumBids
 } from '../../utils/data_conversion_utils';
 
 const SearchResultItem = ({
-   product: { description, title, sellBy, buyItNow, photos }
+   product: { description, title, sellBy, buyItNow, photos, bids }
 }) => {
-   console.log(typeof sellBy);
    buyItNow = !buyItNow ? (
       undefined
    ) : (
@@ -20,6 +20,10 @@ const SearchResultItem = ({
          <div className="buy-it-now">Buy It Now</div>
       </>
    );
+   let date = new Date(sellBy);
+   console.log(date);
+   console.log(date.getDay());
+   let { currrentPrice, numBids } = getPriceAndNumBids(bids);
    return (
       <div className="search-result-item">
          <div className="thumbnail">
@@ -39,8 +43,8 @@ const SearchResultItem = ({
             </span>
          </div>
          <div className="item-price">
-            <div className="current-price">$17.50</div>
-            <div className="item-num-bids">{`${randNum(2, 15)} bids`}</div>
+            <div className="current-price">${currrentPrice}</div>
+            <div className="item-num-bids">{numBids} bids</div>
             {buyItNow}
          </div>
          <div className="sell-by">4d 21h</div>

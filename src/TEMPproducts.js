@@ -1,4 +1,4 @@
-export default {
+export const tempProducts = {
    '27': {
       id: 27,
       title: 'Macbook late 2011 15in i7 2.2g16GB ram 240gb SSD NON retina',
@@ -215,5 +215,176 @@ export default {
          '/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaTBGIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--dfd9b63cd2d57d2d81da8b8cb7aa395da11cb7a5/6764280444-2.jpg',
          '/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaTRGIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--f4f5dc7de2ee577c8283fe1b06c98ecda9319029/6764280444-3.jpg'
       ]
+   }
+};
+
+export const tempBids = {
+   '78': {
+      id: 78,
+      bidAmt: 1794,
+      productId: 27,
+      userId: 259
+   },
+   '167': {
+      id: 167,
+      bidAmt: 42686,
+      productId: 54,
+      userId: 272
+   },
+   '253': {
+      id: 253,
+      bidAmt: 74904,
+      productId: 74,
+      userId: 270
+   },
+   '254': {
+      id: 254,
+      bidAmt: 43620,
+      productId: 74,
+      userId: 274
+   },
+   '255': {
+      id: 255,
+      bidAmt: 22249,
+      productId: 74,
+      userId: 279
+   },
+   '256': {
+      id: 256,
+      bidAmt: 16271,
+      productId: 74,
+      userId: 263
+   },
+   '257': {
+      id: 257,
+      bidAmt: 95578,
+      productId: 74,
+      userId: 270
+   },
+   '334': {
+      id: 334,
+      bidAmt: 37519,
+      productId: 99,
+      userId: 263
+   },
+   '335': {
+      id: 335,
+      bidAmt: 16115,
+      productId: 99,
+      userId: 279
+   },
+   '336': {
+      id: 336,
+      bidAmt: 57326,
+      productId: 99,
+      userId: 282
+   },
+   '396': {
+      id: 396,
+      bidAmt: 66096,
+      productId: 117,
+      userId: 272
+   },
+   '820': {
+      id: 820,
+      bidAmt: 5321,
+      productId: 269,
+      userId: 266
+   },
+   '821': {
+      id: 821,
+      bidAmt: 48002,
+      productId: 269,
+      userId: 268
+   },
+   '822': {
+      id: 822,
+      bidAmt: 82097,
+      productId: 269,
+      userId: 277
+   },
+   '823': {
+      id: 823,
+      bidAmt: 6486,
+      productId: 269,
+      userId: 261
+   },
+   '824': {
+      id: 824,
+      bidAmt: 21190,
+      productId: 269,
+      userId: 263
+   },
+   '825': {
+      id: 825,
+      bidAmt: 75798,
+      productId: 269,
+      userId: 259
+   },
+   '920': {
+      id: 920,
+      bidAmt: 54041,
+      productId: 299,
+      userId: 263
+   },
+   '921': {
+      id: 921,
+      bidAmt: 90403,
+      productId: 299,
+      userId: 257
+   },
+   '922': {
+      id: 922,
+      bidAmt: 28856,
+      productId: 299,
+      userId: 280
+   },
+   '923': {
+      id: 923,
+      bidAmt: 40403,
+      productId: 299,
+      userId: 266
+   },
+   '924': {
+      id: 924,
+      bidAmt: 55564,
+      productId: 299,
+      userId: 277
+   },
+   '925': {
+      id: 925,
+      bidAmt: 9506,
+      productId: 299,
+      userId: 274
+   },
+   '926': {
+      id: 926,
+      bidAmt: 15675,
+      productId: 299,
+      userId: 272
+   },
+   '962': {
+      id: 962,
+      bidAmt: 25788,
+      productId: 315,
+      userId: 257
+   },
+   '963': {
+      id: 963,
+      bidAmt: 55995,
+      productId: 315,
+      userId: 276
+   },
+   '964': {
+      id: 964,
+      bidAmt: 61563,
+      productId: 315,
+      userId: 260
+   },
+   '965': {
+      id: 965,
+      bidAmt: 30286,
+      productId: 315,
+      userId: 257
    }
 };

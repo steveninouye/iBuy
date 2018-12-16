@@ -2,7 +2,7 @@ import {
    SEARCH_PRODUCT_RESULTS,
    RECEIVE_PRODUCT
 } from '../../actions/product_actions';
-import tempProducts from '../../TEMPproducts';
+import { tempProducts } from '../../TEMPproducts';
 
 // change state back to empty object
 const ProductsSwitch = (state = tempProducts, action) => {

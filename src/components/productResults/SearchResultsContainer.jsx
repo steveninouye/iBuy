@@ -2,10 +2,11 @@
 import { connect } from 'react-redux';
 
 import SearchResults from './SearchResults';
+import { addBidsToProducts } from '../../utils/data_conversion_utils';
 
 const mapStateToProps = (state, ownProps) => {
    return {
-      products: Object.values(state.entities.products)
+      products: addBidsToProducts(state.entities.products, state.entities.bids)
    };
 };
 

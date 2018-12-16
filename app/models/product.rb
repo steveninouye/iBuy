@@ -15,18 +15,26 @@
 #
 
 class Product < ApplicationRecord
-   validates_presence_of :title, :location, :sell_by, :user_id
-   
-   has_many_attached :photos
-   has_many :bids
-   has_many :watches
-   belongs_to :category
+  validates_presence_of :title, :location, :sell_by, :user_id
 
-   has_many :watchers,
-      through: :watches,
-      source: :user
+  has_many_attached :photos
+  has_many :bids
+  has_many :watches
+  belongs_to :category
 
-   belongs_to :owner,
-      foreign_key: :user_id,
-      class_name: :User
+  has_many :watchers,
+           through: :watches,
+           source: :user
+
+  belongs_to :owner,
+             foreign_key: :user_id,
+             class_name: :User
+
+  def num_bids
+    bids.length
+  end
+
+  def current_price
+    bids.where("bid_amt < ?", bids.maximum(:bid_amt)).maximum(:bid_amt) || 0
+  end
 end

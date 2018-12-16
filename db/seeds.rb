@@ -34399,7 +34399,7 @@ SERIOUS BUYERS ONLY...PLEASE!!!",
 
 products.each do |product|
    (0..7).to_a.sample.times do
-      Bid.create(product_id: product.id, user_id: users.sample.id, bid_amt: (0..100).to_a.sample)
+      Bid.create(product_id: product.id, user_id: users.sample.id, bid_amt: (0..10000).to_a.sample)
    end
 end
 
