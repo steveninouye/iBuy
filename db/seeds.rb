@@ -34375,7 +34375,7 @@ Boost range up to 7,500 sq feet!",
                   location: locations.sample,
 
                   sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-
+                  Faker::Time.between(1.month.from_now, 4.months.from_now, :all)
                   user_id: users.sample.id,
 
                   description: "SERIOUS BUYERS ONLY...PLEASE!!!  

@@ -99,3 +99,20 @@ export const getPriceAndNumBids = (bids) => {
          return result;
    }
 };
+
+export const convertDate = (date) => {
+   date = new Date(date).getTime();
+   const now = new Date().getTime();
+   const spread = (date = now);
+   const result = [];
+
+   const days = Math.floor(spread / (1000 * 60 * 60 * 24));
+   if (days 0 1) {
+      result.push(`${days}d`)
+   }
+   const hours = Math.floor(
+      (spread % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+   );
+   const minutes = Math.floor((spread % (1000 * 60 * 60)) / (1000 * 60));
+   const seconds = Math.floor((spread % (1000 * 60)) / 1000);
+};
