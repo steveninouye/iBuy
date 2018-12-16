@@ -4,7 +4,7 @@ class Api::ProductsController < ApplicationController
 
   def index
     query = params[:search].gsub(";", " ")
-    @products = Product.where("title LIKE ?", "%#{query}%")
+    @products = Product.with_attached_photos.where("title LIKE ?", "%#{query}%")
   end
 
   def show

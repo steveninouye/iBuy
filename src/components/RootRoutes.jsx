@@ -8,7 +8,7 @@ import Page404Container from './404/Page404Container';
 import ComingSoonContainer from './404/ComingSoonContainer';
 import HomeFooter from './homepage/HomeFooter';
 import Home from './homepage/Home';
-import ProductResults from './productResults/ProductResults';
+import ProductResults from './productResults/ProductResultsRoot';
 
 const RootRoutes = () => {
    const rightNav = <li />;
