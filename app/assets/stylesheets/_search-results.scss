@@ -244,7 +244,7 @@ div#search-results-root {
          flex-grow: 7;
          padding: 1rem 0 0.9rem 0.8rem;
          margin: 0 0rem 0 0.4rem;
-         border-radius: 0.3rem;
+         border-radius: 0.1rem;
          color: #000000;
          transform: translate(0rem, 0.05rem);
          box-shadow: -0.1rem 0.1rem 0.1rem 0.1rem rgb(200, 200, 200);
@@ -261,7 +261,7 @@ div#search-results-root {
          overflow: hidden;
          height: 3.7rem;
          margin: 0 0.2rem 0 0rem;
-         border-radius: 0.3rem;
+         border-radius: 0.1rem;
          box-shadow: -0.1rem 0.1rem 0.1rem 0.1rem rgb(200, 200, 200);
          display: flex;
          align-items: center;
@@ -310,7 +310,7 @@ div#search-results-root {
       // border: 1px solid rgb(197, 197, 197);
       display: grid;
       grid-template-rows: 4.7rem;
-      grid-template-columns: 7fr 20fr 6fr;
+      grid-template-columns: 6fr 20fr 6fr;
       width: 100%;
       height: 500px;
 
@@ -343,22 +343,23 @@ div#search-results-root {
          & div.search-result-item {
             display: grid;
             grid-template:
-               'pic  title  title  title' 1fr
-               'pic   desc   desc   desc ' 1fr
-               'pic   ....   ....   .... ' 1fr
+               'pic   title  title  title' minmax(min-content, 2.4rem)
+               'pic   desc   desc   desc ' minmax(min-content, 2.4rem)
+               'pic   star   star   star ' minmax(min-content, 2.4rem)
                '....  price  time   time' 1fr
+               '....  price   time  time' 1fr
                '....  price   ....  ....' 1fr
-               '....  price   ....  ....' 1fr
-               / 1fr 1fr 1fr 1fr;
+               / 10fr 15fr 7fr 7fr;
             border-top: 1px solid #d6d6d6;
-            height: 17rem;
-            padding: 0.8rem 0.3rem 0 0.3rem;
+            min-height: 16rem;
+            padding: 0.8rem 0.3rem 1.2rem 0.3rem;
 
             & div.thumbnail {
                border: 1px solid #d6d6d6;
                grid-area: pic;
                display: flex;
                justify-content: center;
+               margin-top: 0.7rem;
 
                & img {
                   height: auto;
@@ -374,14 +375,60 @@ div#search-results-root {
 
             & div.item-title {
                grid-area: title;
-               font-size: 1.5rem;
+               font-size: 1.6rem;
                padding-left: 1.2rem;
+               font-weight: 500;
+               padding-top: 0.4rem;
+               color: #1c57b7;
             }
 
             & div.item-subtitle {
                grid-area: desc;
-               font-size: 1.2rem;
+               padding-top: 0.2rem;
+               font-size: 1.3rem;
+               padding-top: 0.3rem;
                padding-left: 1.2rem;
+               color: #767676;
+            }
+
+            & div.star-rating {
+               grid-area: star;
+               padding-left: 1.2rem;
+               font-size: 1.3rem;
+               color: #ef8d24;
+
+               & span.num-star-rating {
+                  margin-left: 1.2rem;
+                  color: #1c57b7;
+               }
+            }
+
+            & div.item-price {
+               grid-area: price;
+               padding-top: 0.6rem;
+               padding-left: 1.2rem;
+               line-height: 210%;
+
+               & div.current-price,
+               & div.buy-it-now-price {
+                  font-size: 1.8rem;
+                  font-weight: bold;
+                  color: #333;
+               }
+
+               & div.item-num-bids,
+               & div.buy-it-now {
+                  color: #767676;
+                  font-size: 1.3rem;
+                  font-weight: 400;
+               }
+            }
+
+            & div.sell-by {
+               padding-top: 0.6rem;
+               grid-area: time;
+               font-size: 1.3rem;
+               color: #767676;
             }
          }
       }
