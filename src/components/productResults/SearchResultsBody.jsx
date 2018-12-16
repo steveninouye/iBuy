@@ -1,12 +1,16 @@
 import React from 'react';
 
-import SearchResultsSideBar from './SearchResultsSideBar';
+import SearchRelatedItems from './SearchRelatedItems';
+import SearchResultsLeftSideBar from './SearchResultsLeftSideBar';
 import SearchResultsContainer from './SearchResultsContainer';
+import SearchResultsRightSideBar from './SearchResultsRightSideBar';
 
 const SearchResultsBody = (props) => (
    <div id="search-results-body">
-      <SearchResultsSideBar />
+      <SearchRelatedItems />
+      <SearchResultsLeftSideBar />
       <SearchResultsContainer />
+      <SearchResultsRightSideBar />
    </div>
 );
 

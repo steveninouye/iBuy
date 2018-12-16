@@ -8,7 +8,6 @@ class Search extends React.Component {
       super(props);
       this.handleSubmit = this.handleSubmit.bind(this);
       this.state = { searchInput: '' };
-      console.log(this.props);
    }
 
    handleChange(type) {

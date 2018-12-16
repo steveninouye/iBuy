@@ -212,18 +212,18 @@
          margin-bottom: 0.5rem;
 
          & a {
-            padding-left: 0.7rem;
-            font-size: 3.2rem;
+            padding-left: 1.3rem;
+            font-size: 4.2rem;
             font-weight: 500;
             letter-spacing: -0.3rem;
 
             // reference: https://stackoverflow.com/a/12065925
             display: inline-block;
-            -webkit-transform: scale(1.35, 1); /* Safari and Chrome */
-            -moz-transform: scale(1.35, 1); /* Firefox */
-            -ms-transform: scale(1.35, 1); /* IE 9 */
-            -o-transform: scale(1.35, 1); /* Opera */
-            transform: scale(1.35, 1);
+            -webkit-transform: scale(1.35, 1.25); /* Safari and Chrome */
+            -moz-transform: scale(1.35, 1.25); /* Firefox */
+            -ms-transform: scale(1.35, 1.25); /* IE 9 */
+            -o-transform: scale(1.35, 1.25); /* Opera */
+            transform: scale(1.35, 1.25);
 
             & span:nth-child(1) {
                color: #e53238;

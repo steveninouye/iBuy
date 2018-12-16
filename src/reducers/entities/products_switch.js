@@ -2,13 +2,16 @@ import {
    SEARCH_PRODUCT_RESULTS,
    RECEIVE_PRODUCT
 } from '../../actions/product_actions';
+import tempProducts from '../../TEMPproducts';
 
-const ProductsSwitch = (state = {}, action) => {
+// change state back to empty object
+const ProductsSwitch = (state = tempProducts, action) => {
    switch (action.type) {
       case SEARCH_PRODUCT_RESULTS:
+         console.log('CHANGE YOUR PRODUCT SWITCH REDUCER LINE 11, 7, & 5');
          return action.products;
       case RECEIVE_PRODUCT:
-         return Object.assign({}, state, action.product);
+         return action.product;
       default:
          return state;
    }

@@ -6,7 +6,7 @@ import SearchResultItem from './SearchResultItem';
 class SearchResults extends React.Component {
    render() {
       const { products } = this.props;
-      if (products) {
+      if (products.length > 0) {
          return (
             <ul id="search-results">
                {products.map((product, i) => (
@@ -15,7 +15,7 @@ class SearchResults extends React.Component {
             </ul>
          );
       } else {
-         return 'spinner';
+         return <ul id="search-results">spinner</ul>;
       }
    }
 }

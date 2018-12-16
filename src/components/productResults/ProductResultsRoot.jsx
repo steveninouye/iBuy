@@ -5,7 +5,7 @@ import NavBarContainer from '../navbar/NavBarContainer';
 import HomeSearchContainer from '../homepage/HomeSearchContainer';
 
 const ProductResultsRoot = ({ products }) => (
-   <div id="search-results-body">
+   <div id="search-results-root">
       <NavBarContainer />
       <HomeSearchContainer />
       <SearchResultsBody />
