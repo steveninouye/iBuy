@@ -6,16 +6,24 @@ import SelectCategories from './SelectCategories';
 class Search extends React.Component {
    constructor(props) {
       super(props);
+      this.handleSubmit = this.handleSubmit.bind(this);
       this.state = { searchInput: '' };
+      console.log(this.props);
    }
 
    handleChange(type) {
       return (e) => this.setState({ [type]: e.target.value });
    }
 
+   handleSubmit(e) {
+      e.preventDefault();
+      this.props.searchProducts(this.state.searchInput);
+      this.props.history.push('/search');
+   }
+
    render() {
       return (
-         <form className="home--search-container">
+         <form className="home--search-container" onSubmit={this.handleSubmit}>
             <Link to="/" className="home--main-logo">
                <span className="logo-letter">i</span>
                <span className="logo-letter">b</span>

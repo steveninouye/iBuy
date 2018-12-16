@@ -8,16 +8,18 @@ import Page404Container from './404/Page404Container';
 import ComingSoonContainer from './404/ComingSoonContainer';
 import HomeFooter from './homepage/HomeFooter';
 import Home from './homepage/Home';
+import ProductResults from './productResults/ProductResults';
 
 const RootRoutes = () => {
    const rightNav = <li />;
    return (
       <>
          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/search" component={ProductResults} />
+            <Route exact path="/comingsoon" component={ComingSoonContainer} />
             <AuthRoute path="/register" component={SignUpFormContainer} />
             <AuthRoute path="/signin" component={LogInFormContainer} />
-            <Route exact path="/" component={Home} />
-            <Route exact path="/comingsoon" component={ComingSoonContainer} />
             <Route path="*" component={Page404Container} />
          </Switch>
          <HomeFooter />
