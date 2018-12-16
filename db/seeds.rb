@@ -74,7 +74,7 @@ end
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -112,7 +112,7 @@ Fida<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -140,7 +140,7 @@ Lots of ports!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -193,7 +193,7 @@ Tel..................................",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -227,7 +227,7 @@ If your laptop gets hit with viruses and you need to refresh your system from sc
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -279,7 +279,7 @@ Located in SF near Park Merced/SFSU",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -329,7 +329,7 @@ Tel..................................",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -367,7 +367,7 @@ Fida<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -409,7 +409,7 @@ GOD BLESS YOU.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -452,7 +452,7 @@ Text:",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -509,7 +509,7 @@ feel free to shoot me an email or a text if you are interested<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -539,7 +539,7 @@ https://everymac.com/systems/apple/imac/specs/imac-core-i5-2.8-21-inch-aluminum-
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -567,7 +567,7 @@ Price: $20 each cash",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -594,7 +594,7 @@ Call or Text:",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -619,7 +619,7 @@ Cash only. Must pick up.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -666,7 +666,7 @@ Located near SF State.  <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -712,7 +712,7 @@ Form Factor             	= 1U<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -752,7 +752,7 @@ https://www.ebay.com/p/Dell-P2312HT-1920-X-1080-23-LCD-Monitor/1122609045",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -788,7 +788,7 @@ Email me at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -846,7 +846,7 @@ THE LAPTOP IS IN NEAR MINT CONDITION&#xA0;<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -897,7 +897,7 @@ call phone number in image<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -952,7 +952,7 @@ Fida<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -996,7 +996,7 @@ Memory Card Type: MicroSD CALL",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1032,7 +1032,7 @@ $50<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1058,7 +1058,7 @@ $50<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1094,7 +1094,7 @@ Cash and pickup only.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1133,7 +1133,7 @@ In person only. Don&apos;t waste my time - I hate scammers",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1160,7 +1160,7 @@ In person only. Don&apos;t waste my time - I hate scammers",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1204,7 +1204,7 @@ In person only. Don&apos;t waste my time - I hate scammers",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1232,7 +1232,7 @@ I am asking $150 OBO",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1263,7 +1263,7 @@ Jay",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1300,7 +1300,7 @@ We can meet in a safe place to make any transaction.<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1334,7 +1334,7 @@ I am asking $120 for it. Questions email me. Thank you!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1383,7 +1383,7 @@ Call or text <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1423,7 +1423,7 @@ Ai Radar automatically detects the location of clients and pin-points the signal
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1475,7 +1475,7 @@ Tel..................................",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1552,7 +1552,7 @@ www.computersforeveryone.org (has an interactive map)",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1584,7 +1584,7 @@ Local Pickup Only. In Morgan Hill, Just south of San Jose",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1637,7 +1637,7 @@ Located in SF for ease of transaction near 19th Ave and Highway 280  <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1686,7 +1686,7 @@ Cash only please.  Firm on price - CLMail me and we can plan a meet up at Stones
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1739,7 +1739,7 @@ Located in SF for ease of transaction near 19th Ave and Highway 280  <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1777,7 +1777,7 @@ Fida<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1804,7 +1804,7 @@ Fida<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1842,7 +1842,7 @@ Fida<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1893,7 +1893,7 @@ Tel..................................",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1924,7 +1924,7 @@ Yoshi<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1954,7 +1954,7 @@ Great condition",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -1990,7 +1990,7 @@ Tags: 13&quot; 13-inch 17 applecare apple care",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2028,7 +2028,7 @@ Fida<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2058,7 +2058,7 @@ Yoshi.<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2088,7 +2088,7 @@ Yoshi",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2122,7 +2122,7 @@ Included: <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2148,7 +2148,7 @@ Included: <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2178,7 +2178,7 @@ Email if interested.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2214,7 +2214,7 @@ Same as https://www.ebay.com/itm/Lenovo-ThinkPad-X1-Carbon-2nd-Gen-Laptop-i5-430
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2276,7 +2276,7 @@ Tel..................................",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2308,7 +2308,7 @@ Jay",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2350,7 +2350,7 @@ Hewlett Packard, IBM, Ikon, Samsung, Brother,  Canon, Epson, <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2379,7 +2379,7 @@ Comes with nano receiver",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2409,7 +2409,7 @@ For Windows, Mac and Linux: Reliable wireless connection with tiny Logitech Unif
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2455,7 +2455,7 @@ Form Factor             	= 1U<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2496,7 +2496,7 @@ Included AC Adapter - Lenovo 65W<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2531,7 +2531,7 @@ https://www.amazon.com/Slappa-SL-SV-104-17-Inch-Ballistix-Laptop/dp/B0015ADC90/r
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2566,7 +2566,7 @@ Contact me via Craiglist email, state how many you would like to get.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2599,7 +2599,7 @@ REPLY IF YOU HAVE ANY QUESTIONS.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2634,7 +2634,7 @@ Asking price is $650 or best offer.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2683,7 +2683,7 @@ Email me at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2713,7 +2713,7 @@ One tri-band node and 2 dual-band nodes. Providing coverage for up to 5000 sf.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2800,7 +2800,7 @@ Electrical and Operating Requirements",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2846,7 +2846,7 @@ No trade. Firm. Cash or Venmo.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2878,7 +2878,7 @@ Perfect working condition - test before you buy",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -2912,7 +2912,7 @@ Display: 2736 x 1824",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3011,7 +3011,7 @@ Thank you for making it this far! Please text.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3046,7 +3046,7 @@ Price is firm.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3098,7 +3098,7 @@ Tel..................................",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3126,7 +3126,7 @@ Condition is good. No dead pixels that I could find.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3152,7 +3152,7 @@ Been sitting in my garage for 2 years.  Wiped clean.  Not sure what OS is on it.
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3200,7 +3200,7 @@ QoS and WMM features give priorities to bandwidth-intensive applications like HD
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3229,7 +3229,7 @@ QoS and WMM features give priorities to bandwidth-intensive applications like HD
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3264,7 +3264,7 @@ Payment - This will be sold face-to-face in a cash transaction.  I&apos;ll respo
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3311,7 +3311,7 @@ Cash only please, will replace parts within the week if defective.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3351,7 +3351,7 @@ Payed over $1500 from Lenovo.<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3381,7 +3381,7 @@ Yoshi",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3435,7 +3435,7 @@ Keyword: Lenovo Laptop Ultrabook Yoga ThinkPad Yoga12 warranty<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3483,7 +3483,7 @@ keywords: Search keywords: HTPC desktop laptop hp Compaq Lenovo intel i3 i7 i5 x
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3529,7 +3529,7 @@ if this post is up its available.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3562,7 +3562,7 @@ No shipping and no delivery, will meet at a local public location.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3600,7 +3600,7 @@ No refund for it, didn&apos;t fit my needs, only if it is defective! My items ar
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3644,7 +3644,7 @@ https://www.amazon.com/Dell-P2217-Widescreen-LCD-Monitor/dp/B01FM3IG28/ref=sr_1_
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3669,7 +3669,7 @@ https://www.amazon.com/Dell-P2217-Widescreen-LCD-Monitor/dp/B01FM3IG28/ref=sr_1_
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3713,7 +3713,7 @@ LEDs allow for easy status monitoring",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3758,7 +3758,7 @@ Also included is a GearGrip Pro strap to help carry this tower around with ease.
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3804,7 +3804,7 @@ Thank you.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3849,7 +3849,7 @@ Needs:<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3876,7 +3876,7 @@ CHECK OUT MY OTHER ITEM$ FOR $ALE",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3900,7 +3900,7 @@ CHECK OUT MY OTHER ITEM$ FOR $ALE",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3931,7 +3931,7 @@ Leave your name and phone.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -3971,7 +3971,7 @@ Includes power adaptor and case.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -4001,7 +4001,7 @@ Works great! Was saving it for its stylish good looks. Monitor has been resting 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -4032,7 +4032,7 @@ PLEASE CHECK OUT MY OTHER ITEMS FOR SALE<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -4068,7 +4068,7 @@ Serious buyers shoot me an offer, low ball offers will be ignored, number is nin
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -4129,7 +4129,7 @@ Cash only.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -4164,7 +4164,7 @@ No refund for it, didn&apos;t fit my needs, only if it is defective! My items ar
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -4233,7 +4233,7 @@ Everything you need to start cleaning. <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -4292,7 +4292,7 @@ keywords: Search keywords: HTPC desktop laptop hp Compaq Lenovo intel i3 i7 i5 x
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -4345,7 +4345,7 @@ Tel..................................",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -4394,7 +4394,7 @@ Call or text <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -4433,7 +4433,7 @@ No refund for it, didn&apos;t fit my needs, only if it is defective! My items ar
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -4456,7 +4456,7 @@ No refund for it, didn&apos;t fit my needs, only if it is defective! My items ar
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -4499,7 +4499,7 @@ For additional pictures and information use email.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -4549,7 +4549,7 @@ Keyword: Laptop Levono IBM ThinkPad T410 T420 T430 T550 T540 T510 T440 T440u T44
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -4583,7 +4583,7 @@ Power Consumption : Power Consumption &lt; 30.2 Watt, Power Saving Mode &lt; 2 W
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -4628,7 +4628,7 @@ corsair, dell, hp, lg, samsung, gamer, gaming, computer, desktop, speakers",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -4665,7 +4665,7 @@ Thanks<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -4729,7 +4729,7 @@ Video Card	Intel HD Graphics",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -4786,7 +4786,7 @@ keywords: Search keywords: HTPC desktop laptop hp Compaq Lenovo intel i3 i7 i5 x
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -4831,7 +4831,7 @@ No trade. Firm. Cash or Venmo.<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -4873,7 +4873,7 @@ Comes with Mac OS X High Sierra (10.12.6) clean install.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -4941,7 +4941,7 @@ text me @ 510-735-823(six)<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -4972,7 +4972,7 @@ USB, PictBridge, and 802.3 Ethernet connectivity; PC and Mac compatible",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5013,7 +5013,7 @@ end
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5071,7 +5071,7 @@ THE LAPTOP IS IN NEAR MINT CONDITION&#xA0;<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5097,7 +5097,7 @@ THE LAPTOP IS IN NEAR MINT CONDITION&#xA0;<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5125,7 +5125,7 @@ THE LAPTOP IS IN NEAR MINT CONDITION&#xA0;<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5152,7 +5152,7 @@ asking $40",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5203,7 +5203,7 @@ Keywords: motherboard, dell, acer, asus, asrock, core, mother board, bundle, ele
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5229,7 +5229,7 @@ Can be used with Verizon Wireless.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5257,7 +5257,7 @@ Lots of ports!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5285,7 +5285,7 @@ Lots of ports!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5340,7 +5340,7 @@ Lots of ports!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5373,7 +5373,7 @@ No refund for it, didn&apos;t fit my needs, only if it is defective! My items ar
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5403,7 +5403,7 @@ Works well, nice complete system.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5436,7 +5436,7 @@ OSX Mojave fresh install<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5460,7 +5460,7 @@ OSX Mojave fresh install<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5497,7 +5497,7 @@ Please text if interested to 415-43zero-52six3<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5522,7 +5522,7 @@ Please text if interested to 415-43zero-52six3<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5568,7 +5568,7 @@ Thank you.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5611,7 +5611,7 @@ Included Hardware<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5666,7 +5666,7 @@ Included Hardware<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5691,7 +5691,7 @@ Included Hardware<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5723,7 +5723,7 @@ https://si.cdn.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5756,7 +5756,7 @@ Comes with box power cord and manual * price is firm",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5805,7 +5805,7 @@ Ask for T<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5831,7 +5831,7 @@ Android 4.4<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5866,7 +5866,7 @@ No refund for it, didn&apos;t fit my needs, only if it is defective! My items ar
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5899,7 +5899,7 @@ New battery installed recently, only ~33 cycles. Used by a professional, never a
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5929,7 +5929,7 @@ One tri-band node and 2 dual-band nodes. Providing coverage for up to 5000 sf.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5955,7 +5955,7 @@ Great Condition.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -5999,7 +5999,7 @@ Please contact me at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6031,7 +6031,7 @@ Perfect working condition - test before you buy",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6060,7 +6060,7 @@ Cash only local pick up",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6095,7 +6095,7 @@ Asking price is $650 or best offer.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6125,7 +6125,7 @@ Yoshi.<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6152,7 +6152,7 @@ The Apple Keyboard with Numeric Keypad features an elegant, ultrathin anodized a
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6188,7 +6188,7 @@ Email me at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6223,7 +6223,7 @@ Cash only local pick up",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6309,7 +6309,7 @@ Please text me at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6344,7 +6344,7 @@ The unit is guaranteed to be in full working order. You can examine the unit bef
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6399,7 +6399,7 @@ The unit is guaranteed to be in full working order. You can examine the unit bef
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6436,7 +6436,7 @@ Text:",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6493,7 +6493,7 @@ Please find details below:<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6523,7 +6523,7 @@ Yoshi",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6576,7 +6576,7 @@ As is",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6615,7 +6615,7 @@ Mac, macintosh, apple, mac os, ios, iphone, ipad, laptop, imac",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6646,7 +6646,7 @@ Yoshi<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6695,7 +6695,7 @@ We&apos;ve switched network providers and now rent their mesh wifi network equip
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6718,7 +6718,7 @@ We&apos;ve switched network providers and now rent their mesh wifi network equip
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6758,7 +6758,7 @@ Ai Radar automatically detects the location of clients and pin-points the signal
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6783,7 +6783,7 @@ Ai Radar automatically detects the location of clients and pin-points the signal
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6851,7 +6851,7 @@ text me @ 510-735-823(six)<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6894,7 +6894,7 @@ Payment: cash only please",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6933,7 +6933,7 @@ Add comfort and control to your computing experience with MS111 USB Optical Mous
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -6993,7 +6993,7 @@ Contact Nick 24/7 @
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7034,7 +7034,7 @@ Included Hardware:<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7084,7 +7084,7 @@ Text:
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7170,7 +7170,7 @@ Please text me at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7216,7 +7216,7 @@ Thank you.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7254,7 +7254,7 @@ WILL NOT SHIP ANYWHERE FOR ANY REASON. MUST PICK UP LOCALLY.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7282,7 +7282,7 @@ Used - TESTED and in full working condition. Pulled from datacenter. Factory res
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7314,7 +7314,7 @@ Used - TESTED and in full working condition. Pulled from datacenter. Factory res
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7346,7 +7346,7 @@ asking for $600.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7387,7 +7387,7 @@ SSD 256 GB",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7424,7 +7424,7 @@ Runs all games smoothly at max settings, great for gaming newbies or experts loo
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7451,7 +7451,7 @@ Located in Suisun City. Can meet at Travis AFB as well.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7484,7 +7484,7 @@ located Milpitas<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7539,7 +7539,7 @@ The photos show the case with the removable side panel removed to show the inter
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7577,7 +7577,7 @@ Call me at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7601,7 +7601,7 @@ Call me at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7633,7 +7633,7 @@ Thank you",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7665,7 +7665,7 @@ Paid $1,100 incl tax. Have receipt, all paperwork, and original box.<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7701,7 +7701,7 @@ Hablo Espanol<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7745,7 +7745,7 @@ email for questions.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7778,7 +7778,7 @@ email for questions.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7824,7 +7824,7 @@ Requires&#xA0;OS X 10.5.6 plus Wireless Mouse Software Update 1.0, or Mac OS X 1
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7865,7 +7865,7 @@ Thanks for looking!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7904,7 +7904,7 @@ Parts 	3 years limited<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7929,7 +7929,7 @@ call or text",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7955,7 +7955,7 @@ call or text",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -7978,7 +7978,7 @@ call or text",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -8004,7 +8004,7 @@ call or text",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -8045,7 +8045,7 @@ Ram: 16GB<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -8083,7 +8083,7 @@ Runs all games smoothly at max settings, great for gaming newbies or experts loo
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -8113,7 +8113,7 @@ Asking $60<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -8152,7 +8152,7 @@ $165<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -8182,7 +8182,7 @@ We&apos;ll upgrade the RAM to 8GB for $20.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -8236,7 +8236,7 @@ Cache Memory<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -8267,7 +8267,7 @@ Great For Gaming or TV Streaming Youtube &amp; Roku<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -8291,7 +8291,7 @@ Great For Gaming or TV Streaming Youtube &amp; Roku<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -8336,7 +8336,7 @@ keywords: apple, apple iMac, MacBook, MacBook Pro, MBP, iPhone, iPad, MacOS, Mus
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -8364,7 +8364,7 @@ Specs: https://www.cnet.com/products/proscan-pled2400a-24-led-tv/specs/<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -8614,7 +8614,7 @@ MacBook Pro achieved a Gold rating from EPEAT in the U.S. and Canada.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -8693,7 +8693,7 @@ Macintosh HD:<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -8779,7 +8779,7 @@ Please text me at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -8818,7 +8818,7 @@ Serial: C1MHWMU3DTY3",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -8856,7 +8856,7 @@ USB Keyboard an wireless Logitech mouse<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -8900,7 +8900,7 @@ Available for $2400. Local cash transaction only.<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -8937,7 +8937,7 @@ Includes power adapter.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -8962,7 +8962,7 @@ asking 100 for each or best offer",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -8992,7 +8992,7 @@ Like new. Used for 4 months.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -9037,7 +9037,7 @@ Has some slight wear and tear from normal use.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -9076,7 +9076,7 @@ Wireless Type	5.8 GHz Radio Frequency",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -9130,7 +9130,7 @@ Asking $2000. Feel free to shoot me a text.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -9157,7 +9157,7 @@ Asking $2000. Feel free to shoot me a text.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -9189,7 +9189,7 @@ Get cordless handset convenience when you use Skype! Now you don&apos;t have to 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -9222,7 +9222,7 @@ I live in San Francisco",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -9286,7 +9286,7 @@ Grab your laptop and head to the next meeting where you, and your co-workers, wi
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -9321,7 +9321,7 @@ OS: macOS Mojave 10.14.2",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -9362,7 +9362,7 @@ email reply<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -9392,7 +9392,7 @@ For an additional $20 we can upgrade the RAM to 8GB.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -9446,7 +9446,7 @@ Cache Memory<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -9524,7 +9524,7 @@ NOTE: See above on the intermittent shutdown issue. Buyer should be aware of thi
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -9561,7 +9561,7 @@ Includes power adapter.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -9606,7 +9606,7 @@ USB-C Charge Cable (2 m) included.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -9634,7 +9634,7 @@ The Apple Keyboard with Numeric Keypad features an elegant, ultrathin anodized a
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -9667,7 +9667,7 @@ IBM 1.44MB internal floppy disc drive 05K9206 - $5",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -9697,7 +9697,7 @@ For an additional $20 we can upgrade the RAM to 8GB.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -9783,7 +9783,7 @@ Please text me at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -9818,7 +9818,7 @@ AMD Radeon R9 M370X",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -9857,7 +9857,7 @@ GTX 1060",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -9882,7 +9882,7 @@ GTX 1060",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -9965,7 +9965,7 @@ end
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10005,7 +10005,7 @@ Cash and local only. No shipping.<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10036,7 +10036,7 @@ can deliver within the city of SF",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10063,7 +10063,7 @@ Upgraded to 2 TB Flash",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10091,7 +10091,7 @@ Slight crack on housing of charging area<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10120,7 +10120,7 @@ Good condition.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10153,7 +10153,7 @@ ink  <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10206,7 +10206,7 @@ Tel..................................",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10261,7 +10261,7 @@ all other times , at starbucks listed above",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10313,7 +10313,7 @@ Tel..................................",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10340,7 +10340,7 @@ Tel..................................",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10366,7 +10366,7 @@ Tel..................................",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10393,7 +10393,7 @@ Type 4338",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10424,7 +10424,7 @@ local - in person - day time - cash only",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10448,7 +10448,7 @@ local - in person - day time - cash only",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10476,7 +10476,7 @@ $40 or best offer. Pickup today (Saturday) or tomorrow morning",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10510,7 +10510,7 @@ We&apos;re in Aromas, 40 min south of San Jose.<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10538,7 +10538,7 @@ Tri-color cyan, magenta, and yellow ink.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10568,7 +10568,7 @@ https://en.wikipedia.org/wiki/Lenovo_IdeaPad_Yoga_13",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10609,7 +10609,7 @@ Located in Antioch.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10654,7 +10654,7 @@ https://support.apple.com/kb/SP670?locale=en_US",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10692,7 +10692,7 @@ Intel Celeron G3930<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10721,7 +10721,7 @@ keyboard and frame were recently replaced under extended warranty",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10747,7 +10747,7 @@ Very good condition, perfect for office or home.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10779,7 +10779,7 @@ Asking $2200 cash?<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10803,7 +10803,7 @@ Asking $2200 cash?<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10829,7 +10829,7 @@ Smart Keyboard and/or Apple Pencil may also be available",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10887,7 +10887,7 @@ Condition: Excellent condition, fully loaded, ready to go. <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10921,7 +10921,7 @@ Bill of sale will be made.<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -10973,7 +10973,7 @@ Tel..................................",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11005,7 +11005,7 @@ Tel..................................",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11035,7 +11035,7 @@ I would rather not sell these items individually, but will entertain offers anyw
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11059,7 +11059,7 @@ I also have some excess Mac software available that I will sell at my cost (Mac 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11094,7 +11094,7 @@ Graphics: EVGA GeForce&#xAE; GTX 1080 Ti<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11125,7 +11125,7 @@ Works great!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11182,7 +11182,7 @@ NOTE:I have all Boxes for everything tats in this computers<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11218,7 +11218,7 @@ NOTE:I have all Boxes for everything tats in this computers<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11252,7 +11252,7 @@ Asking 550 or best offer",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11285,7 +11285,7 @@ Golden opportunity for Serious Buyers, Dont miss!!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11319,7 +11319,7 @@ Exact product: https://www.bestbuy.com/site/lenovo-yoga-920-2-in-1-13-9-touch-sc
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11357,7 +11357,7 @@ HP Photosmart 1000, 1115, 1215, 1315, 7100, 7150, 7300, 7350, 7500, 7550, 7600, 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11393,7 +11393,7 @@ HP Photosmart 1000, 1115, 1215, 1315, 7100, 7150, 7300, 7350, 7500, 7550, 7600, 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11417,7 +11417,7 @@ HP Photosmart 1000, 1115, 1215, 1315, 7100, 7150, 7300, 7350, 7500, 7550, 7600, 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11468,7 +11468,7 @@ Tel..................................",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11509,7 +11509,7 @@ Also have a 1080 ti available for 650 as well as a 27 dell ultra sharp IPS for 1
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11537,7 +11537,7 @@ Also have a 1080 ti available for 650 as well as a 27 dell ultra sharp IPS for 1
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11563,7 +11563,7 @@ Intel HD Graphics 4000 and NVIDIA NVS 5200M Dual Video.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11589,7 +11589,7 @@ Intel HD Graphics 4000 and NVIDIA NVS 5200M Dual Video.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11614,7 +11614,7 @@ Intel HD Graphics 4000 and NVIDIA NVS 5200M Dual Video.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11651,7 +11651,7 @@ Ports: MagSafe 2 power port, Two Thunderbolt 2 ports (up to 20 Gbps), Two USB 3 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11676,7 +11676,7 @@ Ports: MagSafe 2 power port, Two Thunderbolt 2 ports (up to 20 Gbps), Two USB 3 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11743,7 +11743,7 @@ We look forward to speaking with you! Thank you for looking!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11776,7 +11776,7 @@ We look forward to speaking with you! Thank you for looking!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11815,7 +11815,7 @@ For full spec listing, see: https://www.dell.com/en-us/work/shop/dell-24-monitor
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11843,7 +11843,7 @@ Compatible Printers: HP Officejet Pro K5400, K550, K8600, L7580, L7590, L7680, L
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11908,7 +11908,7 @@ ITMOJO, LLC",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11945,7 +11945,7 @@ If the ad is up, I still have it!!<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -11978,7 +11978,7 @@ If the ad is up, I still have it!!<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -12044,7 +12044,7 @@ Text me: Will at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -12068,7 +12068,7 @@ Text me: Will at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -12119,7 +12119,7 @@ Tel..................................",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -12158,7 +12158,7 @@ Come with an OEM 85W charger",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -12215,7 +12215,7 @@ for sale, low price (Sony VAIO, HP, Asus, Toshiba...). Please stop by to take a 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -12253,7 +12253,7 @@ You never thought using an inkjet all-in-one could be this easy! It&apos;s simpl
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -12327,7 +12327,7 @@ itmojo IBM Thinkpad",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -12354,7 +12354,7 @@ itmojo IBM Thinkpad",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -12411,7 +12411,7 @@ $275.00",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -12439,7 +12439,7 @@ Firm on price no shipping serious buyer only",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -12465,7 +12465,7 @@ Excellent. Selling computer only.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -12511,7 +12511,7 @@ Since KWorld USB ATSC TV Box supports all notebooks and desktop PCs, and it is U
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -12546,7 +12546,7 @@ Selling only bc I upgraded to 3rd gen <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -12602,7 +12602,7 @@ ITMOJO",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -12678,7 +12678,7 @@ iMac 27&quot; Mid 2009, 2.4GHz, C2D, 4GB RAM, 320GB HD, DVD/R	$369.95",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -12718,7 +12718,7 @@ No shipping cash only no paypal<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -12836,7 +12836,7 @@ Maximum shipping altitude: 35,000 feet",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -12870,7 +12870,7 @@ Super fast desktop computer.  Looks and works like brand new.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -12913,7 +12913,7 @@ Local pick-up and Cash only",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -12942,7 +12942,7 @@ Local sale only. Cash only.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13007,7 +13007,7 @@ I have at least 1 original Dell monitor &apos;stand&apos; that is compatible wit
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13039,7 +13039,7 @@ Call, Text or Email",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13080,7 +13080,7 @@ https://support.apple.com/kb/SP756?locale=en_US<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13115,7 +13115,7 @@ https://support.apple.com/kb/SP756?locale=en_US<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13162,7 +13162,7 @@ NAS Server, FreeNAS, Synology, WD Red, Seagate, Samsung, Qnap, Ironwolf<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13196,7 +13196,7 @@ NAS Server, FreeNAS, Synology, WD Red, Seagate, Samsung, Qnap, Ironwolf<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13221,7 +13221,7 @@ NAS Server, FreeNAS, Synology, WD Red, Seagate, Samsung, Qnap, Ironwolf<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13276,7 +13276,7 @@ ITMOJO",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13303,7 +13303,7 @@ Cash only!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13332,7 +13332,7 @@ $200.00",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13399,7 +13399,7 @@ itmojo IBM Thinkpad",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13461,7 +13461,7 @@ Thickness: 0.7 inch<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13487,7 +13487,7 @@ Feel free to reach out to me via email if you are interested. Available for imme
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13516,7 +13516,7 @@ Its a local and cash sale only.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13541,7 +13541,7 @@ Its a local and cash sale only.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13589,7 +13589,7 @@ Includes DVI dongle,  power supply, keyboard and mouse.<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13622,7 +13622,7 @@ $800, cash only. Available for pickup in Oakland, near 580 at the High Street ex
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13654,7 +13654,7 @@ L440, L450, L460, L470, L540, L560, L570 , P50s, P51S, T440, T440p, T440s, T450,
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13716,7 +13716,7 @@ Text me: Will at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13743,7 +13743,7 @@ Text me: Will at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13772,7 +13772,7 @@ Laptop will come with all original accessories and box. Serious offers only. Loc
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13797,7 +13797,7 @@ Laptop will come with all original accessories and box. Serious offers only. Loc
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13873,7 +13873,7 @@ iMac 27&quot; Mid 2009, 2.4GHz, C2D, 4GB RAM, 320GB HD, DVD/R	$369.95",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13904,7 +13904,7 @@ DVD writer reader",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -13935,7 +13935,7 @@ DVD writer reader",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -14006,7 +14006,7 @@ We look forward to speaking with you! Thank you for looking!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -14049,7 +14049,7 @@ itmojo",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -14093,7 +14093,7 @@ All these cartridges work with Epson Stylus Pro 4000, 7600, and 9600 Printers/Pl
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -14120,7 +14120,7 @@ The monitor works fine.  Good color.  It has DVI, VGA output.  The stand is brok
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -14169,7 +14169,7 @@ $2299 OBO<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -14239,7 +14239,7 @@ Thanks for checking out my listing and have a nice day!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -14293,7 +14293,7 @@ Use a dual-screen MacBook setup? Close your MacBook and try working on a single 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -14323,7 +14323,7 @@ Comes with the original stand, power cord and HDMI cable.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -14466,7 +14466,7 @@ www dell dot com/downloads/global/products/pedge/en/server-poweredge-r710-tech-g
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -14517,7 +14517,7 @@ ITMOJO, LLC  X260 Tablet touchscreen touch screen pen",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -14660,7 +14660,7 @@ www dell dot com/downloads/global/products/pedge/en/server-poweredge-r710-tech-g
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -14720,7 +14720,7 @@ ITMOJO<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -14758,7 +14758,7 @@ We&apos;ve switched providers and now use a different modem.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -14820,7 +14820,7 @@ Precision: M90, M6300<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -14883,7 +14883,7 @@ Call or text @  408-202-565 nine",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -14921,7 +14921,7 @@ $900 and it&apos;s yours.<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -14995,7 +14995,7 @@ itmojo X240 X230 X250 X260 i5 i7 light ultraportable",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15071,7 +15071,7 @@ end
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15108,7 +15108,7 @@ end
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15136,7 +15136,7 @@ end
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15178,7 +15178,7 @@ Thank you !!!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15215,7 +15215,7 @@ http://solistar.etsy.com",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15241,7 +15241,7 @@ Ring Size - 10",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15265,7 +15265,7 @@ Ring Size - 10",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15294,7 +15294,7 @@ I had it fitted and then never wore it, so it comes with several extra links tha
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15325,7 +15325,7 @@ I had it fitted and then never wore it, so it comes with several extra links tha
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15351,7 +15351,7 @@ I had it fitted and then never wore it, so it comes with several extra links tha
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15381,7 +15381,7 @@ Please call or text",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15415,7 +15415,7 @@ I can meet in San Francisco. If this ad is up, it&apos;s still available.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15451,7 +15451,7 @@ CONDITION: Near Mint/Mint - No chips or breaks to the stones. Beautiful color. A
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15479,7 +15479,7 @@ CONDITION: Near Mint/Mint - No chips or breaks to the stones. Beautiful color. A
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15503,7 +15503,7 @@ CONDITION: Near Mint/Mint - No chips or breaks to the stones. Beautiful color. A
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15530,7 +15530,7 @@ CONDITION: Near Mint/Mint - No chips or breaks to the stones. Beautiful color. A
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15581,7 +15581,7 @@ CAMPBELL, CA 95008<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15607,7 +15607,7 @@ CAMPBELL, CA 95008<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15647,7 +15647,7 @@ Ring Size is 8.50<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15697,7 +15697,7 @@ Screw Locke style, and the screw back <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15726,7 +15726,7 @@ Feel free to contact me with any questions",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15751,7 +15751,7 @@ Feel free to contact me with any questions",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15775,7 +15775,7 @@ Feel free to contact me with any questions",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15799,7 +15799,7 @@ Feel free to contact me with any questions",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15825,7 +15825,7 @@ I live at Marina Bay, just south of 580 between El Cerrito and Pt. Richmond.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15851,7 +15851,7 @@ I live at Marina Bay, just south of 580 between El Cerrito and Pt. Richmond.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15883,7 +15883,7 @@ I live at Marina Bay, just south of 580 between El Cerrito and Pt. Richmond.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15917,7 +15917,7 @@ Provide a contact number with your response. thanks",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15945,7 +15945,7 @@ Provide a contact number with your response. thanks",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -15991,7 +15991,7 @@ Provide a contact number with your response. thanks",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16015,7 +16015,7 @@ Provide a contact number with your response. thanks",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16053,7 +16053,7 @@ Thanks.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16092,7 +16092,7 @@ Black diver dial, silver bezel",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16129,7 +16129,7 @@ Christmas, Birthday, Anniversary, Gift, Friend, Give<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16155,7 +16155,7 @@ Christmas, Birthday, Anniversary, Gift, Friend, Give<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16184,7 +16184,7 @@ Christmas, Birthday, Anniversary, Gift, Friend, Give<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16222,7 +16222,7 @@ Please provide a contact number with your response. CASH ONLY",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16252,7 +16252,7 @@ Please provide a contact number with your response. CASH ONLY",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16285,7 +16285,7 @@ Brand new, never opened. Sold on Amazon for $7.99: https://www.amazon.com/Top-Pl
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16316,7 +16316,7 @@ Brand new, never opened. Sold on Amazon for $7.99: https://www.amazon.com/Top-Pl
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16354,7 +16354,7 @@ engagement ring, engagement,",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16381,7 +16381,7 @@ engagement ring, engagement,",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16418,7 +16418,7 @@ I only meet locally",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16445,7 +16445,7 @@ I only meet locally",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16473,7 +16473,7 @@ I only meet locally",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16509,7 +16509,7 @@ CONDITION: Near Mint/Mint - Like New. Please review photos. <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16536,7 +16536,7 @@ CONDITION: Near Mint/Mint - Like New. Please review photos. <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16564,7 +16564,7 @@ CONDITION: Near Mint/Mint - Like New. Please review photos. <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16598,7 +16598,7 @@ Dimensions:<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16627,7 +16627,7 @@ Dimensions:<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16658,7 +16658,7 @@ PLEASE CALL FOR PRICES AND ANY QUESTIONS.<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16682,7 +16682,7 @@ PLEASE CALL FOR PRICES AND ANY QUESTIONS.<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16713,7 +16713,7 @@ PLEASE CALL FOR PRICES AND ANY QUESTIONS.<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16755,7 +16755,7 @@ storage, chest, stores, holds, Indian, Middle Eastern, India, Middle East, exoti
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16783,7 +16783,7 @@ storage, chest, stores, holds, Indian, Middle Eastern, India, Middle East, exoti
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16814,7 +16814,7 @@ I dont have the box right now. I can get it in a month when I go for Christmas",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16841,7 +16841,7 @@ I dont have the box right now. I can get it in a month when I go for Christmas",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16869,7 +16869,7 @@ I dont have the box right now. I can get it in a month when I go for Christmas",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16895,7 +16895,7 @@ I dont have the box right now. I can get it in a month when I go for Christmas",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16922,7 +16922,7 @@ I dont have the box right now. I can get it in a month when I go for Christmas",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16951,7 +16951,7 @@ I dont have the box right now. I can get it in a month when I go for Christmas",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -16982,7 +16982,7 @@ NICE PIECE OF JEWELRY.       <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17014,7 +17014,7 @@ NICE PIECE OF JEWELRY.       <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17043,7 +17043,7 @@ Retro, vintage, watch, military, digital, timex, Casio, collectible",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17081,7 +17081,7 @@ Cash only<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17112,7 +17112,7 @@ Ray-Ban RB3546 Sunglasses - 52 Millimeter Lens",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17139,7 +17139,7 @@ Ray-Ban RB3546 Sunglasses - 52 Millimeter Lens",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17170,7 +17170,7 @@ Asking $1350.00 or best offer. Cash only. Pick up in San Jose - Rose Garden area
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17198,7 +17198,7 @@ Asking $1350.00 or best offer. Cash only. Pick up in San Jose - Rose Garden area
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17227,7 +17227,7 @@ Received as gift but too formal for me.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17253,7 +17253,7 @@ Received as gift but too formal for me.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17281,7 +17281,7 @@ Received as gift but too formal for me.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17310,7 +17310,7 @@ Received as gift but too formal for me.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17347,7 +17347,7 @@ Received as gift but too formal for me.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17380,7 +17380,7 @@ Please note, my listed price is firm.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17407,7 +17407,7 @@ Please note, my listed price is firm.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17435,7 +17435,7 @@ $20",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17463,7 +17463,7 @@ $20",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17521,7 +17521,7 @@ MEASUREMENTS<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17549,7 +17549,7 @@ MEASUREMENTS<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17586,7 +17586,7 @@ MEASUREMENTS<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17614,7 +17614,7 @@ graduated, knotted, faceted crystal beads.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17642,7 +17642,7 @@ graduated, knotted, faceted crystal beads.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17686,7 +17686,7 @@ Local Deal and Pick Up<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17713,7 +17713,7 @@ Local Deal and Pick Up<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17739,7 +17739,7 @@ Local Deal and Pick Up<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17768,7 +17768,7 @@ Local Deal and Pick Up<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17797,7 +17797,7 @@ Local Deal and Pick Up<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17826,7 +17826,7 @@ Serious buyers only, please include your phone number if interested<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17853,7 +17853,7 @@ Serious buyers only, please include your phone number if interested<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17880,7 +17880,7 @@ Serious buyers only, please include your phone number if interested<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17907,7 +17907,7 @@ Serious buyers only, please include your phone number if interested<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17935,7 +17935,7 @@ Serious buyers only, please include your phone number if interested<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17965,7 +17965,7 @@ Please call John at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -17989,7 +17989,7 @@ Please call John at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18016,7 +18016,7 @@ Please call John at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18047,7 +18047,7 @@ Please call John at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18073,7 +18073,7 @@ Please call John at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18096,7 +18096,7 @@ Please call John at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18124,7 +18124,7 @@ Please call John at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18150,7 +18150,7 @@ Please call John at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18179,7 +18179,7 @@ Please call or text",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18206,7 +18206,7 @@ Please call or text",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18235,7 +18235,7 @@ Please call or text",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18264,7 +18264,7 @@ Please call or text",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18290,7 +18290,7 @@ Please call or text",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18324,7 +18324,7 @@ Water resistant to 30 meters",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18358,7 +18358,7 @@ I can meet up in San Francisco. If this ad is up, it is still available.<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18385,7 +18385,7 @@ I can meet up in San Francisco. If this ad is up, it is still available.<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18418,7 +18418,7 @@ CONDITION: Near Mint. Unlikely it was ever warn. No cracks or breaks in the ston
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18456,7 +18456,7 @@ Children&apos;s cross-12 karat gold $19<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18485,7 +18485,7 @@ Eco-friendly White Gold Plated Zinc alloy, Lead-Free &amp; Nickle-Free, No Harm 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18512,7 +18512,7 @@ Eco-friendly White Gold Plated Zinc alloy, Lead-Free &amp; Nickle-Free, No Harm 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18539,7 +18539,7 @@ Eco-friendly White Gold Plated Zinc alloy, Lead-Free &amp; Nickle-Free, No Harm 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18587,7 +18587,7 @@ Call
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18621,7 +18621,7 @@ Great redemption Gift for cheating husband <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18667,7 +18667,7 @@ Rolex, IWC, Cartier, Bell and Ross, Omega,",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18699,7 +18699,7 @@ Please include your phone number if interested and feel free to ask any question
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18747,7 +18747,7 @@ https://www.etsy.com/shop/GreenJeweler<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18774,7 +18774,7 @@ I live at Marina Bay, just south of 580 between El Cerrito and Pt. Richmond.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18808,7 +18808,7 @@ end
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18847,7 +18847,7 @@ Cash Only - no checks, paypal",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18885,7 +18885,7 @@ key: rolex omega citizen grand tag heuer tissot hamilton orient daniel wellingto
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18912,7 +18912,7 @@ key: rolex omega citizen grand tag heuer tissot hamilton orient daniel wellingto
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18944,7 +18944,7 @@ Email if interested.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18968,7 +18968,7 @@ Email if interested.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -18994,7 +18994,7 @@ Email if interested.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19031,7 +19031,7 @@ Item at: Baypointe Dr. &amp; Baypointes Pkwy, San Jose.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19057,7 +19057,7 @@ Item at: Baypointe Dr. &amp; Baypointes Pkwy, San Jose.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19089,7 +19089,7 @@ Item at: Baypointe Dr. &amp; Baypointes Pkwy, San Jose.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19124,7 +19124,7 @@ Cash only<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19153,7 +19153,7 @@ see photos",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19181,7 +19181,7 @@ see photos",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19226,7 +19226,7 @@ Serious buyers can email their phone numbers <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19252,7 +19252,7 @@ Serious buyers can email their phone numbers <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19280,7 +19280,7 @@ Serious buyers can email their phone numbers <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19305,7 +19305,7 @@ Serious buyers can email their phone numbers <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19330,7 +19330,7 @@ Serious buyers can email their phone numbers <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19355,7 +19355,7 @@ Serious buyers can email their phone numbers <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19380,7 +19380,7 @@ Serious buyers can email their phone numbers <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19413,7 +19413,7 @@ Serious Buyers Text or email phone numbers",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19437,7 +19437,7 @@ Serious Buyers Text or email phone numbers",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19468,7 +19468,7 @@ Serious Buyers Text or email phone numbers",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19497,7 +19497,7 @@ Nice watch!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19524,7 +19524,7 @@ Nice watch!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19562,7 +19562,7 @@ Cash only - no checks, paypal",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19589,7 +19589,7 @@ Cash only - no checks, paypal",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19625,7 +19625,7 @@ Sales receipt available - paid $1999<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19742,7 +19742,7 @@ stones, gems, jewel, jewelry, ladies, lady, girls, woman, women, design, designe
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19769,7 +19769,7 @@ stones, gems, jewel, jewelry, ladies, lady, girls, woman, women, design, designe
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19798,7 +19798,7 @@ ONLY SERIOUS BUYERS, please!?",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19836,7 +19836,7 @@ Please provide a contact number with your response. CASH ONLY",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19865,7 +19865,7 @@ Please provide a contact number with your response. CASH ONLY",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19904,7 +19904,7 @@ Cash only<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19931,7 +19931,7 @@ Price is negotiable. <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19957,7 +19957,7 @@ Price is negotiable. <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -19983,7 +19983,7 @@ Price is negotiable. <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20013,7 +20013,7 @@ I will not ship/deliver, be prepared  to pick it up.  Thank you.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20045,7 +20045,7 @@ Sterling silver, gold, pink tourmaline.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20092,7 +20092,7 @@ Serious buyers can email their phone numbers, will meet at a designated safe zon
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20126,7 +20126,7 @@ Automatic self wind, water resistant, stainless steel bezel!<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20176,7 +20176,7 @@ Clasp:Pin Buckle<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20204,7 +20204,7 @@ Clasp:Pin Buckle<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20234,7 +20234,7 @@ Not interested in trades at all.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20259,7 +20259,7 @@ Not interested in trades at all.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20285,7 +20285,7 @@ This watch will not be shipped, pick up in Hayward/Palo Alto only with cash. Tha
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20315,7 +20315,7 @@ I will not ship/deliver, be prepared  to pick it up.  Thank you.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20345,7 +20345,7 @@ Accepting Cash Only. Please respond with a phone number",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20370,7 +20370,7 @@ Accepting Cash Only. Please respond with a phone number",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20396,7 +20396,7 @@ Accepting Cash Only. Please respond with a phone number",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20424,7 +20424,7 @@ Price is negotiable. <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20453,7 +20453,7 @@ Available as long as the ad is posted",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20495,7 +20495,7 @@ Cash Only - No checks, Paypal",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20522,7 +20522,7 @@ Cash Only - No checks, Paypal",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20552,7 +20552,7 @@ I will not deliver item or ship it, cash only in person exchange. You must be pr
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20595,7 +20595,7 @@ EMAIL, CALL OR TEXT",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20637,7 +20637,7 @@ Cash Only - no checks, paypal",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20666,7 +20666,7 @@ Cash Only - no checks, paypal",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20696,7 +20696,7 @@ walnut creek<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20721,7 +20721,7 @@ walnut creek<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20752,7 +20752,7 @@ PLEASE PROVIDE A CONTACT NUMBER WITH YOUR RESPONSE",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20777,7 +20777,7 @@ PLEASE PROVIDE A CONTACT NUMBER WITH YOUR RESPONSE",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20812,7 +20812,7 @@ Cash Only<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20839,7 +20839,7 @@ Cash only.  I will not ship or deliver.  Please be prepared to pick up in Fairfi
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20865,7 +20865,7 @@ Cash only.  I will not ship or deliver.  Please be prepared to pick up in Fairfi
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20893,7 +20893,7 @@ Cash only.  I will not ship or deliver.  Please be prepared to pick up in Fairfi
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20930,7 +20930,7 @@ Available as long as the ad is posted",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20960,7 +20960,7 @@ Cash Only - no checks, paypal",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -20990,7 +20990,7 @@ SKU - 78751",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21016,7 +21016,7 @@ SKU - 78751",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21051,7 +21051,7 @@ Cash Only - no checks, paypal",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21086,7 +21086,7 @@ Cash Only - no checks, paypal",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21117,7 +21117,7 @@ Cash Only - no checks, paypal",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21151,7 +21151,7 @@ Cash only - no checks, paypal<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21180,7 +21180,7 @@ A stunning, heavily studded hand-carved fetish animal with white heishi shell ne
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21204,7 +21204,7 @@ A stunning, heavily studded hand-carved fetish animal with white heishi shell ne
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21231,7 +21231,7 @@ Gold, diamond,silver, jewelry",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21261,7 +21261,7 @@ Not interested in trades at all.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21290,7 +21290,7 @@ Not interested in trades at all.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21324,7 +21324,7 @@ $38 or best reasonable offer. Must be picked up in San Rafael. Cash only. Please
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21367,7 +21367,7 @@ Lisa",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21395,7 +21395,7 @@ $200/cash.  Serious inquires only please.  Reply furnishing your personal email/
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21420,7 +21420,7 @@ $200/cash.  Serious inquires only please.  Reply furnishing your personal email/
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21501,7 +21501,7 @@ Thanks.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21531,7 +21531,7 @@ Thanks.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21568,7 +21568,7 @@ Thanks.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21604,7 +21604,7 @@ KW: quality, designer, classic, arm jewelry, women&apos;s, ladies, silver, etc."
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21631,7 +21631,7 @@ KW: quality, designer, classic, arm jewelry, women&apos;s, ladies, silver, etc."
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21656,7 +21656,7 @@ KW: quality, designer, classic, arm jewelry, women&apos;s, ladies, silver, etc."
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21686,7 +21686,7 @@ I will not deliver item or ship it, cash only in person exchange. You must be pr
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21727,7 +21727,7 @@ Thanks and have you a nice day!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21757,7 +21757,7 @@ Thanks and have you a nice day!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21789,7 +21789,7 @@ call
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21817,7 +21817,7 @@ call
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21844,7 +21844,7 @@ call
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21878,7 +21878,7 @@ serious buyers can email their phone numbers<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21903,7 +21903,7 @@ serious buyers can email their phone numbers<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21929,7 +21929,7 @@ serious buyers can email their phone numbers<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21957,7 +21957,7 @@ serious buyers can email their phone numbers<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -21985,7 +21985,7 @@ serious buyers can email their phone numbers<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22010,7 +22010,7 @@ serious buyers can email their phone numbers<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22048,7 +22048,7 @@ Cash Only - no checks, paypal",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22079,7 +22079,7 @@ Available as long as the ad is posted",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22110,7 +22110,7 @@ Cash only - no checks, paypal",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22135,7 +22135,7 @@ Cash only - no checks, paypal",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22179,7 +22179,7 @@ Serious inquiries only please<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22207,7 +22207,7 @@ walnut creek , ca 94596<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22236,7 +22236,7 @@ walnut creek , ca 94596<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22265,7 +22265,7 @@ A stunning, heavily studded hand-carved fetish animal with white heishi shell ne
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22384,7 +22384,7 @@ wardrobe, accessories, vanity, fashion, mothers, metal, size, designer, designs,
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22414,7 +22414,7 @@ I will not ship/deliver, be prepared  to pick it up.  Thank you.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22445,7 +22445,7 @@ ad=available<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22472,7 +22472,7 @@ ad=available<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22497,7 +22497,7 @@ ad=available<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22523,7 +22523,7 @@ ad=available<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22559,7 +22559,7 @@ Serious buyers can email their phone numbers",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22589,7 +22589,7 @@ I will not ship/deliver, be prepared  to pick it up.  Thank you.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22617,7 +22617,7 @@ Excellent condition",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22663,7 +22663,7 @@ Water resistant depth	30 Meters",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22687,7 +22687,7 @@ Water resistant depth	30 Meters",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22723,7 +22723,7 @@ end
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22749,7 +22749,7 @@ end
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22782,7 +22782,7 @@ Happy surprising!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22809,7 +22809,7 @@ Happy surprising!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22834,7 +22834,7 @@ Happy surprising!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22863,7 +22863,7 @@ Happy surprising!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22911,7 +22911,7 @@ I&apos;ll be in San Bruno flea market this coming Sept...",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22950,7 +22950,7 @@ Thanks,",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -22984,7 +22984,7 @@ Big Jade.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23016,7 +23016,7 @@ Big Jade.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23046,7 +23046,7 @@ $70",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23136,7 +23136,7 @@ Chain length: Approx 20 inches",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23168,7 +23168,7 @@ Duper rare for the thumb!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23194,7 +23194,7 @@ Golden color, new item, box not original.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23225,7 +23225,7 @@ Call me or text me ask for Marco @",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23253,7 +23253,7 @@ YES, if you see the ad then the item is still available!<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23276,7 +23276,7 @@ YES, if you see the ad then the item is still available!<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23302,7 +23302,7 @@ Great holiday gift for that special someone!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23332,7 +23332,7 @@ It is factory like new I will respectfully decline offers.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23362,7 +23362,7 @@ It is factory like new I will respectfully decline offers.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23387,7 +23387,7 @@ It is factory like new I will respectfully decline offers.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23426,7 +23426,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH FR
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23459,7 +23459,7 @@ No shipping, in-person sale only.<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23483,7 +23483,7 @@ No shipping, in-person sale only.<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23513,7 +23513,7 @@ Buy with Confidence.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23545,7 +23545,7 @@ $12, and it&apos;s yours!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23583,7 +23583,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23612,7 +23612,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23637,7 +23637,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23673,7 +23673,7 @@ THE ITEM IS SOLD AS IT IS.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23698,7 +23698,7 @@ THE ITEM IS SOLD AS IT IS.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23722,7 +23722,7 @@ THE ITEM IS SOLD AS IT IS.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23749,7 +23749,7 @@ Walnut Creek, CA 94596<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23793,7 +23793,7 @@ key= clads",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23821,7 +23821,7 @@ key= clads",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23845,7 +23845,7 @@ key= clads",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23884,7 +23884,7 @@ $8 each set 3 for $20 or make an offer on the lot",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23912,7 +23912,7 @@ $8 each set 3 for $20 or make an offer on the lot",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23948,7 +23948,7 @@ CASH ONLY - Provide a phone number with your response.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -23980,7 +23980,7 @@ Citizen BW0174-58A watch. Stainless steel 26mm case, 8mm thick case. Silvertone 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24007,7 +24007,7 @@ Citizen BW0174-58A watch. Stainless steel 26mm case, 8mm thick case. Silvertone 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24045,7 +24045,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24069,7 +24069,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24108,7 +24108,7 @@ www.thejennyshop.com",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24152,7 +24152,7 @@ https://lovelyladyaccessory.com/collections/necklaces/products/silver-drops-four
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24176,7 +24176,7 @@ https://lovelyladyaccessory.com/collections/necklaces/products/silver-drops-four
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24224,7 +24224,7 @@ https://lovelyladyaccessory.com/collections/necklaces/products/silver-drops-four
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24255,7 +24255,7 @@ Also have a few other music themed jewelry items, such as music clef earrings.  
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24293,7 +24293,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24330,7 +24330,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT TO CHECK AVAILABI
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24381,7 +24381,7 @@ TAKE CARE.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24410,7 +24410,7 @@ send email with contact info and details about what you have<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24436,7 +24436,7 @@ send email with contact info and details about what you have<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24484,7 +24484,7 @@ https://get.google.com/albumarchive/112836950784920753013/album/AF1QipPpbrEsInnp
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24512,7 +24512,7 @@ Can sell separately,if interested",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24551,7 +24551,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24577,7 +24577,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24604,7 +24604,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24632,7 +24632,7 @@ Certified.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24656,7 +24656,7 @@ Certified.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24692,7 +24692,7 @@ Excellent accent piece.  Would also make a great gift!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24726,7 +24726,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT, MONDAY THROUGH F
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24763,7 +24763,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT TO CHECK AVAILABI
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24791,7 +24791,7 @@ mid-century modern design<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24839,7 +24839,7 @@ https://get.google.com/albumarchive/112836950784920753013/albu/AF1QipPpbrEsInnpC
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24884,7 +24884,7 @@ Thank you and Serious inquiries ONLY!  Please text message me as I am not always
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24922,7 +24922,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH FR
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24960,7 +24960,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -24997,7 +24997,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT TO CHECK AVAILABI
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25020,7 +25020,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT TO CHECK AVAILABI
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25052,7 +25052,7 @@ $15 OBO",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25080,7 +25080,7 @@ $15 OBO",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25125,7 +25125,7 @@ Thank you and Serious inquiries ONLY! Please text message me as I am not always 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25170,7 +25170,7 @@ Thank you and Serious inquiries ONLY! Please text message me as I am not always 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25215,7 +25215,7 @@ Thank you and Serious inquiries ONLY!  Please text message me as I am not always
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25248,7 +25248,7 @@ Cash Only. Please include a contact number with your response. Thanks<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25284,7 +25284,7 @@ I live at Marina Bay, just south of 580 between El Cerrito and Pt. Richmond.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25329,7 +25329,7 @@ Thank you and Serious inquiries ONLY! Please text message me as I am not always 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25354,7 +25354,7 @@ Thank you and Serious inquiries ONLY! Please text message me as I am not always 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25392,7 +25392,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25437,7 +25437,7 @@ Thank you and Serious inquiries ONLY! Please text message me as I am not always 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25465,7 +25465,7 @@ Thank you and Serious inquiries ONLY! Please text message me as I am not always 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25499,7 +25499,7 @@ Respond with a contact number to get a quick response. thanks",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25529,7 +25529,7 @@ I have the original Hearts on Fire Certificate, as well as the case. If you are 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25560,7 +25560,7 @@ Beads diameter 19mm.<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25592,7 +25592,7 @@ WILLING TO MEET AT DELL WILLIAMS JEWELER&apos;S OF SANTA CRUZ TO VERIFY RING AND
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25624,7 +25624,7 @@ Email for questions and details.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25674,7 +25674,7 @@ I AM WILLING TO MEET AT DELL WILLIAMS JEWELERS OF SANTA CRUZ TO VERIFY THE RING,
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25702,7 +25702,7 @@ Great gift!  New, still on packaging card.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25733,7 +25733,7 @@ Would also make a great gift!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25771,7 +25771,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25816,7 +25816,7 @@ Thank you and Serious inquiries ONLY!  Please text message me as I am not always
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25846,7 +25846,7 @@ smallest is 6&quot; x 3.5&quot;",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25884,7 +25884,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25907,7 +25907,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25931,7 +25931,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25958,7 +25958,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -25997,7 +25997,7 @@ costume<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26035,7 +26035,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26070,7 +26070,7 @@ PLEASE EMAIL FOR MORE INFORMATION",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26108,7 +26108,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26145,7 +26145,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT TO CHECK AVAILABI
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26230,7 +26230,7 @@ I love these pendants. I wear mine a lot with various doterra essential oils. Pe
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26268,7 +26268,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26306,7 +26306,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH FR
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26351,7 +26351,7 @@ Thank you and Serious inquiries ONLY!  Please text message me as I am not always
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26380,7 +26380,7 @@ Thank you and Serious inquiries ONLY!  Please text message me as I am not always
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26409,7 +26409,7 @@ Thank you and Serious inquiries ONLY!  Please text message me as I am not always
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26460,7 +26460,7 @@ Follow on Facebook; https://www.facebook.com/EncoreDesignerCollections/",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26498,7 +26498,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26536,7 +26536,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH FR
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26581,7 +26581,7 @@ Thank you and Serious inquiries ONLY! Please text message me as I am not always 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26610,7 +26610,7 @@ Thank you and Serious inquiries ONLY! Please text message me as I am not always 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26642,7 +26642,7 @@ Looking to sale before Christmas, make an offer.  Also open to trade for a Chevy
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26687,7 +26687,7 @@ TAKE CARE.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26723,7 +26723,7 @@ CONDITION: Near Mint/Mint - No chips or breaks to the stones. Beautiful color. A
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26757,7 +26757,7 @@ Originally paid 2k+",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26780,7 +26780,7 @@ Originally paid 2k+",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26820,7 +26820,7 @@ I AM WILLING TO MEET AT DELL WILLIAMS JEWELERS OF SANTA CRUZ TO VERIFY THE DIAMO
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26857,7 +26857,7 @@ GIFTING: Delights those who receive it as a present.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26889,7 +26889,7 @@ end
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26915,7 +26915,7 @@ https://www.amazon.com/Brother-HL-3170CDW-Wireless-Networking-Replenishment/dp/B
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26948,7 +26948,7 @@ PS Cash Only<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26972,7 +26972,7 @@ PS Cash Only<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -26996,7 +26996,7 @@ PS Cash Only<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27022,7 +27022,7 @@ PS Cash Only<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27046,7 +27046,7 @@ PS Cash Only<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27071,7 +27071,7 @@ PS Cash Only<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27099,7 +27099,7 @@ laminate posters flyers photos lamination arts crafts pictures FEDEX UPS",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27126,7 +27126,7 @@ Comes with black sports band and charger<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27150,7 +27150,7 @@ Comes with black sports band and charger<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27173,7 +27173,7 @@ Comes with black sports band and charger<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27199,7 +27199,7 @@ Comes with black sports band and charger<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27228,7 +27228,7 @@ With built-in Wi-Fi, Smart TV technology, and Full HD 1080p, the Samsung J5200 4
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27254,7 +27254,7 @@ With built-in Wi-Fi, Smart TV technology, and Full HD 1080p, the Samsung J5200 4
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27278,7 +27278,7 @@ With built-in Wi-Fi, Smart TV technology, and Full HD 1080p, the Samsung J5200 4
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27305,7 +27305,7 @@ With built-in Wi-Fi, Smart TV technology, and Full HD 1080p, the Samsung J5200 4
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27352,7 +27352,7 @@ Available in other length<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27379,7 +27379,7 @@ With Booklet and remote",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27407,7 +27407,7 @@ Comes with the 4 games.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27439,7 +27439,7 @@ ADS Adcom Bedini Bryston Carver Denon Electrocompaniet Forte Gamut Hafler Infini
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27469,7 +27469,7 @@ Throw me some offers, I need it GONE ASAP. I&apos;ll deliver local since a truck
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27505,7 +27505,7 @@ $100.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27531,7 +27531,7 @@ steps step activity fitness watch",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27565,7 +27565,7 @@ http://www.integrahometheater.com/Products/model.php?m=DRC-R1&amp;class=Preampli
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27589,7 +27589,7 @@ http://www.integrahometheater.com/Products/model.php?m=DRC-R1&amp;class=Preampli
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27616,7 +27616,7 @@ http://www.integrahometheater.com/Products/model.php?m=DRC-R1&amp;class=Preampli
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27643,7 +27643,7 @@ Like brand new<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27669,7 +27669,7 @@ https://www.amazon.com/Blue-Blackout-Ninjas-Pyjamas-Bundle/dp/B0731QWWCN/ref=olp
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27694,7 +27694,7 @@ PLEASE SENT DETAILS",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27724,7 +27724,7 @@ Includes original box, accessories, and screen protector.  Watch is in like-new 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27750,7 +27750,7 @@ Includes original box, accessories, and screen protector.  Watch is in like-new 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27776,7 +27776,7 @@ Includes original box, accessories, and screen protector.  Watch is in like-new 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27808,7 +27808,7 @@ Fits iphone/Android up to 6 inch screen",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27833,7 +27833,7 @@ Fits iphone/Android up to 6 inch screen",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27857,7 +27857,7 @@ Fits iphone/Android up to 6 inch screen",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27883,7 +27883,7 @@ Purchased new, used only briefly before moving to a new apartment where I didn&a
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27909,7 +27909,7 @@ Purchased new, used only briefly before moving to a new apartment where I didn&a
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27957,7 +27957,7 @@ keyword: sub-woofer, sub woofer.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -27983,7 +27983,7 @@ restored and ready to use. Used by a family member who is not using it anymore.<
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28012,7 +28012,7 @@ restored and ready to use. Used by a family member who is not using it anymore.<
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28038,7 +28038,7 @@ restored and ready to use. Used by a family member who is not using it anymore.<
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28062,7 +28062,7 @@ restored and ready to use. Used by a family member who is not using it anymore.<
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28099,7 +28099,7 @@ Still available if listed. Thanks!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28127,7 +28127,7 @@ Cash or crypto only.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28192,7 +28192,7 @@ Mixer Switch Digital signal processing Autopatch Extron AMX Crestron Control 4 A
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28216,7 +28216,7 @@ Mixer Switch Digital signal processing Autopatch Extron AMX Crestron Control 4 A
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28241,7 +28241,7 @@ Mixer Switch Digital signal processing Autopatch Extron AMX Crestron Control 4 A
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28267,7 +28267,7 @@ Mixer Switch Digital signal processing Autopatch Extron AMX Crestron Control 4 A
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28299,7 +28299,7 @@ Mixer Switch Digital signal processing Autopatch Extron AMX Crestron Control 4 A
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28330,7 +28330,7 @@ These are in like new condition I still have the box for the router and the box 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28357,7 +28357,7 @@ These are in like new condition I still have the box for the router and the box 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28382,7 +28382,7 @@ These are in like new condition I still have the box for the router and the box 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28408,7 +28408,7 @@ Got it as part of a promotion, already have enough of them.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28488,7 +28488,7 @@ Product Highlights:</p><p>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28514,7 +28514,7 @@ Product Highlights:</p><p>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28538,7 +28538,7 @@ Product Highlights:</p><p>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28562,7 +28562,7 @@ Product Highlights:</p><p>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28586,7 +28586,7 @@ Product Highlights:</p><p>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28611,7 +28611,7 @@ We never got around learning and using it.  Please see Photo.  Thanks for lookin
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28635,7 +28635,7 @@ We never got around learning and using it.  Please see Photo.  Thanks for lookin
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28677,7 +28677,7 @@ Inline with Booster built in HDMI Cable",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28706,7 +28706,7 @@ This is the exact product: https://www.amazon.com/Leisure-Upgraded-Portable-Proj
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28731,7 +28731,7 @@ This is the exact product: https://www.amazon.com/Leisure-Upgraded-Portable-Proj
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28758,7 +28758,7 @@ Thank you for looking !!!<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28785,7 +28785,7 @@ Thank you for looking !!!<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28809,7 +28809,7 @@ Thank you for looking !!!<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28834,7 +28834,7 @@ Thank you for looking !!!<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28872,7 +28872,7 @@ Cash and in person transaction only. <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28907,7 +28907,7 @@ SAn Mateo",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28955,7 +28955,7 @@ Heavy Duty Office Business Paper Shred Shredding Shredder<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -28981,7 +28981,7 @@ Heavy Duty Office Business Paper Shred Shredding Shredder<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29005,7 +29005,7 @@ Heavy Duty Office Business Paper Shred Shredding Shredder<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29031,7 +29031,7 @@ Heavy Duty Office Business Paper Shred Shredding Shredder<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29056,7 +29056,7 @@ Heavy Duty Office Business Paper Shred Shredding Shredder<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29096,7 +29096,7 @@ I have the Following PROTECT AMERICA ALARM/SECURITY EQUIPMENT for SALE::<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29122,7 +29122,7 @@ Audio / Video Cable Assembly, HDMI Type D Plug, HDMI Type A Plug, 6.6 ft, 2 m, B
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29174,7 +29174,7 @@ weekends open at 11am",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29203,7 +29203,7 @@ Keyword: Fitbit Alta, versa, Apple Watch, iwatch, pedometer",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29230,7 +29230,7 @@ please see pictures.Thanks for looking.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29257,7 +29257,7 @@ please see pictures.Thanks for looking.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29281,7 +29281,7 @@ please see pictures.Thanks for looking.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29307,7 +29307,7 @@ please see pictures.Thanks for looking.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29334,7 +29334,7 @@ Brand new item is 139 dollars plus tax. You can have it much cheaper Brand New!"
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29371,7 +29371,7 @@ Email me with any questions, or to set up a time to see the USB kit.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29422,7 +29422,7 @@ JBL, Sonos, Harman Kardon, Bose, Bowers &amp; Wilkens, SVS, Bang , Elac, emotiva
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29454,7 +29454,7 @@ If you&apos;re interested just text or call anytime, thanks!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29481,7 +29481,7 @@ If you&apos;re interested just text or call anytime, thanks!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29505,7 +29505,7 @@ If you&apos;re interested just text or call anytime, thanks!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29544,7 +29544,7 @@ LED TV Projector, SAMSUNG, TCL, LG",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29571,7 +29571,7 @@ LED TV Projector, SAMSUNG, TCL, LG",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29615,7 +29615,7 @@ Product Highlights<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29654,7 +29654,7 @@ Threshold, ps audio, monster power",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29680,7 +29680,7 @@ Threshold, ps audio, monster power",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29708,7 +29708,7 @@ When ready to buy reply back with contact number",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29738,7 +29738,7 @@ Please leave a phone number so we can arrange pickup<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29762,7 +29762,7 @@ Please leave a phone number so we can arrange pickup<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29789,7 +29789,7 @@ https://www.newegg.com/Product/Product.aspx?Item=N82E",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29814,7 +29814,7 @@ https://www.newegg.com/Product/Product.aspx?Item=N82E",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29838,7 +29838,7 @@ Please call me at",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29863,7 +29863,7 @@ $20 firm.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29889,7 +29889,7 @@ restored and ready to use. Used by a family member who is not using it anymore.<
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29921,7 +29921,7 @@ Enjoy surfing on the web wirelessly using the 2.4 GHz frequency band of the NetG
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29946,7 +29946,7 @@ Enjoy surfing on the web wirelessly using the 2.4 GHz frequency band of the NetG
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -29984,7 +29984,7 @@ Text the number below if interested<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30012,7 +30012,7 @@ Plug in your Ethernet cables and connect a power cord, and you&apos;re ready to 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30040,7 +30040,7 @@ galaxy, note, iphone, ipad, android",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30065,7 +30065,7 @@ galaxy, note, iphone, ipad, android",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30098,7 +30098,7 @@ Cash and local pick up only.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30122,7 +30122,7 @@ Cash and local pick up only.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30155,7 +30155,7 @@ Also includes the case...",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30181,7 +30181,7 @@ Also includes the case...",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30205,7 +30205,7 @@ Also includes the case...",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30232,7 +30232,7 @@ Also includes the case...",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30259,7 +30259,7 @@ Also includes the case...",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30304,7 +30304,7 @@ Contrast Ratio	450:1<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30328,7 +30328,7 @@ Email for more information.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30360,7 +30360,7 @@ Great setup movies",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30387,7 +30387,7 @@ Great setup movies",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30424,7 +30424,7 @@ Tuners and Dual Cassette Deck/Player.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30455,7 +30455,7 @@ end
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30482,7 +30482,7 @@ https://www.amazon.com/Samsung-Odyssey-Wireless-Controllers-XE800ZAA-HC1US/dp/B0
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30510,7 +30510,7 @@ Bought this for the superbowl last year but switched to YouTubeTV for this year.
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30537,7 +30537,7 @@ Bought this for the superbowl last year but switched to YouTubeTV for this year.
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30574,7 +30574,7 @@ Please contact by text only.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30610,7 +30610,7 @@ Please contact by text only.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30639,7 +30639,7 @@ Canon Nikon Pentax Fuji E0S Sony",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30669,7 +30669,7 @@ $20.<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30693,7 +30693,7 @@ $20.<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30732,7 +30732,7 @@ Come pick it up!  We&apos;re in the El Cerrito hills, on Arlington between Moese
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30759,7 +30759,7 @@ If you&apos;re willing to pay for it I can recap it for you. I&apos;m a former m
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30786,7 +30786,7 @@ If you&apos;re willing to pay for it I can recap it for you. I&apos;m a former m
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30819,7 +30819,7 @@ risers, rack, power supply<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30888,7 +30888,7 @@ Weight 19.62 lbs",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30912,7 +30912,7 @@ Weight 19.62 lbs",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30939,7 +30939,7 @@ Please call John at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30966,7 +30966,7 @@ Please call John at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -30997,7 +30997,7 @@ only asking $20",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31023,7 +31023,7 @@ only asking $20",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31074,7 +31074,7 @@ http://www.highfidelityreview.com/hk-pm665vxi.html",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31099,7 +31099,7 @@ http://www.highfidelityreview.com/hk-pm665vxi.html",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31150,7 +31150,7 @@ The body and kit lens alone are still going for $799 on Amazon. Not to mention a
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31180,7 +31180,7 @@ $300 firm. You pickup.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31208,7 +31208,7 @@ Please reply with name and phone number if interested.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31241,7 +31241,7 @@ Call or text at (408) 7-zero-5-7-7-one-9",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31267,7 +31267,7 @@ Comes with the HDMI cord as well.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31295,7 +31295,7 @@ Phone number
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31320,7 +31320,7 @@ Phone number
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31352,7 +31352,7 @@ https://www.manualagent.com/logitech/v-ubm46-ubm46/owners-manual<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31388,7 +31388,7 @@ SmartCam+ app: Stay connected to your home from anywhere, anytime. Access your c
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31415,7 +31415,7 @@ SmartCam+ app: Stay connected to your home from anywhere, anytime. Access your c
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31447,7 +31447,7 @@ Will make deal if also interested in ELAC bookshelf speakers, which I&apos;m als
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31471,7 +31471,7 @@ Will make deal if also interested in ELAC bookshelf speakers, which I&apos;m als
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31494,7 +31494,7 @@ Will make deal if also interested in ELAC bookshelf speakers, which I&apos;m als
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31519,7 +31519,7 @@ Will make deal if also interested in ELAC bookshelf speakers, which I&apos;m als
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31545,7 +31545,7 @@ Sin and Punishment - $10",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31569,7 +31569,7 @@ Sin and Punishment - $10",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31594,7 +31594,7 @@ https://www.bestbuy.com/site/lg-49-class-led-uj6300-series-2160p-smart-4k-uhd-tv
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31631,7 +31631,7 @@ And Many more . <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31657,7 +31657,7 @@ Lots of other items for sale. Do a search for Craig Vacaville",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31688,7 +31688,7 @@ Call or text at (408) 7-zero-5-7-7-one-9",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31720,7 +31720,7 @@ Call or text at (408) 7-zero-5-7-7-one-9",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31761,7 +31761,7 @@ Please call
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31785,7 +31785,7 @@ Please call
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31820,7 +31820,7 @@ Willing to make deal if also interested in amplifier (Pioneer VSX 522 K).",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31856,7 +31856,7 @@ keywords: alarm laview lorex surveillance theft nightowl costco PoE IP",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31885,7 +31885,7 @@ Please call John at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31913,7 +31913,7 @@ Please call John at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31938,7 +31938,7 @@ Please call John at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31966,7 +31966,7 @@ Phone number
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -31992,7 +31992,7 @@ https://www.amazon.com/NETGEAR-Version-Wi-Fi-Extender-WN3000RP/dp/B004YAYM06/",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32021,7 +32021,7 @@ keywords; golden hour and minute hands fully functional, precision-quartz mechan
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32070,7 +32070,7 @@ keywords; golden hour and minute hands fully functional, precision-quartz mechan
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32116,7 +32116,7 @@ Mirage: https://www.miragespeakers.com/surround-speakers/",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32152,7 +32152,7 @@ The system is hooked up and ready for you to listen to.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32179,7 +32179,7 @@ The system is hooked up and ready for you to listen to.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32207,7 +32207,7 @@ received as gift but I already have boom.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32237,7 +32237,7 @@ keywords: internet, U verse, comcast, Xfinity, Cat 6, wired,",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32262,7 +32262,7 @@ New unopened in package<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32297,7 +32297,7 @@ I will also sale $80 ea unit.<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32358,7 +32358,7 @@ Additional features: aptX-HD wireless Bluetooth plus wired options, 4 external m
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32385,7 +32385,7 @@ Additional features: aptX-HD wireless Bluetooth plus wired options, 4 external m
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32437,7 +32437,7 @@ Charge stand",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32463,7 +32463,7 @@ brand new, $120 price firm!!!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32491,7 +32491,7 @@ brand new, $120 price firm!!!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32522,7 +32522,7 @@ USB, PictBridge, and 802.3 Ethernet connectivity; PC and Mac compatible",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32552,7 +32552,7 @@ USB, PictBridge, and 802.3 Ethernet connectivity; PC and Mac compatible",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32577,7 +32577,7 @@ They come with the original travel case which will protect them in your luggage 
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32678,7 +32678,7 @@ Weight<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32728,7 +32728,7 @@ Power &amp; Networking<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32753,7 +32753,7 @@ Power &amp; Networking<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32786,7 +32786,7 @@ Only direct dealing with cash at Stanford University CA.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32811,7 +32811,7 @@ Only direct dealing with cash at Stanford University CA.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32861,7 +32861,7 @@ Only direct dealing with cash at Stanford University CA.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32890,7 +32890,7 @@ $50",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32919,7 +32919,7 @@ Asking $10 for all 3",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32953,7 +32953,7 @@ Major III is the next chapter in the revolutionary history of Marshall. This mod
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -32979,7 +32979,7 @@ Canon SD Memory Card<br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33011,7 +33011,7 @@ Great setup movies",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33041,7 +33041,7 @@ Great setup movies",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33071,7 +33071,7 @@ Always getting smarter and adding new features, plus thousands of skills like Ub
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33097,7 +33097,7 @@ Always getting smarter and adding new features, plus thousands of skills like Ub
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33130,7 +33130,7 @@ Apple iOS 11 OS, Up to 10 hours battery life, Color: Space Gray",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33161,7 +33161,7 @@ Item is in San Jose - 95121.<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33186,7 +33186,7 @@ New unopened in package<br>",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33241,7 +33241,7 @@ xr500 x6s ac2600 r7800 r7400 d-link motorola wi-fi wireless internet r7450 links
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33277,7 +33277,7 @@ Willing to meet up in San Francisco to verify the products and taking PayPal / C
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33303,7 +33303,7 @@ Asking $750 includes base, 4 cameras, and 2 door senors. That&apos;s $50 cheaper
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33331,7 +33331,7 @@ CHE95148",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33358,7 +33358,7 @@ NOTE: GPS only, does not include cellular feature",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33392,7 +33392,7 @@ Discreet Battery Monitoring: Simply press the power button to activate 4 built-i
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33425,7 +33425,7 @@ Please call John at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33458,7 +33458,7 @@ Inspired by both the beautiful but potentially dangerous cloud formations and th
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33490,7 +33490,7 @@ Text @  (4O8) 7I2-9493",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33515,7 +33515,7 @@ Text @  (4O8) 7I2-9493",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33541,7 +33541,7 @@ Text @  (4O8) 7I2-9493",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33571,7 +33571,7 @@ Please call John at
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33598,7 +33598,7 @@ https://www.hifiengine.com/manual_library/teac/x-1000r.shtml",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33638,7 +33638,7 @@ EPEAT Silver certified -- reduced environmental impact from multiple eco-attribu
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33676,7 +33676,7 @@ Includes removable stand; measures 48 x 31.9 x 13.2 inches with stand",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33704,7 +33704,7 @@ Cash only.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33730,7 +33730,7 @@ https://www.amazon.com/Cooler-Master-MasterKeys-Mechanical-Keyboard/dp/B01ITE93V
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33763,7 +33763,7 @@ https://www.amazon.com/gp/product/B001QNBUA4/ref=oh_aui_search_detailpage?ie=UTF
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33790,7 +33790,7 @@ https://www.amazon.com/gp/product/B001QNBUA4/ref=oh_aui_search_detailpage?ie=UTF
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33833,7 +33833,7 @@ Text Samantha:",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33866,7 +33866,7 @@ serious only. i&apos;m in SF",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33913,7 +33913,7 @@ serious only. i&apos;m in SF",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33948,7 +33948,7 @@ Live Streaming, TimeWarp Video Voice Control, Raw Photos, and Much More",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -33997,7 +33997,7 @@ Live Streaming, TimeWarp Video Voice Control, Raw Photos, and Much More",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -34044,7 +34044,7 @@ Any Wi-Fi device you have will work with AirPort Extreme. That&apos;s because it
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -34071,7 +34071,7 @@ Any Wi-Fi device you have will work with AirPort Extreme. That&apos;s because it
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -34120,7 +34120,7 @@ Any Wi-Fi device you have will work with AirPort Extreme. That&apos;s because it
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -34154,7 +34154,7 @@ pretty much BRAND NEW serious only. <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -34188,7 +34188,7 @@ It will come in the box of my new monitor it fits perfectly fine.",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -34218,7 +34218,7 @@ Please call, text, or email anytime. <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -34262,7 +34262,7 @@ Band Design	Sport Loop",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -34290,7 +34290,7 @@ Cheers",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -34318,7 +34318,7 @@ Please call if interested <br>
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -34346,7 +34346,7 @@ Boost range up to 7,500 sq feet!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
 
                   user_id: users.sample.id,
 
@@ -34374,8 +34374,8 @@ Boost range up to 7,500 sq feet!",
 
                   location: locations.sample,
 
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  Faker::Time.between(1.month.from_now, 4.months.from_now, :all)
+                  sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
+                  
                   user_id: users.sample.id,
 
                   description: "SERIOUS BUYERS ONLY...PLEASE!!!  
