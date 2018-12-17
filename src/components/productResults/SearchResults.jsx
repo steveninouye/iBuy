@@ -1,14 +1,20 @@
 import React from 'react';
+import queryString from 'query-string';
 
 import { translateLineBreaks } from '../../utils/data_conversion_utils';
 import SearchResultItem from './SearchResultItem';
 
 class SearchResults extends React.Component {
-   shouldComponentUpdate(nextProps, nextState) {
-      // console.log('Hello World!');
-      console.log(nextProps);
+   componentDidMount() {
+      console.log('COMING FROM COMPONENT DID MOUNT');
+      console.log(queryString.parse(this.props.location.search));
       console.log('this.props.location.search: ', this.props.location.search);
-      return true;
+   }
+
+   componentDidUpdate(prevProps, prevState, snapshot) {
+      console.log('COMING FROM COMPONENT DID UPDATE');
+      console.log(queryString.parse(this.props.location.search));
+      console.log('this.props.location.search: ', this.props.location.search);
    }
 
    render() {

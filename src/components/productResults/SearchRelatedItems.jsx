@@ -1,20 +1,36 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const SearchRelatedItems = (props) => (
-   <div className="search-related-items">
-      Related: <a href="#">macbook pro</a>
-      <a href="#">macbook air</a>
-      <a href="#">laptop</a>
-      <a href="#">iphone</a>
-      <a href="#">mobile phones</a>
-      <a href="#">macbook 12</a>
-      <a href="#">imac</a>
-      <a href="#">ipad</a>
-      <a href="#">iphone x</a>
-      <a href="#">macbook pro 15</a>
-      <a href="#">iphone 7</a>
-      <a href="#">macbook 2017</a>
-   </div>
+// without jQuery we can convert query string with
+// Object.keys(params).map(key => key + '=' + params[key]).join('&');
+
+const SearchRelatedItems = (props) => {
+   const items = [
+      'macbook pro',
+      'macbook air',
+      'laptop',
+      'iphone',
+      'mobile phones',
+      'macbook 12',
+      'imac',
+      'ipad',
+      'iphone x',
+      'macbook pro 15',
+      'iphone 7',
+      'macbook 2017'
+   ];
+   return (
+      <div className="search-related-items">
+         Related:{' '}
+         {items.map((item, i) => (
+            <SearchRelatedItem key={`searchItem${i}`} item={item} />
+         ))}
+      </div>
+   );
+};
+
+const SearchRelatedItem = ({ item }) => (
+   <Link to={`/search?${$.param({ query: item })}`}>{item}</Link>
 );
 
 export default SearchRelatedItems;

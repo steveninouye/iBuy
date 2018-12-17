@@ -9,6 +9,7 @@
       "cheerio": "^1.0.0-rc.2",
       "concurrently": "^4.1.0",
       "prompt": "^1.0.0",
+      "query-string": "^6.2.0",
       "react": "^16.6.3",
       "react-dom": "^16.6.3",
       "react-redux": "^6.0.0",

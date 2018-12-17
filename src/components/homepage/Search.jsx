@@ -7,7 +7,7 @@ class Search extends React.Component {
    constructor(props) {
       super(props);
       this.handleSubmit = this.handleSubmit.bind(this);
-      this.state = { searchInput: '' };
+      this.state = { searchInput: '', searchCategory: '' };
    }
 
    handleChange(type) {
@@ -17,7 +17,12 @@ class Search extends React.Component {
    handleSubmit(e) {
       e.preventDefault();
       this.props.searchProducts(this.state.searchInput);
-      this.props.history.push('/search');
+      const { searchInput, searchCategory } = this.state;
+      const query = {};
+      if (searchInput) query.query = searchInput;
+      if (searchCategory) query.category = searchCategory;
+      const queryString = $.param(query);
+      this.props.history.push(`/search?${queryString}`);
    }
 
    render() {
