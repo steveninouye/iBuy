@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import {
    randomStarRating,
    randNumStarRating,
-   randNum,
    getPriceAndNumBids,
    convertDate
 } from '../../utils/data_conversion_utils';
@@ -22,13 +21,12 @@ const SearchResultItem = ({
          <div className="buy-it-now">Buy It Now</div>
       </>
    );
-   let date = new Date(sellBy);
    let { currrentPrice, numBids } = getPriceAndNumBids(bids);
    const imgSrc = photos[0] ? photos[0] : '/assets/no-image-search-item.jpg';
    return (
       <div className="search-result-item">
          <Link to={`/item/${id}`} className="thumbnail">
-               <img src={imgSrc} />
+            <img src={imgSrc} />
          </Link>
          <div className="item-title">
             <Link to={`/item/${id}`}>{title}</Link>

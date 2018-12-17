@@ -1,5 +1,6 @@
 // import React from 'react';
 import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 
 import SearchResults from './SearchResults';
 import { addBidsToProducts } from '../../utils/data_conversion_utils';
@@ -14,9 +15,11 @@ const mapDispatchToProps = (disatch) => {
    return {};
 };
 
-const SearchResultsContainer = connect(
-   mapStateToProps,
-   mapDispatchToProps
-)(SearchResults);
+const SearchResultsContainer = withRouter(
+   connect(
+      mapStateToProps,
+      mapDispatchToProps
+   )(SearchResults)
+);
 
 export default SearchResultsContainer;

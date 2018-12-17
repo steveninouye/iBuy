@@ -9,7 +9,7 @@ const ProductsSwitch = (state = tempProducts, action) => {
    switch (action.type) {
       case SEARCH_PRODUCT_RESULTS:
          console.log('CHANGE YOUR PRODUCT SWITCH REDUCER LINE 11, 7, & 5');
-         return action.products;
+         return action.products ? action.products : state;
       case RECEIVE_PRODUCT:
          return action.product;
       default:

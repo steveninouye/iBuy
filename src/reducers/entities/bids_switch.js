@@ -6,7 +6,7 @@ const BidsSwitch = (state = tempBids, action) => {
    switch (action.type) {
       case SEARCH_PRODUCT_RESULTS:
          console.log('CHANGE YOUR BID SWITCH REDUCER');
-         return action.bids;
+         return action.bids ? action.bids : state;
       // case RECEIVE_BID:
       //    return action.bid;
       default:

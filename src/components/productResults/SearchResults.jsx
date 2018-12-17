@@ -4,6 +4,13 @@ import { translateLineBreaks } from '../../utils/data_conversion_utils';
 import SearchResultItem from './SearchResultItem';
 
 class SearchResults extends React.Component {
+   shouldComponentUpdate(nextProps, nextState) {
+      // console.log('Hello World!');
+      console.log(nextProps);
+      console.log('this.props.location.search: ', this.props.location.search);
+      return true;
+   }
+
    render() {
       const { products } = this.props;
       if (products.length > 0) {
