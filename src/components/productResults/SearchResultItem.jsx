@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import {
    randomStarRating,
@@ -9,7 +10,7 @@ import {
 } from '../../utils/data_conversion_utils';
 
 const SearchResultItem = ({
-   product: { description, title, sellBy, buyItNow, photos, bids }
+   product: { id, description, title, sellBy, buyItNow, photos, bids }
 }) => {
    buyItNow = !buyItNow ? (
       undefined
@@ -26,15 +27,17 @@ const SearchResultItem = ({
    const imgSrc = photos[0] ? photos[0] : '/assets/no-image-search-item.jpg';
    return (
       <div className="search-result-item">
-         <div className="thumbnail">
-            <img src={imgSrc} />
+         <Link to={`/item/${id}`} className="thumbnail">
+               <img src={imgSrc} />
+         </Link>
+         <div className="item-title">
+            <Link to={`/item/${id}`}>{title}</Link>
          </div>
-         <div className="item-title">{title}</div>
          <div className="item-subtitle">
             {description
-               .slice(0, 45)
                .split('<br>')
-               .join(' ')}
+               .join(' ')
+               .slice(0, 45)}
          </div>
          <div className="star-rating">
             {randomStarRating()}

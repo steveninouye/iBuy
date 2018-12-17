@@ -321,7 +321,7 @@ div#search-results-root {
          // border: 1px solid rgb(197, 197, 197);
          grid-column: 1/4;
          font-size: 1.2rem;
-         padding: 0 5rem 0.3rem 0;
+         padding: 0 5% 0.3rem 0;
 
          & a {
             margin: 0 0.7rem;
@@ -388,12 +388,13 @@ div#search-results-root {
             min-height: 16rem;
             padding: 0.8rem 0.3rem 1.2rem 0.3rem;
 
-            & div.thumbnail {
+            & a.thumbnail {
                border: 1px solid #d6d6d6;
                grid-area: pic;
                display: flex;
                justify-content: center;
                margin-top: 0.7rem;
+               max-height: 6.5rem;
 
                & img {
                   height: auto;
