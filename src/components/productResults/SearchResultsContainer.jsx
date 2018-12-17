@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
 import SearchResults from './SearchResults';
+import { searchProducts } from '../../actions/product_actions';
 import { addBidsToProducts } from '../../utils/data_conversion_utils';
 
 const mapStateToProps = (state, ownProps) => {
@@ -11,8 +12,10 @@ const mapStateToProps = (state, ownProps) => {
    };
 };
 
-const mapDispatchToProps = (disatch) => {
-   return {};
+const mapDispatchToProps = (dispatch) => {
+   return {
+      searchProducts: (query) => dispatch(searchProducts(query))
+   };
 };
 
 const SearchResultsContainer = withRouter(

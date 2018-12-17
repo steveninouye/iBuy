@@ -1,20 +1,31 @@
 import React from 'react';
 import queryString from 'query-string';
 
-import { translateLineBreaks } from '../../utils/data_conversion_utils';
 import SearchResultItem from './SearchResultItem';
 
 class SearchResults extends React.Component {
+   constructor(props) {
+      super(props);
+      this.state = {
+         queryString: this.props.location.search
+      };
+   }
+
    componentDidMount() {
-      console.log('COMING FROM COMPONENT DID MOUNT');
-      console.log(queryString.parse(this.props.location.search));
-      console.log('this.props.location.search: ', this.props.location.search);
+      this.props.searchProducts(this.parsedQueryString());
    }
 
    componentDidUpdate(prevProps, prevState, snapshot) {
-      console.log('COMING FROM COMPONENT DID UPDATE');
-      console.log(queryString.parse(this.props.location.search));
-      console.log('this.props.location.search: ', this.props.location.search);
+      const queryString = this.props.location.search;
+      if (this.state.queryString !== queryString) {
+         this.setState({ queryString }, () => {
+            this.props.searchProducts(this.parsedQueryString());
+         });
+      }
+   }
+
+   parsedQueryString() {
+      return queryString.parse(this.state.queryString);
    }
 
    render() {

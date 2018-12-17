@@ -10,9 +10,7 @@ const mapStateToProps = (state, ownProps) => {
 };
 
 const mapDispatchToProps = (dispatch) => {
-   return {
-      searchProducts: (searchInput) => dispatch(searchProducts(searchInput))
-   };
+   return {};
 };
 
 export default withRouter(
