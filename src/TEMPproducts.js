@@ -5,7 +5,7 @@ export const tempProducts = {
       description:
          'This is 100% working condition laptop.<br>\n<br>\nThis is a late 2011 model NON RETINA.<br>\n90 day money back warranty from me.<br>\n<br>\nLaptop has:<br>\n2.2ghz i7 cpu quad core<br>\n16GB ram!<br>\n240gb ssd drive<br>\nCLEAN OS high sierra installed<br>\nNo scratches on screen.<br>\ngigabit ethernet port<br>\nWIFI<br>\nworking 2 cycle battery <br>\nPower adapter<br>\nDVD RW drive<br>\nALL ports work, no issues with computer<br>\nNVidia high performance GPU<br>\nminor scuffing on outer shell due to general use.<br>\n<br>\navailable weekdays after 8pm or before 10am<br>\nanytime weekends<br>\nby branham and snell<br>\n<br>\ncall phone number in image<br>',
       location: '3705 17th St, San Francisco, CA 94114',
-      sellBy: '2019-02-16',
+      sellBy: '2019-02-12T10:18:48.000Z',
       buyItNow: null,
       userId: 284,
       photos: [
@@ -21,7 +21,7 @@ export const tempProducts = {
       description:
          'I have for sale a Macbook Pro 2017 model in 13 inch with upgraded configuration. The color of the computer is space grey. It is in good shape - no nicks/dents. It has no issues and functions without any problems. <br>\n<br>\nApple warranty is still valid on this device until  mid 2020.<br>\n<br>\nThe computer comes with an 2.5 i7 processor and a 256 ssd storage, and 16 gig ram.  <br>\n<br>\nIt sells at the apple store currently for $2200+ with taxes so I&apos;m firm on price. We can meet somewhere close to UC Berkeley campus at a public place.<br>\n<br>\nIf you are interested, please email with your name and number, and I&apos;ll get back to you promptly. <br>\n<br>\n<br>\nTags: 13&quot; 13-inch 17 applecare apple care',
       location: '1610 Post St, San Francisco, CA 94115',
-      sellBy: '2019-03-23',
+      sellBy: '2019-02-20T21:32:38.000Z',
       buyItNow: null,
       userId: 278,
       photos: [
@@ -35,7 +35,7 @@ export const tempProducts = {
       description:
          'Apple Care replaced in April 2018: <br>\n  logic board<br>\n  top case w/ battery<br>\n  bottom case w/gpu<br>\n<br>\nSo, most of the important parts are only 7 months old. There is a little greying around the bezel of the screen, which does not overlap the display area. Also a tiny hairline scratch on the underside -- you have to look for it to notice. See pictures. The power brick looks used. <br>\n<br>\nI am a Xcode developer and usually keep the unit on a desk and plugged in. So, plenty of life in the 7 mo old battery. Comes with original boxes. Am also selling the original 2012 retina. <br>\n<br>\nBTW, Moore&apos;s law is kinda kaput. The Geekbench difference between the 2012 and 2015 is about 15%. Same goes between the 2015 and 2018 on a per core basis. Compiling a medium sized project on 2015 (with 4 cores) took about 25 seconds, and on the 2018 (with 6 cores) took about 20 seconds. Selling these because I have a several USB-C devices to plug in. <br>\n<br>\nNo trade. Firm. Cash or Venmo.',
       location: '50 W Jefferson St, Phoenix, AZ 85003',
-      sellBy: '2019-02-12',
+      sellBy: '2019-01-25T08:57:06.000Z',
       buyItNow: null,
       userId: 264,
       photos: [
@@ -59,7 +59,7 @@ export const tempProducts = {
       description:
          'Selling my Apple 13.3&quot; laptop<br>\nMacbook Pro 13.3&quot;, 2.6Ghz i5, 8gb, 500gb SSD flash drive<br>\n$650 or best offer<br>\nPick up in Mountain View<br>\nIf you&apos;re reading this ad I still have the laptop<br>\nIncludes power adaptor and case.',
       location: '149 Mulberry St, New York, NY 10013',
-      sellBy: '2019-01-16',
+      sellBy: '2019-03-12T22:04:07.000Z',
       buyItNow: 333,
       userId: 281,
       photos: [
@@ -83,7 +83,7 @@ export const tempProducts = {
       description:
          'Bought this new, used for three years, and then bought a 2015 MBP. After that point, this MBP stayed dormant as a  backup unit. There maybe a 5 or 6 stuck pixels on the screen. Slight greying on parts of the bezel. Not noticeable in use. The power brick looks used. <br>\n<br>\n<br>\nI am a Xcode developer and usually keep the unit on a desk and plugged in. So, plenty of life in the 7 mo old battery. Comes with original boxes. Am also selling a 2015 retina. <br>\n<br>\nBTW, Moore&apos;s law is kinda kaput. The Geekbench difference between the 2012 and 2015 is about 15%. Same goes between the 2015 and 2018 on a per core basis. Compiling a medium sized project on 2015 (with 4 cores) took about 25 seconds, and on the 2018 (with 6 cores) took about 20 seconds. I didn&apos;t repeat the test for the 2012. My guess would be around 29 seconds. Selling both units and going with a 2018 because I have a several USB-C devices to plug in. <br>\n<br>\nNo trade. Firm. Cash or Venmo.<br>',
       location: '2636 Judah St, San Francisco, CA 94122',
-      sellBy: '2019-03-11',
+      sellBy: '2019-02-02T16:51:09.000Z',
       buyItNow: 470,
       userId: 274,
       photos: [
@@ -110,7 +110,7 @@ export const tempProducts = {
       description:
          'Selling a brand-new Dell USBC dock for newer Dell laptops...includes 180w power supply.  <br>\n***Compatible to work with Macbook with ucbc***<br>\n<br>\nAsking $60<br>\n<br>\n&#x2022;\tBrand: Dell <br>\n&#x2022;\tModel: WD15 <br>\n&#x2022;\tUSB-C (Thunderbolt 3) Input <br>\n&#x2022;\tFRONT - Analog 4-Conductor (Headset) or Headphone 3.5mm Mini-Jack output <br>\n&#x2022;\tFRONT - 2x USB 3.0 Ports <br>\n&#x2022;\tREAR - Triple Monitor outputs: 1x VGA, 1x Mini-DisplayPort, 1x HDMI with up to 4K resolution <br>\n&#x2022;\tREAR - Analog Stereo Sound 3.5mm Mini-Jack Line Output <br>\n&#x2022;\tREAR - 2x USB 2.0 Ports and 1x USB 3.0 Port <br>\n&#x2022;\tDell 180W Power Adapter <br>\n<br>\nIncluded Items: <br>\n<br>\n1.\tDell WD15 USB-C Docking Station <br>\n2.\t180W Power adapter &amp; power cord <br>\n<br>\nAsking $60<br>\n<br>\n______<br>\n<br>\nSingle Cable Connectivity <br>\n<br>\nFeaturing a powerful DisplayPort over USB Type-CTM cable, with the Dell Dock you can quickly connect your laptop or tablet to a single data and power source up to 130W for Dell devices and 60W for non-Dell devices. You&apos;ll also enjoy an easy, reliable connection from your laptop or tablet to dual FHD displays or a single 4k display @ 30Hz, and all your essential peripherals.Small Footprint and Big Flexibility <br>\n<br>\nThe Dell Dock is small in size-just 6.1 x 4.3 x .83 inches (15.49 x 10.92 x 2.11 cm)-and has one single cable. Place it anywhere you want to work-in your traditional office workspace, a hot desk or a conference room-even if space is limited. <br>\n<br>\nOne dock for all <br>\n<br>\nThe Dell Dock is compatible with select Dell laptops, workstations, tablets and many compatible non-Dell devices with USB-Type CTM port(s) having data, video, and power capabilities. Easily connect to displays, a mouse, keyboard and audio devices through the Dell Dock from your compatible system of choice.Connect for collaboration <br>\n<br>\nGrab your laptop and head to the next meeting where you, and your co-workers, will be able to quickly connect to the Dell Dock and share your latest PowerPoint presentation through a connected display screen or projector. <br>\n<br>\n<br>',
       location: '3735 Balboa St, San Francisco, CA 94121',
-      sellBy: '2019-01-31',
+      sellBy: '2019-03-27T11:52:17.000Z',
       buyItNow: null,
       userId: 283,
       photos: [
@@ -128,7 +128,7 @@ export const tempProducts = {
       description:
          'Still under applecare warranty until middle of next year.<br>\n<br>\nSuper clean condition.  Reformatted and ready for it&apos;s new home.<br>\n<br>\n2.8GHz Core i7<br>\n16GB RAM<br>\n512GB HDD<br>\nAMD Radeon R9 M370X',
       location: '3705 17th St, San Francisco, CA 94114',
-      sellBy: '2019-01-17',
+      sellBy: '2019-02-18T14:48:56.000Z',
       buyItNow: 38,
       userId: 269,
       photos: [
@@ -145,7 +145,7 @@ export const tempProducts = {
       description:
          'Original Owner<br>\nEarly 2015 Apple Macbook Air<br>\n13&quot;, i7, 8gb, 128 hard drive<br>\n<br>\nMildly used.<br>\n<br>\nMostly used safari and chrome.<br>\n<br>\nOne corner has a dent. <br>\n<br>\nBill of sale will be made.<br>',
       location: '149 Mulberry St, New York, NY 10013',
-      sellBy: '2019-03-04',
+      sellBy: '2019-02-28T15:35:52.000Z',
       buyItNow: null,
       userId: 262,
       photos: [
@@ -158,7 +158,7 @@ export const tempProducts = {
       description:
          'In excellent condition. <br>\n<br>\nProcessor: 2.2 GHz Core i7<br>\nDisplay: 15&quot;, Retina, 2880x1800<br>\nStorage: 256GB<br>\nRam: 16 GB<br>\nWi-Fi: 802.11ac<br>\nPorts: MagSafe 2 power port, Two Thunderbolt 2 ports (up to 20 Gbps), Two USB 3 ports (up to 5 Gbps), HDMI port, 3.5 mm headphone jack, SDXC card slot',
       location: '149 Mulberry St, New York, NY 10013',
-      sellBy: '2019-03-16',
+      sellBy: '2019-01-31T23:14:57.000Z',
       buyItNow: null,
       userId: 272,
       photos: [
@@ -177,7 +177,7 @@ export const tempProducts = {
       description:
          'o New in box Sealed Macbook Pro (mid 2017 model)<br>\n<br>\no 15.4&quot; Retina Display 2880x1800 resolution <br>\no 2.8G quad-core Intel Core i7 with (Turbo Boost up to 3.8GHz)<br>\no 16GB RAM  256GB SSD<br>\no Radeon Pro 555 with 2GB of GDDR 5 memory<br>\no Touch Bar and Touch ID<br>\no 802.11ac WiFi and Bluetooth 4.2<br>\no FaceTime HD Camera<br>\n<br>\nLocal buyer only<br>\n<br>\n<br>\nSpec:<br>\nhttps://support.apple.com/kb/SP756?locale=en_US<br>\n<br>\n# Apple , laptop , Mac, MacOS, computer,  <br>\n<br>',
       location: '201 Columbine St, Denver, CO 80206',
-      sellBy: '2019-01-25',
+      sellBy: '2019-02-08T14:19:35.000Z',
       buyItNow: 500,
       userId: 268,
       photos: [
@@ -190,7 +190,7 @@ export const tempProducts = {
       description:
          '13-inch Mid 2010 Macbook Pro, Intel Core 2 Duo @ 2.26 GhZ, 500gb Hard drive, 4gb DDR3 1067 RAM, Nvidia GeForce 9400M 256MB, running OSX 10.11.6 El Capitan.   AC adapter included.<br>\n<br>\n$200.00',
       location: '39 Polk St, San Francisco, CA 94102',
-      sellBy: '2019-02-04',
+      sellBy: '2019-01-29T06:35:50.000Z',
       buyItNow: null,
       userId: 270,
       photos: [
@@ -206,7 +206,7 @@ export const tempProducts = {
       description:
          'Selling in great shape my 2017 MacBook Pro that comes with touch bar, 2.8 GHz Intel Core i7, 16GB RAM, 256 GB SSD, Radeon Pro 555 graphics card, silver and has apple care + that is valid till 2020.<br>\n<br>\nLaptop will come with all original accessories and box. Serious offers only. Local and Cash only offer, meet up in person and no trades.',
       location: '166 Smith St, Brooklyn, NY 11201',
-      sellBy: '2019-02-03',
+      sellBy: '2019-03-02T08:55:24.000Z',
       buyItNow: null,
       userId: 270,
       photos: [

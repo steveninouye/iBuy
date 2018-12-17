@@ -340,20 +340,23 @@
                transform: translateY(0);
                top: 0.4rem;
                cursor: text;
+               padding: 0.5rem;
             }
 
             & input[name='username'] {
                background-color: transparent;
                z-index: 2;
                display: inline-block;
-               padding: 0.3rem;
+               padding: 0.5rem;
                color: rgb(31, 31, 31);
+               font-weight: 500;
+               font-size: 1.5rem;
             }
 
             // reference: https://css-tricks.com/float-labels-css/
             & input[name='username']:focus + label,
             & input[name='username']:valid + label {
-               transform: translateY(-2.2rem);
+               transform: translateY(-2.7rem);
                font-size: 1.2rem;
             }
          }
@@ -368,19 +371,22 @@
                transform: translateY(0);
                top: 0.4rem;
                cursor: text;
+               padding: 0.5rem;
             }
 
             & input[name='password'] {
                background-color: transparent;
                z-index: 2;
                display: inline-block;
-               padding: 0.3rem;
+               padding: 0.5rem;
                color: rgb(31, 31, 31);
+               font-weight: 500;
+               font-size: 1.5rem;
             }
 
             & input[name='password']:focus + label,
             & input[name='password']:valid + label {
-               transform: translateY(-2.2rem);
+               transform: translateY(-2.7rem);
                font-size: 1.2rem;
             }
          }
@@ -394,19 +400,22 @@
                transform: translateY(0);
                top: 0.4rem;
                cursor: text;
+               padding: 0.5rem;
             }
 
             & input[name='confirm-password'] {
                background-color: transparent;
                z-index: 2;
                display: inline-block;
-               padding: 0.3rem;
+               padding: 0.5rem;
                color: rgb(31, 31, 31);
+               font-weight: 500;
+               font-size: 1.5rem;
             }
 
             & input[name='confirm-password']:focus + label,
             & input[name='confirm-password']:valid + label {
-               transform: translateY(-2.2rem);
+               transform: translateY(-2.7rem);
                font-size: 1.2rem;
             }
          }

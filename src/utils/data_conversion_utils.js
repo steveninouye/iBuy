@@ -101,18 +101,56 @@ export const getPriceAndNumBids = (bids) => {
 };
 
 export const convertDate = (date) => {
-   date = new Date(date).getTime();
+   const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+   date = new Date(date);
    const now = new Date().getTime();
-   const spread = (date = now);
-   const result = [];
+   const spread = date.getTime() - now;
+   
+   const msInSec = 1000;
+   const msInMin = msInSec * 60;
+   const msInHour = msInMin * 60;
+   const msInDay = msInHour * 24;
+   const msInWeek = msInDay * 7;
 
-   const days = Math.floor(spread / (1000 * 60 * 60 * 24));
-   if (days 0 1) {
-      result.push(`${days}d`)
+   const wks = Math.floor(spread / msInWeek);
+   const days = Math.floor((spread % msInWeek) / msInDay);
+   let hrs = Math.floor((spread % msInDay) / msInHour);
+   const min = Math.floor((spread % msInHour) / msInMin);
+   const sec = Math.floor((spread % msInMin) / msInSec);
+
+   const result = [wks, days, hrs, min, sec].reduce((acc, cur, idx) => {
+      if (cur !== 0) {
+         switch (idx) {
+            case 0:
+               acc.push(`${cur}w`);
+               break;
+            case 1:
+               acc.push(`${cur}d`);
+               break;
+            case 2:
+               acc.push(`${cur}h`);
+               break;
+            case 3:
+               acc.push(`${cur}m`);
+               break;
+            case 4:
+               acc.push(`${cur}s`);
+               break;
+         }
+      }
+      return acc;
+   }, []);
+
+   if (result.length === 0) {
+      return undefined;
+   } else {
+      const dateStr = result.splice(0, 2).join(' ');
+      const dayOfWeek = daysOfWeek[date.getDay()];
+      let AmPm = 'AM';
+      if (hrs > 12) {
+         AmPm = 'PM';
+         hrs -= 12;
+      }
+      return `${dateStr} left (${dayOfWeek}, ${hrs}:${min}${AmPm})`;
    }
-   const hours = Math.floor(
-      (spread % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-   );
-   const minutes = Math.floor((spread % (1000 * 60 * 60)) / (1000 * 60));
-   const seconds = Math.floor((spread % (1000 * 60)) / 1000);
 };

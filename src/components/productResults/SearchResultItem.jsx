@@ -4,7 +4,8 @@ import {
    randomStarRating,
    randNumStarRating,
    randNum,
-   getPriceAndNumBids
+   getPriceAndNumBids,
+   convertDate
 } from '../../utils/data_conversion_utils';
 
 const SearchResultItem = ({
@@ -21,13 +22,12 @@ const SearchResultItem = ({
       </>
    );
    let date = new Date(sellBy);
-   console.log(date);
-   console.log(date.getDay());
    let { currrentPrice, numBids } = getPriceAndNumBids(bids);
+   const imgSrc = photos[0] ? photos[0] : '/assets/no-image-search-item.jpg';
    return (
       <div className="search-result-item">
          <div className="thumbnail">
-            <img src={photos[0]} />
+            <img src={imgSrc} />
          </div>
          <div className="item-title">{title}</div>
          <div className="item-subtitle">
@@ -47,7 +47,7 @@ const SearchResultItem = ({
             <div className="item-num-bids">{numBids} bids</div>
             {buyItNow}
          </div>
-         <div className="sell-by">4d 21h</div>
+         <div className="sell-by">{convertDate(sellBy)}</div>
       </div>
    );
 };

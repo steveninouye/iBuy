@@ -310,8 +310,8 @@ div#search-results-root {
       // border: 1px solid rgb(197, 197, 197);
       display: grid;
       grid-template-rows: 4.7rem;
-      grid-template-columns: 6fr 20fr 6fr;
-      width: 100%;
+      grid-template-columns: 5fr 22fr 7fr;
+      width: 95%;
       height: 500px;
 
       & div.search-related-items {
@@ -321,7 +321,7 @@ div#search-results-root {
          // border: 1px solid rgb(197, 197, 197);
          grid-column: 1/4;
          font-size: 1.2rem;
-         padding-bottom: 0.3rem;
+         padding: 0 5rem 0.3rem 0;
 
          & a {
             margin: 0 0.7rem;
@@ -334,7 +334,41 @@ div#search-results-root {
       }
 
       & div.left-side-bar {
-         border: 1px solid rgb(197, 197, 197);
+         // border: 1px solid rgb(197, 197, 197);
+         font-size: 1.3rem;
+         color: #0654ba;
+         min-width: 20.5rem;
+
+         & div.search-results-categories {
+            & div.search-results-category-header {
+               font-weight: bold;
+               color: #333;
+               line-height: 1.8rem;
+               margin: 0 0 0.5rem 0;
+            }
+
+            & div.search-all-categories {
+               font-weight: bold;
+               padding: 0.8rem 0;
+            }
+
+            & div.search-side-bar-categories {
+               // padding: 6px 0 6px 12px;
+
+               & div[class*='search-item-cat'] {
+                  padding: 0.4rem 0;
+               }
+
+               & div.search-results-left-chevron {
+                  height: 1.3rem;
+                  width: 0.8rem;
+                  display: inline-block;
+                  margin-right: 0.5rem;
+                  transform: translateY(0.1rem);
+                  background-image: image-url('left-chevron.png');
+               }
+            }
+         }
       }
 
       & ul#search-results {
@@ -438,8 +472,8 @@ div#search-results-root {
          padding-left: 1rem;
 
          & div.advertisement {
-            border: 0.2rem solid #ff2930;
-            color: #ff2930;
+            border: 0.2rem solid #ff2e35;
+            color: #ff2e35;
             font-size: 2.5rem;
             font-weight: 500;
             text-align: center;
