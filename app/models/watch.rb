@@ -10,19 +10,19 @@
 #
 
 class Watch < ApplicationRecord
-   validates_presence_of :user_id, :product_id
-   validates :user_id, uniqueness: { scope: :product_id }
-   validate :user_is_not_owner
+  validates_presence_of :user_id, :product_id
+  validates :user_id, uniqueness: {scope: :product_id}
+  validate :user_is_not_owner
 
-   belongs_to :user
-   belongs_to :product
-   has_one :owner,
-      through: :product,
-      source: :owner
+  belongs_to :user
+  belongs_to :product
+  has_one :owner,
+          through: :product,
+          source: :owner
 
-   def user_is_not_owner
-      if user_id == self.product.owner.id
-         errors.add(:user_id, "You can not watch your own product")
-      end
-   end
+  def user_is_not_owner
+    if self.product && user_id == self.product.owner.id
+      errors.add(:user_id, "You can not watch your own product")
+    end
+  end
 end

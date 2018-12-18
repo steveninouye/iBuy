@@ -1,5 +1,6 @@
 class Api::ProductsController < ApplicationController
   before_action :require_login!, only: [:create, :update, :destroy]
+  before_action :ensure_search_input, only: [:index]
   # before_action :snakecase_params
 
   def index
@@ -37,6 +38,10 @@ class Api::ProductsController < ApplicationController
 
   def product_params
     params.require(:product).permit(:title, :description, :sell_by, :buy_it_now, :location)
+  end
+
+  def ensure_search_input
+    params[:search] ||= ""
   end
 
   def snakecase_params
