@@ -16,7 +16,7 @@ const getImages = (uri) => {
          .trim();
       category = replaceDblQuotes(category);
       const file = `${path}productSeed.rb`;
-      const categoryData = `\ncategory = Category.find_by_name(${category})\nunless(category)\ncategory = Category.create(name: "${category}")\nend\n\n`;
+      const categoryData = `\ncategory = Category.find_by_name(${category})\nunless(category)\ncategory = Category.create(name: "${category}")\nend\n`;
       fs.appendFileSync(file, categoryData);
 
       let prevResult;
@@ -55,7 +55,7 @@ const getImages = (uri) => {
                   description: "${productDescription}",
                   buy_it_now: [(10..500).to_a.sample, nil].sample,
                   category_id: category.id
-               })\n
+               })
                products << product if product
                `;
                fs.appendFileSync(file, productData);

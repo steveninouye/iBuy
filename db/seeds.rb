@@ -51,8 +51,11 @@ User.destroy_all
 
 users = []
 
-30.times do
-   users << User.create(username: Faker::Pokemon.name, password: 'iamasecretpassword')
+users << User.create(username: 'FluffyKittensSF', password: 'password')
+
+29.times do
+   user = User.create(username: Faker::Pokemon.name, password: 'iamasecretpassword')
+   users << user if user
 end
 
 ###################   PRODUCTS  #################################
@@ -63,21 +66,12 @@ category = Category.find_by_name("computers")
 unless(category)
 category = Category.create(name: "computers")
 end
-
-
-
                product = Product.create(
-
                {
-
                   title: "Dell PowerEdge R710 Servers",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "I have Dell PowerEdge R710 servers in excellent condition, Fully tested/inspected. Excellent working and physical condition.<br>
 <br>
 Dell PowerEdge R710 Server: <br>
@@ -95,55 +89,33 @@ Thanks,<br>
 Fida<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
-
+               products << product if product
                product = Product.create(
-
                {
-
                   title: "HP Docking Station - Elite Book",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "HP docking station for Elite Book or HP/Compaq laptops.<br>
 <br>
 Lots of ports!",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
+               products << product if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6760213494-0.jpg"), filename: "6760213494-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6760213494-1.jpg"), filename: "6760213494-1.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6760213494-2.jpg"), filename: "6760213494-2.jpg") if product
 
                product = Product.create(
-
                {
-
                   title: "Lenovo T450S laptop i7/ 512GB SSD /12GB RAM /Touch Screen",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "No Shipping No Scammers!!!<br>
 Cash Only<br>
 <br>
@@ -175,28 +147,16 @@ GOOD heath (TESTED)<br>
 A/C adapter included.<br>
 <br>
 Tel..................................",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
-
+               products << product if product 
                product = Product.create(
-
                {
-
                   title: "Dell OEM factory OS backup CD of Windows XP / or Vista / Windows 7 / 8",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "Did your Dell PC/Laptop came with no OS CD? I had a hard time looking for one before, so I am going to make it easy for you.<br>
 <br>
 I have Original Dell OEM images of PC and laptop CDs<br>
@@ -209,28 +169,16 @@ Windows 8 Home - original DVD - $30<br>
 <br>
 If your laptop gets hit with viruses and you need to refresh your system from scratch, this will get the job done. <br>
 <br>",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
-
+               products << product if product
                product = Product.create(
-
                {
-
                   title: "Dell Optiplex E8400 - 8GB RAM - 1TB -Win 7 Pro-64 Office 2010 free LCD",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "I have Dell Optiplex 760 E8400 Tower desktops.  Can do dual monitor setup (1 VGA / 1 DVI).<br>
 <br>
 8GB RAM!<br>
@@ -259,30 +207,18 @@ Free square 17&quot; or 19&quot; LCD (only if requested and available).<br>
 Cash only please - contact me initially using Craigslist email system with return email / phone for texting if you have questions. <br>
 <br>
 Located in SF near Park Merced/SFSU",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
+               products << product if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6756143996-0.jpg"), filename: "6756143996-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6756143996-1.jpg"), filename: "6756143996-1.jpg") if product
-
                product = Product.create(
-
                {
-
                   title: "Lenovo T450S laptop i7 / 12GB / 512GB SSD (Touch Screen)",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "No Shipping No Scammers!!!<br>
 Cash Only<br>
 <br>
@@ -311,28 +247,16 @@ GOOD health (TESTED)<br>
 A/C adapter included.<br>
 <br>
 Tel..................................",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
-
+               products << product if product
                product = Product.create(
-
                {
-
                   title: "Dell PowerEdge R710 Servers",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "I have Dell PowerEdge R710 servers in excellent condition, Fully tested/inspected. Excellent working and physical condition.<br>
 <br>
 Dell PowerEdge R710 Server: <br>
@@ -349,28 +273,16 @@ Please call me at
 Thanks,<br>
 Fida<br>
 <br>",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
-
+               products << product if product
                product = Product.create(
-
                {
-
                   title: "iPad Pro 10.5\" 2nd Gen. Wi-Fi + Cellular 64GB Gold w/Apple Warranty",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "2017 model. 2nd Generation.<br>
 Absolutely mint, like-new condition. No signs of use.<br>
 Includes original retail box.<br>
@@ -390,29 +302,17 @@ GOD BLESS YOU.<br>
 <br>
 <br>
 <br>",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
+               products << product if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773643990-0.jpg"), filename: "6773643990-0.jpg") if product
-
                product = Product.create(
-
                {
-
                   title: "Dell P2412HB, Samsung 2494sw, Dell 20\" LCD Monitors",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "1 x Dell Professional P2412HB 24&quot; Widescreen LED LCD Monitor<br>
 Ports: DVI, VGA<br>
 Comes with power cord, DVI cable and DVI to HDMI converter<br>
@@ -431,31 +331,19 @@ $45<br>
 <br>
 <br>
 Text:",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
+               products << product if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6763908960-0.jpg"), filename: "6763908960-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6763908960-1.jpg"), filename: "6763908960-1.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6763908960-2.jpg"), filename: "6763908960-2.jpg") if product
-
                product = Product.create(
-
                {
-
                   title: "COMPLETE gaming PC setup",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "The price includes everything needed to play: PC, keyboard, mouse, mousepad, monitor, and headset<br>
 <br>
 Selling for $1000 flat OBO (about $1400 value)<br>
@@ -490,29 +378,17 @@ Logitech g430<br>
 <br>
 <br>
 feel free to shoot me an email or a text if you are interested<br>",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
+               products << product if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6768209859-0.jpg"), filename: "6768209859-0.jpg") if product
-
                product = Product.create(
-
                {
-
                   title: "iMac, 21.5-inch, Late 2015, 8 GB RAM, 1TB Fusion Drive",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "iMac, 21.5-inch, Late 2015, 8 GB RAM, 1TB Fusion Drive<br>
 1920x1080 LED screen, Four USB 3.0 ports, dual Thunderbolt 2 ports, Gigabit Ethernet, 802.11ac Wi-Fi (802.11a/b/g/n compatible), and Bluetooth 4.0.<br>
 <br>
@@ -520,109 +396,61 @@ Like New condition<br>
 <br>
 full specs:<br>
 https://everymac.com/systems/apple/imac/specs/imac-core-i5-2.8-21-inch-aluminum-late-2015-specs.html",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
+               products << product if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773656423-0.jpg"), filename: "6773656423-0.jpg") if product
-
                product = Product.create(
-
                {
-
                   title: "Apple: Snow Leopard-Leopard-Tiger OS install DVDs",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "We&apos;ve accumulated Apple install operating systems DVDs for:<br>
 1. Snow Leopard 10.6 OS- qty. 4<br>
 2. Leopard 10.5 OS - qty. 2<br>
 3. Tiger 10.4 OS - qty. 2<br>
 <br>
 Price: $20 each cash",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
-
+               products << product if product
                product = Product.create(
-
                {
-
                   title: "Apple Magic Mouse Version 1 - Like New conditions",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "I have two Apple Magic Mouse version 1 in working and super clean condition. I&apos;d like to sell $15 Each.<br>
 <br>
 Call or Text:",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
+               products << product if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6763616146-0.jpg"), filename: "6763616146-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6763616146-1.jpg"), filename: "6763616146-1.jpg") if product
-
                product = Product.create(
-
                {
-
                   title: "Apple Air Port Express Base Station",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "Good condition. Mode a1392<br>
 <br>
 Cash only. Must pick up.",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
-
+               products << product if product
                product = Product.create(
-
                {
-
                   title: "Dell Optiplex 780 3Ghz E8400 4GB Win 10 Pro 64 + Office 2010 +free LCD",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "Multiple office grade Dell Optiplex 780 E8400 Tower desktops pulled off work environment. <br>
 Better than consumer versions as parts are easy to find and replace.  <br>
 Guaranteed no DOA.<br>
@@ -647,29 +475,17 @@ Cash only please - contact me initially using Craigslist email system with retur
 Located near SF State.  <br>
 <br>
 <br>",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
+               products << product if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6756143623-0.jpg"), filename: "6756143623-0.jpg") if product
-
                product = Product.create(
-
                {
-
                   title: "Dell PowerEdge R420",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "This Dell PowerEdge R420 comes with 2x Intel Xeon 6-Core E5-2420 processors and 192GB (12x 16GB) of RAM. Contact us to customize your PowerEdge R420 to fit your needs. PC Server &amp; Parts offers variations and options on all of our servers and workstations. Our technicians specialize in Dell models ensuring that your unit will arrive on your doorstep with quality components and performing at optimal efficiency. PC Server &amp; Parts&apos; dedicated and knowledgeable support staff is ready to answer your questions and fulfill your requests.<br>
 <br>
 Specifications <br>
@@ -691,31 +507,19 @@ RAID Controller          = S110 On board Raid<br>
 Power Supply               = cabled 550W<br>
 Video Integrated Matrox =  G200 with 8MB<br>
 Form Factor             	= 1U<br>",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
+               products << product if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6766237729-0.jpg"), filename: "6766237729-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6766237729-1.jpg"), filename: "6766237729-1.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6766237729-2.jpg"), filename: "6766237729-2.jpg") if product
-
                product = Product.create(
-
                {
-
                   title: "Sell a Dell 23 1920x1080 full HD ultrasharp pro LED monitor",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "Sell a Dell 23 1920x1080 full HD ultrasharp pro LED monitor $55<br>
 <br>
 Like new, rarely used.<br>
@@ -731,31 +535,19 @@ Currently prices from newegg/ebay<br>
 https://www.newegg.com/Product/Product.aspx?Item=0JC-0004-004E1<br>
 <br>
 https://www.ebay.com/p/Dell-P2312HT-1920-X-1080-23-LCD-Monitor/1122609045",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
+               products << product if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6768850238-0.jpg"), filename: "6768850238-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6768850238-1.jpg"), filename: "6768850238-1.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6768850238-2.jpg"), filename: "6768850238-2.jpg") if product
-
                product = Product.create(
-
                {
-
                   title: "NEW Samsung 256GB M.2 SSD, PCIe NVMe, OPAL ​",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "I am selling:<br>
 <br>
 NEW Samsung for Laptop PC<br>
@@ -769,29 +561,17 @@ Price: $45 only (Cash), local pick up only - Milpitas/Sunnyvale, CA<br>
 <br>
 Email me at  
 <br>",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
+               products << product if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6763555299-0.jpg"), filename: "6763555299-0.jpg") if product
-
                product = Product.create(
-
                {
-
                   title: "HP DV7-6163CL NOTEBOOK BARELY USED",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "HP PAVILION DV7-6163CL 17.3&quot; QD984UA#ABA 2.2GHz i7 8GB 1TB Win 10 64 bit with dual graphics and extended 9 cell battery. Nice beautiful brushed aluminum in dark umber color. Quality sound with beats audio and HP Triple Bass reflex Subwoofer on the bottom.<br>
 <br>
 <br>
@@ -826,30 +606,18 @@ Email me at
 <br>
 THE LAPTOP IS IN NEAR MINT CONDITION&#xA0;<br>
 <br>",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
+               products << product if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773613490-0.jpg"), filename: "6773613490-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773613490-1.jpg"), filename: "6773613490-1.jpg") if product
-
                product = Product.create(
-
                {
-
                   title: "Macbook late 2011 15in i7 2.2g16GB ram 240gb SSD NON retina",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "This is 100% working condition laptop.<br>
 <br>
 This is a late 2011 model NON RETINA.<br>
@@ -875,32 +643,20 @@ anytime weekends<br>
 by branham and snell<br>
 <br>
 call phone number in image<br>",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
+               products << product if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6768161184-0.jpg"), filename: "6768161184-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6768161184-1.jpg"), filename: "6768161184-1.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6768161184-2.jpg"), filename: "6768161184-2.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6768161184-3.jpg"), filename: "6768161184-3.jpg") if product
-
                product = Product.create(
-
                {
-
                   title: "5 x Dell PowerEdge R610 24 GB RAM, 2 Xeon Quad Core Processor",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "Dell PowerEdge R610 Overview<br>
 ========================<br>
 The Dell PowerEdge R610 is an 11th generation, 1U enterprise level rack server designed for high performance, power efficiency, and ease of maintinence. Featuring dual Xeon 5500 Series CPU&apos;s (up to 3.33GHz), up to 6 hard drive bays, and up to 96GB RAM, the system has the capabilities of fulfilling a multitude of roles and occupying very little rack space, at a competitive price tag. If you require is latest-generation technology in a rack-dense formfactor, the Dell R610 is the right option for you. <br>
@@ -934,28 +690,16 @@ Call or text me at
 .<br>
 Fida<br>
 <br>",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
-
+               products << product if product
                product = Product.create(
-
                {
-
                   title: "brand new lg k816gb unlock t-mobile att metro verzion boost oversea",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "<br>
 condition: new <br>
 make / manufacturer: LG K8 16GB UNLOCK PHONE<br>
@@ -976,30 +720,18 @@ Processor: Quad Core MPN:<br>
 X210ULMG<br>
 Manufacturer Color: Moroccan Blue Non-Domestic Product: No<br>
 Memory Card Type: MicroSD CALL",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
+               products << product if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6762280627-0.jpg"), filename: "6762280627-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6762280627-1.jpg"), filename: "6762280627-1.jpg") if product
-
                product = Product.create(
-
                {
-
                   title: "Toshiba 26C100U 26-Inch LCD HDTV (Black Gloss)",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "Black Gloss Toshiba 26-Inch 720p LCD HDTV <br>
 Model: 26C100U<br>
 <br>
@@ -1013,55 +745,31 @@ $50<br>
 <br>
  
 <br>",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
+               products << product if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6759310388-0.jpg"), filename: "6759310388-0.jpg") if product
-
                product = Product.create(
-
                {
-
                   title: "MacBook - Rose Gold - 12\" 2015",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "For Sale One gently used MacBook. It is an early 2015 model 12&quot; Retina display, 1.1 GHz Intel Core M, 8GB 1600 MHz DDR3 Memory, Intel HD Graphics 5300 1536 MB it is running macOS Mojave Version 10.14. It has also been reset to factory specs - also comes with charging cord. In like new condition - color is rose gold. Thanks for looking. This item must be picked up at or near my home. Cash Only.",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
+               products << product if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773658700-0.jpg"), filename: "6773658700-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773658700-1.jpg"), filename: "6773658700-1.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773658700-2.jpg"), filename: "6773658700-2.jpg") if product
-
                product = Product.create(
-
                {
-
                   title: "DELL XPS13 9360",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "More screen, less to carry: The virtually borderless InfinityEdge display maximizes screen space by squeezing a 13-inch display in an 11-inch frame.<br>
 Touchscreen, original power cable included. Brand new.<br>
 <br>
@@ -1075,29 +783,17 @@ More details here: https://pilot.search.dell.com/xps%2013%209360<br>
 <br>
 <br>
 Cash and pickup only.",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
+               products << product if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773654326-0.jpg"), filename: "6773654326-0.jpg") if product
-
                product = Product.create(
-
                {
-
                   title: "Acer Aspire V7 Series Laptop",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "Acer Aspire V7 Series Laptop- 17 inch screen<br>
 <br>
 Condition- Like New (2 Years Old)<br>
@@ -1106,15 +802,10 @@ I bought a Mac so I don&apos;t need it now. <br>
 Please see spec screenshots for reference<br>
 Do not message me about scams - I will not Paypal and ship to another location <br>
 In person only. Don&apos;t waste my time - I hate scammers",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
+               products << product if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6766151252-0.jpg"), filename: "6766151252-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6766151252-1.jpg"), filename: "6766151252-1.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6766151252-2.jpg"), filename: "6766151252-2.jpg") if product
@@ -1124,56 +815,32 @@ In person only. Don&apos;t waste my time - I hate scammers",
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6766151252-6.jpg"), filename: "6766151252-6.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6766151252-7.jpg"), filename: "6766151252-7.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6766151252-8.jpg"), filename: "6766151252-8.jpg") if product
-
                product = Product.create(
-
                {
-
                   title: "21.5\" iMac with original packaging",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "Computer has been used 5 times total. No scratches. Brand new condition.",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
+               products << product if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773656916-0.jpg"), filename: "6773656916-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773656916-1.jpg"), filename: "6773656916-1.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773656916-2.jpg"), filename: "6773656916-2.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773656916-3.jpg"), filename: "6773656916-3.jpg") if product
-
                product = Product.create(
-
                {
-
                   title: "Graphic Cards 10",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "10 graphic cards not tested. These were taken from recycled desk tops etc. This is a bundle. Once these are bought you test them. And see if you get lucky. If your a collector? Also make offer. J",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
+               products << product if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6769553280-0.jpg"), filename: "6769553280-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6769553280-1.jpg"), filename: "6769553280-1.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6769553280-2.jpg"), filename: "6769553280-2.jpg") if product
@@ -1195,78 +862,47 @@ In person only. Don&apos;t waste my time - I hate scammers",
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6769553280-18.jpg"), filename: "6769553280-18.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6769553280-19.jpg"), filename: "6769553280-19.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6769553280-20.jpg"), filename: "6769553280-20.jpg") if product
-
                product = Product.create(
-
                {
-
                   title: "Dell UltraSharp 3008WFP 30\" Monitor",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "This is a 30&quot; Dell UltraSharp 3008WFP Monitor.  It is in good condition and works well.  I had it hooked up as a second monitor to my iMac.  <br>
 <br>
 https://www1.la.dell.com/vc/en/corp/peripherals/monitor_3008wfp/pd.aspx?refid=monitor_3008wfp&amp;s=corp<br>
 <br>
 I am asking $150 OBO",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
+               products << product if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773629645-0.jpg"), filename: "6773629645-0.jpg") if product
-
                product = Product.create(
-
                {
-
                   title: "Acer AL1916w LCD 19\" Monitor",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "19 inch Acer Monitor<br>
 Please LEAVE YOUR PHONE # if truly interested. Easier to weed out spammers &amp; flakes etc.<br>
 Jay",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
+               products << product if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6769558663-0.jpg"), filename: "6769558663-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6769558663-1.jpg"), filename: "6769558663-1.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6769558663-2.jpg"), filename: "6769558663-2.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6769558663-3.jpg"), filename: "6769558663-3.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6769558663-4.jpg"), filename: "6769558663-4.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6769558663-5.jpg"), filename: "6769558663-5.jpg") if product
-
                product = Product.create(
-
                {
-
                   title: "New Apple MacBook Pro 13.3″ - Core i5 2.3 GHz - 8 GB RAM - 128 GB SSD",
-
                   location: locations.sample,
-
                   sell_by: Faker::Time.between(1.month.from_now, 5.months.from_now, :all),
-
                   user_id: users.sample.id,
-
                   description: "Apple MacBook Pro with Retina display 13.3&#x2033; - Core i5 2.3 GHz - 8 GB RAM - 128 GB SSD - Space Gray<br>
 <br>
 This is a brand new machine (see pics). Not yet opened. I bought this online last month for $1199 + tax. Unfortunately cant return it. So selling it for a very good price.<br>
@@ -1280,15 +916,10 @@ BestBuy: https://www.bestbuy.com/site/apple-macbook-pro-13-display-intel-core-i5
 Frys via Google Express: https://express.google.com/u/0/product/2412679213714003181_12308559134144097610_6136318<br>
 <br>
 We can meet in a safe place to make any transaction.<br>",
-
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
                   category_id: category.id
-
                })
-
-               products << product
-               
+               products << product  if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773671629-0.jpg"), filename: "6773671629-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773671629-1.jpg"), filename: "6773671629-1.jpg") if product
 
@@ -1310,13 +941,13 @@ I am not a computer tech so I dont know how to fix it, so if you know how to fix
 <br>
 I am asking $120 for it. Questions email me. Thank you!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773643077-0.jpg"), filename: "6773643077-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773643077-1.jpg"), filename: "6773643077-1.jpg") if product
@@ -1364,13 +995,13 @@ Webcam LENOVO <br>
 Call or text <br>
  Tel........................",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6769358876-0.jpg"), filename: "6769358876-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6769358876-1.jpg"), filename: "6769358876-1.jpg") if product
@@ -1402,13 +1033,13 @@ AiDisk is your personal FTP server that you can access anywhere you have the Int
 Download Master lets you download from the Bit Torrent site to the connected USB storage device directly thru the router without having to leave your PC on<br>
 Ai Radar automatically detects the location of clients and pin-points the signal to the client for effective and efficient transmissions<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6768823982-0.jpg"), filename: "6768823982-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6768823982-1.jpg"), filename: "6768823982-1.jpg") if product
@@ -1457,13 +1088,13 @@ A/C adapter included.<br>
 <br>
 Tel..................................",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6767161346-0.jpg"), filename: "6767161346-0.jpg") if product
 
@@ -1529,13 +1160,13 @@ Bill (Manager)<br>
 Menlo Park, CA 94025<br>
 www.computersforeveryone.org (has an interactive map)",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773641080-0.jpg"), filename: "6773641080-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773641080-1.jpg"), filename: "6773641080-1.jpg") if product
@@ -1561,13 +1192,13 @@ Im a 55 year old Realtor and just wasn&apos;t using it enough. Would make a grea
 <br>
 Local Pickup Only. In Morgan Hill, Just south of San Jose",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6769823317-0.jpg"), filename: "6769823317-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6769823317-1.jpg"), filename: "6769823317-1.jpg") if product
@@ -1618,13 +1249,13 @@ Located in SF for ease of transaction near 19th Ave and Highway 280  <br>
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6756683857-0.jpg"), filename: "6756683857-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6756683857-1.jpg"), filename: "6756683857-1.jpg") if product
@@ -1667,13 +1298,13 @@ Recommend you get a wireless mouse to use with this.<br>
 <br>
 Cash only please.  Firm on price - CLMail me and we can plan a meet up at Stonestown.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6756804157-0.jpg"), filename: "6756804157-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6756804157-1.jpg"), filename: "6756804157-1.jpg") if product
@@ -1720,13 +1351,13 @@ Located in SF for ease of transaction near 19th Ave and Highway 280  <br>
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6756685286-0.jpg"), filename: "6756685286-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6756685286-1.jpg"), filename: "6756685286-1.jpg") if product
@@ -1760,13 +1391,13 @@ Thanks,<br>
 Fida<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
 
                product = Product.create(
@@ -1783,13 +1414,13 @@ Fida<br>
 
                   description: "buy all or just what is needed",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773630033-0.jpg"), filename: "6773630033-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773630033-1.jpg"), filename: "6773630033-1.jpg") if product
@@ -1825,13 +1456,13 @@ Thanks,<br>
 Fida<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
 
                product = Product.create(
@@ -1875,13 +1506,13 @@ A/C adapter included.<br>
 <br>
 Tel..................................",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6767944454-0.jpg"), filename: "6767944454-0.jpg") if product
 
@@ -1907,13 +1538,13 @@ Please send me text and we can meet up around Saratoga/280.<br>
 Thanks for your time,<br>
 Yoshi<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
 
                product = Product.create(
@@ -1936,13 +1567,13 @@ Been sitting in my garage for 2 years <br>
 <br>
 Great condition",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773645910-0.jpg"), filename: "6773645910-0.jpg") if product
 
@@ -1971,13 +1602,13 @@ If you are interested, please email with your name and number, and I&apos;ll get
 <br>
 Tags: 13&quot; 13-inch 17 applecare apple care",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773654772-0.jpg"), filename: "6773654772-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773654772-1.jpg"), filename: "6773654772-1.jpg") if product
@@ -2011,13 +1642,13 @@ Thanks,<br>
 Fida<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
 
                product = Product.create(
@@ -2041,13 +1672,13 @@ Please text me and we can meet up at public space.<br>
 Thanks for looking at this,<br>
 Yoshi.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
 
                product = Product.create(
@@ -2071,13 +1702,13 @@ Please text me if you are interested. We can meet up around 280/Saratoga.<br>
 Thanks,<br>
 Yoshi",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
 
                product = Product.create(
@@ -2099,13 +1730,13 @@ Included: <br>
 - Installation Guide<br>
 - Resource CD",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6766641983-0.jpg"), filename: "6766641983-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6766641983-1.jpg"), filename: "6766641983-1.jpg") if product
@@ -2128,13 +1759,13 @@ Included: <br>
 
                   description: "he computer 2011 I do not know what happened to him only the image looks like double as with sarp.    Corei7  2GHz  grafic 3000 384",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773654391-0.jpg"), filename: "6773654391-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773654391-1.jpg"), filename: "6773654391-1.jpg") if product
@@ -2160,13 +1791,13 @@ Asking $5<br>
 If you are reading this listing, the vacuum is still available.<br>
 Email if interested.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6754828222-0.jpg"), filename: "6754828222-0.jpg") if product
 
@@ -2196,13 +1827,13 @@ Email if interested.",
 <br>
 Same as https://www.ebay.com/itm/Lenovo-ThinkPad-X1-Carbon-2nd-Gen-Laptop-i5-4300u-CPU-8GB-RAM-128GB-SSD-WIFI/132598187548",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773674227-0.jpg"), filename: "6773674227-0.jpg") if product
 
@@ -2258,13 +1889,13 @@ A/C adapter included.<br>
 <br>
 Tel..................................",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773637444-0.jpg"), filename: "6773637444-0.jpg") if product
 
@@ -2284,13 +1915,13 @@ Tel..................................",
 Please LEAVE YOUR PHONE # if truly interested. Easier to weed out spammers &amp; flakes etc.<br>
 Jay",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6769560823-0.jpg"), filename: "6769560823-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6769560823-1.jpg"), filename: "6769560823-1.jpg") if product
@@ -2331,13 +1962,13 @@ Hewlett Packard, IBM, Ikon, Samsung, Brother,  Canon, Epson, <br>
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773630523-0.jpg"), filename: "6773630523-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773630523-1.jpg"), filename: "6773630523-1.jpg") if product
@@ -2361,13 +1992,13 @@ Premium, hard to find style<br>
 Model: 910-003713<br>
 Comes with nano receiver",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6751850644-0.jpg"), filename: "6751850644-0.jpg") if product
 
@@ -2391,13 +2022,13 @@ Logitech Advanced Optical Tracking: Enjoy point-and-click precision<br>
 Long battery life: Up to 18 months of battery life virtually eliminates the need to change batteries (** Battery life may vary based on user and computing conditions.)<br>
 For Windows, Mac and Linux: Reliable wireless connection with tiny Logitech Unifying receiver that can stay in your laptop<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6751849852-0.jpg"), filename: "6751849852-0.jpg") if product
 
@@ -2435,13 +2066,13 @@ Power Supply               = cabled 550W<br>
 Video Integrated Matrox =  G200 with 8MB<br>
 Form Factor             	= 1U<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6761811944-0.jpg"), filename: "6761811944-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6761811944-1.jpg"), filename: "6761811944-1.jpg") if product
@@ -2475,13 +2106,13 @@ Integrated key lock and cable lock slot for physical security<br>
 Included AC Adapter - Lenovo 65W<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6751849841-0.jpg"), filename: "6751849841-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6751849841-1.jpg"), filename: "6751849841-1.jpg") if product
@@ -2509,13 +2140,13 @@ Included AC Adapter - Lenovo 65W<br>
 <br>
 https://www.amazon.com/Slappa-SL-SV-104-17-Inch-Ballistix-Laptop/dp/B0015ADC90/ref=sr_1_3?ie=UTF8&amp;qid=1538409455&amp;sr=8-3&amp;keywords=slappa%2Blaptop%2Bsleeve&amp;th=1",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773629784-0.jpg"), filename: "6773629784-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773629784-1.jpg"), filename: "6773629784-1.jpg") if product
@@ -2546,13 +2177,13 @@ Contact me via Craiglist email, state how many you would like to get.<br>
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6756800168-0.jpg"), filename: "6756800168-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6756800168-1.jpg"), filename: "6756800168-1.jpg") if product
@@ -2578,13 +2209,13 @@ ONLY $45<br>
 <br>
 REPLY IF YOU HAVE ANY QUESTIONS.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773646048-0.jpg"), filename: "6773646048-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773646048-1.jpg"), filename: "6773646048-1.jpg") if product
@@ -2611,13 +2242,13 @@ Brand New in a box Never opened<br>
 <br>
 Asking price is $650 or best offer.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773563881-0.jpg"), filename: "6773563881-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773563881-1.jpg"), filename: "6773563881-1.jpg") if product
@@ -2659,13 +2290,13 @@ Price: $400 (Cash only), local pick up only - Milpitas/Sunnyvale, CA<br>
 Email me at  
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773622215-0.jpg"), filename: "6773622215-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773622215-1.jpg"), filename: "6773622215-1.jpg") if product
@@ -2695,13 +2326,13 @@ Save $50 at this price<br>
 Read more https://www.linksys.com/us/p/P-VLP0203/<br>
 One tri-band node and 2 dual-band nodes. Providing coverage for up to 5000 sf.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6768152285-0.jpg"), filename: "6768152285-0.jpg") if product
 
@@ -2781,13 +2412,13 @@ Built-in 95-watt-hour lithium-polymer battery<br>
 85W MagSafe 2 Power Adapter with cable management system; MagSafe 2 power port<br>
 Electrical and Operating Requirements",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6765431129-0.jpg"), filename: "6765431129-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6765431129-1.jpg"), filename: "6765431129-1.jpg") if product
@@ -2817,13 +2448,13 @@ BTW, Moore&apos;s law is kinda kaput. The Geekbench difference between the 2012 
 <br>
 No trade. Firm. Cash or Venmo.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773630657-0.jpg"), filename: "6773630657-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773630657-1.jpg"), filename: "6773630657-1.jpg") if product
@@ -2858,13 +2489,13 @@ Finds best setup location for optimal Wi-Fi coverage with signal strength LED<br
 <br>
 Perfect working condition - test before you buy",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6768815427-0.jpg"), filename: "6768815427-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6768815427-1.jpg"), filename: "6768815427-1.jpg") if product
@@ -2890,13 +2521,13 @@ CPU: i5-6300U 2.4GHz <br>
 OS: Windows 10 Pro<br>
 Display: 2736 x 1824",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773667413-0.jpg"), filename: "6773667413-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773667413-1.jpg"), filename: "6773667413-1.jpg") if product
@@ -2970,13 +2601,13 @@ I live in Campbell, work in Pleasanton.  I can meet you at either location for a
 <br>
 Thank you for making it this far! Please text.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773593826-0.jpg"), filename: "6773593826-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773593826-1.jpg"), filename: "6773593826-1.jpg") if product
@@ -3024,13 +2655,13 @@ Also has a Apple Pencil <br>
 <br>
 Price is firm.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6764065801-0.jpg"), filename: "6764065801-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6764065801-1.jpg"), filename: "6764065801-1.jpg") if product
@@ -3080,13 +2711,13 @@ A/C adapter included.<br>
 <br>
 Tel..................................",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6767160439-0.jpg"), filename: "6767160439-0.jpg") if product
 
@@ -3106,13 +2737,13 @@ Tel..................................",
 HDMI cable not included<br>
 Condition is good. No dead pixels that I could find.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6770641161-0.jpg"), filename: "6770641161-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6770641161-1.jpg"), filename: "6770641161-1.jpg") if product
@@ -3134,13 +2765,13 @@ Condition is good. No dead pixels that I could find.",
 <br>
 Been sitting in my garage for 2 years.  Wiped clean.  Not sure what OS is on it.  $100",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773645017-0.jpg"), filename: "6773645017-0.jpg") if product
 
@@ -3179,13 +2810,13 @@ Advanced security encryptions include WEP, WPA, and WPA2 help to secure wireless
 Supports WiFi Protected Setup (WPS) feature<br>
 QoS and WMM features give priorities to bandwidth-intensive applications like HD streaming and gaming",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6751850606-0.jpg"), filename: "6751850606-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6751850606-1.jpg"), filename: "6751850606-1.jpg") if product
@@ -3206,13 +2837,13 @@ QoS and WMM features give priorities to bandwidth-intensive applications like HD
 
                   description: "22U LINIER Server/Networking Cabinet - Glass/Vented Doors - 36&quot; depth.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773649474-0.jpg"), filename: "6773649474-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773649474-1.jpg"), filename: "6773649474-1.jpg") if product
@@ -3242,13 +2873,13 @@ QoS and WMM features give priorities to bandwidth-intensive applications like HD
 <br>
 Payment - This will be sold face-to-face in a cash transaction.  I&apos;ll respond to all serious inquiries promptly.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773641928-0.jpg"), filename: "6773641928-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773641928-1.jpg"), filename: "6773641928-1.jpg") if product
@@ -3290,13 +2921,13 @@ Free square 17&quot; or 19&quot; LCD (only if requested and available).<br>
 <br>
 Cash only please, will replace parts within the week if defective.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6756143780-0.jpg"), filename: "6756143780-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6756143780-1.jpg"), filename: "6756143780-1.jpg") if product
@@ -3325,13 +2956,13 @@ Lenovo Yoga 720-13IKB<br>
 Bought in spring as an impulse buy, never used it, must sell. <br>
 Payed over $1500 from Lenovo.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773641182-0.jpg"), filename: "6773641182-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773641182-1.jpg"), filename: "6773641182-1.jpg") if product
@@ -3364,13 +2995,13 @@ Please text me if you&apos;re interested and we can meet up around 280/Saratoga 
 Thanks,<br>
 Yoshi",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
 
                product = Product.create(
@@ -3409,13 +3040,13 @@ If interested, please leave your email or phone number for quick reply, thanks f
 <br>
 Keyword: Lenovo Laptop Ultrabook Yoga ThinkPad Yoga12 warranty<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773592367-0.jpg"), filename: "6773592367-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773592367-1.jpg"), filename: "6773592367-1.jpg") if product
@@ -3463,13 +3094,13 @@ Email me or text me at 4one5-2nine5-2four8five, thanks!<br>
 Keywords : Intel Core2 Duo Core i3, i5 , i7, DDR2, DDR3, DDR4 , 2-Core , 6-Core , 8-Core , Single-Core Dual-Core Quad-Core LGA 1150 LGA 1151 LGA 1155 LGA 1156 LGA 1366 LGA 2011 LGA 2011-v3 LGA 775 Socket AM1 AM2 Socket AM3 AM3+ Socket FM2 Socket FM2+ GTX 1080 1070 1060 1050 R9 RX M2 980 970 960 950 780 770 760<br>
 keywords: Search keywords: HTPC desktop laptop hp Compaq Lenovo intel i3 i7 i5 xeon e3 e5 am2 am3 am3+ operon Xeon DP CoreCallisto Clarkdale Gulftown Haswell 7Ivy Bridge 5Ivy Bridge-E Llano Rana Regor Richland Sandy Bridge 7Sandy Bridge-E Sargas Trinity Vishera Zambezi LGA 1150 LGA 1155 LGA 1156 LGA 1366 LGA 2011 Socket AM3 Socket AM3+ Socket FM1 Socket FM2 A-Series APU 6Athlon X4 Athlon II X2 Athlon II X3 Athlon X2 Celeron Celeron Dual-Core Core i3 Core i5 Core i7 Core i7 Extreme Edition FX-Series 4Pentium 2Pentium Dual-Core Phenom II X2 Sempron SSD 1TB 144-Pin SO-DIMM 200-Pin DDR SO-DIMM 200-Pin DDR2 SO-DIMM 204-Pin DDR3 SODIMM G.SKILL Crucial Corsair Kingston Technology Corp. Mushkin Enhanced Patriot Memory ADATA All Components, Inc. Approved Memory Avexir Axiom DELL EDGE Memory EDGE Tech GeIL Hewlett-Packar... Kingston HyperX Lenovo Lexar Panasonic Pareema Technology Co.,Ltd PNY Technologies, Inc. Silicon Power Computer &amp; Communications Team Group TOPRAM Total Micro Technologies Transcend VisionTek Wintec Indus tries DDR 266 (PC 2100) DDR 333 (PC 2700) DDR 400 (PC 3200) DDR2 533 (PC2 4200) DDR2 667 (PC2 5300) DDR2 800 (PC2 6400) DDR3 1066 (PC3 8500) DDR3 1333 (PC3 10600) DDR3 1333 (PC3 10666) DDR3 1600 (PC3 12800) DDR3 1866 (PC3 15000) DDR3 2133 PC 133 External TV Tuner Box Media Player PC to TV Professional Video Devices PVR TV Tuner Accessory TV Tuner Cards USB TV Tuner Stick Video Adapter/Converter Video Capture &amp; Editing Video Extender Video Splitter Video Switch signal Generator Digital Media Streamer Hauppauge AVerMedia Diamond Multimedia STARTECH cables To Go Kworld Computer Co.,Ltd Actiontec Addlogix All Components, Inc. ASUS ATEN Atlona Axis Communications BayTrek Corp. bCODA Belkin Brainydeal Ceton D-Link Elgato Encore EVGA FAVI Entertainment Five Star Inc Geek Buying Gefen GENERIC GIGABYTE Google Grandtec USA Hewlett-Packar Hightech Information System Ltd. iCIRROUND Inc. IOGEAR LG Electronics MAD CATZ MANHATTAN matrox Merdia Netgear Inc. Pinnacle Pivos Technology Group, Inc. Roku Sabrent SIIG, Inc SiliconDust SLING MEDIA Sony Sungale Tripp Lite UEBO / UITStor Inc. ViewSonic VIZIO Warpia Western Digital TV TunerThree Tuners Dual Tuners Combo Tuner Hybrid Tuner Digital Tuner Analog Tuner Composite to HDMI DisplayPort DisplayPort to HDMI DVI DVI to DisplayPort Ethernet 100baseT/Wireless LAN F Connector / Ethernet HDMI HDMI to VGA Mini DisplayPort to DVI PCI-Express PCI-Express x1 S-Video USB 2.0 USB 3.0 to VGA USB to DVI USB to DVI / VGA USB to HDMI USB to VGA VGA VGA to DVI VGA to HDMI Wireless HP",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6771520574-0.jpg"), filename: "6771520574-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6771520574-1.jpg"), filename: "6771520574-1.jpg") if product
@@ -3506,13 +3137,13 @@ Let me know if interested. Cash and local only.<br>
 <br>
 if this post is up its available.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773624007-0.jpg"), filename: "6773624007-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773624007-1.jpg"), filename: "6773624007-1.jpg") if product
@@ -3537,13 +3168,13 @@ if this post is up its available.",
 Comes with original power adapter<br>
 No shipping and no delivery, will meet at a local public location.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6770350549-0.jpg"), filename: "6770350549-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6770350549-1.jpg"), filename: "6770350549-1.jpg") if product
@@ -3578,13 +3209,13 @@ I stand by my items with an offer of 24 hour money back guarantee if there is a 
 No refund for it, didn&apos;t fit my needs, only if it is defective! My items are tested In advance!<br>
 1977-22",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6770465190-0.jpg"), filename: "6770465190-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6770465190-1.jpg"), filename: "6770465190-1.jpg") if product
@@ -3619,13 +3250,13 @@ https://www.bhphotovideo.com/c/product/1258846-REG/dell_p2217_22_16_10_lcd.html/
 https://www.amazon.com/Dell-P2217-Widescreen-LCD-Monitor/dp/B01FM3IG28/ref=sr_1_2?ie=UTF8&amp;qid=1544311789&amp;sr=8-2&amp;keywords=p2217<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6768220239-0.jpg"), filename: "6768220239-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6768220239-1.jpg"), filename: "6768220239-1.jpg") if product
@@ -3651,13 +3282,13 @@ https://www.amazon.com/Dell-P2217-Widescreen-LCD-Monitor/dp/B01FM3IG28/ref=sr_1_
                   description: "New without box Apple ipad air  2018 <br>
 6th generation 32gb gray color wifi only . Cash deal no shipping other excuses. Local meet in hilton lobby .  Don&apos;t even ask for shipping for family son monther daughter birthday and other new excuses. New $329 before tax at store.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773665238-0.jpg"), filename: "6773665238-0.jpg") if product
 
@@ -3691,13 +3322,13 @@ Requires no software<br>
 Requires no external power<br>
 LEDs allow for easy status monitoring",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6751849389-0.jpg"), filename: "6751849389-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6751849389-1.jpg"), filename: "6751849389-1.jpg") if product
@@ -3733,13 +3364,13 @@ Intel I7 2600k processor <br>
 <br>
 Also included is a GearGrip Pro strap to help carry this tower around with ease.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6770190365-0.jpg"), filename: "6770190365-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6770190365-1.jpg"), filename: "6770190365-1.jpg") if product
@@ -3783,13 +3414,13 @@ Can meet in San Francisco or in Castro Valley (East Bay)<br>
 Thank you.<br>
 </b>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773612226-0.jpg"), filename: "6773612226-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773612226-1.jpg"), filename: "6773612226-1.jpg") if product
@@ -3829,13 +3460,13 @@ Needs:<br>
 - GPU (Graphics Card)<br>
 - Hard Drive/SSD",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773652098-0.jpg"), filename: "6773652098-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773652098-1.jpg"), filename: "6773652098-1.jpg") if product
@@ -3859,13 +3490,13 @@ CALL OR TEXT.....
 .....DANIEL<br>
 CHECK OUT MY OTHER ITEM$ FOR $ALE",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
 
                product = Product.create(
@@ -3882,13 +3513,13 @@ CHECK OUT MY OTHER ITEM$ FOR $ALE",
 
                   description: "Lightly used, Good condition",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773675940-0.jpg"), filename: "6773675940-0.jpg") if product
 
@@ -3910,13 +3541,13 @@ Battery holds a good charge.  Works excellent, $90.<br>
 Don&apos;t ask if it&apos;s still available -<br>
 Leave your name and phone.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6768995782-0.jpg"), filename: "6768995782-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6768995782-1.jpg"), filename: "6768995782-1.jpg") if product
@@ -3942,13 +3573,13 @@ Pick up in Mountain View<br>
 If you&apos;re reading this ad I still have the laptop<br>
 Includes power adaptor and case.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6762965189-0.jpg"), filename: "6762965189-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6762965189-1.jpg"), filename: "6762965189-1.jpg") if product
@@ -3978,13 +3609,13 @@ Includes power adaptor and case.",
                   description: "Apple 23&quot; Cinema HD Display M9178LL/A LCD Monitor - 1920x1200. <br>
 Works great! Was saving it for its stylish good looks. Monitor has been resting in the box for a few years.  Monitor comes with original box, working power supply.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773632788-0.jpg"), filename: "6773632788-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773632788-1.jpg"), filename: "6773632788-1.jpg") if product
@@ -4014,13 +3645,13 @@ CALL OR TEXT.......
 .......DANIEL<br>
 PLEASE CHECK OUT MY OTHER ITEMS FOR SALE<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6771375308-0.jpg"), filename: "6771375308-0.jpg") if product
 
@@ -4040,13 +3671,13 @@ PLEASE CHECK OUT MY OTHER ITEMS FOR SALE<br>",
 <br>
 Serious buyers shoot me an offer, low ball offers will be ignored, number is nine 2 five four 7 8 nine nine two 8, texting preferred.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773660317-0.jpg"), filename: "6773660317-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773660317-1.jpg"), filename: "6773660317-1.jpg") if product
@@ -4100,13 +3731,13 @@ See it in Sunol, near I680 and Hwy 84 intersection.<br>
 Cash only.<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773626412-0.jpg"), filename: "6773626412-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773626412-1.jpg"), filename: "6773626412-1.jpg") if product
@@ -4139,13 +3770,13 @@ No refund for it, didn&apos;t fit my needs, only if it is defective! My items ar
 <br>
 1977-24",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6770449844-0.jpg"), filename: "6770449844-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6770449844-1.jpg"), filename: "6770449844-1.jpg") if product
@@ -4205,13 +3836,13 @@ Everything you need to start cleaning. <br>
 &gt; Crevice tool with brush insert<br>
 &gt; Dusting brush<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6768141750-0.jpg"), filename: "6768141750-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6768141750-1.jpg"), filename: "6768141750-1.jpg") if product
@@ -4264,13 +3895,13 @@ Email me or text me at 4one5-2nine5-2four8five, thanks!<br>
 Keywords : Intel Core2 Duo Core i3, i5 , i7, i9, DDR2, DDR3, DDR4 , 2-Core , 6-Core , 8-Core , Single-Core Dual-Core Quad-Core LGA 1150 LGA 1151 LGA 1155 LGA 1156 LGA 1366 LGA 2011 LGA 2011-v3 LGA 775 Socket AM1 AM2 Socket AM3 AM3+ Socket FM2 Socket FM2+ Kaby Lake <br>
 keywords: Search keywords: HTPC desktop laptop hp Compaq Lenovo intel i3 i7 i5 xeon e3 e5 am2 am3 am3+ operon Xeon DP CoreCallisto Clarkdale Gulftown Haswell 7Ivy Bridge 5Ivy Bridge-E Llano Rana Regor Richland Sandy Bridge 7Sandy Bridge-E Sargas Trinity Vishera Zambezi LGA 1150 LGA 1155 LGA 1156 LGA 1366 LGA 2011 Socket AM3 Socket AM3+ Socket FM1 Socket FM2 A-Series APU 6Athlon X4 Athlon II X2 Athlon II X3 Athlon X2 Celeron Celeron Dual-Core Core i3 Core i5 Core i7 Core i7 Extreme Edition FX-Series 4Pentium 2Pentium Dual-Core Phenom II X2 Sempron SSD 1TB 144-Pin SO-DIMM 200-Pin DDR SO-DIMM 200-Pin DDR2 SO-DIMM 204-Pin DDR3 SODIMM G.SKILL Crucial Corsair Kingston Technology Corp. Mushkin Enhanced Patriot Memory ADATA All Components, Inc. Approved Memory Avexir Axiom DELL EDGE Memory EDGE Tech GeIL Hewlett-Packar... Kingston HyperX Lenovo Lexar Panasonic Pareema Technology Co.,Ltd PNY Technologies, Inc. Silicon Power Computer &amp; Communications Team Group TOPRAM Total Micro Technologies Transcend VisionTek Wintec Indus tries DDR 266 (PC 2100) DDR 333 (PC 2700) DDR 400 (PC 3200) DDR2 533 (PC2 4200) DDR2 667 (PC2 5300) DDR2 800 (PC2 6400) DDR3 1066 (PC3 8500) DDR3 1333 (PC3 10600) DDR3 1333 (PC3 10666) DDR3 1600 (PC3 12800) DDR3 1866 (PC3 15000) DDR3 2133 PC 133 External TV Tuner Box Media Player PC to TV Professional Video Devices PVR TV Tuner Accessory TV Tuner Cards USB TV Tuner Stick Video Adapter/Converter Video Capture &amp; Editing Video Extender Video Splitter Video Switch signal Generator Digital Media Streamer Hauppauge AVerMedia Diamond Multimedia STARTECH cables To Go Kworld Computer Co.,Ltd Actiontec Addlogix All Components, Inc. ASUS ATEN Atlon Corp. CODA Belkin Brainydeal Ceton D-Link Elgato Encore EVGA FAVI Entertainment Five Star Inc Geek Buying Gefen GENERIC GIGABYTE Google Grandtec USA Hewlett-Packar Hightech Information System Ltd. iCIRROUND Inc. IOGEAR LG Electronics MAD CATZ MANHATTAN matrox Merdia Netgear Inc. Pinnacle Pivos Technology Group, Inc. Roku Sabrent SIIG, Inc SiliconDust SLING MEDIA Sony Sungale Tripp Lite UEBO / UITStor Inc. ViewSonic VIZIO Warpia Western Digital TV Tuner Three Tuners Dual Tuners Combo Tuner Hybrid Tuner Digital Tuner Analog Tuner Composite to HDMI DisplayPort DisplayPort to HDMI DVI DVI to DisplayPort Ethernet 100baseT/Wireless LAN F Connector / Ethernet HDMI HDMI to VGA Mini DisplayPort to DVI PCI-Express PCI-Express x1 S-Video USB 2.0 USB 3.0 to VGA USB to DVI USB to DVI / VGA USB to HDMI USB to VGA VGA VGA to DVI VGA to HDMI Wireless HP",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6768952285-0.jpg"), filename: "6768952285-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6768952285-1.jpg"), filename: "6768952285-1.jpg") if product
@@ -4327,13 +3958,13 @@ A/C adapter included.<br>
 <br>
 Tel..................................",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6766309080-0.jpg"), filename: "6766309080-0.jpg") if product
 
@@ -4375,13 +4006,13 @@ Webcam LENOVO <br>
 Call or text <br>
  Tel........................",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6769356550-0.jpg"), filename: "6769356550-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6769356550-1.jpg"), filename: "6769356550-1.jpg") if product
@@ -4405,13 +4036,13 @@ No refund for it, didn&apos;t fit my needs, only if it is defective! My items ar
 <br>
 1977-23",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6770459647-0.jpg"), filename: "6770459647-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6770459647-1.jpg"), filename: "6770459647-1.jpg") if product
@@ -4439,13 +4070,13 @@ No refund for it, didn&apos;t fit my needs, only if it is defective! My items ar
 
                   description: "i/o Magic DVD+- RW/+-R.  Internal drive. make offer",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
 
                product = Product.create(
@@ -4474,13 +4105,13 @@ Specs and features:<br>
 <br>
 For additional pictures and information use email.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773656087-0.jpg"), filename: "6773656087-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773656087-1.jpg"), filename: "6773656087-1.jpg") if product
@@ -4523,13 +4154,13 @@ The price is $255, if interested, please leave your email or phone number for qu
 <br>
 Keyword: Laptop Levono IBM ThinkPad T410 T420 T430 T550 T540 T510 T440 T440u T440p nVidia FHD HD+<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773660979-0.jpg"), filename: "6773660979-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773660979-1.jpg"), filename: "6773660979-1.jpg") if product
@@ -4561,13 +4192,13 @@ Exclusive Splendid Video Intelligence Technology automatically optimize image qu
 Offers PIP(Picture in Picture) function(via hotkey) and has the capability to display images of two different signals at the same time. Compliance and Standards- BSMI, CB, CCC, CE, C-Tick, EK,, ErP, FCC, Gost-R, J-MOSS, PSB, RoHS, UL/cUL, VCCI, WEEE, WHQL (Windows 8, Windows 7)<br>
 Power Consumption : Power Consumption &lt; 30.2 Watt, Power Saving Mode &lt; 2 Watt. ASUS Rapid Replacement: 3 Years Warranty",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6767651431-0.jpg"), filename: "6767651431-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6767651431-1.jpg"), filename: "6767651431-1.jpg") if product
@@ -4600,13 +4231,13 @@ I&apos;m asking $220 Cash for this setup and can meet within fremont/union city/
 <br>
 corsair, dell, hp, lg, samsung, gamer, gaming, computer, desktop, speakers",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6770599014-0.jpg"), filename: "6770599014-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6770599014-1.jpg"), filename: "6770599014-1.jpg") if product
@@ -4643,13 +4274,13 @@ Comes with charger<br>
 Pick up only<br>
 Thanks<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6767617880-0.jpg"), filename: "6767617880-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6767617880-1.jpg"), filename: "6767617880-1.jpg") if product
@@ -4711,13 +4342,13 @@ Processor Speed	2.24GHz<br>
 Hard Drive	32GB Emmc<br>
 Video Card	Intel HD Graphics",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6759424787-0.jpg"), filename: "6759424787-0.jpg") if product
 
@@ -4763,13 +4394,13 @@ Email me or text me at 4one5-2nine5-2four8five, thanks!<br>
 Keywords : Intel Core2 Duo Core i3, i5 , i7, i9, skylake coffee lake ryzen DDR2, DDR3, DDR4 , 2-Core , 6-Core , 8-Core , Single-Core Dual-Core Quad-Core LGA 1150 LGA 1151 LGA 1155 LGA 1156 LGA 1366 LGA 2011 LGA 2011-v3 LGA 775 Socket AM1 AM2 Socket AM3 AM3+ Socket FM2 Socket FM2+ Kaby Lake <br>
 keywords: Search keywords: HTPC desktop laptop hp Compaq Lenovo intel i3 i7 i5 xeon e3 e5 am2 am3 am3+ operon Xeon DP CoreCallisto Clarkdale Gulftown Haswell 7Ivy Bridge 5Ivy Bridge-E Llano Rana Regor Richland Sandy Bridge 7Sandy Bridge-E Sargas Trinity Vishera Zambezi LGA 1150 LGA 1155 LGA 1156 LGA 1366 LGA 2011 Socket AM3 Socket AM3+ Socket FM1 Socket FM2 A-Series APU 6Athlon X4 Athlon II X2 Athlon II X3 Athlon X2 Celeron Celeron Dual-Core Core i3 Core i5 Core i7 Core i7 Extreme Edition FX-Series 4Pentium 2Pentium Dual-Core Phenom II X2 Sempron SSD 1TB 144-Pin SO-DIMM 200-Pin DDR SO-DIMM 200-Pin DDR2 SO-DIMM 204-Pin DDR3 SODIMM G.SKILL Crucial Corsair Kingston Technology Corp.  Mushkin Enhanced Patriot Memory ADATA All Components, Inc. Approved Memory Avexir Axiom DELL EDGE Memory EDGE Tech GeIL Hewlett-Packar... Kingston HyperX Lenovo Lexar Panasonic Pareema Technology Co.,Ltd  PNY Technologies, Inc. Silicon Power Computer &amp; Communications Team Group TOPRAM Total Micro Technologies Transcend VisionTek Wintec Indus tries DDR 266 (PC 2100) DDR 333 (PC 2700) DDR 400 (PC 3200) DDR2 533 (PC2 4200) DDR2 667 (PC2 5300) DDR2 800 (PC2 6400) DDR3 1066 (PC3 8500) DDR3 1333 (PC3 10600) DDR3 1333 (PC3 10666) DDR3 1600 (PC3 12800) DDR3 1866 (PC3 15000) DDR3 2133 PC 133 External TV Tuner Box Media Player PC to TV Professional Video Devices PVR TV Tuner Accessory TV Tuner Cards USB TV Tuner Stick Video Adapter/Converter Video Capture &amp; Editing Video Extender Video Splitter Video Switch signal Generator Digital Media Streamer Hauppauge AVerMedia Diamond Multimedia STARTECH cables To Go Kworld Computer Co.,Ltd Actiontec Addlogix All Components, Inc. ASUS ATEN Atlona Axis Communications BayTrek Corp. bCODA Belkin Brainydeal Ceton D-Link Elgato Encore EVGA FAVI Entertainment Five Star Inc Geek Buying Gefen GENERIC  GIGABYTE Google Grandtec USA Hewlett-Packar Hightech Information System Ltd. iCIRROUND Inc. IOGEAR LG Electronics MAD CATZ MANHATTAN matrox Merdia Netgear Inc. Pinnacle Pivos Technology Group, Inc. Roku Sabrent SIIG, Inc SiliconDust SLING MEDIA Sony Sungale Tripp Lite UEBO / UITStor Inc. ViewSonic VIZIO Warpia Western Digital TV TunerThree Tuners Dual Tuners Combo Tuner Hybrid Tuner Digital Tuner Analog Tuner Composite to HDMI DisplayPort DisplayPort to HDMI DVI DVI to DisplayPort Ethernet 100baseT/Wireless LAN F Connector / Ethernet HDMI HDMI to VGA Mini DisplayPort to DVI PCI-Express PCI-Express x1 S-Video USB 2.0 USB 3.0 to VGA USB to DVI USB to DVI / VGA USB to HDMI USB to VGA VGA VGA to DVI VGA to HDMI Wireless HP",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6751083728-0.jpg"), filename: "6751083728-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6751083728-1.jpg"), filename: "6751083728-1.jpg") if product
@@ -4799,13 +4430,13 @@ BTW, Moore&apos;s law is kinda kaput. The Geekbench difference between the 2012 
 <br>
 No trade. Firm. Cash or Venmo.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773666736-0.jpg"), filename: "6773666736-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773666736-1.jpg"), filename: "6773666736-1.jpg") if product
@@ -4851,13 +4482,13 @@ Ports:<br>
 <br>
 Comes with Mac OS X High Sierra (10.12.6) clean install.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773662068-0.jpg"), filename: "6773662068-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773662068-1.jpg"), filename: "6773662068-1.jpg") if product
@@ -4920,13 +4551,13 @@ Custom sleeved PSU cables<br>
 <br>
 text me @ 510-735-823(six)<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6769572309-0.jpg"), filename: "6769572309-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6769572309-1.jpg"), filename: "6769572309-1.jpg") if product
@@ -4953,13 +4584,13 @@ Up to 30 cpm, reduces and enlarges 25 to 400%<br>
 2,400 x 4,800 dpi scan resolution, 48-bit color<br>
 USB, PictBridge, and 802.3 Ethernet connectivity; PC and Mac compatible",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773643701-0.jpg"), filename: "6773643701-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773643701-1.jpg"), filename: "6773643701-1.jpg") if product
@@ -4987,13 +4618,13 @@ CALL OR TEXT.....
 CASH ONLY<br>
 PLEASE SEE MY OTHER ITEMS FOR SALE",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6771373060-0.jpg"), filename: "6771373060-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6771373060-1.jpg"), filename: "6771373060-1.jpg") if product
@@ -5052,13 +4683,13 @@ end
 THE LAPTOP IS IN NEAR MINT CONDITION&#xA0;<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product if product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773613490-0.jpg"), filename: "6773613490-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6773613490-1.jpg"), filename: "6773613490-1.jpg") if product
@@ -5077,13 +4708,13 @@ THE LAPTOP IS IN NEAR MINT CONDITION&#xA0;<br>
 
                   description: "Excellent condition, great laptop stand",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
                })
 
-               products << product if product
+               products << product  if product
                
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6772013895-0.jpg"), filename: "6772013895-0.jpg") if product
                product.photos.attach(io: File.open("/Users/steveninouye/Projects/seed_data/images/6772013895-1.jpg"), filename: "6772013895-1.jpg") if product
@@ -5103,7 +4734,7 @@ THE LAPTOP IS IN NEAR MINT CONDITION&#xA0;<br>
 
                   description: "Nice MacBook Pro for sale. Most of the specs are in the picture. It has a 240 SSD and and a 65 battery cycle count. The battery and SSD are almost new since I have not been using it that much. Comes with charger and box if you want it. It also boots up pretty fast (around 20sec or less). Factory reset and ready to go. Willing to deliver if close by or for a fee for farther places. Make me an offer. If you have any questions let me know.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5133,7 +4764,7 @@ THE LAPTOP IS IN NEAR MINT CONDITION&#xA0;<br>
 <br>
 asking $40",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5180,7 +4811,7 @@ Thank you for shopping.<br>
 <br>
 Keywords: motherboard, dell, acer, asus, asrock, core, mother board, bundle, electronics, electronic, collector, device",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5211,7 +4842,7 @@ Keywords: motherboard, dell, acer, asus, asrock, core, mother board, bundle, ele
 With screen protector and cover.<br>
 Can be used with Verizon Wireless.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5237,7 +4868,7 @@ Can be used with Verizon Wireless.",
 <br>
 Lots of ports!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5263,7 +4894,7 @@ Lots of ports!",
 
                   description: "Barely used no scratches never left home please text for more information no low baller not in the rush to sell.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5312,7 +4943,7 @@ Lots of ports!",
    
    Please text me if you had any question. Thank you!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5353,7 +4984,7 @@ No refund for it, didn&apos;t fit my needs, only if it is defective! My items ar
 <br>
 1977-27",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5383,7 +5014,7 @@ Includes Brother MFC-J6920 ink jet printer with extra ink cartridges. <br>
 <br>
 Works well, nice complete system.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5415,7 +5046,7 @@ Works well, nice complete system.",
 nVidia GeForce GT 750M<br>
 OSX Mojave fresh install<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5442,7 +5073,7 @@ OSX Mojave fresh install<br>",
 
                   description: "Brand new. $50 each",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5480,7 +5111,7 @@ Slots: 2 X PCI-E X16, 2 X PCI-E X4, 1 X PCI<br>
 Please text if interested to 415-43zero-52six3<br>
 </b>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5503,7 +5134,7 @@ Please text if interested to 415-43zero-52six3<br>
 
                   description: "Selling this element computer monitor pretty much used for two weeks and only getting rid of it because it&apos;s not mountable and I just bought a mountable monitor besides that it&apos;s in perfect condition and works fantastic model ELM2717C",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5547,7 +5178,7 @@ Can meet in San Francisco or in Castro Valley (East Bay)<br>
 Thank you.<br>
 </b>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5590,7 +5221,7 @@ Included Hardware<br>
 &#x2022;	Interfaces - HDMI, VGA, 4 USB, SD card reader, Headphone/Speaker<br>
 &#x2022;	Battery and AC Adapter<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5638,7 +5269,7 @@ Included Hardware<br>
    
    Please text me if you had any question. Thank you!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5672,7 +5303,7 @@ Included Hardware<br>
 
                   description: "Like new HP Spectre X360 (touch/tablet), i7, 8GB, 256GB SSD high speed. Includes two chargers.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5705,7 +5336,7 @@ Windows 7 Professional<br>
 Specs here:<br>
 https://si.cdn.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/Dell-Precision-T1700-Spec-Sheet-tab.pdf<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5733,7 +5364,7 @@ Purchased for wife some months back from Frys spent over 260 with taxes she hard
 ( Great Condition) <br>
 Comes with box power cord and manual * price is firm",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5777,7 +5408,7 @@ CALL OR TEXT ME AT
  <br>
 Ask for T<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5812,7 +5443,7 @@ Ask for T<br>",
                   description: "HUU H7 SMART tablet PC in Chinese case included<br>
 Android 4.4<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5844,7 +5475,7 @@ No refund for it, didn&apos;t fit my needs, only if it is defective! My items ar
 <br>
 1977-29<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5874,7 +5505,7 @@ No refund for it, didn&apos;t fit my needs, only if it is defective! My items ar
 <br>
 New battery installed recently, only ~33 cycles. Used by a professional, never as a toy. Laptop has been reformatted to factory shipped setting/OS. Comes with charger only. If interested, please email me with your number and I&apos;ll get back to you.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5911,7 +5542,7 @@ Save $50 at this price<br>
 Read more https://www.linksys.com/us/p/P-VLP0203/<br>
 One tri-band node and 2 dual-band nodes. Providing coverage for up to 5000 sf.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5936,7 +5567,7 @@ One tri-band node and 2 dual-band nodes. Providing coverage for up to 5000 sf.",
                   description: "Free standing computer rack. 36&quot; tall by 23&quot; wide by 36&quot; depth (38 3/8&quot; with caster wheels)<br>
 Great Condition.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -5979,7 +5610,7 @@ I am located in West San Jose.<br>
 Please contact me at  
  (Sue)<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6011,7 +5642,7 @@ Finds best setup location for optimal Wi-Fi coverage with signal strength LED<br
 <br>
 Perfect working condition - test before you buy",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6040,7 +5671,7 @@ Text me
 <br>
 Cash only local pick up",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6072,7 +5703,7 @@ Brand New in a box Never opened<br>
 <br>
 Asking price is $650 or best offer.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6108,7 +5739,7 @@ Please text me and we can meet up at public space.<br>
 Thanks for looking at this,<br>
 Yoshi.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6133,7 +5764,7 @@ Yoshi.<br>",
 <br>
 The Apple Keyboard with Numeric Keypad features an elegant, ultrathin anodized aluminum enclosure with low-profile keys that provide a crisp, responsive feel. It also has function keys for one-touch access to a variety of Mac features such as screen brightness, volume, eject, play/pause, fast-forward and rewind, Mission Control, and Launchpad. Its extended layout includes document navigation controls -- page up, page down, home, and end -- and full-size arrow keys for playing games and scrolling through documents. Its numeric keypad is perfect for spreadsheets and finance applications. And two USB 2.0 ports enable you to connect your mouse as well as a high-speed peripheral such as a digital camera or printer.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6170,7 +5801,7 @@ Price: $45 only (Cash), local pick up only - Milpitas/Sunnyvale, CA<br>
 Email me at  
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6199,7 +5830,7 @@ Call me or text<br>
 <br>
 Cash only local pick up",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6284,7 +5915,7 @@ Cash only local pick up",
 Please text me at  
  Thank You",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6323,7 +5954,7 @@ The unit is guaranteed to be in full working order. You can examine the unit bef
 <br>
 *Serious buyers only - please contact for any additional questions*.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6371,7 +6002,7 @@ The unit is guaranteed to be in full working order. You can examine the unit bef
    
    Please text me if you had any question. Thank you!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6418,7 +6049,7 @@ $110<br>
 <br>
 Text:",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6463,7 +6094,7 @@ Please find details below:<br>
 - Condition: Used, excellent condition. All ports still work fine and show no damage. <br>
 -Currently running macOS High Sierra",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6506,7 +6137,7 @@ Please text me if you are interested. We can meet up around 280/Saratoga.<br>
 Thanks,<br>
 Yoshi",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6557,7 +6188,7 @@ Specifications: See graphic of Specification sheet from manual listed above.<br>
 <br>
 As is",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6596,7 +6227,7 @@ Credit cards with Square and my iphone for 3.9% processing fee<br>
 <br>
 Mac, macintosh, apple, mac os, ios, iphone, ipad, laptop, imac",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6629,7 +6260,7 @@ Please send me text and we can meet up around Saratoga/280.<br>
 Thanks for your time,<br>
 Yoshi<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6660,7 +6291,7 @@ It worked very well to extend the signal in our large 2700 square foot split-lev
 <br>
 We&apos;ve switched network providers and now rent their mesh wifi network equipment.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6701,7 +6332,7 @@ We&apos;ve switched network providers and now rent their mesh wifi network equip
 
                   description: "Brand new never opened Canon color printer PIXMA  MG5420",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6737,7 +6368,7 @@ AiDisk is your personal FTP server that you can access anywhere you have the Int
 Download Master lets you download from the Bit Torrent site to the connected USB storage device directly thru the router without having to leave your PC on<br>
 Ai Radar automatically detects the location of clients and pin-points the signal to the client for effective and efficient transmissions<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6764,7 +6395,7 @@ Ai Radar automatically detects the location of clients and pin-points the signal
 
                   description: "Cool laptop for sale. Needs a new OS... It&apos;s running Windows Vista but I found it and don&apos;t have a password. I have a charger that powers it up. $75 since it&apos;s working...hella nice...holds 2 hd&apos;s..and my car is broke and I have lots of Christmas gifts to buy. Text Nick @  <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6830,7 +6461,7 @@ Custom sleeved PSU cables<br>
 <br>
 text me @ 510-735-823(six)<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6873,7 +6504,7 @@ Rapid Rails<br>
 <br>
 Payment: cash only please",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6913,7 +6544,7 @@ Details<br>
 <br>
 Add comfort and control to your computing experience with MS111 USB Optical Mouse from Dell. The high-performance optical engine captures small movement inputs with ease. Ease-of-use and better reliability are assured because there are no moving parts to wear out or collect dirt and dust. Featuring three buttons, this mouse is ideal for Internet enthusiasts and gamers alike with fast and accurate responses. This product has been tested and validated on Dell systems. It is supported by Dell Technical Support when used with a Dell system but works on any other PC or Mac.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -6970,7 +6601,7 @@ Contact Nick 24/7 @
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7015,7 +6646,7 @@ Included Hardware:<br>
 - Interfaces - HDMI, 3 USB, SD card reader, Headphone/Speaker<br>
 - Battery and AC Adapter<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7066,7 +6697,7 @@ Asking the mac pro tower for $575.<br>
 Text:  
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7145,7 +6776,7 @@ Text:
 Please text me at  
  Thank You",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7195,7 +6826,7 @@ Can meet in San Francisco or in Castro Valley (East Bay)<br>
 Thank you.<br>
 </b>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7236,7 +6867,7 @@ Prefer texts for communication!<br>
 <br>
 WILL NOT SHIP ANYWHERE FOR ANY REASON. MUST PICK UP LOCALLY.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7262,7 +6893,7 @@ WILL NOT SHIP ANYWHERE FOR ANY REASON. MUST PICK UP LOCALLY.",
 <br>
 Used - TESTED and in full working condition. Pulled from datacenter. Factory reset with default &apos;grpadmin&apos; credentials.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7294,7 +6925,7 @@ Used - TESTED and in full working condition. Pulled from datacenter. Factory res
 - Microsoft office added, case is included and original packaging and charger<br>
 - Retail $1299",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7329,7 +6960,7 @@ In perfect working condition, no scratch no dent. <br>
 Charger included.<br>
 asking for $600.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7365,7 +6996,7 @@ Full HD<br>
 Screen 15.6 in<br>
 SSD 256 GB",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7403,7 +7034,7 @@ Runs all games smoothly at max settings, great for gaming newbies or experts loo
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7432,7 +7063,7 @@ Runs all games smoothly at max settings, great for gaming newbies or experts loo
 <br>
 Located in Suisun City. Can meet at Travis AFB as well.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7464,7 +7095,7 @@ excellent condition<br>
 located Milpitas<br>
 237 near foothill",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7519,7 +7150,7 @@ Weight: ~40 pounds<br>
 <br>
 The photos show the case with the removable side panel removed to show the internal components.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7560,7 +7191,7 @@ Call me at
 <br>
 </li>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7583,7 +7214,7 @@ Call me at
 
                   description: "Intel Core i5-3470, 3.20GHz, 4GB DDR3, 500GB HDD, Win 7. Excellent.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7613,7 +7244,7 @@ Please send an email if you are interested <br>
 <br>
 Thank you",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7644,7 +7275,7 @@ Intel HD Graphics 6000<br>
 <br>
 Paid $1,100 incl tax. Have receipt, all paperwork, and original box.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7679,7 +7310,7 @@ Let me know if you have any questions. You can reach me at
 <br>
 Hablo Espanol<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7725,7 +7356,7 @@ email for questions.<br>
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7756,7 +7387,7 @@ email for questions.<br>
 4 GB of memory<br>
 500 GB Hard Drive",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7804,7 +7435,7 @@ Magic Mouse Specifications:<br>
 <br>
 Requires&#xA0;OS X 10.5.6 plus Wireless Mouse Software Update 1.0, or Mac OS X 10.6.2 or later",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7842,7 +7473,7 @@ Does not come with keyboard. Only comes with a mouse. <br>
 <br>
 Thanks for looking!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7886,7 +7517,7 @@ Rapid-charging base station with AC adapter<br>
 Manufacturer Warranty<br>
 Parts 	3 years limited<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7912,7 +7543,7 @@ Parts 	3 years limited<br>",
 <br>
 call or text",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7936,7 +7567,7 @@ call or text",
                   description: "Linksys EA4500 App-Enabled N900 Dual Band N Router 4 Port 450 Mbps 2.4 GHz/5 GHz $55.00<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7961,7 +7592,7 @@ call or text",
 
                   description: "i have a matched pair of 24&quot; monitors that i don&apos;t need any more. these are beautiful wide gamut displays with 1920x1200 resolution. make me an offer :)",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -7985,7 +7616,7 @@ call or text",
                   description: "Seagate Dual-Interface External Hard Drive with 160 GB, Brand New in the box with all its accessories, for $100.   Please call or text Ross at  <br>
 .",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -8024,7 +7655,7 @@ Screen size:&#xA0;15.6 inches<br>
 <br>
 Ram: 16GB<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -8061,7 +7692,7 @@ Runs all games smoothly at max settings, great for gaming newbies or experts loo
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -8095,7 +7726,7 @@ Asking $60<br>
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -8134,7 +7765,7 @@ $165<br>
  
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -8162,7 +7793,7 @@ Ready to go!!!!!<br>
 <br>
 We&apos;ll upgrade the RAM to 8GB for $20.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -8216,7 +7847,7 @@ Cache Memory<br>
     Cache Per Processor<br>
     1 MB<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -8249,7 +7880,7 @@ Paid $260.00 for this<br>
 <br>
 Great For Gaming or TV Streaming Youtube &amp; Roku<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -8273,7 +7904,7 @@ Great For Gaming or TV Streaming Youtube &amp; Roku<br>",
 
                   description: "I have 1 dell monitor.  I&apos;m selling for $10 each.  18 inch screen, 20 inches if you count the frame.  Great condition.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -8319,7 +7950,7 @@ keywords: apple, apple iMac, MacBook, MacBook Pro, MBP, iPhone, iPad, MacOS, Mus
 
 </li>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -8345,7 +7976,7 @@ keywords: apple, apple iMac, MacBook, MacBook Pro, MBP, iPhone, iPad, MacOS, Mus
 Specs: https://www.cnet.com/products/proscan-pled2400a-24-led-tv/specs/<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -8588,7 +8219,7 @@ Pages, Numbers, and Keynote are free on the Mac App Store for qualifying Mac com
 PVC-free AC power cord available in all regions except China, India, and South Korea.<br>
 MacBook Pro achieved a Gold rating from EPEAT in the U.S. and Canada.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -8661,7 +8292,7 @@ Macintosh HD:<br>
   S.M.A.R.T. Status:	Verified<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -8754,7 +8385,7 @@ Macintosh HD:<br>
 Please text me at  
  Thank You",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -8791,7 +8422,7 @@ Back-lit keyboard<br>
 In excellent condition. <br>
 Serial: C1MHWMU3DTY3",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -8827,7 +8458,7 @@ Loaded with the latest OS X Yosemite 10.10.5<br>
 Included 2 Apple Bass Speakers<br>
 USB Keyboard an wireless Logitech mouse<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -8878,7 +8509,7 @@ Space Gray color<br>
 <br>
 Available for $2400. Local cash transaction only.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -8917,7 +8548,7 @@ Windows 7 Ultimate<br>
 <br>
 Includes power adapter.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -8945,7 +8576,7 @@ Includes power adapter.",
 included pics serious offers only and local pic up they are a bit heavy to be lugging around town <br>
 asking 100 for each or best offer",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -8970,7 +8601,7 @@ asking 100 for each or best offer",
 <br>
 Like new. Used for 4 months.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -9012,7 +8643,7 @@ CD/DVD Burner<br>
 built-in speakers, mic, and webcam<br>
 Has some slight wear and tear from normal use.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -9055,7 +8686,7 @@ Item model number	RT-N56U<br>
 RAM Size	128 MB<br>
 Wireless Type	5.8 GHz Radio Frequency",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -9096,7 +8727,7 @@ Overall, this is an incredibly rare unit in very nice cosmetic condition, and I&
 <br>
 Asking $2000. Feel free to shoot me a text.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -9136,7 +8767,7 @@ Asking $2000. Feel free to shoot me a text.",
 
                   description: "Selling Canon Pixma inkjet color printer in excellent condition.  Quick (up to 12 ppm) and easy to use.  Works great with iPhones, Macs, iPads as it supports AirPrint wirelessly.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -9168,7 +8799,7 @@ Brand new in box<br>
 Product Description<br>
 Get cordless handset convenience when you use Skype! Now you don&apos;t have to sit in front of your computer when you want to talk to your friends. The Linksys Cordless Internet Telephony Kit comes with the Handset and its charger, and a USB Base Station that plugs into your computer. With the included Skype program running on your PC, the Handset can read and display your contact list on its built-in illuminated display. Just choose who you want to talk to from the menu, press a button, and get ready to talk. Of course, the Handset supports SkypeOut dialing as well as your Skype contact list. It rings when you have a Skype or SkypeIn call coming in, and shows the caller&apos;s ID on the screen. The Handset also supports call waiting and Skype&apos;s optional Voicemail service. Designed for windows XP and 2000 , When you&apos;re on a call, you can hit the Mute button for privacy, or use the speakerphone function to let everyone join in. You can even use the phone as an intercom -- each Base Station supports up to four handsets. In short, the Linksys Cordless Internet Telephony Kit gives you all the functionality of a regular phone, through Skype. You&apos;ll get the convenience of a cordless phone and all its features, plus the high-quality voice reception that you get from Skype on your PC, without being tied to your computer.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -9202,7 +8833,7 @@ Please text me at
 <br>
 I live in San Francisco",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -9264,7 +8895,7 @@ Grab your laptop and head to the next meeting where you, and your co-workers, wi
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -9299,7 +8930,7 @@ Memory: 64 GB 1866 MHz DDR3<br>
 Graphics: AMD FirePro D500 3072 MB<br>
 OS: macOS Mojave 10.14.2",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -9342,7 +8973,7 @@ asking $25 for the pair.<br>
 <br>
 email reply<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -9372,7 +9003,7 @@ Ready to go!!!!!<br>
 <br>
 For an additional $20 we can upgrade the RAM to 8GB.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -9426,7 +9057,7 @@ Cache Memory<br>
     Cache Per Processor<br>
     1 MB<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -9498,7 +9129,7 @@ Weight: 25.2 lbs<br>
 <br>
 NOTE: See above on the intermittent shutdown issue. Buyer should be aware of this and able to diagnose it for their own purposes. I do not know if it is a hardware or software issue.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -9541,7 +9172,7 @@ Fresh install of Windows 7 Ultimate<br>
 <br>
 Includes power adapter.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -9583,7 +9214,7 @@ macOS Mojave (10.14.2)<br>
 30W USB-C Power Adapter included.<br>
 USB-C Charge Cable (2 m) included.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -9614,7 +9245,7 @@ USB-C Charge Cable (2 m) included.",
 <br>
 The Apple Keyboard with Numeric Keypad features an elegant, ultrathin anodized aluminum enclosure with low-profile keys that provide a crisp, responsive feel. It also has function keys for one-touch access to a variety of Mac features such as screen brightness, volume, eject, play/pause, fast-forward and rewind, Mission Control, and Launchpad. Its extended layout includes document navigation controls -- page up, page down, home, and end -- and full-size arrow keys for playing games and scrolling through documents. Its numeric keypad is perfect for spreadsheets and finance applications. And two USB 2.0 ports enable you to connect your mouse as well as a high-speed peripheral such as a digital camera or printer.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -9646,7 +9277,7 @@ IBM ThinkPad docking station type 2505 - $15<br>
 <br>
 IBM 1.44MB internal floppy disc drive 05K9206 - $5",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -9677,7 +9308,7 @@ Ready to go!!!!!<br>
 <br>
 For an additional $20 we can upgrade the RAM to 8GB.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -9758,7 +9389,7 @@ For an additional $20 we can upgrade the RAM to 8GB.",
 Please text me at  
  Thank You",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -9796,7 +9427,7 @@ Super clean condition.  Reformatted and ready for it&apos;s new home.<br>
 512GB HDD<br>
 AMD Radeon R9 M370X",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -9834,7 +9465,7 @@ Intel Core i7-8750H Hexa-core2.20 GHz processor<br>
 512 GB SSD<br>
 GTX 1060",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -9863,7 +9494,7 @@ GTX 1060",
 
                   description: "Brand new Apple MacBook Pro 15&quot; Display, 2.9GHz Quad Core Intel Core i7, 16 GB Memory, 512 GB Flash Storage with Touch Bar and Touch ID 2017 model. Brand new/shrink-wrapped. No Apple care. Cash/ paypal",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -9920,7 +9551,7 @@ Hardware Overview:<br>
   Boot ROM Version:	MBP114.0184.B00<br>
   SMC Version (system):	2.30f2<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -9986,7 +9617,7 @@ Can meet in the the Castro or Noe Valley in the late afternoon. <br>
 <br>
 Cash and local only. No shipping.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10018,7 +9649,7 @@ Selling for $45<br>
 <br>
 can deliver within the city of SF",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10046,7 +9677,7 @@ Radeon Pro 560 with 4GB of GDDR5<br>
 Upgraded to 3.1 GHz CPU<br>
 Upgraded to 2 TB Flash",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10074,7 +9705,7 @@ AMD Radeon R7 M260 2GB dedicated Graphiscs<br>
 Slight crack on housing of charging area<br>
 300 OBO.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10102,7 +9733,7 @@ Win 7. <br>
 Charger included.<br>
 Good condition.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10135,7 +9766,7 @@ ink  <br>
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10188,7 +9819,7 @@ A/C adapter included.<br>
 <br>
 Tel..................................",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10241,7 +9872,7 @@ M-F between ~8am to 3pm , i can also meet meet @ Courtyard by Marriott <br>
 <br>
 all other times , at starbucks listed above",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10296,7 +9927,7 @@ A/C adapter included.<br>
 <br>
 Tel..................................",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10319,7 +9950,7 @@ Tel..................................",
 
                   description: "$2 each",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10349,7 +9980,7 @@ Tel..................................",
 32 GB RAM<br>
 2 TB Flash",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10373,7 +10004,7 @@ Tel..................................",
                   description: "The ThinkPad Mini Dock Series 3 with USB 3.0 family is ideal for notebook users who need instant connectivity to Ethernet, multiple USB devices, audio and video equipment, and robust key lock security. <br>
 Type 4338",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10406,7 +10037,7 @@ these x1 units have a 7+ yrs life.<br>
 <br>
 local - in person - day time - cash only",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10430,7 +10061,7 @@ local - in person - day time - cash only",
 
                   description: "Unopened. Original Apple quality Retails for $40",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10458,7 +10089,7 @@ It comes with 6 extra XL ink cartridges, so you are good to print thousands of p
 <br>
 $40 or best offer. Pickup today (Saturday) or tomorrow morning",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10490,7 +10121,7 @@ Monitor works perfectly, no issues.<br>
 <br>
 We&apos;re in Aromas, 40 min south of San Jose.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10519,7 +10150,7 @@ We&apos;re in Aromas, 40 min south of San Jose.<br>",
 For HP CP1160 inkjet and for OfficeJet D135, D135xi, D155xi, and 7100 series, HP Digital Copier 610 and others.<br>
 Tri-color cyan, magenta, and yellow ink.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10546,7 +10177,7 @@ Tri-color cyan, magenta, and yellow ink.",
 <br>
 https://en.wikipedia.org/wiki/Lenovo_IdeaPad_Yoga_13",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10584,7 +10215,7 @@ Perfect for travel.<br>
 <br>
 Located in Antioch.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10626,7 +10257,7 @@ Only reason for selling is because I upgraded. Low ball offers will be ignored.<
 Apple Technical Specifications:<br>
 https://support.apple.com/kb/SP670?locale=en_US",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10674,7 +10305,7 @@ Intel Celeron G3930<br>
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10703,7 +10334,7 @@ i7 processor 4600u<br>
 <br>
 keyboard and frame were recently replaced under extended warranty",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10728,7 +10359,7 @@ keyboard and frame were recently replaced under extended warranty",
                   description: "Sturdy IBM monitor stand with sliding bottom<br>
 Very good condition, perfect for office or home.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10761,7 +10392,7 @@ Very good condition, perfect for office or home.",
 Touchbar <br>
 Asking $2200 cash?<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10785,7 +10416,7 @@ Asking $2200 cash?<br>",
 
                   description: "For sale is a Motorola Arris SB6141 343Mbps Docsis 3.0 cable modem for Comcast. Get rid of your Comcast rental model and save $13 every month from your Comcast bill. Tested and working",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10812,7 +10443,7 @@ Asking $2200 cash?<br>",
 WiFi + Cellular 4G LTE Factory Unlocked<br>
 Smart Keyboard and/or Apple Pencil may also be available",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10868,7 +10499,7 @@ Condition: Excellent condition, fully loaded, ready to go. <br>
 *** Special discount for Students &amp; Senior Citizens &amp; Buyers not in (408) area code<br>
 *** Open 7 days/week",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10903,7 +10534,7 @@ One corner has a dent. <br>
 <br>
 Bill of sale will be made.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10956,7 +10587,7 @@ A/C adapter included.<br>
 <br>
 Tel..................................",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -10987,7 +10618,7 @@ Tel..................................",
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11017,7 +10648,7 @@ In addition to the two Mac Plus computers themselves, two functioning keyboard a
 <br>
 I would rather not sell these items individually, but will entertain offers anyway.  Feel free to make me your best offer, as well.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11042,7 +10673,7 @@ I would rather not sell these items individually, but will entertain offers anyw
                   description: "I have every version of Apple OS back since it was released but specialize in the Intel based versions from 10.4 and newer. Also - if you&apos;re recently converted to Mac from Windows and need help making the transition I do limited consulting training at a reasonable price.<br>
 I also have some excess Mac software available that I will sell at my cost (Mac MSOffice - full working not subscription - most current &amp;earlier versions) - but I have other older  mac software too so please write with your needs.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11073,7 +10704,7 @@ Memory: 32GB (16GBx2) RGB<br>
 HDD&#xFF1A;240GB WD Green SSD + 2TB SATA III Hard Drive Combo<br>
 Graphics: EVGA GeForce&#xAE; GTX 1080 Ti<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11106,7 +10737,7 @@ Comes with power adapter and DVI Cable.<br>
 <br>
 Works great!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11151,7 +10782,7 @@ NOTE:I have all Boxes for everything tats in this computers<br>
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11198,7 +10829,7 @@ NOTE:I have all Boxes for everything tats in this computers<br>
 - SD flash card reader<br>
 -WIFI",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11234,7 +10865,7 @@ iPad Pro <br>
 <br>
 Asking 550 or best offer",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11267,7 +10898,7 @@ List Price is $179.99, Though unpacked and still sealed, selling for $100/OBO<br
 <br>
 Golden opportunity for Serious Buyers, Dont miss!!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11298,7 +10929,7 @@ Decided that I don&apos;t need a laptop, since I&apos;m planning now to get a de
 <br>
 Exact product: https://www.bestbuy.com/site/lenovo-yoga-920-2-in-1-13-9-touch-screen-laptop-intel-core-i7-8gb-memory-256gb-solid-state-drive-bronze/6061500.p?skuId=6061500",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11336,7 +10967,7 @@ HP Photosmart 1000, 1115, 1215, 1315, 7100, 7150, 7300, 7350, 7500, 7550, 7600, 
 
 <p>In any case check your manual for compatibility and go through reviews.</p>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11373,7 +11004,7 @@ HP Photosmart 1000, 1115, 1215, 1315, 7100, 7150, 7300, 7350, 7500, 7550, 7600, 
 - WEB camera <br>
 - SD flash reader",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11399,7 +11030,7 @@ HP Photosmart 1000, 1115, 1215, 1315, 7100, 7150, 7300, 7350, 7500, 7550, 7600, 
 
                   description: "For sale is a Lenovo ideacentre K410 I5 Quad Core 3.0GHZ computer with 8GB RAM and 500GB hard disk and DVD player. Computer is super quite and still have the plastic shrink cover. It comes with activated WIN10 and Microsoft Office and keyboard.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11451,7 +11082,7 @@ A/C adapter included.<br>
 <br>
 Tel..................................",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11489,7 +11120,7 @@ Win10 professional with legal key.<br>
 <br>
 Also have a 1080 ti available for 650 as well as a 27 dell ultra sharp IPS for 150",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11519,7 +11150,7 @@ Also have a 1080 ti available for 650 as well as a 27 dell ultra sharp IPS for 1
 <br>
  Price is firm.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11545,7 +11176,7 @@ Also have a 1080 ti available for 650 as well as a 27 dell ultra sharp IPS for 1
 Intel HD Graphics 4000 and NVIDIA NVS 5200M Dual Video.<br>
 256GB 8GB GOOD BATTERY. AC CHARGER WIN 7 PRO.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11569,7 +11200,7 @@ Intel HD Graphics 4000 and NVIDIA NVS 5200M Dual Video.<br>
 
                   description: "This MAC Plus computer is in working condition model M001A, 1 MB. It comes with 2 external hard drives  - one apple and one Data Frame, extra Apple 3.5 disk loader, original keyboard, and speakers. Loaded with word, super paint, pagemaker. Comes with original box for Pagemaker, lots of blank disks, program disks. Would make a great collectable. I also have an imagewriter listed for $55 which will print from this MAC Plus. I have the cords to connect them.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11595,7 +11226,7 @@ Intel HD Graphics 4000 and NVIDIA NVS 5200M Dual Video.<br>
 
                   description: "For sale is a DELL Optiplex desktop Quad Core 3.3GHZ computer with 4GB RAM and 500GB hard disk and DVD recorder/player. Computer is super quite and runs perfectly. Comes with activated WIN10 PRO OR Windows 7 professional (your choice) and Full Microsoft Office suite.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11627,7 +11258,7 @@ Ram: 16 GB<br>
 Wi-Fi: 802.11ac<br>
 Ports: MagSafe 2 power port, Two Thunderbolt 2 ports (up to 20 Gbps), Two USB 3 ports (up to 5 Gbps), HDMI port, 3.5 mm headphone jack, SDXC card slot",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11657,7 +11288,7 @@ Ports: MagSafe 2 power port, Two Thunderbolt 2 ports (up to 20 Gbps), Two USB 3 
 
                   description: "New in box",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11719,7 +11350,7 @@ Check out our reviews online! People Love Us On Yelp! <br>
 <br>
 We look forward to speaking with you! Thank you for looking!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11757,7 +11388,7 @@ We look forward to speaking with you! Thank you for looking!",
 <br>
 !!! PRICE IS $2550 FIRM...NO TRADES !!!!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11792,7 +11423,7 @@ Compare new at $410 on dell.com.<br>
 <br>
 For full spec listing, see: https://www.dell.com/en-us/work/shop/dell-24-monitor-p2415q/apd/210-agnk/monitors-monitor-accessories?prg=1&amp;VEN1=13003219-5513721-AgEAAAAAAAAAAUO1&amp;cjevent=6b13a919f97f11e8809601bc0a1c0e0d&amp;dgc=BF&amp;DGSeg=BSD&amp;cid=198376&amp;lid=45675&amp;acd=12309198376456750&amp;VEN3=113204695042826720",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11824,7 +11455,7 @@ Product #C9388A.<br>
 <br>
 Compatible Printers: HP Officejet Pro K5400, K550, K8600, L7580, L7590, L7680, L7780.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11877,7 +11508,7 @@ Located next to CCSF Ocean Campus.  Convenient place for me to meet would be the
 <br>
 ITMOJO, LLC",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11923,7 +11554,7 @@ $85 for 1 or $160 for both<br>
 If the ad is up, I still have it!!<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -11958,7 +11589,7 @@ If the ad is up, I still have it!!<br>
 - Keyboard light<br>
 - WEB camera<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -12018,7 +11649,7 @@ Lowball Offers will be ignored, no ship to my nephew requests (I don&apos;t fall
 Text me: Will at  
  for prompt reply.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -12050,7 +11681,7 @@ Text me: Will at
 
                   description: "Brand new. Just have not needed to use it.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -12102,7 +11733,7 @@ A/C adapter included.<br>
 <br>
 Tel..................................",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -12133,7 +11764,7 @@ Operating System: macOS Mojave Version 10.14<br>
 Condition: very good condition, only small marks at the bottom and left side (see picture)<br>
 Come with an OEM 85W charger",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -12196,7 +11827,7 @@ Contact: Andy Lee,
 *** We have more than one laptop (same or similar model of this) and many other used laptops<br>
 for sale, low price (Sony VAIO, HP, Asus, Toshiba...). Please stop by to take a look and compare !!!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -12232,7 +11863,7 @@ Print on both sides with automatic duplex (two-sided) printing<br>
 Product Description<br>
 You never thought using an inkjet all-in-one could be this easy! It&apos;s simple to connect the MFC-J870DW using wireless setup assistant or to your wired Ethernet network. Conveniently print from or scan to your compatible mobile device1 and &quot;touch to connect&quot; directly from your NFC-capable device. Built-in 2-sided printing helps save paper. Includes free Brother Cloud Apps, plus the ability to scan to or print from popular web services via Web Connect from the intuitive 2.7&quot; Color TouchScreen Display with TouchPanel. Reduce printing costs using high-yield inks.5 Direct printing from or scanning to media cards or USB flash drive.5 2-year limited warranty plus free phone support for the life of your product.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -12297,7 +11928,7 @@ Local sale cash or credit card in person +3% CC processing fee.<br>
 <br>
 itmojo IBM Thinkpad",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -12336,7 +11967,7 @@ itmojo IBM Thinkpad",
  This is a big laptop, portable printer, scanner carrying case. Used in good condition.<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -12385,7 +12016,7 @@ Windows 7 Pro 64 bit just installed.<br>
 <br>
 $275.00",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -12418,7 +12049,7 @@ $275.00",
                   description: "really clean, own by an adult  10/10 condition Microsoft Surface Pro 4 (512 GB, 16 GB de RAM, Intel Core i7<br>
 Firm on price no shipping serious buyer only",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -12446,7 +12077,7 @@ Firm on price no shipping serious buyer only",
                   description: "Dell OptiPlex 9010 Ultra Small Form Factor USFF i5 2.90GHz 8GB 500GB Win10<br>
 Excellent. Selling computer only.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -12490,7 +12121,7 @@ Since KWorld USB ATSC TV Box supports all notebooks and desktop PCs, and it is U
 </p>
 <p>more: http://global.kworld-global.com/main/prod_in.aspx?mnuid=1248&amp;modid=6&amp;fcid=36&amp;pcid=299&amp;ifid=453&amp;prodid=91</p>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -12524,7 +12155,7 @@ Black Snap-on cover <br>
 Selling only bc I upgraded to 3rd gen <br>
 831-840-sixfive25",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -12577,7 +12208,7 @@ Please &quot;TEXT&quot; Will at
  to discuss.  SF or neighboring cities only.<br>
 ITMOJO",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -12660,7 +12291,7 @@ iMac 21.5&quot; Mid 2011, 2.5GHz, i5, 8GB RAM, 500GB HD, DVD/R	$449.95<br>
 <br>
 iMac 27&quot; Mid 2009, 2.4GHz, C2D, 4GB RAM, 320GB HD, DVD/R	$369.95",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -12698,7 +12329,7 @@ No shipping cash only no paypal<br>
 <br>
 510-695-3o35 thanks",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -12813,7 +12444,7 @@ Operating altitude: tested up to 10,000 feet<br>
 Maximum storage altitude: 15,000 feet<br>
 Maximum shipping altitude: 35,000 feet",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -12849,7 +12480,7 @@ Big gaming computer.  Bought it a year ago for $2000+.  Very rarely used on week
 Super fast desktop computer.  Looks and works like brand new.<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -12894,7 +12525,7 @@ Power Brick inlcuded<br>
 <br>
 Local pick-up and Cash only",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -12924,7 +12555,7 @@ Intel i7 2.6GHz Processor. <br>
 Windows 7 64bit<br>
 Local sale only. Cash only.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -12990,7 +12621,7 @@ I have at least 1 original Dell monitor &apos;stand&apos; that is compatible wit
 <b>$25</b> for <b>all 3</b> (if you buy both PA-10 90W power adapter, Dock and Monitor Stand)
 <br><br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13016,7 +12647,7 @@ This guy just stopped working one day. Has error &quot;Print Unable 28&quot;. I 
 $20 <br>
 Call, Text or Email",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13062,7 +12693,7 @@ https://support.apple.com/kb/SP756?locale=en_US<br>
 # Apple , laptop , Mac, MacOS, computer,  <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13096,7 +12727,7 @@ https://support.apple.com/kb/SP756?locale=en_US<br>
 - WEB camera <br>
 - SD flash reader",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13142,7 +12773,7 @@ https://www.synology.com/en-us/support/download/DS415play#utilities<br>
 NAS Server, FreeNAS, Synology, WD Red, Seagate, Samsung, Qnap, Ironwolf<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13175,7 +12806,7 @@ NAS Server, FreeNAS, Synology, WD Red, Seagate, Samsung, Qnap, Ironwolf<br>
 - WEB camera <br>
 - SD flash reader",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13202,7 +12833,7 @@ NAS Server, FreeNAS, Synology, WD Red, Seagate, Samsung, Qnap, Ironwolf<br>
 
                   description: "Hewlett Packard office laser printer model 4240N. 40 pages per minute, 175,000 pages per month duty cycle, 600 sheet paper capacity, HP Fast Ethernet print server built in. USB or Ethernet  connection. Has optional HP q2440b 600 sheet paper cassette. Good condition. $150",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13249,7 +12880,7 @@ Please &quot;TEXT&quot; Will at
  to discuss.  SF or neighboring cities only.<br>
 ITMOJO",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13285,7 +12916,7 @@ ITMOJO",
 Asking $950?<br>
 Cash only!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13311,7 +12942,7 @@ Cash only!",
 <br>
 $200.00",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13371,7 +13002,7 @@ Local sale cash or credit card in person +3% CC processing fee.<br>
 <br>
 itmojo IBM Thinkpad",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13435,7 +13066,7 @@ Weight: 3.3 lbs.<br>
 <br>
 Thickness: 0.7 inch<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13469,7 +13100,7 @@ Thickness: 0.7 inch<br>",
 I have not even opened it and is available as-is for $30.<br>
 Feel free to reach out to me via email if you are interested. Available for immediate pickup.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13495,7 +13126,7 @@ Feel free to reach out to me via email if you are interested. Available for imme
 <br>
 Its a local and cash sale only.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13522,7 +13153,7 @@ Its a local and cash sale only.",
 
                   description: "Computer Case black color used size 16&quot; x 12&quot; x 4&quot; ask for 5.00  Pick up the item at #164 W. Jackson Street &amp; Cypress Ave (corner of Walgreen Pharmacy parking lot) If the post is on, it means the item still available. If you have question, please message me for your question. I wouldn&apos;t pick up the phone if the number isn&apos;t in my contract list. Thanks for looking.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13566,7 +13197,7 @@ Fresh install of OSX El Capitan 10.11.6<br>
 <br>
 Includes DVI dongle,  power supply, keyboard and mouse.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13597,7 +13228,7 @@ Includes DVI dongle,  power supply, keyboard and mouse.<br>",
 <br>
 $800, cash only. Available for pickup in Oakland, near 580 at the High Street exit. Please include your phone number if you don&apos;t want to be ignored. ;)",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13634,7 +13265,7 @@ COMPATIBLE with new kind of 65w and 90w Lenovo laptops<br>
 <br>
 L440, L450, L460, L470, L540, L560, L570 , P50s, P51S, T440, T440p, T440s, T450, T450s, T460, T460p, T460s ,T470 ,T470P, T470S, T540p ,T550 ,T560, T570 , W550s , X240 , X250, X260, X270",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13690,7 +13321,7 @@ Lowball Offers will be ignored, no ship to my nephew requests (I don&apos;t fall
 Text me: Will at  
  for prompt reply.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13722,7 +13353,7 @@ Text me: Will at
 
                   description: "<p>microsoft lifeCam vx-1000 - $12 ono</p>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13751,7 +13382,7 @@ Text me: Will at
 <br>
 Laptop will come with all original accessories and box. Serious offers only. Local and Cash only offer, meet up in person and no trades.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13778,7 +13409,7 @@ Laptop will come with all original accessories and box. Serious offers only. Loc
 
                   description: "Computer Case black color used size 16&quot; x 12&quot; x 4&quot; ask for 5.00  Pick up the item at #164 W. Jackson Street &amp; Cypress Ave (corner of Walgreen Pharmacy parking lot) If the post is on, it means the item still available. If you have question, please message me for your question. I wouldn&apos;t pick up the phone if the number isn&apos;t in my contract list. Thanks for looking.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13855,7 +13486,7 @@ iMac 21.5&quot; Mid 2011, 2.5GHz, i5, 8GB RAM, 500GB HD, DVD/R	$449.95<br>
 <br>
 iMac 27&quot; Mid 2009, 2.4GHz, C2D, 4GB RAM, 320GB HD, DVD/R	$369.95",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13885,7 +13516,7 @@ USB<br>
 External VGA Monitor port<br>
 DVD writer reader",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13915,7 +13546,7 @@ DVD writer reader",
 - eSATA <br>
 - SD flash reader",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -13978,7 +13609,7 @@ Check out our reviews online! People Love Us On Yelp! <br>
 <br>
 We look forward to speaking with you! Thank you for looking!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -14030,7 +13661,7 @@ Please call or text Will at
 <br>
 itmojo",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -14066,7 +13697,7 @@ $60/each<br>
 <br>
 All these cartridges work with Epson Stylus Pro 4000, 7600, and 9600 Printers/Plotters",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -14102,7 +13733,7 @@ All these cartridges work with Epson Stylus Pro 4000, 7600, and 9600 Printers/Pl
 The monitor works fine.  Good color.  It has DVI, VGA output.  The stand is broken.  I put a pad under the screen and it works (see photos).<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -14144,7 +13775,7 @@ $2299 OBO<br>
 <br>
 95134/95035",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -14203,7 +13834,7 @@ I&apos;m an technology enthusiast my whole life, just selling off the ones I don
 <br>
 Thanks for checking out my listing and have a nice day!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -14270,7 +13901,7 @@ Using two screens? Just for fun... try one.<br>
 Use a dual-screen MacBook setup? Close your MacBook and try working on a single monitor. According to experts, this type of setup increases focus, minimizes workspace clutter and even speeds up display performance by dedicating 100% video memory to a single display.  When using BookArc, you have a newfound laser focus on the work before you.<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -14303,7 +13934,7 @@ One owner, well taken care of, no dead pixels, works like new. <br>
 <br>
 Comes with the original stand, power cord and HDMI cable.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -14437,7 +14068,7 @@ Continuous operation: 10C to 35C, 10% to 80% relative humidity (RH).<br>
 www dell dot com/downloads/global/products/pedge/r710-spec-sheet.pdf<br>
 www dell dot com/downloads/global/products/pedge/en/server-poweredge-r710-tech-guidebook.pdf",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -14488,7 +14119,7 @@ Please call or text Will at
 <br>
 ITMOJO, LLC  X260 Tablet touchscreen touch screen pen",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -14631,7 +14262,7 @@ Continuous operation: 10C to 35C, 10% to 80% relative humidity (RH).<br>
 www dell dot com/downloads/global/products/pedge/r710-spec-sheet.pdf<br>
 www dell dot com/downloads/global/products/pedge/en/server-poweredge-r710-tech-guidebook.pdf",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -14691,7 +14322,7 @@ Local in-person sale only, no shipping requests. SF or adjacent neighboring citi
 <br>
 ITMOJO<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -14737,7 +14368,7 @@ We&apos;ve switched providers and now use a different modem.<br>
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -14795,7 +14426,7 @@ Inspiron: 500m, 510m, 600m, 8500, 8600 series<br>
 Precision: M90, M6300<br>
 ***********************************",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -14857,7 +14488,7 @@ Best offer - cash only<br>
 <br>
 Call or text @  408-202-565 nine",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -14898,7 +14529,7 @@ Warranty good until November 2020.<br>
 <br>
 $900 and it&apos;s yours.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -14967,7 +14598,7 @@ No shipping, paypal scammers need not reply.  Local Cash in-person transaction o
 <br>
 itmojo X240 X230 X250 X260 i5 i7 light ultraportable",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15040,7 +14671,7 @@ No shipping, paypal scammers need not reply. Local Cash in-person transaction on
 <br>
 itmojo X240 X230 X250 X260 i5 i7 light ultraportable",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15078,7 +14709,7 @@ end
                   description: "All ankle bracelets for women<br>
 2-6 weeks delivery<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15115,7 +14746,7 @@ end
                   description: "This set of earrings is new, never worn.  Hand-crafted from copper and silver, comes from New Brunswick.  One treble clef and one bass clef make them perfect for a pianist or a music lover in general.  A-symmetrical and artsy. $25. <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15153,7 +14784,7 @@ Please, call or write<br>
 Money Orders or cash!<br>
 Thank you !!!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15194,7 +14825,7 @@ Mary&apos;s Necklace in a movie<br>
 <br>
 http://solistar.etsy.com",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15222,7 +14853,7 @@ http://solistar.etsy.com",
                   description: "Mans Ring 14K Gold- New $750 OBO<br>
 Ring Size - 10",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15247,7 +14878,7 @@ Ring Size - 10",
 
                   description: "Previously owned but never used, part of a watch collection, $18 each or $34 for both.  Please see pictures. Thanks for looking.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15273,7 +14904,7 @@ Ring Size - 10",
 Water resistant to 330 ft.<br>
 I had it fitted and then never wore it, so it comes with several extra links that can be reattached by a jeweler, if your wrist is bigger than mine (I&apos;m a big guy so that&apos;s not too likely). Comes in original tin box with a protective foam cushion and manual.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15303,7 +14934,7 @@ I had it fitted and then never wore it, so it comes with several extra links tha
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15331,7 +14962,7 @@ I had it fitted and then never wore it, so it comes with several extra links tha
 
                   description: "Brand new, never worn Joseph Nogucci bracelet!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15362,7 +14993,7 @@ Asking $90 or best offer for both watches<br>
 <br>
 Please call or text",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15397,7 +15028,7 @@ Reply with your name and Phone Number (no phone number = no reply)<br>
 <br>
 I can meet in San Francisco. If this ad is up, it&apos;s still available.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15427,7 +15058,7 @@ Weighs 2 grams <br>
 <br>
 CONDITION: Near Mint/Mint - No chips or breaks to the stones. Beautiful color. Appears unworn. Please review photos.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15457,7 +15088,7 @@ CONDITION: Near Mint/Mint - No chips or breaks to the stones. Beautiful color. A
 
                   description: "vintage culture quality pearls necklace clap 14k 15 inches long  top condition  $380. my grand mother was from an Hungarian aristocrat family sold to elllllllllllle",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15485,7 +15116,7 @@ CONDITION: Near Mint/Mint - No chips or breaks to the stones. Beautiful color. A
 
                   description: "Cheerleader megaphone necklace. Asking $10. Pick up Suisun or can mail at no additional charge.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15509,7 +15140,7 @@ CONDITION: Near Mint/Mint - No chips or breaks to the stones. Beautiful color. A
 
                   description: "huge jade ring by Amy Khan Russel  sterling silver heavy size 5.56= 6  jade is 1 1/3 long inches by close to 1 inch wide gorgeous  $80. serious offer",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15562,7 +15193,7 @@ CELL:
 LOCATION: 482 WEST HAMILTON AVE. STE 1<br>
 CAMPBELL, CA 95008<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15588,7 +15219,7 @@ CAMPBELL, CA 95008<br>",
                   description: "I am selling a Bamboo Necklace set, by Crislu, complete with matching earrings, in MINT Condition (still in original packaging). The necklace is 16&quot; in length. If you have any questions, please feel free to email me at  <br>
 . I live on the coast, in El Granada (approx. 5 miles North of Half Moon Bay), but can easily ship to anywhere at a minimal cost. Thank you for your interest.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15628,7 +15259,7 @@ The total gold weight of Ring = 12.12 grams<br>
 Ring Size is 8.50<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15676,7 +15307,7 @@ Screw Locke style, and the screw back <br>
 - Power reserve representational function <br>
 - Second hand halt function",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15707,7 +15338,7 @@ Band of ring is very scratched up, which is why I&apos;m selling the ring for su
 Cash only and I only meet locally<br>
 Feel free to contact me with any questions",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15732,7 +15363,7 @@ Feel free to contact me with any questions",
 
                   description: "This cute mirror is sterling silver and is inscribed with the name &quot;Emily&quot;. It comes in a velvet dust bag and opens to reveal two mirrors inside. Perfect as a gift - from Red Envelope. Cash only, must pick up.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15757,7 +15388,7 @@ Feel free to contact me with any questions",
 
                   description: "New charms. Never worn. Aged to Perfection, AUNT, and a lady bug. $2 each.  Can mail at no additional charge.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15781,7 +15412,7 @@ Feel free to contact me with any questions",
 
                   description: "Good cosmetic and working condition. Model JY00000-53E (Skyhawk A-T)",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15807,7 +15438,7 @@ Feel free to contact me with any questions",
 <br>
 I live at Marina Bay, just south of 580 between El Cerrito and Pt. Richmond.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15831,7 +15462,7 @@ I live at Marina Bay, just south of 580 between El Cerrito and Pt. Richmond.",
 
                   description: "nice old jade pendant bail 14k nice old men size",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15859,7 +15490,7 @@ I live at Marina Bay, just south of 580 between El Cerrito and Pt. Richmond.",
 <br>
 I live at Marina Bay, just south of 580 between El Cerrito and Pt. Richmond.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15893,7 +15524,7 @@ CONDITION: Good/Very Good. Very nice color. Stones have some minor surface scuff
 <br>
 Provide a contact number with your response. thanks",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15923,7 +15554,7 @@ Provide a contact number with your response. thanks",
 
                   description: "15 DIFFERENT NECKLACES: $25.00 FOR ALL .  SOME WITH PURPLE STONES AND BLUE BEADS:SOME JUST GOLD OR SILVER...FUN TO LAYER.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15951,7 +15582,7 @@ Provide a contact number with your response. thanks",
 
                   description: "Vintage costume jewelry,all necklaces, bracelets,rings, scarf holder, brooches, pins  ($3.00 each) Anniversary music jewelry box($5.00)",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -15997,7 +15628,7 @@ Provide a contact number with your response. thanks",
 
                   description: "Brand New custom plugs size 1 1/8&quot; in diameter. Light weight. Beautiful design.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16027,7 +15658,7 @@ and <br>
 <br>
 Thanks.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16071,7 +15702,7 @@ Sapphire crystal <br>
 Swiss automatic movement with date calendar <br>
 Black diver dial, silver bezel",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16110,7 +15741,7 @@ $145 Pick Up in Napa Located in North Napa just off of highway 29<br>
 <br>
 Christmas, Birthday, Anniversary, Gift, Friend, Give<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16135,7 +15766,7 @@ Christmas, Birthday, Anniversary, Gift, Friend, Give<br>",
 
                   description: "vintage nice Buddha set on pink icy jade very cold set w 18k yellow gold $220.please serious not curious!!!!!!!!!! all my jade come from my grand mother  and great grand mother !!!!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16161,7 +15792,7 @@ Christmas, Birthday, Anniversary, Gift, Friend, Give<br>",
 
                   description: "vintage jade Buddha lite lavender grade A jade set w 18 k yellow gold about .25cts in diamond bling bling a lot but quality just OK  on diamonds  price is reflected to the diamonds  $260 nice for guys to it is not a dye jade see Chinatown prices LOL nice for a guy to not to small sold sold SOLD",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16196,7 +15827,7 @@ CONDITION: Great condition. Beautiful stone. <br>
 <br>
 Please provide a contact number with your response. CASH ONLY",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16228,7 +15859,7 @@ Please provide a contact number with your response. CASH ONLY",
 
                   description: "HELLO CRAIGSLISTERS, up for sale is a FERRARI, MEN&apos;S, 0830164, AERO EVO, ANALOG DISPLAY, QUARTZ WATCH.  This fine watch is in  EXCELLENT TO MINT CONDITION, WORKS PERFECTLY IN EVERY WAY, comes with ORIGINAL box and paperwork. I changed the band to a Hirsch, Carbon Red, Padded, Stitched, Rubber Lined, Genuine Leather Band, ( $40 ), original band is included.   I LOVE this watch, but I bought a smart watch and dont use my regular wristwatches much anymore. Please ask any questions.    THANKS FOR LOOKING !!!!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16263,7 +15894,7 @@ Case Size: 1.54&quot; * 1.54&quot; * 0.35&quot;(39 * 39 * 9 mm); Band Length: 6.
 <br>
 Brand new, never opened. Sold on Amazon for $7.99: https://www.amazon.com/Top-Plaza-Rotating-Airplane-Leather/dp/B06XJPT7ZH/ref=pd_sim_241_7?_encoding=UTF8&amp;pd_rd_i=B06XJPT7ZH&amp;pd_rd_r=QHTKY1YZCSX0D0TCC91E&amp;pd_rd_w=CH4fG&amp;pd_rd_wg=mkWnw&amp;psc=1&amp;refRID=QHTKY1YZCSX0D0TCC91E.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16291,7 +15922,7 @@ Brand new, never opened. Sold on Amazon for $7.99: https://www.amazon.com/Top-Pl
 
                   description: "It is a 2003 26mm ladies datejust model with stainless steel oyster band and blue roman dial.  I am the 2nd owner.  It has been in the safe deposit box for the last few years so is in great condition.  It comes with an extra link, original box, papers and receipt.  Asking $3,000/bo",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16330,7 +15961,7 @@ Thanks.<br>
 <br>
 engagement ring, engagement,",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16360,7 +15991,7 @@ engagement ring, engagement,",
 
                   description: "Beautiful tortoise shell and light blue eyeglasses frames with black case. They have some little metal details along the sides. See photos! I saw these listed on amazon for $60 new.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16396,7 +16027,7 @@ SERIOUS Buyers only, don&apos;t ask me to ship<br>
 If you are interested please include your phone number, I will NOT respond to any questions without a legit phone number.<br>
 I only meet locally",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16424,7 +16055,7 @@ I only meet locally",
 
                   description: "vintage men or lady ring 14 k yellow gold size 6 the jade is 5/8 long 1/2 wide  5.5 grams  w/ dragons on 2 side old  $340.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16452,7 +16083,7 @@ I only meet locally",
                   description: "I am selling SEVEN absolutley GORGEOUS all natural GOEDE Stone Necklaces. The setting is very unique, and the colors are VIBRANT. The stone is set in a Sterling Silver molding, and the strand is made of Black Leather. They are 18 inches in length. The colors include, Two-Tone Light Taupe, Two different Ebony-colored ones, a Dark Mocha, Rasberry, Two-tone Jade color, and a Caramel. I am selling them for only $10.00 each, and each one comes with a matching SILK Case. If you have any questions, please feel free to email me at  <br>
 . I live on the coast in Moss Beach (near Half Moon Bay), but can easily ship to anywhere at a minimal cost. Thank you for your interest.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16487,7 +16118,7 @@ CONDITION: Near Mint/Mint - Like New. Please review photos. <br>
 <br>
 ***Provide a contact NUMBER to get a response. No number, no response.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16516,7 +16147,7 @@ CONDITION: Near Mint/Mint - Like New. Please review photos. <br>
                   description: "I am selling a Delicate 14k GOLD Cross Necklace, in MINT condition. It is 18&quot; long. I bought  it for $360.00. If you have any questions, please feel free to email me at   <br>
 . I live on the coast, in El Granada( approx 5 miles North of Half Moon Bay), but can easily ship to anywhere at a minimal cost. Thank you for your interest.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16542,7 +16173,7 @@ CONDITION: Near Mint/Mint - Like New. Please review photos. <br>
 
                   description: "as new my father made it w old diamonds from an old  Hungarian crown  that was in family yrs ago  19 grams 18k white gold size 10  total about  7carats or more old cut silver grey color diamonds more like rose cut diamonds I never wear it to small for me sale it now now $ 3200.. . will take  serious offer!!!!!!!!!!!!! need 24 hour notice to get it from safe great deal!!!!!!!!! I lower price a lot I love this ring but I can not resize  it to size 13",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16573,7 +16204,7 @@ CONDITION: Near Mint/Mint - Like New. Please review photos. <br>
 Dimensions:<br>
 32 3/8&quot;L x 23&quot;W x 36 1/2&quot;H",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16604,7 +16235,7 @@ Dimensions:<br>
 
                   description: "nice vintage smiling ! Buddha  was made in Vietnam  many years top quality Burma jade 18k yellow gold it is a fat jade  $420.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16637,7 +16268,7 @@ SIZES ARE AS FOLLOWS:  7&quot; x 3 1/8&quot; and 3&quot; deep,   9 1/2&quot; x 9
 <br>
 PLEASE CALL FOR PRICES AND ANY QUESTIONS.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16664,7 +16295,7 @@ PLEASE CALL FOR PRICES AND ANY QUESTIONS.<br>",
 
                   description: "Good cosmetic and working condition. Model JY00000-53E (Skyhawk A-T)",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16688,7 +16319,7 @@ PLEASE CALL FOR PRICES AND ANY QUESTIONS.<br>",
 
                   description: "huge lady&apos;s jade ring vintage size 9 easy to resize huge jade apple green  great quality  $ 969. serious offer!!!!!! the jade look lighter because if flash",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16732,7 +16363,7 @@ Price firm, cash only<br>
 <br>
 storage, chest, stores, holds, Indian, Middle Eastern, India, Middle East, exotic, eastern, Asia, Asian, ethnic, folk, art, tribal, dance, jewels<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16761,7 +16392,7 @@ storage, chest, stores, holds, Indian, Middle Eastern, India, Middle East, exoti
 
                   description: "vintage was in my grand parents safe  look new pendant imperial jade top quality set in 99.9 pure gold w 18 inches chain gold 99.9 pure gold see photos $495.retail almost  4 times more east it is Burmese imperial jade no dye no polymer ! it is for a woman !!!!!!!!!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16795,7 +16426,7 @@ No online transfers. <br>
 <br>
 I dont have the box right now. I can get it in a month when I go for Christmas",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16820,7 +16451,7 @@ I dont have the box right now. I can get it in a month when I go for Christmas",
 
                   description: "Men&apos;s or women&apos;s. Some wear on outer box and one pin point blemish just under the &quot;7&quot; where the watch band attaches to the watch. Noted in photos.  I can only see the watch blemish with a magnifying glass.  Face is approximately 1&quot; x  7/8&quot;.  Retails for $175.00",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16847,7 +16478,7 @@ I dont have the box right now. I can get it in a month when I go for Christmas",
 
                   description: "Imperial  bizantino",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16875,7 +16506,7 @@ I dont have the box right now. I can get it in a month when I go for Christmas",
 
                   description: "Used women&apos;s watch. Great condition; needs a new battery (not currently working).",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16901,7 +16532,7 @@ I dont have the box right now. I can get it in a month when I go for Christmas",
 
                   description: "vintage jade pendant  set w 19k yellow gold see photos",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16928,7 +16559,7 @@ I dont have the box right now. I can get it in a month when I go for Christmas",
 
                   description: "estate rare light lavender jade from the 40&apos; or 50&apos;s  little over 2 inches w bail setting 14k gorgeous gold work around jade 1 side dragon other side phoenix ?  a bird natural color no dye no polymer great deal only $ 370..  you can not get those jade in Chinatown&apos;s unless you pay 3 to 4 times more jades keep going up over  1 billion Chinese  and color jades are rare now !!! THIS JADE WAS STOLEN  by a buyer !!!!!!!!!!!!!!! thius jade pendant is kursed  now LOL my grand mother will make sure from her grave!!!!!!!!!!!!!!!!!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16962,7 +16593,7 @@ BEATIFULLY HAND MADE WOMENS SILVER BRACELET.<br>
 NICE PIECE OF JEWELRY.       <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -16988,7 +16619,7 @@ NICE PIECE OF JEWELRY.       <br>
 
                   description: "Vintage costume jewelry $3 each",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17025,7 +16656,7 @@ NICE PIECE OF JEWELRY.       <br>
 <br>
 Retro, vintage, watch, military, digital, timex, Casio, collectible",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17057,7 +16688,7 @@ Please ask if interested in the provenance of this piece or if you would like to
 <br>
 Cash only<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17092,7 +16723,7 @@ Check them out on Amazon for more specs: https://www.amazon.com/Ray-Ban-RB3546-S
 <br>
 Ray-Ban RB3546 Sunglasses - 52 Millimeter Lens",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17119,7 +16750,7 @@ Ray-Ban RB3546 Sunglasses - 52 Millimeter Lens",
                   description: "This pendant is made by Coleman, one of the 3 classic makers of this jewelry.  Called &quot;cascading leaves&quot;, it is over 1&quot; long, has an opal and real solid gold 12 kt rose and yellow gold leaves on top of a sterling silver base.  Appears more gold than silver unless you look closely. $60.  Also have one just like it, that is solid gold, is still produced and retails for $190, I am asking $100.<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17147,7 +16778,7 @@ Ray-Ban RB3546 Sunglasses - 52 Millimeter Lens",
 <br>
 Asking $1350.00 or best offer. Cash only. Pick up in San Jose - Rose Garden area. Call or text to number above under reply.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17177,7 +16808,7 @@ Asking $1350.00 or best offer. Cash only. Pick up in San Jose - Rose Garden area
                   description: "I am selling SEVEN absolutley GORGEOUS all natural GOEDE Stone Necklaces. The setting is very unique, and the colors are VIBRANT. The stone is set in a Sterling Silver molding, and the strand is made of Black Leather. They are 18 inches in length. The colors include, Two-Tone Light Taupe, Two different Ebony-colored ones, a Dark Mocha, Rasberry, Two-tone Jade color, and a Caramel. I am selling them for only $10.00 each, and each one comes with a matching SILK Case. If you have any questions, please feel free to email me at  <br>
 . I live on the coast in Moss Beach (near Half Moon Bay), but can easily ship to anywhere at a minimal cost. Thank you for your interest.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17207,7 +16838,7 @@ Never worn Raymond Weil authentic wristwatch.<br>
 As pictured.  Unregistered.<br>
 Received as gift but too formal for me.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17233,7 +16864,7 @@ Received as gift but too formal for me.",
 
                   description: "men or woman band titanium size 7 w a natural  diamond 12 to 15 point SI1 G color  tension setting nice only $100. great for size 6 to 7 serious offer! retail about $350. new",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17260,7 +16891,7 @@ Received as gift but too formal for me.",
                   description: "I am selling FIFTEEN Beads, in PERFECT Condition. They are made of the finest thread, and come in a array of colors. I am selling all of them for a total of $25.00. If you have any questions, please feel free to email me at  <br>
 . I live on the coast, in El Granada (approx. 5 miles North of Half Moon Bay). Thank you for your interest.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17288,7 +16919,7 @@ Received as gift but too formal for me.",
                   description: "I am selling a delicate Key and Stud Set, by Buckley of London. The Pendant is hand set with ice clear Australian crystals, and features an extra long chain (70cm, or 28&quot;). It is in MINT Condition (still in original packaging). If you have any questions, please feel free to email me at  <br>
 . I live on the coast, in El Granada (approx. 5 miles North of Half Moon Bay), but can easily ship to anywhere at a minimal cost. Thank you for your interest.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17316,7 +16947,7 @@ Received as gift but too formal for me.",
 
                   description: "Neat. See pictures.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17359,7 +16990,7 @@ Serious buyers only, please send your phone number if interested<br>
 Cash only, I only meet locally<br>
 Please note, my listed price is firm.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17387,7 +17018,7 @@ Please note, my listed price is firm.",
                   description: "I am selling a beautiful old TIMEX Ladies Watch, with it&apos;s original Case. It is in EXCELLENT condition, but needs a battery. If you have any questions, please feel free to email me at  <br>
 . I will ship to anywhere at a minimal cost. Thank you for your interest.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17417,7 +17048,7 @@ turtles are mystical creatures bring you luck, serenity and longevity<br>
 <br>
 $20",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17442,7 +17073,7 @@ $20",
                   description: "I am selling a beautiful &quot;Until There&apos;s a Cure&quot; inspired Red Beaded Necklace, and Earring Set, complete with ribbon. The Neckalce is 18&quot;, and comes complete with a red silk pouch. The set is BRAND NEW, MINT Condition! If you have any questions, please feel free to email me at  <br>
 . I live on the coast, in El Granada (approx. 5 miles North of Half Moon Bay), but can easily ship to anywhere at a minimal cost. Thank you for your interest.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17501,7 +17132,7 @@ MEASUREMENTS<br>
 13mm Thickness, Center Of Crystal To Caseback<br>
 44mm Case",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17527,7 +17158,7 @@ MEASUREMENTS<br>
 
                   description: "vintage 1940&apos;s lite lavender and lite green jade and 14k yellow gold 20 inches long gorgeous $490... serious offer!!!!!retail over $2500.easy in antique jewelers",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17555,7 +17186,7 @@ MEASUREMENTS<br>
 
                   description: "Neat. See pictures.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17596,7 +17227,7 @@ graduated, knotted, faceted crystal beads.<br>
 14k white gold clasp.<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17621,7 +17252,7 @@ graduated, knotted, faceted crystal beads.<br>
                   description: "I am selling an absolutely GORGEOUS Sterling Silver Trio circled necklace, BRAND NEW, still in box, MINT Condition!. The necklace is 18&quot; . If you have any questions, please feel free to email me at  <br>
 . I live on the coast, in El Granada (approx. 5 miles North of Half Moon Bay), but can easily ship to anywhere at a minimal cost. Thank you for your interest.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17657,7 +17288,7 @@ Come with box and papers<br>
 Asking $750 Cash<br>
 Local Deal and Pick Up<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17692,7 +17323,7 @@ Local Deal and Pick Up<br>",
 
                   description: "Baume Mercier  solid gold 14k watch works great,over 40g.$1500.got serviced recently.Set for a bigger wrist,but can be adjusted.May consider trading for other gold items.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17720,7 +17351,7 @@ Local Deal and Pick Up<br>",
                   description: "I am selling a mix bag of jewelry, mostly bangles, for a total of $5.00. If you have any questions, please feel free to email me at  <br>
 . I love on the coast, in El Granada (approx. 4 miles North of Half Moon bay), but can easily ship to anywhere at a minimal price. Thank you for your interest.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17745,7 +17376,7 @@ Local Deal and Pick Up<br>",
 
                   description: "HELLO CRAIGSLISTERS, up for sale is a MEN&apos;S, FERRARI, GRAN PREMIO, AUTOMATIC (no battery), WHEEL BACK with ROTATING RED BRAKE CALIPER WATCH.  This fine watch is in  EXCELLENT to NEAR MINT CONDITION, WORKS PERFECTLY IN EVERY WAY, comes with ORIGINAL box and paperwork, and just couldn&apos;t be COOLER !!!!!!   I LOVE this watch, but I bought a smart watch and dont use my regular wristwatches much anymore. Please ask any questions.  These are pretty rare and don&apos;t come up foe sale much, so you may want to snag this excellent,very cool watch before it gone !!!     THANKS FOR LOOKING !!!!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17775,7 +17406,7 @@ Local Deal and Pick Up<br>",
                   description: "I am selling a beautiful collection of RED jewelry (necklaces and bracelets), in GREAT Condition... nine pieces in all. If you have any questions, please feel free to email me at  
  . I live on the coast, in El Granada ( approx 5 miles North of Half Moon Bay), but can easily ship to anywhere at a minimal cost. Thank you for your interest.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17807,7 +17438,7 @@ Ring has been worn so it has a few small marks on the band<br>
 Price is firm, cash only and I only meet locally<br>
 Serious buyers only, please include your phone number if interested<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17832,7 +17463,7 @@ Serious buyers only, please include your phone number if interested<br>",
 
                   description: "Men&apos;s or women&apos;s. Some wear on outer box and one pin point blemish just under the &quot;7&quot; where the watch band attaches to the watch. Noted in photos.  I can only see the watch blemish with a magnifying glass.  Face is approximately 1&quot; x  7/8&quot;.  Retails for $175.00",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17860,7 +17491,7 @@ Serious buyers only, please include your phone number if interested<br>",
                   description: "I am selling a really CUTE light Peach Necklace, complete with matching silk pouch. The necklace is 16&quot;, with small peach flowers, peach beads, and pearls, completed with an ornate clasp. It is BRAND NEW, MINT Condition! If you have any questions, please feel free to email me at  <br>
 . I live on the coast, in El Granada (approx. 5 miles North of Half Moon Bay), but can easily ship to anywhere at a minimal cost. Thank you for your interest.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17887,7 +17518,7 @@ Serious buyers only, please include your phone number if interested<br>",
                   description: "I am selling a gorgeous Jet Teardrop Necklace and earring set, by Buckley of London. It features two beautifully cut jet Cubic zirconias, each suspended from a stunning crystalized hoop, which is hand set in Australian crystals. It comes complete with matching earrings. The chain is 18&quot; (adjustable T bar fastener), and the earring drop is 40mm. The set is in MINT Condition, still in original packaging. If you have any questions, please feel free to email me at  <br>
 . I live on the coast, in El Granada (approx. 5 miles North of Half Moon Bay), but can easily ship to anywhere at a minimal cost. Thank you for your interest,",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17913,7 +17544,7 @@ Serious buyers only, please include your phone number if interested<br>",
 
                   description: "It is brand new in box, great for gift.  Asking for $10/bo",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17946,7 +17577,7 @@ Around 2 feet tall.<br>
 Please call John at  
 . I am living at San Ramon.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17971,7 +17602,7 @@ Please call John at
 
                   description: "very feminine MAKE ME AN OFFER!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -17995,7 +17626,7 @@ Please call John at
 
                   description: "old jade buddha set  all back 18k gold  smiling rare now to get them !!!!!! $ 280 see prices in Chinatown!!!!!!!!!!!..",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18022,7 +17653,7 @@ Please call John at
 
                   description: "rare size natural star ruby ring over 25 cts ruby  14k yellow gold size 9 w 4 marquise golden color diamond about 1/2 carat total weight natural color great quality it is a $10 000  dollars ring easy sorry photos dont do justice serous OFFER!!!!!!!!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18053,7 +17684,7 @@ Please call John at
 
                   description: "Cant tell its not NEW, Ladies Gold special edition Lupah watch with mother of pearl face and 6 different all real leather  quick change watch bands in different colors. Perfect condition available in Napa for pick up, great Christmas gift for the fashionista. You can not get this in any store for even close to this price.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18079,7 +17710,7 @@ Please call John at
 
                   description: "Lot of 10 sizes  6,7,8 silver sterling rings with diamonds.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18103,7 +17734,7 @@ Please call John at
                   description: "I am selling an absolutely GORGEOUS Sterling Silver Trio circled necklace, BRAND NEW, still in box, MINT Condition!. The necklace is 18&quot; . If you have any questions, please feel free to email me at  <br>
 . I live on the coast, in El Granada (approx. 5 miles North of Half Moon Bay), but can easily ship to anywhere at a minimal cost. Thank you for your interest.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18130,7 +17761,7 @@ Please call John at
 
                   description: "old jade earrings set on 14k  but the butterflies in back are not gold",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18161,7 +17792,7 @@ Asking $20 or offer<br>
 <br>
 Please call or text",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18186,7 +17817,7 @@ Please call or text",
                   description: "I am selling an absolutely GORGEOUS Pale Yellow, and Topaz colored Stone Necklace and matching earring set, BRAND NEW, MINT Condition!. The necklace is 18&quot;, and is complete with an ornate clasp. If you have any questions, please feel free to email me at  <br>
 . I live on the coast, in El Granada (approx. 5 miles North of Half Moon Bay), but can easily ship to anywhere at a minimal cost. Thank you for your interest.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18214,7 +17845,7 @@ Please call or text",
          blue face    <br>
      also have 5 rolexes new.same price",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18241,7 +17872,7 @@ Please call or text",
 
                   description: "Beautiful ladies marquis-shaped diamond set in platinum ring with two pear-shaped brilliant side diamonds. Center diamond is 1.02 carats; side diamonds total .48 carats. Color: F, Clarity: S12. GIA Certificate # 14214889. Recently appraised for insurance by reputable jeweler for $10,540.00. Cash only.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18270,7 +17901,7 @@ Please call or text",
 
                   description: "big mens ring size 14 can be size smaller sterling silver  it is same like David Yurman rings they go for $1300. same w is name  but  lower price same w out is name LOL  as 1 carat total weight  black and whites  real natural diamonds got a diamond tester for your security  $260.serious offer",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18306,7 +17937,7 @@ Champagne dial with gold-tone indices, three hands, luminous accents, day/date w
 Quartz movement<br>
 Water resistant to 30 meters",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18339,7 +17970,7 @@ Reply with your name and Phone Number (no phone number = no response)<br>
 <br>
 I can meet up in San Francisco. If this ad is up, it is still available.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18364,7 +17995,7 @@ I can meet up in San Francisco. If this ad is up, it is still available.<br>",
 
                   description: "old jade buddha set  all back 18k gold  smiling rare now to get them !!!!!! $ 280 see prices in Chinatown!!!!!!!!!!!..",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18395,7 +18026,7 @@ CONDITION: Near Mint. Unlikely it was ever warn. No cracks or breaks in the ston
 <br>
 ***Please provide a phone number with your response.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18432,7 +18063,7 @@ Blessed Mary is 14 karat gold $85<br>
 Children&apos;s cross-12 karat gold $19<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18467,7 +18098,7 @@ QIANSE White Gold Plated Pendant Necklace with Swarovski Crystals, Nickel Free H
 Eco-friendly White Gold Plated Zinc alloy, Lead-Free &amp; Nickle-Free, No Harm to Health, Passed Swiss SGS Inspection Standard.<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18492,7 +18123,7 @@ Eco-friendly White Gold Plated Zinc alloy, Lead-Free &amp; Nickle-Free, No Harm 
                   description: "I am selling a beautiful old TIMEX Ladies Watch, with it&apos;s original Case. It is in EXCELLENT condition, but needs a battery. If you have any questions, please feel free to email me at  <br>
 . I will ship to anywhere at a minimal cost. Thank you for your interest.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18519,7 +18150,7 @@ Eco-friendly White Gold Plated Zinc alloy, Lead-Free &amp; Nickle-Free, No Harm 
                   description: "I am selling a CIELO watch, by LAMBRETTA, in MINT Condition, still in original packaging. It is a vibrant orange. The watch is genuine leather, and has a stainless steel caseback. I am selling it for $60.00 . If you have any questions, please feel free to email me at  <br>
 . I live on the coast, in El Granada (approx. 5 miles North of Half Moon Bay), but can easily ship to anywhere at a minimal cost. Thank you for your interest.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18566,7 +18197,7 @@ Call
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18600,7 +18231,7 @@ Brand new in Box.  <br>
 Great redemption Gift for cheating husband <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18649,7 +18280,7 @@ $6200 or reasonable offer<br>
 <br>
 Rolex, IWC, Cartier, Bell and Ross, Omega,",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18678,7 +18309,7 @@ All for $270 or $100 each<br>
 I only meet locally and only accept cash<br>
 Please include your phone number if interested and feel free to ask any questions :)",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18712,7 +18343,7 @@ Our jewelry is completely handmade of luscious ethical silver and fair mined sto
 To see more go to:<br>
 https://www.etsy.com/shop/GreenJeweler<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18755,7 +18386,7 @@ https://www.etsy.com/shop/GreenJeweler<br>",
 <br>
 I live at Marina Bay, just south of 580 between El Cerrito and Pt. Richmond.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18780,7 +18411,7 @@ I live at Marina Bay, just south of 580 between El Cerrito and Pt. Richmond.",
 
                   description: "vintage Baroque natural pearls  big ones 14k lock and beads  16 inches long  she use to my grand mother use to purchase very expensive pearls I think my price is low $950 the lock as an extra security that show it is quality SERIOUS OFFER my grand mother was an Aristocrat !!! no texting please email only",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18826,7 +18457,7 @@ Serious buyers can email phone numbers <br>
 <br>
 Cash Only - no checks, paypal",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18866,7 +18497,7 @@ $300 firm<br>
 <br>
 key: rolex omega citizen grand tag heuer tissot hamilton orient daniel wellington mvmt invicta",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18891,7 +18522,7 @@ key: rolex omega citizen grand tag heuer tissot hamilton orient daniel wellingto
 
                   description: "almost antique {100 yrs} from the 1920&apos;s 30&apos;s  14k yellow pink gold  w jades gorgeous earring  my grand mother got them from her mother  $150. local only reasonable offer&apos;s !!!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18926,7 +18557,7 @@ If you are reading this listing, the watch is still available.<br>
 Email if interested.<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18950,7 +18581,7 @@ Email if interested.<br>
 
                   description: "Large group of pink, red, green yellow, blue, shell, and copper jewelry, for one price. Much of the jewelry has not been worn. Cash only. Posting will be removed after items have sold.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -18974,7 +18605,7 @@ Email if interested.<br>
 
                   description: "vintage pendant 14k lite lavender  A grade jade gourde w flowers on it  from the 40&apos;s  $ 220..rare natural color gourde is good fortune $$$$$$$$$ the lines that show are the carving  !!!!!!!!!!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19009,7 +18640,7 @@ Condition: Used and very good<br>
 <br>
 Item at: Baypointe Dr. &amp; Baypointes Pkwy, San Jose.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19037,7 +18668,7 @@ Item at: Baypointe Dr. &amp; Baypointes Pkwy, San Jose.",
 
                   description: "men bracelet braided rolo links 18k gold not plated and sterling silver 33.3 grams 9 inches long   about 7 grams of 18k not plated $220 .",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19066,7 +18697,7 @@ Item at: Baypointe Dr. &amp; Baypointes Pkwy, San Jose.",
 &#x2606;Technibond,18kt. Gold over Sterling Silver,16&quot; long,extender is 2&quot; long,5 changable stones,1990&apos;s ?,$12.<br>
 &#x260E;&#xFE0F;Only Replies with Phone Number will be Answered&#x260E;&#xFE0F;<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19104,7 +18735,7 @@ Serious buyers email phone number <br>
 Cash only<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19133,7 +18764,7 @@ Never worn - tags still on<br>
 Purchased at the North Carolina Museum of Art<br>
 see photos",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19159,7 +18790,7 @@ see photos",
 
                   description: "vintage jade pendant dragons  carving 14k yellow gold 1 side lite green jade w a peridot other side lavender jade w a amethyst heavy nice $ 260. great deal!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19204,7 +18835,7 @@ Serious buyers can email their phone numbers <br>
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19232,7 +18863,7 @@ Serious buyers can email their phone numbers <br>
 
                   description: "1 of my grand mother necklace from the 1940&apos;s look at the color of those jades geee 28 inches long gorgeous $380.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19258,7 +18889,7 @@ Serious buyers can email their phone numbers <br>
 
                   description: "Lots of great jewelry. Some new, some old, all very nice. Now you can use for yourself or for your kids dress up box. There is quite a variety of items.  Included are two holders. Let me know if you&apos;re interested.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19286,7 +18917,7 @@ Serious buyers can email their phone numbers <br>
 
                   description: "Mens ring from Macy&apos;s. Original price is $1,800, but now going for $810 new. This ring has never been worn and still has the original return label on it (though it is past the return period)",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19311,7 +18942,7 @@ Serious buyers can email their phone numbers <br>
 
                   description: "very rare--almost flawless",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19336,7 +18967,7 @@ Serious buyers can email their phone numbers <br>
 
                   description: "NICE REPLICA OF EBEL SWISS WATCH, NEEDs BATTERY. DO NOT KNOW HOW TO OPEN IT.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19362,7 +18993,7 @@ Serious buyers can email their phone numbers <br>
                   description: "They&apos;re all $5 each. Please call or text me at  
  and take them today!<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19392,7 +19023,7 @@ Cash Only <br>
 <br>
 Serious Buyers Text or email phone numbers",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19419,7 +19050,7 @@ Serious Buyers Text or email phone numbers",
 
                   description: "Group of New Native American and wooden beaded jewelry. A few pre-owned shell bracelets. Cash only. Posting will be removed once items have sold.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19443,7 +19074,7 @@ Serious Buyers Text or email phone numbers",
 
                   description: "rare size natural star ruby ring over 25 cts ruby  14k yellow gold size 9 w 4 marquise golden color diamond about 1/2 carat total weight natural color great quality it is a $10 000  dollars ring easy sorry photos dont do justice serous OFFER!!!!!!!!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19476,7 +19107,7 @@ Serious Buyers Text or email phone numbers",
 <br>
 Nice watch!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19503,7 +19134,7 @@ Nice watch!",
 
                   description: "unique vintage 1930&apos;s jade pendant top quality jade  is apple green and set w icy quartz 14k yellow gold 2 inches long w bail  1 1/4 wide  unique piece $ 290.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19538,7 +19169,7 @@ Serious buyers can email with their phone numbers<br>
 <br>
 Cash only - no checks, paypal",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19568,7 +19199,7 @@ Cash only - no checks, paypal",
 
                   description: "gorgeous vintage pendant 22k yellow gold w jade buddha and way over 1/2 carat or more VS G diamonds 7.95 grams  this pendant retail about $2500,I will consider reasonable offer !",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19605,7 +19236,7 @@ Sales receipt available - paid $1999<br>
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19717,7 +19348,7 @@ Thanks for stop here.<br>
 words:<br>
 stones, gems, jewel, jewelry, ladies, lady, girls, woman, women, design, designed, exclusive, custom-made, well, condition, affordable, fingers, daughter, sizes, fits, gold, golden, bright, shine, shiny, shape, square, cut, carat, karat, granddaughter, metal, accessories, vanity, mother&apos;s day, outfit, wardrobe, fashion, style.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19748,7 +19379,7 @@ stones, gems, jewel, jewelry, ladies, lady, girls, woman, women, design, designe
 
                   description: "vintage 1940&apos;s 50&apos;s jade pendant natural color  set w 14 k  nice $ 195",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19777,7 +19408,7 @@ stones, gems, jewel, jewelry, ladies, lady, girls, woman, women, design, designe
 ALL SOLID! Just message if more info needed. $1700 / OBO<br>
 ONLY SERIOUS BUYERS, please!?",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19810,7 +19441,7 @@ CONDITION: Great condition. Beautiful stone. <br>
 <br>
 Please provide a contact number with your response. CASH ONLY",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19842,7 +19473,7 @@ Please provide a contact number with your response. CASH ONLY",
 
                   description: "2 vintage  but new they where in safe for over 30 yrs or more  sale @ a piece $350 top quality jades  Burmese stronger  Chinese jade is softer   bail 14 k w diamonds",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19886,7 +19517,7 @@ Seriou Buyers only can email phone number. <br>
 Cash only<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19913,7 +19544,7 @@ From home with smoke and pets free home.<br>
 Price is negotiable. <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19937,7 +19568,7 @@ Price is negotiable. <br>
 
                   description: "Designer bracelets by Judith Jack.  New never been used. Just in time for Christmas!!  Retail price is $108.00 each asking $25.00 or 2 for $50.00",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19964,7 +19595,7 @@ Price is negotiable. <br>
                   description: "1.43 grams yellow gold 3 stone diamond tested pendant with 18&quot; chain. Call  <br>
  for detail. Thanks.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -19995,7 +19626,7 @@ $250<br>
 <br>
 I will not ship/deliver, be prepared  to pick it up.  Thank you.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20026,7 +19657,7 @@ Cash only - Must be able to pick up in person.<br>
 <br>
 Sterling silver, gold, pink tourmaline.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20068,7 +19699,7 @@ Cash only - no checks, paypal <br>
 Serious buyers can email their phone numbers, will meet at a designated safe zone <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20104,7 +19735,7 @@ Never worn, plastic protective still intact!<br>
 Automatic self wind, water resistant, stainless steel bezel!<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20157,7 +19788,7 @@ Width:17 mm<br>
 Length:8 inches<br>
 Clasp:Pin Buckle<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20182,7 +19813,7 @@ Clasp:Pin Buckle<br>",
 
                   description: "vintage culture quality pearls necklace clap 14k 15 inches long  top condition  $380. my grand mother was from an Hungarian aristocrat family sold to elllllllllllle",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20216,7 +19847,7 @@ Contact Cathy.<br>
 <br>
 Not interested in trades at all.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20240,7 +19871,7 @@ Not interested in trades at all.",
 
                   description: "Size 7 opal ring with matching earrings.  All 14 karat gold",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20267,7 +19898,7 @@ Not interested in trades at all.",
 <br>
 This watch will not be shipped, pick up in Hayward/Palo Alto only with cash. Thanks.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20297,7 +19928,7 @@ $250<br>
 <br>
 I will not ship/deliver, be prepared  to pick it up.  Thank you.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20323,7 +19954,7 @@ I will not ship/deliver, be prepared  to pick it up.  Thank you.",
 <br>
 Accepting Cash Only. Please respond with a phone number",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20352,7 +19983,7 @@ Accepting Cash Only. Please respond with a phone number",
                   description: "2.3 grams 10 kt 18&quot; Chain Aqua antique pendant. Asking $38. Please call  <br>
 . Thanks",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20376,7 +20007,7 @@ Accepting Cash Only. Please respond with a phone number",
 
                   description: "vintage 1930&apos;s jade ring 18k yellow gold size 8 $ 270.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20406,7 +20037,7 @@ Price is negotiable. <br>
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20435,7 +20066,7 @@ Cash pickup in the Glen Park area only<br>
 No shipping or PayPal<br>
 Available as long as the ad is posted",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20471,7 +20102,7 @@ Retail for $59.50, out of stock online<br>
 <br>
 Cash Only - No checks, Paypal",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20501,7 +20132,7 @@ Cash Only - No checks, Paypal",
 
                   description: "early 1900. huge jade pendant brownornage red natural color my great  grand parents where in Asia  in the late 1800&apos;s see photos look better in real",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20532,7 +20163,7 @@ If interested please contact Cathy.<br>
 <br>
 I will not deliver item or ship it, cash only in person exchange. You must be prepared to pick up. Only serious buyers please. All sales on jewelry are final. Thank you.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20567,7 +20198,7 @@ DISCOUNT IF YOU BUY MORE THAN ONE OR MAKE A REASONABLE OFFER FOR ALL ITEMS<br>
 <br>
 EMAIL, CALL OR TEXT",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20616,7 +20247,7 @@ Appraisal available <br>
 <br>
 Cash Only - no checks, paypal",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20643,7 +20274,7 @@ Cash Only - no checks, paypal",
 
                   description: "vintage old jade necklace w a gorgeous jade pendant all natural color  22 inches long not including pendant $ 195 the pendant as a bat a dragon  a coin and more  gorgeous old serious offer on all my grand mother jades !!!!!!!!!!!!! OFFERS!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20675,7 +20306,7 @@ D&amp;D jewellery<br>
 1343 Locus street<br>
 walnut creek<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20703,7 +20334,7 @@ walnut creek<br>",
                   description: "3.4 grams 10 kt yellow gold diamond tested bi-pass ring. Size 6. Call  <br>
  for detail. Thanks.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20731,7 +20362,7 @@ CONDITION: Appear to be excellent. I&apos;m not a professional jeweler but they 
 <br>
 PLEASE PROVIDE A CONTACT NUMBER WITH YOUR RESPONSE",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20759,7 +20390,7 @@ PLEASE PROVIDE A CONTACT NUMBER WITH YOUR RESPONSE",
                   description: "10kt 16&quot; necklace, 1.36 grams. asking $30.00. Please call  <br>
 . Thanks.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20792,7 +20423,7 @@ Round Diamonds <br>
 Cash Only<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20819,7 +20450,7 @@ Cash Only<br>
                   description: "14K criss cross diamond ring.   Size 9.5<br>
 Cash only.  I will not ship or deliver.  Please be prepared to pick up in Fairfield.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20845,7 +20476,7 @@ Cash only.  I will not ship or deliver.  Please be prepared to pick up in Fairfi
 
                   description: "Jewerly box",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20871,7 +20502,7 @@ Cash only.  I will not ship or deliver.  Please be prepared to pick up in Fairfi
 
                   description: "2 vintage 14k gold chain ladys  one 25 inches  5.5 grams one 30  inches 7.2 grams strong links  @ $ 25 a grams calculate !!!!!!!!!!!!! great deal see gold prices !!!!!!!!! jewelers and pawn shops pay for scarp gold $23 to $30. a gram see on web. http://www.goldmastersusa.com/gold_ scrap the chain&apos;s are about 2 to 3 mm wide  very strong links more for woman&apos;s great quality what a pawn shop pay me $265 for . 12.7 grams of gold!!!!!!!!!!!!! and they resale it double LOL",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20912,7 +20543,7 @@ Cash pickup in SF, Glen Park area only<br>
 No shipping or PayPal<br>
 Available as long as the ad is posted",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20940,7 +20571,7 @@ Never worn, excellent condition<br>
 <br>
 Cash Only - no checks, paypal",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20969,7 +20600,7 @@ Each one comes in it&apos;s own individual box as shown. Each for $20 or 6 for $
 <br>
 SKU - 78751",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -20996,7 +20627,7 @@ SKU - 78751",
 
                   description: "Beautiful jeweled purse.  6 inches tall, 5 inches wide.  Never used.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21032,7 +20663,7 @@ Original receipt available - paid $1000 <br>
 <br>
 Cash Only - no checks, paypal",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21063,7 +20694,7 @@ Pendant measures 1 1/4&quot; long x 3/4&quot; wide<br>
 <br>
 Cash Only - no checks, paypal",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21092,7 +20723,7 @@ Cash Only - no checks, paypal",
 
                   description: "Three ladies silver pendants with gemstones:  tiger eye with garnet ,  picture agate and  jade with garnet.  Price $45 for all 3 pcs. No delivery. Buyer picks up in San Francisco. No shipping, no barter.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21130,7 +20761,7 @@ Total weight of ring - 8 gm <br>
 Cash only - no checks, paypal<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21159,7 +20790,7 @@ Cash only - no checks, paypal<br>
 <br>
 A stunning, heavily studded hand-carved fetish animal with white heishi shell necklace interspersed with gold-colored beads. Wonderful shape and texture to the different animals, bird, wolf, ducks, fish, hippo, squirrel, whale, and carved bears, etc.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21186,7 +20817,7 @@ A stunning, heavily studded hand-carved fetish animal with white heishi shell ne
 
                   description: "rare vintage natural red color jade (rare color ) size 7 3/4 8  w a silver ring  can be wear as a necklace to $140.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21213,7 +20844,7 @@ $10 to 25. each.  Discount on multiples.<br>
 <br>
 Gold, diamond,silver, jewelry",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21243,7 +20874,7 @@ Contact Cathy.<br>
 <br>
 Not interested in trades at all.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21267,7 +20898,7 @@ Not interested in trades at all.",
 
                   description: "vintage jade Buddha lite lavender grade A jade set w 18 k yellow gold about .25cts in diamond bling bling a lot but quality just OK  on diamonds  price is reflected to the diamonds  $260 nice for guys to it is not a dye jade see Chinatown prices LOL nice for a guy to not to small SOLD SOLD",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21305,7 +20936,7 @@ Needs battery<br>
 <br>
 $38 or best reasonable offer. Must be picked up in San Rafael. Cash only. Please send phone number. If the ad is up, it&apos;s still available, so don&apos;t ask! :)",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21346,7 +20977,7 @@ Thank you <br>
 <br>
 Lisa",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21374,7 +21005,7 @@ Lisa",
                   description: "GORGEOUS SILVER BRACELET WITH THREE LARGE  TURQUOISE STONES.  Heirloom beauty with excellent craftsmanship, quality and design.  Depicts sought-after Southwest fashion  at a very moderate price.<br>
 $200/cash.  Serious inquires only please.  Reply furnishing your personal email/phone number to complete transaction.  Thank you.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21402,7 +21033,7 @@ $200/cash.  Serious inquires only please.  Reply furnishing your personal email/
                   description: "3.5 grams 14 kt yellow gold pink sapphire/diamond accent ring. Size 6. Call  <br>
  for detail. Thanks.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21481,7 +21112,7 @@ Thanks.<br>
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21508,7 +21139,7 @@ Thanks.<br>
                   description: "Lots of strands of beads including very high end Czech glass for beading. Also jewelry, crystals, fossils and rare things of all kinds. Im selling a large collection of beautiful things from around the world. Easy appointments available in marin. Gloria at  <br>
  credit cards and Paypal accepted.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21542,7 +21173,7 @@ Thanks.<br>
 .....................................................necklaces....$5.00-$25.00<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21582,7 +21213,7 @@ Please click&quot;more ads by this user&quot; to view my other listings. <br>
 <br>
 KW: quality, designer, classic, arm jewelry, women&apos;s, ladies, silver, etc.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21611,7 +21242,7 @@ KW: quality, designer, classic, arm jewelry, women&apos;s, ladies, silver, etc."
                   description: "1.45 grams yellow gold pink Tourmaline/Diamond accent 18&quot; chain. Call  <br>
  for detail. Thanks.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21638,7 +21269,7 @@ KW: quality, designer, classic, arm jewelry, women&apos;s, ladies, silver, etc."
                   description: "2.2 grams 10 kt yellow gold with 2 carat green tourmaline/diamond accent ring. Size 7. Call  <br>
  for detail. Thanks.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21666,7 +21297,7 @@ If interested please contact Cathy.<br>
 <br>
 I will not deliver item or ship it, cash only in person exchange. You must be prepared to pick up. Only serious buyers please. All sales on jewelry are final. Thank you.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21700,7 +21331,7 @@ I expect you like it and contact me soon.<br>
 <br>
 Thanks and have you a nice day!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21733,7 +21364,7 @@ Thanks and have you a nice day!",
 
                   description: "huge antique Edwardian  diamonds cross over 3 .5 carats old mine cut VS F G  color rare cross  $6500.  see photos unique  we cam meet at my bank  serious only I do not mail curious get lost serious offer may be considerate !",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21769,7 +21400,7 @@ call
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21795,7 +21426,7 @@ call
 
                   description: "vintage old jade pendant all gold w chain 18 k 18 inches long nice $390. Thai Buddha or Kwan yin ??",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21823,7 +21454,7 @@ call
 
                   description: "vintage men or lady ring 14 k yellow gold size 6 the jade is 5/8 long 1/2 wide  5.5 grams  w/ dragons on 2 side old  $340.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21857,7 +21488,7 @@ Cash Only - no checks, paypal <br>
 serious buyers can email their phone numbers<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21884,7 +21515,7 @@ serious buyers can email their phone numbers<br>
 
                   description: "14k brand new never been worn AP flalless ring 0.75 ct size 7 cost 4700",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21910,7 +21541,7 @@ serious buyers can email their phone numbers<br>
                   description: "10kt Sapphire Ring, size 6, and 1.75 grams. Asking for $28.00. Please call  <br>
 . Thanks.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21936,7 +21567,7 @@ serious buyers can email their phone numbers<br>
                   description: "I am selling a really CUTE Purple Beaded Necklace, Earring, and Bracelet set. The necklace has a leather band, and is 12&quot;. The set is BRAND NEW, MINT Condition, and comes with a matching silk pouch. If you have any questions, please feel free to email me at  <br>
 . I live on the coast, in El Granada (approx. 5 miles North of Half Moon Bay), but can easily ship to anywhere at a minimal cost. Thank you for your interest.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21966,7 +21597,7 @@ serious buyers can email their phone numbers<br>
  Price is negotiable. <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -21992,7 +21623,7 @@ serious buyers can email their phone numbers<br>
                   description: "14kt Pearl &amp; Diamond Ring, size 6 and 3.48 grams. Asking for $70.00. Please call  <br>
 . Thanks.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22026,7 +21657,7 @@ Like new, serious buyers can email their phone numbers <br>
 <br>
 Cash Only - no checks, paypal",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22059,7 +21690,7 @@ Cash pickup in the Glen Park area only<br>
 No shipping or PayPal<br>
 Available as long as the ad is posted",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22091,7 +21722,7 @@ Earrings are in the shape of a heart with 3 ruby stones and 3 diamonds on each <
 <br>
 Cash only - no checks, paypal",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22116,7 +21747,7 @@ Cash only - no checks, paypal",
 
                   description: "A Beautiful distinctive  piece of Navajo Silver Art is for sale for $300...This all Sterling Silver and Onyx Necklace was created by Johnny Johnson a Navajo Silver Jewelry artist of the 1960&apos;s 70&apos;s.  Please leave Your Phone Number with response. Cash, local Sale Only! Thank You",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22153,7 +21784,7 @@ The transaction must take place at a bank or a reputable jeweler within the Napa
 $13,900 <br>
 Serious inquiries only please<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22189,7 +21820,7 @@ D&amp;D<br>
 1343 Locust street<br>
 walnut creek , ca 94596<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22217,7 +21848,7 @@ walnut creek , ca 94596<br>",
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22244,7 +21875,7 @@ walnut creek , ca 94596<br>",
 <br>
 A stunning, heavily studded hand-carved fetish animal with white heishi shell necklace interspersed with gold-colored beads. Wonderful shape and texture to the different animals, bird, wolf, ducks, fish, hippo, squirrel, whale, and carved bears, etc.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22361,7 +21992,7 @@ Words:<br>
 wardrobe, accessories, vanity, fashion, mothers, metal, size, designer, designs, golden, stones, gems, anniversary,  gemstones, bright, Christmas, shine, occasion, valentine, shinny, birthday, gift, clear, clarity, wedding, lady, girls, karat, outfit, mothers, granddaughter, <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22396,7 +22027,7 @@ $250<br>
 <br>
 I will not ship/deliver, be prepared  to pick it up.  Thank you.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22426,7 +22057,7 @@ inside diameter  20mm<br>
 <br>
 ad=available<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22451,7 +22082,7 @@ ad=available<br>",
 
                   description: "as new vintage 1970&apos; but never used nice  jade set  chain 18 inches long all 18 k  yellow gold very nice for graduation or B day gift or yourself  $390. .",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22478,7 +22109,7 @@ ad=available<br>",
 
                   description: "Three stone, size 7 ring, 14 karat gold band.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22504,7 +22135,7 @@ ad=available<br>",
                   description: "10kt Garnet Ring, size 5, and 5.68 grams. Asking $100.00. Please call  <br>
 . Thanks.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22535,7 +22166,7 @@ Cash Only - no checks, paypal<br>
 <br>
 Serious buyers can email their phone numbers",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22571,7 +22202,7 @@ $250<br>
 <br>
 I will not ship/deliver, be prepared  to pick it up.  Thank you.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22597,7 +22228,7 @@ I will not ship/deliver, be prepared  to pick it up.  Thank you.",
 Face is 1.5&quot; X 1&quot;<br>
 Excellent condition",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22642,7 +22273,7 @@ Item weight	3.04 Ounces<br>
 Movement?	Automatic<br>
 Water resistant depth	30 Meters",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22669,7 +22300,7 @@ Water resistant depth	30 Meters",
 
                   description: "very feminine MAKE ME AN OFFER!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22696,7 +22327,7 @@ Water resistant depth	30 Meters",
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22729,7 +22360,7 @@ end
 
                   description: "men bracelet braided rolo links 18k gold not plated and sterling silver 33.3 grams 9 inches long   about 7 grams of 18k not plated $260 .",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22759,7 +22390,7 @@ Affordable, classy box to present your heirloom ring in.<br>
 <br>
 Happy surprising!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22788,7 +22419,7 @@ Happy surprising!",
 
                   description: "gorgeous icy watery  jade  bail is white gold w a small diamond  $180.. this quality jade sales for $ 500. in Chinatown",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22815,7 +22446,7 @@ Happy surprising!",
 
                   description: "14K gold chain necklace 22.5 inches and 48 grams $1950<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22845,7 +22476,7 @@ Happy surprising!",
     One size<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22871,7 +22502,7 @@ Happy surprising!",
  and my name is tony...<br>
 I&apos;ll be in San Bruno flea market this coming Sept...",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22925,7 +22556,7 @@ Please no low baller. No trades<br>
 <br>
 Thanks,",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22961,7 +22592,7 @@ Great pieces.<br>
 <br>
 Big Jade.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -22994,7 +22625,7 @@ Big Jade.",
 <br>
 55mm X 43mm X 14mm",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23025,7 +22656,7 @@ It is 16&apos;&apos; with 2&apos;&apos; extension with a lobster claw closer.,pl
 For the picky brighton collector a wonderful necklace to wear all year.<br>
 $70",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23095,7 +22726,7 @@ Width: Approx 0.71 inch <br>
 Thickness: Approx 0.18 inch <br>
 Chain length: Approx 20 inches",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23147,7 +22778,7 @@ It is factory like new I will respectfully decline offers.<br>
 <br>
 Duper rare for the thumb!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23175,7 +22806,7 @@ Duper rare for the thumb!",
                   description: "Unique gift to you or the person who invests on stock market.<br>
 Golden color, new item, box not original.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23202,7 +22833,7 @@ Golden color, new item, box not original.",
 <br>
 Call me or text me ask for Marco @",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23234,7 +22865,7 @@ Excellent condition. $749 - pickup and cash only.<br>
 YES, if you see the ad then the item is still available!<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23259,7 +22890,7 @@ YES, if you see the ad then the item is still available!<br>
 
                   description: "See pictures. New condition.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23284,7 +22915,7 @@ YES, if you see the ad then the item is still available!<br>
 <br>
 Great holiday gift for that special someone!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23311,7 +22942,7 @@ It is factory like new I will respectfully decline offers.<br>
  
  John",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23341,7 +22972,7 @@ It is factory like new I will respectfully decline offers.<br>
  
  John",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23369,7 +23000,7 @@ It is factory like new I will respectfully decline offers.<br>
                   description: "This vintage necklace was a gift that came from Mexico.  Measures 28&quot; long.  Traditional hollow beads with silk flower poinsettias and red ribbons intertwined among the links.  Appears to be silver but can&apos;t find a mark.  $15.<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23407,7 +23038,7 @@ THE ITEM IS SOLD AS IT IS.<br>
 <br>
 IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH FRIDAY BETWEEN 12:00PM TO 5:00PM TO CHECK AVAILABILITY.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23438,7 +23069,7 @@ Bought in 2008 for $1,786.00 - All original appraisal documents and receipts.  $
 <br>
 No shipping, in-person sale only.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23465,7 +23096,7 @@ No shipping, in-person sale only.<br>",
 
                   description: "Men&apos;s Helbros Watch yellow and white gold great condition<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23493,7 +23124,7 @@ No shipping, in-person sale only.<br>",
 <br>
 Buy with Confidence.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23525,7 +23156,7 @@ Great accent piece!  Would also make a wonderful gift!<br>
 <br>
 $12, and it&apos;s yours!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23566,7 +23197,7 @@ THIS ITEM IS SOLD AS IT IS.<br>
 <br>
 IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SATURDAY BETWEEN 12:00PM TO 5:00PM.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23589,7 +23220,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   description: "estate rare light lavender jade from the 40&apos; or 50&apos;s  little over 2 inches w bail setting 14k gorgeous gold work around jade 1 side dragon other side phoenix ?  a bird natural color no dye no polymer great deal only $ 370..  you can not get those jade in Chinatown&apos;s unless you pay 3 to 4 times more jades keep going up over  1 billion Chinese  and color jades are rare now !!! THIS JADE WAS STOLEN  by a buyer !!!!!!!!!!!!!!!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23618,7 +23249,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   description: "22k 24 inches 28 grams 2.5mm solid gold Cuban link gold chain! 2800 obo  <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23654,7 +23285,7 @@ NO TRADE/REFUND<br>
 NO SHIPPING<br>
 THE ITEM IS SOLD AS IT IS.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23679,7 +23310,7 @@ THE ITEM IS SOLD AS IT IS.",
 
                   description: "gorgeous vintage she purchase it in late 60&apos;s in HK  7 inches long  set on 14k red jade no dye no polymer  $180.red jade is more rare!!!!!!! I have same in lite lavender  the 2 of them $ 300.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23704,7 +23335,7 @@ THE ITEM IS SOLD AS IT IS.",
 
                   description: "rare vintage natural red color jade (rare color ) size 7 3/4 8  w a silver ring  can be wear as a necklace to $160.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23731,7 +23362,7 @@ D&amp;D<br>
 1343 Locust street<br>
 Walnut Creek, CA 94596<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23764,7 +23395,7 @@ Please email or call
 <br>
 key= clads",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23799,7 +23430,7 @@ key= clads",
 
                   description: "vintage was in my grand parents safe  look new pendant imperial jade top quality set in 99.9 pure gold w 18 inches chain gold 99.9 pure gold see photos $495.retail almost  4 times more east it is Burmese imperial jade no dye no polymer ! it is for a woman !!!!!!!!!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23827,7 +23458,7 @@ key= clads",
 
                   description: "These earrings were made from vintage glass teardrops. Color varies in the light thru shades of golden yellow, orange and red. They hang from stainless steel French hooks. $15.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23853,7 +23484,7 @@ key= clads",
 <br>
 $8 each set 3 for $20 or make an offer on the lot",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23890,7 +23521,7 @@ $8 each set 3 for $20 or make an offer on the lot",
 
                   description: "gorgeous jade smiling Buddha on 1 side other side look like a Ram an peaches set w 14k bail  2 1/2 inches long w bail serous only $360.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23922,7 +23553,7 @@ CONDITION: Near Mint. Perhaps never worn. No cracks or breaks in the stone. No v
 <br>
 CASH ONLY - Provide a phone number with your response.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23958,7 +23589,7 @@ CASH ONLY - Provide a phone number with your response.",
 Citizen BW0174-58A watch. Stainless steel 26mm case, 8mm thick case. Silvertone pulished fixed bezel. Pulished and brushed two tone silvertone and gold bracelet will fit up to a 8.5&quot; wrist x 20mm wide with a fold over clasp with push button closure. White dial. Goldtone hands and indexes. Arabic numerls at 12 and 6 o&apos;clock. Date display at 3 o&apos;clock. Water resistant to 30 meters / 100 feet. Mineral crystal. Push in caseback. Push/pull crown. Eco-Drive movement. Charges in natural sunlight or indoor light. Never needs a battery, 180 day power reserve.<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -23986,7 +23617,7 @@ Citizen BW0174-58A watch. Stainless steel 26mm case, 8mm thick case. Silvertone 
 
                   description: "lady&apos;s ring white gold 14 k w singles cut diamonds and 2 gorgeous pearls,great luster small size 3.5 easy to make bigger or pinky ring over 4 grams  great deal $180. Gee some persons ask $440 for same on craigs!!!!!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24028,7 +23659,7 @@ THIS ITEM IS SOLD AS IT IS.<br>
 <br>
 IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SATURDAY BETWEEN 12:00PM TO 5:00PM.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24051,7 +23682,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   description: "Men&apos;s Michael Kors Watch Rose Gold Swarovski Crystals on bezel. Great condition",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24085,7 +23716,7 @@ Tambi&#xE9;n tenemos hermosas blusas y c&#xF3;modos vestidos de playa<br>
 <br>
 www.thejennyshop.com",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24132,7 +23763,7 @@ https://lovelyladyaccessory.com/collections/necklaces/products/silver-drops-four
 <br>
 https://lovelyladyaccessory.com/collections/necklaces/products/silver-drops-four-piece-jewelry-earrings-necklace-set",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24158,7 +23789,7 @@ https://lovelyladyaccessory.com/collections/necklaces/products/silver-drops-four
 
                   description: "Brand new with tag still attached. Approx 18 inches long.  Pendant is clear glass.  Never worn. Please call.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24183,7 +23814,7 @@ https://lovelyladyaccessory.com/collections/necklaces/products/silver-drops-four
                   description: "Everything is new. Stones are simulated or cubic zirconia. Come by and see them.<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24232,7 +23863,7 @@ https://lovelyladyaccessory.com/collections/necklaces/products/silver-drops-four
 <br>
 Also have a few other music themed jewelry items, such as music clef earrings.  I live at Marina Bay, just south of 580 between El Cerrito and Pt. Richmond.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24276,7 +23907,7 @@ THIS ITEM IS SOLD AS IT IS.<br>
 <br>
 IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SATURDAY BETWEEN 12:00PM TO 5:00PM.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24313,7 +23944,7 @@ THIS ITEM IS SOLD AS IT IS.<br>
 <br>
 IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT TO CHECK AVAILABILITY.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24359,7 +23990,7 @@ THANKS.<br>
 <br>
 TAKE CARE.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24392,7 +24023,7 @@ box and papers is always a plus but watch is more important<br>
 around $2500/3000 max.<br>
 send email with contact info and details about what you have<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24416,7 +24047,7 @@ send email with contact info and details about what you have<br>",
 
                   description: "vintage pendant jade is old set on 14k gold chain is 16 inches long 18k see photos the jade is part icy watery gorgeous this is a great deal  AAA grade no dye no polymer I have over 60 pieces of vintage jade from my grand mother  serious only",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24443,7 +24074,7 @@ send email with contact info and details about what you have<br>",
                   description: "Handcrafted and upcycled jewelery from $1 to $35 each including leather, carved bone necklaces and bracelets etc.  Most are under $5. Discount for bulk purchase. Many more items <br>
 https://get.google.com/albumarchive/112836950784920753013/album/AF1QipPpbrEsInnpCRhUxppDg1NRRTLwxLgkYwXywEXT",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24491,7 +24122,7 @@ https://get.google.com/albumarchive/112836950784920753013/album/AF1QipPpbrEsInnp
                   description: "Necklace, silver bracelet and the pin.<br>
 Can sell separately,if interested",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24534,7 +24165,7 @@ THIS ITEM IS SOLD AS IT IS.<br>
 <br>
 IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SATURDAY BETWEEN 12:00PM TO 5:00PM.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24557,7 +24188,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   description: "very elegant different model clip on earrings",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24583,7 +24214,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   description: "Beautiful 14k solid gold watch Omega,keeps perfect time,over 100g,it&apos;s set for a big wrist but can be adjusted,$3000.open to trades for other solid gold jewelry.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24612,7 +24243,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 49mmx33mmx8mm.<br>
 Certified.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24638,7 +24269,7 @@ Certified.",
 
                   description: "NEW AUTHENTIC MICHAEL KORS ROSE GOLD BLUSH PADLOCK MK LOCK BRACELET MKJ4328791",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24672,7 +24303,7 @@ Smallest nuggets at top of necklace are approx. 1/2&quot; across, each.<br>
 <br>
 Excellent accent piece.  Would also make a great gift!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24707,7 +24338,7 @@ NO SHIPPING<br>
 <br>
 IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT, MONDAY THROUGH FRIDAY BETWEEN 12:00PM TO 5:00PM, TO CHECK AVAILABILITY.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24746,7 +24377,7 @@ THIS ITEM IS SOLD AS IT IS.<br>
 <br>
 IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT TO CHECK AVAILABILITY.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24771,7 +24402,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT TO CHECK AVAILABI
 mid-century modern design<br>
 7/8&apos;&apos; long",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24798,7 +24429,7 @@ mid-century modern design<br>
                   description: "These hand-made bracelets, necklaces, chokers, earrings and other pieces are one-of-a-kind.  Also vintage and retro jewelery.  See link for details and many more items <br>
 https://get.google.com/albumarchive/112836950784920753013/albu/AF1QipPpbrEsInnpCRhUxppDg1NRRTLwxLgkYwXywEXT",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24864,7 +24495,7 @@ I WILL NOT MEET OUTSIDE OF ZALES, PERIOD! And I will only accept cash which I wi
 <br>
 Thank you and Serious inquiries ONLY!  Please text message me as I am not always on Craigslist!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24905,7 +24536,7 @@ THIS ITEM IS SOLD AS IT IS.<br>
 <br>
 IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH FRIDAY BETWEEN 12:00PM TO 5:00PM.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24943,7 +24574,7 @@ THIS ITEM IS SOLD AS IT IS.<br>
 <br>
 IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SATURDAY BETWEEN 12:00PM TO 5:00PM.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -24980,7 +24611,7 @@ THIS ITEM IS SOLD AS IT IS.<br>
 <br>
 IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT TO CHECK AVAILABILITY.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25003,7 +24634,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT TO CHECK AVAILABI
 
                   description: "http://orientwatchusa.com/shop/mens-watches/fem6500hd9/",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25030,7 +24661,7 @@ Color: Silver<br>
 <br>
 $15 OBO",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25058,7 +24689,7 @@ $15 OBO",
 
                   description: "Made by Stella and Dot. Snake Orb Pendant. Brand new in original gift box. No clasp. Shiny gold finish.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25105,7 +24736,7 @@ I WILL NOT MEET OUTSIDE OF ZALES, PERIOD! And I will only accept cash which I wi
 <br>
 Thank you and Serious inquiries ONLY! Please text message me as I am not always on Craigslist!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25150,7 +24781,7 @@ I WILL NOT MEET OUTSIDE OF ZALES, PERIOD! And I will only accept cash which I wi
 <br>
 Thank you and Serious inquiries ONLY! Please text message me as I am not always on Craigslist!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25195,7 +24826,7 @@ I WILL NOT MEET OUTSIDE OF ZALES, PERIOD! And I will only accept cash which I wi
 <br>
 Thank you and Serious inquiries ONLY!  Please text message me as I am not always on Craigslist!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25225,7 +24856,7 @@ CONDITION: Very good vintage condition. No chips or cracks in the stone. Please 
 <br>
 Cash Only. Please include a contact number with your response. Thanks<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25260,7 +24891,7 @@ a cluster of grapes, a Scottish thistle, a heart in a circle, a freeform moderni
 Would give a small discount for multiple purchase.<br>
 I live at Marina Bay, just south of 580 between El Cerrito and Pt. Richmond.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25309,7 +24940,7 @@ I WILL NOT MEET OUTSIDE OF ZALES, PERIOD! And I will only accept cash which I wi
 <br>
 Thank you and Serious inquiries ONLY! Please text message me as I am not always on Craigslist!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25335,7 +24966,7 @@ Thank you and Serious inquiries ONLY! Please text message me as I am not always 
 
                   description: "Indian party bangles",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25375,7 +25006,7 @@ THIS ITEM IS SOLD AS IT IS.<br>
 <br>
 IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SATURDAY BETWEEN 12:00PM TO 5:00PM.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25417,7 +25048,7 @@ I WILL NOT MEET OUTSIDE OF ZALES, PERIOD! And I will only accept cash which I wi
 <br>
 Thank you and Serious inquiries ONLY! Please text message me as I am not always on Craigslist!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25443,7 +25074,7 @@ Thank you and Serious inquiries ONLY! Please text message me as I am not always 
 
                   description: "vintage old jade pendant all gold w chain 18 k 18 inches long nice $390. Thai Buddha or Kwan yin ??",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25475,7 +25106,7 @@ CONDITION: Excellent!. No apparent cracks or chips that I could find. Ready to w
 <br>
 Respond with a contact number to get a quick response. thanks",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25511,7 +25142,7 @@ I have the original Hearts on Fire Certificate, as well as the case. If you are 
 <br>
 ***Please do not contact me if you are not local, or do not want to pay with cash. This is all I will accept. Thank you!***",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25537,7 +25168,7 @@ I have the original Hearts on Fire Certificate, as well as the case. If you are 
 <br>
 Beads diameter 19mm.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25572,7 +25203,7 @@ WILL TRADE FOR NEWER LOW MILEAGE VEHICLE OF $12,000 VALUE<br>
 <br>
 WILLING TO MEET AT DELL WILLIAMS JEWELER&apos;S OF SANTA CRUZ TO VERIFY RING AND PAPERWORK TO MAKE THE SALE OR TRADE.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25606,7 +25237,7 @@ Local Buyers Only.<br>
 <br>
 Email for questions and details.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25654,7 +25285,7 @@ WILL TRADE FOR NEWER LOW MILEAGE VEHICLE OF $12,000 VALUE.<br>
 <br>
 I AM WILLING TO MEET AT DELL WILLIAMS JEWELERS OF SANTA CRUZ TO VERIFY THE RING, LASER INSCRIPTION, THE DIAMOND REPORT, AND ALL APPRAISAL PAPERWORK, AND MAKE THE TRANSACTION.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25684,7 +25315,7 @@ Handmade.  Sosie Designs.<br>
 <br>
 Great gift!  New, still on packaging card.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25712,7 +25343,7 @@ Very nice design.  Well made.  Ring inside diameter is 3/4&quot;.<br>
 <br>
 Would also make a great gift!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25754,7 +25385,7 @@ THIS ITEM IS SOLD AS IT IS.<br>
 <br>
 IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SATURDAY BETWEEN 12:00PM TO 5:00PM.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25796,7 +25427,7 @@ I WILL NOT MEET OUTSIDE OF ZALES, PERIOD! And I will only accept cash which I wi
 <br>
 Thank you and Serious inquiries ONLY!  Please text message me as I am not always on Craigslist!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25827,7 +25458,7 @@ normal retail value for this may would be about $60<br>
 largest is 10&quot; x 8&quot;<br>
 smallest is 6&quot; x 3.5&quot;",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25867,7 +25498,7 @@ THIS ITEM IS SOLD AS IT IS.<br>
 <br>
 IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SATURDAY BETWEEN 12:00PM TO 5:00PM.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25890,7 +25521,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   description: "Three, Choker, Beaded Necklaces For Sale: [Black/Silver-White/Brown].",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25913,7 +25544,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   description: "Size 8",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25937,7 +25568,7 @@ IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SA
 
                   description: "Framed American Eagle coin new condition framed with 14 karat gold and diamonds very small diamonds $600.Total weight 14g.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -25979,7 +25610,7 @@ If you&apos;re reading this post, item is available.<br>
 <br>
 costume<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26018,7 +25649,7 @@ THIS ITEM IS SOLD AS IT IS.<br>
 <br>
 IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SATURDAY BETWEEN 12:00PM TO 5:00PM.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26050,7 +25681,7 @@ Local Buyers Only<br>
 <br>
 PLEASE EMAIL FOR MORE INFORMATION",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26091,7 +25722,7 @@ THIS ITEM IS SOLD AS IT IS.<br>
 <br>
 IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SATURDAY BETWEEN 12:00PM TO 5:00PM.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26128,7 +25759,7 @@ THIS ITEM IS SOLD AS IT IS.<br>
 <br>
 IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT TO CHECK AVAILABILITY.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26191,7 +25822,7 @@ Chain is 28 inches long with a 14 inch drop. The pendant is 3 cm in diameter<br>
 <br>
 I love these pendants. I wear mine a lot with various doterra essential oils. Peppermint when I have a headache, lavender when I&apos;m stressed, lemon to energize me and grapefruit to help curb my cravings.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26251,7 +25882,7 @@ THIS ITEM IS SOLD AS IT IS.<br>
 <br>
 IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SATURDAY BETWEEN 12:00PM TO 5:00PM.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26289,7 +25920,7 @@ THIS ITEM IS SOLD AS IT IS.<br>
 <br>
 IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH FRIDAY BETWEEN 12:00PM TO 5:00PM.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26331,7 +25962,7 @@ I WILL NOT MEET OUTSIDE OF ZALES, PERIOD! And I will only accept cash which I wi
 <br>
 Thank you and Serious inquiries ONLY!  Please text message me as I am not always on Craigslist!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26359,7 +25990,7 @@ Thank you and Serious inquiries ONLY!  Please text message me as I am not always
          blue face    <br>
      also have 5 rolexes new.same price",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26387,7 +26018,7 @@ Thank you and Serious inquiries ONLY!  Please text message me as I am not always
                   description: "It is in absolute perfect condition.  I am moving, so I am downsizing.  It measures 16.5&quot; tall by 10.75&quot; wide by 8&quot; deep.  It has four drawers.  It is mirrored on top and all three sides.  Feel free to come by to take a look.<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26433,7 +26064,7 @@ Phone:
 Follow on twitter; https://twitter.com/ConsignJewelry<br>
 Follow on Facebook; https://www.facebook.com/EncoreDesignerCollections/",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26481,7 +26112,7 @@ THIS ITEM IS SOLD AS IT IS.<br>
 <br>
 IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH SATURDAY BETWEEN 12:00PM TO 5:00PM.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26519,7 +26150,7 @@ THIS ITEM IS SOLD AS IT IS.<br>
 <br>
 IF YOU WOULD LIKE TO SEE THIS ITEM, PLEASE MAKE AN APPOINTMENT MONDAY THROUGH FRIDAY BETWEEN 12:00PM TO 5:00PM.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26561,7 +26192,7 @@ I WILL NOT MEET OUTSIDE OF ZALES, PERIOD! And I will only accept cash which I wi
 <br>
 Thank you and Serious inquiries ONLY! Please text message me as I am not always on Craigslist!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26587,7 +26218,7 @@ Thank you and Serious inquiries ONLY! Please text message me as I am not always 
 
                   description: "Brand new in box, Breitling Chronomat 38. Comes with original box and certificate of authenticity. Received as a gift and would rather have the cash.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26617,7 +26248,7 @@ Thank you and Serious inquiries ONLY! Please text message me as I am not always 
                   description: "Niel lane bridal set purchased from Kay jewlers. The engagement ring is a 2 tone white and rose gold blend and looks really amazing. 1 5/8ct. size 7.5, can be resized. This ring set is gorgeous and 1 of a kind, the 2 outer wedding bands are custom white gold over the standard rose gold, and really makes the main engagement ring pop! Save some money over buying new. Over $10k spent. The ring has a life time warranty and is transferable to the new owner I will meet you at kay&apos;s to verify and transfer. Also will include the male wedding band black tungsten size 11.5 nice heavy ring paid almost $1,200.<br>
 Looking to sale before Christmas, make an offer.  Also open to trade for a Chevy or GMC suburban",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26668,7 +26299,7 @@ THANKS.<br>
 <br>
 TAKE CARE.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26699,7 +26330,7 @@ Weighs 2 grams <br>
 <br>
 CONDITION: Near Mint/Mint - No chips or breaks to the stones. Beautiful color. Appears unworn. Please review photos.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26736,7 +26367,7 @@ SI1 / G-H<br>
 Gabriel and company <br>
 Originally paid 2k+",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26763,7 +26394,7 @@ Originally paid 2k+",
 
                   description: "Selling a 500$ gift card at Tourneau for 400$.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26801,7 +26432,7 @@ I AM WILLING TO MEET AT DELL WILLIAMS JEWELERS OF SANTA CRUZ TO VERIFY THE DIAMO
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26832,7 +26463,7 @@ MATERIALS:Made from durable synthetic leather and a velvet lining, this jewelry 
 INCLUDES: The lid contains a large mirror while the upper level has 4 ring holder slots, 4 small compartments and one large closing compartment in the middle. Lift the upper level to uncover a secret space with up to 7 more storage spaces offering space to store your rings, earrings, chain necklaces, small watches, thin bracelets and cuffs.<br>
 GIFTING: Delights those who receive it as a present.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26863,7 +26494,7 @@ GIFTING: Delights those who receive it as a present.",
 
                   description: "very elegant different model clip on earrings",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26897,7 +26528,7 @@ end
 <br>
 https://www.amazon.com/Brother-HL-3170CDW-Wireless-Networking-Replenishment/dp/B00BQU141C",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26927,7 +26558,7 @@ The color is space gray and it&apos;s the 64GB model. Battery still works excell
 <br>
 PS Cash Only<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26954,7 +26585,7 @@ PS Cash Only<br>",
 
                   description: "All in good working condition. Air Pods sold",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -26978,7 +26609,7 @@ PS Cash Only<br>",
 
                   description: "originally $300, selling for $100 in good used condition. Has 2 Tower speakers. One of the tower speakers has a AUX audio cable for MP3 players.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27002,7 +26633,7 @@ PS Cash Only<br>",
 
                   description: "Good working condition.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27028,7 +26659,7 @@ PS Cash Only<br>",
 
                   description: "4:3 aspect ratio, 4-head stereo VCR, 2 speakers, A/V input accommodates some external devices",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27052,7 +26683,7 @@ PS Cash Only<br>",
 
                   description: "Polycom CX300 Desktop VOIP phone for Skype",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27081,7 +26712,7 @@ Save $$ compared to getting lamination at Fedex or at retail stores!<br>
 <br>
 laminate posters flyers photos lamination arts crafts pictures FEDEX UPS",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27108,7 +26739,7 @@ Space gray<br>
 Minor light scratches on screen<br>
 Comes with black sports band and charger<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27133,7 +26764,7 @@ Comes with black sports band and charger<br>",
                   description: "Brand New sealed in box.  <br>
 2017 model.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27156,7 +26787,7 @@ Comes with black sports band and charger<br>",
 
                   description: "Good working condition, includes battery and battery charger.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27179,7 +26810,7 @@ Comes with black sports band and charger<br>",
 
                   description: "Good condition.$30 each",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27210,7 +26841,7 @@ https://www.amazon.com/Samsung-UN48J5200-48-Inch-1080p-Smart/dp/B00WR28U10<br>
 Samsung J5200 Series LED Smart TV<br>
 With built-in Wi-Fi, Smart TV technology, and Full HD 1080p, the Samsung J5200 48-Inch Smart TV provides a high-resolution picture while also allowing you to browse the web or access smart apps to easily find your favorite media. DTS Premium Sound 5.1 offers surround sound, and Motion Rate 60 delivers seamless motion for an enjoyable viewing experience. The eco sensor feature intelligently adapts the screen&apos;s brightness to help efficiently manage energy use. With Anynet+ technology, you can remotely control up to 12 other compatible devices. Take advantage of the USB port to view your personal media, or use screen mirroring to wirelessly broadcast media from your mobile device onto the big screen.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27234,7 +26865,7 @@ With built-in Wi-Fi, Smart TV technology, and Full HD 1080p, the Samsung J5200 4
 
                   description: "Stainless steel 42mm very good condition, with box and charger. Series 1",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27260,7 +26891,7 @@ With built-in Wi-Fi, Smart TV technology, and Full HD 1080p, the Samsung J5200 4
 
                   description: "Like new condition",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27284,7 +26915,7 @@ With built-in Wi-Fi, Smart TV technology, and Full HD 1080p, the Samsung J5200 4
 
                   description: "Vintage Sansui AU-417 stereo amplifier rated at 65 watts per channel rms. Matching Sansui TU-717 AM/FM stereo tuner. Both in very good condition. Tone, volume, and balance controls recently cleaned and noise free. Both units sound excellent and transparent. Both units are very clean with no cabinet damage. Sansui products have an excellent reputation for build quality and under rated power. Text only please.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27332,7 +26963,7 @@ Available in other length<br>
 60 ft: $60<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27360,7 +26991,7 @@ Available in other length<br>
 Excellent working condition<br>
 With Booklet and remote",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27387,7 +27018,7 @@ With Booklet and remote",
 <br>
 Comes with the 4 games.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27421,7 +27052,7 @@ Asking $975.00<br>
 <br>
 ADS Adcom Bedini Bryston Carver Denon Electrocompaniet Forte Gamut Hafler Infinity Jeff Rowland Jolida Kenwood Luxman Levinson McIntosh Marantz Motif Nad Nakamichi Onkyo Pioneer Parasound Quicksilver Rotel Roland Sansui Spectral Technics Tannoy Tandberg Threshold VTL Wilson Yamaha<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27446,7 +27077,7 @@ ADS Adcom Bedini Bryston Carver Denon Electrocompaniet Forte Gamut Hafler Infini
                   description: "Speakers sound delightful. Surrounds are perfect. Pretty rare audio equipment. It all works, runs. Amp included.<br>
 Throw me some offers, I need it GONE ASAP. I&apos;ll deliver local since a truck is needed.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27487,7 +27118,7 @@ Read above review. <br>
 <br>
 $100.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27513,7 +27144,7 @@ $100.",
 <br>
 steps step activity fitness watch",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27542,7 +27173,7 @@ Paid $3200 new.<br>
 <br>
 http://www.integrahometheater.com/Products/model.php?m=DRC-R1&amp;class=Preamplifier&amp;source=prodClass",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27571,7 +27202,7 @@ http://www.integrahometheater.com/Products/model.php?m=DRC-R1&amp;class=Preampli
 
                   description: "Like new 128g 4g unlocked to any carrier comes with charger, wireless case keyboard and survivor case by Griffin. Still on iOS 9",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27595,7 +27226,7 @@ http://www.integrahometheater.com/Products/model.php?m=DRC-R1&amp;class=Preampli
 
                   description: "Hi everyone, im looking to sell our plasma panasonic TV; 60 inch length, 30 inch height. It&apos;s in great condition, works like new. No dent, scratch marks, or damage. No problems with it whatsoever. My parents are the first and only owners of this TV and they took care of it well. Such a beautiful TV and quality for the above price.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27623,7 +27254,7 @@ http://www.integrahometheater.com/Products/model.php?m=DRC-R1&amp;class=Preampli
                   description: "Acoustic Audio CS-PS65B-B Home Theater Powered 8&quot; Subwoofer 250 Watt Sub<br>
 Like brand new<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27651,7 +27282,7 @@ Like brand new<br>",
 <br>
 https://www.amazon.com/Blue-Blackout-Ninjas-Pyjamas-Bundle/dp/B0731QWWCN/ref=olp_product_details?_encoding=UTF8&amp;me=",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27676,7 +27307,7 @@ https://www.amazon.com/Blue-Blackout-Ninjas-Pyjamas-Bundle/dp/B0731QWWCN/ref=olp
                   description: "LOOKING JBL SPEAKERS JUBALS L65  ANY CONDITION<br>
 PLEASE SENT DETAILS",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27702,7 +27333,7 @@ PLEASE SENT DETAILS",
 <br>
 Includes original box, accessories, and screen protector.  Watch is in like-new condition.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27730,7 +27361,7 @@ Includes original box, accessories, and screen protector.  Watch is in like-new 
 
                   description: "Barely used. Like-new condition. Available for pickup in Noe Valley.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27758,7 +27389,7 @@ Includes original box, accessories, and screen protector.  Watch is in like-new 
  Great for gaming!! Comes with Wall mount great cond!! <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27787,7 +27418,7 @@ iOS/Android<br>
 Built in retractable Ear Buds<br>
 Fits iphone/Android up to 6 inch screen",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27814,7 +27445,7 @@ Fits iphone/Android up to 6 inch screen",
 
                   description: "Sony Bloggie touch full HD camcorder.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27839,7 +27470,7 @@ Fits iphone/Android up to 6 inch screen",
 
                   description: "HP Photosmart 8450 photo printer. Good condition. $60.00",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27864,7 +27495,7 @@ Fits iphone/Android up to 6 inch screen",
                   description: "Model A1521<br>
 Purchased new, used only briefly before moving to a new apartment where I didn&apos;t need the base station.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27891,7 +27522,7 @@ Purchased new, used only briefly before moving to a new apartment where I didn&a
  Great for gaming!! Comes with Wall mount great cond!! <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27934,7 +27565,7 @@ No wires or cables included.  No mounting straps or hardware.  Working when I pu
 <br>
 keyword: sub-woofer, sub woofer.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27965,7 +27596,7 @@ keyword: sub-woofer, sub woofer.",
 <br>
 restored and ready to use. Used by a family member who is not using it anymore.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -27989,7 +27620,7 @@ restored and ready to use. Used by a family member who is not using it anymore.<
 
                   description: "Like new. 8&quot; diagonal screen. Please see pictures. Thanks for looking.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28019,7 +27650,7 @@ restored and ready to use. Used by a family member who is not using it anymore.<
                   description: "Yurbuds Mossy Oak Inspire 100 Sport Earphones<br>
 -new",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28044,7 +27675,7 @@ restored and ready to use. Used by a family member who is not using it anymore.<
 
                   description: "Like new 128g 4g unlocked to any carrier comes with charger, wireless case keyboard and survivor case by Griffin. Still on iOS 9",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28076,7 +27707,7 @@ Excellent condition! Moving to Europe and not taking this.<br>
 <br>
 Still available if listed. Thanks!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28109,7 +27740,7 @@ Like-new, barely used.  Includes everything.<br>
 <br>
 Cash or crypto only.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28171,7 +27802,7 @@ Dimensions (WxHxD)	18.91 x 1.72 x 7.5&quot; (48.02 x 4.37 x 19.05cm)<br>
 <br>
 Mixer Switch Digital signal processing Autopatch Extron AMX Crestron Control 4 Audio Preamp Equalizer Alesis Behringer",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28198,7 +27829,7 @@ Mixer Switch Digital signal processing Autopatch Extron AMX Crestron Control 4 A
 
                   description: "http://www.axis.com/us/en/products/axis-2400<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28222,7 +27853,7 @@ Mixer Switch Digital signal processing Autopatch Extron AMX Crestron Control 4 A
 
                   description: "Like new. Philips DVD Remote RC2K16 for DVP642 DVP3500 DVDQ35 DVD724 DVD615. Please see pics. Thanks for looking.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28249,7 +27880,7 @@ Mixer Switch Digital signal processing Autopatch Extron AMX Crestron Control 4 A
  Great for gaming!! Comes with Wall mount great cond!! <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28273,7 +27904,7 @@ Mixer Switch Digital signal processing Autopatch Extron AMX Crestron Control 4 A
 
                   description: "This item is located in Benicia. It is a vintage Homemade Speaker, 12&quot; Utah measuring approx. 19&quot;tall x 15 1/2&quot;wide x 9&quot;deep. Letter Cutout work is awesome, very cool, one-of-a-kind!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28309,7 +27940,7 @@ Netgear equipment is great. Highly reviewed on Amazon where I purchased them.<br
 <br>
 These are in like new condition I still have the box for the router and the box that extender ships in was basically nothing so I threw that away.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28336,7 +27967,7 @@ These are in like new condition I still have the box for the router and the box 
 
                   description: "A used but very clean and functioning Motorola DCX3200-M Phase 2 High Def Digital Cable Box is for sale here. Please see pics.  Thanks for looking.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28364,7 +27995,7 @@ These are in like new condition I still have the box for the router and the box 
                   description: "Brand new in sealed box with receipt. I bought it off Craigslist, went to install it, and found out my apartment&apos;s thermostat is incompatible. D&apos;oh! Selling for the exact same price I bought it for. It still has the original receipt which can be used to claim a $50 rebate from PG&amp;E - details here: https://www.pge.com/en_US/residential/save-energy-money/savings-solutions-and-rebates/rebates-by-product/smart-thermostats/smart-thermostats.page<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28390,7 +28021,7 @@ These are in like new condition I still have the box for the router and the box 
 <br>
 Got it as part of a promotion, already have enough of them.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28468,7 +28099,7 @@ Product Highlights:</p><p>
     weight: 78 lbs.
     warranty: 5 years</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28494,7 +28125,7 @@ Product Highlights:</p><p>
 
                   description: "Good working condition.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28520,7 +28151,7 @@ Product Highlights:</p><p>
 
                   description: "Wanted a set of klipsch cornwalls ANY CONDITION",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28545,7 +28176,7 @@ Product Highlights:</p><p>
                   description: "I am selling my HP Sprocket with 40 sheets of Zink Sticky-Backed Photo Paper, a soft protective case, and charger included! You can use this with the free Sprocket app to start printing your photos in seconds (you can also use them as stickers to decorate your laptop case). Barely used, excellent condition! <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28568,7 +28199,7 @@ Product Highlights:</p><p>
 
                   description: "Salesman&apos;s mini digital projector in great condition little used with original box case and all cables. Pick up in Napa Great little projector you can use to project tv if you want, does not have HDMI. price reduced",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28593,7 +28224,7 @@ Product Highlights:</p><p>
                   description: "Like new.  English-Chinese and Chinese English sentence translation.  4,000,000 Word Vocabulary. Includes English, Chinese, Japanese, Korean, French, German, Spanish, Italian, Dutch, and Portuguese ten-language dictionary.  Built-in animated and illustrated dictionary. <br>
 We never got around learning and using it.  Please see Photo.  Thanks for looking.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28617,7 +28248,7 @@ We never got around learning and using it.  Please see Photo.  Thanks for lookin
 
                   description: "Brand new in the original box, unopened. No longer need it. ( Paid for $95 )<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28657,7 +28288,7 @@ LED TV Projector Computer<br>
 DVD<br>
 Inline with Booster built in HDMI Cable",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28687,7 +28318,7 @@ I&apos;m selling it because I&apos;m looking for a projector with higher lumens 
 <br>
 This is the exact product: https://www.amazon.com/Leisure-Upgraded-Portable-Projector-Compatible/dp/B078KF8CSX/ref=sr_1_4?ie=UTF8&amp;qid=1544402145&amp;sr=8-4&amp;keywords=vankyo+projector",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28712,7 +28343,7 @@ This is the exact product: https://www.amazon.com/Leisure-Upgraded-Portable-Proj
 
                   description: "Never used and box not opened.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28739,7 +28370,7 @@ This is the exact product: https://www.amazon.com/Leisure-Upgraded-Portable-Proj
 <br>
 Thank you for looking !!!<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28764,7 +28395,7 @@ Thank you for looking !!!<br>",
 
                   description: "One 4gen 8g with out camera  and other one 5gen 8g with rear camera on the rear. $80 with camera $60 with out.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28791,7 +28422,7 @@ Thank you for looking !!!<br>",
 
                   description: "This item has been sitting unused for 5 years. Bought brand new. Works!  Includes some paper and toner, user guide and software.  USB.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28815,7 +28446,7 @@ Thank you for looking !!!<br>",
 
                   description: "Good working condition",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28851,7 +28482,7 @@ Cash and in person transaction only. <br>
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28884,7 +28515,7 @@ price: $700 set as shown<br>
 45 43rd AVe<br>
 SAn Mateo",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28937,7 +28568,7 @@ Shreds 16 sheets per pass into 5/32&quot; x 1-1/2&quot; cross-cut particles (Sec
 <br>
 Heavy Duty Office Business Paper Shred Shredding Shredder<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28963,7 +28594,7 @@ Heavy Duty Office Business Paper Shred Shredding Shredder<br>",
  Great for gaming!! Comes with Wall mount great cond!! <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -28987,7 +28618,7 @@ Heavy Duty Office Business Paper Shred Shredding Shredder<br>",
 
                   description: "Used but very nice and clean. please see pictures. Thanks for looking.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29011,7 +28642,7 @@ Heavy Duty Office Business Paper Shred Shredding Shredder<br>",
 
                   description: "Good working condition",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29037,7 +28668,7 @@ Heavy Duty Office Business Paper Shred Shredding Shredder<br>",
 
                   description: "RCA Digital Amplifier for Indoor Antenna.  Like new. Thanks for looking.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29079,7 +28710,7 @@ I have the Following PROTECT AMERICA ALARM/SECURITY EQUIPMENT for SALE::<br>
 ** One can use the ALARM.COM Web Interface or Mobile App.for full access to the ALARM/SECURITY PANEL<br>
 *** WORKS WITH ALEXA and GOOGLE HOME",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29104,7 +28735,7 @@ I have the Following PROTECT AMERICA ALARM/SECURITY EQUIPMENT for SALE::<br>
 Audio / Video Cable Assembly, HDMI Type D Plug, HDMI Type A Plug, 6.6 ft, 2 m, Black <br>
 -new",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29150,7 +28781,7 @@ SAn Mateo<br>
 open weekdays 11 til 7pm<br>
 weekends open at 11am",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29184,7 +28815,7 @@ Tracks sleep, steps, call notifications, vibrating alarms and is water resistant
 <br>
 Keyword: Fitbit Alta, versa, Apple Watch, iwatch, pedometer",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29211,7 +28842,7 @@ Keyword: Fitbit Alta, versa, Apple Watch, iwatch, pedometer",
 Used but in excellent working condition.For Hp part number 631639-001.<br>
 please see pictures.Thanks for looking.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29236,7 +28867,7 @@ please see pictures.Thanks for looking.",
 
                   description: "One 4gen 8g with out camera  and other one 5gen 8g with rear camera on the rear. $80 with camera $60 with out.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29263,7 +28894,7 @@ please see pictures.Thanks for looking.",
 
                   description: "originally $300, selling for $100 in good used condition. Has 2 Tower speakers. One of the tower speakers has a AUX audio cable for MP3 players.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29287,7 +28918,7 @@ please see pictures.Thanks for looking.",
 
                   description: "Used Native Instrument Maschine MK1 in great condition",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29314,7 +28945,7 @@ please see pictures.Thanks for looking.",
                   description: "Hello I purchased this item and never opened it.  Just changed my mind decided not to play 3D gaming.<br>
 Brand new item is 139 dollars plus tax. You can have it much cheaper Brand New!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29349,7 +28980,7 @@ Compatible with PC (Windows 7 and Up) and Mac<br>
 Cash Only.<br>
 Email me with any questions, or to set up a time to see the USB kit.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29404,7 +29035,7 @@ JBL, Sonos, Harman Kardon, Bose, Bowers &amp; Wilkens, SVS, Bang , Elac, emotiva
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29435,7 +29066,7 @@ They are in MINT / Excellent Condition. Adult owned (I&apos;m 33 years old). The
 <br>
 If you&apos;re interested just text or call anytime, thanks!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29460,7 +29091,7 @@ If you&apos;re interested just text or call anytime, thanks!",
 
                   description: "Brand new Linksys N300 Wi-Fi Wireless Router with Linksys Connect Including Parental Controls &amp; amp; Advanced Settings (E1200)",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29487,7 +29118,7 @@ If you&apos;re interested just text or call anytime, thanks!",
 
                   description: "Very good condition gray color, comes with box and everything. Series 1",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29525,7 +29156,7 @@ Brand NEW !!<br>
 Perfect for PS4 / Xbox<br>
 LED TV Projector, SAMSUNG, TCL, LG",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29550,7 +29181,7 @@ LED TV Projector, SAMSUNG, TCL, LG",
 
                   description: "Used but very nice and clean and in perfect working condition.  Please see pics.  Thanks for looking.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29597,7 +29228,7 @@ Product Highlights<br>
 - 5-Minute Charge for 3 Hours of Play<br>
 - Includes Carry Case &amp; Charging Cable",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29637,7 +29268,7 @@ CD SACD DVD Blu-Ray Player, Transport, Turntable, FM Tuner, Streamer, DAC Preamp
 high-end denon stereo krell linn chord kef meridian electro companies marantz avid clearaudio sunfire esoteric musical fidelity mcintosh audio research vac integra b&amp;w parasound carver Freestanding Loudspeaker for audiophile stereophile atlantic Dunlavy gear sound equipment stereo home theater theatre home audio speaker system tv live sound bose, def tech subwoofer, bose bowers and wilkins martinlogan floor speaker acoustic energy magneplanar monitor audio dali lektor salk songtower b&amp;w sonus faber stradivari soundlab focus vivid epiphany dunlavy martin logan egglestonworks focal mezzo merlin music revel quad pioneer mcintosh tyler acoustics thiel psb speakers axiom definitive technology spendor legacy audio mirage loudspeakers celestation totem acoustic boston acoustics M&amp;K Yamaha OHM DCM Audes silverline audio tower speaker floor speaker surround sound audio home audio recording a/v av home movie theater professional studio equipment infinity kappa genesis Hi-end, Vintage, AR, Audiophile, Amplifier, Amps, Arcam, Acurus, Aragon , Adcom, ADS, Advent, Bose, Boston, Beovox, Bryston, Bedini, B&amp;K, B&amp;0, Bangs&amp;Olufson, B&amp;W, Bowers &amp; Wilkins, Celestion, Counter Point ,Classe, Classic, Canton, Cello, Creek, Cerwin Vega, Dahlquist, Denon, Dcm, Dynaco, Dynaudio, Ess, Spica, Spicure, Ensemble, Electrostatic, Elite, Fisher, Fosgate, Harman kardon , Harbeth , Integra, Infinity, JBL, Jardis, Jolida, Linn, Luxman, KEF, Klipsch , KLH, Krell, Kenwood, Martin Logan, McIntosh, Mirage, Mission, Monitor Audio, Nad , Onkyo , Paradigm, Proac, Sony, Pioneer, Polk-Audio, Preamplifier, Quad ,Rogers, Rotel, Rega, Stanton, Speakers, Sony, Studio, Vandersteen,, Snell, Spendor, Thorens, Vandersteen, Wharfedale, Yamaha, Speakers, Home Theater, Audiophile, M&amp;K, B&amp;W, Bowers &amp; Wilkins, Infinity, Accuphase, Canton, Boston Acoustics, Linn, McIntosh, Paradigm, Dali, Wilson Audio, Sonus Faber, KEF, Definitive Technology, PSB, NHT, JBL, Magnepan, Eminent Technology, Monitor Audio, Vienna Acoustic, Meridian, Behringer, Martin Logan, Acoustat, Quad, Genesis, Opera, Mirage, Energy, Pinnacle, JBL, Celestion, Spica, Aragon, Onkyo, Infinity, Martin Logan, Klipsch, Musical Fidelity, Sonic Frontiers, Cambridge Audio, Sunfire, Velodyne, SVS, HSU Research, Audio Research, Onkyo, Yamaha, Sony, Denon, Marantz, Pioneer, Tannoy, Bose, Eltax, Subwoofer, Omnipolar, Home Theater. 5.1, 7.1, 9.1, THX, True HD Master, 3D, Bluray, DVD, LED, LCD, Cinema, McCormack, Conrad Johnson, RSL, Classe, Parasound, Magneplanar, Audible Illussions, McIntosh, Mark Levinson, Vintage, Omega, Monster Cable, Monster, Dr. Dre, Beats, DAC, Oppo, Pioneer Elite, REL, Revel, Nakamichi, ESS, Emotiva, Yaqinaudio, dali, psb and vandersteen, aerial, PMC, harbeth, epos, infinityand wharfedale , B&amp;W, Krell, KEF, definitve, harman kardon, tv, pioneer, elite, monster,<br>
 Threshold, ps audio, monster power",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29660,7 +29291,7 @@ Threshold, ps audio, monster power",
 
                   description: "In perfect working condition.  looks nice and very clean, no scratches. Thanks for looking.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29691,7 +29322,7 @@ Comes within cable only <br>
 Firm on asking price. No longer made by Apple. <br>
 When ready to buy reply back with contact number",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29719,7 +29350,7 @@ Features: 5 band graphic equalizer, one touch recording, auto shut off, soft eje
 <br>
 Please leave a phone number so we can arrange pickup<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29744,7 +29375,7 @@ Please leave a phone number so we can arrange pickup<br>",
 
                   description: "Sony HDR-AS20 Compact POV Action Full HD Camcorder, like new, can be used as camcorder with attachment included.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29769,7 +29400,7 @@ Please leave a phone number so we can arrange pickup<br>",
                   description: "About 2 years old, works great.<br>
 https://www.newegg.com/Product/Product.aspx?Item=N82E",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29795,7 +29426,7 @@ https://www.newegg.com/Product/Product.aspx?Item=N82E",
 
                   description: "Very good condition.$60 each.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29821,7 +29452,7 @@ https://www.newegg.com/Product/Product.aspx?Item=N82E",
                   description: "I have ten extension cords. Ten footers to 100 footers. All of them are for sale. <br>
 Please call me at",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29845,7 +29476,7 @@ Please call me at",
                   description: "in new condition, in original box. <br>
 $20 firm.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29871,7 +29502,7 @@ $20 firm.",
 <br>
 restored and ready to use. Used by a family member who is not using it anymore.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29900,7 +29531,7 @@ Manual and software are also available. See detailed description below. <br>
 <br>
 Enjoy surfing on the web wirelessly using the 2.4 GHz frequency band of the NetGear WNR2000 router. This NetGear wireless router supports data link protocols such as Ethernet, IEEE 802.11b/g/n and Fast Ethernet, ensuring better performance and connectivity. Your data and details are totally secure with this NetGear hardware device as it incorporates the Intrusion Detection System (IDS). This NetGear wireless router comes with a built-in firewall protection that ensures prevention from attacks of malware and spyware to your system. Connect using the Ethernet 10Base-T/100Base-TX - RJ-45 interface to this NetGear hardware device to get better speed and functionality. Incorporated with NAT support, the NetGear WNR2000v4 router assures of maximum network privacy.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29927,7 +29558,7 @@ Enjoy surfing on the web wirelessly using the 2.4 GHz frequency band of the NetG
 
                   description: "A very nice, clean and used DCX3400-M Motorola Cable Box with digital video recorder- 500gb HDD with Power Cord and remote is for sale here. Please see pics.  Thanks for looking.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29966,7 +29597,7 @@ Located in Alameda/Rose Garden/Shasta-Hanchett area<br>
 <br>
 Text the number below if interested<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -29993,7 +29624,7 @@ Model: Unmanaged<br>
 Simple Setup and Stellar Performance<br>
 Plug in your Ethernet cables and connect a power cord, and you&apos;re ready to go. There is no software to install or settings to configure. The switch features auto-sensing ports which automatically obtains the fastest possible connection. There are no toggle switches or special crossover cables. The switch will honor priority tags at both the Layer 2 and Layer 3 level if you have your network set to support jumbo frames.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30022,7 +29653,7 @@ for fast charging of cell phones, other devices<br>
 <br>
 galaxy, note, iphone, ipad, android",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30047,7 +29678,7 @@ galaxy, note, iphone, ipad, android",
                   description: "Hello CL Selling My Panasonic TV 50&quot; With wall mount!! Call Don @  
  Great for gaming!! Comes with Wall mount great cond!! Model# TC-P50G15<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30079,7 +29710,7 @@ Please text 650-Two701389<br>
 <br>
 Cash and local pick up only.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30104,7 +29735,7 @@ Cash and local pick up only.",
 
                   description: "originally $300, selling for $100 in good used condition, will have minor marks from normal use. Has 2 Tower speakers. One of the tower speakers has a AUX audio cable for MP3 players.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30136,7 +29767,7 @@ There IS a black metal disk attached to the back for a vent car mount. Can be re
 <br>
 Also includes the case...",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30163,7 +29794,7 @@ Also includes the case...",
  Great for gaming!! Comes with Wall mount great cond!! <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30187,7 +29818,7 @@ Also includes the case...",
 
                   description: "Like new condition blue tooth wireless headphones with charger",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30211,7 +29842,7 @@ Also includes the case...",
 
                   description: "Karaoke &quot;The Singing Mashine&quot; for sale. used. DVD player in mic for easy Karaeoke Video and Aux output ports. Simple and fun",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30238,7 +29869,7 @@ Also includes the case...",
 
                   description: "TCL 40 inch tv in great condition",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30285,7 +29916,7 @@ Additional Product Features<br>
 Form Factor	Portable<br>
 Contrast Ratio	450:1<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30311,7 +29942,7 @@ Contrast Ratio	450:1<br>",
                   description: "I have a used Samsung Gear S2 Classic 3g version (Verizon). The watch works fine, comes with charging dock and cable. It has the original black leather band in size large. I don&apos;t really use this watch much which is why I&apos;m selling it. Battery lasts me about a day and a half.<br>
 Email for more information.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30340,7 +29971,7 @@ Stand $50<br>
 <br>
 Great setup movies",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30366,7 +29997,7 @@ Great setup movies",
 
                   description: "A pair of Used Turtle Beach Ear Force P11 Over&#x2011;Ear Headset is on sale here. Looks nice and works perfectly. Please see pics. Thanks for looking.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30396,7 +30027,7 @@ Tuners and Dual Cassette Deck/Player.<br>
 -all are in good working condition.<br>
 -$20 each, or take all for $50",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30430,7 +30061,7 @@ Tuners and Dual Cassette Deck/Player.<br>
 
                   description: "Like new",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30464,7 +30095,7 @@ end
 Please see this link for specs on it. <br>
 https://www.amazon.com/Samsung-Odyssey-Wireless-Controllers-XE800ZAA-HC1US/dp/B078K2S122",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30491,7 +30122,7 @@ https://www.amazon.com/Samsung-Odyssey-Wireless-Controllers-XE800ZAA-HC1US/dp/B0
 Bought this for the superbowl last year but switched to YouTubeTV for this year.  Also selling an HD antenna for it in another post but happy to make a deal on both: https://sfbay.craigslist.org/sfc/ele/d/wirecutter-2018-pick-tv/ 
 .html",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30516,7 +30147,7 @@ Bought this for the superbowl last year but switched to YouTubeTV for this year.
 
                   description: "Like New. Locals only. Cash.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30555,7 +30186,7 @@ First one that can get here can have it.<br>
 <br>
 Please contact by text only.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30589,7 +30220,7 @@ Please contact by text only.",
  I&apos;ll reply asap. Thanks.<br>
  <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30621,7 +30252,7 @@ If the ad is on, it&apos;s available, thanks!<br>
 <br>
 Canon Nikon Pentax Fuji E0S Sony",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30651,7 +30282,7 @@ Bought combo kit, I just need Jet Fan Blower.<br>
 <br>
 $20.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30675,7 +30306,7 @@ $20.<br>",
 
                   description: "Denon receiver and 5-disc player.  Excellent condition",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30712,7 +30343,7 @@ https://www.amazon.com/Microsoft-Bluetooth-Notebook-Mouse-5000/dp/B005058B56/ref
 <br>
 Come pick it up!  We&apos;re in the El Cerrito hills, on Arlington between Moeser &amp; Potrero.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30742,7 +30373,7 @@ There are two chunks of plastic missing on the left side, looks like someone tri
 <br>
 If you&apos;re willing to pay for it I can recap it for you. I&apos;m a former maintenance technician for Tesla and have done electronics repair for 10+ years now.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30765,7 +30396,7 @@ If you&apos;re willing to pay for it I can recap it for you. I&apos;m a former m
 
                   description: "Excellent condition. In original packing and all accessories.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30802,7 +30433,7 @@ risers, rack, power supply<br>
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30866,7 +30497,7 @@ Depth 10 in<br>
 Height 6.5 in<br>
 Weight 19.62 lbs",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30894,7 +30525,7 @@ Weight 19.62 lbs",
 
                   description: "For Sale Generation 1 Apple iPad Pro 9.7 inch iPad Pro Wi-Fi + Cellular 128GB, with Apple Pencil Gen 1, Keyboard case and charging cable. This item must be picked up at or near my home. Cash Only. Thanks for Looking.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30921,7 +30552,7 @@ Weight 19.62 lbs",
 Please call John at  
 . I am living at San Ramon.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30945,7 +30576,7 @@ Please call John at
 
                   description: "Brand new lorex 4k 8channel dvr with 2 tb hd and 8 4k cameras. With warranty. With colored night vision. $550 firm.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -30978,7 +30609,7 @@ Made by Logitech<br>
 Perfectly new condition<br>
 only asking $20",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31003,7 +30634,7 @@ only asking $20",
 
                   description: "Hamilton slow-cooker, barely used, moving out of state sale. make an offer.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31053,7 +30684,7 @@ More information can be found here:<br>
 <br>
 http://www.highfidelityreview.com/hk-pm665vxi.html",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31080,7 +30711,7 @@ http://www.highfidelityreview.com/hk-pm665vxi.html",
 
                   description: "Why wait till Black Friday when I have a deal for you  Sony DVD home theater system, 1000w, hdmi1080p easy to set up.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31132,7 +30763,7 @@ The body and kit lens alone are still going for $799 on Amazon. Not to mention a
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31158,7 +30789,7 @@ The body and kit lens alone are still going for $799 on Amazon. Not to mention a
 <br>
 $300 firm. You pickup.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31189,7 +30820,7 @@ The image with the blue screen is just to show that the tv works. I didn&apos;t 
 <br>
 Please reply with name and phone number if interested.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31222,7 +30853,7 @@ Please reply with name and phone number if interested.",
 Price is Firm <br>
 Call or text at (408) 7-zero-5-7-7-one-9",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31249,7 +30880,7 @@ Call or text at (408) 7-zero-5-7-7-one-9",
 <br>
 Comes with the HDMI cord as well.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31276,7 +30907,7 @@ Comes with the HDMI cord as well.",
 Phone number  
  Price is firm<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31301,7 +30932,7 @@ Phone number
 
                   description: "Mostly unused, so probably about 90 out of the original 100 feet left. 300 ohms, twin lead, high quality.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31333,7 +30964,7 @@ Manual Online:<br>
 https://www.manualagent.com/logitech/v-ubm46-ubm46/owners-manual<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31366,7 +30997,7 @@ Motion Zone Select &amp; Two-Way Talk: Get real-time notifications when the Smar
 Local &amp; Cloud Storage: Supports microSD card recording (up to128GB), and secure cloud storage via the SmartCloud to let you go back and view past video footage anytime you want.<br>
 SmartCam+ app: Stay connected to your home from anywhere, anytime. Access your camera, create event schedules, and customize the notifications you receive on your smartphone.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31394,7 +31025,7 @@ SmartCam+ app: Stay connected to your home from anywhere, anytime. Access your c
 
                   description: "Hello, this is a vintage 80s FISHER linear mt-729full automatic turntable with  original needle and cartridge, NOTE:this model came in system with cabinet so it did not have dust cover,but one can be ordered, it has NO performance or cosmetic flaws,and I have it still hooked up,so bring your favorite album and have listen,$40 cash it&apos;s yours,PLEASE ONLY call me on the same day that you can see it!, NO HOLDS unless the same day!!!!,I&apos;m in Castro valley off redwood Rd, thx AND I DON&apos;T ANSWER TEXTS!!!!!!!!!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31427,7 +31058,7 @@ $100 OBO<br>
 <br>
 Will make deal if also interested in ELAC bookshelf speakers, which I&apos;m also selling.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31454,7 +31085,7 @@ Will make deal if also interested in ELAC bookshelf speakers, which I&apos;m als
                   description: "I am selling brand new and never used C9 red ceramic steady bulbs E12 base. Total 100 bulbs. Price $30 firm. If you have any question please give me a call at  <br>
 . please no block call. Thanks",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31477,7 +31108,7 @@ Will make deal if also interested in ELAC bookshelf speakers, which I&apos;m als
 
                   description: "Razer Deathstalker Wired Gaming Keyboard, Like New Condition. Locals Only. Cash.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31500,7 +31131,7 @@ Will make deal if also interested in ELAC bookshelf speakers, which I&apos;m als
 
                   description: "Hi selling my never used CD micro stero system.Why wait till Black Friday when I have a deal for you",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31526,7 +31157,7 @@ Will make deal if also interested in ELAC bookshelf speakers, which I&apos;m als
                   description: "GoldenEye 007 - $10<br>
 Sin and Punishment - $10",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31551,7 +31182,7 @@ Sin and Punishment - $10",
 
                   description: "Art + Sound Wireless Shower Speaker. Wireless, Am/Fm Radio, Led Light, Bluetooth, Built in Microphone. New in box. Never used. $40",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31576,7 +31207,7 @@ Sin and Punishment - $10",
                   description: "I have used the TV  only for 10 days and I sell it because I move out the town. Please send me if you are really interested. Its like a new.<br>
 https://www.bestbuy.com/site/lg-49-class-led-uj6300-series-2160p-smart-4k-uhd-tv-with-hdr/5865001.p?skuId=5865001<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31613,7 +31244,7 @@ And Many more . <br>
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31639,7 +31270,7 @@ And Many more . <br>
 <br>
 Lots of other items for sale. Do a search for Craig Vacaville",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31670,7 +31301,7 @@ Keep your business safe!!!<br>
 Price is Firm <br>
 Call or text at (408) 7-zero-5-7-7-one-9",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31699,7 +31330,7 @@ Call or text at (408) 7-zero-5-7-7-one-9",
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31742,7 +31373,7 @@ Please call
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31767,7 +31398,7 @@ Please call
 
                   description: "Camera light pink color 10.1 mega pixels EX-Z29",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31800,7 +31431,7 @@ https://www.amazon.com/ELAC-Debut-Bookshelf-Speakers-Black/dp/B07B4Q5587<br>
 <br>
 Willing to make deal if also interested in amplifier (Pioneer VSX 522 K).",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31834,7 +31465,7 @@ Asking $150 for the whole package<br>
 <br>
 keywords: alarm laview lorex surveillance theft nightowl costco PoE IP",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31865,7 +31496,7 @@ keywords: alarm laview lorex surveillance theft nightowl costco PoE IP",
 Please call John at  
 . I am living at San Ramon.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31891,7 +31522,7 @@ Please call John at
 
                   description: "Used only once or twice, in excellent condition. Canon PIXMA Pro 9000 MARK II is a handy Inkjet Digital Photo Printer, with professional printing quality. The 16 ppm printing speed provided by this model makes it easy to complete any printing jobs with efficiency. It is capable to network with various devices through PictBridge, USB 2.0 connections. Color:Up to 4800 x 2400 dpi3Black:Up to 4800 x 2400 dpi3 . Compatible with Windows&#xAE;7, Windows Vista&#xAE;, Windows XP/2000 and Mac OS&#xAE; X v10.3.9 to v10.5.x7.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31919,7 +31550,7 @@ Please call John at
 
                   description: "Great Christmas gift",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31947,7 +31578,7 @@ Please call John at
 Phone number  
  Price is firm<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -31974,7 +31605,7 @@ Phone number
 $38-50 on amazon.<br>
 https://www.amazon.com/NETGEAR-Version-Wi-Fi-Extender-WN3000RP/dp/B004YAYM06/",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32002,7 +31633,7 @@ In original box and in very good condition. Makes for a great gift.<br>
 <br>
 keywords; golden hour and minute hands fully functional, precision-quartz mechanism",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32029,7 +31660,7 @@ keywords; golden hour and minute hands fully functional, precision-quartz mechan
  cell  
    YELP US GOOGLE US CRUTCHFIELD REFFERED<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32096,7 +31727,7 @@ Review: https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=w
 <br>
 Mirage: https://www.miragespeakers.com/surround-speakers/",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32128,7 +31759,7 @@ The styling and look is classic and the look will fit in most any house!<br>
 <br>
 The system is hooked up and ready for you to listen to.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32158,7 +31789,7 @@ The system is hooked up and ready for you to listen to.",
 
                   description: "For sale: New D-Link wireless G54 Router DI-524.  New, never used",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32187,7 +31818,7 @@ The system is hooked up and ready for you to listen to.",
 <br>
 received as gift but I already have boom.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32219,7 +31850,7 @@ Brand new in cover. Never used<br>
 <br>
 keywords: internet, U verse, comcast, Xfinity, Cat 6, wired,",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32244,7 +31875,7 @@ keywords: internet, U verse, comcast, Xfinity, Cat 6, wired,",
                   description: "See pictures for specific details<br>
 New unopened in package<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32277,7 +31908,7 @@ I will also sale $80 ea unit.<br>
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32337,7 +31968,7 @@ Additional features: aptX-HD wireless Bluetooth plus wired options, 4 external m
 <br>
 &quot;Nura&apos;s headphones are like a prescription for your ears.&quot; -WIRED",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32365,7 +31996,7 @@ Additional features: aptX-HD wireless Bluetooth plus wired options, 4 external m
                   description: "Up for sale my brand new Samsung gear S3 smart i got it for gift it still sealed in the box never open call or text at  <br>
  if interested cash only no shipping",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32419,7 +32050,7 @@ Full-size trimming head<br>
 Body hair shaver attachment<br>
 Charge stand",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32445,7 +32076,7 @@ Charge stand",
 <br>
 brand new, $120 price firm!!!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32469,7 +32100,7 @@ brand new, $120 price firm!!!",
 
                   description: "I have a brand new Lorex 4k 16 channel dvr, 3tb hd and 16 4k lorex cameras brand new sealed in box. Let me know if your interested. It comes with warranty. $970 firm.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32503,7 +32134,7 @@ Up to 30 cpm, reduces and enlarges 25 to 400%<br>
 2,400 x 4,800 dpi scan resolution, 48-bit color<br>
 USB, PictBridge, and 802.3 Ethernet connectivity; PC and Mac compatible",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32528,7 +32159,7 @@ USB, PictBridge, and 802.3 Ethernet connectivity; PC and Mac compatible",
 
                   description: "5.1 surround sound--includes DVD player with AM/FM, 2 front speakers, 2 rear speakers with stands, Center channel speaker, subwoofer, Remote, wires, manual.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32560,7 +32191,7 @@ USB, PictBridge, and 802.3 Ethernet connectivity; PC and Mac compatible",
 <br>
 They come with the original travel case which will protect them in your luggage or backpack.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32660,7 +32291,7 @@ Dimensions<br>
 Weight<br>
 26.01 lbs.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32707,7 +32338,7 @@ Power &amp; Networking<br>
 - Connects to your home WiFi network with any 802.11b/g, 2.4 GHz broadcast-capable router for uninterrupted wireless streaming.<br>
 - Two 10/100 Mbps Ethernet ports to connect to a wired home network.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32734,7 +32365,7 @@ Power &amp; Networking<br>
 
                   description: "A pair of Altec 361b amplifier and one extra bracket . They worked last time I used . Excellent condition",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32765,7 +32396,7 @@ Full box including iPad, Apple pencil, pencil charging connector, USB to lightni
 <br>
 Only direct dealing with cash at Stanford University CA.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32792,7 +32423,7 @@ Only direct dealing with cash at Stanford University CA.",
 
                   description: "Motorola DSL modem. In like NEW condition, only used for three weeks.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32820,7 +32451,7 @@ Only direct dealing with cash at Stanford University CA.",
    YELP US GOOGLE US CRUTCHFIELD REFFERED led lighs installed alarm service we install car audio bought eleswares <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32869,7 +32500,7 @@ Only direct dealing with cash at Stanford University CA.",
 <br>
 $50",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32901,7 +32532,7 @@ $50",
 new, never used<br>
 Asking $10 for all 3",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32934,7 +32565,7 @@ Gifted by a friend but never used it. <br>
 <br>
 Major III is the next chapter in the revolutionary history of Marshall. This modern go-to classic has been re-engineered for a cleaner more refined design, while the silhouette stays true to its original form.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32961,7 +32592,7 @@ Major III is the next chapter in the revolutionary history of Marshall. This mod
 Canon SD Memory Card<br>
 16GB<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -32991,7 +32622,7 @@ Stand $50. <br>
 <br>
 Great setup movies",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33018,7 +32649,7 @@ Great setup movies",
                   description: "Selling a Microsoft Sculpt Comfort Wireless Mouse for an asking price of $10. Has an accurate use from wide range of surface types. This mouse comes in its original package, brand new. Never opened. Currently has a price of $30 at the store. $10 seems a fair price. Send me a text at  <br>
  if you&apos;re interested. Thanks",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33053,7 +32684,7 @@ Answers questions, reads the news, reports traffic and weather, reads audiobooks
 Controls lights, fans, TVs, switches, thermostats, garage doors, sprinklers, locks, and more with compatible connected devices from WeMo, Philips Hue, Sony, Samsung SmartThings, Nest, and others<br>
 Always getting smarter and adding new features, plus thousands of skills like Uber, Domino&apos;s, DISH, and more",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33077,7 +32708,7 @@ Always getting smarter and adding new features, plus thousands of skills like Ub
 
                   description: "Like new Numark mixer, great starter for new DJ&apos;s just starting out or just having fun mixing music. Comes with a heavy duty ODYUSA case with shelf for laptap. Only used a few times, reason Im selling is I upgraded to all pro model equipment!!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33112,7 +32743,7 @@ Apple A10 Fusion SoC M10 Coprocessor with 64-Bit Architecture, 32GB Storage<br>
 Supports Apple Pencil (Sold separately, customize options available), Night Shift, Touch ID Sensor, Apple Pay, Lightning charging, Fingerprint reader<br>
 Apple iOS 11 OS, Up to 10 hours battery life, Color: Space Gray",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33140,7 +32771,7 @@ Each light uses 2 AA batteries.<br>
 <br>
 Item is in San Jose - 95121.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33168,7 +32799,7 @@ Item is in San Jose - 95121.<br>",
                   description: "See pictures for specific details<br>
 New unopened in package<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33216,7 +32847,7 @@ Number Of Gigabit LAN Ports : 4<br>
 <br>
 xr500 x6s ac2600 r7800 r7400 d-link motorola wi-fi wireless internet r7450 linksys asus ac68u ac66u tp-link ac3100 r6700<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33257,7 +32888,7 @@ $50 - https://www.amazon.com/Canon-SG-201-13X19-50-Semi-Gloss/dp/B0063BCHV0/<br>
 <br>
 Willing to meet up in San Francisco to verify the products and taking PayPal / Cash as payment.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33284,7 +32915,7 @@ Willing to meet up in San Francisco to verify the products and taking PayPal / C
                   description: "Looking to get a new camera system for your house? Catch thief&apos;s trying to steal your packages. I have the brand new Eufy Evercam for sale. Bought it on Kickstarter. It made over 3 million. These cameras are wireless and the battery is designed to last for 365 on a single charge. Here is the Kickstarter page for it. https://www.kickstarter.com/projects/1116368506/evercam-the-wirefree-security-cam-with-365-day-bat<br>
 Asking $750 includes base, 4 cameras, and 2 door senors. That&apos;s $50 cheaper than the Arlo 2.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33312,7 +32943,7 @@ Asking $750 includes base, 4 cameras, and 2 door senors. That&apos;s $50 cheaper
 <br>
 CHE95148",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33340,7 +32971,7 @@ CHE95148",
 brand new , sealed and unopened<br>
 NOTE: GPS only, does not include cellular feature",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33372,7 +33003,7 @@ Improved Safety &amp; Material: Amazing quality and protection with Deluxe UL94 
 <br>
 Discreet Battery Monitoring: Simply press the power button to activate 4 built-in and compact indicator lights for precise usage indication.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33404,7 +33035,7 @@ Please call John at
 . I am living at San Ramon. Cash only<br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33441,7 +33072,7 @@ Features:Water Resistant, Tripod Holder on side<br>
 I think it&apos;s the Anvil model:<br>
 Inspired by both the beautiful but potentially dangerous cloud formations and the tougher than nails tools used by blacksmiths since the beginnings of human history, the Tamrac Anvil carries all your photography gear to gritty and beautiful places on earth. Anvil was designed from the ground up utilizing over ten different optimized foams for the perfect balance of weight and protection. Anvil packs are tough, but light thanks to the engineered materials. They feature a large main compartment designed to carry multiple pro-sized DSLR bodies with lenses attached along with a full range of lenses, flashes and accessories.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33468,7 +33099,7 @@ $100 cash<br>
 <br>
 Text @  (4O8) 7I2-9493",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33496,7 +33127,7 @@ Text @  (4O8) 7I2-9493",
 
                   description: "GLASS TV STAND  3 ROWS   $ 30 E-MAIL FOR ANY QUESTIONS",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33521,7 +33152,7 @@ Text @  (4O8) 7I2-9493",
 
                   description: "For Sale 1 Generation 1 DJI Mavic Pro Drone with Accessories. Lightly used. See Pics. This item must be picked up at or near my home. Cash only.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33552,7 +33183,7 @@ I sell it for only $35.<br>
 Please call John at  
 . I am living at San Ramon.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33579,7 +33210,7 @@ Please call John at
 <br>
 https://www.hifiengine.com/manual_library/teac/x-1000r.shtml",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33620,7 +33251,7 @@ Eco-conscious choice -- has one or more meaningful eco-attributes or eco-labels.
 ENERGY STAR certified -- meets federal guidelines for energy efficiency <br>
 EPEAT Silver certified -- reduced environmental impact from multiple eco-attributes. Ranked in three tiers: Bronze, Silver or Gold.<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33655,7 +33286,7 @@ Infinite Black panel blocks ambient light and produces deep blacks and bright, v
 Inputs: 3 HDMI, 2 component, 2 composite, 1 Ethernet, 1 PC, 2 USB, 1 digital audio output<br>
 Includes removable stand; measures 48 x 31.9 x 13.2 inches with stand",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33684,7 +33315,7 @@ Includes removable stand; measures 48 x 31.9 x 13.2 inches with stand",
 Selling only because I bought a 1500 replacement.<br>
 Cash only.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33712,7 +33343,7 @@ Cash only.",
 <br>
 https://www.amazon.com/Cooler-Master-MasterKeys-Mechanical-Keyboard/dp/B01ITE93VA/ref=sr_1_5?s=electronics&amp;ie=UTF8&amp;qid=1540094527&amp;sr=1-5&amp;keywords=coolermaster+quickfire+tk",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33744,7 +33375,7 @@ https://www.amazon.com/gp/product/B001AVRD62/ref=oh_aui_search_detailpage?ie=UTF
 <br>
 https://www.amazon.com/gp/product/B001QNBUA4/ref=oh_aui_search_detailpage?ie=UTF8&amp;psc=1",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33769,7 +33400,7 @@ https://www.amazon.com/gp/product/B001QNBUA4/ref=oh_aui_search_detailpage?ie=UTF
 
                   description: "Retails for around $250. Selling for $120 works great! Used maybe 5 times. All original and spare parts and original packaging are included. Clean. Thanks.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33809,7 +33440,7 @@ Pick up will be in Pleasanton<br>
 <br>
 Text Samantha:",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33845,7 +33476,7 @@ i&apos;m (obviously) losing money on this deal so the price is FIRM. <br>
 <br>
 serious only. i&apos;m in SF",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33872,7 +33503,7 @@ serious only. i&apos;m in SF",
 
                   description: "limited amps in stock reg price $1299 on sale blow out price $595.00 usa made  5 loeft 30 day warranty j serices www.triaudiosound.com sales service installation compition bass up grad to apple play screens back up cameras we install car audio bought elesware led lighting alarms trouble shooting  yelp google crutchfield refered old school earthquake phd amps woofers in stock",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33929,7 +33560,7 @@ Touch Zoom Framing via Intuitive 2&quot; LCD<br>
 Face, Smile, and Scene Detection<br>
 Live Streaming, TimeWarp Video Voice Control, Raw Photos, and Much More",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -33956,7 +33587,7 @@ Live Streaming, TimeWarp Video Voice Control, Raw Photos, and Much More",
  cell  
    YELP US GOOGLE US CRUTCHFIELD REFFERED<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -34022,7 +33653,7 @@ image.alt.pdp-airport-security<br>
 Compatibility and security.<br>
 Any Wi-Fi device you have will work with AirPort Extreme. That&apos;s because it&apos;s compatible with devices using the 802.11a, 802.11b, 802.11g, 802.11n, and 802.11ac specifications. And since AirPort Extreme features a built-in firewall that protects your network from malicious Internet attacks, you can enjoy the web with peace of mind.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -34050,7 +33681,7 @@ Any Wi-Fi device you have will work with AirPort Extreme. That&apos;s because it
 
                   description: "Fore Sale:  Netgear D-Link 54mbps Wireless Cable Modem Gateway,    DCM-202",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -34079,7 +33710,7 @@ Any Wi-Fi device you have will work with AirPort Extreme. That&apos;s because it
  cell  
    YELP US GOOGLE US CRUTCHFIELD REFFERED<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -34134,7 +33765,7 @@ pretty much BRAND NEW serious only. <br>
 <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -34163,7 +33794,7 @@ Really great condition monitor on reason im selling is because I recently bought
 <br>
 It will come in the box of my new monitor it fits perfectly fine.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -34199,7 +33830,7 @@ Good condition. Works great. <br>
 Please call, text, or email anytime. <br>
 <br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -34243,7 +33874,7 @@ Band Color	Black/Pure Platinum<br>
 Band Material	Woven Nylon<br>
 Band Design	Sport Loop",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -34272,7 +33903,7 @@ My loss is your gain!<br>
 <br>
 Cheers",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -34298,7 +33929,7 @@ Cheers",
 Please call if interested <br>
 831-818-2 nine one five<br>",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -34328,7 +33959,7 @@ Used for only one week.<br>
 <br>
 Boost range up to 7,500 sq feet!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -34352,7 +33983,7 @@ Boost range up to 7,500 sq feet!",
 
                   description: "Nice pair of floor speakers. Cabinets are great. Couple of pushed in center cones in a mid and a tweeter. Grills are great, price is great, in Vacaville.",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
@@ -34387,7 +34018,7 @@ Description: Level Mount Desktop Mount with Full Motion Mount DCDSK30T - Mountin
 <br>
 SERIOUS BUYERS ONLY...PLEASE!!!",
 
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
+                  buy_it_now: [(1000..50000).to_a.sample, nil].sample,
 
                   category_id: category.id
 
