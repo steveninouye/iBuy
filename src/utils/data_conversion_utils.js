@@ -101,11 +101,12 @@ export const getPriceAndNumBids = (bids) => {
 };
 
 export const convertDate = (date) => {
+   // debugger;
    const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
    date = new Date(date);
    const now = new Date().getTime();
    const spread = date.getTime() - now;
-   
+
    const msInSec = 1000;
    const msInMin = msInSec * 60;
    const msInHour = msInMin * 60;
