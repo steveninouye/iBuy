@@ -51,7 +51,8 @@ User.destroy_all
 
 users = []
 
-users << User.create(username: 'FluffyKittensSF', password: 'password')
+user = User.create(username: 'FluffyKittensSF', password: 'password')
+users << user if user
 
 29.times do
    user = User.create(username: Faker::Pokemon.name, password: 'iamasecretpassword')
@@ -60,6 +61,7 @@ end
 
 ###################   PRODUCTS  #################################
 products = []
+
 
 
 category = Category.find_by_name("computers")
@@ -4629,7 +4631,8 @@ PLEASE SEE MY OTHER ITEMS FOR SALE",
                product.photos.attach(io: File.open("seed_data/images/6771373060-0.jpg"), filename: "6771373060-0.jpg") if product
                product.photos.attach(io: File.open("seed_data/images/6771373060-1.jpg"), filename: "6771373060-1.jpg") if product
                product.photos.attach(io: File.open("seed_data/images/6771373060-2.jpg"), filename: "6771373060-2.jpg")
-               category = Category.find_by_name("computers") if product
+               
+               category = Category.find_by_name("computers")
 unless(category)
 category = Category.create(name: "computers")
 end
@@ -9581,7 +9584,7 @@ Hardware Overview:<br>
                product.photos.attach(io: File.open("seed_data/images/6770263474-19.jpg"), filename: "6770263474-19.jpg") if product
                product.photos.attach(io: File.open("seed_data/images/6770263474-20.jpg"), filename: "6770263474-20.jpg") if product
                product.photos.attach(io: File.open("seed_data/images/6770263474-21.jpg"), filename: "6770263474-21.jpg")
-               category = Category.find_by_name("computers") if product
+               category = Category.find_by_name("computers")
 unless(category)
 category = Category.create(name: "computers")
 end
@@ -14687,7 +14690,7 @@ itmojo X240 X230 X250 X260 i5 i7 light ultraportable",
                product.photos.attach(io: File.open("seed_data/images/6767070202-5.jpg"), filename: "6767070202-5.jpg") if product
                product.photos.attach(io: File.open("seed_data/images/6767070202-6.jpg"), filename: "6767070202-6.jpg") if product
                product.photos.attach(io: File.open("seed_data/images/6767070202-7.jpg"), filename: "6767070202-7.jpg")
-               category = Category.find_by_name("jewelry") if product
+               category = Category.find_by_name("jewelry")
 unless(category)
 category = Category.create(name: "jewelry")
 end
@@ -18424,7 +18427,7 @@ I live at Marina Bay, just south of 580 between El Cerrito and Pt. Richmond.",
                product.photos.attach(io: File.open("seed_data/images/6759383944-2.jpg"), filename: "6759383944-2.jpg") if product
                product.photos.attach(io: File.open("seed_data/images/6759383944-3.jpg"), filename: "6759383944-3.jpg") if product
                product.photos.attach(io: File.open("seed_data/images/6759383944-4.jpg"), filename: "6759383944-4.jpg")
-               category = Category.find_by_name("jewelry") if product
+               category = Category.find_by_name("jewelry")
 unless(category)
 category = Category.create(name: "jewelry")
 end
@@ -22339,7 +22342,7 @@ Water resistant depth	30 Meters",
                product.photos.attach(io: File.open("seed_data/images/6773396154-1.jpg"), filename: "6773396154-1.jpg") if product
                product.photos.attach(io: File.open("seed_data/images/6773396154-2.jpg"), filename: "6773396154-2.jpg") if product
                product.photos.attach(io: File.open("seed_data/images/6773396154-3.jpg"), filename: "6773396154-3.jpg")
-               category = Category.find_by_name("jewelry") if product
+               category = Category.find_by_name("jewelry")
 unless(category)
 category = Category.create(name: "jewelry")
 end
@@ -26505,7 +26508,7 @@ GIFTING: Delights those who receive it as a present.",
                product.photos.attach(io: File.open("seed_data/images/6772859045-0.jpg"), filename: "6772859045-0.jpg") if product
                product.photos.attach(io: File.open("seed_data/images/6772859045-1.jpg"), filename: "6772859045-1.jpg") if product
                product.photos.attach(io: File.open("seed_data/images/6772859045-2.jpg"), filename: "6772859045-2.jpg")
-               category = Category.find_by_name("electronics") if product
+               category = Category.find_by_name("electronics")
 unless(category)
 category = Category.create(name: "electronics")
 end
@@ -30071,7 +30074,7 @@ Tuners and Dual Cassette Deck/Player.<br>
                
                product.photos.attach(io: File.open("seed_data/images/6763316136-0.jpg"), filename: "6763316136-0.jpg") if product
                product.photos.attach(io: File.open("seed_data/images/6763316136-1.jpg"), filename: "6763316136-1.jpg")
-               category = Category.find_by_name("electronics") if product
+               category = Category.find_by_name("electronics")
 unless(category)
 category = Category.create(name: "electronics")
 end

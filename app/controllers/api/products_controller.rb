@@ -3,6 +3,7 @@ class Api::ProductsController < ApplicationController
   # before_action :snakecase_params
 
   def index
+    
     query = params[:search][:query].gsub(";", " ")
     @products = Product.includes(:bids).with_attached_photos.where("title LIKE ?", "%#{query}%")
   end
