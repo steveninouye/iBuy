@@ -3,9 +3,8 @@ class Api::ProductsController < ApplicationController
   # before_action :snakecase_params
 
   def index
-    
     query = params[:search][:query].gsub(";", " ")
-    @products = Product.includes(:bids).with_attached_photos.where("title LIKE ?", "%#{query}%")
+    @products = Product.includes(:bids).with_attached_photos.where("LOWER(title) LIKE ?", "%#{query.downcase}%")
   end
 
   def show
