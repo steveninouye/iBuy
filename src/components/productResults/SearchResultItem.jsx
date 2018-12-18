@@ -22,7 +22,9 @@ const SearchResultItem = ({
       </>
    );
    let { currrentPrice, numBids } = getPriceAndNumBids(bids);
-   const imgSrc = photos[0] ? photos[0] : '/assets/no-image-search-item.jpg';
+   const imgSrc = photos[0]
+      ? photos[0]
+      : 'https://s3-us-west-1.amazonaws.com/ibuy-public/no-image-search-item.jpg';
    return (
       <div className="search-result-item">
          <Link to={`/item/${id}`} className="thumbnail">

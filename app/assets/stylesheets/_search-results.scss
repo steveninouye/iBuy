@@ -89,7 +89,7 @@ div#search-results-root {
                         height: 4rem;
                         width: 4rem;
                         background-size: contain;
-                        background-image: image-url('avatar.png');
+                        background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/avatar.png');
                      }
 
                      & div.dropdown-username-stars {
@@ -363,7 +363,7 @@ div#search-results-root {
                   display: inline-block;
                   margin-right: 0.5rem;
                   transform: translateY(0.1rem);
-                  background-image: image-url('left-chevron.png');
+                  background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/left-chevron.png');
                }
             }
          }
