@@ -372,6 +372,34 @@ div#search-results-root {
       & ul#search-results {
          padding: 0 1.5rem;
 
+         & li.no-results-sorry {
+            width: 100%;
+            height: 15rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            font-size: 3rem;
+         }
+
+         & li.no-results-found-message {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: flex-start;
+            font-size: 2rem;
+         }
+
+         & li.no-results-found-url {
+            padding-left: 0.8rem;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: flex-start;
+            font-size: 2rem;
+            text-shadow: -1px 1px #a8a8a8;
+         }
+
          & div.search-result-item {
             display: grid;
             grid-template:

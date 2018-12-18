@@ -1,3 +1,5 @@
+import React from 'react';
+
 const gradients = [
    [
       {
@@ -79,7 +81,46 @@ const gradients = [
    ]
 ];
 
-const randomGradient = () =>
+export const randomGradient = () =>
    gradients[Math.floor(Math.random() * gradients.length)];
 
-export default randomGradient;
+export const mapColors = (ltr, idx) => {
+   switch (idx % 4) {
+      case 0:
+         return (
+            <span
+               key={`${ltr}${idx}`}
+               style={{ color: '#e53238' }}
+            >
+               {ltr}
+            </span>
+         );
+      case 1:
+         return (
+            <span
+               key={`${ltr}${idx}`}
+               style={{ color: '#0164d2' }}
+            >
+               {ltr}
+            </span>
+         );
+      case 2:
+         return (
+            <span
+               key={`${ltr}${idx}`}
+               style={{ color: '#f5af04' }}
+            >
+               {ltr}
+            </span>
+         );
+      case 3:
+         return (
+            <span
+               key={`${ltr}${idx}`}
+               style={{ color: '#86b817' }}
+            >
+               {ltr}
+            </span>
+         );
+   }
+};

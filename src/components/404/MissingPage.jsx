@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Search from '../homepage/Search';
 import NavBarContainer from '../navbar/NavBarContainer';
-import randomGradient from '../../utils/404gradients_utils';
+import { randomGradient } from '../../utils/style_utils';
 
 class MissingPage extends React.Component {
    constructor(props) {

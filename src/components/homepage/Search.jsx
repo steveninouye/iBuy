@@ -16,6 +16,7 @@ class Search extends React.Component {
 
    handleSubmit(e) {
       e.preventDefault();
+      this.props.dispatchLoading();
       const query = {};
       const { searchInput, searchCategory } = this.state;
       if (searchInput) query.query = searchInput;

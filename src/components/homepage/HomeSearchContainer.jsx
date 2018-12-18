@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { searchProducts } from '../../actions/product_actions';
+import { dispatchLoading } from '../../actions/ui_actions';
 import Search from './Search';
 
 const mapStateToProps = (state, ownProps) => {
@@ -10,7 +10,9 @@ const mapStateToProps = (state, ownProps) => {
 };
 
 const mapDispatchToProps = (dispatch) => {
-   return {};
+   return {
+      dispatchLoading: () => dispatch(dispatchLoading)
+   };
 };
 
 export default withRouter(
