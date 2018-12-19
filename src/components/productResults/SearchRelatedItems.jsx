@@ -6,18 +6,18 @@ import { Link } from 'react-router-dom';
 
 const SearchRelatedItems = (props) => {
    const items = [
-      'Macbook Pro',
-      'Macbook Air',
+      'macbook pro',
+      'macbook air',
       'laptop',
-      'iPhone',
+      'iphone',
       'mobile phones',
-      'Macbook 12',
-      'iMac',
-      'iPad',
+      'macbook 12',
+      'imac',
+      'ipad',
       'iphone x',
-      'Macbook Pro 15',
-      'iPhone 7',
-      'Macbook 2017'
+      'macbook pro 15',
+      'iphone 7',
+      'macbook 2017'
    ];
    return (
       <div className="search-related-items">
