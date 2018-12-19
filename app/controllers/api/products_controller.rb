@@ -5,7 +5,7 @@ class Api::ProductsController < ApplicationController
 
   def index
     query = params[:search][:query].gsub(";", " ")
-    @products = Product.includes(:bids).with_attached_photos.where("LOWER(title) LIKE ?", "%#{query.downcase}%")
+    @products = Product.includes(:bids).with_attached_photos.where("LOWER(title) LIKE ?", "%#{query.downcase}%").limit(50)
   end
 
   def show
@@ -41,7 +41,7 @@ class Api::ProductsController < ApplicationController
   end
 
   def ensure_search_input
-    params[:search] ||= ""
+    params[:search] ||= {query: " "}
   end
 
   def snakecase_params

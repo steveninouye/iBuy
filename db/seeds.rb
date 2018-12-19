@@ -34031,20 +34031,16 @@
                
 #                product.photos.attach(io: File.open("seed_data/images/6769562104-0.jpg"), filename: "6769562104-0.jpg") if product
 
-# products.each do |product|
-#    (0..7).to_a.sample.times do
-#       Bid.create(product_id: product.id, user_id: users.sample.id, bid_amt: (0..10000).to_a.sample)
-#    end
-# end
-
-# products.each do |product|
-#    (0..7).to_a.sample.times do
-#       Watch.create(user_id: users.sample.id, product_id: product.id)
-#    end
-# end
 products = Product.all
 users = User.all
 user_ids = users.pluck(:id)
+
+products.each do |product|
+   (0..7).to_a.sample.times do
+      Bid.create(product_id: product.id, user_id: user_ids.sample, bid_amt: (0..10000).to_a.sample)
+   end
+end
+
 products.each do |product|
    (0..7).to_a.sample.times do
       Watch.create(user_id: user_ids.sample, product_id: product.id)
