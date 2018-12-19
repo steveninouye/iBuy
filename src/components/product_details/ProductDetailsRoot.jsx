@@ -5,11 +5,13 @@ import OwnerRoot from './owner_details/OwnerRoot';
 import DescriptionRoot from './description/DescriptionRoot';
 import NavBarContainer from '../navbar/NavBarContainer';
 import HomeSearchContainer from '../homepage/HomeSearchContainer';
+import ItemDetailsPageBreak from './description/ItemDetailsPageBreak';
 
 const ProductDetailsRoot = (props) => (
    <div id="product-details-root">
       <NavBarContainer />
       <HomeSearchContainer />
+      <ItemDetailsPageBreak />
       <ImageRoot />
       <PaymentRoot />
       <OwnerRoot />

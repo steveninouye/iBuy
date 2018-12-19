@@ -9,7 +9,7 @@ div#product-details-root {
 
    & > * {
       max-width: 150rem;
-      z-index: 2;
+      z-index: 1;
    }
 
    & #nav-bar {
@@ -313,6 +313,124 @@ div#product-details-root {
          margin: 0 0rem 0 0.4rem;
          font-size: 1.1rem;
          text-shadow: 0 1px 0 rgba(199, 199, 199, 0.2);
+      }
+   }
+
+   & div.product-details-page-break {
+      width: 100%;
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & div.left-page-break {
+         display: flex;
+         align-items: center;
+
+         & span#product-details-left-chevron {
+            cursor: pointer;
+            background-position: -4px -119px;
+            width: 24px;
+            height: 24px;
+            position: relative;
+            margin-right: 3px;
+            display: block;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-weight: normal;
+            font-size: 100%;
+            background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/sprds3_20.png');
+         }
+
+         & a.back-to-search-results {
+            color: #0654ba;
+            cursor: pointer;
+            padding: 0 1.2rem;
+            border-right: 1px solid grey;
+            font-size: 1.05rem;
+
+            &:hover {
+               text-decoration: underline;
+            }
+         }
+
+         & span.listed-in-category {
+            padding-left: 1.8rem;
+            height: 100%;
+            font-size: 1.05rem;
+
+            & a {
+               margin-left: 1.2rem;
+               cursor: pointer;
+               color: #0654ba;
+
+               &:hover {
+                  text-decoration: underline;
+               }
+            }
+         }
+      }
+
+      & div.right-page-break {
+         display: flex;
+         align-items: center;
+
+         & span[class$='-icon'] {
+            margin-left: 0.2rem;
+            margin-right: 0.2rem;
+         }
+
+         & span.mail-icon {
+            background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/sprds3_20.png');
+            background-position: -6px -417px;
+            font-size: 100%;
+            display: block;
+            width: 20px;
+            height: 20px;
+         }
+
+         & span.facebook-icon {
+            background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/sprds3_20.png');
+            background-position: -25px -439px;
+            width: 20px;
+            height: 20px;
+            font-size: 100%;
+            display: block;
+         }
+
+         & span.twitter-icon {
+            background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/sprds3_20.png');
+            width: 20px;
+            height: 20px;
+            background-position: -44px -439px;
+            font-size: 100%;
+            display: block;
+         }
+
+         & span.pintrest-icon {
+            background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/sprds3_20.png');
+            width: 20px;
+            height: 20px;
+            background-position: -83px -439px;
+            font-size: 100%;
+            display: block;
+         }
+
+         & a.right-page-break-add-to-watch-list {
+            display: block;
+            padding: 0 0 0 1.2rem;
+            font-size: 1.2rem;
+            margin-left: 1.2rem;
+            border-left: 1px solid rgb(46, 46, 46);
+            height: auto;
+            color: #0654ba;
+            cursor: pointer;
+
+            &:hover {
+               text-decoration: underline;
+            }
+         }
       }
    }
 }
