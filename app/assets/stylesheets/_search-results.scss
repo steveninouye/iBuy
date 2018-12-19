@@ -393,6 +393,8 @@ div#search-results-root {
          & li.no-results-found-url {
             padding-left: 0.8rem;
             display: flex;
+            flex-wrap: wrap;
+            max-width: 89rem;
             justify-content: center;
             text-align: center;
             align-items: flex-start;
