@@ -15,9 +15,11 @@ const mapDispatchToProps = (dispatch) => {
    };
 };
 
-export default withRouter(
+const HomeSearchContainer = withRouter(
    connect(
       mapStateToProps,
       mapDispatchToProps
    )(Search)
 );
+
+export default HomeSearchContainer;
