@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Search from '../homepage/Search';
+import HomeSearchContainer from '../homepage/HomeSearchContainer';
 import NavBarContainer from '../navbar/NavBarContainer';
 import { randomGradient } from '../../utils/style_utils';
 
@@ -20,7 +20,7 @@ class MissingPage extends React.Component {
          <div style={this.state.background[0]} id="page-not-found">
             <div className="page-not-found-header-background" />
             <NavBarContainer />
-            <Search />
+            <HomeSearchContainer />
             <div id="page-not-found--message">
                <div className="page-not-found--header">
                   {this.props.message}

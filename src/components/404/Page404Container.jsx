@@ -2,9 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import MissingPage from './MissingPage';
+import { dispatchLoading } from '../../actions/ui_actions';
 
 const mapStateToProps = (state, ownProps) => {
-   console.log(ownProps);
    return {
       message: (
          <>
@@ -13,6 +13,12 @@ const mapStateToProps = (state, ownProps) => {
             Found
          </>
       )
+   };
+};
+
+const mapDispatchToProps = (dispatch) => {
+   return {
+      dispatchLoading: () => dispatch(dispatchLoading)
    };
 };
 
