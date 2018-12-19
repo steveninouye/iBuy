@@ -439,28 +439,81 @@ div#product-details-root {
       height: auto;
       display: flex;
       flex-wrap: wrap;
-
-      // 1455 35%
-      // 515
-      // 640
-      // 311
-
-      & * {
-         border: 1px solid rgb(177, 177, 177);
-      }
+      justify-content: space-around;
+      margin-top: 3.5rem;
 
       & div.item-details-image-root {
          height: 67.5rem;
-         flex-grow: 1;
+         min-width: 50rem;
+
+         & div.main-image {
+            width: 100%;
+            height: 50rem;
+            background-color: white;
+            box-shadow: -0.35rem 0.35rem 1.5rem 0.3rem rgb(161, 161, 161);
+            border: 1xp solid #ccc;
+            border-radius: 0.3rem;
+            margin-bottom: 3rem;
+            background-image: url('https://images.unsplash.com/photo-1521412644187-c49fa049e84d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+         }
+
+         & div.image-selector-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            & a[class$='-chevron'] {
+               display: inline-block;
+               background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/sprds3_20.png');
+               width: 8px;
+               height: 12px;
+            }
+            & a.image-left-chevron {
+               background-position: -289px -54px;
+            }
+
+            & a.image-right-chevron {
+               background-position: -267px -54px;
+            }
+
+            & > div {
+               width: 7.4rem;
+               height: 7.4rem;
+               background-color: white;
+               background-size: contain;
+               background-repeat: no-repeat;
+               background-position: center;
+               box-shadow: -0.1rem 0.1rem 0.4rem 0.1rem rgb(161, 161, 161);
+               background-image: url('https://images.unsplash.com/photo-1521412644187-c49fa049e84d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+            }
+         }
       }
 
       & div.item-details-right-container {
          display: flex;
          flex-wrap: wrap;
-         flex-grow: 2;
+         flex-grow: 1;
+         min-width: 69rem;
 
          & div.item-details-payment-root {
             height: 67.5rem;
+
+            & div.item-details-title {
+            }
+
+            & div.item-details-views-per-hour {
+               font-weight: bold;
+               color: #dd1e31;
+               font-size: 1.3rem;
+
+               & img {
+                  width: 11px;
+                  height: 12px;
+               }
+            }
          }
 
          & div.item-details-owner-root {
