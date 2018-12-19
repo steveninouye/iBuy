@@ -16,12 +16,6 @@ const mapStateToProps = (state, ownProps) => {
    };
 };
 
-const mapDispatchToProps = (dispatch) => {
-   return {
-      dispatchLoading: () => dispatch(dispatchLoading)
-   };
-};
-
 const Page404Container = withRouter(connect(mapStateToProps)(MissingPage));
 
 export default Page404Container;
