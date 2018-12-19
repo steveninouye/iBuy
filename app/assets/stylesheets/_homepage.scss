@@ -393,6 +393,7 @@ div.home--footer {
    height: 3rem;
    width: 100vw;
    bottom: 0;
+   z-index: 10;
    border-top: 1px solid rgb(185, 185, 185);
    display: grid;
    grid-template-columns: minmax(5rem, 15rem) 1fr minmax(5rem, 15rem);
@@ -418,7 +419,6 @@ div.home--footer {
    }
 
    & div.linkedin-github-icons {
-      // border: 1px solid black;
       color: black;
       padding: 0;
       display: flex;

@@ -12,9 +12,13 @@ const ProductDetailsRoot = (props) => (
       <NavBarContainer />
       <HomeSearchContainer />
       <ItemDetailsPageBreak />
-      <ImageRoot />
-      <PaymentRoot />
-      <OwnerRoot />
+      <div className="item-details-container">
+         <ImageRoot />
+         <div className="item-details-right-container">
+            <PaymentRoot />
+            <OwnerRoot />
+         </div>
+      </div>
       <DescriptionRoot />
    </div>
 );
