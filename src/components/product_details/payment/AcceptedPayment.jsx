@@ -17,7 +17,7 @@ const AcceptedPayment = (props) => (
       </div>
       <div className="delivery-tag">Delivery:</div>
       <div className="delivery-details">
-         Estimated on or before Fri. Dec. 28 to 94111{' '}
+         Estimated on or before Fri. Dec. 28 to 94111
          <span className="question-icon" />
       </div>
       <div className="payments-tag">Payments:</div>

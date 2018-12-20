@@ -27,7 +27,7 @@ class PaymentForm extends React.Component {
                   Starting bid:
                </label>
                <div className="top-middle-form-section">
-                  <label for="bid-input" className="starting-bid-price">
+                  <label htmlFor="bid-input" className="starting-bid-price">
                      US $385.00
                   </label>
                   <input
