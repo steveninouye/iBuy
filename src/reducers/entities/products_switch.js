@@ -11,7 +11,9 @@ const ProductsSwitch = (state = tempProducts, action) => {
          console.log('CHANGE YOUR PRODUCT SWITCH REDUCER LINE 11, 7, & 5');
          return action.products ? action.products : {};
       case RECEIVE_PRODUCT:
-         return action.product;
+         return Object.assign({}, state, {
+            [action.product.id]: action.product
+         });
       default:
          return state;
    }

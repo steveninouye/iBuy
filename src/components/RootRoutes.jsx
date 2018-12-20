@@ -17,7 +17,7 @@ const RootRoutes = () => {
       <>
          <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/item/:id" component={ProductDetailsRoot} />
+            <Route path="/item/:productId" component={ProductDetailsRoot} />
             <Route path="/search" component={ProductResults} />
             <Route exact path="/comingsoon" component={ComingSoonContainer} />
             <AuthRoute path="/register" component={SignUpFormContainer} />
