@@ -573,115 +573,247 @@ div#product-details-root {
             }
 
             & form {
+               border: 1px solid #ccc;
+               border-radius: 0.3rem 0.3rem 0 0;
                background-color: #e2e2e2;
-               height: 10rem;
+               height: auto;
+               display: flex;
+               flex-direction: column;
+               padding: 1.7rem 0 0 0;
 
-               & label {
-                  width: 100%;
+               & div.top-form-section {
+                  display: flex;
+                  height: 10.5rem;
 
-                  & span.starting-bid-tag {
+                  & > * {
+                     flex-grow: 1;
                   }
 
-                  & span.starting-bid-price {
+                  & label.starting-bid-tag {
+                     max-width: 14rem;
+                     color: #575757;
+                     font-size: small;
+                     text-align: right;
+                     width: 21%;
+                     padding-right: 13px;
+                     font-weight: normal;
+                     word-wrap: break-word;
+                     margin-top: 0.3rem;
                   }
 
-                  & input[type='text'] {
+                  & div.top-middle-form-section {
+                     display: flex;
+                     flex-direction: column;
+                     max-width: 18rem;
+
+                     & label.starting-bid-price {
+                        color: #000;
+                        font-weight: 700;
+                        font: bold medium Trebuchet, 'Trebuchet MS';
+                     }
+
+                     & input[type='text'] {
+                        margin-top: 1.2rem;
+                        width: 11.5rem;
+                        background-color: white;
+                        border: 1px solid #999;
+                        padding: 3px;
+                        font-size: 18px;
+                        vertical-align: middle;
+                        letter-spacing: normal;
+                        word-spacing: normal;
+                        text-transform: none;
+                        text-indent: 0px;
+                        text-shadow: none;
+                        display: inline-block;
+                        text-align: start;
+                     }
+
+                     & div.min-bid-price {
+                        margin-top: 0.6rem;
+                        color: rgb(51, 51, 51);
+                        font-family: Verdana;
+                     }
+                  }
+
+                  & div.top-right-form-section {
+                     display: flex;
+                     flex-direction: column;
+
+                     & div.form-num-bids {
+                        font-size: 1.3rem;
+
+                        & span.form-num-bids {
+                           color: #0654ba;
+
+                           &:hover {
+                              text-decoration: underline;
+                           }
+                        }
+                     }
+
+                     & input[type='submit'] {
+                        margin-top: 1.6rem;
+                        border-radius: 0.3rem;
+                        width: 137px;
+                        color: white;
+                        text-align: center;
+                        font-size: 1.6rem;
+                        padding: 0.5rem 0;
+                        border: 1px solid transparent;
+                        vertical-align: baseline;
+                        font-weight: 700;
+                        box-shadow: 0 3px 0 rgba(0, 0, 0, 0.04);
+                        background: #00509d;
+                        background: linear-gradient(
+                           linear,
+                           left top,
+                           left bottom,
+                           from(#0079bc),
+                           to(#00509d)
+                        );
+                        background: -webkit-gradient(
+                           linear,
+                           left top,
+                           left bottom,
+                           from(#0079bc),
+                           to(#00509d)
+                        );
+                     }
                   }
                }
 
-               & input[type='submit'] {
-                  border-radius: 0.3rem;
-                  width: 137px;
-                  color: white;
-                  text-align: center;
-                  font-size: 1.6rem;
-                  padding: 0.5rem 0;
-                  border: 1px solid transparent;
-                  vertical-align: baseline;
-                  font-weight: 700;
-                  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.04);
-                  background: #00509d;
-                  background: linear-gradient(
-                     linear,
-                     left top,
-                     left bottom,
-                     from(#0079bc),
-                     to(#00509d)
-                  );
-                  background: -webkit-gradient(
-                     linear,
-                     left top,
-                     left bottom,
-                     from(#0079bc),
-                     to(#00509d)
-                  );
-               }
-
-               div.price-hr-divider {
+               & div.price-hr-divider {
+                  margin: 1.5rem 0;
                   width: 100%;
                   height: 0;
                   border-bottom: 1px solid #fff;
                   border-top: 1px solid #ccc;
                }
-            }
 
-            & button.buy-it-now-btn {
-               border-radius: 0.3rem;
-               text-align: center;
-               color: white;
-               vertical-align: baseline;
-               width: 137px;
-               font-size: 1.6rem;
-               border: 1px solid transparent;
-               box-shadow: 0 3px 0 rgba(0, 0, 0, 0.04);
-               font-weight: 700;
-               padding: 0.5rem 0;
-               background: #00509d;
-               background: linear-gradient(
-                  linear,
-                  left top,
-                  left bottom,
-                  from(#0079bc),
-                  to(#00509d)
-               );
-               background: -webkit-gradient(
-                  linear,
-                  left top,
-                  left bottom,
-                  from(#0079bc),
-                  to(#00509d)
-               );
-            }
+               & div.bottom-form-section {
+                  height: 12.5rem;
+                  display: flex;
 
-            & button.add-to-cart-btn {
-               border-radius: 0.3rem;
-               color: white;
-               padding: 0.5rem 0;
-               border: 1px solid transparent;
-               width: 137px;
-               font-size: 1.6rem;
-               text-align: center;
-               vertical-align: baseline;
-               font-weight: 700;
-               box-shadow: 0 3px 0 rgba(0, 0, 0, 0.04);
-               background: #45aad6;
-               background: linear-gradient(
-                  linear,
-                  left top,
-                  left bottom,
-                  from(#45aad6),
-                  to(#2386)
-               );
-               background: -webkit-gradient(
-                  linear,
-                  left top,
-                  left bottom,
-                  from(#45aad6),
-                  to(#2386c0)
-               );
-            }
+                  & > * {
+                     flex-grow: 1;
+                  }
 
-            & a.add-to-watch-list-btn {
+                  & div.left-bottom-buy-it-now {
+                     padding-top: 0.4rem;
+                     max-width: 14rem;
+                     text-align: right;
+                     padding-right: 2rem;
+                     font-size: small;
+                     text-align: right;
+                     color: #636363;
+                     width: 21%;
+                     font-weight: normal;
+                     word-wrap: break-word;
+                  }
+
+                  & div.middle-bottom-buy-it-now {
+                     color: #000;
+                     font: bold medium Trebuchet, 'Trebuchet MS';
+                     max-width: 18rem;
+                  }
+
+                  & div.right-bottom-buy-it-now {
+                     display: flex;
+                     flex-direction: column;
+
+                     & button.buy-it-now-btn {
+                        border-radius: 0.3rem;
+                        text-align: center;
+                        color: white;
+                        vertical-align: baseline;
+                        width: 13.7rem;
+                        font-size: 1.6rem;
+                        border: 0.1rem solid transparent;
+                        box-shadow: 0 0.3rem 0 rgba(0, 0, 0, 0.04);
+                        font-weight: 700;
+                        padding: 0.5rem 0;
+                        background: #00509d;
+                        background: linear-gradient(
+                           linear,
+                           left top,
+                           left bottom,
+                           from(#0079bc),
+                           to(#00509d)
+                        );
+                        background: -webkit-gradient(
+                           linear,
+                           left top,
+                           left bottom,
+                           from(#0079bc),
+                           to(#00509d)
+                        );
+                     }
+
+                     & button.add-to-cart-btn {
+                        margin-top: 1.2rem;
+                        border-radius: 0.3rem;
+                        color: white;
+                        padding: 0.5rem 0;
+                        border: 1px solid transparent;
+                        width: 137px;
+                        font-size: 1.6rem;
+                        text-align: center;
+                        vertical-align: baseline;
+                        font-weight: 700;
+                        box-shadow: 0 3px 0 rgba(0, 0, 0, 0.04);
+                        background: #2386c0;
+                        background: linear-gradient(
+                           linear,
+                           left top,
+                           left bottom,
+                           from(#45aad6),
+                           to(#2386c0)
+                        );
+                        background: -webkit-gradient(
+                           linear,
+                           left top,
+                           left bottom,
+                           from(#45aad6),
+                           to(#2386c0)
+                        );
+                     }
+
+                     & div.form-add-to-watch-btn {
+                        margin-top: 1.2rem;
+
+                        & a.add-to-watch-list-btn {
+                           display: inline-block;
+                           cursor: pointer;
+                           font-size: 100%;
+                           white-space: nowrap;
+                           margin-right: -0.4rem;
+                           background: url(https://s3-us-west-1.amazonaws.com/ibuy-public/btn-imgs.png)
+                              repeat-x scroll 0 1px;
+                           border-top: solid 1px #999;
+                           border-left: solid 1px #999;
+                           border-bottom: solid 1px #999;
+                           color: #666;
+                           text-decoration: none;
+                           height: 12px;
+                           padding: 1px 10px 3px 10px;
+                           line-height: 1.2em;
+                           height: 1.8rem;
+                        }
+
+                        & a.add-to-watch-list-carrot {
+                           display: inline-block;
+                           background: url(https://s3-us-west-1.amazonaws.com/ibuy-public/btn-imgs.png)
+                              no-repeat scroll 0 -101px;
+                           width: 17px;
+                           height: 18px;
+                           background-color: transparent;
+                           color: #666;
+                           vertical-align: top;
+                        }
+                     }
+                  }
+               }
             }
          }
 
