@@ -4,12 +4,21 @@ const AcceptedPayment = (props) => (
    <div className="accepted-payment-container">
       <div className="shipping-tag">Shipping:</div>
       <div className="shipping-details">
-         $12.50 Expedited Shipping
-         <span className="shipping-see-details">See details</span>
+         <div className="shipping-details-header">
+            $12.50 Expedited Shipping
+            <span className="shipping-see-details">See details</span>
+         </div>
+         <div className="shipping-details-item-location">
+            Item loaction: North Hollywood, California, United States
+         </div>
+         <div className="shipping-details-ships-to">
+            Ships to: United States
+         </div>
       </div>
       <div className="delivery-tag">Delivery:</div>
       <div className="delivery-details">
-         Estimated on or before Fri. Dec. 28 to 94111
+         Estimated on or before Fri. Dec. 28 to 94111{' '}
+         <span className="question-icon" />
       </div>
       <div className="payments-tag">Payments:</div>
       <div className="payments-details">

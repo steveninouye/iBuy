@@ -894,8 +894,29 @@ div#product-details-root {
                }
 
                & div.shipping-details {
+                  display: flex;
+                  flex-direction: column;
                   font-size: 1.3rem;
-                  & span.shipping-see-details {
+                  & div.shipping-details-header {
+                     display: flex;
+                     align-items: center;
+                     & span.shipping-see-details {
+                        border-left: 1px solid rgb(122, 122, 122);
+                        padding-left: 0.5rem;
+                        margin-left: 0.5rem;
+                        text-decoration: underline;
+                        font-size: 1.1rem;
+                     }
+                  }
+
+                  & div.shipping-details-item-location {
+                     font-size: 1rem;
+                     margin-top: 0.3rem;
+                  }
+
+                  & div.shipping-details-ships-to {
+                     font-size: 1rem;
+                     margin-top: 0.3rem;
                   }
                }
 
@@ -906,6 +927,17 @@ div#product-details-root {
                   border-top: 1px dashed #448600;
                   border-bottom: 1px dashed #448600;
                   font-size: 1.3rem;
+                  
+                  & span.question-icon {
+                     display: inline-block;
+                     background: url('https://s3-us-west-1.amazonaws.com/ibuy-public/sprds3_20.png')
+                        repeat scroll -215px -409px transparent;
+                     position: relative;
+                     top: 2px;
+                     cursor: pointer;
+                     width: 5px;
+                     height: 5px;
+                  }
                }
 
                & div.payments-tag {
@@ -956,13 +988,35 @@ div#product-details-root {
                         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/logoPaypalCredit.png');
                      }
                   }
+
+                  & div.paypal-credit-disclaimer {
+                     margin-top: 0.1rem;
+                     font-size: 1.1rem;
+
+                     & a.paypal-credit-disclaimer-link {
+                        margin-left: 0.7rem;
+                        cursor: pointer;
+                        text-decoration: underline;
+                     }
+                  }
                }
 
                & div.returns-tag {
                }
 
                & div.returns-details {
+                  display: flex;
+                  align-items: center;
                   font-size: 1.3rem;
+
+                  & a.returns-details-link {
+                     margin-left: 0.7rem;
+                     padding-left: 0.7rem;
+                     cursor: pointer;
+                     font-size: 1.1rem;
+                     text-decoration: underline;
+                     border-left: 1px solid rgb(122, 122, 122);
+                  }
                }
             }
          }
