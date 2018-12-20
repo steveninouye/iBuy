@@ -518,29 +518,43 @@ div#product-details-root {
                   display: block;
                }
 
-               & div.item-details-views-per-hour {
-                  font-weight: bold;
-                  color: #dd1e31;
-                  font-size: 1.3rem;
+               & div.item-details-subheading {
+                  display: flex;
+                  align-items: center;
 
-                  & img {
-                     width: 11px;
-                     height: 12px;
+                  & div.item-details-views-per-hour {
+                     margin: 1rem 0;
+                     font-weight: bold;
+                     color: #dd1e31;
+                     font-size: 1.3rem;
+
+                     & img {
+                        width: 11px;
+                        height: 12px;
+                        margin-right: 0.6rem;
+                     }
                   }
-               }
 
-               & div.item-details-star-rating {
-                  height: 15px;
-                  color: #f18e0c;
-               }
+                  & div.item-details-star-rating {
+                     height: 15px;
+                     font-size: 1.4rem;
+                     color: #f18e0c;
+                     margin: 0 1.1rem 0 1.2rem;
 
-               & a.item-details-num-product-ratings {
-                  font-size: 1.2rem;
-                  color: #0654ba;
-                  cursor: pointer;
+                     & i {
+                        margin: 0 0.1rem 0 0;
+                     }
+                  }
 
-                  &:hover {
-                     text-decoration: underline;
+                  & a.item-details-num-product-ratings {
+                     font-size: 1.2rem;
+                     color: #0654ba;
+                     cursor: pointer;
+                     padding-top: 0.1rem;
+
+                     &:hover {
+                        text-decoration: underline;
+                     }
                   }
                }
             }
@@ -640,7 +654,7 @@ div#product-details-root {
                      & label.starting-bid-price {
                         color: #000;
                         font-weight: 700;
-                        font: bold medium Trebuchet, 'Trebuchet MS';
+                        font: bold medium Trebuchet, 'Helvetica neue';
                      }
 
                      & input[type='text'] {
@@ -745,7 +759,7 @@ div#product-details-root {
 
                   & div.middle-bottom-buy-it-now {
                      color: #000;
-                     font: bold medium Trebuchet, 'Trebuchet MS';
+                     font: bold medium Trebuchet, 'Helvetica neue';
                      max-width: 18rem;
                   }
 
@@ -855,6 +869,100 @@ div#product-details-root {
                   justify-content: center;
                   font-size: 1.4rem;
                   color: #333;
+               }
+            }
+
+            & div.accepted-payment-container {
+               padding-top: 2.5rem;
+               display: grid;
+               grid-template-columns: minmax(auto, 13rem) 1fr;
+               grid-column-gap: 1.6rem;
+               color: #333;
+
+               & > * {
+                  padding: 0.5rem 0;
+               }
+
+               & div[class$='-tag'] {
+                  justify-self: end;
+                  font-size: small;
+                  color: #636363;
+                  font-weight: normal;
+               }
+
+               & div.shipping-tag {
+               }
+
+               & div.shipping-details {
+                  font-size: 1.3rem;
+                  & span.shipping-see-details {
+                  }
+               }
+
+               & div.delivery-tag {
+               }
+
+               & div.delivery-details {
+                  border-top: 1px dashed #448600;
+                  border-bottom: 1px dashed #448600;
+                  font-size: 1.3rem;
+               }
+
+               & div.payments-tag {
+               }
+
+               & div.payments-details {
+                  display: flex;
+                  flex-direction: column;
+                  padding: 0.6rem 0;
+
+                  & div.top-icons {
+                     & div[class$='payment-icon'] {
+                        background-repeat: no-repeat;
+                        display: inline-block;
+                        width: 4.1rem;
+                        height: 2.6rem;
+                        margin-right: 0.4rem;
+                        background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/credit-cards-icons.png');
+                     }
+
+                     & div.paypal-payment-icon {
+                        background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/paypal-icon.png');
+                     }
+
+                     & div.visa-payment-icon {
+                     }
+
+                     & div.mastercard-payment-icon {
+                        background-position: -4.2rem 0;
+                     }
+
+                     & div.amex-payment-icon {
+                        background-position: -8.4rem 0;
+                     }
+
+                     & div.discover-payment-icon {
+                        background-position: -12.6rem 0;
+                     }
+                  }
+
+                  & div.bottom-icons {
+                     margin-top: 1.5rem;
+                     & div.paypal-credit-icon {
+                        display: inline-block;
+                        background-repeat: no-repeat;
+                        width: 10.4rem;
+                        height: 1.6rem;
+                        background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/logoPaypalCredit.png');
+                     }
+                  }
+               }
+
+               & div.returns-tag {
+               }
+
+               & div.returns-details {
+                  font-size: 1.3rem;
                }
             }
          }
