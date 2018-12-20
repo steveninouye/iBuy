@@ -58,6 +58,7 @@ class PaymentForm extends React.Component {
                   </div>
                </div>
             </div>
+            <div className="shipping-information">Ships from United States</div>
          </form>
       );
    }

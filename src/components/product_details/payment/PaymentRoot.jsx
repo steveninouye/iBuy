@@ -30,8 +30,10 @@ const PaymentRoot = (props) => (
          </div>
          <div className="item-condition-time-footer">
             <span className="time-left">Time left:</span>
-            <span className="time-left-value">14h 57m 26s</span>
-            <span className="date-time-ending">Thursday, 2:44AM</span>
+            <span className="time-left-value">
+               14h 57m 26s
+               <span className="date-time-ending">Thursday, 2:44AM</span>
+            </span>
          </div>
       </div>
       <br />

@@ -546,40 +546,71 @@ div#product-details-root {
             }
 
             & div.item-condition-time {
+               font-size: 1.3rem;
                width: 100%;
                display: flex;
                flex-direction: column;
 
                & div.item-condition-time-header {
+                  margin-top: 1.3rem;
+                  display: flex;
                   width: 100%;
+
+                  & > * {
+                     flex-grow: 1;
+                  }
+
                   & span.condition {
+                     max-width: 14rem;
+                     text-align: right;
+                     padding-right: 1.3rem;
                   }
 
                   & span.condition-value {
+                     color: #333;
+                     font-weight: bold;
+                     font-size: small;
+                     display: block;
                   }
                }
 
-               & div.item-conditon-time-footer {
+               & div.item-condition-time-footer {
+                  display: flex;
                   width: 100%;
+                  margin: 1.3rem 0 1rem 0;
+
+                  & > * {
+                     flex-grow: 1;
+                  }
+
                   & span.time-left {
+                     max-width: 14rem;
+                     text-align: right;
+                     padding-right: 1.3rem;
                   }
 
                   & span.time-left-value {
-                  }
+                     color: #333;
+                     font-size: small;
+                     display: block;
 
-                  & span.date-time-ending {
+                     & span.date-time-ending {
+                        font-size: 1rem;
+                        margin-left: 0.4rem;
+                     }
                   }
                }
             }
 
             & form {
                border: 1px solid #ccc;
-               border-radius: 0.3rem 0.3rem 0 0;
+               border-radius: 0.3rem;
                background-color: #e2e2e2;
                height: auto;
                display: flex;
                flex-direction: column;
                padding: 1.7rem 0 0 0;
+               box-shadow: 4px 4px 1px #eee;
 
                & div.top-form-section {
                   display: flex;
@@ -595,7 +626,7 @@ div#product-details-root {
                      font-size: small;
                      text-align: right;
                      width: 21%;
-                     padding-right: 13px;
+                     padding-right: 1.3rem;
                      font-weight: normal;
                      word-wrap: break-word;
                      margin-top: 0.3rem;
@@ -813,6 +844,17 @@ div#product-details-root {
                         }
                      }
                   }
+               }
+
+               & div.shipping-information {
+                  border-top: 1px solid #ccc;
+                  background-color: #f6f6f6;
+                  height: 4.8rem;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 1.4rem;
+                  color: #333;
                }
             }
          }
