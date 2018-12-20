@@ -23,7 +23,7 @@ class PaymentForm extends React.Component {
       return (
          <form onSubmit={this.handleSubmit}>
             <div className="top-form-section">
-               <label for="bid-input" className="starting-bid-tag">
+               <label htmlFor="bid-input" className="starting-bid-tag">
                   Starting bid:
                </label>
                <div className="top-middle-form-section">

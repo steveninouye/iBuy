@@ -3,9 +3,9 @@ import React from 'react';
 const SellerInformation = (props) => (
    <div className="seller-info-container">
       <div className="seller-info-header">Seller information</div>
-      <div className="seller-username">
-         itexpress-ca (<span className="num-rating">23</span>{' '}
-         <span className="star-icon" /> )
+      <div className="seller-username-rating">
+         <span className="username">itexpress-ca</span>(
+         <span className="num-rating">23</span> <span className="star-icon" />)
       </div>
       <div className="percent-positive-feedback">100% Positive feedback</div>
       <div className="save-this-seller">

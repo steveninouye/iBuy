@@ -1082,32 +1082,60 @@ div#product-details-root {
                width: 100%;
                background-color: white;
                border: 1px solid #ccc;
-               padding: 14px 21px 20px 16px;
+               padding: 0.9rem 0 1.1rem 1.1rem;
                border-radius: 0.3rem;
                margin: 2.5rem 0;
 
                & div.seller-info-header {
+                  font-size: 16px;
+                  font-weight: bold;
+                  color: #333;
                }
 
-               & div.seller-username {
+               & div.seller-username-rating {
+                  margin-top: 0.1rem;
+                  color: rgb(51, 51, 51);
+                  font-size: 1.3rem;
+
+                  & span.username {
+                     color: #0654ba;
+                     font-weight: bold;
+                     margin-right: 0.4rem;
+                  }
+
                   & span.num-rating {
+                     color: #0654ba;
                   }
 
                   & span.star-icon {
                      width: 14px;
                      height: 14px;
                      display: inline-block;
+                     left: 0.2rem;
                      position: relative;
-                     margin-top: -5px;
+                     margin-top: -0.5rem;
                      background-position: -150px -436px;
                      background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/sprds3_20.png');
                   }
                }
 
                & div.percent-positive-feedback {
+                  font-size: 1.2rem;
+                  width: 94%;
+                  padding: 0.5rem 0;
+                  margin-bottom: 0.5rem;
+                  border-bottom: 0.2rem dotted #999;
                }
 
                & div.save-this-seller {
+                  font-size: 1.3rem;
+                  cursor: pointer;
+                  color: #0654ba;
+
+                  &:hover {
+                     text-decoration: underline;
+                  }
+
                   & span.heart-icon {
                      background-image: linear-gradient(transparent, transparent),
                         url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjwhLS1JY29ucyBmcm9tIGRpcmVjdG9yeSAiIi0tPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMTYgMzIiPjxzdmcgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIGlkPSJ3ZWJfSGVhcnRBc3NldC0wMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTYgMTYiIHhtbDpzcGFjZT0icHJlc2VydmUiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2IiB2ZXJzaW9uPSIxLjEiIHk9IjAiIHg9IjBweCI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4JLnN0MHtmaWxsOiMwNjU0QkE7fTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0ibTExLjggMC45Yy0xLjYgMC0zIDEuMS0zLjggMS45LTAuOC0wLjctMi4yLTEuOS0zLjgtMS45LTIuMi0wLjEtNC4yIDEuNy00LjIgNC4xIDAgMyAzIDUuNyA3LjEgOS41bDAuNiAwLjVzMC4yIDAuMSAwLjMgMC4xIDAuMy0wLjEgMC40LTAuMWwwLjYtMC41YzQtMy44IDctNi41IDctOS41IDAtMi40LTItNC4yLTQuMi00LjF6Ii8+PC9zdmc+PHN2ZyB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgaWQ9IndlYl9IZWFydEFzc2V0LTAyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxNiAxNiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTYiIHZlcnNpb249IjEuMSIgeT0iMTYiIHg9IjBweCI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4JLnN0MHtmaWxsOiMwNjU0QkE7fTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0ibTExLjggMC45Yy0xLjYgMC0zIDEuMS0zLjggMS45LTAuOC0wLjctMi4yLTEuOS0zLjgtMS45LTIuMi0wLjEtNC4yIDEuNy00LjIgNC4xIDAgMyAzIDUuNyA3LjEgOS41bDAuNiAwLjVzMC4yIDAuMSAwLjMgMC4xIDAuMy0wLjEgMC40LTAuMWwwLjYtMC41YzQtMy44IDctNi41IDctOS41IDAtMi40LTItNC4yLTQuMi00LjF6bS0zLjYgMTIuN2wtMC4yIDAuMS0wLjItMC4xYy0zLjktMy41LTYuNy02LjEtNi43LTguNiAwLTEuNyAxLjQtMyAzLTIuOSAxLjQgMCAyLjkgMS4zIDMuNCAyIDAuMiAwLjEgMC4zIDAuMiAwLjUgMC4yczAuMy0wLjEgMC41LTAuMmMwLjUtMC42IDItMiAzLjQtMiAxLjYtMC4xIDMgMS4yIDMgMi45IDAgMi41LTIuOCA1LjEtNi43IDguNnoiLz48L3N2Zz48L3N2Zz4K');
@@ -1124,9 +1152,22 @@ div#product-details-root {
                }
 
                & div.contact-seller {
+                  font-size: 1.3rem;
+                  cursor: pointer;
+                  color: #0654ba;
+                  margin: 0.5rem 0;
+                  &:hover {
+                     text-decoration: underline;
+                  }
                }
 
                & div.see-other-items {
+                  font-size: 1.3rem;
+                  cursor: pointer;
+                  color: #0654ba;
+                  &:hover {
+                     text-decoration: underline;
+                  }
                }
             }
 

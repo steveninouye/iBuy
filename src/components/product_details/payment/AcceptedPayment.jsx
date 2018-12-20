@@ -9,7 +9,7 @@ const AcceptedPayment = (props) => (
             <span className="shipping-see-details">See details</span>
          </div>
          <div className="shipping-details-item-location">
-            Item loaction: North Hollywood, California, United States
+            Item location: North Hollywood, California, United States
          </div>
          <div className="shipping-details-ships-to">
             Ships to: United States
