@@ -1025,6 +1025,119 @@ div#product-details-root {
          & div.item-details-owner-root {
             align-self: flex-start;
             height: auto;
+            width: 30rem;
+            margin-left: 2.5rem;
+
+            & div.shop-with-confidence-container {
+               width: 100%;
+               background-color: white;
+               border: 1px solid #ccc;
+               padding: 14px 21px 20px 16px;
+               border-radius: 0.3rem;
+               display: grid;
+               grid-template: auto auto auto / auto 1fr;
+               grid-column-gap: 1.6rem;
+
+               & div.shop-with-confidence-header {
+                  color: #333;
+                  font-size: 1.6rem;
+                  font-weight: bold;
+                  grid-column: 1 / span 2;
+               }
+
+               & div.shop-with-confidence-icon {
+                  display: inline-block;
+                  width: 2.1rem;
+                  height: 2.4rem;
+                  background-size: 4.4rem;
+                  background-position: -1.2rem -5.2rem;
+                  grid-row: 2 / span 2;
+                  align-self: center;
+                  margin-top: 1.2rem;
+                  background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/shield-icons.png');
+               }
+
+               & div.ebay-money-back-guarantee {
+                  font-size: 1.2rem;
+                  letter-spacing: -0.02rem;
+                  color: #333;
+                  margin: 1.6rem 0 0.4rem 0;
+               }
+
+               & div.guarantee-details {
+                  color: #767676;
+                  letter-spacing: -0.02rem;
+                  font-size: 1.2rem;
+
+                  & a.guarantee-learn-more {
+                     margin-left: 0.5rem;
+                     color: #0654ba;
+                     cursor: pointer;
+                     text-decoration: underline;
+                  }
+               }
+            }
+
+            & div.seller-info-container {
+               width: 100%;
+               background-color: white;
+               border: 1px solid #ccc;
+               padding: 14px 21px 20px 16px;
+               border-radius: 0.3rem;
+               margin: 2.5rem 0;
+
+               & div.seller-info-header {
+               }
+
+               & div.seller-username {
+                  & span.num-rating {
+                  }
+
+                  & span.star-icon {
+                     width: 14px;
+                     height: 14px;
+                     display: inline-block;
+                     position: relative;
+                     margin-top: -5px;
+                     background-position: -150px -436px;
+                     background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/sprds3_20.png');
+                  }
+               }
+
+               & div.percent-positive-feedback {
+               }
+
+               & div.save-this-seller {
+                  & span.heart-icon {
+                     background-image: linear-gradient(transparent, transparent),
+                        url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjwhLS1JY29ucyBmcm9tIGRpcmVjdG9yeSAiIi0tPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMTYgMzIiPjxzdmcgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIGlkPSJ3ZWJfSGVhcnRBc3NldC0wMSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTYgMTYiIHhtbDpzcGFjZT0icHJlc2VydmUiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgd2lkdGg9IjE2IiB2ZXJzaW9uPSIxLjEiIHk9IjAiIHg9IjBweCI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4JLnN0MHtmaWxsOiMwNjU0QkE7fTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0ibTExLjggMC45Yy0xLjYgMC0zIDEuMS0zLjggMS45LTAuOC0wLjctMi4yLTEuOS0zLjgtMS45LTIuMi0wLjEtNC4yIDEuNy00LjIgNC4xIDAgMyAzIDUuNyA3LjEgOS41bDAuNiAwLjVzMC4yIDAuMSAwLjMgMC4xIDAuMy0wLjEgMC40LTAuMWwwLjYtMC41YzQtMy44IDctNi41IDctOS41IDAtMi40LTItNC4yLTQuMi00LjF6Ii8+PC9zdmc+PHN2ZyB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgaWQ9IndlYl9IZWFydEFzc2V0LTAyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxNiAxNiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2IiB3aWR0aD0iMTYiIHZlcnNpb249IjEuMSIgeT0iMTYiIHg9IjBweCI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4JLnN0MHtmaWxsOiMwNjU0QkE7fTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0ibTExLjggMC45Yy0xLjYgMC0zIDEuMS0zLjggMS45LTAuOC0wLjctMi4yLTEuOS0zLjgtMS45LTIuMi0wLjEtNC4yIDEuNy00LjIgNC4xIDAgMyAzIDUuNyA3LjEgOS41bDAuNiAwLjVzMC4yIDAuMSAwLjMgMC4xIDAuMy0wLjEgMC40LTAuMWwwLjYtMC41YzQtMy44IDctNi41IDctOS41IDAtMi40LTItNC4yLTQuMi00LjF6bS0zLjYgMTIuN2wtMC4yIDAuMS0wLjItMC4xYy0zLjktMy41LTYuNy02LjEtNi43LTguNiAwLTEuNyAxLjQtMyAzLTIuOSAxLjQgMCAyLjkgMS4zIDMuNCAyIDAuMiAwLjEgMC4zIDAuMiAwLjUgMC4yczAuMy0wLjEgMC41LTAuMmMwLjUtMC42IDItMiAzLjQtMiAxLjYtMC4xIDMgMS4yIDMgMi45IDAgMi41LTIuOCA1LjEtNi43IDguNnoiLz48L3N2Zz48L3N2Zz4K');
+                     background-repeat: no-repeat;
+                     background-size: cover;
+                     background-position: 0 -16px;
+                     display: inline-block;
+                     width: 16px;
+                     height: 16px;
+                     position: relative;
+                     top: 3px;
+                     margin-right: 5px;
+                  }
+               }
+
+               & div.contact-seller {
+               }
+
+               & div.see-other-items {
+               }
+            }
+
+            & div.below-seller-info-ad {
+               display: inline-block;
+               height: 25rem;
+               width: 30rem;
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/aa-square-advertisement.png');
+            }
          }
       }
    }
