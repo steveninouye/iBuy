@@ -5,7 +5,7 @@ div#product-details-root {
    width: 100%;
    height: auto;
    background-color: #f6f6f6;
-   padding-bottom: 20rem;
+   padding-bottom: 10rem;
    position: relative;
 
    & > * {
@@ -1180,6 +1180,67 @@ div#product-details-root {
                background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/aa-square-advertisement.png');
             }
          }
+      }
+   }
+
+   & div.item-details-description-root {
+      margin: 7rem 0 0rem 0;
+
+      & ul.item-details-body-tabs {
+         display: flex;
+
+         & li.description-tag {
+            border-radius: 3px 3px 0 0;
+            padding: 8px 20px;
+            border: 1px solid #ddd;
+            position: relative;
+            border: 1px solid #ddd;
+            border-bottom-color: #fff;
+            background-color: #fff;
+            box-shadow: 4px -1px 0 #eee;
+            font-size: 1.3rem;
+            flex-grow: 0;
+            color: #0654ba;
+            font-weight: bold;
+         }
+
+         & li.shipping-payments-tag {
+            border-radius: 3px 3px 0 0;
+            padding: 8px 20px;
+            border: 1px solid #ddd;
+            flex-grow: 0;
+            color: #0654ba;
+            font-size: 1.3rem;
+            font-weight: bold;
+         }
+
+         & li.spacer {
+            flex-grow: 1;
+         }
+
+         & li.report-item {
+            flex-grow: 0;
+            color: #0654ba;
+            cursor: pointer;
+            font-size: 1.3rem;
+            padding: 0 2rem;
+
+            &:hover {
+               text-decoration: underline;
+            }
+         }
+      }
+
+      & div.description-body {
+         box-shadow: 4px 4px 1px #eee;
+         border-radius: 0 0 3px 3px;
+         padding: 5rem;
+         font-size: 1.8rem;
+         background-color: white;
+         border-right: 1px solid #ddd;
+         border-left: 1px solid #ddd;
+         border-bottom: 1px solid #ddd;
+         line-height: 1.4;
       }
    }
 }
