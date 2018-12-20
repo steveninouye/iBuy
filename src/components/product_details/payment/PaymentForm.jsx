@@ -43,7 +43,7 @@ class PaymentForm extends React.Component {
                      onChange={this.handleChange('bid')}
                   />
                   <div className="min-bid-price">
-                     Enter US ${currentPrice + 1} or more
+                     Enter US ${1 + parseFloat(currentPrice)} or more
                   </div>
                </div>
                <div className="top-right-form-section">

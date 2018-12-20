@@ -10,10 +10,20 @@ import ItemDetailsPageBreak from './description/ItemDetailsPageBreak';
 class ProductDetailsRoot extends React.PureComponent {
    constructor(props) {
       super(props);
+      this.state = { productId: this.props.match.params.productId };
    }
 
    componentDidMount() {
-      this.props.getProduct(this.props.match.params.productId);
+      this.props.getProduct(this.state.productId);
+   }
+
+   componentDidUpdate() {
+      let { productId } = this.props.match.params;
+      if (productId !== this.state.productId) {
+         this.setState({ productId }, () => {
+            this.props.getProduct(this.props.match.params.productId);
+         });
+      }
    }
 
    render() {
@@ -23,6 +33,7 @@ class ProductDetailsRoot extends React.PureComponent {
       } else {
          let { product } = this.props;
          let { photos, owner, category, description } = product;
+         console.log('photos: ', photos);
          return (
             <div id="product-details-root">
                <NavBarContainer />
