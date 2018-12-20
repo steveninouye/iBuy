@@ -1,10 +1,10 @@
 import React from 'react';
 
-const SellerInformation = (props) => (
+const SellerInformation = ({ owner }) => (
    <div className="seller-info-container">
       <div className="seller-info-header">Seller information</div>
       <div className="seller-username-rating">
-         <span className="username">itexpress-ca</span>(
+         <span className="username">{owner}</span>(
          <span className="num-rating">23</span> <span className="star-icon" />)
       </div>
       <div className="percent-positive-feedback">100% Positive feedback</div>
