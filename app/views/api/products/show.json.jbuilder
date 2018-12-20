@@ -18,3 +18,9 @@ json.set! :bids do
     end
   end
 end
+
+json.set! :category do
+  json.set! @product.category.id do
+    json.extract! @product.category, :id, :name
+  end
+end

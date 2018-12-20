@@ -13,6 +13,6 @@ export const searchProducts = (searchInput) => (dispatch) =>
    );
 
 export const getProduct = (id) => (dispatch) =>
-   ProductAjaxUtils.getProduct(id).then(({ product, bids }) =>
-      dispatch({ type: RECEIVE_PRODUCT, product, bids, owner, user })
+   ProductAjaxUtils.getProduct(id).then(({ product, bids, user, category }) =>
+      dispatch({ type: RECEIVE_PRODUCT, product, bids, user, category })
    );

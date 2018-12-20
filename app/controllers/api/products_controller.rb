@@ -9,7 +9,7 @@ class Api::ProductsController < ApplicationController
   end
 
   def show
-    @product = Product.with_attached_photos.includes(:bids, :owner).find_by_id(params[:id])
+    @product = Product.with_attached_photos.includes(:bids, :owner, :category).find_by_id(params[:id])
     if @product
       render :show
     else

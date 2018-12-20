@@ -9,7 +9,7 @@ import ComingSoonContainer from './404/ComingSoonContainer';
 import HomeFooter from './homepage/HomeFooter';
 import Home from './homepage/Home';
 import ProductResults from './productResults/ProductResultsRoot';
-import ProductDetailsRoot from './product_details/ProductDetailsRoot';
+import ProductDetailsContainer from './product_details/ProductDetailsContainer';
 
 const RootRoutes = () => {
    const rightNav = <li />;
@@ -17,7 +17,10 @@ const RootRoutes = () => {
       <>
          <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/item/:productId" component={ProductDetailsRoot} />
+            <Route
+               path="/item/:productId"
+               component={ProductDetailsContainer}
+            />
             <Route path="/search" component={ProductResults} />
             <Route exact path="/comingsoon" component={ComingSoonContainer} />
             <AuthRoute path="/register" component={SignUpFormContainer} />

@@ -7,20 +7,38 @@ import NavBarContainer from '../navbar/NavBarContainer';
 import HomeSearchContainer from '../homepage/HomeSearchContainer';
 import ItemDetailsPageBreak from './description/ItemDetailsPageBreak';
 
-const ProductDetailsRoot = (props) => (
-   <div id="product-details-root">
-      <NavBarContainer />
-      <HomeSearchContainer />
-      <ItemDetailsPageBreak />
-      <div className="item-details-container">
-         <ImageRoot />
-         <div className="item-details-right-container">
-            <PaymentRoot />
-            <OwnerRoot />
-         </div>
-      </div>
-      <DescriptionRoot />
-   </div>
-);
+class ProductDetailsRoot extends React.PureComponent {
+   constructor(props) {
+      super(props);
+   }
+
+   componentDidMount() {
+      this.props.getProduct(this.props.match.params.productId);
+   }
+
+   render() {
+      let { product, numBids, owner } = this.props;
+      console.log(this.props);
+      if(!product) {
+         return(<h1>loading...</h1>)
+      }else {
+         return (
+            <div id="product-details-root">
+               <NavBarContainer />
+               <HomeSearchContainer />
+               <ItemDetailsPageBreak  />
+               <div className="item-details-container">
+                  <ImageRoot />
+                  <div className="item-details-right-container">
+                     <PaymentRoot />
+                     <OwnerRoot />
+                  </div>
+               </div>
+               <DescriptionRoot />
+            </div>
+         );
+      }
+   }
+}
 
 export default ProductDetailsRoot;
