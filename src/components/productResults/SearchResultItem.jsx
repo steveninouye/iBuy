@@ -21,7 +21,7 @@ const SearchResultItem = ({
          <div className="buy-it-now">Buy It Now</div>
       </>
    );
-   let { currrentPrice, numBids } = getPriceAndNumBids(bids);
+   let { currentPrice, numBids } = getPriceAndNumBids(bids);
    const imgSrc = photos[0]
       ? photos[0]
       : 'https://s3-us-west-1.amazonaws.com/ibuy-public/no-image-search-item.jpg';
@@ -47,7 +47,7 @@ const SearchResultItem = ({
             </span>
          </div>
          <div className="item-price">
-            <div className="current-price">${currrentPrice}</div>
+            <div className="current-price">${currentPrice}</div>
             <div className="item-num-bids">{numBids} bids</div>
             {buyItNow}
          </div>

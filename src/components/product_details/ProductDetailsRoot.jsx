@@ -17,24 +17,25 @@ class ProductDetailsRoot extends React.PureComponent {
    }
 
    render() {
-      let { product, numBids, owner } = this.props;
       console.log(this.props);
-      if (!product) {
+      if (!this.props.product) {
          return <h1>loading...</h1>;
       } else {
+         let { product } = this.props;
+         let { photos, owner, category, description } = product;
          return (
             <div id="product-details-root">
                <NavBarContainer />
                <HomeSearchContainer />
-               <ItemDetailsPageBreak category={product.category} />
+               <ItemDetailsPageBreak category={category} />
                <div className="item-details-container">
-                  <ImageRoot photos={product.photos} />
+                  <ImageRoot photos={photos} />
                   <div className="item-details-right-container">
-                     <PaymentRoot product={product} numBids={numBids} />
+                     <PaymentRoot product={product} />
                      <OwnerRoot owner={owner} />
                   </div>
                </div>
-               <DescriptionRoot description={product.description} />
+               <DescriptionRoot description={description} />
             </div>
          );
       }

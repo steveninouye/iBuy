@@ -15,17 +15,14 @@ const mapStateToProps = (state, ownProps) => {
       }
    } = ownProps;
    let product = products[productId];
-   let allBids, numBids, owner;
    if (product) {
       product.category = categories[product.categoryId].name;
-      allBids = Object.values(bids);
-      numBids = allBids.filter((bid) => bid.userId === product.userId).length;
-      owner = users[product.userId].username;
+      let allBids = Object.values(bids);
+      product.bids = allBids.filter((bid) => bid.productId === product.id);
+      product.owner = users[product.userId].username;
    }
    return {
-      product,
-      numBids,
-      owner
+      product
    };
 };
 

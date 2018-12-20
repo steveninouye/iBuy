@@ -1,5 +1,6 @@
 import React from 'react';
-import AcceptedPayment from './AcceptedPayment';
+
+import { getPriceAndNumBids } from '../../../utils/data_conversion_utils';
 
 class PaymentForm extends React.Component {
    constructor(props) {
@@ -20,6 +21,12 @@ class PaymentForm extends React.Component {
    }
 
    render() {
+      let { product } = this.props;
+      console.log(product.bids);
+      let { numBids, currentPrice } = getPriceAndNumBids(product.bids);
+      console.log('form cont');
+      console.log(this.props);
+      let bids = numBids === 1 ? `${numBids} bid` : `${numBids} bids`;
       return (
          <form onSubmit={this.handleSubmit}>
             <div className="top-form-section">
@@ -28,18 +35,20 @@ class PaymentForm extends React.Component {
                </label>
                <div className="top-middle-form-section">
                   <label htmlFor="bid-input" className="starting-bid-price">
-                     US $385.00
+                     US ${currentPrice}
                   </label>
                   <input
                      id="bid-input"
                      type="text"
                      onChange={this.handleChange('bid')}
                   />
-                  <div className="min-bid-price">Enter US $385.00 or more</div>
+                  <div className="min-bid-price">
+                     Enter US ${currentPrice + 1} or more
+                  </div>
                </div>
                <div className="top-right-form-section">
                   <div className="form-num-bids">
-                     [ <span className="form-num-bids">10 bids</span> ]
+                     [ <span className="form-num-bids">{bids}</span> ]
                   </div>
                   <input type="submit" value="Place bid" />
                </div>
