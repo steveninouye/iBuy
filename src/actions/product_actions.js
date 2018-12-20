@@ -14,5 +14,5 @@ export const searchProducts = (searchInput) => (dispatch) =>
 
 export const getProduct = (id) => (dispatch) =>
    ProductAjaxUtils.getProduct(id).then(({ product, bids }) =>
-      dispatch({ type: RECEIVE_PRODUCT, product, bids })
+      dispatch({ type: RECEIVE_PRODUCT, product, bids, owner, user })
    );

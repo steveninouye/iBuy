@@ -3,6 +3,7 @@ import {
    RECEIVE_USER,
    REMOVE_USER
 } from '../../actions/user_actions';
+import { RECEIVE_PRODUCT } from '../../actions/product_actions';
 import { LOGIN } from '../../actions/session_actions';
 
 const userSwitch = (state = {}, action) => {
@@ -11,6 +12,7 @@ const userSwitch = (state = {}, action) => {
          return action.users;
       case LOGIN:
       case RECEIVE_USER:
+      case RECEIVE_PRODUCT:
          return Object.assign({}, state, action.user);
       case REMOVE_USER:
          const dup = Object.assign({}, state);

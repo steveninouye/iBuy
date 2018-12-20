@@ -1,16 +1,24 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
+import { getProduct } from '../../actions/product_actions';
+
 import ProductDetailsRoot from './ProductDetailsRoot';
 
-const mapStateToProps = ({entities: {products}}, {match:{params:{productId}}}) => {
+const mapStateToProps = (state, ownProps) => {
+   let {entities: {users,bids,products}} = state;
+   let {match:{params:{productId}}} = ownProps;
+   let bids = Object.values(bids);
+   let owner = users[products];
    return {
       product: products[productId]
    };
 };
 
 const mapDispatchToProps = (dispatch) => {
-   return {};
+   return {
+      getProduct: (id) => dispatch(getProduct(id))
+   };
 };
 
 const ProductDetailsContainer = withRouter(

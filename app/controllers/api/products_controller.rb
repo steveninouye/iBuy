@@ -6,7 +6,6 @@ class Api::ProductsController < ApplicationController
   def index
     query = params[:search][:query].gsub(";", " ")
     @products = Product.with_attached_photos.includes(:bids).where("LOWER(title) LIKE ?", "%#{query.downcase}%").limit(50)
-    # @products = Product.includes(:bids, photos: [url_attachment: :blob]).where("LOWER(title) LIKE ?", "%#{query.downcase}%").limit(50)
   end
 
   def show
