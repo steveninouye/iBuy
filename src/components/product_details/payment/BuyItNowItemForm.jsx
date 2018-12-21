@@ -40,7 +40,7 @@ class BuyItNowItemForm extends React.Component {
                      onChange={this.handleChange('bid')}
                   />
                   <div className="min-bid-price">
-                     Enter US ${1 + parseFloat(currentPrice)} or more
+                     Enter US ${(1 + parseFloat(currentPrice)).toFixed(2)} or more
                   </div>
                </div>
                <div className="top-right-form-section">
