@@ -1,4 +1,6 @@
 import React from 'react';
+import { PropagateLoader } from 'react-spinners';
+
 import ImageRoot from './image/ImageRoot';
 import PaymentRoot from './payment/PaymentRoot';
 import OwnerRoot from './owner_details/OwnerRoot';
@@ -10,7 +12,10 @@ import ItemDetailsPageBreak from './description/ItemDetailsPageBreak';
 class ProductDetailsRoot extends React.PureComponent {
    constructor(props) {
       super(props);
-      this.state = { productId: this.props.match.params.productId };
+      this.state = {
+         loading: true,
+         productId: this.props.match.params.productId
+      };
    }
 
    componentDidMount() {
@@ -20,15 +25,24 @@ class ProductDetailsRoot extends React.PureComponent {
    componentDidUpdate() {
       let { productId } = this.props.match.params;
       if (productId !== this.state.productId) {
-         this.setState({ productId }, () => {
-            this.props.getProduct(this.props.match.params.productId);
+         this.setState({ productId, loading: true }, () => {
+            this.props.getProduct(productId);
          });
+      } else {
+         this.setState({ loading: false });
       }
    }
 
    render() {
-      if (!this.props.product) {
-         return <h1>loading...</h1>;
+      if (this.state.loading) {
+         return (
+            <PropagateLoader
+               sizeUnit={'px'}
+               size={15}
+               color={'#000000'}
+               loading={this.props.loading}
+            />
+         );
       } else {
          let { product } = this.props;
          let { photos, owner, category, description } = product;
