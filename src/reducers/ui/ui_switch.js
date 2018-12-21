@@ -1,11 +1,11 @@
 import { LOADING, LOADING_COMPLETED } from '../../actions/ui_actions';
-import { SEARCH_PRODUCT_RESULTS } from '../../actions/product_actions';
+import { RECEIVE_PRODUCTS } from '../../actions/product_actions';
 
-const UiSwitch = (state = false, action) => {
+const UiSwitch = (state = true, action) => {
    switch (action.type) {
       case LOADING:
          return true;
-      case SEARCH_PRODUCT_RESULTS:
+      case RECEIVE_PRODUCTS:
          return false;
       default:
          return state;

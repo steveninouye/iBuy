@@ -3,9 +3,9 @@ import React from 'react';
 import NavBarContainer from '../navbar/NavBarContainer';
 import CategoryLinks from './CategoryLinks';
 import HomeBanner from './HomeBanner';
-import RecentlyViewedItems from './RecentlyViewedItems';
 import CategoryBars from './CategoryBars';
 import HomeSearchContainer from './HomeSearchContainer';
+import RecentlyViewedItemesContainer from './RecentlyViewedItemsContainer';
 
 class Home extends React.Component {
    render() {
@@ -16,7 +16,7 @@ class Home extends React.Component {
                <HomeSearchContainer />
                <CategoryLinks />
                <HomeBanner />
-               <RecentlyViewedItems />
+               <RecentlyViewedItemesContainer />
                <CategoryBars />
             </div>
          </>

@@ -12,3 +12,9 @@ export const getProduct = (id) =>
       method: 'GET',
       url: `api/products/${id}`
    });
+
+   export const getRecentlyViewedProducts =()=>
+   $.ajax({
+      method: 'GET',
+      url: 'api/products'
+   })

@@ -12,7 +12,6 @@ import ProductResultsRoot from './productResults/ProductResultsRoot';
 import ProductDetailsContainer from './product_details/ProductDetailsContainer';
 
 const RootRoutes = () => {
-   const rightNav = <li />;
    return (
       <>
          <Switch>
