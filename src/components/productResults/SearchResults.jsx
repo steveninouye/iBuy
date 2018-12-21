@@ -15,13 +15,10 @@ class SearchResults extends React.Component {
    }
 
    componentDidMount() {
-      console.log('coming from component did mount');
       this.props.searchProducts(this.parsedQueryString());
    }
    
    componentDidUpdate(prevProps, prevState, snapshot) {
-      debugger;
-      console.log('coming from component did update');
       const queryString = this.props.location.search;
       if (this.state.queryString !== queryString) {
          this.props.dispatchLoading();

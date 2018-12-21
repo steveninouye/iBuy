@@ -4,6 +4,10 @@ class Api::ProductsController < ApplicationController
   # before_action :snakecase_params
 
   def index
+    
+  end
+  
+  def search
     query = params[:search][:query].gsub(";", " ")
     @products = Product.with_attached_photos.includes(:bids).where("LOWER(title) LIKE ?", "%#{query.downcase}%").limit(50)
   end
@@ -45,6 +49,7 @@ class Api::ProductsController < ApplicationController
   end
 
   def snakecase_params
-    params[:product] = params[:product].transform_keys(&:underscore)
+    byebug
+    # params[:product] = params[:product].transform_keys(&:underscore)
   end
 end

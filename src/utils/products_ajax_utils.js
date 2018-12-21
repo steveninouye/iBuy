@@ -1,7 +1,7 @@
 export const searchProducts = (searchInput) =>
    $.ajax({
       method: 'GET',
-      url: 'api/products',
+      url: 'api/products/search',
       data: {
          search: searchInput
       }
