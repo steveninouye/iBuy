@@ -27,13 +27,11 @@ class ProductDetailsRoot extends React.PureComponent {
    }
 
    render() {
-      console.log(this.props);
       if (!this.props.product) {
          return <h1>loading...</h1>;
       } else {
          let { product } = this.props;
          let { photos, owner, category, description } = product;
-         console.log('photos: ', photos);
          return (
             <div id="product-details-root">
                <NavBarContainer />

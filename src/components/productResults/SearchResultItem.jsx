@@ -25,7 +25,6 @@ const SearchResultItem = ({
    const imgSrc = photos[0]
       ? photos[0]
       : 'https://s3-us-west-1.amazonaws.com/ibuy-public/no-image-search-item.jpg';
-   debugger;
    return (
       <div className="search-result-item">
          <Link to={`/item/${id}`} className="thumbnail">

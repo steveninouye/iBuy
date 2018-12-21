@@ -15,7 +15,7 @@ const mapStateToProps = (state, ownProps) => {
       }
    } = ownProps;
    let product = products[productId];
-   if (product) {
+   if (product && categories[product.categoryId]) {
       product.category = categories[product.categoryId].name;
       let allBids = Object.values(bids);
       product.bids = allBids.filter((bid) => bid.productId === product.id);

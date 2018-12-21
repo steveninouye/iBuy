@@ -14,10 +14,10 @@ const ItemDetailsPageBreak = (props) => (
       </div>
 
       <div className="right-page-break">
-         <span className="mail-icon">&nbsp;</span>
-         <span className="facebook-icon">&nbsp;</span>
-         <span className="twitter-icon">&nbsp;</span>
-         <span className="pintrest-icon">&nbsp;</span>
+         <a href="mailto:demo@demo.com" className="mail-icon">&nbsp;</a>
+         <a href="https://www.facebook.com/" className="facebook-icon">&nbsp;</a>
+         <a href="https://twitter.com" className="twitter-icon">&nbsp;</a>
+         <a href="https://www.pinterest.com/" className="pintrest-icon">&nbsp;</a>
          <a className="right-page-break-add-to-watch-list">Add to watch list</a>
       </div>
    </div>

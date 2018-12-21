@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Route, Redirect, withRouter } from 'react-router-dom';
+import BuyitNowItemForm from '../components/product_details/payment/BuyItNowItemForm';
+import BidOnlyItemFrom from '../components/product_details/payment/BidOnlyItemForm';
 
 const Auth = ({ component: Component, path, isLoggedIn, exact, ...rest }) => {
    return (
@@ -38,6 +40,14 @@ const Protected = ({
          }
       />
    );
+};
+
+export const BidForm = ({ product }) => {
+   if (product.buyItNow) {
+      return <BuyitNowItemForm product={product} />;
+   } else {
+      return <BidOnlyItemFrom product={product} />;
+   }
 };
 
 const mapStateToProps = (state, ownProps) => {

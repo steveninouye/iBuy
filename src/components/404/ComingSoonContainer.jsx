@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import MissingPage from './MissingPage';
 
 const mapStateToProps = (state, ownProps) => {
-   console.log(ownProps);
    return {
       message: <>Page Coming Soon!</>
    };

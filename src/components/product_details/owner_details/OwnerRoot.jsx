@@ -6,7 +6,7 @@ const OwnerRoot = ({ owner }) => (
    <div className="item-details-owner-root">
       <ShopWithConfidence />
       <SellerInformation owner={owner} />
-      <div className="below-seller-info-ad" />
+      <a href="https://www.appacademy.io" className="below-seller-info-ad" />
    </div>
 );
 

@@ -1,7 +1,7 @@
 json.set! :products do
   @products.each do |product|
     json.set! product.id do
-      json.extract! product, :id, :title, :description, :location, :sell_by, :buy_it_now, :user_id
+      json.extract! product, :id, :title, :description, :location, :sell_by, :buy_it_now, :category_id, :user_id
       json.photos product.photos.map { |photo| photo.service_url }
     end
   end

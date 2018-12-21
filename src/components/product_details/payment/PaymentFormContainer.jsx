@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
-import PaymentForm from './PaymentForm';
+
+import { BidForm } from '../../../utils/routes_utils';
 
 const mapStateToProps = (state, ownProps) => {
    return {};
@@ -12,6 +13,6 @@ const mapDispatchToProps = (dispatch) => {
 const PaymentFormContainer = connect(
    mapStateToProps,
    mapDispatchToProps
-)(PaymentForm);
+)(BidForm);
 
-export default PaymentFormContainer
+export default PaymentFormContainer;

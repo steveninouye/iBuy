@@ -2,7 +2,7 @@ import React from 'react';
 
 import { getPriceAndNumBids } from '../../../utils/data_conversion_utils';
 
-class PaymentForm extends React.Component {
+class BuyItNowItemForm extends React.Component {
    constructor(props) {
       super(props);
       this.handleSubmit = this.handleSubmit.bind(this);
@@ -12,7 +12,7 @@ class PaymentForm extends React.Component {
    handleSubmit(type) {
       return (e) => {
          e.preventDefault();
-         if (type) console.log(type);
+         // if (type) console.log(type);
       };
    }
 
@@ -53,7 +53,9 @@ class PaymentForm extends React.Component {
             <div className="price-hr-divider" />
             <div className="bottom-form-section">
                <div className="left-bottom-buy-it-now">Price:</div>
-               <div className="middle-bottom-buy-it-now">US $900.00</div>
+               <div className="middle-bottom-buy-it-now">
+                  US ${(product.buyItNow / 100).toFixed(2)}
+               </div>
                <div className="right-bottom-buy-it-now">
                   <button className="buy-it-now-btn">Buy It Now</button>
                   <button className="add-to-cart-btn">Add to cart</button>
@@ -71,4 +73,4 @@ class PaymentForm extends React.Component {
    }
 }
 
-export default PaymentForm;
+export default BuyItNowItemForm;
