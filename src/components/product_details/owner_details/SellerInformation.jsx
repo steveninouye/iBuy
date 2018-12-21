@@ -1,13 +1,18 @@
 import React from 'react';
 
+import { randNum } from '../../../utils/data_conversion_utils';
+
 const SellerInformation = ({ owner }) => (
    <div className="seller-info-container">
       <div className="seller-info-header">Seller information</div>
       <div className="seller-username-rating">
          <span className="username">{owner}</span>(
-         <span className="num-rating">23</span> <span className="star-icon" />)
+         <span className="num-rating">{randNum(30, 9999)}</span>{' '}
+         <span className="star-icon" />)
       </div>
-      <div className="percent-positive-feedback">100% Positive feedback</div>
+      <div className="percent-positive-feedback">
+         {(randNum(950, 1000) / 10).toFixed(1)}% Positive feedback
+      </div>
       <div className="save-this-seller">
          <span className="heart-icon" /> Save this Seller
       </div>

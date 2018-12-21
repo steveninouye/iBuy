@@ -22,10 +22,7 @@ class PaymentForm extends React.Component {
 
    render() {
       let { product } = this.props;
-      console.log(product.bids);
       let { numBids, currentPrice } = getPriceAndNumBids(product.bids);
-      console.log('form cont');
-      console.log(this.props);
       let bids = numBids === 1 ? `${numBids} bid` : `${numBids} bids`;
       return (
          <form onSubmit={this.handleSubmit}>

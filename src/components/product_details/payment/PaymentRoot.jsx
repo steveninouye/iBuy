@@ -6,6 +6,7 @@ import {
 } from '../../../utils/data_conversion_utils';
 import PaymentFormContainer from './PaymentFormContainer';
 import AcceptedPayment from './AcceptedPayment';
+import TimeLeft from './TimeLeft';
 
 const PaymentRoot = ({ product }) => (
    <div className="item-details-payment-root">
@@ -31,10 +32,7 @@ const PaymentRoot = ({ product }) => (
          </div>
          <div className="item-condition-time-footer">
             <span className="time-left">Time left:</span>
-            <span className="time-left-value">
-               14h 57m 26s
-               <span className="date-time-ending">Thursday, 2:44AM</span>
-            </span>
+            <TimeLeft timeLeft={product.sellBy} />
          </div>
       </div>
       <br />

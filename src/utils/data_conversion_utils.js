@@ -63,6 +63,7 @@ export const randomStarRating = () => {
    }
 };
 export const randNumStarRating = () => 20 + Math.floor(Math.random() * 200);
+
 export const randNum = (min, max) => {
    const spread = max - min;
    return min + Math.floor(Math.random() * spread);
@@ -153,5 +154,78 @@ export const convertDate = (date) => {
          hrs -= 12;
       }
       return `${dateStr} left (${dayOfWeek}, ${hrs}:${min}${AmPm})`;
+   }
+};
+
+export const convertDateDetail = (date) => {
+   // debugger;
+   const daysOfWeek = [
+      'Sunday',
+      'Monday',
+      'Tuesday',
+      'Wednesday',
+      'Thursday',
+      'Friday',
+      'Saturday'
+   ];
+   date = new Date(date);
+   const now = new Date().getTime();
+   const spread = date.getTime() - now;
+
+   const msInSec = 1000;
+   const msInMin = msInSec * 60;
+   const msInHour = msInMin * 60;
+   const msInDay = msInHour * 24;
+   const msInWeek = msInDay * 7;
+
+   const wks = Math.floor(spread / msInWeek);
+   const days = Math.floor((spread % msInWeek) / msInDay);
+   let hrs = Math.floor((spread % msInDay) / msInHour);
+   const min = Math.floor((spread % msInHour) / msInMin);
+   const sec = Math.floor((spread % msInMin) / msInSec);
+
+   const result = [wks, days, hrs, min, sec].reduce((acc, cur, idx) => {
+      if (cur !== 0) {
+         switch (idx) {
+            case 0:
+               acc.push(`${cur}w`);
+               break;
+            case 1:
+               acc.push(`${cur}d`);
+               break;
+            case 2:
+               acc.push(`${cur}h`);
+               break;
+            case 3:
+               acc.push(`${cur}m`);
+               break;
+            case 4:
+               acc.push(`${cur}s`);
+               break;
+         }
+      }
+      return acc;
+   }, []);
+
+   if (result.length === 0) {
+      return undefined;
+   } else {
+      const dateStr = result.join(' ');
+      const dayOfWeek = daysOfWeek[date.getDay()];
+      let AmPm = 'AM';
+      if (hrs > 12) {
+         AmPm = 'PM';
+         hrs -= 12;
+      }
+      // return `${dateStr} left (${dayOfWeek}, ${hrs}:${min}${AmPm})`;
+      return (
+         <>
+            {`${dateStr} left`}
+            <span className="date-time-ending">
+               {dayOfWeek}
+               {`, ${hrs}:${min}${AmPm}`}
+            </span>
+         </>
+      );
    }
 };

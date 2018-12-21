@@ -496,6 +496,7 @@ div#product-details-root {
 
       & div.item-details-right-container {
          display: flex;
+         justify-content: center;
          flex-wrap: wrap;
          flex-grow: 1;
          min-width: 69rem;
@@ -504,6 +505,8 @@ div#product-details-root {
          & div.item-details-payment-root {
             height: 67.5rem;
             flex-grow: 1;
+            max-width: 65rem;
+            margin-bottom: 5rem;
 
             & * {
                display: inline-block;
@@ -1185,7 +1188,7 @@ div#product-details-root {
    }
 
    & div.item-details-description-root {
-      margin: 7rem 0 0rem 0;
+      margin: 3rem 0 0rem 0;
 
       & ul.item-details-body-tabs {
          display: flex;
