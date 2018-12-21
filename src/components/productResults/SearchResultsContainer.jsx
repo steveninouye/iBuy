@@ -5,7 +5,7 @@ import { withRouter } from 'react-router-dom';
 import SearchResults from './SearchResults';
 import { searchProducts } from '../../actions/product_actions';
 import { addBidsToProducts } from '../../utils/data_conversion_utils';
-import { dispatchLoading, loadingCompleted } from '../../actions/ui_actions';
+import { dispatchLoading } from '../../actions/ui_actions';
 
 const mapStateToProps = (state, ownProps) => {
    return {

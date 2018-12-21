@@ -1,12 +1,19 @@
 import React from 'react';
 
-
+export const decodeHtml = (html) => {
+   const txt = document.createElement('textarea');
+   txt.innerHTML = html;
+   return txt.value;
+};
 
 export const translateLineBreaks = (text) =>
    text
       ? text
            .split('<br>')
-           .reduce((prev, curr, i) => [...prev, <br key={i} />, curr])
+           .reduce(
+              (prev, curr, i) => [...prev, <br key={i} />, decodeHtml(curr)],
+              []
+           )
       : undefined;
 
 export const randomStarRating = () => {

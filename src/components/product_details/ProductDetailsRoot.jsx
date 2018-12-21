@@ -36,7 +36,10 @@ class ProductDetailsRoot extends React.PureComponent {
             <div id="product-details-root">
                <NavBarContainer />
                <HomeSearchContainer />
-               <ItemDetailsPageBreak category={category} />
+               <ItemDetailsPageBreak
+                  category={category}
+                  history={this.props.history}
+               />
                <div className="item-details-container">
                   <ImageRoot photos={photos} />
                   <div className="item-details-right-container">

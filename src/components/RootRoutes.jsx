@@ -8,7 +8,7 @@ import Page404Container from './404/Page404Container';
 import ComingSoonContainer from './404/ComingSoonContainer';
 import HomeFooter from './homepage/HomeFooter';
 import Home from './homepage/Home';
-import ProductResults from './productResults/ProductResultsRoot';
+import ProductResultsRoot from './productResults/ProductResultsRoot';
 import ProductDetailsContainer from './product_details/ProductDetailsContainer';
 
 const RootRoutes = () => {
@@ -21,7 +21,7 @@ const RootRoutes = () => {
                path="/item/:productId"
                component={ProductDetailsContainer}
             />
-            <Route path="/search" component={ProductResults} />
+            <Route path="/search" component={ProductResultsRoot} />
             <Route exact path="/comingsoon" component={ComingSoonContainer} />
             <AuthRoute path="/register" component={SignUpFormContainer} />
             <AuthRoute path="/signin" component={LogInFormContainer} />

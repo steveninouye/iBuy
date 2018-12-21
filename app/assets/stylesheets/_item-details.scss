@@ -362,8 +362,8 @@ div#product-details-root {
             height: 100%;
             font-size: 1.05rem;
 
-            & a {
-               margin-left: 1.2rem;
+            & a.category-link {
+               margin-left: 1rem;
                cursor: pointer;
                color: #0654ba;
 
@@ -756,6 +756,11 @@ div#product-details-root {
                            padding: 1px 10px 3px 10px;
                            line-height: 1.2em;
                            height: 1.8rem;
+
+                           &:active {
+                              background: url(https://s3-us-west-1.amazonaws.com/ibuy-public/btn-imgs.png)
+                                 repeat-x scroll 0 -50px;
+                           }
                         }
 
                         & a.add-to-watch-list-carrot {
@@ -767,6 +772,11 @@ div#product-details-root {
                            background-color: transparent;
                            color: #666;
                            vertical-align: top;
+
+                           &:active {
+                              background: url(https://s3-us-west-1.amazonaws.com/ibuy-public/btn-imgs.png)
+                                 0px -75px no-repeat scroll transparent;
+                           }
                         }
                      }
                   }
@@ -896,6 +906,11 @@ div#product-details-root {
                            padding: 1px 10px 3px 10px;
                            line-height: 1.2em;
                            height: 1.8rem;
+
+                           &:active {
+                              background: url(https://s3-us-west-1.amazonaws.com/ibuy-public/btn-imgs.png)
+                                 repeat-x scroll 0 -50px;
+                           }
                         }
 
                         & a.add-to-watch-list-carrot {
@@ -907,6 +922,11 @@ div#product-details-root {
                            background-color: transparent;
                            color: #666;
                            vertical-align: top;
+
+                           &:active {
+                              background: url(https://s3-us-west-1.amazonaws.com/ibuy-public/btn-imgs.png)
+                                 0px -75px no-repeat scroll transparent;
+                           }
                         }
                      }
                   }
