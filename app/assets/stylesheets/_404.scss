@@ -371,7 +371,7 @@ div#page-not-found {
 
       & div#panda-sprite {
          // reference: https://medium.com/@LatePanda/late-panda-by-late-panda-e4f183be56df
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/panda_sprite.png');
+         background-image: url('/images/panda_sprite.png');
          width: 17.77rem;
          height: 14rem;
          animation: jumping 1s steps(9) infinite, forward 6.2s linear infinite;

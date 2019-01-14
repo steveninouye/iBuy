@@ -5,7 +5,7 @@ class ImageRoot extends React.Component {
       super(props);
       this.changeMainPic = this.changeMainPic.bind(this);
       this.defaultPhoto =
-         'https://s3-us-west-1.amazonaws.com/ibuy-public/show-item-no-img.png';
+         '/images/show-item-no-img.png';
    }
 
    componentDidMount() {

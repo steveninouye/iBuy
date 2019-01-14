@@ -100,7 +100,7 @@
                      height: 4rem;
                      width: 4rem;
                      background-size: contain;
-                     background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/avatar.png');
+                     background-image: url('/images/avatar.png');
                   }
 
                   & div.dropdown-username-stars {
@@ -553,7 +553,7 @@
                width: 1.4em;
                height: 1.4em;
                background-size: contain;
-               background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/google-logo.png');
+               background-image: url('/images/google-logo.png');
             }
          }
 

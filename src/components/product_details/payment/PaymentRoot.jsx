@@ -14,7 +14,7 @@ const PaymentRoot = ({ product }) => (
          <div className="item-details-title">{product.title}</div>
          <div className="item-details-subheading">
             <div className="item-details-views-per-hour">
-               <img src="https://s3-us-west-1.amazonaws.com/ibuy-public/fire-icon.png" />
+               <img src="/images/fire-icon.png" />
                3 views per hour
             </div>
             <div className="item-details-star-rating">{randomStarRating()}</div>
