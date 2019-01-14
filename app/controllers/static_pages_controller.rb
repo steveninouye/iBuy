@@ -1,4 +1,5 @@
 class StaticPagesController < ApplicationController
-   def root   
-   end   
+  def root
+    puts "THIS ROUTE WAS HIT!!!"
+  end
 end

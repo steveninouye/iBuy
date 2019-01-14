@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   end
 
   root "static_pages#root"
+  match "*path", to: "static_pages#root", via: :all
 end
