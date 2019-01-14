@@ -1,440 +1,471 @@
 #home-body {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding: 0 6rem;
-   width: 100%;
-   max-width: 160rem;
-   box-sizing: border-box;
-   align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 6rem;
+  width: 100%;
+  max-width: 160rem;
+  box-sizing: border-box;
+  align-self: center;
 }
 
 form.home--search-container {
-   padding-top: 1.1rem;
-   display: flex;
-   font-size: 1.8rem;
-   width: 94%;
-   align-items: center;
-   justify-content: space-around;
-   box-sizing: border-box;
+  padding-top: 1.1rem;
+  display: flex;
+  font-size: 1.8rem;
+  width: 94%;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
 
-   & a.home--main-logo {
-      padding: 0 0 0.5rem 0.2rem;
-      margin: 0 0.4rem 0 0rem;
-      font-size: 3.7rem;
-      font-weight: 500;
-      letter-spacing: -0.3rem;
-      text-shadow: 0 2px 0 rgba(207, 207, 207, 0.2);
+  & a.home--main-logo {
+    padding: 0 0 0.5rem 0.2rem;
+    margin: 0 0.4rem 0 0rem;
+    font-size: 3.7rem;
+    font-weight: 500;
+    letter-spacing: -0.3rem;
+    text-shadow: 0 2px 0 rgba(207, 207, 207, 0.2);
 
-      // reference: https://stackoverflow.com/a/12065925
-      display: inline-block;
-      -webkit-transform: scale(1.35, 1.3); /* Safari and Chrome */
-      -moz-transform: scale(1.35, 1.3); /* Firefox */
-      -ms-transform: scale(1.35, 1.3); /* IE 9 */
-      -o-transform: scale(1.35, 1.3); /* Opera */
-      transform: scale(1.35, 1.3);
+    // reference: https://stackoverflow.com/a/12065925
+    display: inline-block;
+    -webkit-transform: scale(1.35, 1.3); /* Safari and Chrome */
+    -moz-transform: scale(1.35, 1.3); /* Firefox */
+    -ms-transform: scale(1.35, 1.3); /* IE 9 */
+    -o-transform: scale(1.35, 1.3); /* Opera */
+    transform: scale(1.35, 1.3);
 
-      & span.logo-letter:nth-child(1) {
-         color: #e53238;
-      }
+    & span.logo-letter:nth-child(1) {
+      color: #e53238;
+    }
 
-      & span.logo-letter:nth-child(2) {
-         color: #0164d2;
-      }
+    & span.logo-letter:nth-child(2) {
+      color: #0164d2;
+    }
 
-      & span.logo-letter:nth-child(3) {
-         color: #f5af04;
-      }
+    & span.logo-letter:nth-child(3) {
+      color: #f5af04;
+    }
 
-      & span.logo-letter:nth-child(4) {
-         color: #86b817;
-      }
-   }
+    & span.logo-letter:nth-child(4) {
+      color: #86b817;
+    }
+  }
 
-   & div.home--category-dropdown {
-      display: flex;
-      width: 7rem;
+  & div.home--category-dropdown {
+    display: flex;
+    width: 7rem;
+    font-size: 1.2rem;
+    word-wrap: normal;
+    align-items: center;
+    margin: 0 0rem 0 2rem;
+
+    & div.home--category-dropdown-text {
+      width: 5rem;
+      text-shadow: 0 1px 0 rgba(195, 195, 195, 0.2);
+    }
+  }
+
+  & input[type='text'] {
+    font-size: 1.6rem;
+    flex-shrink: 4;
+    flex-grow: 7;
+    padding: 1rem 0 0.9rem 0.8rem;
+    margin: 0 0rem 0 0.4rem;
+    border-radius: 0.1rem;
+    color: #000000;
+    transform: translate(0rem, 0.05rem);
+    box-shadow: -0.1rem 0.1rem 0.1rem 0.1rem rgb(200, 200, 200);
+
+    transition: transform 100ms ease-out, box-shadow 100ms ease-out;
+    // box-shadow: 0rem 0rem 0.1rem 0rem grey;
+
+    &:focus {
+      transform: translate(0rem, -0.1rem);
+      box-shadow: -0.1rem 0.1rem 0.2rem 0.2rem rgb(200, 200, 200);
+    }
+  }
+  & div.home--category-select-container {
+    overflow: hidden;
+    height: 3.7rem;
+    margin: 0 0.2rem 0 0rem;
+    border-radius: 0.1rem;
+    box-shadow: -0.1rem 0.1rem 0.1rem 0.1rem rgb(200, 200, 200);
+    display: flex;
+    align-items: center;
+    margin: 0 0.4rem 0 0.4rem;
+
+    & select {
       font-size: 1.2rem;
-      word-wrap: normal;
-      align-items: center;
-      margin: 0 0rem 0 2rem;
+    }
+  }
 
-      & div.home--category-dropdown-text {
-         width: 5rem;
-         text-shadow: 0 1px 0 rgba(195, 195, 195, 0.2);
-      }
-   }
+  & input[type='submit'] {
+    margin: 0 0.4rem 0 0.4rem;
+    font-size: 1.5rem;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+    background-color: #0052a0;
+    height: 3.7rem;
+    padding: 0 1.2rem;
+    border-radius: 0.3rem;
 
-   & input[type='text'] {
-      font-size: 1.6rem;
-      flex-shrink: 4;
-      flex-grow: 7;
-      padding: 1rem 0 0.9rem 0.8rem;
-      margin: 0 0rem 0 0.4rem;
-      border-radius: 0.1rem;
-      color: #000000;
-      transform: translate(0rem, 0.05rem);
-      box-shadow: -0.1rem 0.1rem 0.1rem 0.1rem rgb(200, 200, 200);
+    transition: transform 100ms ease-out, box-shadow 100ms ease-out;
+    // box-shadow: 0rem 0rem 0.1rem 0rem grey;
+    box-shadow: -0.05rem 0.1rem 0.2rem 0.1rem rgb(200, 200, 200);
 
-      transition: transform 100ms ease-out, box-shadow 100ms ease-out;
-      // box-shadow: 0rem 0rem 0.1rem 0rem grey;
+    &:hover {
+      transform: translate(0.15rem, -0.2rem);
+      box-shadow: -0.1rem 0.2rem 0.4rem 0.2rem rgb(200, 200, 200);
+    }
 
-      &:focus {
-         transform: translate(0rem, -0.1rem);
-         box-shadow: -0.1rem 0.1rem 0.2rem 0.2rem rgb(200, 200, 200);
-      }
-   }
-   & div.home--category-select-container {
-      overflow: hidden;
-      height: 3.7rem;
-      margin: 0 0.2rem 0 0rem;
-      border-radius: 0.1rem;
-      box-shadow: -0.1rem 0.1rem 0.1rem 0.1rem rgb(200, 200, 200);
-      display: flex;
-      align-items: center;
-      margin: 0 0.4rem 0 0.4rem;
+    &:active {
+      transform: none;
+      box-shadow: none;
+      transform: translate(0.05rem, -0.1rem);
+      box-shadow: -0.05rem 0.15rem 0.3rem 0.15rem rgb(200, 200, 200);
+    }
+  }
 
-      & select {
-         font-size: 1.2rem;
-      }
-   }
-
-   & input[type='submit'] {
-      margin: 0 0.4rem 0 0.4rem;
-      font-size: 1.5rem;
-      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-      color: white;
-      background-color: #0052a0;
-      height: 3.7rem;
-      padding: 0 1.2rem;
-      border-radius: 0.3rem;
-
-      transition: transform 100ms ease-out, box-shadow 100ms ease-out;
-      // box-shadow: 0rem 0rem 0.1rem 0rem grey;
-      box-shadow: -0.05rem 0.1rem 0.2rem 0.1rem rgb(200, 200, 200);
-
-      &:hover {
-         transform: translate(0.15rem, -0.2rem);
-         box-shadow: -0.1rem 0.2rem 0.4rem 0.2rem rgb(200, 200, 200);
-      }
-
-      &:active {
-         transform: none;
-         box-shadow: none;
-         transform: translate(0.05rem, -0.1rem);
-         box-shadow: -0.05rem 0.15rem 0.3rem 0.15rem rgb(200, 200, 200);
-      }
-   }
-
-   & a {
-      margin: 0 0rem 0 0.4rem;
-      font-size: 1.1rem;
-      text-shadow: 0 1px 0 rgba(199, 199, 199, 0.2);
-   }
+  & a {
+    margin: 0 0rem 0 0.4rem;
+    font-size: 1.1rem;
+    text-shadow: 0 1px 0 rgba(199, 199, 199, 0.2);
+  }
 }
 
 ul.home--category-links {
-   margin-top: 2.8rem;
-   width: 100%;
-   border-top: 1px solid rgb(173, 173, 173);
-   display: flex;
-   justify-content: center;
-   font-weight: 500;
-   width: 94%;
-   box-sizing: border-box;
+  margin-top: 2.8rem;
+  width: 100%;
+  border-top: 1px solid rgb(173, 173, 173);
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  width: 94%;
+  box-sizing: border-box;
 
-   li {
-      color: #555;
-      padding: 1rem 0.4rem;
-      font-size: 1.2rem;
-      margin: 0 1rem;
-      text-shadow: 0 1px 0 rgba(204, 204, 204, 0.2);
-      border-bottom: 0.3rem solid white;
+  li {
+    color: #555;
+    padding: 1rem 0.4rem;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    text-shadow: 0 1px 0 rgba(204, 204, 204, 0.2);
+    border-bottom: 0.3rem solid white;
 
-      &:hover {
-         margin: 0 0.9rem;
-         font-weight: 600;
-         border-bottom: 0.3rem solid rgb(63, 63, 63);
-      }
-   }
+    &:hover {
+      margin: 0 0.9rem;
+      font-weight: 600;
+      border-bottom: 0.3rem solid rgb(63, 63, 63);
+    }
+  }
 }
 
 div.home--banner {
-   height: 33rem;
-   width: 100%;
-   background-size: cover;
-   background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/home-banner.png');
+  height: 33rem;
+  width: 100%;
+  background-size: cover;
+  background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/home-banner.png');
 }
 
 div.home--recently-viewed-items {
-   margin-top: 2.2rem;
-   display: flex;
-   justify-content: space-around;
-   width: 100%;
-   padding: 1rem 0 0 0;
-   position: relative;
+  margin-top: 2.2rem;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 1rem 0 0 0;
+  position: relative;
 
-   & span.home--recently-viewed-items-heading {
-      position: absolute;
-      top: -1.1rem;
-      font-size: 1.4rem;
-   }
+  & span.home--recently-viewed-items-heading {
+    position: absolute;
+    top: -1.1rem;
+    font-size: 1.4rem;
+  }
 
-   & div.home--recently-viewed-item {
-      width: 14%;
-      height: auto;
-      margin: 0 0.5rem;
+  & div.home--recently-viewed-item {
+    width: 14%;
+    height: auto;
+    margin: 0 0.5rem;
 
-      & a.home--recently-viewed-item-pic {
-         display: inline-block;
-         box-shadow: -0.1rem 0.1rem 0.5rem 0.1rem gray;
-         width: 100%;
-         height: 0;
-         padding-bottom: 100%;
-         background-color: white;
-         border-radius: 0.2rem;
-         background-size: contain;
-         background-repeat: no-repeat;
-         background-position: center;
-      }
+    & a.home--recently-viewed-item-pic {
+      display: inline-block;
+      box-shadow: -0.1rem 0.1rem 0.5rem 0.1rem gray;
+      width: 100%;
+      height: 0;
+      padding-bottom: 100%;
+      background-color: white;
+      border-radius: 0.2rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
 
-      & span.home--recently-viewed-item-price {
-         font-size: 1.7rem;
-         font-weight: 500;
-      }
-   }
+    & span.home--recently-viewed-item-price {
+      font-size: 1.7rem;
+      font-weight: 500;
+    }
+  }
 }
 
 div.home--category-bars {
-   display: flex;
-   margin-top: 6.5rem;
-   justify-content: space-around;
-   flex-wrap: wrap;
-   width: 100vw;
-   max-width: 100%;
-   box-sizing: border-box;
+  display: flex;
+  margin-top: 6.5rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100vw;
+  max-width: 100%;
+  box-sizing: border-box;
 
-   & div.home--category-bar-item {
-      padding: 0.5rem;
-      height: 20rem;
-      min-width: 35rem;
-      max-width: 60rem;
-      flex-shrink: 1;
-      flex-grow: 1;
-      margin: 3rem 1rem 7rem 1rem;
-      border-radius: 0.1rem;
-      font-size: 2.5rem;
-      font-weight: 600;
-      text-shadow: 0.2rem 0.2rem 2.5rem rgb(32, 32, 32);
-      background-size: cover;
-      color: white;
-      box-sizing: border-box;
-      word-wrap: normal;
-      opacity: 0.83;
+  & div.home--category-bar-item {
+    padding: 0.5rem;
+    height: 20rem;
+    min-width: 35rem;
+    max-width: 60rem;
+    flex-shrink: 1;
+    flex-grow: 1;
+    margin: 3rem 1rem 7rem 1rem;
+    border-radius: 0.1rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-shadow: 0.2rem 0.2rem 2.5rem rgb(32, 32, 32);
+    background-size: cover;
+    color: white;
+    box-sizing: border-box;
+    word-wrap: normal;
+    opacity: 0.83;
 
-      transition: transform 100ms ease-out, box-shadow 100ms ease-out,
-         opacity 50ms;
-      // box-shadow: 0rem 0rem 0.1rem 0rem grey;
-      box-shadow: -0.05rem 0.1rem 0.2rem 0.1rem rgb(139, 139, 139);
+    transition: transform 100ms ease-out, box-shadow 100ms ease-out,
+      opacity 50ms;
+    // box-shadow: 0rem 0rem 0.1rem 0rem grey;
+    box-shadow: -0.05rem 0.1rem 0.2rem 0.1rem rgb(139, 139, 139);
 
-      &:hover {
-         transform: translate(0.15rem, -0.2rem);
-         box-shadow: -0.2rem 0.2rem 0.4rem 0.3rem rgb(139, 139, 139);
-         opacity: 1;
-      }
+    &:hover {
+      transform: translate(0.15rem, -0.2rem);
+      box-shadow: -0.2rem 0.2rem 0.4rem 0.3rem rgb(139, 139, 139);
+      opacity: 1;
+    }
 
-      &:active {
-         transform: none;
-         box-shadow: none;
-         transform: translate(0.05rem, -0.1rem);
-         box-shadow: -0.1rem 0.15rem 0.3rem 0.2rem rgb(139, 139, 139);
-         opacity: 1;
-      }
+    &:active {
+      transform: none;
+      box-shadow: none;
+      transform: translate(0.05rem, -0.1rem);
+      box-shadow: -0.1rem 0.15rem 0.3rem 0.2rem rgb(139, 139, 139);
+      opacity: 1;
+    }
 
-      &.all-categories-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/all-cat-btn.jpg');
-      }
+    &.all-categories-btn {
+      background-image: image-url('all-cat-btn.jpg');
+    }
 
-      &.antiques-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/antiques-cat-btn.jpeg');
-      }
+    &.antiques-btn {
+      background-image: image-url('antiques-cat-btn.jpeg');
+    }
 
-      &.art-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/art-cat-btn.jpg');
-      }
+    &.art-btn {
+      background-image: image-url('art-cat-btn.jpg');
+    }
 
-      &.baby-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/baby-cat-btn.jpg');
-      }
+    &.baby-btn {
+      background-image: image-url('baby-cat-btn.jpg');
+    }
 
-      &.books-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/books-cat-btn.jpg');
-      }
+    &.books-btn {
+      background-image: image-url('books-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/books-cat-btn.jpg');
+    }
 
-      &.business-industrial-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/business-cat-btn.jpg');
-      }
+    &.business-industrial-btn {
+      background-image: image-url('business-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/business-cat-btn.jpg');
+    }
 
-      &.cameras-photo-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/cameras-cat-btn.jpg');
-      }
+    &.cameras-photo-btn {
+      background-image: image-url('cameras-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/cameras-cat-btn.jpg');
+    }
 
-      &.cell-phone-accessories-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/cell-cat-btn.jpg');
-      }
+    &.cell-phone-accessories-btn {
+      background-image: image-url('cell-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/cell-cat-btn.jpg');
+    }
 
-      &.coins-paper-money-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/coins-cat-btn.jpg');
-      }
+    &.coins-paper-money-btn {
+      background-image: image-url('coins-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/coins-cat-btn.jpg');
+    }
 
-      &.collectibles-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/collectibles-cat-btn.jpg');
-      }
+    &.collectibles-btn {
+      background-image: image-url('collectibles-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/collectibles-cat-btn.jpg');
+    }
 
-      &.computers-tables-networking-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/computers-cat-btn.jpg');
-      }
+    &.computers-tables-networking-btn {
+      background-image: image-url('computers-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/computers-cat-btn.jpg');
+    }
 
-      &.consumer-electronics-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/consumerelectronics-cat-btn.jpg');
-      }
+    &.consumer-electronics-btn {
+      background-image: image-url('consumerelectronics-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/consumerelectronics-cat-btn.jpg');
+    }
 
-      &.crafts-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/crafts-cat-btn.jpg');
-      }
+    &.crafts-btn {
+      background-image: image-url('crafts-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/crafts-cat-btn.jpg');
+    }
 
-      &.dolls-bears-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/dolls-cat-btn.jpeg');
-      }
+    &.dolls-bears-btn {
+      background-image: image-url('dolls-cat-btn.jpeg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/dolls-cat-btn.jpeg');
+    }
 
-      &.dvds-movies-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/dvds-cat-btn.jpg');
-      }
+    &.dvds-movies-btn {
+      background-image: image-url('dvds-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/dvds-cat-btn.jpg');
+    }
 
-      &.vehicles-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/vehicles-cat-btn.jpg');
-      }
+    &.vehicles-btn {
+      background-image: image-url('vehicles-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/vehicles-cat-btn.jpg');
+    }
 
-      &.entertainment-memorabilia-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/entertainment-cat-btn.jpg');
-      }
+    &.entertainment-memorabilia-btn {
+      background-image: image-url('entertainment-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/entertainment-cat-btn.jpg');
+    }
 
-      &.gift-cards-coupons-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/gift-cat-btn.jpg');
-      }
+    &.gift-cards-coupons-btn {
+      background-image: image-url('gift-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/gift-cat-btn.jpg');
+    }
 
-      &.health-beauty-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/health-cat-btn.jpg');
-      }
+    &.health-beauty-btn {
+      background-image: image-url('health-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/health-cat-btn.jpg');
+    }
 
-      &.home-garden-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/home-cat-btn.png');
-      }
+    &.home-garden-btn {
+      background-image: image-url('home-cat-btn.png');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/home-cat-btn.png');
+    }
 
-      &.jewelry-watches-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/jewelry-cat-btn.png');
-      }
+    &.jewelry-watches-btn {
+      background-image: image-url('jewelry-cat-btn.png');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/jewelry-cat-btn.png');
+    }
 
-      &.music-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/music-cat-btn.jpg');
-      }
+    &.music-btn {
+      background-image: image-url('music-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/music-cat-btn.jpg');
+    }
 
-      &.musical-instruments-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/musical-cat-btn.jpg');
-      }
+    &.musical-instruments-btn {
+      background-image: image-url('musical-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/musical-cat-btn.jpg');
+    }
 
-      &.pet-supplies-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/pet-cat-btn.jpg');
-      }
+    &.pet-supplies-btn {
+      background-image: image-url('pet-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/pet-cat-btn.jpg');
+    }
 
-      &.pottery-glass-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/pottery-cat-btn.jpg');
-      }
+    &.pottery-glass-btn {
+      background-image: image-url('pottery-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/pottery-cat-btn.jpg');
+    }
 
-      &.real-estate-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/real-cat-btn.jpg');
-      }
+    &.real-estate-btn {
+      background-image: image-url('real-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/real-cat-btn.jpg');
+    }
 
-      &.specialty-services-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/specialty-cat-btn.jpg');
-      }
+    &.specialty-services-btn {
+      background-image: image-url('specialty-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/specialty-cat-btn.jpg');
+    }
 
-      &.sporting-goods-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/sporting-cat-btn.jpg');
-      }
+    &.sporting-goods-btn {
+      background-image: image-url('sporting-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/sporting-cat-btn.jpg');
+    }
 
-      &.sports-mem-cards-fan-shop-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/sports-cat-btn.jpg');
-      }
+    &.sports-mem-cards-fan-shop-btn {
+      background-image: image-url('sports-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/sports-cat-btn.jpg');
+    }
 
-      &.stamps-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/stamps-cat-btn.jpg');
-      }
+    &.stamps-btn {
+      background-image: image-url('stamps-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/stamps-cat-btn.jpg');
+    }
 
-      &.tickets-experiences-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/tickets-cat-btn.jpeg');
-      }
+    &.tickets-experiences-btn {
+      background-image: image-url('tickets-cat-btn.jpeg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/tickets-cat-btn.jpeg');
+    }
 
-      &.toys-hobbies-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/toys-cat-btn.jpeg');
-      }
+    &.toys-hobbies-btn {
+      background-image: image-url('toys-cat-btn.jpeg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/toys-cat-btn.jpeg');
+    }
 
-      &.travel-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/travel-cat-btn.jpg');
-      }
+    &.travel-btn {
+      background-image: image-url('travel-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/travel-cat-btn.jpg');
+    }
 
-      &.video-games-consoles-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/video-cat-btn.jpg');
-      }
+    &.video-games-consoles-btn {
+      background-image: image-url('video-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/video-cat-btn.jpg');
+    }
 
-      &.everything-else-btn {
-         background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/everything-cat-btn.jpg');
-      }
-   }
+    &.everything-else-btn {
+      background-image: image-url('everything-cat-btn.jpg');
+      // background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/everything-cat-btn.jpg');
+    }
+  }
 }
 
 div.home--footer {
-   position: fixed;
-   height: 3rem;
-   width: 100vw;
-   bottom: 0;
-   z-index: 10;
-   border-top: 1px solid rgb(185, 185, 185);
-   display: grid;
-   grid-template-columns: minmax(5rem, 15rem) 1fr minmax(5rem, 15rem);
+  position: fixed;
+  height: 3rem;
+  width: 100vw;
+  bottom: 0;
+  z-index: 10;
+  border-top: 1px solid rgb(185, 185, 185);
+  display: grid;
+  grid-template-columns: minmax(5rem, 15rem) 1fr minmax(5rem, 15rem);
 
-   // grid-template-columns: 5rem 1fr 5rem;
-   background-color: white;
-   opacity: 0.9;
-   color: black;
-   font-weight: 500;
+  // grid-template-columns: 5rem 1fr 5rem;
+  background-color: white;
+  opacity: 0.9;
+  color: black;
+  font-weight: 500;
 
-   & p {
-      grid-column: 2;
-      font-size: 1.1rem;
-      text-align: center;
-      bottom: 25%;
-      opacity: 1;
-      align-self: end;
-      margin-bottom: 1rem;
-      & a {
-         text-decoration: underline;
-         color: #0654ba;
-      }
-   }
+  & p {
+    grid-column: 2;
+    font-size: 1.1rem;
+    text-align: center;
+    bottom: 25%;
+    opacity: 1;
+    align-self: end;
+    margin-bottom: 1rem;
+    & a {
+      text-decoration: underline;
+      color: #0654ba;
+    }
+  }
 
-   & div.linkedin-github-icons {
-      color: black;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  & div.linkedin-github-icons {
+    color: black;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-      & i {
-         color: rgb(73, 73, 73);
-         margin-right: 0.3rem;
-         display: inline-block;
-         font-size: 2.5rem;
-      }
-   }
+    & i {
+      color: rgb(73, 73, 73);
+      margin-right: 0.3rem;
+      display: inline-block;
+      font-size: 2.5rem;
+    }
+  }
 }
