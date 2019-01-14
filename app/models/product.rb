@@ -30,6 +30,13 @@ class Product < ApplicationRecord
              foreign_key: :user_id,
              class_name: :User
 
+  def self.find_recently_viewed_products(product_ids)
+    products = self.with_attached_photos.find(product_ids)
+    if products.count < 6
+      num_products = pro
+    end
+  end
+
   def num_bids
     bids.length
   end

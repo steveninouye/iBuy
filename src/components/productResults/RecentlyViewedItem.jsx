@@ -9,7 +9,7 @@ const RecentlyViewedItem = ({ product }) => {
             className="home--recently-viewed-item-pic"
             style={{ backgroundImage: `url(${photo})` }}
          />
-         <span className="home--recently-viewed-item-price">$700.00</span>
+         {/* <span className="home--recently-viewed-item-price"></span> */}
       </div>
    );
 };
