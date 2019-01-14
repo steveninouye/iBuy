@@ -98,7 +98,7 @@ div#product-details-root {
                         height: 4rem;
                         width: 4rem;
                         background-size: contain;
-                        background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/avatar.png');
+                        background-image: url('/images/avatar.png');
                      }
 
                      & div.dropdown-username-stars {
@@ -342,7 +342,7 @@ div#product-details-root {
             border: 0;
             font-weight: normal;
             font-size: 100%;
-            background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/sprds3_20.png');
+            background-image: url('/images/sprds3_20.png');
          }
 
          & a.back-to-search-results {
@@ -384,7 +384,7 @@ div#product-details-root {
          }
 
          & a.mail-icon {
-            background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/sprds3_20.png');
+            background-image: url('/images/sprds3_20.png');
             background-position: -6px -417px;
             font-size: 100%;
             display: block;
@@ -393,7 +393,7 @@ div#product-details-root {
          }
 
          & a.facebook-icon {
-            background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/sprds3_20.png');
+            background-image: url('/images/sprds3_20.png');
             background-position: -25px -439px;
             width: 20px;
             height: 20px;
@@ -402,7 +402,7 @@ div#product-details-root {
          }
 
          & a.twitter-icon {
-            background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/sprds3_20.png');
+            background-image: url('/images/sprds3_20.png');
             width: 20px;
             height: 20px;
             background-position: -44px -439px;
@@ -411,7 +411,7 @@ div#product-details-root {
          }
 
          & a.pintrest-icon {
-            background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/sprds3_20.png');
+            background-image: url('/images/sprds3_20.png');
             width: 20px;
             height: 20px;
             background-position: -83px -439px;
@@ -468,7 +468,7 @@ div#product-details-root {
 
             & a[class$='-chevron'] {
                display: inline-block;
-               background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/sprds3_20.png');
+               background-image: url('/images/sprds3_20.png');
                width: 8px;
                height: 12px;
             }
@@ -745,7 +745,7 @@ div#product-details-root {
                            font-size: 100%;
                            white-space: nowrap;
                            margin-right: -0.4rem;
-                           background: url(https://s3-us-west-1.amazonaws.com/ibuy-public/btn-imgs.png)
+                           background: url("/images/btn-imgs.png")
                               repeat-x scroll 0 1px;
                            border-top: solid 1px #999;
                            border-left: solid 1px #999;
@@ -758,14 +758,14 @@ div#product-details-root {
                            height: 1.8rem;
 
                            &:active {
-                              background: url(https://s3-us-west-1.amazonaws.com/ibuy-public/btn-imgs.png)
+                              background: url("/images/btn-imgs.png")
                                  repeat-x scroll 0 -50px;
                            }
                         }
 
                         & a.add-to-watch-list-carrot {
                            display: inline-block;
-                           background: url(https://s3-us-west-1.amazonaws.com/ibuy-public/btn-imgs.png)
+                           background: url("/images/btn-imgs.png")
                               no-repeat scroll 0 -101px;
                            width: 17px;
                            height: 18px;
@@ -774,7 +774,7 @@ div#product-details-root {
                            vertical-align: top;
 
                            &:active {
-                              background: url(https://s3-us-west-1.amazonaws.com/ibuy-public/btn-imgs.png)
+                              background: url("/images/btn-imgs.png")
                                  0px -75px no-repeat scroll transparent;
                            }
                         }
@@ -895,7 +895,7 @@ div#product-details-root {
                            font-size: 100%;
                            white-space: nowrap;
                            margin-right: -0.4rem;
-                           background: url(https://s3-us-west-1.amazonaws.com/ibuy-public/btn-imgs.png)
+                           background: url('/images/btn-imgs.png')
                               repeat-x scroll 0 1px;
                            border-top: solid 1px #999;
                            border-left: solid 1px #999;
@@ -908,14 +908,14 @@ div#product-details-root {
                            height: 1.8rem;
 
                            &:active {
-                              background: url(https://s3-us-west-1.amazonaws.com/ibuy-public/btn-imgs.png)
+                              background: url('/images/btn-imgs.png')
                                  repeat-x scroll 0 -50px;
                            }
                         }
 
                         & a.add-to-watch-list-carrot {
                            display: inline-block;
-                           background: url(https://s3-us-west-1.amazonaws.com/ibuy-public/btn-imgs.png)
+                           background: url('/images/btn-imgs.png')
                               no-repeat scroll 0 -101px;
                            width: 17px;
                            height: 18px;
@@ -924,7 +924,7 @@ div#product-details-root {
                            vertical-align: top;
 
                            &:active {
-                              background: url(https://s3-us-west-1.amazonaws.com/ibuy-public/btn-imgs.png)
+                              background: url('/images/btn-imgs.png')
                                  0px -75px no-repeat scroll transparent;
                            }
                         }
@@ -1003,7 +1003,7 @@ div#product-details-root {
                   & span.question-icon {
                      margin-left: 0.4rem;
                      display: inline-block;
-                     background: url('https://s3-us-west-1.amazonaws.com/ibuy-public/sprds3_20.png')
+                     background: url('/images/sprds3_20.png')
                         repeat scroll -216px -408px transparent;
                      position: relative;
                      top: 0.2rem;
@@ -1028,11 +1028,11 @@ div#product-details-root {
                         width: 4.1rem;
                         height: 2.6rem;
                         margin-right: 0.4rem;
-                        background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/credit-cards-icons.png');
+                        background-image: url('/images/credit-cards-icons.png');
                      }
 
                      & div.paypal-payment-icon {
-                        background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/paypal-icon.png');
+                        background-image: url('/images/paypal-icon.png');
                      }
 
                      & div.visa-payment-icon {
@@ -1058,7 +1058,7 @@ div#product-details-root {
                         background-repeat: no-repeat;
                         width: 10.4rem;
                         height: 1.6rem;
-                        background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/logoPaypalCredit.png');
+                        background-image: url('/images/logoPaypalCredit.png');
                      }
                   }
 
@@ -1126,7 +1126,7 @@ div#product-details-root {
                   grid-row: 2 / span 2;
                   align-self: center;
                   margin-top: 1.2rem;
-                  background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/shield-icons.png');
+                  background-image: url('/images/shield-icons.png');
                }
 
                & div.ebay-money-back-guarantee {
@@ -1187,7 +1187,7 @@ div#product-details-root {
                      position: relative;
                      margin-top: -0.5rem;
                      background-position: -150px -436px;
-                     background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/sprds3_20.png');
+                     background-image: url('/images/sprds3_20.png');
                   }
                }
 
@@ -1249,7 +1249,7 @@ div#product-details-root {
                width: 30rem;
                background-repeat: no-repeat;
                background-size: cover;
-               background-image: url('https://s3-us-west-1.amazonaws.com/ibuy-public/aa-square-advertisement.png');
+               background-image: url('/images/aa-square-advertisement.png');
             }
          }
       }
