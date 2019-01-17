@@ -29,10 +29,12 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 gem 'jquery-rails'
 gem 'rails_12factor'
+gem 'httparty'
+gem 'nokogiri'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-  gem 'faker'
+gem 'faker'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
