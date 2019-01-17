@@ -1,10 +1,12 @@
 require "httparty"
 require "nokogiri"
-
+urls = []
 page = Nokogiri::HTML(HTTParty.get("https://sfbay.craigslist.org/d/computers/search/sya"))
 page.css("li.result-row > a").each do |link|
-  p link.attributes["href"].value
+  urls << link.attributes["href"].value
 end
+
+p urls
 
 # class Scraper
 
