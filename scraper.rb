@@ -2,12 +2,15 @@ require 'httparty'
 require 'nokogiri'
 
 class Scraper
-  URL = "https://example.com"
-  JOBS = []
+
+  def initialize
+    @URL = "https://example.com"
+    @JOBS = []
+  end
 
   def get_all_data
     num = 1
-    page = scrape_page(URL)
+    page = scrape_page(@URL)
     per_page = page.css('div.listingCard').count
     total = set_total(page)
     last_page = set_last_page(total, per_page)
@@ -34,7 +37,7 @@ class Scraper
   end
 
   def handle_pagination(num)
-    url = "#{URL}/listings?page=#{num}"
+    url = "#{@URL}/listings?page=#{num}"
     jobs = scrape_page(url).css('div.listingCard')
     build_jobs(jobs)
   end
@@ -42,16 +45,17 @@ class Scraper
   def build_jobs(jobs)
     jobs.each do |j|
 	    job = build_job(j)
-	    JOBS << job
+	    @JOBS << job
     end
   end
 
   def build_job(job)
-    {
+    resutl = {
       title: job.css('span.job-title').text,
       company: job.css('span.company').text,
       location: job.css('span.location').text,
-      url: "#{URL}/#{job.css('a')[0].attributes['href'].value}"
+      url: "#{@URL}/#{job.css('a')[0].attributes['href'].value}"
     }
+    result
   end
 end
