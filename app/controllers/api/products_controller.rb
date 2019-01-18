@@ -2,6 +2,7 @@ class Api::ProductsController < ApplicationController
   before_action :require_login!, only: [:create, :update, :destroy]
   before_action :ensure_search_input, only: [:index]
   before_action :ensure_viewed_products_cookie
+  skip_before_action :verify_authenticity_token
 
   def index
     viewed_product_ids = session[:viewed_products]
@@ -9,8 +10,15 @@ class Api::ProductsController < ApplicationController
   end
 
   def search
-    query = params[:search][:query].gsub(";", " ")
-    @products = Product.with_attached_photos.includes(:bids).where("LOWER(title) LIKE ?", "%#{query.downcase}%").limit(50)
+    urls = []
+    page = Nokogiri::HTML(HTTParty.get("https://sfbay.craigslist.org/search/sss?query=macbook&sort=rel"))
+    page.css("li.result-row > a").each do |link|
+      urls << link.attributes["href"].value
+    end
+    p urls
+    render json: "hello"
+    # query = params[:search][:query].gsub(";", " ")
+    # @products = Product.with_attached_photos.includes(:bids).where("LOWER(title) LIKE ?", "%#{query.downcase}%").limit(50)
   end
 
   def show
