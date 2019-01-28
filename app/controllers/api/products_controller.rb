@@ -14,11 +14,11 @@ class Api::ProductsController < ApplicationController
     page = Nokogiri::HTML(HTTParty.get("https://sfbay.craigslist.org/search/sss?query=macbook&sort=rel"))
     page.css("li.result-row > a").each do |link|
       url = link.attributes["href"].value
-      # if urls.length < 2
-      urls << url
-      # end
+      if urls.length < 20
+        urls << url
+      end
     end
-    items = []
+    @products = []
     threads = []
     urls.each do |url|
       threads << Thread.new do
@@ -29,17 +29,21 @@ class Api::ProductsController < ApplicationController
         item[:photos] = []
         item_page.css("script")[1].children[0].to_s.split("https://images.craigslist.org")[1...-1].each do |x|
           if x.include?("600x450.jpg")
-            p x
             hash = x.split("600x450.jpg")[0]
             item[:photos] << "https://images.craigslist.org#{hash}1200x900.jpg"
           end
         end
-        items << item
-        # p items if items.length == urls.length
+        item[:id] = (1..99999).to_a.sample
+        item[:location] = "hello"
+        item[:sell_by] = "sellby"
+        item[:buy_it_now] = 123
+        item[:category_id] = 12111
+        item[:user_id] = 2143214124
+        @products << item
       end
     end
     threads.each { |t| t.join }
-    render json: items if items.length == urls.length
+    # render json: items if items.length == urls.length
   end
 
   def show
