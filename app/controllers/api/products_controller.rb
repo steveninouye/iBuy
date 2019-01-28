@@ -13,12 +13,33 @@ class Api::ProductsController < ApplicationController
     urls = []
     page = Nokogiri::HTML(HTTParty.get("https://sfbay.craigslist.org/search/sss?query=macbook&sort=rel"))
     page.css("li.result-row > a").each do |link|
-      urls << link.attributes["href"].value
+      url = link.attributes["href"].value
+      # if urls.length < 2
+      urls << url
+      # end
     end
-    p urls
-    render json: "hello"
-    # query = params[:search][:query].gsub(";", " ")
-    # @products = Product.with_attached_photos.includes(:bids).where("LOWER(title) LIKE ?", "%#{query.downcase}%").limit(50)
+    items = []
+    threads = []
+    urls.each do |url|
+      threads << Thread.new do
+        item = {}
+        item_page = Nokogiri::HTML(HTTParty.get(url))
+        item[:title] = item_page.css("#titletextonly").text
+        item[:description] = item_page.css("#postingbody").inner_html.split("</div>")[-1].split("\n").join("")
+        item[:photos] = []
+        item_page.css("script")[1].children[0].to_s.split("https://images.craigslist.org")[1...-1].each do |x|
+          if x.include?("600x450.jpg")
+            p x
+            hash = x.split("600x450.jpg")[0]
+            item[:photos] << "https://images.craigslist.org#{hash}1200x900.jpg"
+          end
+        end
+        items << item
+        # p items if items.length == urls.length
+      end
+    end
+    threads.each { |t| t.join }
+    render json: items if items.length == urls.length
   end
 
   def show
