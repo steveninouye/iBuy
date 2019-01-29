@@ -8,8 +8,7 @@ class Api::ProductsController < ApplicationController
     if viewed_product_ids
       @products = Product.with_attached_photos.find(viewed_product_ids)
     else
-      ######## TODO: get random products to display in place
-      render json: ["No product Found"], status: 204
+      @products = Product.with_attached_photos.all.limit(6)
     end
   end
 
