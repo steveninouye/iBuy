@@ -29,11 +29,11 @@ class ProductDetailsRoot extends React.PureComponent {
         this.props.getProduct(productId);
       });
     } else {
-      let viewedItems = localStorage.getItem('viewedItems');
+      let viewedItems = localStorage.getItem('iBuyViewedItems');
       viewedItems = viewedItems ? viewedItems.split(':') : [];
       viewedItems.push(productId);
       viewedItems = viewedItems.slice(-6);
-      localStorage.setItem('viewedItems', viewedItems.join(':'));
+      localStorage.setItem('iBuyViewedItems', viewedItems.join(':'));
       this.setState({ loading: false });
     }
   }

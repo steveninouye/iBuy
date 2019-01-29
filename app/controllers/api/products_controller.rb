@@ -4,7 +4,7 @@ class Api::ProductsController < ApplicationController
   before_action :ensure_viewed_products_cookie
 
   def index
-    viewed_product_ids = session[:viewed_products]
+    product_ids = params[:ids].split(":").map {|e| e.to_i}
     @products = Product.with_attached_photos.find(viewed_product_ids)
   end
 
