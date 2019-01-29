@@ -4,8 +4,12 @@ class Api::ProductsController < ApplicationController
   before_action :ensure_viewed_products_cookie
 
   def index
-    product_ids = params[:ids].split(":").map {|e| e.to_i}
-    @products = Product.with_attached_photos.find(viewed_product_ids)
+    viewed_product_ids = session[:viewed_products]
+    if viewed_product_ids
+      @products = Product.with_attached_photos.find(viewed_product_ids)
+    else
+      render json: ["No product Found"], status: 204
+    end
   end
 
   def search

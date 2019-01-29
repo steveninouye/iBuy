@@ -13,11 +13,8 @@ export const getProduct = (id) =>
     url: `/api/products/${id}`
   });
 
-export const getRecentlyViewedProducts = (ids) =>
+export const getRecentlyViewedProducts = () =>
   $.ajax({
     method: 'GET',
-    url: '/api/products',
-    data: {
-      ids
-    }
+    url: '/api/products'
   });
