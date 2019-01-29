@@ -2,7 +2,6 @@ class Api::ProductsController < ApplicationController
   before_action :require_login!, only: [:create, :update, :destroy]
   before_action :ensure_search_input, only: [:index]
   before_action :ensure_viewed_products_cookie
-  skip_before_action :verify_authenticity_token
 
   def index
     viewed_product_ids = session[:viewed_products]
@@ -10,40 +9,8 @@ class Api::ProductsController < ApplicationController
   end
 
   def search
-    urls = []
-    page = Nokogiri::HTML(HTTParty.get("https://sfbay.craigslist.org/search/sss?query=macbook&sort=rel"))
-    page.css("li.result-row > a").each do |link|
-      url = link.attributes["href"].value
-      if urls.length < 20
-        urls << url
-      end
-    end
-    @products = []
-    threads = []
-    urls.each do |url|
-      threads << Thread.new do
-        item = {}
-        item_page = Nokogiri::HTML(HTTParty.get(url))
-        item[:title] = item_page.css("#titletextonly").text
-        item[:description] = item_page.css("#postingbody").inner_html.split("</div>")[-1].split("\n").join("")
-        item[:photos] = []
-        item_page.css("script")[1].children[0].to_s.split("https://images.craigslist.org")[1...-1].each do |x|
-          if x.include?("600x450.jpg")
-            hash = x.split("600x450.jpg")[0]
-            item[:photos] << "https://images.craigslist.org#{hash}1200x900.jpg"
-          end
-        end
-        item[:id] = (1..99999).to_a.sample
-        item[:location] = "hello"
-        item[:sell_by] = "sellby"
-        item[:buy_it_now] = 123
-        item[:category_id] = 12111
-        item[:user_id] = 2143214124
-        @products << item
-      end
-    end
-    threads.each { |t| t.join }
-    # render json: items if items.length == urls.length
+    query = params[:search][:query].gsub(";", " ")
+    @products = Product.with_attached_photos.includes(:bids).where("LOWER(title) LIKE ?", "%#{query.downcase}%").limit(20)
   end
 
   def show
