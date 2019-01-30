@@ -4,11 +4,12 @@ class Api::ProductsController < ApplicationController
   before_action :ensure_viewed_products_cookie
 
   def index
+    p session[:viewed_products]
     viewed_product_ids = session[:viewed_products]
-    if viewed_product_ids
+    if viewed_product_ids.length > 0
       @products = Product.with_attached_photos.find(viewed_product_ids)
     else
-      @products = Product.with_attached_photos.all.limit(6)
+      @products = Product.joins(:photos_attachments).with_attached_photos.group(:id).limit(6)
     end
   end
 
