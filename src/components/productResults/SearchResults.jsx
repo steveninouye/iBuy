@@ -57,6 +57,7 @@ class SearchResults extends React.Component {
       );
     } else {
       let queryString = this.parsedQueryString();
+      debugger;
       let searchInput = [queryString.query, queryString.category]
         .join(' ')
         .trim();

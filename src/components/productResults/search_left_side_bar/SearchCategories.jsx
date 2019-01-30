@@ -59,10 +59,6 @@ const SearchCategories = (props) => (
         <div className="search-results-left-chevron" />
         Cell Phone Accessories
       </Link>
-      <div className="search-item-cat-coins-paper-money">
-        <div className="search-results-left-chevron" />
-        Coins & Paper Money DELETE!~!!!!!!!
-      </div>
       <Link
         to={categorySearchLink('collectibles')}
         className="search-item-cat-collectibles"
@@ -91,10 +87,6 @@ const SearchCategories = (props) => (
         <div className="search-results-left-chevron" />
         Crafts
       </Link>
-      <div className="search-item-cat-dolls-">
-        <div className="search-results-left-chevron" />
-        Dolls & Bears DELETE!!!!!!!
-      </div>
       <Link
         to={categorySearchLink('cds / dvds / vhs')}
         className="search-item-cat-dvds-movies"
@@ -109,14 +101,6 @@ const SearchCategories = (props) => (
         <div className="search-results-left-chevron" />
         Vehicles
       </Link>
-      <div className="search-item-cat-entertainment-memorabilia">
-        <div className="search-results-left-chevron" />
-        Entertainnment & Memorabilia DELETE!!!!!
-      </div>
-      <div className="search-item-cat-gift-cards-coupons">
-        <div className="search-results-left-chevron" />
-        Gift Cars & Coupons DELETE!!!!!!
-      </div>
       <Link
         to={categorySearchLink('health and beauty')}
         className="search-item-cat-health-beauty"
@@ -138,10 +122,6 @@ const SearchCategories = (props) => (
         <div className="search-results-left-chevron" />
         Jewelry & Watches
       </Link>
-      <div className="search-item-cat-music">
-        <div className="search-results-left-chevron" />
-        Music DELETE!!!!!!!!
-      </div>
       <Link
         to={categorySearchLink('musical instruments')}
         className="search-item-cat-musical-instruments"
@@ -149,22 +129,6 @@ const SearchCategories = (props) => (
         <div className="search-results-left-chevron" />
         Musical Instruments
       </Link>
-      <div className="search-item-cat-pet-supplies">
-        <div className="search-results-left-chevron" />
-        Pet Supplies DELETE!!!!!!!!!
-      </div>
-      <div className="search-item-cat-pottery-glass">
-        <div className="search-results-left-chevron" />
-        Pottery & Glass DELETE!!!!!!!!
-      </div>
-      <div className="search-item-cat-real-">
-        <div className="search-results-left-chevron" />
-        Real Estate DELETE!!!!!!!!!!
-      </div>
-      <div className="search-item-cat-specialty-services">
-        <div className="search-results-left-chevron" />
-        Specialty Services DELETE!!!!!!!
-      </div>
       <Link
         to={categorySearchLink('sporting goods')}
         className="search-item-cat-sporting-goods"
@@ -172,14 +136,6 @@ const SearchCategories = (props) => (
         <div className="search-results-left-chevron" />
         Sporting Goods
       </Link>
-      <div className="search-item-cat-sports-memorabilia">
-        <div className="search-results-left-chevron" />
-        Sports Memorabilia DELETE!!!!!
-      </div>
-      <div className="search-item-cat-stamps">
-        <div className="search-results-left-chevron" />
-        Stamps DELETE!!!!!!
-      </div>
       <Link
         to={categorySearchLink('tickets')}
         className="search-item-cat-tickets-experiences"
@@ -194,10 +150,6 @@ const SearchCategories = (props) => (
         <div className="search-results-left-chevron" />
         Toys & Hobbies
       </Link>
-      <div className="search-item-cat-travel">
-        <div className="search-results-left-chevron" />
-        Travel DELETE!!!!!!!!
-      </div>
       <Link
         to={categorySearchLink('video gaming')}
         className="search-item-cat-video-games-consoles"
@@ -205,10 +157,6 @@ const SearchCategories = (props) => (
         <div className="search-results-left-chevron" />
         Video Games & Consoles
       </Link>
-      <div className="search-item-cat-everything-else">
-        <div className="search-results-left-chevron" />
-        Everything Else DELETE!!!!!!!!!
-      </div>
     </div>
   </div>
 );
