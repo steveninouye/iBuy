@@ -9,7 +9,7 @@ class Api::ProductsController < ApplicationController
     if viewed_product_ids.length > 0
       @products = Product.with_attached_photos.find(viewed_product_ids)
     else
-      @products = Product.joins(:photos_attachments).with_attached_photos.group(:id).limit(6)
+      @products = Product.joins(:photos_attachments).with_attached_photos.group(:id).where("LOWER(title) LIKE '%macbook%'").limit(6)
     end
   end
 
