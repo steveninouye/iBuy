@@ -1,15 +1,12 @@
 import {
   RECEIVE_PRODUCTS,
-  RECEIVE_PRODUCT,
-  NO_RECENT_PRODUCTS
+  RECEIVE_PRODUCT
 } from '../../actions/product_actions';
 import { tempProducts } from '../../TEMPproducts';
 
 // change state back to empty object
 const ProductsSwitch = (state = tempProducts, action) => {
   switch (action.type) {
-    case NO_RECENT_PRODUCTS:
-      return {};
     case RECEIVE_PRODUCTS:
       return action.products ? action.products : {};
     case RECEIVE_PRODUCT:

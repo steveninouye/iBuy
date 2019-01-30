@@ -14,8 +14,15 @@ class Api::ProductsController < ApplicationController
   end
 
   def search
-    query = params[:search][:query].gsub(";", " ")
-    @products = Product.with_attached_photos.includes(:bids).where("LOWER(title) LIKE ?", "%#{query.downcase}%").limit(20)
+    query = remove_semi_colon(params[:search][:query])
+    category = remove_semi_colon(params[:search][:category])
+    if query && category
+      @products = Product.with_attached_photos.includes(:bids).where("LOWER(title) LIKE ?", "%#{query.downcase}%").where("categories.name = ?", category).limit(20)
+    elsif query
+      @products = Product.with_attached_photos.includes(:bids).where("LOWER(title) LIKE ?", "%#{query.downcase}%").limit(20)
+    else
+      @products = Product.with_attached_photos.joins(:category).includes(:bids).where("categories.name = ?", category).limit(20)
+    end
   end
 
   def show
@@ -47,6 +54,11 @@ class Api::ProductsController < ApplicationController
 
   private
 
+  def remove_semi_colon(str)
+    return str.gsub(";", " ") if str
+    nil
+  end
+
   def attach_viewed_products_cookie(new_product)
     id = new_product.id
     unless session[:viewed_products].include?(id)
@@ -64,10 +76,5 @@ class Api::ProductsController < ApplicationController
 
   def ensure_search_input
     params[:search] ||= {query: " "}
-  end
-
-  def snakecase_params
-    byebug
-    # params[:product] = params[:product].transform_keys(&:underscore)
   end
 end
