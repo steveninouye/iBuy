@@ -144,14 +144,15 @@ ul.home--category-links {
 
   li {
     color: #555;
-    padding: 1rem 0.4rem;
     font-size: 1.2rem;
+    padding: 1rem 0.4rem;
     margin: 0 1rem;
     text-shadow: 0 1px 0 rgba(204, 204, 204, 0.2);
     border-bottom: 0.3rem solid white;
 
     &:hover {
-      margin: 0 0.9rem;
+      box-sizing: border-box;
+      margin: 0 1rem;
       font-weight: 600;
       border-bottom: 0.3rem solid rgb(63, 63, 63);
     }
@@ -281,6 +282,10 @@ div.home--category-bars {
 
     &.cell-phone-accessories-btn {
       background-image: url('/images/cell-cat-btn.jpg');
+    }
+
+    &.clothing-accessories-btn {
+      background-image: url('/images/clothing-cat-btn.jpg');
     }
 
     &.coins-paper-money-btn {
