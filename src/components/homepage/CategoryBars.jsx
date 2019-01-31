@@ -5,7 +5,7 @@ import { categorySearchLink } from '../../utils/uri_utils';
 
 const CategoryBars = (props) => (
   <div className="home--category-bars">
-    <Link to={categorySearchLink('all')}>
+    <Link to={categorySearchLink('allCategories')}>
       <div className="home--category-bar-item all-categories-btn">
         All Categories
       </div>
@@ -42,11 +42,6 @@ const CategoryBars = (props) => (
         Clothing & Accessories
       </div>
     </Link>
-    <Link to={categorySearchLink('')}>
-      <div className="home--category-bar-item coins-paper-money-btn">
-        Coins & Paper Money DELETE!!!!!!!!
-      </div>
-    </Link>
     <Link to={categorySearchLink('collectibles')}>
       <div className="home--category-bar-item collectibles-btn">
         Collectibles
@@ -65,11 +60,6 @@ const CategoryBars = (props) => (
     <Link to={categorySearchLink('arts and crafts')}>
       <div className="home--category-bar-item crafts-btn">Crafts</div>
     </Link>
-    <Link to={categorySearchLink('')}>
-      <div className="home--category-bar-item dolls-bears-btn">
-        Dolls & Bears DELETE!!!!!!
-      </div>
-    </Link>
     <Link to={categorySearchLink('cds / dvds / vhs')}>
       <div className="home--category-bar-item dvds-movies-btn">
         DVDs & Movies
@@ -77,16 +67,6 @@ const CategoryBars = (props) => (
     </Link>
     <Link to={categorySearchLink('cars and trucks')}>
       <div className="home--category-bar-item vehicles-btn">Vehicles</div>
-    </Link>
-    <Link to={categorySearchLink('')}>
-      <div className="home--category-bar-item entertainment-memorabilia-btn">
-        Entertainment & Memorabilia DELETE!!!!
-      </div>
-    </Link>
-    <Link to={categorySearchLink('')}>
-      <div className="home--category-bar-item gift-cards-coupons-btn">
-        Gift Cards & Coupons DELETE!!!!!
-      </div>
     </Link>
     <Link to={categorySearchLink('health and beauty')}>
       <div className="home--category-bar-item health-beauty-btn">
@@ -103,44 +83,15 @@ const CategoryBars = (props) => (
         Jewelry & Watches
       </div>
     </Link>
-    <Link to={categorySearchLink('')}>
-      <div className="home--category-bar-item music-btn">Music DELETE!!!!!!!!!</div>
-    </Link>
     <Link to={categorySearchLink('musical instruments')}>
       <div className="home--category-bar-item musical-instruments-btn">
         Musical Instruments
-      </div>
-    </Link>
-    <Link to={categorySearchLink('')}>
-      <div className="home--category-bar-item pet-supplies-btn">
-        Pet Supplies DELETE!!!!!!!!!!!!!!
-      </div>
-    </Link>
-    <Link to={categorySearchLink('')}>
-      <div className="home--category-bar-item pottery-glass-btn">
-        Pottery & Glass DELETE!!!!!!!!!!!!!!
-      </div>
-    </Link>
-    <Link to={categorySearchLink('')}>
-      <div className="home--category-bar-item real-estate-btn">Real Estate DELETE!!!!!!!!!!!!!!</div>
-    </Link>
-    <Link to={categorySearchLink('')}>
-      <div className="home--category-bar-item specialty-services-btn">
-        Specialty Services DELETE!!!!!!!!!!!!!!
       </div>
     </Link>
     <Link to={categorySearchLink('sporting goods')}>
       <div className="home--category-bar-item sporting-goods-btn">
         Sporting Goods
       </div>
-    </Link>
-    <Link to={categorySearchLink('')}>
-      <div className="home--category-bar-item sports-mem-cards-fan-shop-btn">
-        Sports Memorabilia DELETE!!!!!!!!
-      </div>
-    </Link>
-    <Link to={categorySearchLink('')}>
-      <div className="home--category-bar-item stamps-btn">Stamps DELETE!!!!!!!</div>
     </Link>
     <Link to={categorySearchLink('tickets')}>
       <div className="home--category-bar-item tickets-experiences-btn">
@@ -152,17 +103,9 @@ const CategoryBars = (props) => (
         Toys & Hobbies
       </div>
     </Link>
-    <Link to={categorySearchLink('')}>
-      <div className="home--category-bar-item travel-btn">Travel DELETE!!!!!!!</div>
-    </Link>
     <Link to={categorySearchLink('video gaming')}>
       <div className="home--category-bar-item video-games-consoles-btn">
         Video Games & Consoles
-      </div>
-    </Link>
-    <Link to={categorySearchLink('')}>
-      <div className="home--category-bar-item everything-else-btn">
-        Everything Else  DELETE!!!!!!!!!!!!!
       </div>
     </Link>
   </div>

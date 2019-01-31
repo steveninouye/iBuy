@@ -3,15 +3,10 @@ import { Link } from 'react-router-dom';
 
 import { categorySearchLink } from '../../../utils/uri_utils';
 
-
-
-
-/////////////// ADD Clothing
-
 const SearchCategories = (props) => (
   <div className="search-results-categories">
     <div className="search-results-category-header">Categories</div>
-    <Link to={categorySearchLink('all')} className="search-all-categories">
+    <Link to={categorySearchLink('allCategories')} className="search-all-categories">
       All
     </Link>
     <div className="search-side-bar-categories">
