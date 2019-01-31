@@ -73,6 +73,8 @@ componentDidUpdate(prevProps, prevState, snapshot) {
 
 On the homepage, iBuy displays the 6 most recent items that the user has viewed to display the items he/she expressed interest in.  In order to implement this feature without requiring the user to log in, a cookie was stored on their browser holding IDs for the items they recently viewed.
 
+![item](item.png)
+
 ```ruby
   def show
     @product = Product.with_attached_photos.includes(:bids, :owner, :category).find_by_id(params[:id])
@@ -92,7 +94,6 @@ On the homepage, iBuy displays the 6 most recent items that the user has viewed 
   end
 ```
 
-![item](item.png)
 
 ## Future Features
 
