@@ -154,5 +154,5 @@ function pauseScrape(path, productId, file, prevResult, idx) {
         }
       })
       .catch((err) => console.log(err));
-  }, 1000 * idx);
+  }, 2000 * idx);
 }
