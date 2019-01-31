@@ -11,6 +11,8 @@
   - Category
 - Shortcuts for faster navigation
 
+![homepage](homepage.png)
+
 In order to populate the site with relavant product data optimally, a Node webscraper was built to write a Rails seed file and source images of over 3,000 products. [Amazon Web Services S3](https://aws.amazon.com/s3/) cloud storage platform was incorperated as well in order to store and serve images.
 
 ## Technologies
@@ -38,6 +40,8 @@ In order to populate the site with relavant product data optimally, a Node websc
 On each page of iBuy, a search bar is present in order to create a pleasant User Experience (UX). Along with this search bar, various links were available to allow the user to search various categories on click.
 
 The choice to fetch the items upon component mounting and to pull the search query from the url's query string was made so that the search query had a single source of truth on which items to fetch from the backend. This decision also created a pleasant UX with minimal trade off as the user could keep their results upon page refresh, upon revisiting the url, and upon sharing the url with friends (trade off being less than 100ms delay).
+
+![search](search.png)
 
 ```javascript
 constructor(props) {
@@ -87,6 +91,8 @@ On the homepage, iBuy displays the 6 most recent items that the user has viewed 
     end
   end
 ```
+
+![item](item.png)
 
 ## Future Features
 
