@@ -1,8 +1,11 @@
 import React from 'react';
 
-const SelectCategories = (props) => (
+const SelectCategories = ({ handleChange }) => (
   <div className="home--category-select-container">
-    <select className="home--category-select">
+    <select
+      onChange={handleChange('searchCategory')}
+      className="home--category-select"
+    >
       <option value="allCategories">All Catgories</option>
       <option value="antiques">Antiques</option>
       <option value="arts and crafts">Art</option>
