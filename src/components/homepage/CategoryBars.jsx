@@ -37,6 +37,11 @@ const CategoryBars = (props) => (
         Cell Phone/Accessories
       </div>
     </Link>
+    <Link to={categorySearchLink('clothing and accessories')}>
+      <div className="home--category-bar-item clothing-accessories-btn">
+        Clothing & Accessories
+      </div>
+    </Link>
     <Link to={categorySearchLink('')}>
       <div className="home--category-bar-item coins-paper-money-btn">
         Coins & Paper Money DELETE!!!!!!!!

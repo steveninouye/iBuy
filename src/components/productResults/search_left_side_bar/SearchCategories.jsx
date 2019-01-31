@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 
 import { categorySearchLink } from '../../../utils/uri_utils';
 
+
+
+
+/////////////// ADD Clothing
+
 const SearchCategories = (props) => (
   <div className="search-results-categories">
     <div className="search-results-category-header">Categories</div>
@@ -58,6 +63,13 @@ const SearchCategories = (props) => (
       >
         <div className="search-results-left-chevron" />
         Cell Phone Accessories
+      </Link>
+      <Link
+        to={categorySearchLink('clothing and accessories')}
+        className="search-item-cat-cell-phone-acces"
+      >
+        <div className="search-results-left-chevron" />
+        Clothings & Accessories
       </Link>
       <Link
         to={categorySearchLink('collectibles')}
