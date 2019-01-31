@@ -71,7 +71,7 @@ componentDidUpdate(prevProps, prevState, snapshot) {
 
 ### Displaying Recently Viewed Items
 
-On the homepage, iBuy displays the 6 most recent items that the user has viewed to display the items he/she expressed interest in.  In order to implement this feature without requiring the user to log in, a cookie was stored on their browser holding IDs for the items they recently viewed.
+On the homepage, iBuy displays the 6 most recent items that the user has viewed to display the items he/she expressed interest in. In order to implement this feature without requiring the user to log in, a cookie was stored on their browser holding IDs for the items they recently viewed.
 
 ![item](item.png)
 
@@ -94,7 +94,6 @@ On the homepage, iBuy displays the 6 most recent items that the user has viewed 
   end
 ```
 
-
 ## Future Features
 
 Given the 10-day timeline of this project, it was not possible to implement the site's full functionality. Top priorites for furter work include:
@@ -102,3 +101,5 @@ Given the 10-day timeline of this project, it was not possible to implement the 
 - Allowing users to view their watched/bid items
 - Allow users to post an item for sale
 - Search result sorting
+
+![register](register.png)
