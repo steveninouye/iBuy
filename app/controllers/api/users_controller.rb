@@ -27,7 +27,7 @@ class Api::UsersController < ApplicationController
       render json: current_user.errors.full_messages, status: 406
     end
   end
-  
+
   def destroy
     #verify user credentials
     @user = current_user

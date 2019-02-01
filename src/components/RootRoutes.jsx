@@ -10,25 +10,24 @@ import HomeFooter from './homepage/HomeFooter';
 import Home from './homepage/Home';
 import ProductResultsRoot from './productResults/ProductResultsRoot';
 import ProductDetailsContainer from './product_details/ProductDetailsContainer';
+import Heroku from './404/Heroku';
 
 const RootRoutes = () => {
-   return (
-      <>
-         <Switch>
-            <Route exact path="/" component={Home} />
-            <Route
-               path="/item/:productId"
-               component={ProductDetailsContainer}
-            />
-            <Route path="/search" component={ProductResultsRoot} />
-            <Route exact path="/comingsoon" component={ComingSoonContainer} />
-            <AuthRoute path="/register" component={SignUpFormContainer} />
-            <AuthRoute path="/signin" component={LogInFormContainer} />
-            <Route path="*" component={Page404Container} />
-         </Switch>
-         <HomeFooter />
-      </>
-   );
+  return (
+    <>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/keepherokuawake" component={Heroku} />
+        <Route path="/item/:productId" component={ProductDetailsContainer} />
+        <Route path="/search" component={ProductResultsRoot} />
+        <Route exact path="/comingsoon" component={ComingSoonContainer} />
+        <AuthRoute path="/register" component={SignUpFormContainer} />
+        <AuthRoute path="/signin" component={LogInFormContainer} />
+        <Route path="*" component={Page404Container} />
+      </Switch>
+      <HomeFooter />
+    </>
+  );
 };
 
 export default RootRoutes;
