@@ -35,7 +35,7 @@
       "npm": "6.4.1"
    },
    "scripts": {
-      "postinstall": "webpack",
+      "postinstall": "webpack -p",
       "test": "echo \"Error: no test specified\" && exit 1",
       "start": "webpack --watch --mode=development",
       "server": "concurrently -r -k \"webpack --watch --mode=development\" \"rails s\""

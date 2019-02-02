@@ -8,13 +8,15 @@ import sessionSwitch from './session/session_switch.js';
 import UiSwitch from './ui/ui_switch.js';
 
 const rootReducer = combineReducers({
-   entities: entitiesReducer,
-   errors: errorsReducer,
-   session: sessionSwitch,
-   ui: UiSwitch
+  entities: entitiesReducer,
+  errors: errorsReducer,
+  session: sessionSwitch,
+  ui: UiSwitch
 });
 
 const configureStore = (preloadedState = {}) =>
-   createStore(rootReducer, preloadedState, applyMiddleware(thunk, logger));
+  process.env.NODE_ENV === 'production'
+    ? createStore(rootReducer, preloadedState, applyMiddleware(thunk))
+    : createStore(rootReducer, preloadedState, applyMiddleware(thunk, logger));
 
 export default configureStore;
