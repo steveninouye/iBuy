@@ -141,15 +141,17 @@ function pauseScrape(path, productId, file, prevResult, idx) {
           json = json.split(';')[0];
           const images = JSON.parse(json);
           images.forEach((img, imgIdx) => {
-            const imgFileName = `${productId}-${imgIdx}.jpg`;
-            // download images to current directory
-            request(img.url).pipe(
-              fs.createWriteStream(`${path}images/${imgFileName}`)
-            );
-            // write each image to a file to seed relationship and AWS
-            const productPhotoData = `\nproduct.photos.attach(io: File.open("${path}images/${imgFileName}"), filename: "${imgFileName}") if product`;
-            fs.appendFileSync(file, productPhotoData);
-            console.log(`${productTitle} => was created`);
+            if (imgIdx < 7) {
+              const imgFileName = `${productId}-${imgIdx}.jpg`;
+              // download images to current directory
+              request(img.url).pipe(
+                fs.createWriteStream(`${path}images/${imgFileName}`)
+              );
+              // write each image to a file to seed relationship and AWS
+              const productPhotoData = `\nproduct.photos.attach(io: File.open("${path}images/${imgFileName}"), filename: "${imgFileName}") if product`;
+              fs.appendFileSync(file, productPhotoData);
+              console.log(`${productTitle} => was created`);
+            }
           });
         }
       })
