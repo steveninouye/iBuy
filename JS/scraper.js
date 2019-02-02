@@ -132,7 +132,6 @@ function pauseScrape(path, productId, file, prevResult, idx) {
                })
                products << product if product
                `;
-        fs.appendFileSync(file, productData);
 
         // get images
         const imgJSScript = productResult$('script').get(1).children[0].data;
@@ -141,6 +140,9 @@ function pauseScrape(path, productId, file, prevResult, idx) {
           json = json.split(';')[0];
           const images = JSON.parse(json);
           images.forEach((img, imgIdx) => {
+            if (imgIdx === 0) {
+              fs.appendFileSync(file, productData);
+            }
             if (imgIdx < 7) {
               const imgFileName = `${productId}-${imgIdx}.jpg`;
               // download images to current directory
