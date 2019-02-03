@@ -1,4 +1,3 @@
-
 category = Category.find_by_name("video gaming")
 unless(category)
 category = Category.create(name: "video gaming")
@@ -33,10 +32,10 @@ I&apos;m selling the following as a bundle, all in EXCELLENT condition:<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810712777-0.jpg"), filename: "6810712777-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810712777-1.jpg"), filename: "6810712777-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810712777-2.jpg"), filename: "6810712777-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810712777-3.jpg"), filename: "6810712777-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810712777-0.jpg"), filename: "6810712777-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810712777-1.jpg"), filename: "6810712777-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810712777-2.jpg"), filename: "6810712777-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810712777-3.jpg"), filename: "6810712777-3.jpg") if product
 
             product = Product.create(
                {
@@ -56,13 +55,13 @@ two storage cases<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805177568-0.jpg"), filename: "6805177568-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805177568-1.jpg"), filename: "6805177568-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805177568-2.jpg"), filename: "6805177568-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805177568-3.jpg"), filename: "6805177568-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805177568-4.jpg"), filename: "6805177568-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805177568-5.jpg"), filename: "6805177568-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805177568-6.jpg"), filename: "6805177568-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805177568-0.jpg"), filename: "6805177568-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805177568-1.jpg"), filename: "6805177568-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805177568-2.jpg"), filename: "6805177568-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805177568-3.jpg"), filename: "6805177568-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805177568-4.jpg"), filename: "6805177568-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805177568-5.jpg"), filename: "6805177568-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805177568-6.jpg"), filename: "6805177568-6.jpg") if product
 
             product = Product.create(
                {
@@ -76,7 +75,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6789905049-0.jpg"), filename: "6789905049-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6789905049-0.jpg"), filename: "6789905049-0.jpg") if product
 
             product = Product.create(
                {
@@ -91,10 +90,10 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800403683-0.jpg"), filename: "6800403683-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800403683-1.jpg"), filename: "6800403683-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800403683-2.jpg"), filename: "6800403683-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800403683-3.jpg"), filename: "6800403683-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800403683-0.jpg"), filename: "6800403683-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800403683-1.jpg"), filename: "6800403683-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800403683-2.jpg"), filename: "6800403683-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800403683-3.jpg"), filename: "6800403683-3.jpg") if product
 
             product = Product.create(
                {
@@ -108,13 +107,13 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810700382-0.jpg"), filename: "6810700382-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810700382-1.jpg"), filename: "6810700382-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810700382-2.jpg"), filename: "6810700382-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810700382-3.jpg"), filename: "6810700382-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810700382-4.jpg"), filename: "6810700382-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810700382-5.jpg"), filename: "6810700382-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810700382-6.jpg"), filename: "6810700382-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810700382-0.jpg"), filename: "6810700382-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810700382-1.jpg"), filename: "6810700382-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810700382-2.jpg"), filename: "6810700382-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810700382-3.jpg"), filename: "6810700382-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810700382-4.jpg"), filename: "6810700382-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810700382-5.jpg"), filename: "6810700382-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810700382-6.jpg"), filename: "6810700382-6.jpg") if product
 
             product = Product.create(
                {
@@ -137,9 +136,9 @@ BRAND NEW, includes accessory<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810699033-0.jpg"), filename: "6810699033-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810699033-1.jpg"), filename: "6810699033-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810699033-2.jpg"), filename: "6810699033-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810699033-0.jpg"), filename: "6810699033-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810699033-1.jpg"), filename: "6810699033-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810699033-2.jpg"), filename: "6810699033-2.jpg") if product
 
             product = Product.create(
                {
@@ -153,10 +152,10 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798960460-0.jpg"), filename: "6798960460-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798960460-1.jpg"), filename: "6798960460-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798960460-2.jpg"), filename: "6798960460-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798960460-3.jpg"), filename: "6798960460-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798960460-0.jpg"), filename: "6798960460-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798960460-1.jpg"), filename: "6798960460-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798960460-2.jpg"), filename: "6798960460-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798960460-3.jpg"), filename: "6798960460-3.jpg") if product
 
             product = Product.create(
                {
@@ -188,7 +187,7 @@ PS4, Xbox, Video",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810698784-0.jpg"), filename: "6810698784-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810698784-0.jpg"), filename: "6810698784-0.jpg") if product
 
             product = Product.create(
                {
@@ -202,8 +201,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810698281-0.jpg"), filename: "6810698281-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810698281-1.jpg"), filename: "6810698281-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810698281-0.jpg"), filename: "6810698281-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810698281-1.jpg"), filename: "6810698281-1.jpg") if product
 
             product = Product.create(
                {
@@ -217,9 +216,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810682056-0.jpg"), filename: "6810682056-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810682056-1.jpg"), filename: "6810682056-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810682056-2.jpg"), filename: "6810682056-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810682056-0.jpg"), filename: "6810682056-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810682056-1.jpg"), filename: "6810682056-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810682056-2.jpg"), filename: "6810682056-2.jpg") if product
 
             product = Product.create(
                {
@@ -244,10 +243,10 @@ Everything included, in LIKE NEW condition.<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810694344-0.jpg"), filename: "6810694344-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810694344-1.jpg"), filename: "6810694344-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810694344-2.jpg"), filename: "6810694344-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810694344-3.jpg"), filename: "6810694344-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810694344-0.jpg"), filename: "6810694344-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810694344-1.jpg"), filename: "6810694344-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810694344-2.jpg"), filename: "6810694344-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810694344-3.jpg"), filename: "6810694344-3.jpg") if product
 
             product = Product.create(
                {
@@ -276,7 +275,7 @@ PS4, Xbox, Video",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810692197-0.jpg"), filename: "6810692197-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810692197-0.jpg"), filename: "6810692197-0.jpg") if product
 
             product = Product.create(
                {
@@ -297,12 +296,12 @@ Please call or text Louis at
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791143361-0.jpg"), filename: "6791143361-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791143361-1.jpg"), filename: "6791143361-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791143361-2.jpg"), filename: "6791143361-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791143361-3.jpg"), filename: "6791143361-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791143361-4.jpg"), filename: "6791143361-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791143361-5.jpg"), filename: "6791143361-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791143361-0.jpg"), filename: "6791143361-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791143361-1.jpg"), filename: "6791143361-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791143361-2.jpg"), filename: "6791143361-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791143361-3.jpg"), filename: "6791143361-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791143361-4.jpg"), filename: "6791143361-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791143361-5.jpg"), filename: "6791143361-5.jpg") if product
 
             product = Product.create(
                {
@@ -316,13 +315,13 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797750056-0.jpg"), filename: "6797750056-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797750056-1.jpg"), filename: "6797750056-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797750056-2.jpg"), filename: "6797750056-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797750056-3.jpg"), filename: "6797750056-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797750056-4.jpg"), filename: "6797750056-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797750056-5.jpg"), filename: "6797750056-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797750056-6.jpg"), filename: "6797750056-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797750056-0.jpg"), filename: "6797750056-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797750056-1.jpg"), filename: "6797750056-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797750056-2.jpg"), filename: "6797750056-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797750056-3.jpg"), filename: "6797750056-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797750056-4.jpg"), filename: "6797750056-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797750056-5.jpg"), filename: "6797750056-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797750056-6.jpg"), filename: "6797750056-6.jpg") if product
 
             product = Product.create(
                {
@@ -349,9 +348,9 @@ Includes game disc, case, and documentation<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810688365-0.jpg"), filename: "6810688365-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810688365-1.jpg"), filename: "6810688365-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810688365-2.jpg"), filename: "6810688365-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810688365-0.jpg"), filename: "6810688365-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810688365-1.jpg"), filename: "6810688365-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810688365-2.jpg"), filename: "6810688365-2.jpg") if product
 
             product = Product.create(
                {
@@ -365,9 +364,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810669167-0.jpg"), filename: "6810669167-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810669167-1.jpg"), filename: "6810669167-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810669167-2.jpg"), filename: "6810669167-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810669167-0.jpg"), filename: "6810669167-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810669167-1.jpg"), filename: "6810669167-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810669167-2.jpg"), filename: "6810669167-2.jpg") if product
 
             product = Product.create(
                {
@@ -381,11 +380,11 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790918920-0.jpg"), filename: "6790918920-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790918920-1.jpg"), filename: "6790918920-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790918920-2.jpg"), filename: "6790918920-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790918920-3.jpg"), filename: "6790918920-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790918920-4.jpg"), filename: "6790918920-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6790918920-0.jpg"), filename: "6790918920-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6790918920-1.jpg"), filename: "6790918920-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6790918920-2.jpg"), filename: "6790918920-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6790918920-3.jpg"), filename: "6790918920-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6790918920-4.jpg"), filename: "6790918920-4.jpg") if product
 
             product = Product.create(
                {
@@ -401,8 +400,8 @@ Willing to meet in Sunnyvale or close surrounding areas. No trades, cash only",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6803572312-0.jpg"), filename: "6803572312-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6803572312-1.jpg"), filename: "6803572312-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803572312-0.jpg"), filename: "6803572312-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803572312-1.jpg"), filename: "6803572312-1.jpg") if product
 
             product = Product.create(
                {
@@ -417,7 +416,7 @@ Willing to meet in Sunnyvale or closer surrounding areas. Cash Only, no trades",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798178734-0.jpg"), filename: "6798178734-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798178734-0.jpg"), filename: "6798178734-0.jpg") if product
 
             product = Product.create(
                {
@@ -434,8 +433,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808091848-0.jpg"), filename: "6808091848-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808091848-1.jpg"), filename: "6808091848-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808091848-0.jpg"), filename: "6808091848-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808091848-1.jpg"), filename: "6808091848-1.jpg") if product
 
             product = Product.create(
                {
@@ -451,8 +450,8 @@ Games..",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808091874-0.jpg"), filename: "6808091874-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808091874-1.jpg"), filename: "6808091874-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808091874-0.jpg"), filename: "6808091874-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808091874-1.jpg"), filename: "6808091874-1.jpg") if product
 
             product = Product.create(
                {
@@ -466,7 +465,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810672633-0.jpg"), filename: "6810672633-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810672633-0.jpg"), filename: "6810672633-0.jpg") if product
 
             product = Product.create(
                {
@@ -480,7 +479,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810670600-0.jpg"), filename: "6810670600-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810670600-0.jpg"), filename: "6810670600-0.jpg") if product
 
             product = Product.create(
                {
@@ -494,7 +493,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810667816-0.jpg"), filename: "6810667816-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810667816-0.jpg"), filename: "6810667816-0.jpg") if product
 
             product = Product.create(
                {
@@ -526,7 +525,7 @@ Video Game Console Video Games Microsoft Xbox",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6803076542-0.jpg"), filename: "6803076542-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803076542-0.jpg"), filename: "6803076542-0.jpg") if product
 
             product = Product.create(
                {
@@ -540,7 +539,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810664129-0.jpg"), filename: "6810664129-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810664129-0.jpg"), filename: "6810664129-0.jpg") if product
 
             product = Product.create(
                {
@@ -554,10 +553,10 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810663751-0.jpg"), filename: "6810663751-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810663751-1.jpg"), filename: "6810663751-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810663751-2.jpg"), filename: "6810663751-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810663751-3.jpg"), filename: "6810663751-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810663751-0.jpg"), filename: "6810663751-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810663751-1.jpg"), filename: "6810663751-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810663751-2.jpg"), filename: "6810663751-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810663751-3.jpg"), filename: "6810663751-3.jpg") if product
 
             product = Product.create(
                {
@@ -575,9 +574,9 @@ https://www.bestbuy.com/site/thrustmaster-ferrari-458-spider-racing-wheel-for-xb
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810662105-0.jpg"), filename: "6810662105-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810662105-1.jpg"), filename: "6810662105-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810662105-2.jpg"), filename: "6810662105-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810662105-0.jpg"), filename: "6810662105-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810662105-1.jpg"), filename: "6810662105-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810662105-2.jpg"), filename: "6810662105-2.jpg") if product
 
             product = Product.create(
                {
@@ -591,7 +590,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810661786-0.jpg"), filename: "6810661786-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810661786-0.jpg"), filename: "6810661786-0.jpg") if product
 
             product = Product.create(
                {
@@ -606,13 +605,13 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807291895-0.jpg"), filename: "6807291895-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807291895-1.jpg"), filename: "6807291895-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807291895-2.jpg"), filename: "6807291895-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807291895-3.jpg"), filename: "6807291895-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807291895-4.jpg"), filename: "6807291895-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807291895-5.jpg"), filename: "6807291895-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807291895-6.jpg"), filename: "6807291895-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807291895-0.jpg"), filename: "6807291895-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807291895-1.jpg"), filename: "6807291895-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807291895-2.jpg"), filename: "6807291895-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807291895-3.jpg"), filename: "6807291895-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807291895-4.jpg"), filename: "6807291895-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807291895-5.jpg"), filename: "6807291895-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807291895-6.jpg"), filename: "6807291895-6.jpg") if product
 
             product = Product.create(
                {
@@ -627,13 +626,13 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791318385-0.jpg"), filename: "6791318385-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791318385-1.jpg"), filename: "6791318385-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791318385-2.jpg"), filename: "6791318385-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791318385-3.jpg"), filename: "6791318385-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791318385-4.jpg"), filename: "6791318385-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791318385-5.jpg"), filename: "6791318385-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791318385-6.jpg"), filename: "6791318385-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791318385-0.jpg"), filename: "6791318385-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791318385-1.jpg"), filename: "6791318385-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791318385-2.jpg"), filename: "6791318385-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791318385-3.jpg"), filename: "6791318385-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791318385-4.jpg"), filename: "6791318385-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791318385-5.jpg"), filename: "6791318385-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791318385-6.jpg"), filename: "6791318385-6.jpg") if product
 
             product = Product.create(
                {
@@ -650,9 +649,9 @@ Smoke free and pet free home",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810649763-0.jpg"), filename: "6810649763-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810649763-1.jpg"), filename: "6810649763-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810649763-2.jpg"), filename: "6810649763-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810649763-0.jpg"), filename: "6810649763-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810649763-1.jpg"), filename: "6810649763-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810649763-2.jpg"), filename: "6810649763-2.jpg") if product
 
             product = Product.create(
                {
@@ -668,8 +667,8 @@ Pet free and smoke free home",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810642323-0.jpg"), filename: "6810642323-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810642323-1.jpg"), filename: "6810642323-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810642323-0.jpg"), filename: "6810642323-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810642323-1.jpg"), filename: "6810642323-1.jpg") if product
 
             product = Product.create(
                {
@@ -685,9 +684,9 @@ Works but no Charger",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804002774-0.jpg"), filename: "6804002774-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804002774-1.jpg"), filename: "6804002774-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804002774-2.jpg"), filename: "6804002774-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804002774-0.jpg"), filename: "6804002774-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804002774-1.jpg"), filename: "6804002774-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804002774-2.jpg"), filename: "6804002774-2.jpg") if product
 
             product = Product.create(
                {
@@ -702,9 +701,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795840237-0.jpg"), filename: "6795840237-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795840237-1.jpg"), filename: "6795840237-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795840237-2.jpg"), filename: "6795840237-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795840237-0.jpg"), filename: "6795840237-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795840237-1.jpg"), filename: "6795840237-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795840237-2.jpg"), filename: "6795840237-2.jpg") if product
 
             product = Product.create(
                {
@@ -719,7 +718,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6789837260-0.jpg"), filename: "6789837260-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6789837260-0.jpg"), filename: "6789837260-0.jpg") if product
 
             product = Product.create(
                {
@@ -734,13 +733,13 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804616273-0.jpg"), filename: "6804616273-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804616273-1.jpg"), filename: "6804616273-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804616273-2.jpg"), filename: "6804616273-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804616273-3.jpg"), filename: "6804616273-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804616273-4.jpg"), filename: "6804616273-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804616273-5.jpg"), filename: "6804616273-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804616273-6.jpg"), filename: "6804616273-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804616273-0.jpg"), filename: "6804616273-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804616273-1.jpg"), filename: "6804616273-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804616273-2.jpg"), filename: "6804616273-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804616273-3.jpg"), filename: "6804616273-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804616273-4.jpg"), filename: "6804616273-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804616273-5.jpg"), filename: "6804616273-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804616273-6.jpg"), filename: "6804616273-6.jpg") if product
 
             product = Product.create(
                {
@@ -758,13 +757,13 @@ Tekken 4..Metal Gear Solid Snake Eater..Call Robert
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804611650-0.jpg"), filename: "6804611650-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804611650-1.jpg"), filename: "6804611650-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804611650-2.jpg"), filename: "6804611650-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804611650-3.jpg"), filename: "6804611650-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804611650-4.jpg"), filename: "6804611650-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804611650-5.jpg"), filename: "6804611650-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804611650-6.jpg"), filename: "6804611650-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804611650-0.jpg"), filename: "6804611650-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804611650-1.jpg"), filename: "6804611650-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804611650-2.jpg"), filename: "6804611650-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804611650-3.jpg"), filename: "6804611650-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804611650-4.jpg"), filename: "6804611650-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804611650-5.jpg"), filename: "6804611650-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804611650-6.jpg"), filename: "6804611650-6.jpg") if product
 
             product = Product.create(
                {
@@ -790,13 +789,13 @@ Boot Mii is navigated with either gamecube controller or by seleting with the re
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805492055-0.jpg"), filename: "6805492055-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805492055-1.jpg"), filename: "6805492055-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805492055-2.jpg"), filename: "6805492055-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805492055-3.jpg"), filename: "6805492055-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805492055-4.jpg"), filename: "6805492055-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805492055-5.jpg"), filename: "6805492055-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805492055-6.jpg"), filename: "6805492055-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805492055-0.jpg"), filename: "6805492055-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805492055-1.jpg"), filename: "6805492055-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805492055-2.jpg"), filename: "6805492055-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805492055-3.jpg"), filename: "6805492055-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805492055-4.jpg"), filename: "6805492055-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805492055-5.jpg"), filename: "6805492055-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805492055-6.jpg"), filename: "6805492055-6.jpg") if product
 
             product = Product.create(
                {
@@ -821,13 +820,13 @@ Asus 23in 1080p 60hz monitor has DVI, VGA, HDMI, SPDIF, Audio In and headphone p
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794103468-0.jpg"), filename: "6794103468-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794103468-1.jpg"), filename: "6794103468-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794103468-2.jpg"), filename: "6794103468-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794103468-3.jpg"), filename: "6794103468-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794103468-4.jpg"), filename: "6794103468-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794103468-5.jpg"), filename: "6794103468-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794103468-6.jpg"), filename: "6794103468-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794103468-0.jpg"), filename: "6794103468-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794103468-1.jpg"), filename: "6794103468-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794103468-2.jpg"), filename: "6794103468-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794103468-3.jpg"), filename: "6794103468-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794103468-4.jpg"), filename: "6794103468-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794103468-5.jpg"), filename: "6794103468-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794103468-6.jpg"), filename: "6794103468-6.jpg") if product
 
             product = Product.create(
                {
@@ -847,8 +846,8 @@ Price: $70 total, obo or trade. send offers",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804064188-0.jpg"), filename: "6804064188-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804064188-1.jpg"), filename: "6804064188-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804064188-0.jpg"), filename: "6804064188-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804064188-1.jpg"), filename: "6804064188-1.jpg") if product
 
             product = Product.create(
                {
@@ -862,12 +861,12 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808497399-0.jpg"), filename: "6808497399-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808497399-1.jpg"), filename: "6808497399-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808497399-2.jpg"), filename: "6808497399-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808497399-3.jpg"), filename: "6808497399-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808497399-4.jpg"), filename: "6808497399-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808497399-5.jpg"), filename: "6808497399-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808497399-0.jpg"), filename: "6808497399-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808497399-1.jpg"), filename: "6808497399-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808497399-2.jpg"), filename: "6808497399-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808497399-3.jpg"), filename: "6808497399-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808497399-4.jpg"), filename: "6808497399-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808497399-5.jpg"), filename: "6808497399-5.jpg") if product
 
             product = Product.create(
                {
@@ -884,8 +883,8 @@ text only 4l5)967;23O4",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792091578-0.jpg"), filename: "6792091578-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792091578-1.jpg"), filename: "6792091578-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792091578-0.jpg"), filename: "6792091578-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792091578-1.jpg"), filename: "6792091578-1.jpg") if product
 
             product = Product.create(
                {
@@ -899,7 +898,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807506989-0.jpg"), filename: "6807506989-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807506989-0.jpg"), filename: "6807506989-0.jpg") if product
 
             product = Product.create(
                {
@@ -913,9 +912,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810617920-0.jpg"), filename: "6810617920-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810617920-1.jpg"), filename: "6810617920-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810617920-2.jpg"), filename: "6810617920-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810617920-0.jpg"), filename: "6810617920-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810617920-1.jpg"), filename: "6810617920-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810617920-2.jpg"), filename: "6810617920-2.jpg") if product
 
             product = Product.create(
                {
@@ -929,9 +928,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810616060-0.jpg"), filename: "6810616060-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810616060-1.jpg"), filename: "6810616060-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810616060-2.jpg"), filename: "6810616060-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810616060-0.jpg"), filename: "6810616060-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810616060-1.jpg"), filename: "6810616060-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810616060-2.jpg"), filename: "6810616060-2.jpg") if product
 
             product = Product.create(
                {
@@ -945,9 +944,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793606389-0.jpg"), filename: "6793606389-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793606389-1.jpg"), filename: "6793606389-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793606389-2.jpg"), filename: "6793606389-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793606389-0.jpg"), filename: "6793606389-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793606389-1.jpg"), filename: "6793606389-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793606389-2.jpg"), filename: "6793606389-2.jpg") if product
 
             product = Product.create(
                {
@@ -964,7 +963,7 @@ Games",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810611908-0.jpg"), filename: "6810611908-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810611908-0.jpg"), filename: "6810611908-0.jpg") if product
 
             product = Product.create(
                {
@@ -985,7 +984,7 @@ Cash only, no trades",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810599525-0.jpg"), filename: "6810599525-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810599525-0.jpg"), filename: "6810599525-0.jpg") if product
 
             product = Product.create(
                {
@@ -1001,7 +1000,7 @@ $12",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6803341138-0.jpg"), filename: "6803341138-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803341138-0.jpg"), filename: "6803341138-0.jpg") if product
 
             product = Product.create(
                {
@@ -1017,10 +1016,10 @@ $50.00 CASH.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810594127-0.jpg"), filename: "6810594127-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810594127-1.jpg"), filename: "6810594127-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810594127-2.jpg"), filename: "6810594127-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810594127-3.jpg"), filename: "6810594127-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810594127-0.jpg"), filename: "6810594127-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810594127-1.jpg"), filename: "6810594127-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810594127-2.jpg"), filename: "6810594127-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810594127-3.jpg"), filename: "6810594127-3.jpg") if product
 
             product = Product.create(
                {
@@ -1043,12 +1042,12 @@ Text
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805185240-0.jpg"), filename: "6805185240-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805185240-1.jpg"), filename: "6805185240-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805185240-2.jpg"), filename: "6805185240-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805185240-3.jpg"), filename: "6805185240-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805185240-4.jpg"), filename: "6805185240-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805185240-5.jpg"), filename: "6805185240-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805185240-0.jpg"), filename: "6805185240-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805185240-1.jpg"), filename: "6805185240-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805185240-2.jpg"), filename: "6805185240-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805185240-3.jpg"), filename: "6805185240-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805185240-4.jpg"), filename: "6805185240-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805185240-5.jpg"), filename: "6805185240-5.jpg") if product
 
             product = Product.create(
                {
@@ -1067,8 +1066,8 @@ Text or Call",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805152843-0.jpg"), filename: "6805152843-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805152843-1.jpg"), filename: "6805152843-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805152843-0.jpg"), filename: "6805152843-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805152843-1.jpg"), filename: "6805152843-1.jpg") if product
 
             product = Product.create(
                {
@@ -1093,7 +1092,7 @@ $280 OBO<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805095050-0.jpg"), filename: "6805095050-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805095050-0.jpg"), filename: "6805095050-0.jpg") if product
 
             product = Product.create(
                {
@@ -1108,7 +1107,7 @@ Price is firm",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810579268-0.jpg"), filename: "6810579268-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810579268-0.jpg"), filename: "6810579268-0.jpg") if product
 
             product = Product.create(
                {
@@ -1122,8 +1121,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810578631-0.jpg"), filename: "6810578631-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810578631-1.jpg"), filename: "6810578631-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810578631-0.jpg"), filename: "6810578631-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810578631-1.jpg"), filename: "6810578631-1.jpg") if product
 
             product = Product.create(
                {
@@ -1140,9 +1139,9 @@ $3.00 each",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790617714-0.jpg"), filename: "6790617714-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790617714-1.jpg"), filename: "6790617714-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790617714-2.jpg"), filename: "6790617714-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6790617714-0.jpg"), filename: "6790617714-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6790617714-1.jpg"), filename: "6790617714-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6790617714-2.jpg"), filename: "6790617714-2.jpg") if product
 
             product = Product.create(
                {
@@ -1168,10 +1167,10 @@ One of the best on 3DS, a must have if you like Zelda games.<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810561012-0.jpg"), filename: "6810561012-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810561012-1.jpg"), filename: "6810561012-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810561012-2.jpg"), filename: "6810561012-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810561012-3.jpg"), filename: "6810561012-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810561012-0.jpg"), filename: "6810561012-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810561012-1.jpg"), filename: "6810561012-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810561012-2.jpg"), filename: "6810561012-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810561012-3.jpg"), filename: "6810561012-3.jpg") if product
 
             product = Product.create(
                {
@@ -1186,13 +1185,13 @@ Heres the game list of 60 games in 1 arcade Machine Pac-Man /Ms Pac-Man Pac-Man 
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805751443-0.jpg"), filename: "6805751443-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805751443-1.jpg"), filename: "6805751443-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805751443-2.jpg"), filename: "6805751443-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805751443-3.jpg"), filename: "6805751443-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805751443-4.jpg"), filename: "6805751443-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805751443-5.jpg"), filename: "6805751443-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805751443-6.jpg"), filename: "6805751443-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805751443-0.jpg"), filename: "6805751443-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805751443-1.jpg"), filename: "6805751443-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805751443-2.jpg"), filename: "6805751443-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805751443-3.jpg"), filename: "6805751443-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805751443-4.jpg"), filename: "6805751443-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805751443-5.jpg"), filename: "6805751443-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805751443-6.jpg"), filename: "6805751443-6.jpg") if product
 
             product = Product.create(
                {
@@ -1232,13 +1231,13 @@ CARON:",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810503411-0.jpg"), filename: "6810503411-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810503411-1.jpg"), filename: "6810503411-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810503411-2.jpg"), filename: "6810503411-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810503411-3.jpg"), filename: "6810503411-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810503411-4.jpg"), filename: "6810503411-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810503411-5.jpg"), filename: "6810503411-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810503411-6.jpg"), filename: "6810503411-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810503411-0.jpg"), filename: "6810503411-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810503411-1.jpg"), filename: "6810503411-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810503411-2.jpg"), filename: "6810503411-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810503411-3.jpg"), filename: "6810503411-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810503411-4.jpg"), filename: "6810503411-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810503411-5.jpg"), filename: "6810503411-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810503411-6.jpg"), filename: "6810503411-6.jpg") if product
 
             product = Product.create(
                {
@@ -1265,8 +1264,8 @@ One of the BEST games for Nintendo 3DS<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810562465-0.jpg"), filename: "6810562465-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810562465-1.jpg"), filename: "6810562465-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810562465-0.jpg"), filename: "6810562465-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810562465-1.jpg"), filename: "6810562465-1.jpg") if product
 
             product = Product.create(
                {
@@ -1280,7 +1279,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801106910-0.jpg"), filename: "6801106910-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801106910-0.jpg"), filename: "6801106910-0.jpg") if product
 
             product = Product.create(
                {
@@ -1301,7 +1300,7 @@ email me, i reply fast",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810561466-0.jpg"), filename: "6810561466-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810561466-0.jpg"), filename: "6810561466-0.jpg") if product
 
             product = Product.create(
                {
@@ -1329,11 +1328,11 @@ Also including two BRAND NEW (still in shrink wrap) games:<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810560809-0.jpg"), filename: "6810560809-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810560809-1.jpg"), filename: "6810560809-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810560809-2.jpg"), filename: "6810560809-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810560809-3.jpg"), filename: "6810560809-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810560809-4.jpg"), filename: "6810560809-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810560809-0.jpg"), filename: "6810560809-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810560809-1.jpg"), filename: "6810560809-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810560809-2.jpg"), filename: "6810560809-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810560809-3.jpg"), filename: "6810560809-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810560809-4.jpg"), filename: "6810560809-4.jpg") if product
 
             product = Product.create(
                {
@@ -1365,10 +1364,10 @@ Including 4 games:<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810560630-0.jpg"), filename: "6810560630-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810560630-1.jpg"), filename: "6810560630-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810560630-2.jpg"), filename: "6810560630-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810560630-3.jpg"), filename: "6810560630-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810560630-0.jpg"), filename: "6810560630-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810560630-1.jpg"), filename: "6810560630-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810560630-2.jpg"), filename: "6810560630-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810560630-3.jpg"), filename: "6810560630-3.jpg") if product
 
             product = Product.create(
                {
@@ -1384,13 +1383,13 @@ Together with protective case, connectors.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790125375-0.jpg"), filename: "6790125375-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790125375-1.jpg"), filename: "6790125375-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790125375-2.jpg"), filename: "6790125375-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790125375-3.jpg"), filename: "6790125375-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790125375-4.jpg"), filename: "6790125375-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790125375-5.jpg"), filename: "6790125375-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790125375-6.jpg"), filename: "6790125375-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6790125375-0.jpg"), filename: "6790125375-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6790125375-1.jpg"), filename: "6790125375-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6790125375-2.jpg"), filename: "6790125375-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6790125375-3.jpg"), filename: "6790125375-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6790125375-4.jpg"), filename: "6790125375-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6790125375-5.jpg"), filename: "6790125375-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6790125375-6.jpg"), filename: "6790125375-6.jpg") if product
 
             product = Product.create(
                {
@@ -1404,9 +1403,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810552332-0.jpg"), filename: "6810552332-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810552332-1.jpg"), filename: "6810552332-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810552332-2.jpg"), filename: "6810552332-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810552332-0.jpg"), filename: "6810552332-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810552332-1.jpg"), filename: "6810552332-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810552332-2.jpg"), filename: "6810552332-2.jpg") if product
 
             product = Product.create(
                {
@@ -1422,8 +1421,8 @@ Smoke and pet free home",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804153828-0.jpg"), filename: "6804153828-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804153828-1.jpg"), filename: "6804153828-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804153828-0.jpg"), filename: "6804153828-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804153828-1.jpg"), filename: "6804153828-1.jpg") if product
 
             product = Product.create(
                {
@@ -1439,7 +1438,7 @@ thank you",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810549179-0.jpg"), filename: "6810549179-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810549179-0.jpg"), filename: "6810549179-0.jpg") if product
 
             product = Product.create(
                {
@@ -1478,13 +1477,13 @@ CARON:",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810534257-0.jpg"), filename: "6810534257-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810534257-1.jpg"), filename: "6810534257-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810534257-2.jpg"), filename: "6810534257-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810534257-3.jpg"), filename: "6810534257-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810534257-4.jpg"), filename: "6810534257-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810534257-5.jpg"), filename: "6810534257-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810534257-6.jpg"), filename: "6810534257-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810534257-0.jpg"), filename: "6810534257-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810534257-1.jpg"), filename: "6810534257-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810534257-2.jpg"), filename: "6810534257-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810534257-3.jpg"), filename: "6810534257-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810534257-4.jpg"), filename: "6810534257-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810534257-5.jpg"), filename: "6810534257-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810534257-6.jpg"), filename: "6810534257-6.jpg") if product
 
             product = Product.create(
                {
@@ -1507,7 +1506,7 @@ $30 cash and they&apos;re yours!",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805477797-0.jpg"), filename: "6805477797-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805477797-0.jpg"), filename: "6805477797-0.jpg") if product
 
             product = Product.create(
                {
@@ -1521,8 +1520,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808942581-0.jpg"), filename: "6808942581-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808942581-1.jpg"), filename: "6808942581-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808942581-0.jpg"), filename: "6808942581-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808942581-1.jpg"), filename: "6808942581-1.jpg") if product
 
             product = Product.create(
                {
@@ -1540,7 +1539,7 @@ please call or text at",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805073108-0.jpg"), filename: "6805073108-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805073108-0.jpg"), filename: "6805073108-0.jpg") if product
 
             product = Product.create(
                {
@@ -1558,7 +1557,7 @@ please call or text at",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805072221-0.jpg"), filename: "6805072221-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805072221-0.jpg"), filename: "6805072221-0.jpg") if product
 
             product = Product.create(
                {
@@ -1576,7 +1575,7 @@ please call or text at",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805071384-0.jpg"), filename: "6805071384-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805071384-0.jpg"), filename: "6805071384-0.jpg") if product
 
             product = Product.create(
                {
@@ -1594,8 +1593,8 @@ please call or text at",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805070695-0.jpg"), filename: "6805070695-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805070695-1.jpg"), filename: "6805070695-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805070695-0.jpg"), filename: "6805070695-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805070695-1.jpg"), filename: "6805070695-1.jpg") if product
 
             product = Product.create(
                {
@@ -1613,7 +1612,7 @@ please call or text at",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805070203-0.jpg"), filename: "6805070203-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805070203-0.jpg"), filename: "6805070203-0.jpg") if product
 
             product = Product.create(
                {
@@ -1631,7 +1630,7 @@ please call or text at",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805068469-0.jpg"), filename: "6805068469-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805068469-0.jpg"), filename: "6805068469-0.jpg") if product
 
             product = Product.create(
                {
@@ -1649,7 +1648,7 @@ please call or text at",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805068277-0.jpg"), filename: "6805068277-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805068277-0.jpg"), filename: "6805068277-0.jpg") if product
 
             product = Product.create(
                {
@@ -1667,7 +1666,7 @@ please call or text at",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805067996-0.jpg"), filename: "6805067996-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805067996-0.jpg"), filename: "6805067996-0.jpg") if product
 
             product = Product.create(
                {
@@ -1685,7 +1684,7 @@ please call or text at",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805067733-0.jpg"), filename: "6805067733-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805067733-0.jpg"), filename: "6805067733-0.jpg") if product
 
             product = Product.create(
                {
@@ -1703,8 +1702,8 @@ please call or text at",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805056444-0.jpg"), filename: "6805056444-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805056444-1.jpg"), filename: "6805056444-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805056444-0.jpg"), filename: "6805056444-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805056444-1.jpg"), filename: "6805056444-1.jpg") if product
 
             product = Product.create(
                {
@@ -1722,7 +1721,7 @@ please call or text at",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805055822-0.jpg"), filename: "6805055822-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805055822-0.jpg"), filename: "6805055822-0.jpg") if product
 
             product = Product.create(
                {
@@ -1740,7 +1739,7 @@ please call or text at",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805055529-0.jpg"), filename: "6805055529-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805055529-0.jpg"), filename: "6805055529-0.jpg") if product
 
             product = Product.create(
                {
@@ -1758,8 +1757,8 @@ please call or text at",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805054618-0.jpg"), filename: "6805054618-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805054618-1.jpg"), filename: "6805054618-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805054618-0.jpg"), filename: "6805054618-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805054618-1.jpg"), filename: "6805054618-1.jpg") if product
 
             product = Product.create(
                {
@@ -1777,8 +1776,8 @@ please call or text at",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805054425-0.jpg"), filename: "6805054425-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805054425-1.jpg"), filename: "6805054425-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805054425-0.jpg"), filename: "6805054425-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805054425-1.jpg"), filename: "6805054425-1.jpg") if product
 
             product = Product.create(
                {
@@ -1796,7 +1795,7 @@ please call or text at",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805052634-0.jpg"), filename: "6805052634-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805052634-0.jpg"), filename: "6805052634-0.jpg") if product
 
             product = Product.create(
                {
@@ -1814,7 +1813,7 @@ please call or text at",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805052401-0.jpg"), filename: "6805052401-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805052401-0.jpg"), filename: "6805052401-0.jpg") if product
 
             product = Product.create(
                {
@@ -1832,8 +1831,8 @@ please call or text at",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805052050-0.jpg"), filename: "6805052050-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805052050-1.jpg"), filename: "6805052050-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805052050-0.jpg"), filename: "6805052050-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805052050-1.jpg"), filename: "6805052050-1.jpg") if product
 
             product = Product.create(
                {
@@ -1851,7 +1850,7 @@ please call or text at",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805051739-0.jpg"), filename: "6805051739-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805051739-0.jpg"), filename: "6805051739-0.jpg") if product
 
             product = Product.create(
                {
@@ -1866,13 +1865,13 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788614305-0.jpg"), filename: "6788614305-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788614305-1.jpg"), filename: "6788614305-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788614305-2.jpg"), filename: "6788614305-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788614305-3.jpg"), filename: "6788614305-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788614305-4.jpg"), filename: "6788614305-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788614305-5.jpg"), filename: "6788614305-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788614305-6.jpg"), filename: "6788614305-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6788614305-0.jpg"), filename: "6788614305-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6788614305-1.jpg"), filename: "6788614305-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6788614305-2.jpg"), filename: "6788614305-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6788614305-3.jpg"), filename: "6788614305-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6788614305-4.jpg"), filename: "6788614305-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6788614305-5.jpg"), filename: "6788614305-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6788614305-6.jpg"), filename: "6788614305-6.jpg") if product
 
             product = Product.create(
                {
@@ -1891,8 +1890,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810474748-0.jpg"), filename: "6810474748-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810474748-1.jpg"), filename: "6810474748-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810474748-0.jpg"), filename: "6810474748-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810474748-1.jpg"), filename: "6810474748-1.jpg") if product
 
             product = Product.create(
                {
@@ -1914,11 +1913,11 @@ Text or e mail",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791367797-0.jpg"), filename: "6791367797-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791367797-1.jpg"), filename: "6791367797-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791367797-2.jpg"), filename: "6791367797-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791367797-3.jpg"), filename: "6791367797-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791367797-4.jpg"), filename: "6791367797-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791367797-0.jpg"), filename: "6791367797-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791367797-1.jpg"), filename: "6791367797-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791367797-2.jpg"), filename: "6791367797-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791367797-3.jpg"), filename: "6791367797-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791367797-4.jpg"), filename: "6791367797-4.jpg") if product
 
             product = Product.create(
                {
@@ -1934,9 +1933,9 @@ Cash or PayPal f/f, not looking for trade or cashier check. Price is firm.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793613036-0.jpg"), filename: "6793613036-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793613036-1.jpg"), filename: "6793613036-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793613036-2.jpg"), filename: "6793613036-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793613036-0.jpg"), filename: "6793613036-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793613036-1.jpg"), filename: "6793613036-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793613036-2.jpg"), filename: "6793613036-2.jpg") if product
 
             product = Product.create(
                {
@@ -1956,9 +1955,9 @@ $120, no trades.<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798618362-0.jpg"), filename: "6798618362-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798618362-1.jpg"), filename: "6798618362-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798618362-2.jpg"), filename: "6798618362-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798618362-0.jpg"), filename: "6798618362-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798618362-1.jpg"), filename: "6798618362-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798618362-2.jpg"), filename: "6798618362-2.jpg") if product
 
             product = Product.create(
                {
@@ -1976,8 +1975,8 @@ $25 for just the Controller if you just need an extra one.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798545680-0.jpg"), filename: "6798545680-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798545680-1.jpg"), filename: "6798545680-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798545680-0.jpg"), filename: "6798545680-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798545680-1.jpg"), filename: "6798545680-1.jpg") if product
 
             product = Product.create(
                {
@@ -2005,9 +2004,9 @@ Come by and see for yourself. Bring your butt with you and you can try it out!",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806497388-0.jpg"), filename: "6806497388-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806497388-1.jpg"), filename: "6806497388-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806497388-2.jpg"), filename: "6806497388-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806497388-0.jpg"), filename: "6806497388-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806497388-1.jpg"), filename: "6806497388-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806497388-2.jpg"), filename: "6806497388-2.jpg") if product
 
             product = Product.create(
                {
@@ -2021,7 +2020,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805973966-0.jpg"), filename: "6805973966-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805973966-0.jpg"), filename: "6805973966-0.jpg") if product
 
             product = Product.create(
                {
@@ -2035,7 +2034,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788375217-0.jpg"), filename: "6788375217-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6788375217-0.jpg"), filename: "6788375217-0.jpg") if product
 
             product = Product.create(
                {
@@ -2049,9 +2048,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810449283-0.jpg"), filename: "6810449283-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810449283-1.jpg"), filename: "6810449283-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810449283-2.jpg"), filename: "6810449283-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810449283-0.jpg"), filename: "6810449283-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810449283-1.jpg"), filename: "6810449283-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810449283-2.jpg"), filename: "6810449283-2.jpg") if product
 
             product = Product.create(
                {
@@ -2074,10 +2073,10 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806985211-0.jpg"), filename: "6806985211-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806985211-1.jpg"), filename: "6806985211-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806985211-2.jpg"), filename: "6806985211-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806985211-3.jpg"), filename: "6806985211-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806985211-0.jpg"), filename: "6806985211-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806985211-1.jpg"), filename: "6806985211-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806985211-2.jpg"), filename: "6806985211-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806985211-3.jpg"), filename: "6806985211-3.jpg") if product
 
             product = Product.create(
                {
@@ -2091,8 +2090,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810447838-0.jpg"), filename: "6810447838-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810447838-1.jpg"), filename: "6810447838-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810447838-0.jpg"), filename: "6810447838-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810447838-1.jpg"), filename: "6810447838-1.jpg") if product
 
             product = Product.create(
                {
@@ -2114,13 +2113,13 @@ Wii remote and nun chuk",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810444314-0.jpg"), filename: "6810444314-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810444314-1.jpg"), filename: "6810444314-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810444314-2.jpg"), filename: "6810444314-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810444314-3.jpg"), filename: "6810444314-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810444314-4.jpg"), filename: "6810444314-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810444314-5.jpg"), filename: "6810444314-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810444314-6.jpg"), filename: "6810444314-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810444314-0.jpg"), filename: "6810444314-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810444314-1.jpg"), filename: "6810444314-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810444314-2.jpg"), filename: "6810444314-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810444314-3.jpg"), filename: "6810444314-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810444314-4.jpg"), filename: "6810444314-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810444314-5.jpg"), filename: "6810444314-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810444314-6.jpg"), filename: "6810444314-6.jpg") if product
 
             product = Product.create(
                {
@@ -2136,7 +2135,7 @@ MICROSOFT XBOX360 bundel = $40",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810435474-0.jpg"), filename: "6810435474-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810435474-0.jpg"), filename: "6810435474-0.jpg") if product
 
             product = Product.create(
                {
@@ -2152,7 +2151,7 @@ Call of Duty Black Ops III $15<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810435333-0.jpg"), filename: "6810435333-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810435333-0.jpg"), filename: "6810435333-0.jpg") if product
 
             product = Product.create(
                {
@@ -2172,7 +2171,7 @@ GTA",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810439426-0.jpg"), filename: "6810439426-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810439426-0.jpg"), filename: "6810439426-0.jpg") if product
 
             product = Product.create(
                {
@@ -2212,13 +2211,13 @@ Serious buyers only, please.<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804772215-0.jpg"), filename: "6804772215-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804772215-1.jpg"), filename: "6804772215-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804772215-2.jpg"), filename: "6804772215-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804772215-3.jpg"), filename: "6804772215-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804772215-4.jpg"), filename: "6804772215-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804772215-5.jpg"), filename: "6804772215-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804772215-6.jpg"), filename: "6804772215-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804772215-0.jpg"), filename: "6804772215-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804772215-1.jpg"), filename: "6804772215-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804772215-2.jpg"), filename: "6804772215-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804772215-3.jpg"), filename: "6804772215-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804772215-4.jpg"), filename: "6804772215-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804772215-5.jpg"), filename: "6804772215-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804772215-6.jpg"), filename: "6804772215-6.jpg") if product
 
             product = Product.create(
                {
@@ -2238,7 +2237,7 @@ I commute from San Leandro to San Ramon on the weekdays.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810438748-0.jpg"), filename: "6810438748-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810438748-0.jpg"), filename: "6810438748-0.jpg") if product
 
             product = Product.create(
                {
@@ -2275,7 +2274,7 @@ Brand new, factory sealed<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810433114-0.jpg"), filename: "6810433114-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810433114-0.jpg"), filename: "6810433114-0.jpg") if product
 category = Category.find_by_name("video gaming")
 unless(category)
 category = Category.create(name: "video gaming")
@@ -2294,8 +2293,8 @@ end
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810385874-0.jpg"), filename: "6810385874-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810385874-1.jpg"), filename: "6810385874-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810385874-0.jpg"), filename: "6810385874-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810385874-1.jpg"), filename: "6810385874-1.jpg") if product
 
             product = Product.create(
                {
@@ -2315,7 +2314,7 @@ $10 each or $25 for all!",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793860336-0.jpg"), filename: "6793860336-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793860336-0.jpg"), filename: "6793860336-0.jpg") if product
 
             product = Product.create(
                {
@@ -2347,13 +2346,13 @@ Steeldiver<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810371831-0.jpg"), filename: "6810371831-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810371831-1.jpg"), filename: "6810371831-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810371831-2.jpg"), filename: "6810371831-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810371831-3.jpg"), filename: "6810371831-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810371831-4.jpg"), filename: "6810371831-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810371831-5.jpg"), filename: "6810371831-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810371831-6.jpg"), filename: "6810371831-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810371831-0.jpg"), filename: "6810371831-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810371831-1.jpg"), filename: "6810371831-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810371831-2.jpg"), filename: "6810371831-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810371831-3.jpg"), filename: "6810371831-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810371831-4.jpg"), filename: "6810371831-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810371831-5.jpg"), filename: "6810371831-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810371831-6.jpg"), filename: "6810371831-6.jpg") if product
 
             product = Product.create(
                {
@@ -2369,12 +2368,12 @@ Thanks.<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810368701-0.jpg"), filename: "6810368701-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810368701-1.jpg"), filename: "6810368701-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810368701-2.jpg"), filename: "6810368701-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810368701-3.jpg"), filename: "6810368701-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810368701-4.jpg"), filename: "6810368701-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810368701-5.jpg"), filename: "6810368701-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810368701-0.jpg"), filename: "6810368701-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810368701-1.jpg"), filename: "6810368701-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810368701-2.jpg"), filename: "6810368701-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810368701-3.jpg"), filename: "6810368701-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810368701-4.jpg"), filename: "6810368701-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810368701-5.jpg"), filename: "6810368701-5.jpg") if product
 
             product = Product.create(
                {
@@ -2388,7 +2387,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794627185-0.jpg"), filename: "6794627185-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794627185-0.jpg"), filename: "6794627185-0.jpg") if product
 
             product = Product.create(
                {
@@ -2402,10 +2401,10 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810364871-0.jpg"), filename: "6810364871-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810364871-1.jpg"), filename: "6810364871-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810364871-2.jpg"), filename: "6810364871-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810364871-3.jpg"), filename: "6810364871-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810364871-0.jpg"), filename: "6810364871-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810364871-1.jpg"), filename: "6810364871-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810364871-2.jpg"), filename: "6810364871-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810364871-3.jpg"), filename: "6810364871-3.jpg") if product
 
             product = Product.create(
                {
@@ -2466,8 +2465,8 @@ Zone of the Enders HD Collection",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810357180-0.jpg"), filename: "6810357180-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810357180-1.jpg"), filename: "6810357180-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810357180-0.jpg"), filename: "6810357180-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810357180-1.jpg"), filename: "6810357180-1.jpg") if product
 
             product = Product.create(
                {
@@ -2481,7 +2480,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810361204-0.jpg"), filename: "6810361204-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810361204-0.jpg"), filename: "6810361204-0.jpg") if product
 
             product = Product.create(
                {
@@ -2496,9 +2495,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806474385-0.jpg"), filename: "6806474385-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806474385-1.jpg"), filename: "6806474385-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806474385-2.jpg"), filename: "6806474385-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806474385-0.jpg"), filename: "6806474385-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806474385-1.jpg"), filename: "6806474385-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806474385-2.jpg"), filename: "6806474385-2.jpg") if product
 
             product = Product.create(
                {
@@ -2534,9 +2533,9 @@ All in excellent condition",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791176328-0.jpg"), filename: "6791176328-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791176328-1.jpg"), filename: "6791176328-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791176328-2.jpg"), filename: "6791176328-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791176328-0.jpg"), filename: "6791176328-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791176328-1.jpg"), filename: "6791176328-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791176328-2.jpg"), filename: "6791176328-2.jpg") if product
 
             product = Product.create(
                {
@@ -2550,8 +2549,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792137888-0.jpg"), filename: "6792137888-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792137888-1.jpg"), filename: "6792137888-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792137888-0.jpg"), filename: "6792137888-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792137888-1.jpg"), filename: "6792137888-1.jpg") if product
 
             product = Product.create(
                {
@@ -2566,9 +2565,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810348258-0.jpg"), filename: "6810348258-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810348258-1.jpg"), filename: "6810348258-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810348258-2.jpg"), filename: "6810348258-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810348258-0.jpg"), filename: "6810348258-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810348258-1.jpg"), filename: "6810348258-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810348258-2.jpg"), filename: "6810348258-2.jpg") if product
 
             product = Product.create(
                {
@@ -2584,10 +2583,10 @@ keywords:  Nintendo Switch Game mario zelda botw",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810348187-0.jpg"), filename: "6810348187-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810348187-1.jpg"), filename: "6810348187-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810348187-2.jpg"), filename: "6810348187-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810348187-3.jpg"), filename: "6810348187-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810348187-0.jpg"), filename: "6810348187-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810348187-1.jpg"), filename: "6810348187-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810348187-2.jpg"), filename: "6810348187-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810348187-3.jpg"), filename: "6810348187-3.jpg") if product
 
             product = Product.create(
                {
@@ -2606,7 +2605,7 @@ MLB The Show 16 MVP Edition Steelbook",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808347589-0.jpg"), filename: "6808347589-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808347589-0.jpg"), filename: "6808347589-0.jpg") if product
 
             product = Product.create(
                {
@@ -2620,9 +2619,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810346996-0.jpg"), filename: "6810346996-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810346996-1.jpg"), filename: "6810346996-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810346996-2.jpg"), filename: "6810346996-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810346996-0.jpg"), filename: "6810346996-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810346996-1.jpg"), filename: "6810346996-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810346996-2.jpg"), filename: "6810346996-2.jpg") if product
 
             product = Product.create(
                {
@@ -2665,8 +2664,8 @@ I do have a pro controller you can choose either the pro controller or the grey 
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810278193-0.jpg"), filename: "6810278193-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810278193-1.jpg"), filename: "6810278193-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810278193-0.jpg"), filename: "6810278193-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810278193-1.jpg"), filename: "6810278193-1.jpg") if product
 
             product = Product.create(
                {
@@ -2688,7 +2687,7 @@ Buyer must pay cash and pick up. I am in San Rafael near the Marin Center.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794240879-0.jpg"), filename: "6794240879-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794240879-0.jpg"), filename: "6794240879-0.jpg") if product
 
             product = Product.create(
                {
@@ -2706,8 +2705,8 @@ Andrew kwok",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810334038-0.jpg"), filename: "6810334038-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810334038-1.jpg"), filename: "6810334038-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810334038-0.jpg"), filename: "6810334038-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810334038-1.jpg"), filename: "6810334038-1.jpg") if product
 
             product = Product.create(
                {
@@ -2725,7 +2724,7 @@ Box Included/wrapping<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810337353-0.jpg"), filename: "6810337353-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810337353-0.jpg"), filename: "6810337353-0.jpg") if product
 
             product = Product.create(
                {
@@ -2748,10 +2747,10 @@ Operating System:Windows 10<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810337252-0.jpg"), filename: "6810337252-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810337252-1.jpg"), filename: "6810337252-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810337252-2.jpg"), filename: "6810337252-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810337252-3.jpg"), filename: "6810337252-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810337252-0.jpg"), filename: "6810337252-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810337252-1.jpg"), filename: "6810337252-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810337252-2.jpg"), filename: "6810337252-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810337252-3.jpg"), filename: "6810337252-3.jpg") if product
 
             product = Product.create(
                {
@@ -2774,10 +2773,10 @@ Operating System:Windows 10<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810336955-0.jpg"), filename: "6810336955-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810336955-1.jpg"), filename: "6810336955-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810336955-2.jpg"), filename: "6810336955-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810336955-3.jpg"), filename: "6810336955-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810336955-0.jpg"), filename: "6810336955-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810336955-1.jpg"), filename: "6810336955-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810336955-2.jpg"), filename: "6810336955-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810336955-3.jpg"), filename: "6810336955-3.jpg") if product
 
             product = Product.create(
                {
@@ -2801,13 +2800,13 @@ Happy to make a deal if you buy all<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6803098586-0.jpg"), filename: "6803098586-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6803098586-1.jpg"), filename: "6803098586-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6803098586-2.jpg"), filename: "6803098586-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6803098586-3.jpg"), filename: "6803098586-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6803098586-4.jpg"), filename: "6803098586-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6803098586-5.jpg"), filename: "6803098586-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6803098586-6.jpg"), filename: "6803098586-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803098586-0.jpg"), filename: "6803098586-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803098586-1.jpg"), filename: "6803098586-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803098586-2.jpg"), filename: "6803098586-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803098586-3.jpg"), filename: "6803098586-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803098586-4.jpg"), filename: "6803098586-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803098586-5.jpg"), filename: "6803098586-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803098586-6.jpg"), filename: "6803098586-6.jpg") if product
 
             product = Product.create(
                {
@@ -2821,7 +2820,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810326611-0.jpg"), filename: "6810326611-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810326611-0.jpg"), filename: "6810326611-0.jpg") if product
 
             product = Product.create(
                {
@@ -2862,11 +2861,11 @@ Local pickup for cash only, thanks!<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799954491-0.jpg"), filename: "6799954491-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799954491-1.jpg"), filename: "6799954491-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799954491-2.jpg"), filename: "6799954491-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799954491-3.jpg"), filename: "6799954491-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799954491-4.jpg"), filename: "6799954491-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799954491-0.jpg"), filename: "6799954491-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799954491-1.jpg"), filename: "6799954491-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799954491-2.jpg"), filename: "6799954491-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799954491-3.jpg"), filename: "6799954491-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799954491-4.jpg"), filename: "6799954491-4.jpg") if product
 
             product = Product.create(
                {
@@ -2880,10 +2879,10 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810307926-0.jpg"), filename: "6810307926-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810307926-1.jpg"), filename: "6810307926-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810307926-2.jpg"), filename: "6810307926-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810307926-3.jpg"), filename: "6810307926-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810307926-0.jpg"), filename: "6810307926-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810307926-1.jpg"), filename: "6810307926-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810307926-2.jpg"), filename: "6810307926-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810307926-3.jpg"), filename: "6810307926-3.jpg") if product
 
             product = Product.create(
                {
@@ -2897,7 +2896,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810318096-0.jpg"), filename: "6810318096-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810318096-0.jpg"), filename: "6810318096-0.jpg") if product
 
             product = Product.create(
                {
@@ -2911,7 +2910,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810315823-0.jpg"), filename: "6810315823-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810315823-0.jpg"), filename: "6810315823-0.jpg") if product
 
             product = Product.create(
                {
@@ -2926,7 +2925,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810317072-0.jpg"), filename: "6810317072-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810317072-0.jpg"), filename: "6810317072-0.jpg") if product
 
             product = Product.create(
                {
@@ -2942,7 +2941,7 @@ $40 EACH or $80 TOGETHER",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810316928-0.jpg"), filename: "6810316928-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810316928-0.jpg"), filename: "6810316928-0.jpg") if product
 
             product = Product.create(
                {
@@ -2956,8 +2955,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799248986-0.jpg"), filename: "6799248986-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799248986-1.jpg"), filename: "6799248986-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799248986-0.jpg"), filename: "6799248986-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799248986-1.jpg"), filename: "6799248986-1.jpg") if product
 
             product = Product.create(
                {
@@ -2971,7 +2970,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799248829-0.jpg"), filename: "6799248829-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799248829-0.jpg"), filename: "6799248829-0.jpg") if product
 
             product = Product.create(
                {
@@ -2985,7 +2984,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799241996-0.jpg"), filename: "6799241996-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799241996-0.jpg"), filename: "6799241996-0.jpg") if product
 
             product = Product.create(
                {
@@ -2999,8 +2998,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799241608-0.jpg"), filename: "6799241608-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799241608-1.jpg"), filename: "6799241608-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799241608-0.jpg"), filename: "6799241608-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799241608-1.jpg"), filename: "6799241608-1.jpg") if product
 
             product = Product.create(
                {
@@ -3014,8 +3013,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799241818-0.jpg"), filename: "6799241818-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799241818-1.jpg"), filename: "6799241818-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799241818-0.jpg"), filename: "6799241818-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799241818-1.jpg"), filename: "6799241818-1.jpg") if product
 
             product = Product.create(
                {
@@ -3030,7 +3029,7 @@ Comes with cables, Wii Remote Plus and Nunchuk, and New Super Mario Bros.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810311010-0.jpg"), filename: "6810311010-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810311010-0.jpg"), filename: "6810311010-0.jpg") if product
 
             product = Product.create(
                {
@@ -3044,7 +3043,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810310800-0.jpg"), filename: "6810310800-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810310800-0.jpg"), filename: "6810310800-0.jpg") if product
 
             product = Product.create(
                {
@@ -3073,7 +3072,7 @@ Nintendo switch sega sony playstation n64 snes games toys kids video xbox",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800704553-0.jpg"), filename: "6800704553-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800704553-0.jpg"), filename: "6800704553-0.jpg") if product
 
             product = Product.create(
                {
@@ -3102,9 +3101,9 @@ All tested and works",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797688569-0.jpg"), filename: "6797688569-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797688569-1.jpg"), filename: "6797688569-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797688569-2.jpg"), filename: "6797688569-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797688569-0.jpg"), filename: "6797688569-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797688569-1.jpg"), filename: "6797688569-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797688569-2.jpg"), filename: "6797688569-2.jpg") if product
 
             product = Product.create(
                {
@@ -3121,7 +3120,7 @@ https://www.gamestop.com/xbox-360/consoles/xbox-360-s-4gb-system-black-gamestop-
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810310064-0.jpg"), filename: "6810310064-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810310064-0.jpg"), filename: "6810310064-0.jpg") if product
 
             product = Product.create(
                {
@@ -3137,7 +3136,7 @@ Comes with cables, Wii Remote Plus and Nunchuk, and New Super Mario Bros.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810310027-0.jpg"), filename: "6810310027-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810310027-0.jpg"), filename: "6810310027-0.jpg") if product
 
             product = Product.create(
                {
@@ -3151,9 +3150,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810309099-0.jpg"), filename: "6810309099-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810309099-1.jpg"), filename: "6810309099-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810309099-2.jpg"), filename: "6810309099-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810309099-0.jpg"), filename: "6810309099-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810309099-1.jpg"), filename: "6810309099-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810309099-2.jpg"), filename: "6810309099-2.jpg") if product
 
             product = Product.create(
                {
@@ -3171,7 +3170,7 @@ A used version goes for $40 at Gamestop.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788110071-0.jpg"), filename: "6788110071-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6788110071-0.jpg"), filename: "6788110071-0.jpg") if product
 
             product = Product.create(
                {
@@ -3185,7 +3184,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810305869-0.jpg"), filename: "6810305869-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810305869-0.jpg"), filename: "6810305869-0.jpg") if product
 
             product = Product.create(
                {
@@ -3199,9 +3198,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810303287-0.jpg"), filename: "6810303287-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810303287-1.jpg"), filename: "6810303287-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810303287-2.jpg"), filename: "6810303287-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810303287-0.jpg"), filename: "6810303287-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810303287-1.jpg"), filename: "6810303287-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810303287-2.jpg"), filename: "6810303287-2.jpg") if product
 
             product = Product.create(
                {
@@ -3228,8 +3227,8 @@ Since 1985",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810296462-0.jpg"), filename: "6810296462-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810296462-1.jpg"), filename: "6810296462-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810296462-0.jpg"), filename: "6810296462-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810296462-1.jpg"), filename: "6810296462-1.jpg") if product
 
             product = Product.create(
                {
@@ -3245,7 +3244,7 @@ comes with power cable and HDMI cable.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810303153-0.jpg"), filename: "6810303153-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810303153-0.jpg"), filename: "6810303153-0.jpg") if product
 
             product = Product.create(
                {
@@ -3261,7 +3260,7 @@ comes with power cable and HDMI cable.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810302931-0.jpg"), filename: "6810302931-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810302931-0.jpg"), filename: "6810302931-0.jpg") if product
 
             product = Product.create(
                {
@@ -3284,9 +3283,9 @@ With 325gb of free space you can load thousands more games, rip DVDs and Xbox ga
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796100860-0.jpg"), filename: "6796100860-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796100860-1.jpg"), filename: "6796100860-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796100860-2.jpg"), filename: "6796100860-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796100860-0.jpg"), filename: "6796100860-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796100860-1.jpg"), filename: "6796100860-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796100860-2.jpg"), filename: "6796100860-2.jpg") if product
 
             product = Product.create(
                {
@@ -3337,13 +3336,13 @@ No trades please",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791305509-0.jpg"), filename: "6791305509-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791305509-1.jpg"), filename: "6791305509-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791305509-2.jpg"), filename: "6791305509-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791305509-3.jpg"), filename: "6791305509-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791305509-4.jpg"), filename: "6791305509-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791305509-5.jpg"), filename: "6791305509-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791305509-6.jpg"), filename: "6791305509-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791305509-0.jpg"), filename: "6791305509-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791305509-1.jpg"), filename: "6791305509-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791305509-2.jpg"), filename: "6791305509-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791305509-3.jpg"), filename: "6791305509-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791305509-4.jpg"), filename: "6791305509-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791305509-5.jpg"), filename: "6791305509-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791305509-6.jpg"), filename: "6791305509-6.jpg") if product
 
             product = Product.create(
                {
@@ -3357,7 +3356,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810302724-0.jpg"), filename: "6810302724-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810302724-0.jpg"), filename: "6810302724-0.jpg") if product
 
             product = Product.create(
                {
@@ -3376,12 +3375,12 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810302539-0.jpg"), filename: "6810302539-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810302539-1.jpg"), filename: "6810302539-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810302539-2.jpg"), filename: "6810302539-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810302539-3.jpg"), filename: "6810302539-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810302539-4.jpg"), filename: "6810302539-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810302539-5.jpg"), filename: "6810302539-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810302539-0.jpg"), filename: "6810302539-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810302539-1.jpg"), filename: "6810302539-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810302539-2.jpg"), filename: "6810302539-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810302539-3.jpg"), filename: "6810302539-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810302539-4.jpg"), filename: "6810302539-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810302539-5.jpg"), filename: "6810302539-5.jpg") if product
 
             product = Product.create(
                {
@@ -3400,12 +3399,12 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810302266-0.jpg"), filename: "6810302266-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810302266-1.jpg"), filename: "6810302266-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810302266-2.jpg"), filename: "6810302266-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810302266-3.jpg"), filename: "6810302266-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810302266-4.jpg"), filename: "6810302266-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810302266-5.jpg"), filename: "6810302266-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810302266-0.jpg"), filename: "6810302266-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810302266-1.jpg"), filename: "6810302266-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810302266-2.jpg"), filename: "6810302266-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810302266-3.jpg"), filename: "6810302266-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810302266-4.jpg"), filename: "6810302266-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810302266-5.jpg"), filename: "6810302266-5.jpg") if product
 
             product = Product.create(
                {
@@ -3434,10 +3433,10 @@ Also accept bitcoin and 420 friendly",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793884024-0.jpg"), filename: "6793884024-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793884024-1.jpg"), filename: "6793884024-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793884024-2.jpg"), filename: "6793884024-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793884024-3.jpg"), filename: "6793884024-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793884024-0.jpg"), filename: "6793884024-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793884024-1.jpg"), filename: "6793884024-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793884024-2.jpg"), filename: "6793884024-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793884024-3.jpg"), filename: "6793884024-3.jpg") if product
 
             product = Product.create(
                {
@@ -3465,7 +3464,7 @@ Since1985",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810290474-0.jpg"), filename: "6810290474-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810290474-0.jpg"), filename: "6810290474-0.jpg") if product
 
             product = Product.create(
                {
@@ -3484,7 +3483,7 @@ I also have one that is NEW with the box, but has been opened  $8",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801691070-0.jpg"), filename: "6801691070-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801691070-0.jpg"), filename: "6801691070-0.jpg") if product
 
             product = Product.create(
                {
@@ -3498,9 +3497,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810291634-0.jpg"), filename: "6810291634-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810291634-1.jpg"), filename: "6810291634-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810291634-2.jpg"), filename: "6810291634-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810291634-0.jpg"), filename: "6810291634-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810291634-1.jpg"), filename: "6810291634-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810291634-2.jpg"), filename: "6810291634-2.jpg") if product
 
             product = Product.create(
                {
@@ -3514,8 +3513,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792995630-0.jpg"), filename: "6792995630-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792995630-1.jpg"), filename: "6792995630-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792995630-0.jpg"), filename: "6792995630-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792995630-1.jpg"), filename: "6792995630-1.jpg") if product
 
             product = Product.create(
                {
@@ -3532,13 +3531,13 @@ $75",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805539078-0.jpg"), filename: "6805539078-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805539078-1.jpg"), filename: "6805539078-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805539078-2.jpg"), filename: "6805539078-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805539078-3.jpg"), filename: "6805539078-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805539078-4.jpg"), filename: "6805539078-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805539078-5.jpg"), filename: "6805539078-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805539078-6.jpg"), filename: "6805539078-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805539078-0.jpg"), filename: "6805539078-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805539078-1.jpg"), filename: "6805539078-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805539078-2.jpg"), filename: "6805539078-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805539078-3.jpg"), filename: "6805539078-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805539078-4.jpg"), filename: "6805539078-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805539078-5.jpg"), filename: "6805539078-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805539078-6.jpg"), filename: "6805539078-6.jpg") if product
 
             product = Product.create(
                {
@@ -3554,7 +3553,7 @@ No trades",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810284129-0.jpg"), filename: "6810284129-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810284129-0.jpg"), filename: "6810284129-0.jpg") if product
 
             product = Product.create(
                {
@@ -3568,13 +3567,13 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810279154-0.jpg"), filename: "6810279154-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810279154-1.jpg"), filename: "6810279154-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810279154-2.jpg"), filename: "6810279154-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810279154-3.jpg"), filename: "6810279154-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810279154-4.jpg"), filename: "6810279154-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810279154-5.jpg"), filename: "6810279154-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810279154-6.jpg"), filename: "6810279154-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810279154-0.jpg"), filename: "6810279154-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810279154-1.jpg"), filename: "6810279154-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810279154-2.jpg"), filename: "6810279154-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810279154-3.jpg"), filename: "6810279154-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810279154-4.jpg"), filename: "6810279154-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810279154-5.jpg"), filename: "6810279154-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810279154-6.jpg"), filename: "6810279154-6.jpg") if product
 
             product = Product.create(
                {
@@ -3592,13 +3591,13 @@ If interested TEXT ONLY at
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805367186-0.jpg"), filename: "6805367186-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805367186-1.jpg"), filename: "6805367186-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805367186-2.jpg"), filename: "6805367186-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805367186-3.jpg"), filename: "6805367186-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805367186-4.jpg"), filename: "6805367186-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805367186-5.jpg"), filename: "6805367186-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805367186-6.jpg"), filename: "6805367186-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805367186-0.jpg"), filename: "6805367186-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805367186-1.jpg"), filename: "6805367186-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805367186-2.jpg"), filename: "6805367186-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805367186-3.jpg"), filename: "6805367186-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805367186-4.jpg"), filename: "6805367186-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805367186-5.jpg"), filename: "6805367186-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805367186-6.jpg"), filename: "6805367186-6.jpg") if product
 
             product = Product.create(
                {
@@ -3616,8 +3615,8 @@ Thanks for looking!",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804604003-0.jpg"), filename: "6804604003-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804604003-1.jpg"), filename: "6804604003-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804604003-0.jpg"), filename: "6804604003-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804604003-1.jpg"), filename: "6804604003-1.jpg") if product
 
             product = Product.create(
                {
@@ -3631,8 +3630,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794272212-0.jpg"), filename: "6794272212-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794272212-1.jpg"), filename: "6794272212-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794272212-0.jpg"), filename: "6794272212-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794272212-1.jpg"), filename: "6794272212-1.jpg") if product
 
             product = Product.create(
                {
@@ -3653,7 +3652,7 @@ I will also be Only accpeting Zelle at the moment which is an app similar to Pay
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807991936-0.jpg"), filename: "6807991936-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807991936-0.jpg"), filename: "6807991936-0.jpg") if product
 
             product = Product.create(
                {
@@ -3671,8 +3670,8 @@ Tags: PS4, PS3, NINTENDO, SWITCH, GAME, PRO, SONY,TV,MONITOR,4K,HDR,PLAYSTATION,
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810251603-0.jpg"), filename: "6810251603-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810251603-1.jpg"), filename: "6810251603-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810251603-0.jpg"), filename: "6810251603-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810251603-1.jpg"), filename: "6810251603-1.jpg") if product
 
             product = Product.create(
                {
@@ -3692,7 +3691,7 @@ Here is the link to this specific bundle: https://www.amazon.com/PlayStation-Sli
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810251823-0.jpg"), filename: "6810251823-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810251823-0.jpg"), filename: "6810251823-0.jpg") if product
 
             product = Product.create(
                {
@@ -3742,7 +3741,7 @@ Warning Both Controllers currently need to be plugged into unit to work. They ar
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810216834-0.jpg"), filename: "6810216834-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810216834-0.jpg"), filename: "6810216834-0.jpg") if product
 
             product = Product.create(
                {
@@ -3756,7 +3755,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810245795-0.jpg"), filename: "6810245795-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810245795-0.jpg"), filename: "6810245795-0.jpg") if product
 
             product = Product.create(
                {
@@ -3770,13 +3769,13 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801708176-0.jpg"), filename: "6801708176-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801708176-1.jpg"), filename: "6801708176-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801708176-2.jpg"), filename: "6801708176-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801708176-3.jpg"), filename: "6801708176-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801708176-4.jpg"), filename: "6801708176-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801708176-5.jpg"), filename: "6801708176-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801708176-6.jpg"), filename: "6801708176-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801708176-0.jpg"), filename: "6801708176-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801708176-1.jpg"), filename: "6801708176-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801708176-2.jpg"), filename: "6801708176-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801708176-3.jpg"), filename: "6801708176-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801708176-4.jpg"), filename: "6801708176-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801708176-5.jpg"), filename: "6801708176-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801708176-6.jpg"), filename: "6801708176-6.jpg") if product
 
             product = Product.create(
                {
@@ -3791,7 +3790,7 @@ Excellent condition",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810245288-0.jpg"), filename: "6810245288-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810245288-0.jpg"), filename: "6810245288-0.jpg") if product
 
             product = Product.create(
                {
@@ -3805,12 +3804,12 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810242787-0.jpg"), filename: "6810242787-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810242787-1.jpg"), filename: "6810242787-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810242787-2.jpg"), filename: "6810242787-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810242787-3.jpg"), filename: "6810242787-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810242787-4.jpg"), filename: "6810242787-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810242787-5.jpg"), filename: "6810242787-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810242787-0.jpg"), filename: "6810242787-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810242787-1.jpg"), filename: "6810242787-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810242787-2.jpg"), filename: "6810242787-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810242787-3.jpg"), filename: "6810242787-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810242787-4.jpg"), filename: "6810242787-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810242787-5.jpg"), filename: "6810242787-5.jpg") if product
 
             product = Product.create(
                {
@@ -3830,7 +3829,7 @@ Please text me if you&apos;re interested.<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806414285-0.jpg"), filename: "6806414285-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806414285-0.jpg"), filename: "6806414285-0.jpg") if product
 
             product = Product.create(
                {
@@ -3844,9 +3843,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810242064-0.jpg"), filename: "6810242064-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810242064-1.jpg"), filename: "6810242064-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810242064-2.jpg"), filename: "6810242064-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810242064-0.jpg"), filename: "6810242064-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810242064-1.jpg"), filename: "6810242064-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810242064-2.jpg"), filename: "6810242064-2.jpg") if product
 
             product = Product.create(
                {
@@ -3864,8 +3863,8 @@ $2  Used - NBA 2k 14 - PS3 video Game<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810219413-0.jpg"), filename: "6810219413-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810219413-1.jpg"), filename: "6810219413-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810219413-0.jpg"), filename: "6810219413-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810219413-1.jpg"), filename: "6810219413-1.jpg") if product
 
             product = Product.create(
                {
@@ -3899,13 +3898,13 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810176335-0.jpg"), filename: "6810176335-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810176335-1.jpg"), filename: "6810176335-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810176335-2.jpg"), filename: "6810176335-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810176335-3.jpg"), filename: "6810176335-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810176335-4.jpg"), filename: "6810176335-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810176335-5.jpg"), filename: "6810176335-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810176335-6.jpg"), filename: "6810176335-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810176335-0.jpg"), filename: "6810176335-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810176335-1.jpg"), filename: "6810176335-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810176335-2.jpg"), filename: "6810176335-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810176335-3.jpg"), filename: "6810176335-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810176335-4.jpg"), filename: "6810176335-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810176335-5.jpg"), filename: "6810176335-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810176335-6.jpg"), filename: "6810176335-6.jpg") if product
 
             product = Product.create(
                {
@@ -3923,13 +3922,13 @@ Everything else sealed in new condition.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799768297-0.jpg"), filename: "6799768297-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799768297-1.jpg"), filename: "6799768297-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799768297-2.jpg"), filename: "6799768297-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799768297-3.jpg"), filename: "6799768297-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799768297-4.jpg"), filename: "6799768297-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799768297-5.jpg"), filename: "6799768297-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799768297-6.jpg"), filename: "6799768297-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799768297-0.jpg"), filename: "6799768297-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799768297-1.jpg"), filename: "6799768297-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799768297-2.jpg"), filename: "6799768297-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799768297-3.jpg"), filename: "6799768297-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799768297-4.jpg"), filename: "6799768297-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799768297-5.jpg"), filename: "6799768297-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799768297-6.jpg"), filename: "6799768297-6.jpg") if product
 
             product = Product.create(
                {
@@ -3943,9 +3942,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810233318-0.jpg"), filename: "6810233318-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810233318-1.jpg"), filename: "6810233318-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810233318-2.jpg"), filename: "6810233318-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810233318-0.jpg"), filename: "6810233318-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810233318-1.jpg"), filename: "6810233318-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810233318-2.jpg"), filename: "6810233318-2.jpg") if product
 
             product = Product.create(
                {
@@ -3959,7 +3958,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6802509226-0.jpg"), filename: "6802509226-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6802509226-0.jpg"), filename: "6802509226-0.jpg") if product
 
             product = Product.create(
                {
@@ -3988,9 +3987,9 @@ Ps3 ps4 play station sony xbox one 360 microsoft pc computer controller joystick
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810229344-0.jpg"), filename: "6810229344-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810229344-1.jpg"), filename: "6810229344-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810229344-2.jpg"), filename: "6810229344-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810229344-0.jpg"), filename: "6810229344-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810229344-1.jpg"), filename: "6810229344-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810229344-2.jpg"), filename: "6810229344-2.jpg") if product
 
             product = Product.create(
                {
@@ -4011,9 +4010,9 @@ Price is FIRM. Cash only, No trades, no holds, no delivery. Text or call only, n
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810220829-0.jpg"), filename: "6810220829-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810220829-1.jpg"), filename: "6810220829-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810220829-2.jpg"), filename: "6810220829-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810220829-0.jpg"), filename: "6810220829-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810220829-1.jpg"), filename: "6810220829-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810220829-2.jpg"), filename: "6810220829-2.jpg") if product
 
             product = Product.create(
                {
@@ -4042,11 +4041,11 @@ assassins creed revelations",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810221568-0.jpg"), filename: "6810221568-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810221568-1.jpg"), filename: "6810221568-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810221568-2.jpg"), filename: "6810221568-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810221568-3.jpg"), filename: "6810221568-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810221568-4.jpg"), filename: "6810221568-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810221568-0.jpg"), filename: "6810221568-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810221568-1.jpg"), filename: "6810221568-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810221568-2.jpg"), filename: "6810221568-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810221568-3.jpg"), filename: "6810221568-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810221568-4.jpg"), filename: "6810221568-4.jpg") if product
 
             product = Product.create(
                {
@@ -4075,7 +4074,7 @@ vanquished",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792530134-0.jpg"), filename: "6792530134-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792530134-0.jpg"), filename: "6792530134-0.jpg") if product
 
             product = Product.create(
                {
@@ -4089,12 +4088,12 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810220630-0.jpg"), filename: "6810220630-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810220630-1.jpg"), filename: "6810220630-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810220630-2.jpg"), filename: "6810220630-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810220630-3.jpg"), filename: "6810220630-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810220630-4.jpg"), filename: "6810220630-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810220630-5.jpg"), filename: "6810220630-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810220630-0.jpg"), filename: "6810220630-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810220630-1.jpg"), filename: "6810220630-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810220630-2.jpg"), filename: "6810220630-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810220630-3.jpg"), filename: "6810220630-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810220630-4.jpg"), filename: "6810220630-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810220630-5.jpg"), filename: "6810220630-5.jpg") if product
 
             product = Product.create(
                {
@@ -4108,9 +4107,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810220056-0.jpg"), filename: "6810220056-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810220056-1.jpg"), filename: "6810220056-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810220056-2.jpg"), filename: "6810220056-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810220056-0.jpg"), filename: "6810220056-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810220056-1.jpg"), filename: "6810220056-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810220056-2.jpg"), filename: "6810220056-2.jpg") if product
 
             product = Product.create(
                {
@@ -4124,7 +4123,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810201174-0.jpg"), filename: "6810201174-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810201174-0.jpg"), filename: "6810201174-0.jpg") if product
 
             product = Product.create(
                {
@@ -4139,11 +4138,11 @@ Works great for racing games (I really enjoyed the DIRT series), makes the play 
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807302180-0.jpg"), filename: "6807302180-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807302180-1.jpg"), filename: "6807302180-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807302180-2.jpg"), filename: "6807302180-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807302180-3.jpg"), filename: "6807302180-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807302180-4.jpg"), filename: "6807302180-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807302180-0.jpg"), filename: "6807302180-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807302180-1.jpg"), filename: "6807302180-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807302180-2.jpg"), filename: "6807302180-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807302180-3.jpg"), filename: "6807302180-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807302180-4.jpg"), filename: "6807302180-4.jpg") if product
 
             product = Product.create(
                {
@@ -4169,13 +4168,13 @@ pick up only.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810205517-0.jpg"), filename: "6810205517-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810205517-1.jpg"), filename: "6810205517-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810205517-2.jpg"), filename: "6810205517-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810205517-3.jpg"), filename: "6810205517-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810205517-4.jpg"), filename: "6810205517-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810205517-5.jpg"), filename: "6810205517-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810205517-6.jpg"), filename: "6810205517-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810205517-0.jpg"), filename: "6810205517-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810205517-1.jpg"), filename: "6810205517-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810205517-2.jpg"), filename: "6810205517-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810205517-3.jpg"), filename: "6810205517-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810205517-4.jpg"), filename: "6810205517-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810205517-5.jpg"), filename: "6810205517-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810205517-6.jpg"), filename: "6810205517-6.jpg") if product
 
             product = Product.create(
                {
@@ -4195,10 +4194,10 @@ No refund for it, didn&apos;t fit my needs, only if it is defective! My items ar
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797018867-0.jpg"), filename: "6797018867-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797018867-1.jpg"), filename: "6797018867-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797018867-2.jpg"), filename: "6797018867-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797018867-3.jpg"), filename: "6797018867-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797018867-0.jpg"), filename: "6797018867-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797018867-1.jpg"), filename: "6797018867-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797018867-2.jpg"), filename: "6797018867-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797018867-3.jpg"), filename: "6797018867-3.jpg") if product
 
             product = Product.create(
                {
@@ -4214,9 +4213,9 @@ I have 14 games (Metal Gear Solid, Apocalypse, Bushido Blade 2, Syphon Filter 2,
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794208160-0.jpg"), filename: "6794208160-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794208160-1.jpg"), filename: "6794208160-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794208160-2.jpg"), filename: "6794208160-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794208160-0.jpg"), filename: "6794208160-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794208160-1.jpg"), filename: "6794208160-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794208160-2.jpg"), filename: "6794208160-2.jpg") if product
 
             product = Product.create(
                {
@@ -4232,7 +4231,7 @@ Switch games I&apos;m looking for: Mario Kart, Mario Party, Skyrim, or a set of 
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794208481-0.jpg"), filename: "6794208481-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794208481-0.jpg"), filename: "6794208481-0.jpg") if product
 
             product = Product.create(
                {
@@ -4252,8 +4251,8 @@ Asking $60",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810195347-0.jpg"), filename: "6810195347-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810195347-1.jpg"), filename: "6810195347-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810195347-0.jpg"), filename: "6810195347-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810195347-1.jpg"), filename: "6810195347-1.jpg") if product
 
             product = Product.create(
                {
@@ -4271,9 +4270,9 @@ Snowboarding game",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788772818-0.jpg"), filename: "6788772818-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788772818-1.jpg"), filename: "6788772818-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788772818-2.jpg"), filename: "6788772818-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6788772818-0.jpg"), filename: "6788772818-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6788772818-1.jpg"), filename: "6788772818-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6788772818-2.jpg"), filename: "6788772818-2.jpg") if product
 
             product = Product.create(
                {
@@ -4296,12 +4295,12 @@ Brand new sealed package comes with the PS3 videogame, Art Book and Soundtrack C
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810176883-0.jpg"), filename: "6810176883-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810176883-1.jpg"), filename: "6810176883-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810176883-2.jpg"), filename: "6810176883-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810176883-3.jpg"), filename: "6810176883-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810176883-4.jpg"), filename: "6810176883-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810176883-5.jpg"), filename: "6810176883-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810176883-0.jpg"), filename: "6810176883-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810176883-1.jpg"), filename: "6810176883-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810176883-2.jpg"), filename: "6810176883-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810176883-3.jpg"), filename: "6810176883-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810176883-4.jpg"), filename: "6810176883-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810176883-5.jpg"), filename: "6810176883-5.jpg") if product
 
             product = Product.create(
                {
@@ -4315,9 +4314,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810178495-0.jpg"), filename: "6810178495-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810178495-1.jpg"), filename: "6810178495-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810178495-2.jpg"), filename: "6810178495-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810178495-0.jpg"), filename: "6810178495-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810178495-1.jpg"), filename: "6810178495-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810178495-2.jpg"), filename: "6810178495-2.jpg") if product
 
             product = Product.create(
                {
@@ -4337,9 +4336,9 @@ Local meet up only at my place of work (a well known company in San Rafael).<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804351588-0.jpg"), filename: "6804351588-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804351588-1.jpg"), filename: "6804351588-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804351588-2.jpg"), filename: "6804351588-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804351588-0.jpg"), filename: "6804351588-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804351588-1.jpg"), filename: "6804351588-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804351588-2.jpg"), filename: "6804351588-2.jpg") if product
 
             product = Product.create(
                {
@@ -4353,9 +4352,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804925397-0.jpg"), filename: "6804925397-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804925397-1.jpg"), filename: "6804925397-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804925397-2.jpg"), filename: "6804925397-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804925397-0.jpg"), filename: "6804925397-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804925397-1.jpg"), filename: "6804925397-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804925397-2.jpg"), filename: "6804925397-2.jpg") if product
 
             product = Product.create(
                {
@@ -4369,9 +4368,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804925578-0.jpg"), filename: "6804925578-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804925578-1.jpg"), filename: "6804925578-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804925578-2.jpg"), filename: "6804925578-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804925578-0.jpg"), filename: "6804925578-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804925578-1.jpg"), filename: "6804925578-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804925578-2.jpg"), filename: "6804925578-2.jpg") if product
 
             product = Product.create(
                {
@@ -4385,9 +4384,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804925768-0.jpg"), filename: "6804925768-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804925768-1.jpg"), filename: "6804925768-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804925768-2.jpg"), filename: "6804925768-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804925768-0.jpg"), filename: "6804925768-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804925768-1.jpg"), filename: "6804925768-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804925768-2.jpg"), filename: "6804925768-2.jpg") if product
 
             product = Product.create(
                {
@@ -4401,7 +4400,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804925927-0.jpg"), filename: "6804925927-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804925927-0.jpg"), filename: "6804925927-0.jpg") if product
 
             product = Product.create(
                {
@@ -4416,9 +4415,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805188406-0.jpg"), filename: "6805188406-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805188406-1.jpg"), filename: "6805188406-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805188406-2.jpg"), filename: "6805188406-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805188406-0.jpg"), filename: "6805188406-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805188406-1.jpg"), filename: "6805188406-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805188406-2.jpg"), filename: "6805188406-2.jpg") if product
 
             product = Product.create(
                {
@@ -4434,9 +4433,9 @@ I also have a copy of Virtua Cop for Sega Saturn and will sell with the 2 guns f
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805188845-0.jpg"), filename: "6805188845-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805188845-1.jpg"), filename: "6805188845-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805188845-2.jpg"), filename: "6805188845-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805188845-0.jpg"), filename: "6805188845-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805188845-1.jpg"), filename: "6805188845-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805188845-2.jpg"), filename: "6805188845-2.jpg") if product
 
             product = Product.create(
                {
@@ -4456,9 +4455,9 @@ Will lower the price if you take more items together.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795586390-0.jpg"), filename: "6795586390-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795586390-1.jpg"), filename: "6795586390-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795586390-2.jpg"), filename: "6795586390-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795586390-0.jpg"), filename: "6795586390-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795586390-1.jpg"), filename: "6795586390-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795586390-2.jpg"), filename: "6795586390-2.jpg") if product
 
             product = Product.create(
                {
@@ -4474,9 +4473,9 @@ New and sealed in box.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804927156-0.jpg"), filename: "6804927156-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804927156-1.jpg"), filename: "6804927156-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804927156-2.jpg"), filename: "6804927156-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804927156-0.jpg"), filename: "6804927156-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804927156-1.jpg"), filename: "6804927156-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804927156-2.jpg"), filename: "6804927156-2.jpg") if product
 
             product = Product.create(
                {
@@ -4490,10 +4489,10 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804928207-0.jpg"), filename: "6804928207-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804928207-1.jpg"), filename: "6804928207-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804928207-2.jpg"), filename: "6804928207-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804928207-3.jpg"), filename: "6804928207-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804928207-0.jpg"), filename: "6804928207-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804928207-1.jpg"), filename: "6804928207-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804928207-2.jpg"), filename: "6804928207-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804928207-3.jpg"), filename: "6804928207-3.jpg") if product
 
             product = Product.create(
                {
@@ -4509,10 +4508,10 @@ New in box.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804930926-0.jpg"), filename: "6804930926-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804930926-1.jpg"), filename: "6804930926-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804930926-2.jpg"), filename: "6804930926-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804930926-3.jpg"), filename: "6804930926-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804930926-0.jpg"), filename: "6804930926-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804930926-1.jpg"), filename: "6804930926-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804930926-2.jpg"), filename: "6804930926-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804930926-3.jpg"), filename: "6804930926-3.jpg") if product
 
             product = Product.create(
                {
@@ -4532,9 +4531,9 @@ I&apos;m selling the following PS2 games as a set:<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804934478-0.jpg"), filename: "6804934478-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804934478-1.jpg"), filename: "6804934478-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804934478-2.jpg"), filename: "6804934478-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804934478-0.jpg"), filename: "6804934478-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804934478-1.jpg"), filename: "6804934478-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804934478-2.jpg"), filename: "6804934478-2.jpg") if product
 
             product = Product.create(
                {
@@ -4549,9 +4548,9 @@ Both for $12 or best offer.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804932081-0.jpg"), filename: "6804932081-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804932081-1.jpg"), filename: "6804932081-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804932081-2.jpg"), filename: "6804932081-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804932081-0.jpg"), filename: "6804932081-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804932081-1.jpg"), filename: "6804932081-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804932081-2.jpg"), filename: "6804932081-2.jpg") if product
 
             product = Product.create(
                {
@@ -4565,13 +4564,13 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800708012-0.jpg"), filename: "6800708012-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800708012-1.jpg"), filename: "6800708012-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800708012-2.jpg"), filename: "6800708012-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800708012-3.jpg"), filename: "6800708012-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800708012-4.jpg"), filename: "6800708012-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800708012-5.jpg"), filename: "6800708012-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800708012-6.jpg"), filename: "6800708012-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800708012-0.jpg"), filename: "6800708012-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800708012-1.jpg"), filename: "6800708012-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800708012-2.jpg"), filename: "6800708012-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800708012-3.jpg"), filename: "6800708012-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800708012-4.jpg"), filename: "6800708012-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800708012-5.jpg"), filename: "6800708012-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800708012-6.jpg"), filename: "6800708012-6.jpg") if product
 
             product = Product.create(
                {
@@ -4588,10 +4587,10 @@ Local pickup only.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810161497-0.jpg"), filename: "6810161497-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810161497-1.jpg"), filename: "6810161497-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810161497-2.jpg"), filename: "6810161497-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810161497-3.jpg"), filename: "6810161497-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810161497-0.jpg"), filename: "6810161497-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810161497-1.jpg"), filename: "6810161497-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810161497-2.jpg"), filename: "6810161497-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810161497-3.jpg"), filename: "6810161497-3.jpg") if product
 
             product = Product.create(
                {
@@ -4639,9 +4638,9 @@ I do have a pro controller you can choose either the pro controller or the grey 
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804589689-0.jpg"), filename: "6804589689-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804589689-1.jpg"), filename: "6804589689-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804589689-2.jpg"), filename: "6804589689-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804589689-0.jpg"), filename: "6804589689-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804589689-1.jpg"), filename: "6804589689-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804589689-2.jpg"), filename: "6804589689-2.jpg") if product
 
             product = Product.create(
                {
@@ -4672,9 +4671,9 @@ Can add spider men for an extra $35",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804585968-0.jpg"), filename: "6804585968-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804585968-1.jpg"), filename: "6804585968-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804585968-2.jpg"), filename: "6804585968-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804585968-0.jpg"), filename: "6804585968-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804585968-1.jpg"), filename: "6804585968-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804585968-2.jpg"), filename: "6804585968-2.jpg") if product
 category = Category.find_by_name("tickets")
 unless(category)
 category = Category.create(name: "tickets")
@@ -4710,8 +4709,8 @@ key words: coahchella coachela tickets wristbands car camping day parking indio 
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804134592-0.jpg"), filename: "6804134592-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804134592-1.jpg"), filename: "6804134592-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804134592-0.jpg"), filename: "6804134592-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804134592-1.jpg"), filename: "6804134592-1.jpg") if product
 
             product = Product.create(
                {
@@ -4730,7 +4729,7 @@ GIANTS play 5 Night games.  Check the schedule and tell us which games you would
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794410371-0.jpg"), filename: "6794410371-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794410371-0.jpg"), filename: "6794410371-0.jpg") if product
 
             product = Product.create(
                {
@@ -4748,7 +4747,7 @@ $65 each, $130 for the pair.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810414784-0.jpg"), filename: "6810414784-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810414784-0.jpg"), filename: "6810414784-0.jpg") if product
 
             product = Product.create(
                {
@@ -4767,7 +4766,7 @@ GIANTS Play 5 Home Night games this Spring.  Tell us which games you want and we
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794410102-0.jpg"), filename: "6794410102-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794410102-0.jpg"), filename: "6794410102-0.jpg") if product
 
             product = Product.create(
                {
@@ -4795,8 +4794,8 @@ Payment/Ticket:<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805555728-0.jpg"), filename: "6805555728-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805555728-1.jpg"), filename: "6805555728-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805555728-0.jpg"), filename: "6805555728-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805555728-1.jpg"), filename: "6805555728-1.jpg") if product
 
             product = Product.create(
                {
@@ -4824,8 +4823,8 @@ Payment/Ticket:<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795148167-0.jpg"), filename: "6795148167-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795148167-1.jpg"), filename: "6795148167-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795148167-0.jpg"), filename: "6795148167-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795148167-1.jpg"), filename: "6795148167-1.jpg") if product
 
             product = Product.create(
                {
@@ -4850,8 +4849,8 @@ Payment/Ticket:<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799688675-0.jpg"), filename: "6799688675-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799688675-1.jpg"), filename: "6799688675-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799688675-0.jpg"), filename: "6799688675-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799688675-1.jpg"), filename: "6799688675-1.jpg") if product
 
             product = Product.create(
                {
@@ -4873,8 +4872,8 @@ Go GIANTS!!",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806694714-0.jpg"), filename: "6806694714-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806694714-1.jpg"), filename: "6806694714-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806694714-0.jpg"), filename: "6806694714-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806694714-1.jpg"), filename: "6806694714-1.jpg") if product
 
             product = Product.create(
                {
@@ -4893,7 +4892,7 @@ GIANTS play 5 Home Night games.  Tell us which games you would like and we will 
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799676840-0.jpg"), filename: "6799676840-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799676840-0.jpg"), filename: "6799676840-0.jpg") if product
 
             product = Product.create(
                {
@@ -4916,7 +4915,7 @@ You may pick up the night before and return on your way back.<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6803258714-0.jpg"), filename: "6803258714-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803258714-0.jpg"), filename: "6803258714-0.jpg") if product
 
             product = Product.create(
                {
@@ -4944,8 +4943,8 @@ Payment/Ticket:<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795148393-0.jpg"), filename: "6795148393-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795148393-1.jpg"), filename: "6795148393-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795148393-0.jpg"), filename: "6795148393-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795148393-1.jpg"), filename: "6795148393-1.jpg") if product
 
             product = Product.create(
                {
@@ -4970,8 +4969,8 @@ Payment/Ticket:<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795158205-0.jpg"), filename: "6795158205-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795158205-1.jpg"), filename: "6795158205-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795158205-0.jpg"), filename: "6795158205-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795158205-1.jpg"), filename: "6795158205-1.jpg") if product
 
             product = Product.create(
                {
@@ -4996,8 +4995,8 @@ Payment/Ticket:<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795157976-0.jpg"), filename: "6795157976-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795157976-1.jpg"), filename: "6795157976-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795157976-0.jpg"), filename: "6795157976-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795157976-1.jpg"), filename: "6795157976-1.jpg") if product
 
             product = Product.create(
                {
@@ -5022,8 +5021,8 @@ Payment/Ticket:<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805548195-0.jpg"), filename: "6805548195-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805548195-1.jpg"), filename: "6805548195-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805548195-0.jpg"), filename: "6805548195-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805548195-1.jpg"), filename: "6805548195-1.jpg") if product
 
             product = Product.create(
                {
@@ -5055,9 +5054,9 @@ http://www.exploresanfrancisco.biz//sffoodtours.php<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799070335-0.jpg"), filename: "6799070335-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799070335-1.jpg"), filename: "6799070335-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799070335-2.jpg"), filename: "6799070335-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799070335-0.jpg"), filename: "6799070335-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799070335-1.jpg"), filename: "6799070335-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799070335-2.jpg"), filename: "6799070335-2.jpg") if product
 
             product = Product.create(
                {
@@ -5082,8 +5081,8 @@ Payment/Ticket:<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805480313-0.jpg"), filename: "6805480313-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805480313-1.jpg"), filename: "6805480313-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805480313-0.jpg"), filename: "6805480313-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805480313-1.jpg"), filename: "6805480313-1.jpg") if product
 
             product = Product.create(
                {
@@ -5108,8 +5107,8 @@ Payment/Ticket:<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805475976-0.jpg"), filename: "6805475976-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805475976-1.jpg"), filename: "6805475976-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805475976-0.jpg"), filename: "6805475976-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805475976-1.jpg"), filename: "6805475976-1.jpg") if product
 
             product = Product.create(
                {
@@ -5136,7 +5135,7 @@ Will go fast!  If interested, please call
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810398744-0.jpg"), filename: "6810398744-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810398744-0.jpg"), filename: "6810398744-0.jpg") if product
 
             product = Product.create(
                {
@@ -5156,7 +5155,7 @@ Go Dubs!",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807731043-0.jpg"), filename: "6807731043-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807731043-0.jpg"), filename: "6807731043-0.jpg") if product
 
             product = Product.create(
                {
@@ -5185,8 +5184,8 @@ Payment/Ticket:<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799664225-0.jpg"), filename: "6799664225-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799664225-1.jpg"), filename: "6799664225-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799664225-0.jpg"), filename: "6799664225-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799664225-1.jpg"), filename: "6799664225-1.jpg") if product
 
             product = Product.create(
                {
@@ -5212,11 +5211,11 @@ Mail delivery available for .49 extra if you&apos;re too far from SF and have Pa
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6802910425-0.jpg"), filename: "6802910425-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6802910425-1.jpg"), filename: "6802910425-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6802910425-2.jpg"), filename: "6802910425-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6802910425-3.jpg"), filename: "6802910425-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6802910425-4.jpg"), filename: "6802910425-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6802910425-0.jpg"), filename: "6802910425-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6802910425-1.jpg"), filename: "6802910425-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6802910425-2.jpg"), filename: "6802910425-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6802910425-3.jpg"), filename: "6802910425-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6802910425-4.jpg"), filename: "6802910425-4.jpg") if product
 
             product = Product.create(
                {
@@ -5234,7 +5233,7 @@ I have 12 of these tickets",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810389012-0.jpg"), filename: "6810389012-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810389012-0.jpg"), filename: "6810389012-0.jpg") if product
 
             product = Product.create(
                {
@@ -5249,7 +5248,7 @@ $35 each or best offer!",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810387830-0.jpg"), filename: "6810387830-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810387830-0.jpg"), filename: "6810387830-0.jpg") if product
 
             product = Product.create(
                {
@@ -5278,8 +5277,8 @@ Payment/Ticket:<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805469167-0.jpg"), filename: "6805469167-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805469167-1.jpg"), filename: "6805469167-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805469167-0.jpg"), filename: "6805469167-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805469167-1.jpg"), filename: "6805469167-1.jpg") if product
 
             product = Product.create(
                {
@@ -5304,8 +5303,8 @@ Payment/Ticket:<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795148603-0.jpg"), filename: "6795148603-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795148603-1.jpg"), filename: "6795148603-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795148603-0.jpg"), filename: "6795148603-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795148603-1.jpg"), filename: "6795148603-1.jpg") if product
 
             product = Product.create(
                {
@@ -5334,7 +5333,7 @@ Oregon<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791159719-0.jpg"), filename: "6791159719-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791159719-0.jpg"), filename: "6791159719-0.jpg") if product
 
             product = Product.create(
                {
@@ -5368,7 +5367,7 @@ April 6, Sat vs. Colorado Avalanche @ 7:30pm (Fan Appreciation Night) ~ $79/each
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6803618796-0.jpg"), filename: "6803618796-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803618796-0.jpg"), filename: "6803618796-0.jpg") if product
 
             product = Product.create(
                {
@@ -5415,13 +5414,13 @@ Best way to reach me is via text/email",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787346693-0.jpg"), filename: "6787346693-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787346693-1.jpg"), filename: "6787346693-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787346693-2.jpg"), filename: "6787346693-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787346693-3.jpg"), filename: "6787346693-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787346693-4.jpg"), filename: "6787346693-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787346693-5.jpg"), filename: "6787346693-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787346693-6.jpg"), filename: "6787346693-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787346693-0.jpg"), filename: "6787346693-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787346693-1.jpg"), filename: "6787346693-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787346693-2.jpg"), filename: "6787346693-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787346693-3.jpg"), filename: "6787346693-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787346693-4.jpg"), filename: "6787346693-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787346693-5.jpg"), filename: "6787346693-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787346693-6.jpg"), filename: "6787346693-6.jpg") if product
 
             product = Product.create(
                {
@@ -5449,8 +5448,8 @@ Payment/Ticket:<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799661209-0.jpg"), filename: "6799661209-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799661209-1.jpg"), filename: "6799661209-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799661209-0.jpg"), filename: "6799661209-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799661209-1.jpg"), filename: "6799661209-1.jpg") if product
 
             product = Product.create(
                {
@@ -5465,9 +5464,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804912480-0.jpg"), filename: "6804912480-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804912480-1.jpg"), filename: "6804912480-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804912480-2.jpg"), filename: "6804912480-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804912480-0.jpg"), filename: "6804912480-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804912480-1.jpg"), filename: "6804912480-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804912480-2.jpg"), filename: "6804912480-2.jpg") if product
 
             product = Product.create(
                {
@@ -5495,8 +5494,8 @@ Payment/Ticket:<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799620251-0.jpg"), filename: "6799620251-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799620251-1.jpg"), filename: "6799620251-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799620251-0.jpg"), filename: "6799620251-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799620251-1.jpg"), filename: "6799620251-1.jpg") if product
 
             product = Product.create(
                {
@@ -5524,8 +5523,8 @@ Payment/Ticket:<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799617430-0.jpg"), filename: "6799617430-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799617430-1.jpg"), filename: "6799617430-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799617430-0.jpg"), filename: "6799617430-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799617430-1.jpg"), filename: "6799617430-1.jpg") if product
 
             product = Product.create(
                {
@@ -5542,7 +5541,7 @@ Thursday &#x2022; April 18&apos;th 2019 <br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810367704-0.jpg"), filename: "6810367704-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810367704-0.jpg"), filename: "6810367704-0.jpg") if product
 
             product = Product.create(
                {
@@ -5558,7 +5557,7 @@ $140 for both- thanks!",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810359601-0.jpg"), filename: "6810359601-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810359601-0.jpg"), filename: "6810359601-0.jpg") if product
 
             product = Product.create(
                {
@@ -5580,9 +5579,9 @@ Thanks for looking!",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807952840-0.jpg"), filename: "6807952840-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807952840-1.jpg"), filename: "6807952840-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807952840-2.jpg"), filename: "6807952840-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807952840-0.jpg"), filename: "6807952840-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807952840-1.jpg"), filename: "6807952840-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807952840-2.jpg"), filename: "6807952840-2.jpg") if product
 
             product = Product.create(
                {
@@ -5610,8 +5609,8 @@ Payment/Ticket:<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799536148-0.jpg"), filename: "6799536148-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799536148-1.jpg"), filename: "6799536148-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799536148-0.jpg"), filename: "6799536148-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799536148-1.jpg"), filename: "6799536148-1.jpg") if product
 
             product = Product.create(
                {
@@ -5637,8 +5636,8 @@ Email if interested.  Lowball offers get no reply.<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804009485-0.jpg"), filename: "6804009485-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804009485-1.jpg"), filename: "6804009485-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804009485-0.jpg"), filename: "6804009485-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804009485-1.jpg"), filename: "6804009485-1.jpg") if product
 
             product = Product.create(
                {
@@ -5664,8 +5663,8 @@ Payment/Ticket:<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795147872-0.jpg"), filename: "6795147872-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795147872-1.jpg"), filename: "6795147872-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795147872-0.jpg"), filename: "6795147872-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795147872-1.jpg"), filename: "6795147872-1.jpg") if product
 
             product = Product.create(
                {
@@ -5682,7 +5681,7 @@ Cost is face value of what the Giants charge.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810345363-0.jpg"), filename: "6810345363-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810345363-0.jpg"), filename: "6810345363-0.jpg") if product
 
             product = Product.create(
                {
@@ -5696,7 +5695,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810340797-0.jpg"), filename: "6810340797-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810340797-0.jpg"), filename: "6810340797-0.jpg") if product
 
             product = Product.create(
                {
@@ -5721,8 +5720,8 @@ Barcode/serial number hidden in photos.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799093440-0.jpg"), filename: "6799093440-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799093440-1.jpg"), filename: "6799093440-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799093440-0.jpg"), filename: "6799093440-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799093440-1.jpg"), filename: "6799093440-1.jpg") if product
 
             product = Product.create(
                {
@@ -5740,7 +5739,7 @@ Thanks",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810346389-0.jpg"), filename: "6810346389-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810346389-0.jpg"), filename: "6810346389-0.jpg") if product
 
             product = Product.create(
                {
@@ -5754,7 +5753,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810343783-0.jpg"), filename: "6810343783-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810343783-0.jpg"), filename: "6810343783-0.jpg") if product
 
             product = Product.create(
                {
@@ -5775,13 +5774,13 @@ $425 per seat",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791602223-0.jpg"), filename: "6791602223-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791602223-1.jpg"), filename: "6791602223-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791602223-2.jpg"), filename: "6791602223-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791602223-3.jpg"), filename: "6791602223-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791602223-4.jpg"), filename: "6791602223-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791602223-5.jpg"), filename: "6791602223-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791602223-6.jpg"), filename: "6791602223-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791602223-0.jpg"), filename: "6791602223-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791602223-1.jpg"), filename: "6791602223-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791602223-2.jpg"), filename: "6791602223-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791602223-3.jpg"), filename: "6791602223-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791602223-4.jpg"), filename: "6791602223-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791602223-5.jpg"), filename: "6791602223-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791602223-6.jpg"), filename: "6791602223-6.jpg") if product
 
             product = Product.create(
                {
@@ -5803,13 +5802,13 @@ sec 115 row 3 aisle center court [2 seats] - $650 ea",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808083156-0.jpg"), filename: "6808083156-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808083156-1.jpg"), filename: "6808083156-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808083156-2.jpg"), filename: "6808083156-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808083156-3.jpg"), filename: "6808083156-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808083156-4.jpg"), filename: "6808083156-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808083156-5.jpg"), filename: "6808083156-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808083156-6.jpg"), filename: "6808083156-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808083156-0.jpg"), filename: "6808083156-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808083156-1.jpg"), filename: "6808083156-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808083156-2.jpg"), filename: "6808083156-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808083156-3.jpg"), filename: "6808083156-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808083156-4.jpg"), filename: "6808083156-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808083156-5.jpg"), filename: "6808083156-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808083156-6.jpg"), filename: "6808083156-6.jpg") if product
 
             product = Product.create(
                {
@@ -5829,13 +5828,13 @@ get autographs and High 5&apos;s",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801009516-0.jpg"), filename: "6801009516-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801009516-1.jpg"), filename: "6801009516-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801009516-2.jpg"), filename: "6801009516-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801009516-3.jpg"), filename: "6801009516-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801009516-4.jpg"), filename: "6801009516-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801009516-5.jpg"), filename: "6801009516-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801009516-6.jpg"), filename: "6801009516-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801009516-0.jpg"), filename: "6801009516-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801009516-1.jpg"), filename: "6801009516-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801009516-2.jpg"), filename: "6801009516-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801009516-3.jpg"), filename: "6801009516-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801009516-4.jpg"), filename: "6801009516-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801009516-5.jpg"), filename: "6801009516-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801009516-6.jpg"), filename: "6801009516-6.jpg") if product
 
             product = Product.create(
                {
@@ -5853,8 +5852,8 @@ $95/each",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810331812-0.jpg"), filename: "6810331812-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810331812-1.jpg"), filename: "6810331812-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810331812-0.jpg"), filename: "6810331812-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810331812-1.jpg"), filename: "6810331812-1.jpg") if product
 
             product = Product.create(
                {
@@ -5881,8 +5880,8 @@ not interested in ticket brokers",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810313421-0.jpg"), filename: "6810313421-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810313421-1.jpg"), filename: "6810313421-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810313421-0.jpg"), filename: "6810313421-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810313421-1.jpg"), filename: "6810313421-1.jpg") if product
 
             product = Product.create(
                {
@@ -5909,8 +5908,8 @@ not interested in ticket brokers<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810313589-0.jpg"), filename: "6810313589-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810313589-1.jpg"), filename: "6810313589-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810313589-0.jpg"), filename: "6810313589-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810313589-1.jpg"), filename: "6810313589-1.jpg") if product
 
             product = Product.create(
                {
@@ -5925,7 +5924,7 @@ looking for serious buyers only who wanna take my spot my number is",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810316004-0.jpg"), filename: "6810316004-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810316004-0.jpg"), filename: "6810316004-0.jpg") if product
 
             product = Product.create(
                {
@@ -5952,8 +5951,8 @@ not interested in ticket brokers<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810313938-0.jpg"), filename: "6810313938-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810313938-1.jpg"), filename: "6810313938-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810313938-0.jpg"), filename: "6810313938-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810313938-1.jpg"), filename: "6810313938-1.jpg") if product
 
             product = Product.create(
                {
@@ -5980,8 +5979,8 @@ not interested in ticket brokers",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795807823-0.jpg"), filename: "6795807823-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795807823-1.jpg"), filename: "6795807823-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795807823-0.jpg"), filename: "6795807823-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795807823-1.jpg"), filename: "6795807823-1.jpg") if product
 
             product = Product.create(
                {
@@ -6000,7 +5999,7 @@ I can meet you in the front at 7pm. Cash only.  Email me and I&apos;ll reply qui
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810309356-0.jpg"), filename: "6810309356-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810309356-0.jpg"), filename: "6810309356-0.jpg") if product
 
             product = Product.create(
                {
@@ -6023,7 +6022,7 @@ Send me an email, I will respond ASAP!<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798971621-0.jpg"), filename: "6798971621-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798971621-0.jpg"), filename: "6798971621-0.jpg") if product
 
             product = Product.create(
                {
@@ -6053,7 +6052,7 @@ Link to the course map- http://www.attpbgolf.com/content/uploads/2015/10/ATT-Peb
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807986772-0.jpg"), filename: "6807986772-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807986772-0.jpg"), filename: "6807986772-0.jpg") if product
 
             product = Product.create(
                {
@@ -6067,7 +6066,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810292472-0.jpg"), filename: "6810292472-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810292472-0.jpg"), filename: "6810292472-0.jpg") if product
 
             product = Product.create(
                {
@@ -6085,7 +6084,7 @@ Stadium 2 tickets will give you an assigned seat in Stadium 2 and first come fir
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807468241-0.jpg"), filename: "6807468241-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807468241-0.jpg"), filename: "6807468241-0.jpg") if product
 
             product = Product.create(
                {
@@ -6115,10 +6114,10 @@ If you are interested in purchasing any of the sessions or have any questions pl
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807467463-0.jpg"), filename: "6807467463-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807467463-1.jpg"), filename: "6807467463-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807467463-2.jpg"), filename: "6807467463-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807467463-3.jpg"), filename: "6807467463-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807467463-0.jpg"), filename: "6807467463-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807467463-1.jpg"), filename: "6807467463-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807467463-2.jpg"), filename: "6807467463-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807467463-3.jpg"), filename: "6807467463-3.jpg") if product
 
             product = Product.create(
                {
@@ -6137,8 +6136,8 @@ Pick up in San Francisco Financial District (Embarcadero area). Please leave you
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805615206-0.jpg"), filename: "6805615206-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805615206-1.jpg"), filename: "6805615206-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805615206-0.jpg"), filename: "6805615206-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805615206-1.jpg"), filename: "6805615206-1.jpg") if product
 
             product = Product.create(
                {
@@ -6161,10 +6160,10 @@ https://www.youtube.com/watch?v=B8SVDn34vVQ<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810271502-0.jpg"), filename: "6810271502-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810271502-1.jpg"), filename: "6810271502-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810271502-2.jpg"), filename: "6810271502-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810271502-3.jpg"), filename: "6810271502-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810271502-0.jpg"), filename: "6810271502-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810271502-1.jpg"), filename: "6810271502-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810271502-2.jpg"), filename: "6810271502-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810271502-3.jpg"), filename: "6810271502-3.jpg") if product
 
             product = Product.create(
                {
@@ -6188,7 +6187,7 @@ Email if interested. <br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810273610-0.jpg"), filename: "6810273610-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810273610-0.jpg"), filename: "6810273610-0.jpg") if product
 
             product = Product.create(
                {
@@ -6210,8 +6209,8 @@ Pictures are from the seats !!!",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810271755-0.jpg"), filename: "6810271755-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810271755-1.jpg"), filename: "6810271755-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810271755-0.jpg"), filename: "6810271755-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810271755-1.jpg"), filename: "6810271755-1.jpg") if product
 
             product = Product.create(
                {
@@ -6231,7 +6230,7 @@ Hard tickets, seats all together. $30 each.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808680059-0.jpg"), filename: "6808680059-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808680059-0.jpg"), filename: "6808680059-0.jpg") if product
 
             product = Product.create(
                {
@@ -6245,9 +6244,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810269236-0.jpg"), filename: "6810269236-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810269236-1.jpg"), filename: "6810269236-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810269236-2.jpg"), filename: "6810269236-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810269236-0.jpg"), filename: "6810269236-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810269236-1.jpg"), filename: "6810269236-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810269236-2.jpg"), filename: "6810269236-2.jpg") if product
 
             product = Product.create(
                {
@@ -6261,9 +6260,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810237942-0.jpg"), filename: "6810237942-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810237942-1.jpg"), filename: "6810237942-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810237942-2.jpg"), filename: "6810237942-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810237942-0.jpg"), filename: "6810237942-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810237942-1.jpg"), filename: "6810237942-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810237942-2.jpg"), filename: "6810237942-2.jpg") if product
 
             product = Product.create(
                {
@@ -6277,7 +6276,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805905232-0.jpg"), filename: "6805905232-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805905232-0.jpg"), filename: "6805905232-0.jpg") if product
 
             product = Product.create(
                {
@@ -6296,7 +6295,7 @@ Ken<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810264407-0.jpg"), filename: "6810264407-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810264407-0.jpg"), filename: "6810264407-0.jpg") if product
 
             product = Product.create(
                {
@@ -6316,7 +6315,7 @@ Ken <br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810257499-0.jpg"), filename: "6810257499-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810257499-0.jpg"), filename: "6810257499-0.jpg") if product
 
 category = Category.find_by_name("toys and games")
 unless(category)
@@ -6341,13 +6340,13 @@ end
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794687436-0.jpg"), filename: "6794687436-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794687436-1.jpg"), filename: "6794687436-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794687436-2.jpg"), filename: "6794687436-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794687436-3.jpg"), filename: "6794687436-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794687436-4.jpg"), filename: "6794687436-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794687436-5.jpg"), filename: "6794687436-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794687436-6.jpg"), filename: "6794687436-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794687436-0.jpg"), filename: "6794687436-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794687436-1.jpg"), filename: "6794687436-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794687436-2.jpg"), filename: "6794687436-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794687436-3.jpg"), filename: "6794687436-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794687436-4.jpg"), filename: "6794687436-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794687436-5.jpg"), filename: "6794687436-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794687436-6.jpg"), filename: "6794687436-6.jpg") if product
 
             product = Product.create(
                {
@@ -6380,12 +6379,12 @@ $700 OBO<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810678491-0.jpg"), filename: "6810678491-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810678491-1.jpg"), filename: "6810678491-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810678491-2.jpg"), filename: "6810678491-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810678491-3.jpg"), filename: "6810678491-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810678491-4.jpg"), filename: "6810678491-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810678491-5.jpg"), filename: "6810678491-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810678491-0.jpg"), filename: "6810678491-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810678491-1.jpg"), filename: "6810678491-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810678491-2.jpg"), filename: "6810678491-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810678491-3.jpg"), filename: "6810678491-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810678491-4.jpg"), filename: "6810678491-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810678491-5.jpg"), filename: "6810678491-5.jpg") if product
 
             product = Product.create(
                {
@@ -6415,13 +6414,13 @@ IF U ARE READING LISTING IT&apos;S STILL FOR SALE<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810677412-0.jpg"), filename: "6810677412-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810677412-1.jpg"), filename: "6810677412-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810677412-2.jpg"), filename: "6810677412-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810677412-3.jpg"), filename: "6810677412-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810677412-4.jpg"), filename: "6810677412-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810677412-5.jpg"), filename: "6810677412-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810677412-6.jpg"), filename: "6810677412-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810677412-0.jpg"), filename: "6810677412-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810677412-1.jpg"), filename: "6810677412-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810677412-2.jpg"), filename: "6810677412-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810677412-3.jpg"), filename: "6810677412-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810677412-4.jpg"), filename: "6810677412-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810677412-5.jpg"), filename: "6810677412-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810677412-6.jpg"), filename: "6810677412-6.jpg") if product
 
             product = Product.create(
                {
@@ -6464,13 +6463,13 @@ Visit us at deejaybooksnthings2 and search for items of interest.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810677342-0.jpg"), filename: "6810677342-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810677342-1.jpg"), filename: "6810677342-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810677342-2.jpg"), filename: "6810677342-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810677342-3.jpg"), filename: "6810677342-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810677342-4.jpg"), filename: "6810677342-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810677342-5.jpg"), filename: "6810677342-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810677342-6.jpg"), filename: "6810677342-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810677342-0.jpg"), filename: "6810677342-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810677342-1.jpg"), filename: "6810677342-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810677342-2.jpg"), filename: "6810677342-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810677342-3.jpg"), filename: "6810677342-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810677342-4.jpg"), filename: "6810677342-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810677342-5.jpg"), filename: "6810677342-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810677342-6.jpg"), filename: "6810677342-6.jpg") if product
 
             product = Product.create(
                {
@@ -6484,11 +6483,11 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810674780-0.jpg"), filename: "6810674780-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810674780-1.jpg"), filename: "6810674780-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810674780-2.jpg"), filename: "6810674780-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810674780-3.jpg"), filename: "6810674780-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810674780-4.jpg"), filename: "6810674780-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810674780-0.jpg"), filename: "6810674780-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810674780-1.jpg"), filename: "6810674780-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810674780-2.jpg"), filename: "6810674780-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810674780-3.jpg"), filename: "6810674780-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810674780-4.jpg"), filename: "6810674780-4.jpg") if product
 
             product = Product.create(
                {
@@ -6505,7 +6504,7 @@ Never used--------Selling for $5.00.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810674426-0.jpg"), filename: "6810674426-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810674426-0.jpg"), filename: "6810674426-0.jpg") if product
 
             product = Product.create(
                {
@@ -6521,12 +6520,12 @@ $25.00<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795172942-0.jpg"), filename: "6795172942-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795172942-1.jpg"), filename: "6795172942-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795172942-2.jpg"), filename: "6795172942-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795172942-3.jpg"), filename: "6795172942-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795172942-4.jpg"), filename: "6795172942-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795172942-5.jpg"), filename: "6795172942-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795172942-0.jpg"), filename: "6795172942-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795172942-1.jpg"), filename: "6795172942-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795172942-2.jpg"), filename: "6795172942-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795172942-3.jpg"), filename: "6795172942-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795172942-4.jpg"), filename: "6795172942-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795172942-5.jpg"), filename: "6795172942-5.jpg") if product
 
             product = Product.create(
                {
@@ -6542,13 +6541,13 @@ Shoots 4k videos, 12 megapixel raw photos and goes down 300ft.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804563829-0.jpg"), filename: "6804563829-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804563829-1.jpg"), filename: "6804563829-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804563829-2.jpg"), filename: "6804563829-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804563829-3.jpg"), filename: "6804563829-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804563829-4.jpg"), filename: "6804563829-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804563829-5.jpg"), filename: "6804563829-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804563829-6.jpg"), filename: "6804563829-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804563829-0.jpg"), filename: "6804563829-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804563829-1.jpg"), filename: "6804563829-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804563829-2.jpg"), filename: "6804563829-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804563829-3.jpg"), filename: "6804563829-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804563829-4.jpg"), filename: "6804563829-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804563829-5.jpg"), filename: "6804563829-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804563829-6.jpg"), filename: "6804563829-6.jpg") if product
 
             product = Product.create(
                {
@@ -6564,10 +6563,10 @@ Call or text
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796418575-0.jpg"), filename: "6796418575-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796418575-1.jpg"), filename: "6796418575-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796418575-2.jpg"), filename: "6796418575-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796418575-3.jpg"), filename: "6796418575-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796418575-0.jpg"), filename: "6796418575-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796418575-1.jpg"), filename: "6796418575-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796418575-2.jpg"), filename: "6796418575-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796418575-3.jpg"), filename: "6796418575-3.jpg") if product
 
             product = Product.create(
                {
@@ -6587,9 +6586,9 @@ Email me with any questions, or to set up a time to see the Supersoaker.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6809163808-0.jpg"), filename: "6809163808-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6809163808-1.jpg"), filename: "6809163808-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6809163808-2.jpg"), filename: "6809163808-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6809163808-0.jpg"), filename: "6809163808-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6809163808-1.jpg"), filename: "6809163808-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6809163808-2.jpg"), filename: "6809163808-2.jpg") if product
 
             product = Product.create(
                {
@@ -6605,13 +6604,13 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807114696-0.jpg"), filename: "6807114696-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807114696-1.jpg"), filename: "6807114696-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807114696-2.jpg"), filename: "6807114696-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807114696-3.jpg"), filename: "6807114696-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807114696-4.jpg"), filename: "6807114696-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807114696-5.jpg"), filename: "6807114696-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807114696-6.jpg"), filename: "6807114696-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807114696-0.jpg"), filename: "6807114696-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807114696-1.jpg"), filename: "6807114696-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807114696-2.jpg"), filename: "6807114696-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807114696-3.jpg"), filename: "6807114696-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807114696-4.jpg"), filename: "6807114696-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807114696-5.jpg"), filename: "6807114696-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807114696-6.jpg"), filename: "6807114696-6.jpg") if product
 
             product = Product.create(
                {
@@ -6627,7 +6626,7 @@ http://www.busaccagallery.com/catalog.php?catid=112&amp;itemid=6785&amp;page=1",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798567716-0.jpg"), filename: "6798567716-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798567716-0.jpg"), filename: "6798567716-0.jpg") if product
 
             product = Product.create(
                {
@@ -6645,13 +6644,13 @@ I am selling these as a collection. And the price is $40 for all of the games. T
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810668340-0.jpg"), filename: "6810668340-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810668340-1.jpg"), filename: "6810668340-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810668340-2.jpg"), filename: "6810668340-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810668340-3.jpg"), filename: "6810668340-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810668340-4.jpg"), filename: "6810668340-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810668340-5.jpg"), filename: "6810668340-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810668340-6.jpg"), filename: "6810668340-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810668340-0.jpg"), filename: "6810668340-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810668340-1.jpg"), filename: "6810668340-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810668340-2.jpg"), filename: "6810668340-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810668340-3.jpg"), filename: "6810668340-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810668340-4.jpg"), filename: "6810668340-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810668340-5.jpg"), filename: "6810668340-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810668340-6.jpg"), filename: "6810668340-6.jpg") if product
 
             product = Product.create(
                {
@@ -6666,7 +6665,7 @@ If you see the listing, the item is available, so please specify your availabili
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792843334-0.jpg"), filename: "6792843334-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792843334-0.jpg"), filename: "6792843334-0.jpg") if product
 
             product = Product.create(
                {
@@ -6685,13 +6684,13 @@ Package has wear.The Rock is 7&quot; tall.$5.<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801881752-0.jpg"), filename: "6801881752-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801881752-1.jpg"), filename: "6801881752-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801881752-2.jpg"), filename: "6801881752-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801881752-3.jpg"), filename: "6801881752-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801881752-4.jpg"), filename: "6801881752-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801881752-5.jpg"), filename: "6801881752-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801881752-6.jpg"), filename: "6801881752-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801881752-0.jpg"), filename: "6801881752-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801881752-1.jpg"), filename: "6801881752-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801881752-2.jpg"), filename: "6801881752-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801881752-3.jpg"), filename: "6801881752-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801881752-4.jpg"), filename: "6801881752-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801881752-5.jpg"), filename: "6801881752-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801881752-6.jpg"), filename: "6801881752-6.jpg") if product
 
             product = Product.create(
                {
@@ -6709,13 +6708,13 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807529679-0.jpg"), filename: "6807529679-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807529679-1.jpg"), filename: "6807529679-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807529679-2.jpg"), filename: "6807529679-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807529679-3.jpg"), filename: "6807529679-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807529679-4.jpg"), filename: "6807529679-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807529679-5.jpg"), filename: "6807529679-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807529679-6.jpg"), filename: "6807529679-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807529679-0.jpg"), filename: "6807529679-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807529679-1.jpg"), filename: "6807529679-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807529679-2.jpg"), filename: "6807529679-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807529679-3.jpg"), filename: "6807529679-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807529679-4.jpg"), filename: "6807529679-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807529679-5.jpg"), filename: "6807529679-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807529679-6.jpg"), filename: "6807529679-6.jpg") if product
 
             product = Product.create(
                {
@@ -6734,13 +6733,13 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792842617-0.jpg"), filename: "6792842617-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792842617-1.jpg"), filename: "6792842617-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792842617-2.jpg"), filename: "6792842617-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792842617-3.jpg"), filename: "6792842617-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792842617-4.jpg"), filename: "6792842617-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792842617-5.jpg"), filename: "6792842617-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792842617-6.jpg"), filename: "6792842617-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792842617-0.jpg"), filename: "6792842617-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792842617-1.jpg"), filename: "6792842617-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792842617-2.jpg"), filename: "6792842617-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792842617-3.jpg"), filename: "6792842617-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792842617-4.jpg"), filename: "6792842617-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792842617-5.jpg"), filename: "6792842617-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792842617-6.jpg"), filename: "6792842617-6.jpg") if product
 
             product = Product.create(
                {
@@ -6786,13 +6785,13 @@ Checkout our other CL ads for more jigsaw puzzles as well as more kid&apos;s toy
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810664330-0.jpg"), filename: "6810664330-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810664330-1.jpg"), filename: "6810664330-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810664330-2.jpg"), filename: "6810664330-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810664330-3.jpg"), filename: "6810664330-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810664330-4.jpg"), filename: "6810664330-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810664330-5.jpg"), filename: "6810664330-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810664330-6.jpg"), filename: "6810664330-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810664330-0.jpg"), filename: "6810664330-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810664330-1.jpg"), filename: "6810664330-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810664330-2.jpg"), filename: "6810664330-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810664330-3.jpg"), filename: "6810664330-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810664330-4.jpg"), filename: "6810664330-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810664330-5.jpg"), filename: "6810664330-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810664330-6.jpg"), filename: "6810664330-6.jpg") if product
 
             product = Product.create(
                {
@@ -6809,13 +6808,13 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804128105-0.jpg"), filename: "6804128105-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804128105-1.jpg"), filename: "6804128105-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804128105-2.jpg"), filename: "6804128105-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804128105-3.jpg"), filename: "6804128105-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804128105-4.jpg"), filename: "6804128105-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804128105-5.jpg"), filename: "6804128105-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804128105-6.jpg"), filename: "6804128105-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804128105-0.jpg"), filename: "6804128105-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804128105-1.jpg"), filename: "6804128105-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804128105-2.jpg"), filename: "6804128105-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804128105-3.jpg"), filename: "6804128105-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804128105-4.jpg"), filename: "6804128105-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804128105-5.jpg"), filename: "6804128105-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804128105-6.jpg"), filename: "6804128105-6.jpg") if product
 
             product = Product.create(
                {
@@ -6842,10 +6841,10 @@ Local pickup only.</b>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800579377-0.jpg"), filename: "6800579377-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800579377-1.jpg"), filename: "6800579377-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800579377-2.jpg"), filename: "6800579377-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800579377-3.jpg"), filename: "6800579377-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800579377-0.jpg"), filename: "6800579377-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800579377-1.jpg"), filename: "6800579377-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800579377-2.jpg"), filename: "6800579377-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800579377-3.jpg"), filename: "6800579377-3.jpg") if product
 
             product = Product.create(
                {
@@ -6862,9 +6861,9 @@ Local pickup only.</b>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800580603-0.jpg"), filename: "6800580603-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800580603-1.jpg"), filename: "6800580603-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800580603-2.jpg"), filename: "6800580603-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800580603-0.jpg"), filename: "6800580603-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800580603-1.jpg"), filename: "6800580603-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800580603-2.jpg"), filename: "6800580603-2.jpg") if product
 
             product = Product.create(
                {
@@ -6883,10 +6882,10 @@ Local pickup only</b>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800581006-0.jpg"), filename: "6800581006-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800581006-1.jpg"), filename: "6800581006-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800581006-2.jpg"), filename: "6800581006-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800581006-3.jpg"), filename: "6800581006-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800581006-0.jpg"), filename: "6800581006-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800581006-1.jpg"), filename: "6800581006-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800581006-2.jpg"), filename: "6800581006-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800581006-3.jpg"), filename: "6800581006-3.jpg") if product
 
             product = Product.create(
                {
@@ -6903,10 +6902,10 @@ Local pickup only.</b>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800584715-0.jpg"), filename: "6800584715-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800584715-1.jpg"), filename: "6800584715-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800584715-2.jpg"), filename: "6800584715-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800584715-3.jpg"), filename: "6800584715-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800584715-0.jpg"), filename: "6800584715-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800584715-1.jpg"), filename: "6800584715-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800584715-2.jpg"), filename: "6800584715-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800584715-3.jpg"), filename: "6800584715-3.jpg") if product
 
             product = Product.create(
                {
@@ -6923,8 +6922,8 @@ Local pickup only</b>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800585173-0.jpg"), filename: "6800585173-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800585173-1.jpg"), filename: "6800585173-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800585173-0.jpg"), filename: "6800585173-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800585173-1.jpg"), filename: "6800585173-1.jpg") if product
 
             product = Product.create(
                {
@@ -6945,10 +6944,10 @@ Local pickup only</b>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800586082-0.jpg"), filename: "6800586082-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800586082-1.jpg"), filename: "6800586082-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800586082-2.jpg"), filename: "6800586082-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800586082-3.jpg"), filename: "6800586082-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800586082-0.jpg"), filename: "6800586082-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800586082-1.jpg"), filename: "6800586082-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800586082-2.jpg"), filename: "6800586082-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800586082-3.jpg"), filename: "6800586082-3.jpg") if product
 
             product = Product.create(
                {
@@ -6968,9 +6967,9 @@ New in package",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805129010-0.jpg"), filename: "6805129010-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805129010-1.jpg"), filename: "6805129010-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805129010-2.jpg"), filename: "6805129010-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805129010-0.jpg"), filename: "6805129010-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805129010-1.jpg"), filename: "6805129010-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805129010-2.jpg"), filename: "6805129010-2.jpg") if product
 
             product = Product.create(
                {
@@ -6984,9 +6983,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805129677-0.jpg"), filename: "6805129677-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805129677-1.jpg"), filename: "6805129677-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805129677-2.jpg"), filename: "6805129677-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805129677-0.jpg"), filename: "6805129677-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805129677-1.jpg"), filename: "6805129677-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805129677-2.jpg"), filename: "6805129677-2.jpg") if product
 
             product = Product.create(
                {
@@ -7009,8 +7008,8 @@ Challenge your child&apos;s imagination with 4M toys and kits.<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805133928-0.jpg"), filename: "6805133928-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805133928-1.jpg"), filename: "6805133928-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805133928-0.jpg"), filename: "6805133928-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805133928-1.jpg"), filename: "6805133928-1.jpg") if product
 
             product = Product.create(
                {
@@ -7037,10 +7036,10 @@ Educational Focus: Memory skills",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805137132-0.jpg"), filename: "6805137132-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805137132-1.jpg"), filename: "6805137132-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805137132-2.jpg"), filename: "6805137132-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805137132-3.jpg"), filename: "6805137132-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805137132-0.jpg"), filename: "6805137132-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805137132-1.jpg"), filename: "6805137132-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805137132-2.jpg"), filename: "6805137132-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805137132-3.jpg"), filename: "6805137132-3.jpg") if product
 
             product = Product.create(
                {
@@ -7062,11 +7061,11 @@ Design, etch and wear your own unique metal tags and charms with the Engraver&ap
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805139176-0.jpg"), filename: "6805139176-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805139176-1.jpg"), filename: "6805139176-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805139176-2.jpg"), filename: "6805139176-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805139176-3.jpg"), filename: "6805139176-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805139176-4.jpg"), filename: "6805139176-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805139176-0.jpg"), filename: "6805139176-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805139176-1.jpg"), filename: "6805139176-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805139176-2.jpg"), filename: "6805139176-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805139176-3.jpg"), filename: "6805139176-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805139176-4.jpg"), filename: "6805139176-4.jpg") if product
 
             product = Product.create(
                {
@@ -7089,8 +7088,8 @@ Directions: Like in the original game, players try to match a side of one of the
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805142012-0.jpg"), filename: "6805142012-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805142012-1.jpg"), filename: "6805142012-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805142012-0.jpg"), filename: "6805142012-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805142012-1.jpg"), filename: "6805142012-1.jpg") if product
 
             product = Product.create(
                {
@@ -7111,9 +7110,9 @@ People will fall in love with Gordian&apos;s Knot, a take-apart brainteaser for 
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805147154-0.jpg"), filename: "6805147154-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805147154-1.jpg"), filename: "6805147154-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805147154-2.jpg"), filename: "6805147154-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805147154-0.jpg"), filename: "6805147154-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805147154-1.jpg"), filename: "6805147154-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805147154-2.jpg"), filename: "6805147154-2.jpg") if product
 
             product = Product.create(
                {
@@ -7131,7 +7130,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805148076-0.jpg"), filename: "6805148076-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805148076-0.jpg"), filename: "6805148076-0.jpg") if product
 
             product = Product.create(
                {
@@ -7158,8 +7157,8 @@ Recommended for ages 8 and older.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805148394-0.jpg"), filename: "6805148394-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805148394-1.jpg"), filename: "6805148394-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805148394-0.jpg"), filename: "6805148394-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805148394-1.jpg"), filename: "6805148394-1.jpg") if product
 
             product = Product.create(
                {
@@ -7183,12 +7182,12 @@ The 4M Weather Station Kit contains all the tools a young meteorologist needs to
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805156640-0.jpg"), filename: "6805156640-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805156640-1.jpg"), filename: "6805156640-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805156640-2.jpg"), filename: "6805156640-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805156640-3.jpg"), filename: "6805156640-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805156640-4.jpg"), filename: "6805156640-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805156640-5.jpg"), filename: "6805156640-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805156640-0.jpg"), filename: "6805156640-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805156640-1.jpg"), filename: "6805156640-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805156640-2.jpg"), filename: "6805156640-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805156640-3.jpg"), filename: "6805156640-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805156640-4.jpg"), filename: "6805156640-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805156640-5.jpg"), filename: "6805156640-5.jpg") if product
 
             product = Product.create(
                {
@@ -7212,8 +7211,8 @@ Expand your imagination and build endless models",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805160387-0.jpg"), filename: "6805160387-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805160387-1.jpg"), filename: "6805160387-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805160387-0.jpg"), filename: "6805160387-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805160387-1.jpg"), filename: "6805160387-1.jpg") if product
 
             product = Product.create(
                {
@@ -7253,13 +7252,13 @@ Checkout our other CL ads for more jigsaw puzzles as well as more kid&apos;s toy
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810659859-0.jpg"), filename: "6810659859-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810659859-1.jpg"), filename: "6810659859-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810659859-2.jpg"), filename: "6810659859-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810659859-3.jpg"), filename: "6810659859-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810659859-4.jpg"), filename: "6810659859-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810659859-5.jpg"), filename: "6810659859-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810659859-6.jpg"), filename: "6810659859-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810659859-0.jpg"), filename: "6810659859-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810659859-1.jpg"), filename: "6810659859-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810659859-2.jpg"), filename: "6810659859-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810659859-3.jpg"), filename: "6810659859-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810659859-4.jpg"), filename: "6810659859-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810659859-5.jpg"), filename: "6810659859-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810659859-6.jpg"), filename: "6810659859-6.jpg") if product
 
             product = Product.create(
                {
@@ -7279,9 +7278,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805160832-0.jpg"), filename: "6805160832-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805160832-1.jpg"), filename: "6805160832-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805160832-2.jpg"), filename: "6805160832-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805160832-0.jpg"), filename: "6805160832-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805160832-1.jpg"), filename: "6805160832-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805160832-2.jpg"), filename: "6805160832-2.jpg") if product
 
             product = Product.create(
                {
@@ -7303,11 +7302,11 @@ Address 645 Hurlingame av. Redwood City CA. 94063--Spanish call Edith",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794821693-0.jpg"), filename: "6794821693-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794821693-1.jpg"), filename: "6794821693-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794821693-2.jpg"), filename: "6794821693-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794821693-3.jpg"), filename: "6794821693-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794821693-4.jpg"), filename: "6794821693-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794821693-0.jpg"), filename: "6794821693-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794821693-1.jpg"), filename: "6794821693-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794821693-2.jpg"), filename: "6794821693-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794821693-3.jpg"), filename: "6794821693-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794821693-4.jpg"), filename: "6794821693-4.jpg") if product
 
             product = Product.create(
                {
@@ -7327,11 +7326,11 @@ Knit this stylish accessory for you and your doll with the Infinity Scarf Knitti
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805200109-0.jpg"), filename: "6805200109-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805200109-1.jpg"), filename: "6805200109-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805200109-2.jpg"), filename: "6805200109-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805200109-3.jpg"), filename: "6805200109-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805200109-4.jpg"), filename: "6805200109-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805200109-0.jpg"), filename: "6805200109-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805200109-1.jpg"), filename: "6805200109-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805200109-2.jpg"), filename: "6805200109-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805200109-3.jpg"), filename: "6805200109-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805200109-4.jpg"), filename: "6805200109-4.jpg") if product
 
             product = Product.create(
                {
@@ -7350,9 +7349,9 @@ Ages 8 and up",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805200373-0.jpg"), filename: "6805200373-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805200373-1.jpg"), filename: "6805200373-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805200373-2.jpg"), filename: "6805200373-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805200373-0.jpg"), filename: "6805200373-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805200373-1.jpg"), filename: "6805200373-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805200373-2.jpg"), filename: "6805200373-2.jpg") if product
 
             product = Product.create(
                {
@@ -7368,13 +7367,13 @@ Measures: 24x12x19&quot; tall",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796966719-0.jpg"), filename: "6796966719-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796966719-1.jpg"), filename: "6796966719-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796966719-2.jpg"), filename: "6796966719-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796966719-3.jpg"), filename: "6796966719-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796966719-4.jpg"), filename: "6796966719-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796966719-5.jpg"), filename: "6796966719-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796966719-6.jpg"), filename: "6796966719-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796966719-0.jpg"), filename: "6796966719-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796966719-1.jpg"), filename: "6796966719-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796966719-2.jpg"), filename: "6796966719-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796966719-3.jpg"), filename: "6796966719-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796966719-4.jpg"), filename: "6796966719-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796966719-5.jpg"), filename: "6796966719-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796966719-6.jpg"), filename: "6796966719-6.jpg") if product
 
             product = Product.create(
                {
@@ -7398,12 +7397,12 @@ The 4M Weather Station Kit contains all the tools a young meteorologist needs to
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805228344-0.jpg"), filename: "6805228344-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805228344-1.jpg"), filename: "6805228344-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805228344-2.jpg"), filename: "6805228344-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805228344-3.jpg"), filename: "6805228344-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805228344-4.jpg"), filename: "6805228344-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805228344-5.jpg"), filename: "6805228344-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805228344-0.jpg"), filename: "6805228344-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805228344-1.jpg"), filename: "6805228344-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805228344-2.jpg"), filename: "6805228344-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805228344-3.jpg"), filename: "6805228344-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805228344-4.jpg"), filename: "6805228344-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805228344-5.jpg"), filename: "6805228344-5.jpg") if product
 
             product = Product.create(
                {
@@ -7419,9 +7418,9 @@ A hands-on rocket launching science kit for the whole family. This kit includes 
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805243483-0.jpg"), filename: "6805243483-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805243483-1.jpg"), filename: "6805243483-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805243483-2.jpg"), filename: "6805243483-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805243483-0.jpg"), filename: "6805243483-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805243483-1.jpg"), filename: "6805243483-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805243483-2.jpg"), filename: "6805243483-2.jpg") if product
 
             product = Product.create(
                {
@@ -7435,9 +7434,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793635044-0.jpg"), filename: "6793635044-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793635044-1.jpg"), filename: "6793635044-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793635044-2.jpg"), filename: "6793635044-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793635044-0.jpg"), filename: "6793635044-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793635044-1.jpg"), filename: "6793635044-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793635044-2.jpg"), filename: "6793635044-2.jpg") if product
 
             product = Product.create(
                {
@@ -7451,7 +7450,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810656947-0.jpg"), filename: "6810656947-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810656947-0.jpg"), filename: "6810656947-0.jpg") if product
 
             product = Product.create(
                {
@@ -7471,11 +7470,11 @@ Inspiring kids to create crafts they&apos;ll want to wear, keep, and share<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805283095-0.jpg"), filename: "6805283095-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805283095-1.jpg"), filename: "6805283095-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805283095-2.jpg"), filename: "6805283095-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805283095-3.jpg"), filename: "6805283095-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805283095-4.jpg"), filename: "6805283095-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805283095-0.jpg"), filename: "6805283095-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805283095-1.jpg"), filename: "6805283095-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805283095-2.jpg"), filename: "6805283095-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805283095-3.jpg"), filename: "6805283095-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805283095-4.jpg"), filename: "6805283095-4.jpg") if product
 
             product = Product.create(
                {
@@ -7511,13 +7510,13 @@ Min Load (lbs)	44lb.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805128766-0.jpg"), filename: "6805128766-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805128766-1.jpg"), filename: "6805128766-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805128766-2.jpg"), filename: "6805128766-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805128766-3.jpg"), filename: "6805128766-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805128766-4.jpg"), filename: "6805128766-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805128766-5.jpg"), filename: "6805128766-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805128766-6.jpg"), filename: "6805128766-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805128766-0.jpg"), filename: "6805128766-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805128766-1.jpg"), filename: "6805128766-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805128766-2.jpg"), filename: "6805128766-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805128766-3.jpg"), filename: "6805128766-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805128766-4.jpg"), filename: "6805128766-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805128766-5.jpg"), filename: "6805128766-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805128766-6.jpg"), filename: "6805128766-6.jpg") if product
 
             product = Product.create(
                {
@@ -7539,10 +7538,10 @@ KW: doll, animal, cheap, kids, boy, girl, gift, present, teddy, hug, bed, room, 
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810652605-0.jpg"), filename: "6810652605-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810652605-1.jpg"), filename: "6810652605-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810652605-2.jpg"), filename: "6810652605-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810652605-3.jpg"), filename: "6810652605-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810652605-0.jpg"), filename: "6810652605-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810652605-1.jpg"), filename: "6810652605-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810652605-2.jpg"), filename: "6810652605-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810652605-3.jpg"), filename: "6810652605-3.jpg") if product
 
             product = Product.create(
                {
@@ -7556,9 +7555,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793945181-0.jpg"), filename: "6793945181-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793945181-1.jpg"), filename: "6793945181-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793945181-2.jpg"), filename: "6793945181-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793945181-0.jpg"), filename: "6793945181-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793945181-1.jpg"), filename: "6793945181-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793945181-2.jpg"), filename: "6793945181-2.jpg") if product
 
             product = Product.create(
                {
@@ -7572,7 +7571,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810649541-0.jpg"), filename: "6810649541-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810649541-0.jpg"), filename: "6810649541-0.jpg") if product
 
             product = Product.create(
                {
@@ -7592,9 +7591,9 @@ Tags: RC boat, tunnel hull, remote control, radio control",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801905740-0.jpg"), filename: "6801905740-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801905740-1.jpg"), filename: "6801905740-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801905740-2.jpg"), filename: "6801905740-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801905740-0.jpg"), filename: "6801905740-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801905740-1.jpg"), filename: "6801905740-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801905740-2.jpg"), filename: "6801905740-2.jpg") if product
 
             product = Product.create(
                {
@@ -7610,13 +7609,13 @@ Puzzle, books in acceptable to good condition. The 10 DVDs are in fine condition
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805453760-0.jpg"), filename: "6805453760-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805453760-1.jpg"), filename: "6805453760-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805453760-2.jpg"), filename: "6805453760-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805453760-3.jpg"), filename: "6805453760-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805453760-4.jpg"), filename: "6805453760-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805453760-5.jpg"), filename: "6805453760-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805453760-6.jpg"), filename: "6805453760-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805453760-0.jpg"), filename: "6805453760-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805453760-1.jpg"), filename: "6805453760-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805453760-2.jpg"), filename: "6805453760-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805453760-3.jpg"), filename: "6805453760-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805453760-4.jpg"), filename: "6805453760-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805453760-5.jpg"), filename: "6805453760-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805453760-6.jpg"), filename: "6805453760-6.jpg") if product
 
             product = Product.create(
                {
@@ -7639,9 +7638,9 @@ http://www.amazon.com/gp/product/B000EG8IDQ?psc=1&amp;redirect=true&amp;ref_=oh_
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810646443-0.jpg"), filename: "6810646443-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810646443-1.jpg"), filename: "6810646443-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810646443-2.jpg"), filename: "6810646443-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810646443-0.jpg"), filename: "6810646443-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810646443-1.jpg"), filename: "6810646443-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810646443-2.jpg"), filename: "6810646443-2.jpg") if product
 
             product = Product.create(
                {
@@ -7659,13 +7658,13 @@ Comes with a gently used B. Toys YouTurns Wheel. See pictures for item descripti
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810645568-0.jpg"), filename: "6810645568-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810645568-1.jpg"), filename: "6810645568-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810645568-2.jpg"), filename: "6810645568-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810645568-3.jpg"), filename: "6810645568-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810645568-4.jpg"), filename: "6810645568-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810645568-5.jpg"), filename: "6810645568-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810645568-6.jpg"), filename: "6810645568-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810645568-0.jpg"), filename: "6810645568-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810645568-1.jpg"), filename: "6810645568-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810645568-2.jpg"), filename: "6810645568-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810645568-3.jpg"), filename: "6810645568-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810645568-4.jpg"), filename: "6810645568-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810645568-5.jpg"), filename: "6810645568-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810645568-6.jpg"), filename: "6810645568-6.jpg") if product
 
             product = Product.create(
                {
@@ -7679,9 +7678,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810645072-0.jpg"), filename: "6810645072-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810645072-1.jpg"), filename: "6810645072-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810645072-2.jpg"), filename: "6810645072-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810645072-0.jpg"), filename: "6810645072-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810645072-1.jpg"), filename: "6810645072-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810645072-2.jpg"), filename: "6810645072-2.jpg") if product
 
             product = Product.create(
                {
@@ -7700,9 +7699,9 @@ $30<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806561601-0.jpg"), filename: "6806561601-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806561601-1.jpg"), filename: "6806561601-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806561601-2.jpg"), filename: "6806561601-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806561601-0.jpg"), filename: "6806561601-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806561601-1.jpg"), filename: "6806561601-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806561601-2.jpg"), filename: "6806561601-2.jpg") if product
 
             product = Product.create(
                {
@@ -7722,10 +7721,10 @@ Ages 5+",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805230378-0.jpg"), filename: "6805230378-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805230378-1.jpg"), filename: "6805230378-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805230378-2.jpg"), filename: "6805230378-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805230378-3.jpg"), filename: "6805230378-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805230378-0.jpg"), filename: "6805230378-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805230378-1.jpg"), filename: "6805230378-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805230378-2.jpg"), filename: "6805230378-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805230378-3.jpg"), filename: "6805230378-3.jpg") if product
 
             product = Product.create(
                {
@@ -7756,13 +7755,13 @@ wwii world war 2 tank tanks tiger sherman pershing die cast models guns turrets"
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804957410-0.jpg"), filename: "6804957410-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804957410-1.jpg"), filename: "6804957410-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804957410-2.jpg"), filename: "6804957410-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804957410-3.jpg"), filename: "6804957410-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804957410-4.jpg"), filename: "6804957410-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804957410-5.jpg"), filename: "6804957410-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804957410-6.jpg"), filename: "6804957410-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804957410-0.jpg"), filename: "6804957410-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804957410-1.jpg"), filename: "6804957410-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804957410-2.jpg"), filename: "6804957410-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804957410-3.jpg"), filename: "6804957410-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804957410-4.jpg"), filename: "6804957410-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804957410-5.jpg"), filename: "6804957410-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804957410-6.jpg"), filename: "6804957410-6.jpg") if product
 
             product = Product.create(
                {
@@ -7784,13 +7783,13 @@ The Original Slinky Brand Collector&apos;s Edition Metal Original Slinky is pack
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810642790-0.jpg"), filename: "6810642790-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810642790-1.jpg"), filename: "6810642790-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810642790-2.jpg"), filename: "6810642790-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810642790-3.jpg"), filename: "6810642790-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810642790-4.jpg"), filename: "6810642790-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810642790-5.jpg"), filename: "6810642790-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810642790-6.jpg"), filename: "6810642790-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810642790-0.jpg"), filename: "6810642790-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810642790-1.jpg"), filename: "6810642790-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810642790-2.jpg"), filename: "6810642790-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810642790-3.jpg"), filename: "6810642790-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810642790-4.jpg"), filename: "6810642790-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810642790-5.jpg"), filename: "6810642790-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810642790-6.jpg"), filename: "6810642790-6.jpg") if product
 
             product = Product.create(
                {
@@ -7808,13 +7807,13 @@ Fremont pickup",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805134311-0.jpg"), filename: "6805134311-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805134311-1.jpg"), filename: "6805134311-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805134311-2.jpg"), filename: "6805134311-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805134311-3.jpg"), filename: "6805134311-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805134311-4.jpg"), filename: "6805134311-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805134311-5.jpg"), filename: "6805134311-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805134311-6.jpg"), filename: "6805134311-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805134311-0.jpg"), filename: "6805134311-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805134311-1.jpg"), filename: "6805134311-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805134311-2.jpg"), filename: "6805134311-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805134311-3.jpg"), filename: "6805134311-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805134311-4.jpg"), filename: "6805134311-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805134311-5.jpg"), filename: "6805134311-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805134311-6.jpg"), filename: "6805134311-6.jpg") if product
 
             product = Product.create(
                {
@@ -7842,9 +7841,9 @@ Fremont pickup",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798082915-0.jpg"), filename: "6798082915-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798082915-1.jpg"), filename: "6798082915-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798082915-2.jpg"), filename: "6798082915-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798082915-0.jpg"), filename: "6798082915-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798082915-1.jpg"), filename: "6798082915-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798082915-2.jpg"), filename: "6798082915-2.jpg") if product
 
             product = Product.create(
                {
@@ -7864,13 +7863,13 @@ Promotes fine motor skills, hand-eye coordination, and creativity",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805214675-0.jpg"), filename: "6805214675-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805214675-1.jpg"), filename: "6805214675-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805214675-2.jpg"), filename: "6805214675-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805214675-3.jpg"), filename: "6805214675-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805214675-4.jpg"), filename: "6805214675-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805214675-5.jpg"), filename: "6805214675-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805214675-6.jpg"), filename: "6805214675-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805214675-0.jpg"), filename: "6805214675-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805214675-1.jpg"), filename: "6805214675-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805214675-2.jpg"), filename: "6805214675-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805214675-3.jpg"), filename: "6805214675-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805214675-4.jpg"), filename: "6805214675-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805214675-5.jpg"), filename: "6805214675-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805214675-6.jpg"), filename: "6805214675-6.jpg") if product
 
             product = Product.create(
                {
@@ -7892,13 +7891,13 @@ Saturday Sunday 11-530ish<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810641093-0.jpg"), filename: "6810641093-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810641093-1.jpg"), filename: "6810641093-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810641093-2.jpg"), filename: "6810641093-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810641093-3.jpg"), filename: "6810641093-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810641093-4.jpg"), filename: "6810641093-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810641093-5.jpg"), filename: "6810641093-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810641093-6.jpg"), filename: "6810641093-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810641093-0.jpg"), filename: "6810641093-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810641093-1.jpg"), filename: "6810641093-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810641093-2.jpg"), filename: "6810641093-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810641093-3.jpg"), filename: "6810641093-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810641093-4.jpg"), filename: "6810641093-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810641093-5.jpg"), filename: "6810641093-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810641093-6.jpg"), filename: "6810641093-6.jpg") if product
 
             product = Product.create(
                {
@@ -7921,9 +7920,9 @@ ADDITIONAL ACTIVITIES: HUMAN BODY POSTER",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810641018-0.jpg"), filename: "6810641018-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810641018-1.jpg"), filename: "6810641018-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810641018-2.jpg"), filename: "6810641018-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810641018-0.jpg"), filename: "6810641018-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810641018-1.jpg"), filename: "6810641018-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810641018-2.jpg"), filename: "6810641018-2.jpg") if product
 
             product = Product.create(
                {
@@ -7937,8 +7936,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810640859-0.jpg"), filename: "6810640859-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810640859-1.jpg"), filename: "6810640859-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810640859-0.jpg"), filename: "6810640859-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810640859-1.jpg"), filename: "6810640859-1.jpg") if product
 
             product = Product.create(
                {
@@ -7960,12 +7959,12 @@ Write exciting messages with this beautifully organized wooden alphabet stamp se
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810638932-0.jpg"), filename: "6810638932-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810638932-1.jpg"), filename: "6810638932-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810638932-2.jpg"), filename: "6810638932-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810638932-3.jpg"), filename: "6810638932-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810638932-4.jpg"), filename: "6810638932-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810638932-5.jpg"), filename: "6810638932-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810638932-0.jpg"), filename: "6810638932-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810638932-1.jpg"), filename: "6810638932-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810638932-2.jpg"), filename: "6810638932-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810638932-3.jpg"), filename: "6810638932-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810638932-4.jpg"), filename: "6810638932-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810638932-5.jpg"), filename: "6810638932-5.jpg") if product
 
             product = Product.create(
                {
@@ -7982,7 +7981,7 @@ The smaller one has a yellow-gold-orange top (difficult to exactly place the col
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810638335-0.jpg"), filename: "6810638335-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810638335-0.jpg"), filename: "6810638335-0.jpg") if product
 
             product = Product.create(
                {
@@ -8000,9 +7999,9 @@ We&apos;re sad to see them go, but it&apos;s time....",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810637769-0.jpg"), filename: "6810637769-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810637769-1.jpg"), filename: "6810637769-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810637769-2.jpg"), filename: "6810637769-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810637769-0.jpg"), filename: "6810637769-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810637769-1.jpg"), filename: "6810637769-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810637769-2.jpg"), filename: "6810637769-2.jpg") if product
 
             product = Product.create(
                {
@@ -8016,7 +8015,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804617000-0.jpg"), filename: "6804617000-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804617000-0.jpg"), filename: "6804617000-0.jpg") if product
 
             product = Product.create(
                {
@@ -8031,11 +8030,11 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804612469-0.jpg"), filename: "6804612469-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804612469-1.jpg"), filename: "6804612469-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804612469-2.jpg"), filename: "6804612469-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804612469-3.jpg"), filename: "6804612469-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804612469-4.jpg"), filename: "6804612469-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804612469-0.jpg"), filename: "6804612469-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804612469-1.jpg"), filename: "6804612469-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804612469-2.jpg"), filename: "6804612469-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804612469-3.jpg"), filename: "6804612469-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804612469-4.jpg"), filename: "6804612469-4.jpg") if product
 
             product = Product.create(
                {
@@ -8051,7 +8050,7 @@ The box shown is one of many",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799746350-0.jpg"), filename: "6799746350-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799746350-0.jpg"), filename: "6799746350-0.jpg") if product
 
             product = Product.create(
                {
@@ -8066,10 +8065,10 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804636674-0.jpg"), filename: "6804636674-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804636674-1.jpg"), filename: "6804636674-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804636674-2.jpg"), filename: "6804636674-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804636674-3.jpg"), filename: "6804636674-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804636674-0.jpg"), filename: "6804636674-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804636674-1.jpg"), filename: "6804636674-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804636674-2.jpg"), filename: "6804636674-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804636674-3.jpg"), filename: "6804636674-3.jpg") if product
 
             product = Product.create(
                {
@@ -8084,12 +8083,12 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804658500-0.jpg"), filename: "6804658500-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804658500-1.jpg"), filename: "6804658500-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804658500-2.jpg"), filename: "6804658500-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804658500-3.jpg"), filename: "6804658500-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804658500-4.jpg"), filename: "6804658500-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804658500-5.jpg"), filename: "6804658500-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804658500-0.jpg"), filename: "6804658500-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804658500-1.jpg"), filename: "6804658500-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804658500-2.jpg"), filename: "6804658500-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804658500-3.jpg"), filename: "6804658500-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804658500-4.jpg"), filename: "6804658500-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804658500-5.jpg"), filename: "6804658500-5.jpg") if product
 
             product = Product.create(
                {
@@ -8109,12 +8108,12 @@ Complete arts &amp; Crafts kit for kids: kit includes 30 yds of yarn, 6 yds of t
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810637064-0.jpg"), filename: "6810637064-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810637064-1.jpg"), filename: "6810637064-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810637064-2.jpg"), filename: "6810637064-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810637064-3.jpg"), filename: "6810637064-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810637064-4.jpg"), filename: "6810637064-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810637064-5.jpg"), filename: "6810637064-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810637064-0.jpg"), filename: "6810637064-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810637064-1.jpg"), filename: "6810637064-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810637064-2.jpg"), filename: "6810637064-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810637064-3.jpg"), filename: "6810637064-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810637064-4.jpg"), filename: "6810637064-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810637064-5.jpg"), filename: "6810637064-5.jpg") if product
 
             product = Product.create(
                {
@@ -8128,8 +8127,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804752039-0.jpg"), filename: "6804752039-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804752039-1.jpg"), filename: "6804752039-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804752039-0.jpg"), filename: "6804752039-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804752039-1.jpg"), filename: "6804752039-1.jpg") if product
 
             product = Product.create(
                {
@@ -8144,12 +8143,12 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804612220-0.jpg"), filename: "6804612220-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804612220-1.jpg"), filename: "6804612220-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804612220-2.jpg"), filename: "6804612220-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804612220-3.jpg"), filename: "6804612220-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804612220-4.jpg"), filename: "6804612220-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804612220-5.jpg"), filename: "6804612220-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804612220-0.jpg"), filename: "6804612220-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804612220-1.jpg"), filename: "6804612220-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804612220-2.jpg"), filename: "6804612220-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804612220-3.jpg"), filename: "6804612220-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804612220-4.jpg"), filename: "6804612220-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804612220-5.jpg"), filename: "6804612220-5.jpg") if product
 
             product = Product.create(
                {
@@ -8164,13 +8163,13 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804615757-0.jpg"), filename: "6804615757-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804615757-1.jpg"), filename: "6804615757-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804615757-2.jpg"), filename: "6804615757-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804615757-3.jpg"), filename: "6804615757-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804615757-4.jpg"), filename: "6804615757-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804615757-5.jpg"), filename: "6804615757-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804615757-6.jpg"), filename: "6804615757-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804615757-0.jpg"), filename: "6804615757-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804615757-1.jpg"), filename: "6804615757-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804615757-2.jpg"), filename: "6804615757-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804615757-3.jpg"), filename: "6804615757-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804615757-4.jpg"), filename: "6804615757-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804615757-5.jpg"), filename: "6804615757-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804615757-6.jpg"), filename: "6804615757-6.jpg") if product
 
             product = Product.create(
                {
@@ -8191,12 +8190,12 @@ Made in the USA",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810636766-0.jpg"), filename: "6810636766-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810636766-1.jpg"), filename: "6810636766-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810636766-2.jpg"), filename: "6810636766-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810636766-3.jpg"), filename: "6810636766-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810636766-4.jpg"), filename: "6810636766-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810636766-5.jpg"), filename: "6810636766-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810636766-0.jpg"), filename: "6810636766-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810636766-1.jpg"), filename: "6810636766-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810636766-2.jpg"), filename: "6810636766-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810636766-3.jpg"), filename: "6810636766-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810636766-4.jpg"), filename: "6810636766-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810636766-5.jpg"), filename: "6810636766-5.jpg") if product
 
             product = Product.create(
                {
@@ -8211,7 +8210,7 @@ Great for display.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799749555-0.jpg"), filename: "6799749555-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799749555-0.jpg"), filename: "6799749555-0.jpg") if product
 
             product = Product.create(
                {
@@ -8225,8 +8224,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804614978-0.jpg"), filename: "6804614978-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804614978-1.jpg"), filename: "6804614978-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804614978-0.jpg"), filename: "6804614978-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804614978-1.jpg"), filename: "6804614978-1.jpg") if product
 
             product = Product.create(
                {
@@ -8259,9 +8258,9 @@ Educational Focus: Creative Thinking, large motor skills",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810636335-0.jpg"), filename: "6810636335-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810636335-1.jpg"), filename: "6810636335-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810636335-2.jpg"), filename: "6810636335-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810636335-0.jpg"), filename: "6810636335-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810636335-1.jpg"), filename: "6810636335-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810636335-2.jpg"), filename: "6810636335-2.jpg") if product
 
             product = Product.create(
                {
@@ -8276,7 +8275,7 @@ Off Todd rd",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795148952-0.jpg"), filename: "6795148952-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795148952-0.jpg"), filename: "6795148952-0.jpg") if product
 
             product = Product.create(
                {
@@ -8294,10 +8293,10 @@ If interested please call and leave a phone message and I will return your call.
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793287235-0.jpg"), filename: "6793287235-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793287235-1.jpg"), filename: "6793287235-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793287235-2.jpg"), filename: "6793287235-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793287235-3.jpg"), filename: "6793287235-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793287235-0.jpg"), filename: "6793287235-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793287235-1.jpg"), filename: "6793287235-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793287235-2.jpg"), filename: "6793287235-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793287235-3.jpg"), filename: "6793287235-3.jpg") if product
 
             product = Product.create(
                {
@@ -8311,7 +8310,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798938359-0.jpg"), filename: "6798938359-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798938359-0.jpg"), filename: "6798938359-0.jpg") if product
 
             product = Product.create(
                {
@@ -8332,7 +8331,7 @@ For 1.5-3+ years",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798934837-0.jpg"), filename: "6798934837-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798934837-0.jpg"), filename: "6798934837-0.jpg") if product
 
             product = Product.create(
                {
@@ -8349,13 +8348,13 @@ Fremont pickup <br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810634722-0.jpg"), filename: "6810634722-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810634722-1.jpg"), filename: "6810634722-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810634722-2.jpg"), filename: "6810634722-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810634722-3.jpg"), filename: "6810634722-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810634722-4.jpg"), filename: "6810634722-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810634722-5.jpg"), filename: "6810634722-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810634722-6.jpg"), filename: "6810634722-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810634722-0.jpg"), filename: "6810634722-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810634722-1.jpg"), filename: "6810634722-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810634722-2.jpg"), filename: "6810634722-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810634722-3.jpg"), filename: "6810634722-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810634722-4.jpg"), filename: "6810634722-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810634722-5.jpg"), filename: "6810634722-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810634722-6.jpg"), filename: "6810634722-6.jpg") if product
 
             product = Product.create(
                {
@@ -8373,8 +8372,8 @@ Fremont pickup",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810634203-0.jpg"), filename: "6810634203-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810634203-1.jpg"), filename: "6810634203-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810634203-0.jpg"), filename: "6810634203-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810634203-1.jpg"), filename: "6810634203-1.jpg") if product
 
             product = Product.create(
                {
@@ -8396,13 +8395,13 @@ Fremont pickup",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810633645-0.jpg"), filename: "6810633645-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810633645-1.jpg"), filename: "6810633645-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810633645-2.jpg"), filename: "6810633645-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810633645-3.jpg"), filename: "6810633645-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810633645-4.jpg"), filename: "6810633645-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810633645-5.jpg"), filename: "6810633645-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810633645-6.jpg"), filename: "6810633645-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810633645-0.jpg"), filename: "6810633645-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810633645-1.jpg"), filename: "6810633645-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810633645-2.jpg"), filename: "6810633645-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810633645-3.jpg"), filename: "6810633645-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810633645-4.jpg"), filename: "6810633645-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810633645-5.jpg"), filename: "6810633645-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810633645-6.jpg"), filename: "6810633645-6.jpg") if product
 
             product = Product.create(
                {
@@ -8420,8 +8419,8 @@ http://www.busaccagallery.com/catalog.php?catid=171&amp;itemid=6710&amp;page=1#"
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810628063-0.jpg"), filename: "6810628063-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810628063-1.jpg"), filename: "6810628063-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810628063-0.jpg"), filename: "6810628063-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810628063-1.jpg"), filename: "6810628063-1.jpg") if product
 
             product = Product.create(
                {
@@ -8440,10 +8439,10 @@ I will return your call.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793288116-0.jpg"), filename: "6793288116-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793288116-1.jpg"), filename: "6793288116-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793288116-2.jpg"), filename: "6793288116-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793288116-3.jpg"), filename: "6793288116-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793288116-0.jpg"), filename: "6793288116-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793288116-1.jpg"), filename: "6793288116-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793288116-2.jpg"), filename: "6793288116-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793288116-3.jpg"), filename: "6793288116-3.jpg") if product
 
             product = Product.create(
                {
@@ -8457,7 +8456,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810633330-0.jpg"), filename: "6810633330-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810633330-0.jpg"), filename: "6810633330-0.jpg") if product
 
             product = Product.create(
                {
@@ -8475,13 +8474,13 @@ Pick up today for just $75",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810629843-0.jpg"), filename: "6810629843-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810629843-1.jpg"), filename: "6810629843-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810629843-2.jpg"), filename: "6810629843-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810629843-3.jpg"), filename: "6810629843-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810629843-4.jpg"), filename: "6810629843-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810629843-5.jpg"), filename: "6810629843-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810629843-6.jpg"), filename: "6810629843-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810629843-0.jpg"), filename: "6810629843-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810629843-1.jpg"), filename: "6810629843-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810629843-2.jpg"), filename: "6810629843-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810629843-3.jpg"), filename: "6810629843-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810629843-4.jpg"), filename: "6810629843-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810629843-5.jpg"), filename: "6810629843-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810629843-6.jpg"), filename: "6810629843-6.jpg") if product
 
             product = Product.create(
                {
@@ -8495,7 +8494,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810628707-0.jpg"), filename: "6810628707-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810628707-0.jpg"), filename: "6810628707-0.jpg") if product
 
             product = Product.create(
                {
@@ -8523,13 +8522,13 @@ text only 4l5/967/23o4",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800667013-0.jpg"), filename: "6800667013-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800667013-1.jpg"), filename: "6800667013-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800667013-2.jpg"), filename: "6800667013-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800667013-3.jpg"), filename: "6800667013-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800667013-4.jpg"), filename: "6800667013-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800667013-5.jpg"), filename: "6800667013-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800667013-6.jpg"), filename: "6800667013-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800667013-0.jpg"), filename: "6800667013-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800667013-1.jpg"), filename: "6800667013-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800667013-2.jpg"), filename: "6800667013-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800667013-3.jpg"), filename: "6800667013-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800667013-4.jpg"), filename: "6800667013-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800667013-5.jpg"), filename: "6800667013-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800667013-6.jpg"), filename: "6800667013-6.jpg") if product
 
             product = Product.create(
                {
@@ -8543,11 +8542,11 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6802584265-0.jpg"), filename: "6802584265-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6802584265-1.jpg"), filename: "6802584265-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6802584265-2.jpg"), filename: "6802584265-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6802584265-3.jpg"), filename: "6802584265-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6802584265-4.jpg"), filename: "6802584265-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6802584265-0.jpg"), filename: "6802584265-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6802584265-1.jpg"), filename: "6802584265-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6802584265-2.jpg"), filename: "6802584265-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6802584265-3.jpg"), filename: "6802584265-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6802584265-4.jpg"), filename: "6802584265-4.jpg") if product
 
             product = Product.create(
                {
@@ -8561,7 +8560,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788455973-0.jpg"), filename: "6788455973-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6788455973-0.jpg"), filename: "6788455973-0.jpg") if product
 
             product = Product.create(
                {
@@ -8579,13 +8578,13 @@ TO SEE OUR OTHER ITEMS, click on MORE ADS BY THIS USER to the right at the top o
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804042263-0.jpg"), filename: "6804042263-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804042263-1.jpg"), filename: "6804042263-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804042263-2.jpg"), filename: "6804042263-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804042263-3.jpg"), filename: "6804042263-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804042263-4.jpg"), filename: "6804042263-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804042263-5.jpg"), filename: "6804042263-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804042263-6.jpg"), filename: "6804042263-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804042263-0.jpg"), filename: "6804042263-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804042263-1.jpg"), filename: "6804042263-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804042263-2.jpg"), filename: "6804042263-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804042263-3.jpg"), filename: "6804042263-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804042263-4.jpg"), filename: "6804042263-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804042263-5.jpg"), filename: "6804042263-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804042263-6.jpg"), filename: "6804042263-6.jpg") if product
 
             product = Product.create(
                {
@@ -8604,10 +8603,10 @@ TO SEE OUR OTHER ITEMS, click on MORE ADS BY THIS USER to the right at the top o
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804042403-0.jpg"), filename: "6804042403-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804042403-1.jpg"), filename: "6804042403-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804042403-2.jpg"), filename: "6804042403-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804042403-3.jpg"), filename: "6804042403-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804042403-0.jpg"), filename: "6804042403-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804042403-1.jpg"), filename: "6804042403-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804042403-2.jpg"), filename: "6804042403-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804042403-3.jpg"), filename: "6804042403-3.jpg") if product
 
             product = Product.create(
                {
@@ -8640,13 +8639,13 @@ If you&apos;re reading this post, items are available.<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796227878-0.jpg"), filename: "6796227878-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796227878-1.jpg"), filename: "6796227878-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796227878-2.jpg"), filename: "6796227878-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796227878-3.jpg"), filename: "6796227878-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796227878-4.jpg"), filename: "6796227878-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796227878-5.jpg"), filename: "6796227878-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796227878-6.jpg"), filename: "6796227878-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796227878-0.jpg"), filename: "6796227878-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796227878-1.jpg"), filename: "6796227878-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796227878-2.jpg"), filename: "6796227878-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796227878-3.jpg"), filename: "6796227878-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796227878-4.jpg"), filename: "6796227878-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796227878-5.jpg"), filename: "6796227878-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796227878-6.jpg"), filename: "6796227878-6.jpg") if product
 
             product = Product.create(
                {
@@ -8664,8 +8663,8 @@ Andrew Kwok",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806431065-0.jpg"), filename: "6806431065-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806431065-1.jpg"), filename: "6806431065-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806431065-0.jpg"), filename: "6806431065-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806431065-1.jpg"), filename: "6806431065-1.jpg") if product
 
             product = Product.create(
                {
@@ -8682,13 +8681,13 @@ TO SEE OUR OTHER ITEMS, click on MORE ADS BY THIS USER to the right at the top o
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6802398674-0.jpg"), filename: "6802398674-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6802398674-1.jpg"), filename: "6802398674-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6802398674-2.jpg"), filename: "6802398674-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6802398674-3.jpg"), filename: "6802398674-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6802398674-4.jpg"), filename: "6802398674-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6802398674-5.jpg"), filename: "6802398674-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6802398674-6.jpg"), filename: "6802398674-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6802398674-0.jpg"), filename: "6802398674-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6802398674-1.jpg"), filename: "6802398674-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6802398674-2.jpg"), filename: "6802398674-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6802398674-3.jpg"), filename: "6802398674-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6802398674-4.jpg"), filename: "6802398674-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6802398674-5.jpg"), filename: "6802398674-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6802398674-6.jpg"), filename: "6802398674-6.jpg") if product
 
             product = Product.create(
                {
@@ -8710,13 +8709,13 @@ Cash / Paypal only",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792583993-0.jpg"), filename: "6792583993-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792583993-1.jpg"), filename: "6792583993-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792583993-2.jpg"), filename: "6792583993-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792583993-3.jpg"), filename: "6792583993-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792583993-4.jpg"), filename: "6792583993-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792583993-5.jpg"), filename: "6792583993-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792583993-6.jpg"), filename: "6792583993-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792583993-0.jpg"), filename: "6792583993-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792583993-1.jpg"), filename: "6792583993-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792583993-2.jpg"), filename: "6792583993-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792583993-3.jpg"), filename: "6792583993-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792583993-4.jpg"), filename: "6792583993-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792583993-5.jpg"), filename: "6792583993-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792583993-6.jpg"), filename: "6792583993-6.jpg") if product
 
             product = Product.create(
                {
@@ -8730,7 +8729,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807502019-0.jpg"), filename: "6807502019-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807502019-0.jpg"), filename: "6807502019-0.jpg") if product
 
             product = Product.create(
                {
@@ -8744,7 +8743,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807504446-0.jpg"), filename: "6807504446-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807504446-0.jpg"), filename: "6807504446-0.jpg") if product
 
             product = Product.create(
                {
@@ -8758,7 +8757,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799460889-0.jpg"), filename: "6799460889-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799460889-0.jpg"), filename: "6799460889-0.jpg") if product
 
             product = Product.create(
                {
@@ -8789,13 +8788,13 @@ All Makes Models Sizes<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810617219-0.jpg"), filename: "6810617219-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810617219-1.jpg"), filename: "6810617219-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810617219-2.jpg"), filename: "6810617219-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810617219-3.jpg"), filename: "6810617219-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810617219-4.jpg"), filename: "6810617219-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810617219-5.jpg"), filename: "6810617219-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810617219-6.jpg"), filename: "6810617219-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810617219-0.jpg"), filename: "6810617219-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810617219-1.jpg"), filename: "6810617219-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810617219-2.jpg"), filename: "6810617219-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810617219-3.jpg"), filename: "6810617219-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810617219-4.jpg"), filename: "6810617219-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810617219-5.jpg"), filename: "6810617219-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810617219-6.jpg"), filename: "6810617219-6.jpg") if product
 
             product = Product.create(
                {
@@ -8819,8 +8818,8 @@ Shipping cost (additional) to be determined or free to pick up if near Danville.
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800557083-0.jpg"), filename: "6800557083-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800557083-1.jpg"), filename: "6800557083-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800557083-0.jpg"), filename: "6800557083-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800557083-1.jpg"), filename: "6800557083-1.jpg") if product
 
             product = Product.create(
                {
@@ -8834,7 +8833,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805124927-0.jpg"), filename: "6805124927-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805124927-0.jpg"), filename: "6805124927-0.jpg") if product
 
             product = Product.create(
                {
@@ -8848,7 +8847,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800557308-0.jpg"), filename: "6800557308-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800557308-0.jpg"), filename: "6800557308-0.jpg") if product
 
             product = Product.create(
                {
@@ -8862,7 +8861,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799460588-0.jpg"), filename: "6799460588-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799460588-0.jpg"), filename: "6799460588-0.jpg") if product
 
             product = Product.create(
                {
@@ -8876,7 +8875,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805120053-0.jpg"), filename: "6805120053-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805120053-0.jpg"), filename: "6805120053-0.jpg") if product
 
             product = Product.create(
                {
@@ -8907,13 +8906,13 @@ All Makes Models Sizes<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810617603-0.jpg"), filename: "6810617603-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810617603-1.jpg"), filename: "6810617603-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810617603-2.jpg"), filename: "6810617603-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810617603-3.jpg"), filename: "6810617603-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810617603-4.jpg"), filename: "6810617603-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810617603-5.jpg"), filename: "6810617603-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810617603-6.jpg"), filename: "6810617603-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810617603-0.jpg"), filename: "6810617603-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810617603-1.jpg"), filename: "6810617603-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810617603-2.jpg"), filename: "6810617603-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810617603-3.jpg"), filename: "6810617603-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810617603-4.jpg"), filename: "6810617603-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810617603-5.jpg"), filename: "6810617603-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810617603-6.jpg"), filename: "6810617603-6.jpg") if product
 
             product = Product.create(
                {
@@ -8927,7 +8926,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799460454-0.jpg"), filename: "6799460454-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799460454-0.jpg"), filename: "6799460454-0.jpg") if product
 
             product = Product.create(
                {
@@ -8948,13 +8947,13 @@ Kyosho, Losi, Traxxas, Jato, 2.5, 3.3, .15, Nitro, Brushless, RTR, Flysky, 2.4GH
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810621844-0.jpg"), filename: "6810621844-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810621844-1.jpg"), filename: "6810621844-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810621844-2.jpg"), filename: "6810621844-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810621844-3.jpg"), filename: "6810621844-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810621844-4.jpg"), filename: "6810621844-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810621844-5.jpg"), filename: "6810621844-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810621844-6.jpg"), filename: "6810621844-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810621844-0.jpg"), filename: "6810621844-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810621844-1.jpg"), filename: "6810621844-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810621844-2.jpg"), filename: "6810621844-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810621844-3.jpg"), filename: "6810621844-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810621844-4.jpg"), filename: "6810621844-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810621844-5.jpg"), filename: "6810621844-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810621844-6.jpg"), filename: "6810621844-6.jpg") if product
 
             product = Product.create(
                {
@@ -8968,7 +8967,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799460732-0.jpg"), filename: "6799460732-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799460732-0.jpg"), filename: "6799460732-0.jpg") if product
 
             product = Product.create(
                {
@@ -8982,7 +8981,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808535274-0.jpg"), filename: "6808535274-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808535274-0.jpg"), filename: "6808535274-0.jpg") if product
 
             product = Product.create(
                {
@@ -9007,13 +9006,13 @@ CASH / Paypal only<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792434047-0.jpg"), filename: "6792434047-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792434047-1.jpg"), filename: "6792434047-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792434047-2.jpg"), filename: "6792434047-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792434047-3.jpg"), filename: "6792434047-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792434047-4.jpg"), filename: "6792434047-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792434047-5.jpg"), filename: "6792434047-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792434047-6.jpg"), filename: "6792434047-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792434047-0.jpg"), filename: "6792434047-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792434047-1.jpg"), filename: "6792434047-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792434047-2.jpg"), filename: "6792434047-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792434047-3.jpg"), filename: "6792434047-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792434047-4.jpg"), filename: "6792434047-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792434047-5.jpg"), filename: "6792434047-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792434047-6.jpg"), filename: "6792434047-6.jpg") if product
 
             product = Product.create(
                {
@@ -9038,11 +9037,11 @@ Pet and Smoke Free Environment<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792400633-0.jpg"), filename: "6792400633-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792400633-1.jpg"), filename: "6792400633-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792400633-2.jpg"), filename: "6792400633-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792400633-3.jpg"), filename: "6792400633-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792400633-4.jpg"), filename: "6792400633-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792400633-0.jpg"), filename: "6792400633-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792400633-1.jpg"), filename: "6792400633-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792400633-2.jpg"), filename: "6792400633-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792400633-3.jpg"), filename: "6792400633-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792400633-4.jpg"), filename: "6792400633-4.jpg") if product
 category = Category.find_by_name("toys and games")
 unless(category)
 category = Category.create(name: "toys and games")
@@ -9066,9 +9065,9 @@ With Disney Frozen Little Kingdom dolls, kids can imagine their own adventures i
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805637114-0.jpg"), filename: "6805637114-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805637114-1.jpg"), filename: "6805637114-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805637114-2.jpg"), filename: "6805637114-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805637114-0.jpg"), filename: "6805637114-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805637114-1.jpg"), filename: "6805637114-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805637114-2.jpg"), filename: "6805637114-2.jpg") if product
 
             product = Product.create(
                {
@@ -9083,7 +9082,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810797166-0.jpg"), filename: "6810797166-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810797166-0.jpg"), filename: "6810797166-0.jpg") if product
 
             product = Product.create(
                {
@@ -9103,13 +9102,13 @@ dolls, kids, girls, playdate, play, game, toy, home, house, Pottery Barn Kids, T
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805638056-0.jpg"), filename: "6805638056-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805638056-1.jpg"), filename: "6805638056-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805638056-2.jpg"), filename: "6805638056-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805638056-3.jpg"), filename: "6805638056-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805638056-4.jpg"), filename: "6805638056-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805638056-5.jpg"), filename: "6805638056-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805638056-6.jpg"), filename: "6805638056-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805638056-0.jpg"), filename: "6805638056-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805638056-1.jpg"), filename: "6805638056-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805638056-2.jpg"), filename: "6805638056-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805638056-3.jpg"), filename: "6805638056-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805638056-4.jpg"), filename: "6805638056-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805638056-5.jpg"), filename: "6805638056-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805638056-6.jpg"), filename: "6805638056-6.jpg") if product
 
             product = Product.create(
                {
@@ -9126,7 +9125,7 @@ Selling for $120.<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810796746-0.jpg"), filename: "6810796746-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810796746-0.jpg"), filename: "6810796746-0.jpg") if product
 
             product = Product.create(
                {
@@ -9150,9 +9149,9 @@ https://www.amazon.com/Transformers-Generations-Cybertron-Cybertronian-Bumblebee
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810796596-0.jpg"), filename: "6810796596-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810796596-1.jpg"), filename: "6810796596-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810796596-2.jpg"), filename: "6810796596-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810796596-0.jpg"), filename: "6810796596-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810796596-1.jpg"), filename: "6810796596-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810796596-2.jpg"), filename: "6810796596-2.jpg") if product
 
             product = Product.create(
                {
@@ -9168,12 +9167,12 @@ $60 each",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810796436-0.jpg"), filename: "6810796436-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810796436-1.jpg"), filename: "6810796436-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810796436-2.jpg"), filename: "6810796436-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810796436-3.jpg"), filename: "6810796436-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810796436-4.jpg"), filename: "6810796436-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810796436-5.jpg"), filename: "6810796436-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810796436-0.jpg"), filename: "6810796436-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810796436-1.jpg"), filename: "6810796436-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810796436-2.jpg"), filename: "6810796436-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810796436-3.jpg"), filename: "6810796436-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810796436-4.jpg"), filename: "6810796436-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810796436-5.jpg"), filename: "6810796436-5.jpg") if product
 
             product = Product.create(
                {
@@ -9189,8 +9188,8 @@ https://www.amazon.com/Pokemon-Center-Sports-Outdoor-Daybag/dp/B00LJV9LZE/ref=mp
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810796129-0.jpg"), filename: "6810796129-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810796129-1.jpg"), filename: "6810796129-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810796129-0.jpg"), filename: "6810796129-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810796129-1.jpg"), filename: "6810796129-1.jpg") if product
 
             product = Product.create(
                {
@@ -9216,11 +9215,11 @@ Thank you.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791502533-0.jpg"), filename: "6791502533-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791502533-1.jpg"), filename: "6791502533-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791502533-2.jpg"), filename: "6791502533-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791502533-3.jpg"), filename: "6791502533-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791502533-4.jpg"), filename: "6791502533-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791502533-0.jpg"), filename: "6791502533-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791502533-1.jpg"), filename: "6791502533-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791502533-2.jpg"), filename: "6791502533-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791502533-3.jpg"), filename: "6791502533-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6791502533-4.jpg"), filename: "6791502533-4.jpg") if product
 
             product = Product.create(
                {
@@ -9234,8 +9233,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810793419-0.jpg"), filename: "6810793419-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810793419-1.jpg"), filename: "6810793419-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810793419-0.jpg"), filename: "6810793419-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810793419-1.jpg"), filename: "6810793419-1.jpg") if product
 
             product = Product.create(
                {
@@ -9255,11 +9254,11 @@ Small bucket with creative sorter lids. - 23 Duplo pieces plus three sorter lids
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6802062225-0.jpg"), filename: "6802062225-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6802062225-1.jpg"), filename: "6802062225-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6802062225-2.jpg"), filename: "6802062225-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6802062225-3.jpg"), filename: "6802062225-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6802062225-4.jpg"), filename: "6802062225-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6802062225-0.jpg"), filename: "6802062225-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6802062225-1.jpg"), filename: "6802062225-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6802062225-2.jpg"), filename: "6802062225-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6802062225-3.jpg"), filename: "6802062225-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6802062225-4.jpg"), filename: "6802062225-4.jpg") if product
 
             product = Product.create(
                {
@@ -9273,10 +9272,10 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806458971-0.jpg"), filename: "6806458971-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806458971-1.jpg"), filename: "6806458971-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806458971-2.jpg"), filename: "6806458971-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806458971-3.jpg"), filename: "6806458971-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806458971-0.jpg"), filename: "6806458971-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806458971-1.jpg"), filename: "6806458971-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806458971-2.jpg"), filename: "6806458971-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806458971-3.jpg"), filename: "6806458971-3.jpg") if product
 
             product = Product.create(
                {
@@ -9298,13 +9297,13 @@ Thanks for looking!",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810789951-0.jpg"), filename: "6810789951-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810789951-1.jpg"), filename: "6810789951-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810789951-2.jpg"), filename: "6810789951-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810789951-3.jpg"), filename: "6810789951-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810789951-4.jpg"), filename: "6810789951-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810789951-5.jpg"), filename: "6810789951-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810789951-6.jpg"), filename: "6810789951-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810789951-0.jpg"), filename: "6810789951-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810789951-1.jpg"), filename: "6810789951-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810789951-2.jpg"), filename: "6810789951-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810789951-3.jpg"), filename: "6810789951-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810789951-4.jpg"), filename: "6810789951-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810789951-5.jpg"), filename: "6810789951-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810789951-6.jpg"), filename: "6810789951-6.jpg") if product
 
             product = Product.create(
                {
@@ -9319,9 +9318,9 @@ Asking $35",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810791419-0.jpg"), filename: "6810791419-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810791419-1.jpg"), filename: "6810791419-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810791419-2.jpg"), filename: "6810791419-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810791419-0.jpg"), filename: "6810791419-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810791419-1.jpg"), filename: "6810791419-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810791419-2.jpg"), filename: "6810791419-2.jpg") if product
 
             product = Product.create(
                {
@@ -9335,13 +9334,13 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6809041273-0.jpg"), filename: "6809041273-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6809041273-1.jpg"), filename: "6809041273-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6809041273-2.jpg"), filename: "6809041273-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6809041273-3.jpg"), filename: "6809041273-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6809041273-4.jpg"), filename: "6809041273-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6809041273-5.jpg"), filename: "6809041273-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6809041273-6.jpg"), filename: "6809041273-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6809041273-0.jpg"), filename: "6809041273-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6809041273-1.jpg"), filename: "6809041273-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6809041273-2.jpg"), filename: "6809041273-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6809041273-3.jpg"), filename: "6809041273-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6809041273-4.jpg"), filename: "6809041273-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6809041273-5.jpg"), filename: "6809041273-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6809041273-6.jpg"), filename: "6809041273-6.jpg") if product
 
             product = Product.create(
                {
@@ -9361,7 +9360,7 @@ The house retailed for over $299 and the new versions are smaller and still in t
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810789827-0.jpg"), filename: "6810789827-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810789827-0.jpg"), filename: "6810789827-0.jpg") if product
 
             product = Product.create(
                {
@@ -9376,11 +9375,11 @@ Asking $85",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810787453-0.jpg"), filename: "6810787453-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810787453-1.jpg"), filename: "6810787453-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810787453-2.jpg"), filename: "6810787453-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810787453-3.jpg"), filename: "6810787453-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810787453-4.jpg"), filename: "6810787453-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810787453-0.jpg"), filename: "6810787453-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810787453-1.jpg"), filename: "6810787453-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810787453-2.jpg"), filename: "6810787453-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810787453-3.jpg"), filename: "6810787453-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810787453-4.jpg"), filename: "6810787453-4.jpg") if product
 
             product = Product.create(
                {
@@ -9396,7 +9395,7 @@ New Sealed.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800216838-0.jpg"), filename: "6800216838-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800216838-0.jpg"), filename: "6800216838-0.jpg") if product
 
             product = Product.create(
                {
@@ -9424,8 +9423,8 @@ Having issues with CL uploading all the images, email for pictures of all items"
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810782314-0.jpg"), filename: "6810782314-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810782314-1.jpg"), filename: "6810782314-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810782314-0.jpg"), filename: "6810782314-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810782314-1.jpg"), filename: "6810782314-1.jpg") if product
 
             product = Product.create(
                {
@@ -9444,8 +9443,8 @@ No Need To Ask if still Available if you see this ad!<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810782310-0.jpg"), filename: "6810782310-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810782310-1.jpg"), filename: "6810782310-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810782310-0.jpg"), filename: "6810782310-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810782310-1.jpg"), filename: "6810782310-1.jpg") if product
 
             product = Product.create(
                {
@@ -9466,12 +9465,12 @@ You can go to ultra saver page and check them out ! Just the saber with no blade
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810746594-0.jpg"), filename: "6810746594-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810746594-1.jpg"), filename: "6810746594-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810746594-2.jpg"), filename: "6810746594-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810746594-3.jpg"), filename: "6810746594-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810746594-4.jpg"), filename: "6810746594-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810746594-5.jpg"), filename: "6810746594-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810746594-0.jpg"), filename: "6810746594-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810746594-1.jpg"), filename: "6810746594-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810746594-2.jpg"), filename: "6810746594-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810746594-3.jpg"), filename: "6810746594-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810746594-4.jpg"), filename: "6810746594-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810746594-5.jpg"), filename: "6810746594-5.jpg") if product
 
             product = Product.create(
                {
@@ -9485,13 +9484,13 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806699712-0.jpg"), filename: "6806699712-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806699712-1.jpg"), filename: "6806699712-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806699712-2.jpg"), filename: "6806699712-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806699712-3.jpg"), filename: "6806699712-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806699712-4.jpg"), filename: "6806699712-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806699712-5.jpg"), filename: "6806699712-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806699712-6.jpg"), filename: "6806699712-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806699712-0.jpg"), filename: "6806699712-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806699712-1.jpg"), filename: "6806699712-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806699712-2.jpg"), filename: "6806699712-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806699712-3.jpg"), filename: "6806699712-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806699712-4.jpg"), filename: "6806699712-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806699712-5.jpg"), filename: "6806699712-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806699712-6.jpg"), filename: "6806699712-6.jpg") if product
 
             product = Product.create(
                {
@@ -9506,7 +9505,7 @@ Two controllers with rechargeable nikto batteries, 8 games, fit balance board, w
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810781156-0.jpg"), filename: "6810781156-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810781156-0.jpg"), filename: "6810781156-0.jpg") if product
 
             product = Product.create(
                {
@@ -9522,7 +9521,7 @@ as is",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810781117-0.jpg"), filename: "6810781117-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810781117-0.jpg"), filename: "6810781117-0.jpg") if product
 
             product = Product.create(
                {
@@ -9592,13 +9591,13 @@ first player to reach 500 points wins. Includes 112 cards and instructions. By</
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810773322-0.jpg"), filename: "6810773322-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810773322-1.jpg"), filename: "6810773322-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810773322-2.jpg"), filename: "6810773322-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810773322-3.jpg"), filename: "6810773322-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810773322-4.jpg"), filename: "6810773322-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810773322-5.jpg"), filename: "6810773322-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810773322-6.jpg"), filename: "6810773322-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810773322-0.jpg"), filename: "6810773322-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810773322-1.jpg"), filename: "6810773322-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810773322-2.jpg"), filename: "6810773322-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810773322-3.jpg"), filename: "6810773322-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810773322-4.jpg"), filename: "6810773322-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810773322-5.jpg"), filename: "6810773322-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810773322-6.jpg"), filename: "6810773322-6.jpg") if product
 
             product = Product.create(
                {
@@ -9614,11 +9613,11 @@ Thanks.<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800006776-0.jpg"), filename: "6800006776-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800006776-1.jpg"), filename: "6800006776-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800006776-2.jpg"), filename: "6800006776-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800006776-3.jpg"), filename: "6800006776-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800006776-4.jpg"), filename: "6800006776-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800006776-0.jpg"), filename: "6800006776-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800006776-1.jpg"), filename: "6800006776-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800006776-2.jpg"), filename: "6800006776-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800006776-3.jpg"), filename: "6800006776-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800006776-4.jpg"), filename: "6800006776-4.jpg") if product
 
             product = Product.create(
                {
@@ -9639,11 +9638,11 @@ Thank you<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799987030-0.jpg"), filename: "6799987030-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799987030-1.jpg"), filename: "6799987030-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799987030-2.jpg"), filename: "6799987030-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799987030-3.jpg"), filename: "6799987030-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799987030-4.jpg"), filename: "6799987030-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799987030-0.jpg"), filename: "6799987030-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799987030-1.jpg"), filename: "6799987030-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799987030-2.jpg"), filename: "6799987030-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799987030-3.jpg"), filename: "6799987030-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799987030-4.jpg"), filename: "6799987030-4.jpg") if product
 
             product = Product.create(
                {
@@ -9657,7 +9656,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810778743-0.jpg"), filename: "6810778743-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810778743-0.jpg"), filename: "6810778743-0.jpg") if product
 
             product = Product.create(
                {
@@ -9684,13 +9683,13 @@ Call or Text Karen at",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810774533-0.jpg"), filename: "6810774533-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810774533-1.jpg"), filename: "6810774533-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810774533-2.jpg"), filename: "6810774533-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810774533-3.jpg"), filename: "6810774533-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810774533-4.jpg"), filename: "6810774533-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810774533-5.jpg"), filename: "6810774533-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810774533-6.jpg"), filename: "6810774533-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810774533-0.jpg"), filename: "6810774533-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810774533-1.jpg"), filename: "6810774533-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810774533-2.jpg"), filename: "6810774533-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810774533-3.jpg"), filename: "6810774533-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810774533-4.jpg"), filename: "6810774533-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810774533-5.jpg"), filename: "6810774533-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810774533-6.jpg"), filename: "6810774533-6.jpg") if product
 
             product = Product.create(
                {
@@ -9704,9 +9703,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805918649-0.jpg"), filename: "6805918649-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805918649-1.jpg"), filename: "6805918649-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805918649-2.jpg"), filename: "6805918649-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805918649-0.jpg"), filename: "6805918649-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805918649-1.jpg"), filename: "6805918649-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805918649-2.jpg"), filename: "6805918649-2.jpg") if product
 
             product = Product.create(
                {
@@ -9722,7 +9721,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6809212495-0.jpg"), filename: "6809212495-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6809212495-0.jpg"), filename: "6809212495-0.jpg") if product
 
             product = Product.create(
                {
@@ -9749,13 +9748,13 @@ Thanks for looking. Your purchase supports a struggling family. We really apprec
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810771707-0.jpg"), filename: "6810771707-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810771707-1.jpg"), filename: "6810771707-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810771707-2.jpg"), filename: "6810771707-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810771707-3.jpg"), filename: "6810771707-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810771707-4.jpg"), filename: "6810771707-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810771707-5.jpg"), filename: "6810771707-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810771707-6.jpg"), filename: "6810771707-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810771707-0.jpg"), filename: "6810771707-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810771707-1.jpg"), filename: "6810771707-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810771707-2.jpg"), filename: "6810771707-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810771707-3.jpg"), filename: "6810771707-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810771707-4.jpg"), filename: "6810771707-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810771707-5.jpg"), filename: "6810771707-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810771707-6.jpg"), filename: "6810771707-6.jpg") if product
 
             product = Product.create(
                {
@@ -9773,8 +9772,8 @@ http://sfbay.craigslist.org/search/sss?query=XYZARZ#grid",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810771588-0.jpg"), filename: "6810771588-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810771588-1.jpg"), filename: "6810771588-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810771588-0.jpg"), filename: "6810771588-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810771588-1.jpg"), filename: "6810771588-1.jpg") if product
 
             product = Product.create(
                {
@@ -9788,10 +9787,10 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6803641689-0.jpg"), filename: "6803641689-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6803641689-1.jpg"), filename: "6803641689-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6803641689-2.jpg"), filename: "6803641689-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6803641689-3.jpg"), filename: "6803641689-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803641689-0.jpg"), filename: "6803641689-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803641689-1.jpg"), filename: "6803641689-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803641689-2.jpg"), filename: "6803641689-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803641689-3.jpg"), filename: "6803641689-3.jpg") if product
 
             product = Product.create(
                {
@@ -9815,11 +9814,11 @@ The robot is in like new condition and works perfectly.  It comes with wheels yo
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810768583-0.jpg"), filename: "6810768583-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810768583-1.jpg"), filename: "6810768583-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810768583-2.jpg"), filename: "6810768583-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810768583-3.jpg"), filename: "6810768583-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810768583-4.jpg"), filename: "6810768583-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810768583-0.jpg"), filename: "6810768583-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810768583-1.jpg"), filename: "6810768583-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810768583-2.jpg"), filename: "6810768583-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810768583-3.jpg"), filename: "6810768583-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810768583-4.jpg"), filename: "6810768583-4.jpg") if product
 
             product = Product.create(
                {
@@ -9833,8 +9832,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805849908-0.jpg"), filename: "6805849908-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805849908-1.jpg"), filename: "6805849908-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805849908-0.jpg"), filename: "6805849908-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805849908-1.jpg"), filename: "6805849908-1.jpg") if product
 
             product = Product.create(
                {
@@ -9862,11 +9861,11 @@ Email if interested",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810769264-0.jpg"), filename: "6810769264-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810769264-1.jpg"), filename: "6810769264-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810769264-2.jpg"), filename: "6810769264-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810769264-3.jpg"), filename: "6810769264-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810769264-4.jpg"), filename: "6810769264-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810769264-0.jpg"), filename: "6810769264-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810769264-1.jpg"), filename: "6810769264-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810769264-2.jpg"), filename: "6810769264-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810769264-3.jpg"), filename: "6810769264-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810769264-4.jpg"), filename: "6810769264-4.jpg") if product
 
             product = Product.create(
                {
@@ -9880,8 +9879,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805825098-0.jpg"), filename: "6805825098-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805825098-1.jpg"), filename: "6805825098-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805825098-0.jpg"), filename: "6805825098-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805825098-1.jpg"), filename: "6805825098-1.jpg") if product
 
             product = Product.create(
                {
@@ -9904,9 +9903,9 @@ Retails for $25",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798403835-0.jpg"), filename: "6798403835-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798403835-1.jpg"), filename: "6798403835-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798403835-2.jpg"), filename: "6798403835-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798403835-0.jpg"), filename: "6798403835-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798403835-1.jpg"), filename: "6798403835-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798403835-2.jpg"), filename: "6798403835-2.jpg") if product
 
             product = Product.create(
                {
@@ -9920,8 +9919,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805678700-0.jpg"), filename: "6805678700-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805678700-1.jpg"), filename: "6805678700-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805678700-0.jpg"), filename: "6805678700-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805678700-1.jpg"), filename: "6805678700-1.jpg") if product
 
             product = Product.create(
                {
@@ -9939,8 +9938,8 @@ sail boats on the Port of Menton (border of France/Italy)",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798409787-0.jpg"), filename: "6798409787-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798409787-1.jpg"), filename: "6798409787-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798409787-0.jpg"), filename: "6798409787-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798409787-1.jpg"), filename: "6798409787-1.jpg") if product
 
             product = Product.create(
                {
@@ -9954,10 +9953,10 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792420641-0.jpg"), filename: "6792420641-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792420641-1.jpg"), filename: "6792420641-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792420641-2.jpg"), filename: "6792420641-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792420641-3.jpg"), filename: "6792420641-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792420641-0.jpg"), filename: "6792420641-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792420641-1.jpg"), filename: "6792420641-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792420641-2.jpg"), filename: "6792420641-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792420641-3.jpg"), filename: "6792420641-3.jpg") if product
 
             product = Product.create(
                {
@@ -9971,11 +9970,11 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805673502-0.jpg"), filename: "6805673502-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805673502-1.jpg"), filename: "6805673502-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805673502-2.jpg"), filename: "6805673502-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805673502-3.jpg"), filename: "6805673502-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805673502-4.jpg"), filename: "6805673502-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805673502-0.jpg"), filename: "6805673502-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805673502-1.jpg"), filename: "6805673502-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805673502-2.jpg"), filename: "6805673502-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805673502-3.jpg"), filename: "6805673502-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805673502-4.jpg"), filename: "6805673502-4.jpg") if product
 
             product = Product.create(
                {
@@ -9989,7 +9988,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805673231-0.jpg"), filename: "6805673231-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805673231-0.jpg"), filename: "6805673231-0.jpg") if product
 
             product = Product.create(
                {
@@ -10005,10 +10004,10 @@ And I will throw in the little red Helicopter",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810764706-0.jpg"), filename: "6810764706-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810764706-1.jpg"), filename: "6810764706-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810764706-2.jpg"), filename: "6810764706-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810764706-3.jpg"), filename: "6810764706-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810764706-0.jpg"), filename: "6810764706-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810764706-1.jpg"), filename: "6810764706-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810764706-2.jpg"), filename: "6810764706-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810764706-3.jpg"), filename: "6810764706-3.jpg") if product
 
             product = Product.create(
                {
@@ -10025,9 +10024,9 @@ Call or text Karen at",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810764069-0.jpg"), filename: "6810764069-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810764069-1.jpg"), filename: "6810764069-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810764069-2.jpg"), filename: "6810764069-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810764069-0.jpg"), filename: "6810764069-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810764069-1.jpg"), filename: "6810764069-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810764069-2.jpg"), filename: "6810764069-2.jpg") if product
 
             product = Product.create(
                {
@@ -10041,9 +10040,9 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794171992-0.jpg"), filename: "6794171992-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794171992-1.jpg"), filename: "6794171992-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794171992-2.jpg"), filename: "6794171992-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794171992-0.jpg"), filename: "6794171992-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794171992-1.jpg"), filename: "6794171992-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794171992-2.jpg"), filename: "6794171992-2.jpg") if product
 
             product = Product.create(
                {
@@ -10070,13 +10069,13 @@ Thanks for looking. Your purchase supports a struggling family. We really apprec
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810760317-0.jpg"), filename: "6810760317-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810760317-1.jpg"), filename: "6810760317-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810760317-2.jpg"), filename: "6810760317-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810760317-3.jpg"), filename: "6810760317-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810760317-4.jpg"), filename: "6810760317-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810760317-5.jpg"), filename: "6810760317-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810760317-6.jpg"), filename: "6810760317-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810760317-0.jpg"), filename: "6810760317-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810760317-1.jpg"), filename: "6810760317-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810760317-2.jpg"), filename: "6810760317-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810760317-3.jpg"), filename: "6810760317-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810760317-4.jpg"), filename: "6810760317-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810760317-5.jpg"), filename: "6810760317-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810760317-6.jpg"), filename: "6810760317-6.jpg") if product
 
             product = Product.create(
                {
@@ -10090,11 +10089,11 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801380543-0.jpg"), filename: "6801380543-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801380543-1.jpg"), filename: "6801380543-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801380543-2.jpg"), filename: "6801380543-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801380543-3.jpg"), filename: "6801380543-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801380543-4.jpg"), filename: "6801380543-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801380543-0.jpg"), filename: "6801380543-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801380543-1.jpg"), filename: "6801380543-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801380543-2.jpg"), filename: "6801380543-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801380543-3.jpg"), filename: "6801380543-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801380543-4.jpg"), filename: "6801380543-4.jpg") if product
 
             product = Product.create(
                {
@@ -10118,13 +10117,13 @@ Thank you for looking. Your purchase helps to support a struggling family. Thank
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810759849-0.jpg"), filename: "6810759849-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810759849-1.jpg"), filename: "6810759849-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810759849-2.jpg"), filename: "6810759849-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810759849-3.jpg"), filename: "6810759849-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810759849-4.jpg"), filename: "6810759849-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810759849-5.jpg"), filename: "6810759849-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810759849-6.jpg"), filename: "6810759849-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810759849-0.jpg"), filename: "6810759849-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810759849-1.jpg"), filename: "6810759849-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810759849-2.jpg"), filename: "6810759849-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810759849-3.jpg"), filename: "6810759849-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810759849-4.jpg"), filename: "6810759849-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810759849-5.jpg"), filename: "6810759849-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810759849-6.jpg"), filename: "6810759849-6.jpg") if product
 
             product = Product.create(
                {
@@ -10153,13 +10152,13 @@ Collectors, spaceships, batman, Spiderman, cars, fingerpaint, pain paper, Disney
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810759299-0.jpg"), filename: "6810759299-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810759299-1.jpg"), filename: "6810759299-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810759299-2.jpg"), filename: "6810759299-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810759299-3.jpg"), filename: "6810759299-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810759299-4.jpg"), filename: "6810759299-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810759299-5.jpg"), filename: "6810759299-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810759299-6.jpg"), filename: "6810759299-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810759299-0.jpg"), filename: "6810759299-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810759299-1.jpg"), filename: "6810759299-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810759299-2.jpg"), filename: "6810759299-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810759299-3.jpg"), filename: "6810759299-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810759299-4.jpg"), filename: "6810759299-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810759299-5.jpg"), filename: "6810759299-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810759299-6.jpg"), filename: "6810759299-6.jpg") if product
 
             product = Product.create(
                {
@@ -10173,7 +10172,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810759207-0.jpg"), filename: "6810759207-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810759207-0.jpg"), filename: "6810759207-0.jpg") if product
 
             product = Product.create(
                {
@@ -10211,13 +10210,13 @@ Collectors, spaceships, batman, Spiderman, cars, fingerpaint, pain paper, Disney
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810758421-0.jpg"), filename: "6810758421-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810758421-1.jpg"), filename: "6810758421-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810758421-2.jpg"), filename: "6810758421-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810758421-3.jpg"), filename: "6810758421-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810758421-4.jpg"), filename: "6810758421-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810758421-5.jpg"), filename: "6810758421-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810758421-6.jpg"), filename: "6810758421-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810758421-0.jpg"), filename: "6810758421-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810758421-1.jpg"), filename: "6810758421-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810758421-2.jpg"), filename: "6810758421-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810758421-3.jpg"), filename: "6810758421-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810758421-4.jpg"), filename: "6810758421-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810758421-5.jpg"), filename: "6810758421-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810758421-6.jpg"), filename: "6810758421-6.jpg") if product
 
             product = Product.create(
                {
@@ -10251,13 +10250,13 @@ We have lots of things to part with in an attempt to liquidate assets quickly. T
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810757991-0.jpg"), filename: "6810757991-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810757991-1.jpg"), filename: "6810757991-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810757991-2.jpg"), filename: "6810757991-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810757991-3.jpg"), filename: "6810757991-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810757991-4.jpg"), filename: "6810757991-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810757991-5.jpg"), filename: "6810757991-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810757991-6.jpg"), filename: "6810757991-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810757991-0.jpg"), filename: "6810757991-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810757991-1.jpg"), filename: "6810757991-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810757991-2.jpg"), filename: "6810757991-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810757991-3.jpg"), filename: "6810757991-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810757991-4.jpg"), filename: "6810757991-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810757991-5.jpg"), filename: "6810757991-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810757991-6.jpg"), filename: "6810757991-6.jpg") if product
 
             product = Product.create(
                {
@@ -10285,13 +10284,13 @@ Cash or PayPal only.  Please call, email or text me with questions, or to make p
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801693183-0.jpg"), filename: "6801693183-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801693183-1.jpg"), filename: "6801693183-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801693183-2.jpg"), filename: "6801693183-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801693183-3.jpg"), filename: "6801693183-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801693183-4.jpg"), filename: "6801693183-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801693183-5.jpg"), filename: "6801693183-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801693183-6.jpg"), filename: "6801693183-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801693183-0.jpg"), filename: "6801693183-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801693183-1.jpg"), filename: "6801693183-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801693183-2.jpg"), filename: "6801693183-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801693183-3.jpg"), filename: "6801693183-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801693183-4.jpg"), filename: "6801693183-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801693183-5.jpg"), filename: "6801693183-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6801693183-6.jpg"), filename: "6801693183-6.jpg") if product
 
             product = Product.create(
                {
@@ -10312,11 +10311,11 @@ Cash or PayPal only.  Please call, email or text me with questions, or to make p
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788302215-0.jpg"), filename: "6788302215-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788302215-1.jpg"), filename: "6788302215-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788302215-2.jpg"), filename: "6788302215-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788302215-3.jpg"), filename: "6788302215-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788302215-4.jpg"), filename: "6788302215-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6788302215-0.jpg"), filename: "6788302215-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6788302215-1.jpg"), filename: "6788302215-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6788302215-2.jpg"), filename: "6788302215-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6788302215-3.jpg"), filename: "6788302215-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6788302215-4.jpg"), filename: "6788302215-4.jpg") if product
 
             product = Product.create(
                {
@@ -10336,13 +10335,13 @@ Cash or PayPal only. Please call, email or text me with questions, or to make pl
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799345934-0.jpg"), filename: "6799345934-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799345934-1.jpg"), filename: "6799345934-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799345934-2.jpg"), filename: "6799345934-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799345934-3.jpg"), filename: "6799345934-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799345934-4.jpg"), filename: "6799345934-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799345934-5.jpg"), filename: "6799345934-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799345934-6.jpg"), filename: "6799345934-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799345934-0.jpg"), filename: "6799345934-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799345934-1.jpg"), filename: "6799345934-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799345934-2.jpg"), filename: "6799345934-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799345934-3.jpg"), filename: "6799345934-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799345934-4.jpg"), filename: "6799345934-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799345934-5.jpg"), filename: "6799345934-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799345934-6.jpg"), filename: "6799345934-6.jpg") if product
 
             product = Product.create(
                {
@@ -10362,9 +10361,9 @@ Cash or PayPal only.  Please call, email or text me with questions, or to make p
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807100876-0.jpg"), filename: "6807100876-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807100876-1.jpg"), filename: "6807100876-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807100876-2.jpg"), filename: "6807100876-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807100876-0.jpg"), filename: "6807100876-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807100876-1.jpg"), filename: "6807100876-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807100876-2.jpg"), filename: "6807100876-2.jpg") if product
 
             product = Product.create(
                {
@@ -10388,11 +10387,11 @@ Cash or PayPal only.  Please call, email or text me with questions, or to make p
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807098869-0.jpg"), filename: "6807098869-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807098869-1.jpg"), filename: "6807098869-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807098869-2.jpg"), filename: "6807098869-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807098869-3.jpg"), filename: "6807098869-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807098869-4.jpg"), filename: "6807098869-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807098869-0.jpg"), filename: "6807098869-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807098869-1.jpg"), filename: "6807098869-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807098869-2.jpg"), filename: "6807098869-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807098869-3.jpg"), filename: "6807098869-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807098869-4.jpg"), filename: "6807098869-4.jpg") if product
 
             product = Product.create(
                {
@@ -10406,13 +10405,13 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810751910-0.jpg"), filename: "6810751910-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810751910-1.jpg"), filename: "6810751910-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810751910-2.jpg"), filename: "6810751910-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810751910-3.jpg"), filename: "6810751910-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810751910-4.jpg"), filename: "6810751910-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810751910-5.jpg"), filename: "6810751910-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810751910-6.jpg"), filename: "6810751910-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810751910-0.jpg"), filename: "6810751910-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810751910-1.jpg"), filename: "6810751910-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810751910-2.jpg"), filename: "6810751910-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810751910-3.jpg"), filename: "6810751910-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810751910-4.jpg"), filename: "6810751910-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810751910-5.jpg"), filename: "6810751910-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810751910-6.jpg"), filename: "6810751910-6.jpg") if product
 
             product = Product.create(
                {
@@ -10429,7 +10428,7 @@ Selling because my grandson has a newer one.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810749258-0.jpg"), filename: "6810749258-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810749258-0.jpg"), filename: "6810749258-0.jpg") if product
 
             product = Product.create(
                {
@@ -10443,8 +10442,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810745187-0.jpg"), filename: "6810745187-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810745187-1.jpg"), filename: "6810745187-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810745187-0.jpg"), filename: "6810745187-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810745187-1.jpg"), filename: "6810745187-1.jpg") if product
 
             product = Product.create(
                {
@@ -10465,13 +10464,13 @@ https://www.toysrus.com/buy/teddy-bears/animal-alley-42-inch-stuffed-bear-with-b
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797755805-0.jpg"), filename: "6797755805-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797755805-1.jpg"), filename: "6797755805-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797755805-2.jpg"), filename: "6797755805-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797755805-3.jpg"), filename: "6797755805-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797755805-4.jpg"), filename: "6797755805-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797755805-5.jpg"), filename: "6797755805-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797755805-6.jpg"), filename: "6797755805-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797755805-0.jpg"), filename: "6797755805-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797755805-1.jpg"), filename: "6797755805-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797755805-2.jpg"), filename: "6797755805-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797755805-3.jpg"), filename: "6797755805-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797755805-4.jpg"), filename: "6797755805-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797755805-5.jpg"), filename: "6797755805-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797755805-6.jpg"), filename: "6797755805-6.jpg") if product
 
             product = Product.create(
                {
@@ -10488,8 +10487,8 @@ This comes from a smoke &amp; pet free and altogether immaculate household.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810746449-0.jpg"), filename: "6810746449-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810746449-1.jpg"), filename: "6810746449-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810746449-0.jpg"), filename: "6810746449-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810746449-1.jpg"), filename: "6810746449-1.jpg") if product
 
             product = Product.create(
                {
@@ -10509,8 +10508,8 @@ $130",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792157503-0.jpg"), filename: "6792157503-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792157503-1.jpg"), filename: "6792157503-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792157503-0.jpg"), filename: "6792157503-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792157503-1.jpg"), filename: "6792157503-1.jpg") if product
 
             product = Product.create(
                {
@@ -10526,9 +10525,9 @@ These are super cute for any bear and come from a smoke and pet free and altoget
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810745198-0.jpg"), filename: "6810745198-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810745198-1.jpg"), filename: "6810745198-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810745198-2.jpg"), filename: "6810745198-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810745198-0.jpg"), filename: "6810745198-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810745198-1.jpg"), filename: "6810745198-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810745198-2.jpg"), filename: "6810745198-2.jpg") if product
 
             product = Product.create(
                {
@@ -10544,7 +10543,7 @@ $30 or board game trade (please email me with what you have)",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6799754230-0.jpg"), filename: "6799754230-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799754230-0.jpg"), filename: "6799754230-0.jpg") if product
 
             product = Product.create(
                {
@@ -10558,12 +10557,12 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810742287-0.jpg"), filename: "6810742287-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810742287-1.jpg"), filename: "6810742287-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810742287-2.jpg"), filename: "6810742287-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810742287-3.jpg"), filename: "6810742287-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810742287-4.jpg"), filename: "6810742287-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810742287-5.jpg"), filename: "6810742287-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810742287-0.jpg"), filename: "6810742287-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810742287-1.jpg"), filename: "6810742287-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810742287-2.jpg"), filename: "6810742287-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810742287-3.jpg"), filename: "6810742287-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810742287-4.jpg"), filename: "6810742287-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810742287-5.jpg"), filename: "6810742287-5.jpg") if product
 
             product = Product.create(
                {
@@ -10577,7 +10576,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810740087-0.jpg"), filename: "6810740087-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810740087-0.jpg"), filename: "6810740087-0.jpg") if product
 
             product = Product.create(
                {
@@ -10597,9 +10596,9 @@ In new unused condition<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810737953-0.jpg"), filename: "6810737953-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810737953-1.jpg"), filename: "6810737953-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810737953-2.jpg"), filename: "6810737953-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810737953-0.jpg"), filename: "6810737953-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810737953-1.jpg"), filename: "6810737953-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810737953-2.jpg"), filename: "6810737953-2.jpg") if product
 
             product = Product.create(
                {
@@ -10613,8 +10612,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810736822-0.jpg"), filename: "6810736822-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810736822-1.jpg"), filename: "6810736822-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810736822-0.jpg"), filename: "6810736822-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810736822-1.jpg"), filename: "6810736822-1.jpg") if product
 
             product = Product.create(
                {
@@ -10628,7 +10627,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810735831-0.jpg"), filename: "6810735831-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810735831-0.jpg"), filename: "6810735831-0.jpg") if product
 
             product = Product.create(
                {
@@ -10642,7 +10641,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810731043-0.jpg"), filename: "6810731043-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810731043-0.jpg"), filename: "6810731043-0.jpg") if product
 
             product = Product.create(
                {
@@ -10656,8 +10655,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810729540-0.jpg"), filename: "6810729540-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810729540-1.jpg"), filename: "6810729540-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810729540-0.jpg"), filename: "6810729540-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810729540-1.jpg"), filename: "6810729540-1.jpg") if product
 
             product = Product.create(
                {
@@ -10725,13 +10724,13 @@ Year: 1993-2002",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810728698-0.jpg"), filename: "6810728698-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810728698-1.jpg"), filename: "6810728698-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810728698-2.jpg"), filename: "6810728698-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810728698-3.jpg"), filename: "6810728698-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810728698-4.jpg"), filename: "6810728698-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810728698-5.jpg"), filename: "6810728698-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810728698-6.jpg"), filename: "6810728698-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810728698-0.jpg"), filename: "6810728698-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810728698-1.jpg"), filename: "6810728698-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810728698-2.jpg"), filename: "6810728698-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810728698-3.jpg"), filename: "6810728698-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810728698-4.jpg"), filename: "6810728698-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810728698-5.jpg"), filename: "6810728698-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810728698-6.jpg"), filename: "6810728698-6.jpg") if product
 
             product = Product.create(
                {
@@ -10756,13 +10755,13 @@ Toys girls dolls fantasy make believe baby children kid kids bike injury hospita
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810722453-0.jpg"), filename: "6810722453-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810722453-1.jpg"), filename: "6810722453-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810722453-2.jpg"), filename: "6810722453-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810722453-3.jpg"), filename: "6810722453-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810722453-4.jpg"), filename: "6810722453-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810722453-5.jpg"), filename: "6810722453-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810722453-6.jpg"), filename: "6810722453-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810722453-0.jpg"), filename: "6810722453-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810722453-1.jpg"), filename: "6810722453-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810722453-2.jpg"), filename: "6810722453-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810722453-3.jpg"), filename: "6810722453-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810722453-4.jpg"), filename: "6810722453-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810722453-5.jpg"), filename: "6810722453-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810722453-6.jpg"), filename: "6810722453-6.jpg") if product
 
             product = Product.create(
                {
@@ -10776,7 +10775,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810720829-0.jpg"), filename: "6810720829-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810720829-0.jpg"), filename: "6810720829-0.jpg") if product
 
             product = Product.create(
                {
@@ -10790,11 +10789,11 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810718679-0.jpg"), filename: "6810718679-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810718679-1.jpg"), filename: "6810718679-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810718679-2.jpg"), filename: "6810718679-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810718679-3.jpg"), filename: "6810718679-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810718679-4.jpg"), filename: "6810718679-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810718679-0.jpg"), filename: "6810718679-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810718679-1.jpg"), filename: "6810718679-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810718679-2.jpg"), filename: "6810718679-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810718679-3.jpg"), filename: "6810718679-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810718679-4.jpg"), filename: "6810718679-4.jpg") if product
 
             product = Product.create(
                {
@@ -10814,11 +10813,11 @@ Bring the action from the &quot;Star Wars&quot; movies to life with this &quot;M
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796587736-0.jpg"), filename: "6796587736-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796587736-1.jpg"), filename: "6796587736-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796587736-2.jpg"), filename: "6796587736-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796587736-3.jpg"), filename: "6796587736-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796587736-4.jpg"), filename: "6796587736-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796587736-0.jpg"), filename: "6796587736-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796587736-1.jpg"), filename: "6796587736-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796587736-2.jpg"), filename: "6796587736-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796587736-3.jpg"), filename: "6796587736-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796587736-4.jpg"), filename: "6796587736-4.jpg") if product
 
             product = Product.create(
                {
@@ -10837,11 +10836,11 @@ Meet Spike, the dinosaur that kids bring to life at the touch of a button. He wa
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796587429-0.jpg"), filename: "6796587429-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796587429-1.jpg"), filename: "6796587429-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796587429-2.jpg"), filename: "6796587429-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796587429-3.jpg"), filename: "6796587429-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6796587429-4.jpg"), filename: "6796587429-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796587429-0.jpg"), filename: "6796587429-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796587429-1.jpg"), filename: "6796587429-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796587429-2.jpg"), filename: "6796587429-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796587429-3.jpg"), filename: "6796587429-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796587429-4.jpg"), filename: "6796587429-4.jpg") if product
 
             product = Product.create(
                {
@@ -10857,9 +10856,9 @@ Asking $80 obo cash. Local sales only We&apos;re in the Niles District of Fremon
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806817974-0.jpg"), filename: "6806817974-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806817974-1.jpg"), filename: "6806817974-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806817974-2.jpg"), filename: "6806817974-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806817974-0.jpg"), filename: "6806817974-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806817974-1.jpg"), filename: "6806817974-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806817974-2.jpg"), filename: "6806817974-2.jpg") if product
 
             product = Product.create(
                {
@@ -10873,8 +10872,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808092385-0.jpg"), filename: "6808092385-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808092385-1.jpg"), filename: "6808092385-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808092385-0.jpg"), filename: "6808092385-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6808092385-1.jpg"), filename: "6808092385-1.jpg") if product
 
             product = Product.create(
                {
@@ -10891,9 +10890,9 @@ Asking $55 obo cash. We&apos;re located in the Niles District of Fremont. Local 
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806830454-0.jpg"), filename: "6806830454-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806830454-1.jpg"), filename: "6806830454-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806830454-2.jpg"), filename: "6806830454-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806830454-0.jpg"), filename: "6806830454-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806830454-1.jpg"), filename: "6806830454-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806830454-2.jpg"), filename: "6806830454-2.jpg") if product
 
             product = Product.create(
                {
@@ -10995,8 +10994,8 @@ We are asking $525 obo. Cash only. Local sales only. If the ad is up, the Legos 
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806991035-0.jpg"), filename: "6806991035-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806991035-1.jpg"), filename: "6806991035-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806991035-0.jpg"), filename: "6806991035-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806991035-1.jpg"), filename: "6806991035-1.jpg") if product
 
             product = Product.create(
                {
@@ -11014,10 +11013,10 @@ Furniture set alone is $50 retail.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810708324-0.jpg"), filename: "6810708324-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810708324-1.jpg"), filename: "6810708324-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810708324-2.jpg"), filename: "6810708324-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810708324-3.jpg"), filename: "6810708324-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810708324-0.jpg"), filename: "6810708324-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810708324-1.jpg"), filename: "6810708324-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810708324-2.jpg"), filename: "6810708324-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810708324-3.jpg"), filename: "6810708324-3.jpg") if product
 
             product = Product.create(
                {
@@ -11031,7 +11030,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810706902-0.jpg"), filename: "6810706902-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810706902-0.jpg"), filename: "6810706902-0.jpg") if product
 
             product = Product.create(
                {
@@ -11045,8 +11044,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810706673-0.jpg"), filename: "6810706673-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810706673-1.jpg"), filename: "6810706673-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810706673-0.jpg"), filename: "6810706673-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810706673-1.jpg"), filename: "6810706673-1.jpg") if product
 
             product = Product.create(
                {
@@ -11074,13 +11073,13 @@ Cash in hand talks.<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810706256-0.jpg"), filename: "6810706256-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810706256-1.jpg"), filename: "6810706256-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810706256-2.jpg"), filename: "6810706256-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810706256-3.jpg"), filename: "6810706256-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810706256-4.jpg"), filename: "6810706256-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810706256-5.jpg"), filename: "6810706256-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810706256-6.jpg"), filename: "6810706256-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810706256-0.jpg"), filename: "6810706256-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810706256-1.jpg"), filename: "6810706256-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810706256-2.jpg"), filename: "6810706256-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810706256-3.jpg"), filename: "6810706256-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810706256-4.jpg"), filename: "6810706256-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810706256-5.jpg"), filename: "6810706256-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810706256-6.jpg"), filename: "6810706256-6.jpg") if product
 
             product = Product.create(
                {
@@ -11094,8 +11093,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805156128-0.jpg"), filename: "6805156128-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805156128-1.jpg"), filename: "6805156128-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805156128-0.jpg"), filename: "6805156128-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805156128-1.jpg"), filename: "6805156128-1.jpg") if product
 
             product = Product.create(
                {
@@ -11129,8 +11128,8 @@ Disney cars matel hot wheels planes",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810702897-0.jpg"), filename: "6810702897-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810702897-1.jpg"), filename: "6810702897-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810702897-0.jpg"), filename: "6810702897-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810702897-1.jpg"), filename: "6810702897-1.jpg") if product
 
             product = Product.create(
                {
@@ -11148,11 +11147,11 @@ A pack of sample slides including peacock feather, fern spore etc. are included.
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805274225-0.jpg"), filename: "6805274225-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805274225-1.jpg"), filename: "6805274225-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805274225-2.jpg"), filename: "6805274225-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805274225-3.jpg"), filename: "6805274225-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805274225-4.jpg"), filename: "6805274225-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805274225-0.jpg"), filename: "6805274225-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805274225-1.jpg"), filename: "6805274225-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805274225-2.jpg"), filename: "6805274225-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805274225-3.jpg"), filename: "6805274225-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805274225-4.jpg"), filename: "6805274225-4.jpg") if product
 
             product = Product.create(
                {
@@ -11166,7 +11165,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804060862-0.jpg"), filename: "6804060862-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804060862-0.jpg"), filename: "6804060862-0.jpg") if product
 
             product = Product.create(
                {
@@ -11181,7 +11180,7 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810697794-0.jpg"), filename: "6810697794-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810697794-0.jpg"), filename: "6810697794-0.jpg") if product
 
             product = Product.create(
                {
@@ -11202,13 +11201,13 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790046669-0.jpg"), filename: "6790046669-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790046669-1.jpg"), filename: "6790046669-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790046669-2.jpg"), filename: "6790046669-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790046669-3.jpg"), filename: "6790046669-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790046669-4.jpg"), filename: "6790046669-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790046669-5.jpg"), filename: "6790046669-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790046669-6.jpg"), filename: "6790046669-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6790046669-0.jpg"), filename: "6790046669-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6790046669-1.jpg"), filename: "6790046669-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6790046669-2.jpg"), filename: "6790046669-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6790046669-3.jpg"), filename: "6790046669-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6790046669-4.jpg"), filename: "6790046669-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6790046669-5.jpg"), filename: "6790046669-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6790046669-6.jpg"), filename: "6790046669-6.jpg") if product
 
             product = Product.create(
                {
@@ -11226,9 +11225,9 @@ If you see this ad still posted, the item is still available for sale.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341249-0.jpg"), filename: "6787341249-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341249-1.jpg"), filename: "6787341249-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341249-2.jpg"), filename: "6787341249-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341249-0.jpg"), filename: "6787341249-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341249-1.jpg"), filename: "6787341249-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341249-2.jpg"), filename: "6787341249-2.jpg") if product
 
             product = Product.create(
                {
@@ -11246,11 +11245,11 @@ If you see this ad still posted, the item is still available for sale.<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341399-0.jpg"), filename: "6787341399-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341399-1.jpg"), filename: "6787341399-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341399-2.jpg"), filename: "6787341399-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341399-3.jpg"), filename: "6787341399-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341399-4.jpg"), filename: "6787341399-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341399-0.jpg"), filename: "6787341399-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341399-1.jpg"), filename: "6787341399-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341399-2.jpg"), filename: "6787341399-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341399-3.jpg"), filename: "6787341399-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341399-4.jpg"), filename: "6787341399-4.jpg") if product
 
             product = Product.create(
                {
@@ -11268,8 +11267,8 @@ If you see this ad still posted, the item is still available for sale.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341585-0.jpg"), filename: "6787341585-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341585-1.jpg"), filename: "6787341585-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341585-0.jpg"), filename: "6787341585-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341585-1.jpg"), filename: "6787341585-1.jpg") if product
 
             product = Product.create(
                {
@@ -11287,8 +11286,8 @@ If you see this ad still posted, the item is still available for sale.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341488-0.jpg"), filename: "6787341488-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341488-1.jpg"), filename: "6787341488-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341488-0.jpg"), filename: "6787341488-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341488-1.jpg"), filename: "6787341488-1.jpg") if product
 
             product = Product.create(
                {
@@ -11306,7 +11305,7 @@ If you see this ad still posted, the item is still available for sale.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787342480-0.jpg"), filename: "6787342480-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787342480-0.jpg"), filename: "6787342480-0.jpg") if product
 
             product = Product.create(
                {
@@ -11321,9 +11320,9 @@ Purchased &amp; carefully assembled 2 years ago, barely used, kept indoors &amp;
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810696520-0.jpg"), filename: "6810696520-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810696520-1.jpg"), filename: "6810696520-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810696520-2.jpg"), filename: "6810696520-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810696520-0.jpg"), filename: "6810696520-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810696520-1.jpg"), filename: "6810696520-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810696520-2.jpg"), filename: "6810696520-2.jpg") if product
 
             product = Product.create(
                {
@@ -11341,8 +11340,8 @@ If you see this ad still posted, the item is still available for sale.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341062-0.jpg"), filename: "6787341062-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341062-1.jpg"), filename: "6787341062-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341062-0.jpg"), filename: "6787341062-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341062-1.jpg"), filename: "6787341062-1.jpg") if product
 
             product = Product.create(
                {
@@ -11362,10 +11361,10 @@ If you see this ad still posted, the item is still available for sale.<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787340943-0.jpg"), filename: "6787340943-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787340943-1.jpg"), filename: "6787340943-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787340943-2.jpg"), filename: "6787340943-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787340943-3.jpg"), filename: "6787340943-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787340943-0.jpg"), filename: "6787340943-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787340943-1.jpg"), filename: "6787340943-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787340943-2.jpg"), filename: "6787340943-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787340943-3.jpg"), filename: "6787340943-3.jpg") if product
 
             product = Product.create(
                {
@@ -11383,10 +11382,10 @@ If you see this ad still posted, the item is still available for sale.<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787352532-0.jpg"), filename: "6787352532-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787352532-1.jpg"), filename: "6787352532-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787352532-2.jpg"), filename: "6787352532-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787352532-3.jpg"), filename: "6787352532-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787352532-0.jpg"), filename: "6787352532-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787352532-1.jpg"), filename: "6787352532-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787352532-2.jpg"), filename: "6787352532-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787352532-3.jpg"), filename: "6787352532-3.jpg") if product
 
             product = Product.create(
                {
@@ -11404,10 +11403,10 @@ If you see this ad still posted, the item is still available for sale.<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341687-0.jpg"), filename: "6787341687-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341687-1.jpg"), filename: "6787341687-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341687-2.jpg"), filename: "6787341687-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341687-3.jpg"), filename: "6787341687-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341687-0.jpg"), filename: "6787341687-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341687-1.jpg"), filename: "6787341687-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341687-2.jpg"), filename: "6787341687-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341687-3.jpg"), filename: "6787341687-3.jpg") if product
 
             product = Product.create(
                {
@@ -11425,9 +11424,9 @@ If you see this ad still posted, the item is still available for sale.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341856-0.jpg"), filename: "6787341856-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341856-1.jpg"), filename: "6787341856-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341856-2.jpg"), filename: "6787341856-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341856-0.jpg"), filename: "6787341856-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341856-1.jpg"), filename: "6787341856-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341856-2.jpg"), filename: "6787341856-2.jpg") if product
 
             product = Product.create(
                {
@@ -11445,10 +11444,10 @@ If you see this ad still posted, the item is still available for sale.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787342078-0.jpg"), filename: "6787342078-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787342078-1.jpg"), filename: "6787342078-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787342078-2.jpg"), filename: "6787342078-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787342078-3.jpg"), filename: "6787342078-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787342078-0.jpg"), filename: "6787342078-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787342078-1.jpg"), filename: "6787342078-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787342078-2.jpg"), filename: "6787342078-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787342078-3.jpg"), filename: "6787342078-3.jpg") if product
 
             product = Product.create(
                {
@@ -11466,10 +11465,10 @@ If you see this ad still posted, the item is still available for sale.<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341992-0.jpg"), filename: "6787341992-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341992-1.jpg"), filename: "6787341992-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341992-2.jpg"), filename: "6787341992-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6787341992-3.jpg"), filename: "6787341992-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341992-0.jpg"), filename: "6787341992-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341992-1.jpg"), filename: "6787341992-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341992-2.jpg"), filename: "6787341992-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787341992-3.jpg"), filename: "6787341992-3.jpg") if product
 
             product = Product.create(
                {
@@ -11492,13 +11491,13 @@ Every set folds up to be compact for storage/travel and connects through extra t
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810695166-0.jpg"), filename: "6810695166-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810695166-1.jpg"), filename: "6810695166-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810695166-2.jpg"), filename: "6810695166-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810695166-3.jpg"), filename: "6810695166-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810695166-4.jpg"), filename: "6810695166-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810695166-5.jpg"), filename: "6810695166-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810695166-6.jpg"), filename: "6810695166-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810695166-0.jpg"), filename: "6810695166-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810695166-1.jpg"), filename: "6810695166-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810695166-2.jpg"), filename: "6810695166-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810695166-3.jpg"), filename: "6810695166-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810695166-4.jpg"), filename: "6810695166-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810695166-5.jpg"), filename: "6810695166-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810695166-6.jpg"), filename: "6810695166-6.jpg") if product
 
             product = Product.create(
                {
@@ -11514,9 +11513,9 @@ Please email if interested. Thanks for looking!",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788504058-0.jpg"), filename: "6788504058-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788504058-1.jpg"), filename: "6788504058-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788504058-2.jpg"), filename: "6788504058-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6788504058-0.jpg"), filename: "6788504058-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6788504058-1.jpg"), filename: "6788504058-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6788504058-2.jpg"), filename: "6788504058-2.jpg") if product
 
             product = Product.create(
                {
@@ -11532,7 +11531,7 @@ Please email if interested. Thanks for looking!",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798849103-0.jpg"), filename: "6798849103-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798849103-0.jpg"), filename: "6798849103-0.jpg") if product
 
             product = Product.create(
                {
@@ -11548,7 +11547,7 @@ Please email if interested. Thanks for looking!",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798849476-0.jpg"), filename: "6798849476-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798849476-0.jpg"), filename: "6798849476-0.jpg") if product
 
             product = Product.create(
                {
@@ -11562,8 +11561,8 @@ product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/im
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810694474-0.jpg"), filename: "6810694474-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810694474-1.jpg"), filename: "6810694474-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810694474-0.jpg"), filename: "6810694474-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810694474-1.jpg"), filename: "6810694474-1.jpg") if product
 
             product = Product.create(
                {
@@ -11579,7 +11578,7 @@ Please email if interested. Thanks for looking!",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800257777-0.jpg"), filename: "6800257777-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800257777-0.jpg"), filename: "6800257777-0.jpg") if product
 
 
 category = Category.find_by_name("sporting goods")
@@ -11602,8 +11601,8 @@ https://www.evo.com/outlet/snowboards/burton-twin-snowboard-red-blem",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6796295323-0.jpg"), filename: "6796295323-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6796295323-1.jpg"), filename: "6796295323-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796295323-0.jpg"), filename: "6796295323-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796295323-1.jpg"), filename: "6796295323-1.jpg") if product
 
             product = Product.create(
                {
@@ -11619,11 +11618,11 @@ In perfect condition ready to ride.  If interested I can send a more complete li
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810787738-0.jpg"), filename: "6810787738-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810787738-1.jpg"), filename: "6810787738-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810787738-2.jpg"), filename: "6810787738-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810787738-3.jpg"), filename: "6810787738-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810787738-4.jpg"), filename: "6810787738-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810787738-0.jpg"), filename: "6810787738-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810787738-1.jpg"), filename: "6810787738-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810787738-2.jpg"), filename: "6810787738-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810787738-3.jpg"), filename: "6810787738-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810787738-4.jpg"), filename: "6810787738-4.jpg") if product
 
             product = Product.create(
                {
@@ -11637,8 +11636,8 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810787229-0.jpg"), filename: "6810787229-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810787229-1.jpg"), filename: "6810787229-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810787229-0.jpg"), filename: "6810787229-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810787229-1.jpg"), filename: "6810787229-1.jpg") if product
 
             product = Product.create(
                {
@@ -11652,12 +11651,12 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6789548205-0.jpg"), filename: "6789548205-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6789548205-1.jpg"), filename: "6789548205-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6789548205-2.jpg"), filename: "6789548205-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6789548205-3.jpg"), filename: "6789548205-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6789548205-4.jpg"), filename: "6789548205-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6789548205-5.jpg"), filename: "6789548205-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6789548205-0.jpg"), filename: "6789548205-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6789548205-1.jpg"), filename: "6789548205-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6789548205-2.jpg"), filename: "6789548205-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6789548205-3.jpg"), filename: "6789548205-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6789548205-4.jpg"), filename: "6789548205-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6789548205-5.jpg"), filename: "6789548205-5.jpg") if product
 
             product = Product.create(
                {
@@ -11671,9 +11670,9 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810786047-0.jpg"), filename: "6810786047-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810786047-1.jpg"), filename: "6810786047-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810786047-2.jpg"), filename: "6810786047-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810786047-0.jpg"), filename: "6810786047-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810786047-1.jpg"), filename: "6810786047-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810786047-2.jpg"), filename: "6810786047-2.jpg") if product
 
             product = Product.create(
                {
@@ -11694,9 +11693,9 @@ Holster is Brand New...... Price is $40 Firm",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810785503-0.jpg"), filename: "6810785503-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810785503-1.jpg"), filename: "6810785503-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810785503-2.jpg"), filename: "6810785503-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810785503-0.jpg"), filename: "6810785503-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810785503-1.jpg"), filename: "6810785503-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810785503-2.jpg"), filename: "6810785503-2.jpg") if product
 
             product = Product.create(
                {
@@ -11772,7 +11771,7 @@ al merrick channel islands ci dhd chilli rusty lost m10 stretch screwball surf b
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795288368-0.jpg"), filename: "6795288368-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795288368-0.jpg"), filename: "6795288368-0.jpg") if product
 
             product = Product.create(
                {
@@ -11788,13 +11787,13 @@ Please Include your cell for a text response so I know you&apos;re a serious buy
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799747469-0.jpg"), filename: "6799747469-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799747469-1.jpg"), filename: "6799747469-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799747469-2.jpg"), filename: "6799747469-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799747469-3.jpg"), filename: "6799747469-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799747469-4.jpg"), filename: "6799747469-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799747469-5.jpg"), filename: "6799747469-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799747469-6.jpg"), filename: "6799747469-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799747469-0.jpg"), filename: "6799747469-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799747469-1.jpg"), filename: "6799747469-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799747469-2.jpg"), filename: "6799747469-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799747469-3.jpg"), filename: "6799747469-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799747469-4.jpg"), filename: "6799747469-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799747469-5.jpg"), filename: "6799747469-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799747469-6.jpg"), filename: "6799747469-6.jpg") if product
 
             product = Product.create(
                {
@@ -11808,8 +11807,8 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810784260-0.jpg"), filename: "6810784260-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810784260-1.jpg"), filename: "6810784260-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810784260-0.jpg"), filename: "6810784260-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810784260-1.jpg"), filename: "6810784260-1.jpg") if product
 
             product = Product.create(
                {
@@ -11823,10 +11822,10 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783683-0.jpg"), filename: "6810783683-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783683-1.jpg"), filename: "6810783683-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783683-2.jpg"), filename: "6810783683-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783683-3.jpg"), filename: "6810783683-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783683-0.jpg"), filename: "6810783683-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783683-1.jpg"), filename: "6810783683-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783683-2.jpg"), filename: "6810783683-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783683-3.jpg"), filename: "6810783683-3.jpg") if product
 
             product = Product.create(
                {
@@ -11846,9 +11845,9 @@ In Orinda.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6800479190-0.jpg"), filename: "6800479190-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6800479190-1.jpg"), filename: "6800479190-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6800479190-2.jpg"), filename: "6800479190-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800479190-0.jpg"), filename: "6800479190-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800479190-1.jpg"), filename: "6800479190-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800479190-2.jpg"), filename: "6800479190-2.jpg") if product
 
             product = Product.create(
                {
@@ -11868,10 +11867,10 @@ Thanks for looking!",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783427-0.jpg"), filename: "6810783427-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783427-1.jpg"), filename: "6810783427-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783427-2.jpg"), filename: "6810783427-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783427-3.jpg"), filename: "6810783427-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783427-0.jpg"), filename: "6810783427-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783427-1.jpg"), filename: "6810783427-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783427-2.jpg"), filename: "6810783427-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783427-3.jpg"), filename: "6810783427-3.jpg") if product
 
             product = Product.create(
                {
@@ -11899,13 +11898,13 @@ I had installed clipless pedals and a regular cycling seat so the original seat 
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783401-0.jpg"), filename: "6810783401-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783401-1.jpg"), filename: "6810783401-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783401-2.jpg"), filename: "6810783401-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783401-3.jpg"), filename: "6810783401-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783401-4.jpg"), filename: "6810783401-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783401-5.jpg"), filename: "6810783401-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783401-6.jpg"), filename: "6810783401-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783401-0.jpg"), filename: "6810783401-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783401-1.jpg"), filename: "6810783401-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783401-2.jpg"), filename: "6810783401-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783401-3.jpg"), filename: "6810783401-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783401-4.jpg"), filename: "6810783401-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783401-5.jpg"), filename: "6810783401-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783401-6.jpg"), filename: "6810783401-6.jpg") if product
 
             product = Product.create(
                {
@@ -11919,12 +11918,12 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783329-0.jpg"), filename: "6810783329-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783329-1.jpg"), filename: "6810783329-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783329-2.jpg"), filename: "6810783329-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783329-3.jpg"), filename: "6810783329-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783329-4.jpg"), filename: "6810783329-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783329-5.jpg"), filename: "6810783329-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783329-0.jpg"), filename: "6810783329-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783329-1.jpg"), filename: "6810783329-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783329-2.jpg"), filename: "6810783329-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783329-3.jpg"), filename: "6810783329-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783329-4.jpg"), filename: "6810783329-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783329-5.jpg"), filename: "6810783329-5.jpg") if product
 
             product = Product.create(
                {
@@ -11944,10 +11943,10 @@ Thanks for looking!",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783278-0.jpg"), filename: "6810783278-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783278-1.jpg"), filename: "6810783278-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783278-2.jpg"), filename: "6810783278-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810783278-3.jpg"), filename: "6810783278-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783278-0.jpg"), filename: "6810783278-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783278-1.jpg"), filename: "6810783278-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783278-2.jpg"), filename: "6810783278-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810783278-3.jpg"), filename: "6810783278-3.jpg") if product
 
             product = Product.create(
                {
@@ -11963,7 +11962,7 @@ $25 each.  Paul.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810782732-0.jpg"), filename: "6810782732-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810782732-0.jpg"), filename: "6810782732-0.jpg") if product
 
             product = Product.create(
                {
@@ -11977,9 +11976,9 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810781975-0.jpg"), filename: "6810781975-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810781975-1.jpg"), filename: "6810781975-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810781975-2.jpg"), filename: "6810781975-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810781975-0.jpg"), filename: "6810781975-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810781975-1.jpg"), filename: "6810781975-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810781975-2.jpg"), filename: "6810781975-2.jpg") if product
 
             product = Product.create(
                {
@@ -11993,8 +11992,8 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799019390-0.jpg"), filename: "6799019390-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799019390-1.jpg"), filename: "6799019390-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799019390-0.jpg"), filename: "6799019390-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799019390-1.jpg"), filename: "6799019390-1.jpg") if product
 
             product = Product.create(
                {
@@ -12009,10 +12008,10 @@ TaylorMade V Steel 3&amp;5 fairway woods R-Flex.<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810781648-0.jpg"), filename: "6810781648-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810781648-1.jpg"), filename: "6810781648-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810781648-2.jpg"), filename: "6810781648-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810781648-3.jpg"), filename: "6810781648-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810781648-0.jpg"), filename: "6810781648-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810781648-1.jpg"), filename: "6810781648-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810781648-2.jpg"), filename: "6810781648-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810781648-3.jpg"), filename: "6810781648-3.jpg") if product
 
             product = Product.create(
                {
@@ -12032,8 +12031,8 @@ $600 obo.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6794165897-0.jpg"), filename: "6794165897-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6794165897-1.jpg"), filename: "6794165897-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794165897-0.jpg"), filename: "6794165897-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6794165897-1.jpg"), filename: "6794165897-1.jpg") if product
 
             product = Product.create(
                {
@@ -12064,8 +12063,8 @@ Item Number (DPCI): 047-83-0143",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810781298-0.jpg"), filename: "6810781298-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810781298-1.jpg"), filename: "6810781298-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810781298-0.jpg"), filename: "6810781298-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810781298-1.jpg"), filename: "6810781298-1.jpg") if product
 
             product = Product.create(
                {
@@ -12086,11 +12085,11 @@ Skis are in decent shape.  No major scratch or dings.  A great choice for the al
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810781240-0.jpg"), filename: "6810781240-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810781240-1.jpg"), filename: "6810781240-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810781240-2.jpg"), filename: "6810781240-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810781240-3.jpg"), filename: "6810781240-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810781240-4.jpg"), filename: "6810781240-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810781240-0.jpg"), filename: "6810781240-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810781240-1.jpg"), filename: "6810781240-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810781240-2.jpg"), filename: "6810781240-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810781240-3.jpg"), filename: "6810781240-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810781240-4.jpg"), filename: "6810781240-4.jpg") if product
 
             product = Product.create(
                {
@@ -12104,9 +12103,9 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6798595416-0.jpg"), filename: "6798595416-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6798595416-1.jpg"), filename: "6798595416-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6798595416-2.jpg"), filename: "6798595416-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798595416-0.jpg"), filename: "6798595416-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798595416-1.jpg"), filename: "6798595416-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798595416-2.jpg"), filename: "6798595416-2.jpg") if product
 
             product = Product.create(
                {
@@ -12120,13 +12119,13 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810780849-0.jpg"), filename: "6810780849-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810780849-1.jpg"), filename: "6810780849-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810780849-2.jpg"), filename: "6810780849-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810780849-3.jpg"), filename: "6810780849-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810780849-4.jpg"), filename: "6810780849-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810780849-5.jpg"), filename: "6810780849-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810780849-6.jpg"), filename: "6810780849-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810780849-0.jpg"), filename: "6810780849-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810780849-1.jpg"), filename: "6810780849-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810780849-2.jpg"), filename: "6810780849-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810780849-3.jpg"), filename: "6810780849-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810780849-4.jpg"), filename: "6810780849-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810780849-5.jpg"), filename: "6810780849-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810780849-6.jpg"), filename: "6810780849-6.jpg") if product
 
             product = Product.create(
                {
@@ -12140,9 +12139,9 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792498789-0.jpg"), filename: "6792498789-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792498789-1.jpg"), filename: "6792498789-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792498789-2.jpg"), filename: "6792498789-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792498789-0.jpg"), filename: "6792498789-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792498789-1.jpg"), filename: "6792498789-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792498789-2.jpg"), filename: "6792498789-2.jpg") if product
 
             product = Product.create(
                {
@@ -12160,13 +12159,13 @@ golf golfing tote bag carry  caddy y ppp10ppsep1018",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787639198-0.jpg"), filename: "6787639198-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787639198-1.jpg"), filename: "6787639198-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787639198-2.jpg"), filename: "6787639198-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787639198-3.jpg"), filename: "6787639198-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787639198-4.jpg"), filename: "6787639198-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787639198-5.jpg"), filename: "6787639198-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787639198-6.jpg"), filename: "6787639198-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787639198-0.jpg"), filename: "6787639198-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787639198-1.jpg"), filename: "6787639198-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787639198-2.jpg"), filename: "6787639198-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787639198-3.jpg"), filename: "6787639198-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787639198-4.jpg"), filename: "6787639198-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787639198-5.jpg"), filename: "6787639198-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787639198-6.jpg"), filename: "6787639198-6.jpg") if product
 
             product = Product.create(
                {
@@ -12208,13 +12207,13 @@ water boat boating vests lady men mens woman womans m lady female male kids chil
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787638715-0.jpg"), filename: "6787638715-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787638715-1.jpg"), filename: "6787638715-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787638715-2.jpg"), filename: "6787638715-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787638715-3.jpg"), filename: "6787638715-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787638715-4.jpg"), filename: "6787638715-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787638715-5.jpg"), filename: "6787638715-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787638715-6.jpg"), filename: "6787638715-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787638715-0.jpg"), filename: "6787638715-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787638715-1.jpg"), filename: "6787638715-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787638715-2.jpg"), filename: "6787638715-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787638715-3.jpg"), filename: "6787638715-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787638715-4.jpg"), filename: "6787638715-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787638715-5.jpg"), filename: "6787638715-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787638715-6.jpg"), filename: "6787638715-6.jpg") if product
 
             product = Product.create(
                {
@@ -12232,13 +12231,13 @@ Michigan style wood wooden snow sno snowshoe snowshoes snoe shoes alaska japan a
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792846463-0.jpg"), filename: "6792846463-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792846463-1.jpg"), filename: "6792846463-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792846463-2.jpg"), filename: "6792846463-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792846463-3.jpg"), filename: "6792846463-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792846463-4.jpg"), filename: "6792846463-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792846463-5.jpg"), filename: "6792846463-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792846463-6.jpg"), filename: "6792846463-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792846463-0.jpg"), filename: "6792846463-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792846463-1.jpg"), filename: "6792846463-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792846463-2.jpg"), filename: "6792846463-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792846463-3.jpg"), filename: "6792846463-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792846463-4.jpg"), filename: "6792846463-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792846463-5.jpg"), filename: "6792846463-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792846463-6.jpg"), filename: "6792846463-6.jpg") if product
 
             product = Product.create(
                {
@@ -12252,7 +12251,7 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6804112860-0.jpg"), filename: "6804112860-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804112860-0.jpg"), filename: "6804112860-0.jpg") if product
 
             product = Product.create(
                {
@@ -12269,13 +12268,13 @@ Michigan style wood wooden snow sno snowshoe snowshoes snoe shoes alaska japan a
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792838723-0.jpg"), filename: "6792838723-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792838723-1.jpg"), filename: "6792838723-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792838723-2.jpg"), filename: "6792838723-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792838723-3.jpg"), filename: "6792838723-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792838723-4.jpg"), filename: "6792838723-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792838723-5.jpg"), filename: "6792838723-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792838723-6.jpg"), filename: "6792838723-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792838723-0.jpg"), filename: "6792838723-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792838723-1.jpg"), filename: "6792838723-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792838723-2.jpg"), filename: "6792838723-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792838723-3.jpg"), filename: "6792838723-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792838723-4.jpg"), filename: "6792838723-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792838723-5.jpg"), filename: "6792838723-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792838723-6.jpg"), filename: "6792838723-6.jpg") if product
 
             product = Product.create(
                {
@@ -12295,13 +12294,13 @@ hook bill knife blade machete vnt vintage old antique steel army military englan
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792822294-0.jpg"), filename: "6792822294-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792822294-1.jpg"), filename: "6792822294-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792822294-2.jpg"), filename: "6792822294-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792822294-3.jpg"), filename: "6792822294-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792822294-4.jpg"), filename: "6792822294-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792822294-5.jpg"), filename: "6792822294-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792822294-6.jpg"), filename: "6792822294-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792822294-0.jpg"), filename: "6792822294-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792822294-1.jpg"), filename: "6792822294-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792822294-2.jpg"), filename: "6792822294-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792822294-3.jpg"), filename: "6792822294-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792822294-4.jpg"), filename: "6792822294-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792822294-5.jpg"), filename: "6792822294-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792822294-6.jpg"), filename: "6792822294-6.jpg") if product
 
             product = Product.create(
                {
@@ -12319,13 +12318,13 @@ jan sport hike hiking back pack backpacking boy scout scouts adult youth kid tee
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787637669-0.jpg"), filename: "6787637669-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787637669-1.jpg"), filename: "6787637669-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787637669-2.jpg"), filename: "6787637669-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787637669-3.jpg"), filename: "6787637669-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787637669-4.jpg"), filename: "6787637669-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787637669-5.jpg"), filename: "6787637669-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787637669-6.jpg"), filename: "6787637669-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787637669-0.jpg"), filename: "6787637669-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787637669-1.jpg"), filename: "6787637669-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787637669-2.jpg"), filename: "6787637669-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787637669-3.jpg"), filename: "6787637669-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787637669-4.jpg"), filename: "6787637669-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787637669-5.jpg"), filename: "6787637669-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787637669-6.jpg"), filename: "6787637669-6.jpg") if product
 
             product = Product.create(
                {
@@ -12342,13 +12341,13 @@ boat water transport kayaks boy scout family trip lake cabin beach sport fishing
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792771906-0.jpg"), filename: "6792771906-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792771906-1.jpg"), filename: "6792771906-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792771906-2.jpg"), filename: "6792771906-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792771906-3.jpg"), filename: "6792771906-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792771906-4.jpg"), filename: "6792771906-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792771906-5.jpg"), filename: "6792771906-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6792771906-6.jpg"), filename: "6792771906-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792771906-0.jpg"), filename: "6792771906-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792771906-1.jpg"), filename: "6792771906-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792771906-2.jpg"), filename: "6792771906-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792771906-3.jpg"), filename: "6792771906-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792771906-4.jpg"), filename: "6792771906-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792771906-5.jpg"), filename: "6792771906-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6792771906-6.jpg"), filename: "6792771906-6.jpg") if product
 
             product = Product.create(
                {
@@ -12366,13 +12365,13 @@ Michigan style wood wooden snow sno snowshoe snowshoes snoe shoes alaska japan a
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795886603-0.jpg"), filename: "6795886603-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795886603-1.jpg"), filename: "6795886603-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795886603-2.jpg"), filename: "6795886603-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795886603-3.jpg"), filename: "6795886603-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795886603-4.jpg"), filename: "6795886603-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795886603-5.jpg"), filename: "6795886603-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795886603-6.jpg"), filename: "6795886603-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795886603-0.jpg"), filename: "6795886603-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795886603-1.jpg"), filename: "6795886603-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795886603-2.jpg"), filename: "6795886603-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795886603-3.jpg"), filename: "6795886603-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795886603-4.jpg"), filename: "6795886603-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795886603-5.jpg"), filename: "6795886603-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795886603-6.jpg"), filename: "6795886603-6.jpg") if product
 
             product = Product.create(
                {
@@ -12389,10 +12388,10 @@ sno sbow shoe shoes snowshoe jr junior cabin trail hike",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799124885-0.jpg"), filename: "6799124885-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799124885-1.jpg"), filename: "6799124885-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799124885-2.jpg"), filename: "6799124885-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799124885-3.jpg"), filename: "6799124885-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799124885-0.jpg"), filename: "6799124885-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799124885-1.jpg"), filename: "6799124885-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799124885-2.jpg"), filename: "6799124885-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799124885-3.jpg"), filename: "6799124885-3.jpg") if product
 
             product = Product.create(
                {
@@ -12410,13 +12409,13 @@ Michigan style wood wooden snow sno snowshoe snowshoes snoe shoes alaska japan a
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795890675-0.jpg"), filename: "6795890675-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795890675-1.jpg"), filename: "6795890675-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795890675-2.jpg"), filename: "6795890675-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795890675-3.jpg"), filename: "6795890675-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795890675-4.jpg"), filename: "6795890675-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795890675-5.jpg"), filename: "6795890675-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795890675-6.jpg"), filename: "6795890675-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795890675-0.jpg"), filename: "6795890675-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795890675-1.jpg"), filename: "6795890675-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795890675-2.jpg"), filename: "6795890675-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795890675-3.jpg"), filename: "6795890675-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795890675-4.jpg"), filename: "6795890675-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795890675-5.jpg"), filename: "6795890675-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795890675-6.jpg"), filename: "6795890675-6.jpg") if product
 
             product = Product.create(
                {
@@ -12436,13 +12435,13 @@ race racing car cars sport decor decorate stock  decorations pillows pillows sea
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795526179-0.jpg"), filename: "6795526179-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795526179-1.jpg"), filename: "6795526179-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795526179-2.jpg"), filename: "6795526179-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795526179-3.jpg"), filename: "6795526179-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795526179-4.jpg"), filename: "6795526179-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795526179-5.jpg"), filename: "6795526179-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795526179-6.jpg"), filename: "6795526179-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795526179-0.jpg"), filename: "6795526179-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795526179-1.jpg"), filename: "6795526179-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795526179-2.jpg"), filename: "6795526179-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795526179-3.jpg"), filename: "6795526179-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795526179-4.jpg"), filename: "6795526179-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795526179-5.jpg"), filename: "6795526179-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795526179-6.jpg"), filename: "6795526179-6.jpg") if product
 
             product = Product.create(
                {
@@ -12460,13 +12459,13 @@ golf golfing bag cart course professional june 14 2015",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795527153-0.jpg"), filename: "6795527153-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795527153-1.jpg"), filename: "6795527153-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795527153-2.jpg"), filename: "6795527153-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795527153-3.jpg"), filename: "6795527153-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795527153-4.jpg"), filename: "6795527153-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795527153-5.jpg"), filename: "6795527153-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6795527153-6.jpg"), filename: "6795527153-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795527153-0.jpg"), filename: "6795527153-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795527153-1.jpg"), filename: "6795527153-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795527153-2.jpg"), filename: "6795527153-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795527153-3.jpg"), filename: "6795527153-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795527153-4.jpg"), filename: "6795527153-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795527153-5.jpg"), filename: "6795527153-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6795527153-6.jpg"), filename: "6795527153-6.jpg") if product
 
             product = Product.create(
                {
@@ -12483,13 +12482,13 @@ cabin rustic old vintage vnt antique fish fishing pole  rod gear tackle metal st
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6797190608-0.jpg"), filename: "6797190608-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6797190608-1.jpg"), filename: "6797190608-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6797190608-2.jpg"), filename: "6797190608-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6797190608-3.jpg"), filename: "6797190608-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6797190608-4.jpg"), filename: "6797190608-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6797190608-5.jpg"), filename: "6797190608-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6797190608-6.jpg"), filename: "6797190608-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797190608-0.jpg"), filename: "6797190608-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797190608-1.jpg"), filename: "6797190608-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797190608-2.jpg"), filename: "6797190608-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797190608-3.jpg"), filename: "6797190608-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797190608-4.jpg"), filename: "6797190608-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797190608-5.jpg"), filename: "6797190608-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797190608-6.jpg"), filename: "6797190608-6.jpg") if product
 
             product = Product.create(
                {
@@ -12510,11 +12509,11 @@ Everything is in good shape.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6806230304-0.jpg"), filename: "6806230304-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6806230304-1.jpg"), filename: "6806230304-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6806230304-2.jpg"), filename: "6806230304-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6806230304-3.jpg"), filename: "6806230304-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6806230304-4.jpg"), filename: "6806230304-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806230304-0.jpg"), filename: "6806230304-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806230304-1.jpg"), filename: "6806230304-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806230304-2.jpg"), filename: "6806230304-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806230304-3.jpg"), filename: "6806230304-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806230304-4.jpg"), filename: "6806230304-4.jpg") if product
 
             product = Product.create(
                {
@@ -12528,9 +12527,9 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810778763-0.jpg"), filename: "6810778763-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810778763-1.jpg"), filename: "6810778763-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810778763-2.jpg"), filename: "6810778763-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810778763-0.jpg"), filename: "6810778763-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810778763-1.jpg"), filename: "6810778763-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810778763-2.jpg"), filename: "6810778763-2.jpg") if product
 
             product = Product.create(
                {
@@ -12583,13 +12582,13 @@ Easy to assemble, intuitive to ride, and an all around blast. Can&apos;t stop ri
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6807099346-0.jpg"), filename: "6807099346-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6807099346-1.jpg"), filename: "6807099346-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6807099346-2.jpg"), filename: "6807099346-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6807099346-3.jpg"), filename: "6807099346-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6807099346-4.jpg"), filename: "6807099346-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6807099346-5.jpg"), filename: "6807099346-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6807099346-6.jpg"), filename: "6807099346-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807099346-0.jpg"), filename: "6807099346-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807099346-1.jpg"), filename: "6807099346-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807099346-2.jpg"), filename: "6807099346-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807099346-3.jpg"), filename: "6807099346-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807099346-4.jpg"), filename: "6807099346-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807099346-5.jpg"), filename: "6807099346-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807099346-6.jpg"), filename: "6807099346-6.jpg") if product
 
             product = Product.create(
                {
@@ -12636,10 +12635,10 @@ Retailed for $110.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6797430413-0.jpg"), filename: "6797430413-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6797430413-1.jpg"), filename: "6797430413-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6797430413-2.jpg"), filename: "6797430413-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6797430413-3.jpg"), filename: "6797430413-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797430413-0.jpg"), filename: "6797430413-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797430413-1.jpg"), filename: "6797430413-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797430413-2.jpg"), filename: "6797430413-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6797430413-3.jpg"), filename: "6797430413-3.jpg") if product
 
             product = Product.create(
                {
@@ -12653,7 +12652,7 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6806472222-0.jpg"), filename: "6806472222-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806472222-0.jpg"), filename: "6806472222-0.jpg") if product
 
             product = Product.create(
                {
@@ -12695,8 +12694,8 @@ Colour Shown: Deep Royal Blue/Noble Red/Noble Red/University Gold<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6788341974-0.jpg"), filename: "6788341974-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6788341974-1.jpg"), filename: "6788341974-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6788341974-0.jpg"), filename: "6788341974-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6788341974-1.jpg"), filename: "6788341974-1.jpg") if product
 
             product = Product.create(
                {
@@ -12710,9 +12709,9 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805999082-0.jpg"), filename: "6805999082-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805999082-1.jpg"), filename: "6805999082-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805999082-2.jpg"), filename: "6805999082-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805999082-0.jpg"), filename: "6805999082-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805999082-1.jpg"), filename: "6805999082-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805999082-2.jpg"), filename: "6805999082-2.jpg") if product
 
             product = Product.create(
                {
@@ -12728,9 +12727,9 @@ $20",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810777579-0.jpg"), filename: "6810777579-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810777579-1.jpg"), filename: "6810777579-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810777579-2.jpg"), filename: "6810777579-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810777579-0.jpg"), filename: "6810777579-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810777579-1.jpg"), filename: "6810777579-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810777579-2.jpg"), filename: "6810777579-2.jpg") if product
 
             product = Product.create(
                {
@@ -12748,10 +12747,10 @@ For more information please click: https://www.backcountry.com/big-agnes-copper-
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810776023-0.jpg"), filename: "6810776023-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810776023-1.jpg"), filename: "6810776023-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810776023-2.jpg"), filename: "6810776023-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810776023-3.jpg"), filename: "6810776023-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810776023-0.jpg"), filename: "6810776023-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810776023-1.jpg"), filename: "6810776023-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810776023-2.jpg"), filename: "6810776023-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810776023-3.jpg"), filename: "6810776023-3.jpg") if product
 
             product = Product.create(
                {
@@ -12765,12 +12764,12 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810775829-0.jpg"), filename: "6810775829-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810775829-1.jpg"), filename: "6810775829-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810775829-2.jpg"), filename: "6810775829-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810775829-3.jpg"), filename: "6810775829-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810775829-4.jpg"), filename: "6810775829-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810775829-5.jpg"), filename: "6810775829-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810775829-0.jpg"), filename: "6810775829-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810775829-1.jpg"), filename: "6810775829-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810775829-2.jpg"), filename: "6810775829-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810775829-3.jpg"), filename: "6810775829-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810775829-4.jpg"), filename: "6810775829-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810775829-5.jpg"), filename: "6810775829-5.jpg") if product
 
             product = Product.create(
                {
@@ -12786,9 +12785,9 @@ $10",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810775819-0.jpg"), filename: "6810775819-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810775819-1.jpg"), filename: "6810775819-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810775819-2.jpg"), filename: "6810775819-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810775819-0.jpg"), filename: "6810775819-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810775819-1.jpg"), filename: "6810775819-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810775819-2.jpg"), filename: "6810775819-2.jpg") if product
 
             product = Product.create(
                {
@@ -12810,13 +12809,13 @@ I&apos;d say if your around 175ish and 5&apos;10 or shorter it&apos;ll b perfect
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810773553-0.jpg"), filename: "6810773553-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810773553-1.jpg"), filename: "6810773553-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810773553-2.jpg"), filename: "6810773553-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810773553-3.jpg"), filename: "6810773553-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810773553-4.jpg"), filename: "6810773553-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810773553-5.jpg"), filename: "6810773553-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810773553-6.jpg"), filename: "6810773553-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810773553-0.jpg"), filename: "6810773553-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810773553-1.jpg"), filename: "6810773553-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810773553-2.jpg"), filename: "6810773553-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810773553-3.jpg"), filename: "6810773553-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810773553-4.jpg"), filename: "6810773553-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810773553-5.jpg"), filename: "6810773553-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810773553-6.jpg"), filename: "6810773553-6.jpg") if product
 
             product = Product.create(
                {
@@ -12830,13 +12829,13 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805879097-0.jpg"), filename: "6805879097-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805879097-1.jpg"), filename: "6805879097-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805879097-2.jpg"), filename: "6805879097-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805879097-3.jpg"), filename: "6805879097-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805879097-4.jpg"), filename: "6805879097-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805879097-5.jpg"), filename: "6805879097-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805879097-6.jpg"), filename: "6805879097-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805879097-0.jpg"), filename: "6805879097-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805879097-1.jpg"), filename: "6805879097-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805879097-2.jpg"), filename: "6805879097-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805879097-3.jpg"), filename: "6805879097-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805879097-4.jpg"), filename: "6805879097-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805879097-5.jpg"), filename: "6805879097-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805879097-6.jpg"), filename: "6805879097-6.jpg") if product
 
             product = Product.create(
                {
@@ -12850,8 +12849,8 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810774009-0.jpg"), filename: "6810774009-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810774009-1.jpg"), filename: "6810774009-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810774009-0.jpg"), filename: "6810774009-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810774009-1.jpg"), filename: "6810774009-1.jpg") if product
 
             product = Product.create(
                {
@@ -12865,8 +12864,8 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805906265-0.jpg"), filename: "6805906265-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805906265-1.jpg"), filename: "6805906265-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805906265-0.jpg"), filename: "6805906265-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805906265-1.jpg"), filename: "6805906265-1.jpg") if product
 
             product = Product.create(
                {
@@ -12881,8 +12880,8 @@ $100 obo",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810773067-0.jpg"), filename: "6810773067-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810773067-1.jpg"), filename: "6810773067-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810773067-0.jpg"), filename: "6810773067-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810773067-1.jpg"), filename: "6810773067-1.jpg") if product
 
             product = Product.create(
                {
@@ -12896,7 +12895,7 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6807929139-0.jpg"), filename: "6807929139-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807929139-0.jpg"), filename: "6807929139-0.jpg") if product
 
             product = Product.create(
                {
@@ -12915,11 +12914,11 @@ going with shorter skis and poles now so only reason I am selling them",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810772765-0.jpg"), filename: "6810772765-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810772765-1.jpg"), filename: "6810772765-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810772765-2.jpg"), filename: "6810772765-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810772765-3.jpg"), filename: "6810772765-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810772765-4.jpg"), filename: "6810772765-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810772765-0.jpg"), filename: "6810772765-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810772765-1.jpg"), filename: "6810772765-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810772765-2.jpg"), filename: "6810772765-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810772765-3.jpg"), filename: "6810772765-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810772765-4.jpg"), filename: "6810772765-4.jpg") if product
 
             product = Product.create(
                {
@@ -12935,12 +12934,12 @@ The Red dragon has her chin broken, photo #5, it is made of styrofoam, a drop of
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6803837442-0.jpg"), filename: "6803837442-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6803837442-1.jpg"), filename: "6803837442-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6803837442-2.jpg"), filename: "6803837442-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6803837442-3.jpg"), filename: "6803837442-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6803837442-4.jpg"), filename: "6803837442-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6803837442-5.jpg"), filename: "6803837442-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803837442-0.jpg"), filename: "6803837442-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803837442-1.jpg"), filename: "6803837442-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803837442-2.jpg"), filename: "6803837442-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803837442-3.jpg"), filename: "6803837442-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803837442-4.jpg"), filename: "6803837442-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803837442-5.jpg"), filename: "6803837442-5.jpg") if product
 
             product = Product.create(
                {
@@ -12958,12 +12957,12 @@ All of $40 or OBO, the address is a pickup location only.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6803845188-0.jpg"), filename: "6803845188-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6803845188-1.jpg"), filename: "6803845188-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6803845188-2.jpg"), filename: "6803845188-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6803845188-3.jpg"), filename: "6803845188-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6803845188-4.jpg"), filename: "6803845188-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6803845188-5.jpg"), filename: "6803845188-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803845188-0.jpg"), filename: "6803845188-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803845188-1.jpg"), filename: "6803845188-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803845188-2.jpg"), filename: "6803845188-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803845188-3.jpg"), filename: "6803845188-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803845188-4.jpg"), filename: "6803845188-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6803845188-5.jpg"), filename: "6803845188-5.jpg") if product
 
             product = Product.create(
                {
@@ -12978,9 +12977,9 @@ They&apos;re set up for SRAM. Good condition.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810772316-0.jpg"), filename: "6810772316-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810772316-1.jpg"), filename: "6810772316-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810772316-2.jpg"), filename: "6810772316-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810772316-0.jpg"), filename: "6810772316-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810772316-1.jpg"), filename: "6810772316-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810772316-2.jpg"), filename: "6810772316-2.jpg") if product
 
             product = Product.create(
                {
@@ -12998,7 +12997,7 @@ Jack<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810772127-0.jpg"), filename: "6810772127-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810772127-0.jpg"), filename: "6810772127-0.jpg") if product
 
             product = Product.create(
                {
@@ -13020,7 +13019,7 @@ Wrist, elbow, and knee guards included",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6809218967-0.jpg"), filename: "6809218967-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6809218967-0.jpg"), filename: "6809218967-0.jpg") if product
 
             product = Product.create(
                {
@@ -13034,7 +13033,7 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810771209-0.jpg"), filename: "6810771209-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810771209-0.jpg"), filename: "6810771209-0.jpg") if product
 
             product = Product.create(
                {
@@ -13048,13 +13047,13 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810770986-0.jpg"), filename: "6810770986-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810770986-1.jpg"), filename: "6810770986-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810770986-2.jpg"), filename: "6810770986-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810770986-3.jpg"), filename: "6810770986-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810770986-4.jpg"), filename: "6810770986-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810770986-5.jpg"), filename: "6810770986-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810770986-6.jpg"), filename: "6810770986-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810770986-0.jpg"), filename: "6810770986-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810770986-1.jpg"), filename: "6810770986-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810770986-2.jpg"), filename: "6810770986-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810770986-3.jpg"), filename: "6810770986-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810770986-4.jpg"), filename: "6810770986-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810770986-5.jpg"), filename: "6810770986-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810770986-6.jpg"), filename: "6810770986-6.jpg") if product
 
             product = Product.create(
                {
@@ -13068,10 +13067,10 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810770839-0.jpg"), filename: "6810770839-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810770839-1.jpg"), filename: "6810770839-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810770839-2.jpg"), filename: "6810770839-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810770839-3.jpg"), filename: "6810770839-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810770839-0.jpg"), filename: "6810770839-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810770839-1.jpg"), filename: "6810770839-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810770839-2.jpg"), filename: "6810770839-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810770839-3.jpg"), filename: "6810770839-3.jpg") if product
 
             product = Product.create(
                {
@@ -13092,13 +13091,13 @@ keywords: Lynx USA, Lynx Iron Set,",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767602-0.jpg"), filename: "6810767602-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767602-1.jpg"), filename: "6810767602-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767602-2.jpg"), filename: "6810767602-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767602-3.jpg"), filename: "6810767602-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767602-4.jpg"), filename: "6810767602-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767602-5.jpg"), filename: "6810767602-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767602-6.jpg"), filename: "6810767602-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767602-0.jpg"), filename: "6810767602-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767602-1.jpg"), filename: "6810767602-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767602-2.jpg"), filename: "6810767602-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767602-3.jpg"), filename: "6810767602-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767602-4.jpg"), filename: "6810767602-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767602-5.jpg"), filename: "6810767602-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767602-6.jpg"), filename: "6810767602-6.jpg") if product
 
             product = Product.create(
                {
@@ -13115,12 +13114,12 @@ used but in really good condition<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810770152-0.jpg"), filename: "6810770152-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810770152-1.jpg"), filename: "6810770152-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810770152-2.jpg"), filename: "6810770152-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810770152-3.jpg"), filename: "6810770152-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810770152-4.jpg"), filename: "6810770152-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810770152-5.jpg"), filename: "6810770152-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810770152-0.jpg"), filename: "6810770152-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810770152-1.jpg"), filename: "6810770152-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810770152-2.jpg"), filename: "6810770152-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810770152-3.jpg"), filename: "6810770152-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810770152-4.jpg"), filename: "6810770152-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810770152-5.jpg"), filename: "6810770152-5.jpg") if product
 
             product = Product.create(
                {
@@ -13134,11 +13133,11 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810770065-0.jpg"), filename: "6810770065-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810770065-1.jpg"), filename: "6810770065-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810770065-2.jpg"), filename: "6810770065-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810770065-3.jpg"), filename: "6810770065-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810770065-4.jpg"), filename: "6810770065-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810770065-0.jpg"), filename: "6810770065-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810770065-1.jpg"), filename: "6810770065-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810770065-2.jpg"), filename: "6810770065-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810770065-3.jpg"), filename: "6810770065-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810770065-4.jpg"), filename: "6810770065-4.jpg") if product
 
             product = Product.create(
                {
@@ -13160,7 +13159,7 @@ Thank you.<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799343313-0.jpg"), filename: "6799343313-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799343313-0.jpg"), filename: "6799343313-0.jpg") if product
 
             product = Product.create(
                {
@@ -13183,9 +13182,9 @@ Thank you.<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799345104-0.jpg"), filename: "6799345104-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799345104-1.jpg"), filename: "6799345104-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799345104-2.jpg"), filename: "6799345104-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799345104-0.jpg"), filename: "6799345104-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799345104-1.jpg"), filename: "6799345104-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799345104-2.jpg"), filename: "6799345104-2.jpg") if product
 
             product = Product.create(
                {
@@ -13199,9 +13198,9 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799337538-0.jpg"), filename: "6799337538-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799337538-1.jpg"), filename: "6799337538-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799337538-2.jpg"), filename: "6799337538-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799337538-0.jpg"), filename: "6799337538-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799337538-1.jpg"), filename: "6799337538-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799337538-2.jpg"), filename: "6799337538-2.jpg") if product
 
             product = Product.create(
                {
@@ -13217,11 +13216,11 @@ Local pick up only.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799337273-0.jpg"), filename: "6799337273-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799337273-1.jpg"), filename: "6799337273-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799337273-2.jpg"), filename: "6799337273-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799337273-3.jpg"), filename: "6799337273-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799337273-4.jpg"), filename: "6799337273-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799337273-0.jpg"), filename: "6799337273-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799337273-1.jpg"), filename: "6799337273-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799337273-2.jpg"), filename: "6799337273-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799337273-3.jpg"), filename: "6799337273-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799337273-4.jpg"), filename: "6799337273-4.jpg") if product
 
             product = Product.create(
                {
@@ -13240,13 +13239,13 @@ Local pick only.<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6796600610-0.jpg"), filename: "6796600610-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6796600610-1.jpg"), filename: "6796600610-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6796600610-2.jpg"), filename: "6796600610-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6796600610-3.jpg"), filename: "6796600610-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6796600610-4.jpg"), filename: "6796600610-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6796600610-5.jpg"), filename: "6796600610-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6796600610-6.jpg"), filename: "6796600610-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796600610-0.jpg"), filename: "6796600610-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796600610-1.jpg"), filename: "6796600610-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796600610-2.jpg"), filename: "6796600610-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796600610-3.jpg"), filename: "6796600610-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796600610-4.jpg"), filename: "6796600610-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796600610-5.jpg"), filename: "6796600610-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796600610-6.jpg"), filename: "6796600610-6.jpg") if product
 
             product = Product.create(
                {
@@ -13265,12 +13264,12 @@ $50 all 3<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6796870680-0.jpg"), filename: "6796870680-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6796870680-1.jpg"), filename: "6796870680-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6796870680-2.jpg"), filename: "6796870680-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6796870680-3.jpg"), filename: "6796870680-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6796870680-4.jpg"), filename: "6796870680-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6796870680-5.jpg"), filename: "6796870680-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796870680-0.jpg"), filename: "6796870680-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796870680-1.jpg"), filename: "6796870680-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796870680-2.jpg"), filename: "6796870680-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796870680-3.jpg"), filename: "6796870680-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796870680-4.jpg"), filename: "6796870680-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6796870680-5.jpg"), filename: "6796870680-5.jpg") if product
 
             product = Product.create(
                {
@@ -13288,9 +13287,9 @@ Almost brand new.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799337190-0.jpg"), filename: "6799337190-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799337190-1.jpg"), filename: "6799337190-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6799337190-2.jpg"), filename: "6799337190-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799337190-0.jpg"), filename: "6799337190-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799337190-1.jpg"), filename: "6799337190-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6799337190-2.jpg"), filename: "6799337190-2.jpg") if product
 
             product = Product.create(
                {
@@ -13304,11 +13303,11 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805851069-0.jpg"), filename: "6805851069-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805851069-1.jpg"), filename: "6805851069-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805851069-2.jpg"), filename: "6805851069-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805851069-3.jpg"), filename: "6805851069-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805851069-4.jpg"), filename: "6805851069-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805851069-0.jpg"), filename: "6805851069-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805851069-1.jpg"), filename: "6805851069-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805851069-2.jpg"), filename: "6805851069-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805851069-3.jpg"), filename: "6805851069-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805851069-4.jpg"), filename: "6805851069-4.jpg") if product
 
             product = Product.create(
                {
@@ -13326,7 +13325,7 @@ Jack",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810769635-0.jpg"), filename: "6810769635-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810769635-0.jpg"), filename: "6810769635-0.jpg") if product
 
             product = Product.create(
                {
@@ -13344,13 +13343,13 @@ stands are gray metal",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6807142765-0.jpg"), filename: "6807142765-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6807142765-1.jpg"), filename: "6807142765-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6807142765-2.jpg"), filename: "6807142765-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6807142765-3.jpg"), filename: "6807142765-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6807142765-4.jpg"), filename: "6807142765-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6807142765-5.jpg"), filename: "6807142765-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6807142765-6.jpg"), filename: "6807142765-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807142765-0.jpg"), filename: "6807142765-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807142765-1.jpg"), filename: "6807142765-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807142765-2.jpg"), filename: "6807142765-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807142765-3.jpg"), filename: "6807142765-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807142765-4.jpg"), filename: "6807142765-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807142765-5.jpg"), filename: "6807142765-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807142765-6.jpg"), filename: "6807142765-6.jpg") if product
 
             product = Product.create(
                {
@@ -13366,7 +13365,7 @@ Currently selling for $700 something at Backcountry",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810769469-0.jpg"), filename: "6810769469-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810769469-0.jpg"), filename: "6810769469-0.jpg") if product
 
             product = Product.create(
                {
@@ -13392,7 +13391,7 @@ Make a cash offer for all or individual items.<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6800537122-0.jpg"), filename: "6800537122-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6800537122-0.jpg"), filename: "6800537122-0.jpg") if product
 
             product = Product.create(
                {
@@ -13409,8 +13408,8 @@ Rogue fitness again faster dumbbell kettlebell barbell bumper plate barbell squa
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6798608830-0.jpg"), filename: "6798608830-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6798608830-1.jpg"), filename: "6798608830-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798608830-0.jpg"), filename: "6798608830-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6798608830-1.jpg"), filename: "6798608830-1.jpg") if product
 
             product = Product.create(
                {
@@ -13424,13 +13423,13 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805678808-0.jpg"), filename: "6805678808-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805678808-1.jpg"), filename: "6805678808-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805678808-2.jpg"), filename: "6805678808-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805678808-3.jpg"), filename: "6805678808-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805678808-4.jpg"), filename: "6805678808-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805678808-5.jpg"), filename: "6805678808-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805678808-6.jpg"), filename: "6805678808-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805678808-0.jpg"), filename: "6805678808-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805678808-1.jpg"), filename: "6805678808-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805678808-2.jpg"), filename: "6805678808-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805678808-3.jpg"), filename: "6805678808-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805678808-4.jpg"), filename: "6805678808-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805678808-5.jpg"), filename: "6805678808-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805678808-6.jpg"), filename: "6805678808-6.jpg") if product
 
             product = Product.create(
                {
@@ -13444,9 +13443,9 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805678506-0.jpg"), filename: "6805678506-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805678506-1.jpg"), filename: "6805678506-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805678506-2.jpg"), filename: "6805678506-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805678506-0.jpg"), filename: "6805678506-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805678506-1.jpg"), filename: "6805678506-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805678506-2.jpg"), filename: "6805678506-2.jpg") if product
 
             product = Product.create(
                {
@@ -13460,9 +13459,9 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805675537-0.jpg"), filename: "6805675537-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805675537-1.jpg"), filename: "6805675537-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805675537-2.jpg"), filename: "6805675537-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805675537-0.jpg"), filename: "6805675537-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805675537-1.jpg"), filename: "6805675537-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805675537-2.jpg"), filename: "6805675537-2.jpg") if product
 
             product = Product.create(
                {
@@ -13476,11 +13475,11 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805675448-0.jpg"), filename: "6805675448-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805675448-1.jpg"), filename: "6805675448-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805675448-2.jpg"), filename: "6805675448-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805675448-3.jpg"), filename: "6805675448-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805675448-4.jpg"), filename: "6805675448-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805675448-0.jpg"), filename: "6805675448-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805675448-1.jpg"), filename: "6805675448-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805675448-2.jpg"), filename: "6805675448-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805675448-3.jpg"), filename: "6805675448-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805675448-4.jpg"), filename: "6805675448-4.jpg") if product
 
             product = Product.create(
                {
@@ -13496,9 +13495,9 @@ Navy and red color. Has a lot of zipped pockets. Size X-XL.<br>",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787918787-0.jpg"), filename: "6787918787-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787918787-1.jpg"), filename: "6787918787-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6787918787-2.jpg"), filename: "6787918787-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787918787-0.jpg"), filename: "6787918787-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787918787-1.jpg"), filename: "6787918787-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6787918787-2.jpg"), filename: "6787918787-2.jpg") if product
 
             product = Product.create(
                {
@@ -13512,7 +13511,7 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767697-0.jpg"), filename: "6810767697-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767697-0.jpg"), filename: "6810767697-0.jpg") if product
 
             product = Product.create(
                {
@@ -13527,7 +13526,7 @@ Only one pair left",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767566-0.jpg"), filename: "6810767566-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767566-0.jpg"), filename: "6810767566-0.jpg") if product
 
             product = Product.create(
                {
@@ -13548,7 +13547,7 @@ If the ad is still up it&apos;s still available",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767492-0.jpg"), filename: "6810767492-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767492-0.jpg"), filename: "6810767492-0.jpg") if product
 
             product = Product.create(
                {
@@ -13567,11 +13566,11 @@ $60",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767448-0.jpg"), filename: "6810767448-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767448-1.jpg"), filename: "6810767448-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767448-2.jpg"), filename: "6810767448-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767448-3.jpg"), filename: "6810767448-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767448-4.jpg"), filename: "6810767448-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767448-0.jpg"), filename: "6810767448-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767448-1.jpg"), filename: "6810767448-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767448-2.jpg"), filename: "6810767448-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767448-3.jpg"), filename: "6810767448-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767448-4.jpg"), filename: "6810767448-4.jpg") if product
 
             product = Product.create(
                {
@@ -13585,10 +13584,10 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6807136343-0.jpg"), filename: "6807136343-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6807136343-1.jpg"), filename: "6807136343-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6807136343-2.jpg"), filename: "6807136343-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6807136343-3.jpg"), filename: "6807136343-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807136343-0.jpg"), filename: "6807136343-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807136343-1.jpg"), filename: "6807136343-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807136343-2.jpg"), filename: "6807136343-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6807136343-3.jpg"), filename: "6807136343-3.jpg") if product
 
             product = Product.create(
                {
@@ -13613,13 +13612,13 @@ Radius:	19m@184cm<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767336-0.jpg"), filename: "6810767336-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767336-1.jpg"), filename: "6810767336-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767336-2.jpg"), filename: "6810767336-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767336-3.jpg"), filename: "6810767336-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767336-4.jpg"), filename: "6810767336-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767336-5.jpg"), filename: "6810767336-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767336-6.jpg"), filename: "6810767336-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767336-0.jpg"), filename: "6810767336-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767336-1.jpg"), filename: "6810767336-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767336-2.jpg"), filename: "6810767336-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767336-3.jpg"), filename: "6810767336-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767336-4.jpg"), filename: "6810767336-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767336-5.jpg"), filename: "6810767336-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767336-6.jpg"), filename: "6810767336-6.jpg") if product
 
             product = Product.create(
                {
@@ -13633,9 +13632,9 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6793827699-0.jpg"), filename: "6793827699-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6793827699-1.jpg"), filename: "6793827699-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6793827699-2.jpg"), filename: "6793827699-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793827699-0.jpg"), filename: "6793827699-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793827699-1.jpg"), filename: "6793827699-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6793827699-2.jpg"), filename: "6793827699-2.jpg") if product
 
             product = Product.create(
                {
@@ -13651,12 +13650,12 @@ I can include a bag for it too...not pretty but fully functional.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767030-0.jpg"), filename: "6810767030-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767030-1.jpg"), filename: "6810767030-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767030-2.jpg"), filename: "6810767030-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767030-3.jpg"), filename: "6810767030-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767030-4.jpg"), filename: "6810767030-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767030-5.jpg"), filename: "6810767030-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767030-0.jpg"), filename: "6810767030-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767030-1.jpg"), filename: "6810767030-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767030-2.jpg"), filename: "6810767030-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767030-3.jpg"), filename: "6810767030-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767030-4.jpg"), filename: "6810767030-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767030-5.jpg"), filename: "6810767030-5.jpg") if product
 
             product = Product.create(
                {
@@ -13682,11 +13681,11 @@ Cheers!",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767161-0.jpg"), filename: "6810767161-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767161-1.jpg"), filename: "6810767161-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767161-2.jpg"), filename: "6810767161-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767161-3.jpg"), filename: "6810767161-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810767161-4.jpg"), filename: "6810767161-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767161-0.jpg"), filename: "6810767161-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767161-1.jpg"), filename: "6810767161-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767161-2.jpg"), filename: "6810767161-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767161-3.jpg"), filename: "6810767161-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810767161-4.jpg"), filename: "6810767161-4.jpg") if product
 
             product = Product.create(
                {
@@ -13700,12 +13699,12 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6789159829-0.jpg"), filename: "6789159829-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6789159829-1.jpg"), filename: "6789159829-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6789159829-2.jpg"), filename: "6789159829-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6789159829-3.jpg"), filename: "6789159829-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6789159829-4.jpg"), filename: "6789159829-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6789159829-5.jpg"), filename: "6789159829-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6789159829-0.jpg"), filename: "6789159829-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6789159829-1.jpg"), filename: "6789159829-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6789159829-2.jpg"), filename: "6789159829-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6789159829-3.jpg"), filename: "6789159829-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6789159829-4.jpg"), filename: "6789159829-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6789159829-5.jpg"), filename: "6789159829-5.jpg") if product
 
             product = Product.create(
                {
@@ -13733,9 +13732,9 @@ No spikes included",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6806112953-0.jpg"), filename: "6806112953-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6806112953-1.jpg"), filename: "6806112953-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6806112953-2.jpg"), filename: "6806112953-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806112953-0.jpg"), filename: "6806112953-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806112953-1.jpg"), filename: "6806112953-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6806112953-2.jpg"), filename: "6806112953-2.jpg") if product
 
             product = Product.create(
                {
@@ -13756,7 +13755,7 @@ Removable snow baskets keep poles afloat atop deep powder",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810766501-0.jpg"), filename: "6810766501-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810766501-0.jpg"), filename: "6810766501-0.jpg") if product
 
             product = Product.create(
                {
@@ -13770,8 +13769,8 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810765961-0.jpg"), filename: "6810765961-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810765961-1.jpg"), filename: "6810765961-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810765961-0.jpg"), filename: "6810765961-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810765961-1.jpg"), filename: "6810765961-1.jpg") if product
 
             product = Product.create(
                {
@@ -13785,11 +13784,11 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810765851-0.jpg"), filename: "6810765851-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810765851-1.jpg"), filename: "6810765851-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810765851-2.jpg"), filename: "6810765851-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810765851-3.jpg"), filename: "6810765851-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810765851-4.jpg"), filename: "6810765851-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810765851-0.jpg"), filename: "6810765851-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810765851-1.jpg"), filename: "6810765851-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810765851-2.jpg"), filename: "6810765851-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810765851-3.jpg"), filename: "6810765851-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810765851-4.jpg"), filename: "6810765851-4.jpg") if product
 
             product = Product.create(
                {
@@ -13818,12 +13817,12 @@ See here for more info.  https://www.evo.com/outlet/snowboard-boots/32-focus-boa
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810765426-0.jpg"), filename: "6810765426-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810765426-1.jpg"), filename: "6810765426-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810765426-2.jpg"), filename: "6810765426-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810765426-3.jpg"), filename: "6810765426-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810765426-4.jpg"), filename: "6810765426-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810765426-5.jpg"), filename: "6810765426-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810765426-0.jpg"), filename: "6810765426-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810765426-1.jpg"), filename: "6810765426-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810765426-2.jpg"), filename: "6810765426-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810765426-3.jpg"), filename: "6810765426-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810765426-4.jpg"), filename: "6810765426-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810765426-5.jpg"), filename: "6810765426-5.jpg") if product
 
             product = Product.create(
                {
@@ -13837,11 +13836,11 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810765272-0.jpg"), filename: "6810765272-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810765272-1.jpg"), filename: "6810765272-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810765272-2.jpg"), filename: "6810765272-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810765272-3.jpg"), filename: "6810765272-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810765272-4.jpg"), filename: "6810765272-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810765272-0.jpg"), filename: "6810765272-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810765272-1.jpg"), filename: "6810765272-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810765272-2.jpg"), filename: "6810765272-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810765272-3.jpg"), filename: "6810765272-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810765272-4.jpg"), filename: "6810765272-4.jpg") if product
 
             product = Product.create(
                {
@@ -13858,13 +13857,13 @@ https://global.rakuten.com/en/store/icefield/item/10020989/<br>
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6804458415-0.jpg"), filename: "6804458415-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6804458415-1.jpg"), filename: "6804458415-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6804458415-2.jpg"), filename: "6804458415-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6804458415-3.jpg"), filename: "6804458415-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6804458415-4.jpg"), filename: "6804458415-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6804458415-5.jpg"), filename: "6804458415-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6804458415-6.jpg"), filename: "6804458415-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804458415-0.jpg"), filename: "6804458415-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804458415-1.jpg"), filename: "6804458415-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804458415-2.jpg"), filename: "6804458415-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804458415-3.jpg"), filename: "6804458415-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804458415-4.jpg"), filename: "6804458415-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804458415-5.jpg"), filename: "6804458415-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804458415-6.jpg"), filename: "6804458415-6.jpg") if product
 
             product = Product.create(
                {
@@ -13878,11 +13877,11 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6804867987-0.jpg"), filename: "6804867987-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6804867987-1.jpg"), filename: "6804867987-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6804867987-2.jpg"), filename: "6804867987-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6804867987-3.jpg"), filename: "6804867987-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6804867987-4.jpg"), filename: "6804867987-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804867987-0.jpg"), filename: "6804867987-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804867987-1.jpg"), filename: "6804867987-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804867987-2.jpg"), filename: "6804867987-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804867987-3.jpg"), filename: "6804867987-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6804867987-4.jpg"), filename: "6804867987-4.jpg") if product
 
             product = Product.create(
                {
@@ -13903,13 +13902,13 @@ keywords: Taylormade iron set, Taylormade irons, Taylormade MC Forged",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810759817-0.jpg"), filename: "6810759817-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810759817-1.jpg"), filename: "6810759817-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810759817-2.jpg"), filename: "6810759817-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810759817-3.jpg"), filename: "6810759817-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810759817-4.jpg"), filename: "6810759817-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810759817-5.jpg"), filename: "6810759817-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810759817-6.jpg"), filename: "6810759817-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810759817-0.jpg"), filename: "6810759817-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810759817-1.jpg"), filename: "6810759817-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810759817-2.jpg"), filename: "6810759817-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810759817-3.jpg"), filename: "6810759817-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810759817-4.jpg"), filename: "6810759817-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810759817-5.jpg"), filename: "6810759817-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810759817-6.jpg"), filename: "6810759817-6.jpg") if product
 
             product = Product.create(
                {
@@ -13927,13 +13926,13 @@ https://www.granitegear.com/jackfish.html",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6809167878-0.jpg"), filename: "6809167878-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6809167878-1.jpg"), filename: "6809167878-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6809167878-2.jpg"), filename: "6809167878-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6809167878-3.jpg"), filename: "6809167878-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6809167878-4.jpg"), filename: "6809167878-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6809167878-5.jpg"), filename: "6809167878-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6809167878-6.jpg"), filename: "6809167878-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6809167878-0.jpg"), filename: "6809167878-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6809167878-1.jpg"), filename: "6809167878-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6809167878-2.jpg"), filename: "6809167878-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6809167878-3.jpg"), filename: "6809167878-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6809167878-4.jpg"), filename: "6809167878-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6809167878-5.jpg"), filename: "6809167878-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6809167878-6.jpg"), filename: "6809167878-6.jpg") if product
 
             product = Product.create(
                {
@@ -13947,13 +13946,13 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805666509-0.jpg"), filename: "6805666509-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805666509-1.jpg"), filename: "6805666509-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805666509-2.jpg"), filename: "6805666509-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805666509-3.jpg"), filename: "6805666509-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805666509-4.jpg"), filename: "6805666509-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805666509-5.jpg"), filename: "6805666509-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805666509-6.jpg"), filename: "6805666509-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805666509-0.jpg"), filename: "6805666509-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805666509-1.jpg"), filename: "6805666509-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805666509-2.jpg"), filename: "6805666509-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805666509-3.jpg"), filename: "6805666509-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805666509-4.jpg"), filename: "6805666509-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805666509-5.jpg"), filename: "6805666509-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805666509-6.jpg"), filename: "6805666509-6.jpg") if product
 
             product = Product.create(
                {
@@ -13967,12 +13966,12 @@ product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805663619-0.jpg"), filename: "6805663619-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805663619-1.jpg"), filename: "6805663619-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805663619-2.jpg"), filename: "6805663619-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805663619-3.jpg"), filename: "6805663619-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805663619-4.jpg"), filename: "6805663619-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6805663619-5.jpg"), filename: "6805663619-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805663619-0.jpg"), filename: "6805663619-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805663619-1.jpg"), filename: "6805663619-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805663619-2.jpg"), filename: "6805663619-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805663619-3.jpg"), filename: "6805663619-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805663619-4.jpg"), filename: "6805663619-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6805663619-5.jpg"), filename: "6805663619-5.jpg") if product
 
             product = Product.create(
                {
@@ -13988,8 +13987,8 @@ Fixed Price, Pick Up Only.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810763416-0.jpg"), filename: "6810763416-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810763416-1.jpg"), filename: "6810763416-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810763416-0.jpg"), filename: "6810763416-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810763416-1.jpg"), filename: "6810763416-1.jpg") if product
 
             product = Product.create(
                {
@@ -14008,10 +14007,10 @@ Both for $15. Thanks for your time.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810762933-0.jpg"), filename: "6810762933-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810762933-1.jpg"), filename: "6810762933-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810762933-2.jpg"), filename: "6810762933-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810762933-3.jpg"), filename: "6810762933-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810762933-0.jpg"), filename: "6810762933-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810762933-1.jpg"), filename: "6810762933-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810762933-2.jpg"), filename: "6810762933-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810762933-3.jpg"), filename: "6810762933-3.jpg") if product
 
             product = Product.create(
                {
@@ -14034,13 +14033,13 @@ James",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810762726-0.jpg"), filename: "6810762726-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810762726-1.jpg"), filename: "6810762726-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810762726-2.jpg"), filename: "6810762726-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810762726-3.jpg"), filename: "6810762726-3.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810762726-4.jpg"), filename: "6810762726-4.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810762726-5.jpg"), filename: "6810762726-5.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810762726-6.jpg"), filename: "6810762726-6.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810762726-0.jpg"), filename: "6810762726-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810762726-1.jpg"), filename: "6810762726-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810762726-2.jpg"), filename: "6810762726-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810762726-3.jpg"), filename: "6810762726-3.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810762726-4.jpg"), filename: "6810762726-4.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810762726-5.jpg"), filename: "6810762726-5.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810762726-6.jpg"), filename: "6810762726-6.jpg") if product
 
             product = Product.create(
                {
@@ -14065,9 +14064,9 @@ keywords: kane garden, surfboard, surf, surfing, surfboards, js, robber, lost su
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6809315897-0.jpg"), filename: "6809315897-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6809315897-1.jpg"), filename: "6809315897-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6809315897-2.jpg"), filename: "6809315897-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6809315897-0.jpg"), filename: "6809315897-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6809315897-1.jpg"), filename: "6809315897-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6809315897-2.jpg"), filename: "6809315897-2.jpg") if product
 
             product = Product.create(
                {
@@ -14086,2286 +14085,7 @@ Prices are FIRM. Lowballer emails will be IGNORED. Cash in person only.",
                })
                products << product if product
                
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810762176-0.jpg"), filename: "6810762176-0.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810762176-1.jpg"), filename: "6810762176-1.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810762176-2.jpg"), filename: "6810762176-2.jpg") if product
-product.photos.attach(io: File.open("/Users/steveninouye/Projects/iBuy/seed_data/images/6810762176-3.jpg"), filename: "6810762176-3.jpg") if product
-
-
-category = Category.find_by_name("video gaming")
-unless(category)
-category = Category.create(name: "video gaming")
-end
-
-
-            product = Product.create(
-               {
-                  title: "Nintendo Wii Console + Games + Accessories",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "<br>
-I&apos;m selling the following as a bundle, all in EXCELLENT condition:<br>
-<br>
--Nintendo Wii (white) console + Mario Kart game/steering wheel<br>
--Two sets of controllers<br>
--Classic Controller Pro<br>
--Component Video cable for better graphics quality<br>
--The following games: Super Mario Galaxy, Mario Kart, Super Paper Mario, Punch Out, Metroid Prime, Kirby&apos;s Epic Yarn, FlingSmash.<br>
-<br>
-<br>
-<br>
-<br>
-***IF YOU SEE THIS LISTING, IT IS STILL AVAILABLE***<br>
-***To save time, please just email me your availability and/or any questions, thanks!***<br>
-<br>
-<br>
-<br>",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810712777-0.jpg"), filename: "6810712777-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810712777-1.jpg"), filename: "6810712777-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810712777-2.jpg"), filename: "6810712777-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810712777-3.jpg"), filename: "6810712777-3.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Wii U, excellent condition w/ 40 characters + 6 games",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Nintendo Wii U console, console stand, GamePad, GamePad stand, AC adaptors, 32 GB memory, and sensor bar. All in EXCELLENT condition. Also included:<br>
-<br>
-40 Disney Infinity character including the clear waypoint figure and two brand new characters still in the package<br>
-6 games (Super Mario Maker, Minecraft, Disney Infinity 2.0, Disney Infinity 3.0, Lego Dimensions and Poken Tournament)<br>
-two storage cases<br>
-11 Lego Dimension vehicles<br>
-13 lego Dimension characters.<br>",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805177568-0.jpg"), filename: "6805177568-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805177568-1.jpg"), filename: "6805177568-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805177568-2.jpg"), filename: "6805177568-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805177568-3.jpg"), filename: "6805177568-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805177568-4.jpg"), filename: "6805177568-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805177568-5.jpg"), filename: "6805177568-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805177568-6.jpg"), filename: "6805177568-6.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Fallout 4 Hardcover Survival Guide Collector's Edition",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Book is in very good condition. Kept in non smoking and no pets household.",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6789905049-0.jpg"), filename: "6789905049-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "** Sunset Overdrive! **",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "I am selling a New Sunset Overdrive Day One edition video game for Xbox One for $20. You can call/text me at  <br>
- or you can just reply back. You can also check out other things I&apos;m selling by searching for &quot;218-6478&quot; in the search box.",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800403683-0.jpg"), filename: "6800403683-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800403683-1.jpg"), filename: "6800403683-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800403683-2.jpg"), filename: "6800403683-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6800403683-3.jpg"), filename: "6800403683-3.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "PLAYSTATION 4 PS4 BATTLEFIELD DARTH VADER LIMITED EDITION CONSOLE EXTR",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "From my personal Star Wars collection. This is the ultimate Battlefront PS4 bundle. Up for sale is a brand new in box Star Wars Darth Vader PS4. Comes with a second controller which is NIB, the limited edition rebel numbered headphones NIB, and a Return of the Jedi Collectors Edition magazine from the 80s which I bought myself way back in the day when I was a kid. You won&apos;t be disappointed with this package. Asking $750 for the lot.",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810700382-0.jpg"), filename: "6810700382-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810700382-1.jpg"), filename: "6810700382-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810700382-2.jpg"), filename: "6810700382-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810700382-3.jpg"), filename: "6810700382-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810700382-4.jpg"), filename: "6810700382-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810700382-5.jpg"), filename: "6810700382-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810700382-6.jpg"), filename: "6810700382-6.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "EA Sports Active 2 for Wii",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "<br>
-BRAND NEW, includes accessory<br>
-<br>
-<br>
-<br>
-***IF YOU SEE THIS LISTING, IT IS STILL AVAILABLE***<br>
-***To save time, please just email me your availability and/or any questions, thanks!***<br>
-<br>
-<br>
-<br>",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810699033-0.jpg"), filename: "6810699033-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810699033-1.jpg"), filename: "6810699033-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810699033-2.jpg"), filename: "6810699033-2.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "TV for video games",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Great condition TV for you vide games only asking $30. No shipping",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798960460-0.jpg"), filename: "6798960460-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798960460-1.jpg"), filename: "6798960460-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798960460-2.jpg"), filename: "6798960460-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798960460-3.jpg"), filename: "6798960460-3.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Xbox ONE Games",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "ALL GAMES ARE NEW<br>
-<br>
-FIFA19 - $40<br>
-Madden 19 - $40<br>
-Assassins Creed / Odyssey -$40<br>
-FARCRY 5 - $35<br>
-Call of Duty / Modern Warfare - $35<br>
-The Incredibles / byLego - $35<br>
-Star Wars Battlefront / Ultimate Edition - $30<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-PS4, Xbox, Video",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810698784-0.jpg"), filename: "6810698784-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Two Red Octane DDR mats",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Work great, just don&apos;t use them anymore. Little damage to the top hard plastic of one but fine otherwise.",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810698281-0.jpg"), filename: "6810698281-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810698281-1.jpg"), filename: "6810698281-1.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "New condition Xbox one 500gb",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Like new, barely used.  Comes with two controllers",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810682056-0.jpg"), filename: "6810682056-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810682056-1.jpg"), filename: "6810682056-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810682056-2.jpg"), filename: "6810682056-2.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "The Legend of Zelda - Skyward Sword - Limited Edition",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "<br>
-<br>
-<br>
-Everything included, in LIKE NEW condition.<br>
-<br>
-<br>
-<br>
-***IF YOU SEE THIS LISTING, IT IS STILL AVAILABLE***<br>
-***To save time, please just email me your availability and/or any questions, thanks!***<br>
-<br>
-<br>
-<br>",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810694344-0.jpg"), filename: "6810694344-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810694344-1.jpg"), filename: "6810694344-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810694344-2.jpg"), filename: "6810694344-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810694344-3.jpg"), filename: "6810694344-3.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Nintendo Switch Games",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Nintendo Switch game or games available<br>
-Super Mario Party $45<br>
-Mario Tennis Aces $45<br>
-Both games for $85<br>
-<br>
-These are New unopened games<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-PS4, Xbox, Video",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810692197-0.jpg"), filename: "6810692197-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "XBOX One Logitech G920 Racing Wheel + Pedals + Shifter",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Logitech G920 Racing Wheel; Pedals + Shifter <br>
-<br>
-Everything is in great condition! There is no power cord so you&apos;ll need to purchase that. I have tested it on an XBOX One and it works great. I have no tried it on a computer.<br>
-<br>
-I live in Emeryville and work in San Mateo so I can be flexible on pickup<br>
-<br>
-Please call or text Louis at  
- for more info",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791143361-0.jpg"), filename: "6791143361-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791143361-1.jpg"), filename: "6791143361-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791143361-2.jpg"), filename: "6791143361-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791143361-3.jpg"), filename: "6791143361-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791143361-4.jpg"), filename: "6791143361-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791143361-5.jpg"), filename: "6791143361-5.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Skylanders Giants Game and 43 Figures",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Skylanders PS3 Giants Game and 43 figures.  Includes portal.  Retailed for over $650.00 new.",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797750056-0.jpg"), filename: "6797750056-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797750056-1.jpg"), filename: "6797750056-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797750056-2.jpg"), filename: "6797750056-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797750056-3.jpg"), filename: "6797750056-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797750056-4.jpg"), filename: "6797750056-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797750056-5.jpg"), filename: "6797750056-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6797750056-6.jpg"), filename: "6797750056-6.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Xenoblade Chronicles - Wii",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "<br>
-LIKE NEW<br>
-<br>
-One of the best RPG&apos;s ever.<br>
-<br>
-Includes game disc, case, and documentation<br>
-<br>
-<br>
-<br>
-***IF YOU SEE THIS LISTING, IT IS STILL AVAILABLE***<br>
-***To save time, please just email me your availability and/or any questions, thanks!***<br>
-<br>
-<br>
-<br>",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810688365-0.jpg"), filename: "6810688365-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810688365-1.jpg"), filename: "6810688365-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810688365-2.jpg"), filename: "6810688365-2.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Xbox 360/Wii games",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Xbox 360 and Wii games $7 each game.",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810669167-0.jpg"), filename: "6810669167-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810669167-1.jpg"), filename: "6810669167-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810669167-2.jpg"), filename: "6810669167-2.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Nintendo 3ds good condition with 3 games",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Works good has original box and charger also comes with 3 games for more information please drop a email thanks $70 cash",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790918920-0.jpg"), filename: "6790918920-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790918920-1.jpg"), filename: "6790918920-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790918920-2.jpg"), filename: "6790918920-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790918920-3.jpg"), filename: "6790918920-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790918920-4.jpg"), filename: "6790918920-4.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "The Order: 1886 PS4",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Brand new unopened copy of The Order for PS4. Selling for $20<br>
-<br>
-Willing to meet in Sunnyvale or close surrounding areas. No trades, cash only",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6803572312-0.jpg"), filename: "6803572312-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6803572312-1.jpg"), filename: "6803572312-1.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Stardew Valley XBox One",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Brand new unopened copy of Stardew Valley for the XBox One. Asking $20. <br>
-Willing to meet in Sunnyvale or closer surrounding areas. Cash Only, no trades",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798178734-0.jpg"), filename: "6798178734-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Vintage Saga GENESIS Game counceo & 5 Games",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Vintage Saga GENESIS<br>
-2 controllers..(one has tape on cord didnt break )<br>
-5 Games<br>
-3 with cases",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808091848-0.jpg"), filename: "6808091848-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808091848-1.jpg"), filename: "6808091848-1.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "15 XBOX 360 GAMES",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "16 GREAT GAMES....<br>
-<br>
-Games..",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808091874-0.jpg"), filename: "6808091874-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808091874-1.jpg"), filename: "6808091874-1.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Halo Reach",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Like new condition.",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810672633-0.jpg"), filename: "6810672633-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "[Xbox360] Call of duty Black ops 1, 2, Advanced warfare",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "$10 each.",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810670600-0.jpg"), filename: "6810670600-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Assassin's Creed Black Flag Xbox 360",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Like new condition.",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810667816-0.jpg"), filename: "6810667816-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Original XBOX + 10 Games - Excellent Condition",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Xbox Console (never modded)<br>
-Xbox Remote Control<br>
-10 Games<br>
-<br>
-ESPN NHL 2K5<br>
-Fable Limited Edition Bonus DVD<br>
-Grand Theft Auto San Andreas<br>
-Madden 05<br>
-Madden 07<br>
-MVP Baseball 2005<br>
-NBA Live 2005<br>
-NCAA Football 2005<br>
-Star Wars Knights of the Old Republic<br>
-Tony Hawk&apos;s Underground<br>
-<br>
-Cash Only<br>
-<br>
-<br>
-Video Game Console Video Games Microsoft Xbox",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6803076542-0.jpg"), filename: "6803076542-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "South Park Stick of Truth Xbox 360",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Like new condition",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810664129-0.jpg"), filename: "6810664129-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Nintendo Switch - Let's Go Eevee Bundle",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Brand NEW Nintendo Switch - Let&apos;s Go Eevee Bundle (includes Let&apos;s Go Eevee download code and Pokeball Plus)",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810663751-0.jpg"), filename: "6810663751-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810663751-1.jpg"), filename: "6810663751-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810663751-2.jpg"), filename: "6810663751-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810663751-3.jpg"), filename: "6810663751-3.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Thrustmaster Ferrari 458 Spider Racing Wheel for Xbox One",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Thrustmaster Ferrari 458 Spider Racing Wheel for Xbox One system. Text for faster responses:  
-.<br>
-<br>
-<br>
-https://www.bestbuy.com/site/thrustmaster-ferrari-458-spider-racing-wheel-for-xbox-one-black-red-yellow/4750200.p?skuId=4750200&amp;ref=212&amp;loc=1&amp;ds_rl=1266837&amp;ref=212&amp;loc=1&amp;ds_rl=1269132&amp;ds_rl=1266837&amp;gclid=Cj0KCQiAm5viBRD4ARIsADGUT27agevWP3daE_YuPTxpwSb_4HHExEY8onpxIzs7N7IFEKMb9eVBKf0aAg3qEALw_wcB&amp;gclsrc=aw.ds",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810662105-0.jpg"), filename: "6810662105-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810662105-1.jpg"), filename: "6810662105-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810662105-2.jpg"), filename: "6810662105-2.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Mass Effect trilogy Xbox 360",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Like new condition.",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810661786-0.jpg"), filename: "6810661786-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "* * * *Original Nintendo System * * *NES* * * Over 475 Games* * * *",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Hi,I have a original Nintendo with all the cords and controller and THE CLASSIC Super Mario Bros free! It works excellent and all the cords and controller and game are included all for only 75. I also have a bunch of other games if you want to buy more,over 475 games.Games are different prices most are 9-15 each but I can give a really good deal if you buy a bunch..Please call me at  <br>
- Sean-Thank You and have a wonderful day :)",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807291895-0.jpg"), filename: "6807291895-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807291895-1.jpg"), filename: "6807291895-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807291895-2.jpg"), filename: "6807291895-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807291895-3.jpg"), filename: "6807291895-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807291895-4.jpg"), filename: "6807291895-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807291895-5.jpg"), filename: "6807291895-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807291895-6.jpg"), filename: "6807291895-6.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "*__Sega Genesis Plus Sonic The Hedgehog 2 Included ___**",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Hi, I have a original Sega Genesis System including all the cords and controller.The system is in good condition and works perfect.I will also include one of the funnest Sega titles ever,Sonic the Hedgehog 2.Everything for 29$.I also have extra controllers and other games,Mortal Kombat,Vectorman 1,Vectorman 2,Altered Beast,X-Men,After Burner,Aladdin,Lion King and over 250 more games!...Please call or text  <br>
- Sean-Thank You for looking and Have A Great Day :)",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791318385-0.jpg"), filename: "6791318385-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791318385-1.jpg"), filename: "6791318385-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791318385-2.jpg"), filename: "6791318385-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791318385-3.jpg"), filename: "6791318385-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791318385-4.jpg"), filename: "6791318385-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791318385-5.jpg"), filename: "6791318385-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791318385-6.jpg"), filename: "6791318385-6.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Nintendoland Wii U game",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Nintendoland Wii U game in excellent condition. Wonderful family and multiplayer game. Asking only $10<br>
-Text preferred  
-<br>
-Smoke free and pet free home",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810649763-0.jpg"), filename: "6810649763-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810649763-1.jpg"), filename: "6810649763-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810649763-2.jpg"), filename: "6810649763-2.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Madden 2018 PS4",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Madden 2018 for PS4 play station 4<br>
-Asking only $15<br>
-Pet free and smoke free home",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810642323-0.jpg"), filename: "6810642323-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810642323-1.jpg"), filename: "6810642323-1.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Nintendo DS Lite",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Please text<br>
-<br>
-Works but no Charger",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804002774-0.jpg"), filename: "6804002774-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804002774-1.jpg"), filename: "6804002774-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804002774-2.jpg"), filename: "6804002774-2.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Playstation 2 Games",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "selected playstation 2 games $5 each if interested please call  <br>
- hablo espanol",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795840237-0.jpg"), filename: "6795840237-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795840237-1.jpg"), filename: "6795840237-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6795840237-2.jpg"), filename: "6795840237-2.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Play station  4 games",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Play station 4 games $10 each if interested please call  <br>
- hablo espanol",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6789837260-0.jpg"), filename: "6789837260-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Gamecube nintendo and games - make offer",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Gamecube nintendo .. 2 controllers .. Memory card.. 16 games.. Second Sight..Dead to Rights.. Geist..Nicktoons Unite.. Egg Mania.. Narnia.. Dragon Ball Z.. Spider-Man.. Harry Potter.. Tak..Sonic.. Billy Hatcher..Cars.. Froggers.. Star Wars 2.. Lord of the Rings.. $100.. Call Robert  <br>
-.. No emails.. Make offer.. Make offer and its yours...no trades ..no emails...",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804616273-0.jpg"), filename: "6804616273-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804616273-1.jpg"), filename: "6804616273-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804616273-2.jpg"), filename: "6804616273-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804616273-3.jpg"), filename: "6804616273-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804616273-4.jpg"), filename: "6804616273-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804616273-5.jpg"), filename: "6804616273-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804616273-6.jpg"), filename: "6804616273-6.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Ps2 slim 14 games - make offer",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Ps2 slim with.. 1 controller..1 memory card.. Power supply.. Av connector.. 14 games.. Head Hunter..Drakengard..Rygar..Shin Megami Tensei Nocturne..Disgaea 2.<br>
-Castlevania Lament of innocence.. Castlevania Curse of Darkness..Giants Citizen Kabuto.. Trigger Man..Bards Tale..Obscure..<br>
-Resident Evil Code Veronica..<br>
-Tekken 4..Metal Gear Solid Snake Eater..Call Robert  
-.. No emails.. No texts.. Call only or leave message..make offer.. No trades.. No emails... Make offer and its yours...",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804611650-0.jpg"), filename: "6804611650-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804611650-1.jpg"), filename: "6804611650-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804611650-2.jpg"), filename: "6804611650-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804611650-3.jpg"), filename: "6804611650-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804611650-4.jpg"), filename: "6804611650-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804611650-5.jpg"), filename: "6804611650-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804611650-6.jpg"), filename: "6804611650-6.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Nintendo Wii",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Please text  
- or call landline at  
-<br>
-Has marks on it but it works good.<br>
-Comes with:<br>
-Super Smash Bros. Brawl<br>
-One Wii controller comes with battries but don&apos;t know how long it will last.<br>
-Component cable<br>
-Power Cable<br>
-Wireless Sensorbar comes with battries but don&apos;t know how long it will last. It does not to connect to wii just press power on sensorbar.<br>
-4gb SD card<br>
-Has HB Launcher installed<br>
-Boot Mii is navigated with either gamecube controller or by seleting with the reset button and scrolling with power button. In HB Launcher you can select NeoGamma to launch any wii or GameCube game in disk drive.",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805492055-0.jpg"), filename: "6805492055-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805492055-1.jpg"), filename: "6805492055-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805492055-2.jpg"), filename: "6805492055-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805492055-3.jpg"), filename: "6805492055-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805492055-4.jpg"), filename: "6805492055-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805492055-5.jpg"), filename: "6805492055-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805492055-6.jpg"), filename: "6805492055-6.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "iPad, Nintendo DS, & Gaming Monitor",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Hello, <br>
-<br>
-We are cleaning out our old technology and posting everything here. It&apos;s primarily video game and computer focused. Would prefer to sell everything in their described groups but ok with one-offs. Please see an individual price next to items.<br>
-<br>
-Apple TV (3rd generation, model # A1427) with remote and power cable - $40<br>
-<br>
-2017 iPad 9.7in with case/keyboard, HDMI dongle, and power cable - $200<br>
-<br>
-Nintendo DS lite with R43DS with 1gb micro sd card (compatible with DS Lite), New Super Mario Bros. game, Pokemon White Version game, and power cable - $80<br>
-<br>
-Asus 23in 1080p 60hz monitor has DVI, VGA, HDMI, SPDIF, Audio In and headphone ports, and power cable - $60<br>
-<br>",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794103468-0.jpg"), filename: "6794103468-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794103468-1.jpg"), filename: "6794103468-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794103468-2.jpg"), filename: "6794103468-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794103468-3.jpg"), filename: "6794103468-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794103468-4.jpg"), filename: "6794103468-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794103468-5.jpg"), filename: "6794103468-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6794103468-6.jpg"), filename: "6794103468-6.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "PS4 games dying light, yakuza, metal gear, uncharted",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "PS4 games used<br>
-Dying Light<br>
-Yakuza Kiwami<br>
-Metal Gear Solid The Phantom Pain<br>
-Uncharted: The Nathan Drake Colletion<br>
-<br>
-Price: $70 total, obo or trade. send offers",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804064188-0.jpg"), filename: "6804064188-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804064188-1.jpg"), filename: "6804064188-1.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "360 xbox games",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "360 xbox games still brand new use one time. all games for 80.00",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808497399-0.jpg"), filename: "6808497399-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808497399-1.jpg"), filename: "6808497399-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808497399-2.jpg"), filename: "6808497399-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808497399-3.jpg"), filename: "6808497399-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808497399-4.jpg"), filename: "6808497399-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808497399-5.jpg"), filename: "6808497399-5.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "n64 manual + mario kart manual",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "n64 manual + mario kart manual - $15<br>
-<br>
-pick up san francisco/san bruno<br>
-text only 4l5)967;23O4",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792091578-0.jpg"), filename: "6792091578-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6792091578-1.jpg"), filename: "6792091578-1.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Lego Dimensions Gaming Capsule 4080",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "New 4080 Lego Dimensions Gaming Capsule. Local pick up only. Quantity (4). $50 for all four.",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6807506989-0.jpg"), filename: "6807506989-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "DS GAMES",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Ds nintendo games in good condition , pic#1 games with case $8each, pic#2 games only $6each, pic #3 cases only $1 each, please contact me if you interested, tks for looking.",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810617920-0.jpg"), filename: "6810617920-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810617920-1.jpg"), filename: "6810617920-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810617920-2.jpg"), filename: "6810617920-2.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Classic 1986 Arcade Game-Arkanoid",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Arkanoid Classic Video Game. Fully refurbished and in excellent working condition. Cash Only",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810616060-0.jpg"), filename: "6810616060-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810616060-1.jpg"), filename: "6810616060-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810616060-2.jpg"), filename: "6810616060-2.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Sony PlayStation VR PSVR Headset Core",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Used only a couple of times. The core bundle complete in box.",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793606389-0.jpg"), filename: "6793606389-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793606389-1.jpg"), filename: "6793606389-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793606389-2.jpg"), filename: "6793606389-2.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Playstation 3",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "PlayStation 3<br>
-40 Gig <br>
-2 Controllers<br>
-Games",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810611908-0.jpg"), filename: "6810611908-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Microsoft Xbox One S 1TB Game Console",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Selling a a lightly used adult-owned Microsoft Xbox One S 1TB console.  This version has the larger internal storage to store all your games, as well as 4K video output for the best picture with newer televisions.<br>
-<br>
-Includes:<br>
-- Xbox One S 1TB console<br>
-- 1 controller<br>
-- HDMI/Power Cable<br>
-<br>
-Cash only, no trades",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810599525-0.jpg"), filename: "6810599525-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Mega Man 10 Messenger Bag - Brand New",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Brand New with tag.<br>
-<br>
-$12",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6803341138-0.jpg"), filename: "6803341138-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "ATARI 2600",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Atari 2600.  This video game system is from 1970&apos;s . Has a set of controllers, paddles , games. Has not been used for many yrs.  CALL with questions.  
-.  $50.00 CASH. NO TRADING .<br>
-$50.00 CASH.",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810594127-0.jpg"), filename: "6810594127-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810594127-1.jpg"), filename: "6810594127-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810594127-2.jpg"), filename: "6810594127-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810594127-3.jpg"), filename: "6810594127-3.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Panasonic Noise Canceling Headphones",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Monitor Headphones with 75% Noise Reduction<br>
-Travel-fold Design<br>
-Single-side Cord<br>
-Plug Adaptor for Airplanes<br>
-This Panasonic ear-cup(Over the Ear) is very comfortable on the ears for longer period without any discomfort. With extremely good battery life<br>
-<br>
-Text  
-<br>
-<br>
-<br>",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805185240-0.jpg"), filename: "6805185240-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805185240-1.jpg"), filename: "6805185240-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805185240-2.jpg"), filename: "6805185240-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805185240-3.jpg"), filename: "6805185240-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805185240-4.jpg"), filename: "6805185240-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805185240-5.jpg"), filename: "6805185240-5.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "ASUS Cerberus Gaming Headset",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Large 60mm neodymium-magnet drivers deliver unrivaled punch and ultimate immersion<br>
-Compatible with PC, Mac, PlayStation 4 and smart devices for gaming and mobile fun<br>
-Dual-microphone design: detachable boom mic for clear in-game communication and an in-line mic for on-the-go chat<br>
-Comfortable 100mm full-size cushions offer great noise isolation for undisturbed gaming and music enjoyment<br>
-<br>
-Text or Call",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805152843-0.jpg"), filename: "6805152843-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805152843-1.jpg"), filename: "6805152843-1.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Nintendo Switch console *like new **firmware 5.1.0",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Selling my Nintendo Switch console *like new condition<br>
-<br>
-Has a screen protector and a carrying case<br>
-<br>
-Played no more than 20 times<br>
-<br>
-Running on firmware 5.1.0<br>
-<br>
-Still have original box and original accessories that came with console<br>
-<br>
-$280 OBO<br>
-<br>",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805095050-0.jpg"), filename: "6805095050-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "PS4 watch dog 2",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Disc is in perfect condition. It includes everything like when I bought it new <br>
-Price is firm",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810579268-0.jpg"), filename: "6810579268-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "PS4 Need for Speed Rivals",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Disc is in perfect condition. It includes everything like when I bought it new",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810578631-0.jpg"), filename: "6810578631-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810578631-1.jpg"), filename: "6810578631-1.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Classic VHS Movies videos for sale",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Used VHS Movies.<br>
-See the names available in the pictures to buy the one you like. They all work good.<br>
-<br>
-$3.00 each",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790617714-0.jpg"), filename: "6790617714-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790617714-1.jpg"), filename: "6790617714-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790617714-2.jpg"), filename: "6790617714-2.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "The Legend of Zelda - A Link Between Worlds 3DS",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Game cartridge + Case in excellent condition.<br>
-<br>
-One of the best on 3DS, a must have if you like Zelda games.<br>
-<br>
-<br>
-<br>
-***IF YOU SEE THIS LISTING, IT IS STILL AVAILABLE***<br>
-***To save time, please just email me your availability and/or any questions, thanks!***<br>
-<br>
-<br>
-<br>
-<br>
-<br>",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810561012-0.jpg"), filename: "6810561012-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810561012-1.jpg"), filename: "6810561012-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810561012-2.jpg"), filename: "6810561012-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810561012-3.jpg"), filename: "6810561012-3.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Ms Pacman galaga donkey kong supreme cocktail arcade game 60 games",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Limited edition Supreme ultimate cocktail Arcade multicade  machine arcade game 60 games in 1 featuring a Huge lcd flat screen crystal clear rich vibrant colors low energy usage everything works flawlessly text or call anytime 916--------53two///////570-3<br>
-Heres the game list of 60 games in 1 arcade Machine Pac-Man /Ms Pac-Man Pac-Man Jr. Pac-Man Super Pac-Man Pac-Man Plus Ms. Pac-Man (Fast Mode) Pac-Man (Fast Mode) Jr. Pac-Man (Fast Mode) Pac-Man Plus (Fast Mode) Galaga Family Series: Galaga Galaga (Fast Fire Mode) Galaga 3 Galaxian Donkey Kong Series: Donkey Kong Donkey Kong Junior Donkey Kong 3 Centipede Millipede Arkanoid Super Breakout Video Pinball Pinball Action Dig Dug Qix Frogger Space Invaders 1942 1943 1943 Kai Amidar Bomb Jack Burger Time Congo Bongo Crush Dig Dug 2 Gun Smoke Gyruss Hustler Jumping Jack Juno First King &amp; Balloon Ladybug Mappy Moon Cresta Mr. Do Mr. Do&apos;s Castle New Rally X Pengo Phoenix Pleiades Pooyan Scramble Shao-Lin&apos;s Road Space Panic Super Cobra Tank Battalion The End Time Pilot Van-Van Car Xevious Zaxxon text or call anytime five32five-703 ///// 1100obo",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805751443-0.jpg"), filename: "6805751443-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805751443-1.jpg"), filename: "6805751443-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805751443-2.jpg"), filename: "6805751443-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805751443-3.jpg"), filename: "6805751443-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805751443-4.jpg"), filename: "6805751443-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805751443-5.jpg"), filename: "6805751443-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805751443-6.jpg"), filename: "6805751443-6.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "* * XBOX / PC - ROCK BAND - FENDER STRAT WIRED GUITAR CONTROLLER * *",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "- XBOX360 / PC - ROCK BAND FENDER STRATOCASTER WIRED GUITAR CONTROLLER by HARMONIX -<br>
-* Official Licensed Product - Made By Harmonix<br>
-<br>
-- SPECIFICATIONS:<br>
-* MODEL #: 822152<br>
-<br>
-- COMES WITH THE FOLLOWING ITEMS:<br>
-* Guitar Controller<br>
-* Breakaway Cord<br>
-* Adjustable Fender Logo Guitar Strap<br>
-* Instruction Manual<br>
-* A Great Time !!<br>
-<br>
-- COMPATIBLE WITH THE FOLLOWING GAMES:<br>
-* ALL GUITAR HERO Games AFTER Guitar Hero III<br>
-* BAND HERO<br>
-* ALL ROCK BAND Games AND TRACK PACKS<br>
-* FRETS ON FIRE for PC<br>
-<br>
-!! GUITAR HAS BEEN TESTED AND IS FULLY FUNCTIONAL !!<br>
--------------- LIGHTLY USED - LIKE NEW CONDITION --------------<br>
-------------------------------------------------------------------------------------------<br>
-CONTACT INFO:<br>
-Email, Phone or Text -<br>
-(TEXT MESSAGING PREFERRED)<br>
---please refer to what the item is in your text message--<br>
-CARON:",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810503411-0.jpg"), filename: "6810503411-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810503411-1.jpg"), filename: "6810503411-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810503411-2.jpg"), filename: "6810503411-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810503411-3.jpg"), filename: "6810503411-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810503411-4.jpg"), filename: "6810503411-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810503411-5.jpg"), filename: "6810503411-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810503411-6.jpg"), filename: "6810503411-6.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Super Mario 3D Land for 3DS",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Game cartridge + case in excellent condition<br>
-<br>
-One of the BEST games for Nintendo 3DS<br>
-<br>
-<br>
-<br>
-***IF YOU SEE THIS LISTING, IT IS STILL AVAILABLE***<br>
-***To save time, please just email me your availability and/or any questions, thanks!***<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810562465-0.jpg"), filename: "6810562465-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810562465-1.jpg"), filename: "6810562465-1.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Xbox Live Gold Membership 6 months",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "6 months, retail is $40",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6801106910-0.jpg"), filename: "6801106910-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Nintendo switch",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "only used it twice. its still brand new and comes with everything, with the box also. <br>
-<br>
-no scratches no dents,<br>
-<br>
-its the black and grey version<br>
-<br>
-<br>
-email me, i reply fast",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810561466-0.jpg"), filename: "6810561466-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Nintendo 3DS XL + Games",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Black color, super clean<br>
-Console in EXCELLENT condition, works perfectly<br>
-Includes original box, manual(s), charger, accessories<br>
-<br>
-Also including two BRAND NEW (still in shrink wrap) games:<br>
--Professor Layton and the Miracle Mask<br>
--Theatrhythm Final Fantasy: Curtain Call<br>
-<br>
-<br>
-***IF YOU SEE THIS LISTING, IT IS STILL AVAILABLE***<br>
-***To save time, please just email me your availability and/or any questions, thanks!***<br>
-<br>
-<br>
-<br>
-<br>",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810560809-0.jpg"), filename: "6810560809-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810560809-1.jpg"), filename: "6810560809-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810560809-2.jpg"), filename: "6810560809-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810560809-3.jpg"), filename: "6810560809-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810560809-4.jpg"), filename: "6810560809-4.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Nintendo Game Boy - Original",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Original Game Boy model DMG-01<br>
-Made in Japan<br>
-Working perfectly, no dead pixels, all parts in good condition<br>
-<br>
-Including 4 games:<br>
--Tetris<br>
--Super Mario Land<br>
--Legend of Zelda - Link&apos;s Awakening<br>
--Donkey Kong<br>
-<br>
-<br>
-<br>
-***IF YOU SEE THIS LISTING, IT IS STILL AVAILABLE***<br>
-***To save time, please just email me your availability and/or any questions, thanks!***<br>
-<br>
-<br>
-<br>
-<br>
-<br>",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810560630-0.jpg"), filename: "6810560630-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810560630-1.jpg"), filename: "6810560630-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810560630-2.jpg"), filename: "6810560630-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810560630-3.jpg"), filename: "6810560630-3.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "SennHeiser Headphones, PXC 450 Noiseguard;complete with case, access.",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "See pictures. TheVery high end, excellent PXC 450 Noiseguard model.<br>
-<br>
-Together with protective case, connectors.",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790125375-0.jpg"), filename: "6790125375-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790125375-1.jpg"), filename: "6790125375-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790125375-2.jpg"), filename: "6790125375-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790125375-3.jpg"), filename: "6790125375-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790125375-4.jpg"), filename: "6790125375-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790125375-5.jpg"), filename: "6790125375-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6790125375-6.jpg"), filename: "6790125375-6.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Atari2600 Vintage Original + 17 games",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "The classic Atari 2600 video computer system. Fully functional with coaxial cable, power cord, 17 games, and game holder.",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810552332-0.jpg"), filename: "6810552332-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810552332-1.jpg"), filename: "6810552332-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810552332-2.jpg"), filename: "6810552332-2.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Xbox one bundle with Kinect and 2 games",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "I am selling an Xbox 1 (one) bundle. It comes one controller, a Kinect and 2 video games: Kinect sports rivals and Minecraft<br>
-<br>
-Smoke and pet free home",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804153828-0.jpg"), filename: "6804153828-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804153828-1.jpg"), filename: "6804153828-1.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Xbox 360",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Xbox 360 works fine and a couple games $30<br>
-<br>
-thank you",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810549179-0.jpg"), filename: "6810549179-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "* * Wii - GUITAR HERO - LES PAUL WIRELESS GUITAR CONTROLLER * *",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "- GUITAR HERO - GIBSON LES PAUL WIRELESS GUITAR CONTROLLER for Wii -<br>
-~~~~~~~~~~~~~~~~~~~~~~~~~~~ $27.00 / O.B.O. ~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
-* Official Licensed Product - Made By RedOctane<br>
-* Guitar Neck is Detachable for Easy Storing<br>
-* Removable / Replaceable Faceplate - Choose from Hundreds of Custom Faceplates Available Online<br>
- <br>
-- SPECIFICATIONS:<br>
-* MODEL #: 95125.805<br>
-<br>
-NOTE: Cover for Wii Remote on the Guitar Controller is Missing<br>
-Pickguard Has Yellowed and Has White Areas Where Stickers Were<br>
-<br>
-- COMES WITH THE FOLLOWING ITEMS:<br>
-* Les Paul Wireless Guitar Controller<br>
-* Quick Start Guide<br>
-* A Great Time !!<br>
-<br>
-GUITAR HAS NOT BEEN TESTED *<br>
-* if there are any problems after the guitar is purchased I will refund your money or give you another guitar<br>
-(within one week of purchase date)<br>
-------------------------------------------------------------------------------------------<br>
-CONTACT INFO:<br>
-Email, Phone or Text -<br>
-(TEXT MESSAGING PREFERRED)<br>
---please refer to what the item is in your text message--<br>
-CARON:",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810534257-0.jpg"), filename: "6810534257-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810534257-1.jpg"), filename: "6810534257-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810534257-2.jpg"), filename: "6810534257-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810534257-3.jpg"), filename: "6810534257-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810534257-4.jpg"), filename: "6810534257-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810534257-5.jpg"), filename: "6810534257-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810534257-6.jpg"), filename: "6810534257-6.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Two iBuffalo SNES USB Controllers for Raspberry Pi, Mac, PC",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Two iBuffalo SNES USB Controllers for Raspberry Pi, Mac, PC<br>
-<br>
-I have two used iBuffalo SNES USB Controllers for Raspberry Pi, Mac, PC<br>
-<br>
-8 Buttons, Configuration is just like the original Super Nintendo and Super Famicon controllers, except with added Turbo and Clear buttons.<br>
-USB Connection<br>
-Works with Windows / Mac / Raspberry Pi RetroPie and Recalbox, Android<br>
-<br>
-Excellent condition - used only a couple times.<br>
-$30 cash and they&apos;re yours!",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805477797-0.jpg"), filename: "6805477797-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "World of Tanks Mouse pad",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Brand new, never used and in the box.  World of Tanks.",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808942581-0.jpg"), filename: "6808942581-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6808942581-1.jpg"), filename: "6808942581-1.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Lego Dimensions LOTR Gimli Fun Pack 71220 $10 or best offer",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Lego Dimensions Lord of the Rings Gimli Fun Pack 71220 $10 or best offer<br>
-<br>
-also selling used lego dimensions figures for $2 each<br>
-<br>
-please call or text at",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805073108-0.jpg"), filename: "6805073108-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Lego Dimensions Harry Potter Team Pack 71247 $25 or best offer",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Lego Dimensions Harry Potter Team Pack 71247 $25 or best offer<br>
-<br>
-also selling used lego dimensions figures for $2 each<br>
-<br>
-please call or text at",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805072221-0.jpg"), filename: "6805072221-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Lego Dimensions Portal 2 Level Pack 71203 $15 or best offer",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Lego Dimensions Portal 2 Level Pack 71203 $15 or best offer<br>
-<br>
-also selling used lego dimensions figures for $2 each<br>
-<br>
-please call or text at",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805071384-0.jpg"), filename: "6805071384-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Lego Dimensions DC Supergirl Figure 71340 Exclusive $50 or best offer",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Lego Dimensions DC Supergirl Figure 71340 Exclusive $50 or best offer<br>
-<br>
-also selling used lego dimensions figures for $2 each<br>
-<br>
-please call or text at",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805070695-0.jpg"), filename: "6805070695-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805070695-1.jpg"), filename: "6805070695-1.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "PS4 Lego Dimensions starter pack $60 or best offer",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "PS4 Lego Dimensions starter pack $60 or best offer<br>
-<br>
-also selling used lego dimensions figures for $2 each<br>
-<br>
-please call or text at",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805070203-0.jpg"), filename: "6805070203-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Skylanders Imaginators 3 Imaginite Chests - 15 or best offer",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "selling Skylanders Imaginators 3 Imaginite Chests to complete ur collection, bronze / silver / gold for $15 or best offer.  please see pic.   <br>
-<br>
-also selling previous skylander characters for $2 each<br>
-<br>
-please call or text at",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805068469-0.jpg"), filename: "6805068469-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "New 4 Skylanders Imaginators Creation Crystals for $35",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "New 4 Skylanders Imaginators Creation Crystals for $35 , or $10 each.   please see pic.<br>
-<br>
-also selling other loose skylander figures for $2 each<br>
-<br>
-please call or text at",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805068277-0.jpg"), filename: "6805068277-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Wii U Skylanders Imaginators starter pack - 30 or best offer",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "selling Wii U Skylanders Imaginators starter pack for $30 or best offer<br>
-<br>
-also selling previous skylander characters for $2 each<br>
-<br>
-please call or text at",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805067996-0.jpg"), filename: "6805067996-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "PS3 Skylanders Imaginators starter pack - 30 or best offer",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "selling PS3 Skylanders Imaginators starter pack for $30 or best offer<br>
-<br>
-also selling previous skylander characters for $2 each<br>
-<br>
-please call or text at",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805067733-0.jpg"), filename: "6805067733-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "2 new Skylanders Superchargers figures for $25",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "selling 2 new Skylanders Superchargers figures Burn-Cycle and Shield Striker for $25 or $15 each.  please see pic.<br>
-<br>
-also selling previous skylander characters for $2 each<br>
-<br>
-please call or text at",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805056444-0.jpg"), filename: "6805056444-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805056444-1.jpg"), filename: "6805056444-1.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "New Skylanders Superchargers 2015 E3 Special Hot Streak",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "New Skylanders Superchargers 2015 E3 Special Hot Streak for $50.<br>
-<br>
-also selling other loose skylander figures, including some Superchargers, for $2 each<br>
-<br>
-please call or text at",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805055822-0.jpg"), filename: "6805055822-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Xbox 360 Skylanders SuperChargers starter pack - 30 or best offer",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "selling new Xbox 360 Skylanders SuperChargers starter pack for $30 or best offer<br>
-<br>
-also selling previous skylander characters for $2 each<br>
-<br>
-please call or text at",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805055529-0.jpg"), filename: "6805055529-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Skylanders Trap Team Spotlight",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Skylanders Trap Team Spotlight<br>
-<br>
-also selling loose skylander figures for $2 each<br>
-<br>
-please call or text at",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805054618-0.jpg"), filename: "6805054618-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805054618-1.jpg"), filename: "6805054618-1.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Skylanders Trap Team Blackout",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "selling Skylanders Trap Team Blackout for $30<br>
-<br>
-also selling loose skylander figures for $2 each<br>
-<br>
-please call or text at",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805054425-0.jpg"), filename: "6805054425-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805054425-1.jpg"), filename: "6805054425-1.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Skylanders Fire Totem Trap [Searing Spinner] for $15 or best offer",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "selling Skylanders Trap Team Fire Totem Trap [Searing Spinner] for $15 or best offer.<br>
-<br>
-also selling loose skylander figures for $2 each<br>
-<br>
-please call or text at",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805052634-0.jpg"), filename: "6805052634-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "New Skylanders Eon's Elite Boomer for $15 or best offer",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "selling New unopened Skylanders Eon&apos;s Elite Boomer for $15 or best offer.<br>
-<br>
-also selling loose skylander figures for $2 each<br>
-<br>
-please call or text at",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805052401-0.jpg"), filename: "6805052401-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "New Skylanders Giants Metallic Green Shroomboom and Gill Grunt",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "selling New unopened Skylanders Giants metallic green Shroomboom and metallic green Gill Grunt for $15.  or buy one of them for $10 each.<br>
-<br>
-also selling loose skylander figures for $2 each<br>
-<br>
-please call or text at",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805052050-0.jpg"), filename: "6805052050-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805052050-1.jpg"), filename: "6805052050-1.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "10 lightcore skylanders for $40",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "loose lightcore skylanders from swap force and giants games.<br>
-<br>
-also selling other skylander figures for $2 each<br>
-<br>
-please call or text at",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805051739-0.jpg"), filename: "6805051739-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "XBOX 360 with two controllers and 18 games",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "XBOX 360 with two wireless controllers plus 18 game all for $189. It come with original box and in like new condition ( hardly used). Please contact Paul at  <br>
-.",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788614305-0.jpg"), filename: "6788614305-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788614305-1.jpg"), filename: "6788614305-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788614305-2.jpg"), filename: "6788614305-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788614305-3.jpg"), filename: "6788614305-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788614305-4.jpg"), filename: "6788614305-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788614305-5.jpg"), filename: "6788614305-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788614305-6.jpg"), filename: "6788614305-6.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Ps4 1tb",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "*Used Twice<br>
-*1 controller <br>
-*2 games <br>
-*hdmi n power cord<br>
-*works perfectly <br>
-*285<br>",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810474748-0.jpg"), filename: "6810474748-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810474748-1.jpg"), filename: "6810474748-1.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Xbox and PS headsets",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Never used. Come and get them. $10 for all of it.<br>
-<br>
-If you have any questions:<br>
-<br>
-a) I don&apos;t know<br>
-<br>
-b) For $10, I&apos;m too lazy to find out <br>
-<br>
-Text or e mail",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791367797-0.jpg"), filename: "6791367797-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791367797-1.jpg"), filename: "6791367797-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791367797-2.jpg"), filename: "6791367797-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791367797-3.jpg"), filename: "6791367797-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6791367797-4.jpg"), filename: "6791367797-4.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "PlayStation PS4 Pro 1TB Console",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "The console in great working condition, just few months old and not played much, comes with one controller.<br>
-<br>
-Cash or PayPal f/f, not looking for trade or cashier check. Price is firm.",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793613036-0.jpg"), filename: "6793613036-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793613036-1.jpg"), filename: "6793613036-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6793613036-2.jpg"), filename: "6793613036-2.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "SNES Classic Edition Super Nintendo System Mini Console *NEW*",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Brand new SNES Classic. Never opened or played. Comes with 2 controllers. Have receipt to prove purchase at Gamestop in Concord.<br>
-<br>
-Can also meet in Oakland. <br>
-<br>
-$120, no trades.<br>
-<br>
-<br>",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798618362-0.jpg"), filename: "6798618362-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798618362-1.jpg"), filename: "6798618362-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798618362-2.jpg"), filename: "6798618362-2.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Nintendo NES Classic & 2nd Controller, 2018 Edition, NEW",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "NES Classic with extra controller for sale. Brand new in original packaging and never opened. I have receipt to show proof of purchase.<br>
-<br>
-$110 for NES Classic and 2nd Controller. <br>
-<br>
-$25 for just the Controller if you just need an extra one.",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798545680-0.jpg"), filename: "6798545680-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6798545680-1.jpg"), filename: "6798545680-1.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Gamer/Office/Computer Chair",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Office Computer Chair - $100<br>
-<br>
-It&apos;s an impressive looking chair for use at your computer, home office, video games, crafting and many other uses!<br>
-<br>
-Adjustable height and spring loaded back with seat<br>
-<br>
-<br>
-$100<br>
-<br>
-Assembled - brand new<br>
-Tested - It&apos;s comfortable, adjusts for height<br>
-<br>
-It&apos;s ready for use!<br>
-<br>
-Come by and see for yourself. Bring your butt with you and you can try it out!",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806497388-0.jpg"), filename: "6806497388-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806497388-1.jpg"), filename: "6806497388-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806497388-2.jpg"), filename: "6806497388-2.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "GTA 5 Xbox",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Good condition comes with everything no scratches on disc.",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6805973966-0.jpg"), filename: "6805973966-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Wii fit plus  new",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "call  <br>",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6788375217-0.jpg"), filename: "6788375217-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Mortal combat XL ps4",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Brand new sealed copy of mortal combat XL ps4 includes all additional characters and skin packs that you would normally have to pay for on psn. 15$ picked up or dropped off for 20$ Text me at  <br>",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810449283-0.jpg"), filename: "6810449283-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810449283-1.jpg"), filename: "6810449283-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810449283-2.jpg"), filename: "6810449283-2.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "BlizzCon 2018 Goody Bag",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "The box was opened only for the purpose of the photo below. Everything is sealed, new and never opened. <br>
-* The BlizzCon Book: A Celebration of Our Community<br>
-* World of Warcraft Faction Keychain<br>
-* Overwatch Challenge Coin<br>
-* Classic Diablo Vinyl Figure<br>
-* Hearthstone Magnet Set<br>
-* Heroes of the Storm Raven Lord Crest Magnet<br>
-*StarCraft 20th Anniversary Pin<br>
-<br>
-***CASH ONLY***",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806985211-0.jpg"), filename: "6806985211-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806985211-1.jpg"), filename: "6806985211-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806985211-2.jpg"), filename: "6806985211-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6806985211-3.jpg"), filename: "6806985211-3.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Nintendo 64",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Console with two controllers and super Mario",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810447838-0.jpg"), filename: "6810447838-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810447838-1.jpg"), filename: "6810447838-1.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Nintendo Wii U Super Mario 3D World Deluxe Set 32GB Console with acces",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Comes with super Mario 3d world, Nintendo land, and Wii sports club downloaded onto it. <br>
-<br>
-Also comes with Wii game <br>
-Kirby dreamland <br>
-<br>
-I also have additional games and controllers for extra .<br>
-Can bargain with the price of additional games<br>
-Cash or PayPal.<br>
-Wii remote and nun chuk",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810444314-0.jpg"), filename: "6810444314-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810444314-1.jpg"), filename: "6810444314-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810444314-2.jpg"), filename: "6810444314-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810444314-3.jpg"), filename: "6810444314-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810444314-4.jpg"), filename: "6810444314-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810444314-5.jpg"), filename: "6810444314-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810444314-6.jpg"), filename: "6810444314-6.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "MICROSOFT XBOX 360 + Controller + Headset!!",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Selling Microsoft XBOX 360 console, Component AV cables, Power Supply, Mic Headset.  Email if you&apos;re interested. <br>
-<br>
-MICROSOFT XBOX360 bundel = $40",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810435474-0.jpg"), filename: "6810435474-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "PS4 games",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "Selling PS4 games:<br>
-<br>
-Call of Duty Black Ops III $15<br>",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810435333-0.jpg"), filename: "6810435333-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Like new XBOX ONE WITH 2 controllers and all new games !",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "EVERYTHING WORKS FINE <br>
-NOT ONE FLAW WHATSOEVER! <br>
-NEW games 2 controllers ready to PLAY<br>
-2k19<br>
-New COD<br>
-New Battlefield <br>
-GTA",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810439426-0.jpg"), filename: "6810439426-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Huge PlayStation (PS3) Bundle!!!",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "My son is playing PS3 anymore, so everything got to go.<br>
-<br>
-Bundle includes the following:<br>
-<br>
-1.	PS3 320Gb Infamous 2 edition (CECH-3001B)<br>
-<br>
-2.	2 wireless controllers (DualShock 3,CECHZC2UA1) with charging station.<br>
-<br>
-3.	2 wireless motion controllers (Move, CECH-ZCM1U) with charging station. <br>
-<br>
-4.	Sony web camera (SLEH00448) to be used with Move Controllers with TV stand/clip. <br>
-<br>
-5.	Sony wireless stereo headset (CECHYA-0080) with a retractable microphone. SOLD. <br>
-<br>
-6.	20 video games that include such bestsellers as Call of Duty, Grand Theft Auto, Grand Tourismo, etc.<br>
-<br>
-7.	Tony Hawk Ride skateboard for PS3.<br>
-<br>
-8.	Driving Force GT Steering wheel with pedals by Logitech (E-XC19).<br>
-<br>
-9.	Boxes, manuals, cables, even disc for cleaning PS3 laser lens. <br>
-<br>
-Everything works and in great condition. I purchase most of these at Best Buy.<br>
-<br>
-Email me with any questions. Asking $250 which is a fraction of what I have spent.<br>
-<br>
-Serious buyers only, please.<br>",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804772215-0.jpg"), filename: "6804772215-0.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804772215-1.jpg"), filename: "6804772215-1.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804772215-2.jpg"), filename: "6804772215-2.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804772215-3.jpg"), filename: "6804772215-3.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804772215-4.jpg"), filename: "6804772215-4.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804772215-5.jpg"), filename: "6804772215-5.jpg") if product
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6804772215-6.jpg"), filename: "6804772215-6.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "The Legend of Zelda: Breath of the Wild Special Edition",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "The legend of Zelda breath of the wild for Nintendo Switch.<br>
-Item is new and sealed. <br>
-This is the special edition bundle that comes with the map, case, coin and CD.<br>
-This does NOT come with the console. <br>
-Price is firm at $200... will not respond to offers. <br>
-<br>
-I commute from San Leandro to San Ramon on the weekdays.",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810438748-0.jpg"), filename: "6810438748-0.jpg") if product
-
-            product = Product.create(
-               {
-                  title: "Britannica Sudoku Unlimited - New PC Game",
-                  location: locations.sample,
-                  sell_by: Faker::Date.between(1.month.from_now, 4.months.from_now),
-                  user_id: users.sample.id,
-                  description: "<br>
-<br>
------------------------------------------------------------------ <br>
-<br>
-Britannica Sudoku Unlimited  <br>
-<br>
------------------------------------------------------------------ <br>
-<br>
-The Britannica Sudoku is an addictive puzzle game... Britannica-style! <br>
-Switch between colors, symbols, letters, and two number sets. Generate new puzzles on the fly. Easily enter Pencil Notes, a popular note-taking method for solving the puzzle. Choose from 4x4 and 9x9 grids, multiple difficulty levels, and more.<br>
- <br>
-The unlimited puzzler producer generates puzzles on!<br>
-Auto-generate unlimited new puzzles<br>
-Quick and intuitive number entry<br>
-5 game modes<br>
-Hints and auto-solver<br>
-Pencil notes<br>
-Pencil line tool<br>
-Timer &#x2DC;allenge<br>
-Print puzzles<br>
-PC CD-ROM<br>
-Brand new, factory sealed<br>
- <br>
-..........................<br>",
-                  buy_it_now: [(10..500).to_a.sample, nil].sample,
-                  category_id: category.id
-               })
-               products << product if product
-               
-product.photos.attach(io: File.open("/Users/appacademy/Desktop/iBuy/seed_data/images/6810433114-0.jpg"), filename: "6810433114-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810762176-0.jpg"), filename: "6810762176-0.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810762176-1.jpg"), filename: "6810762176-1.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810762176-2.jpg"), filename: "6810762176-2.jpg") if product
+product.photos.attach(io: File.open("seed_data/images/6810762176-3.jpg"), filename: "6810762176-3.jpg") if product
