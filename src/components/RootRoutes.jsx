@@ -11,6 +11,7 @@ import Home from './homepage/Home';
 import ProductResultsRoot from './productResults/ProductResultsRoot';
 import ProductDetailsContainer from './product_details/ProductDetailsContainer';
 import Heroku from './404/Heroku';
+import ResetProducts from './404/ResetProducts';
 
 const RootRoutes = () => {
   return (
@@ -18,6 +19,11 @@ const RootRoutes = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/keepherokuawake" component={Heroku} />
+        <Route
+          exact
+          path="/resetproductssellbydate"
+          component={ResetProducts}
+        />
         <Route path="/item/:productId" component={ProductDetailsContainer} />
         <Route path="/search" component={ProductResultsRoot} />
         <Route exact path="/comingsoon" component={ComingSoonContainer} />

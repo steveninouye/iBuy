@@ -1,5 +1,5 @@
 class Api::ProductsController < ApplicationController
-  before_action :require_login!, only: [:create, :update, :destroy]
+  before_action :require_login!, only: [:create, :destroy]
   before_action :ensure_search_input, only: [:index]
   before_action :ensure_viewed_products_cookie
 
@@ -51,6 +51,8 @@ class Api::ProductsController < ApplicationController
   def update
     products = Product.all
     products.each { |product| product.update(sell_by: Faker::Date.between(7.days.from_now, 14.days.from_now)) }
+    p "Products were updated"
+    render json: ["Products were updated"]
   end
 
   def destroy
