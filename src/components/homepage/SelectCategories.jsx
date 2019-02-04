@@ -6,7 +6,7 @@ const SelectCategories = ({ handleChange }) => (
       onChange={handleChange('searchCategory')}
       className="home--category-select"
     >
-      <option value="allCategories">All Catgories</option>
+      <option value="all">All Catgories</option>
       <option value="antiques">Antiques</option>
       <option value="arts and crafts">Art</option>
       <option value="baby and kid stuff">Baby</option>
