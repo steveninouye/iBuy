@@ -49,6 +49,8 @@ class Api::ProductsController < ApplicationController
   end
 
   def update
+    products = Product.all
+    products.each { |product| product.update(sell_by: Faker::Date.between(7.days.from_now, 14.days.from_now)) }
   end
 
   def destroy
