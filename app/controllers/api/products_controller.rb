@@ -16,7 +16,9 @@ class Api::ProductsController < ApplicationController
   def search
     query = remove_semi_colon(params[:search][:query])
     category = remove_semi_colon(params[:search][:category])
-    if query && category
+    if category == "all"
+      @products = Product.with_attached_photos.all.joins(:category).includes(:bids).order("RANDOM()").limit(20)
+    elsif query && category
       @products = Product.with_attached_photos.includes(:bids).where("LOWER(title) LIKE ?", "%#{query.downcase}%").where("categories.name = ?", category).limit(20)
     elsif query
       @products = Product.with_attached_photos.includes(:bids).where("LOWER(title) LIKE ?", "%#{query.downcase}%").limit(20)

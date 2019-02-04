@@ -103,7 +103,6 @@ prompt.get(['uri'], (err, res) => {
 
 function pauseScrape(path, productId, file, prevResult, idx) {
   setTimeout(() => {
-    console.log(prevResult);
     rp(prevResult)
       .then((productPageBody) => {
         const productResult$ = cheerio.load(productPageBody);

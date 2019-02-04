@@ -6,7 +6,6 @@ const setCurrentUser = (configureStore) => {
             users: { [window.currentUser.id]: window.currentUser }
          }
       };
-      console.log(preloadedState);
       delete window.currentUser;
       return configureStore(preloadedState);
    } else {

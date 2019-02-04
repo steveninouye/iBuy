@@ -12,7 +12,6 @@ class BuyItNowItemForm extends React.Component {
    handleSubmit(type) {
       return (e) => {
          e.preventDefault();
-         // if (type) console.log(type);
       };
    }
 

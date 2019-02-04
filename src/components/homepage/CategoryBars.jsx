@@ -5,7 +5,7 @@ import { categorySearchLink } from '../../utils/uri_utils';
 
 const CategoryBars = (props) => (
   <div className="home--category-bars">
-    <Link to={categorySearchLink('allCategories')}>
+    <Link to={categorySearchLink('all')}>
       <div className="home--category-bar-item all-categories-btn">
         All Categories
       </div>

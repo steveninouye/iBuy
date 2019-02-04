@@ -8,12 +8,9 @@ import { tempBids } from '../../TEMPproducts';
 const BidsSwitch = (state = tempBids, action) => {
    switch (action.type) {
       case RECEIVE_PRODUCTS:
-         // console.log('CHANGE YOUR BID SWITCH REDUCER');
          return action.bids ? action.bids : state;
       case RECEIVE_PRODUCT:
          return Object.assign({}, state, action.bids);
-      // case RECEIVE_BID:
-      //    return action.bid;
       default:
          return state;
    }

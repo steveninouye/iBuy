@@ -29,7 +29,6 @@ class Search extends React.Component {
   }
 
   render() {
-    console.log(this.state);
     return (
       <form className="home--search-container" onSubmit={this.handleSubmit}>
         <Link to="/" className="home--main-logo">
