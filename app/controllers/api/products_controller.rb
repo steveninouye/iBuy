@@ -50,7 +50,7 @@ class Api::ProductsController < ApplicationController
 
   def update
     products = Product.all
-    products.each { |product| product.update(sell_by: Faker::Date.between(7.days.from_now, 14.days.from_now)) }
+    products.each { |product| product.update(sell_by: Faker::Date.between(8.days.from_now, 16.days.from_now)) }
     p "Products were updated"
     render json: ["Products were updated"]
   end
