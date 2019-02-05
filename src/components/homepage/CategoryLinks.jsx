@@ -13,7 +13,7 @@ const CategoryLinks = (props) => (
         <i className="fas fa-heart" /> Saved
       </li>
     </Link>
-    <Link to="/cars and trucks">
+    <Link to={categorySearchLink('cars and trucks')}>
       <li>Motors</li>
     </Link>
     <Link to={categorySearchLink('clothing and accessories')}>
