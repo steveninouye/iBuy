@@ -2,7 +2,7 @@ json.set! :products do
   @products.each do |product|
     json.set! product.id do
       json.extract! product, :id, :title, :description, :location, :sell_by, :buy_it_now, :category_id, :user_id
-      json.photos product.photos[0...1].map { |photo| photo.service_url }
+      json.photos product.photos[0...1].map { |photo| photo.url }
     end
   end
 end

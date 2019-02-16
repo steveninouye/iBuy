@@ -8,9 +8,10 @@ class Api::ProductsController < ApplicationController
     p session[:viewed_products]
     viewed_product_ids = session[:viewed_products]
     if viewed_product_ids.length > 0
-      @products = Product.with_attached_photos.find(viewed_product_ids)
+      @products = Product.includes(:photos).find(viewed_product_ids)
     else
-      @products = Product.joins(:photos_attachments).with_attached_photos.group(:id).where("LOWER(title) LIKE '%macbook%'").limit(6)
+      @products = Product.includes(:photos).joins(:photos).distinct.where("LOWER(title) LIKE '%macbook%'").limit(6)
+      # debugger
     end
   end
 
@@ -18,18 +19,18 @@ class Api::ProductsController < ApplicationController
     query = remove_semi_colon(params[:search][:query])
     category = remove_semi_colon(params[:search][:category])
     if category == "all"
-      @products = Product.with_attached_photos.all.joins(:category).includes(:bids).order("RANDOM()").limit(20)
+      @products = Product.all.joins(:category).includes(:photos,:bids).order("RANDOM()").limit(20)
     elsif query && category
-      @products = Product.with_attached_photos.includes(:bids).where("LOWER(title) LIKE ?", "%#{query.downcase}%").where("categories.name = ?", category).limit(20)
+      @products = Product.includes(:photos, :bids).where("LOWER(title) LIKE ?", "%#{query.downcase}%").where("categories.name = ?", category).limit(20)
     elsif query
-      @products = Product.with_attached_photos.includes(:bids).where("LOWER(title) LIKE ?", "%#{query.downcase}%").limit(20)
+      @products = Product.includes(:photos, :bids).where("LOWER(title) LIKE ?", "%#{query.downcase}%").limit(20)
     else
-      @products = Product.with_attached_photos.joins(:category).includes(:bids).where("categories.name = ?", category).limit(20)
+      @products = Product.joins(:category).includes(:photos, :bids).where("categories.name = ?", category).limit(20)
     end
   end
 
   def show
-    @product = Product.with_attached_photos.includes(:bids, :owner, :category).find_by_id(params[:id])
+    @product = Product.includes(:photos, :bids, :owner, :category).find_by_id(params[:id])
     if @product
       attach_viewed_products_cookie(@product)
       render :show

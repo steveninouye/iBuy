@@ -29,7 +29,6 @@ class Api::UsersController < ApplicationController
   end
 
   def destroy
-    #verify user credentials
     @user = current_user
     @user.destroy
     render :destroy

@@ -21,7 +21,6 @@ class User < ApplicationRecord
    validate :passwords_match
  
    after_initialize :ensure_session_token
-   has_many_attached :photo
    
    has_many :watches
    has_many :bids
