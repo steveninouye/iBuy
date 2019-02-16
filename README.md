@@ -1,6 +1,6 @@
 # iBuy
 
-[iBuy](https://ibuyapp.herokuapp.com) is a portfolio E-commerce application inspired by Ebay. iBuy implements many of the core features of Ebay, including:
+[iBuy](https://ibuy-app.herokuapp.com/) is a portfolio E-commerce application inspired by Ebay. iBuy implements many of the core features of Ebay, including:
 
 - Secure user authentication
 - New user creation with:
