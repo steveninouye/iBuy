@@ -14,7 +14,7 @@ class ImageRoot extends React.Component {
       $(node)
         .css('background-image', `url('${photo}')`)
         .data('imgSrc', photo);
-      if (i === 1)
+      if (i === 0)
         $('#show-main-img').css('background-image', `url('${photo}')`);
     });
   }
